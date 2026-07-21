@@ -17,15 +17,6 @@
     "media_type": "Website",
     "traffic_popularity": "Medium Traffic"
   },
-  "whoswho": {},
-  "lepoint": {},
-  "archive": {},
-  "francebleu": {},
-  "books": {},
-  "gala": {},
-  "purepeople": {},
-  "parismatch": {},
-  "rfgenealogie": {},
   "le-monde-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
     "bias_rating": "LEFT-CENTER",
@@ -36,9 +27,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "courrier-picard": {},
-  "deces": {},
-  "ouest-france": {},
   "la-depeche-du-midi": {
     "mbfc_url": "https://mediabiasfactcheck.com/la-depeche-du-midi/",
     "bias_rating": "LEFT-CENTER",
@@ -49,11 +37,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "libramemoria": {},
-  "francetvinfo": {},
-  "lesechos": {},
-  "femmeactuelle": {},
-  "rmc": {},
   "liberation-paris-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
     "bias_rating": "LEFT-CENTER",
@@ -63,7 +46,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "europe1": {},
   "le-parisien-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/le-parisien-bias/",
     "bias_rating": "RIGHT-CENTER (3.0)",
@@ -74,19 +56,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "huffingtonpost": {},
-  "portal": {},
-  "la-croix": {},
-  "letudiant": {},
-  "sciencespo": {},
-  "etudiant": {},
-  "tempsreel": {},
-  "lexpress": {},
-  "philomag": {},
-  "lopinion": {},
-  "legifrance": {},
-  "lejdd": {},
-  "jeuneafrique": {},
   "gq-magazine": {
     "mbfc_url": "https://mediabiasfactcheck.com/gq-magazine/",
     "bias_rating": "LEFT Factual Reporting",
@@ -107,9 +76,6 @@
     "media_type": "Magazine",
     "traffic_popularity": "High Traffic"
   },
-  "off-investigation": {},
-  "madame": {},
-  "lavoixdunord": {},
   "challenges": {
     "mbfc_url": "https://mediabiasfactcheck.com/challenges/",
     "bias_rating": "PRO-SCIENCE Factual Reporting",
@@ -120,26 +86,6 @@
     "media_type": "Journal",
     "traffic_popularity": "Minimal Traffic"
   },
-  "tf1info": {},
-  "catalogue": {},
-  "france3-regions": {},
-  "rmcsport": {},
-  "medias": {
-    "mbfc_url": "https://mediabiasfactcheck.com/medias/",
-    "bias_rating": "LEAST BIASED",
-    "factual_reporting": "HIGH Launched in",
-    "credibility_rating": "unknown"
-  },
-  "ccomptes": {},
-  "sudouest": {},
-  "web": {
-    "mbfc_url": "https://mediabiasfactcheck.com/web/",
-    "bias_rating": "LEAST BIASED",
-    "factual_reporting": "unknown",
-    "credibility_rating": "unknown"
-  },
-  "nouvelobs": {},
-  "streetpress": {},
   "mediapart-bias-credibility": {
     "mbfc_url": "https://mediabiasfactcheck.com/mediapart-bias-credibility/",
     "bias_rating": "LEFT-CENTER",
@@ -148,5 +94,149 @@
     "country": "France",
     "media_type": "Website",
     "traffic_popularity": "High Traffic"
-  }
+  },
+  "metro-uk": {
+    "mbfc_url": "https://mediabiasfactcheck.com/metro-uk/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED (5.1)",
+    "credibility_rating": "MEDIUM CREDIBILITY",
+    "country": "United Kingdom",
+    "media_type": "Newspaper",
+    "traffic_popularity": "High Traffic"
+  },
+  "rfi-radio-france-internationale": {
+    "mbfc_url": "https://mediabiasfactcheck.com/rfi-radio-france-internationale/",
+    "bias_rating": "LEAST BIASED Factual Reporting",
+    "factual_reporting": "MOSTLY FACTUAL Country",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "media_type": "Radio Station",
+    "traffic_popularity": "High Traffic"
+  },
+  "france24": {
+    "mbfc_url": "https://mediabiasfactcheck.com/france24/",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH (1.0)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "France",
+    "media_type": "TV Station",
+    "traffic_popularity": "High Traffic"
+  },
+  "slate": {
+    "mbfc_url": "https://mediabiasfactcheck.com/slate/",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL (2.7)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "USA",
+    "media_type": "Website",
+    "traffic_popularity": "High Traffic"
+  },
+  "rtl": {
+    "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+    "bias_rating": "LEAST BIASED (1.1)",
+    "factual_reporting": "MOSTLY FACTUAL (2.1)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Radio Station",
+    "traffic_popularity": "High Traffic"
+  },
+  "capital": {
+    "mbfc_url": "https://mediabiasfactcheck.com/capital/",
+    "bias_rating": "RIGHT-CENTER (4.3)",
+    "factual_reporting": "MIXED (6.1)",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "USA",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  },
+  "daily-telegraph": {
+    "mbfc_url": "https://mediabiasfactcheck.com/daily-telegraph/",
+    "bias_rating": "RIGHT (6.4)",
+    "factual_reporting": "MIXED (4.9)",
+    "credibility_rating": "MEDIUM CREDIBILITY",
+    "country": "United Kingdom",
+    "media_type": "Newspaper",
+    "traffic_popularity": "High Traffic"
+  },
+  "education": {
+    "mbfc_url": "https://mediabiasfactcheck.com/education/",
+    "bias_rating": "RIGHT-CENTER Factual Reporting",
+    "factual_reporting": "MIXED Country",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "USA",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  },
+  "afp-agence-france-presse": {
+    "mbfc_url": "https://mediabiasfactcheck.com/afp-agence-france-presse/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH (0.5)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "News Agency",
+    "traffic_popularity": "High Traffic"
+  },
+  "le-monde-diplomatique-bias": {
+    "mbfc_url": "https://mediabiasfactcheck.com/le-monde-diplomatique-bias/",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH (1.5)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Newspaper",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "new-york-times": {
+    "mbfc_url": "https://mediabiasfactcheck.com/new-york-times/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH (1.4)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "USA",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Newspaper",
+    "traffic_popularity": "High Traffic"
+  },
+  "ad": {
+    "mbfc_url": "https://mediabiasfactcheck.com/ad/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED (4.7)",
+    "credibility_rating": "MEDIUM CREDIBILITY",
+    "country": "Sri Lanka",
+    "country_freedom_rating": "MODERATE FREEDOM",
+    "media_type": "Website",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "information": {
+    "mbfc_url": "https://mediabiasfactcheck.com/information/",
+    "bias_rating": "LEFT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
+    "factual_reporting": "MIXED Country",
+    "credibility_rating": "LOW CREDIBILITY",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  },
+  "actu": {
+    "mbfc_url": "https://mediabiasfactcheck.com/actu/",
+    "bias_rating": "PSEUDOSCIENCE",
+    "factual_reporting": "LOW (7.8)",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "USA",
+    "media_type": "Website",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "liberation": {
+    "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL (4.1)",
+    "credibility_rating": "MEDIUM CREDIBILITY",
+    "country": "USA",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  },
+  "whoswho": {},
+  "lepoint": {},
+  "archive": {},
+  "francebleu": {}
 }
