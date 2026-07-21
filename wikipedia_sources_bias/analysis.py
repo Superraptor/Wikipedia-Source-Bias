@@ -994,13 +994,19 @@ def _get_nametrace_prediction(name: str) -> dict[str, Any] | None:
 def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> dict[str, Any]:
     clean_name = author_name.strip()
     
+    # 1. Try nametrace package for comprehensive AI-based gender/origin prediction
     nt_res = _get_nametrace_prediction(clean_name)
-    if nt_res and nt_res.get("is_human"):
-        gender = nt_res.get("gender")
-        subregion = nt_res.get("subregion", "")
-        conf = nt_res.get("confidence", {})
+    if nt_res:
+        is_human = nt_res.get("is_human", True)
+        gender = nt_res.get("gender") or "unknown"
+        subregion = nt_res.get("subregion") or "Unknown"
+        conf = nt_res.get("confidence") or {}
         
-        gender_conf = conf.get("gender", 0.85)
+        # Gender probability mapping safely
+        gender_conf = conf.get("gender")
+        if gender_conf is None or not isinstance(gender_conf, (int, float)):
+            gender_conf = 0.85
+            
         if gender == "male":
             gender_prob = {
                 "male": round(gender_conf, 2),
@@ -1016,6 +1022,7 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
         else:
             gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
             
+        # Region mapping
         region = "Unknown"
         if subregion:
             if "Europe" in subregion:
@@ -1031,7 +1038,10 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
             elif "Middle East" in subregion:
                 region = "Middle East"
                 
-        subregion_conf = conf.get("subregion", 0.70)
+        subregion_conf = conf.get("subregion")
+        if subregion_conf is None or not isinstance(subregion_conf, (int, float)):
+            subregion_conf = 0.70
+            
         nationality_prob = {
             subregion or "Unknown": round(subregion_conf, 2),
             "Unknown": round(1 - subregion_conf, 2)
@@ -1039,19 +1049,37 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
         
         return {
             "name": clean_name,
+            "is_human": is_human,
+            "author_type": "human" if is_human else "corporate/organizational",
+            "gender": gender,
+            "subregion": subregion,
+            "confidence": conf,
             "gender_probability": gender_prob,
             "nationality_probability": nationality_prob,
             "notes": f"Author background estimated using nametrace package (region: {subregion}).",
         }
 
+    # 2. Fallback to offline lexical heuristics
     first_name = clean_name.split()[0].lower() if clean_name.split() else clean_name.lower()
+
+    # Fallback human determination
+    words = clean_name.lower().split()
+    is_human = True
+    stop_words = ["press", "journal", "university", "reuters", "times", "post", "bbc", "news", "society", 
+                  "association", "agency", "office", "department", "ministry", "publications", "service"]
+    if len(words) > 3 or any(w in stop_words for w in words):
+        is_human = False
 
     gender_guess = FIRST_NAME_GENDER.get(first_name, "unknown")
     gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
     if gender_guess == "male":
         gender_prob = {"male": 0.85, "female": 0.05, "unknown": 0.10}
+        gender = "male"
     elif gender_guess == "female":
         gender_prob = {"male": 0.05, "female": 0.85, "unknown": 0.10}
+        gender = "female"
+    else:
+        gender = "unknown"
 
     country = "Unknown"
     region = "Unknown"
@@ -1074,6 +1102,11 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
 
     return {
         "name": clean_name,
+        "is_human": is_human,
+        "author_type": "human" if is_human else "corporate/organizational",
+        "gender": gender,
+        "subregion": region,
+        "confidence": {"human": 0.80, "gender": 0.70, "subregion": 0.60},
         "gender_probability": gender_prob,
         "nationality_probability": nationality_prob,
         "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
@@ -1220,6 +1253,15 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     total_sens_score = 0.0
     opinion_count = 0
 
+    # Human demographics aggregates
+    author_types: dict[str, int] = {"human": 0, "corporate/organizational": 0}
+    human_gender: dict[str, int] = {"male": 0, "female": 0, "unknown": 0}
+    human_subregions: dict[str, int] = {}
+    human_nationalities: dict[str, int] = {}
+    human_citizenships: dict[str, int] = {}
+    human_occupations: dict[str, int] = {}
+
+    # Backward compatibility
     gender_sums = {"male": 0.0, "female": 0.0, "unknown": 0.0}
     authors_analyzed = 0
 
@@ -1254,9 +1296,33 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
 
         author_profiles = s.get("author_profiles", [])
         for auth in author_profiles:
+            auth_type = auth.get("author_type", "human")
+            author_types[auth_type] = author_types.get(auth_type, 0) + 1
+
+            if auth.get("is_human", True):
+                g = auth.get("gender", "unknown")
+                human_gender[g] = human_gender.get(g, 0) + 1
+
+                subr = auth.get("subregion", "Unknown")
+                human_subregions[subr] = human_subregions.get(subr, 0) + 1
+
+                nat_probs = auth.get("nationality_probability", {})
+                if nat_probs:
+                    best_nat = max(nat_probs, key=nat_probs.get)
+                    human_nationalities[best_nat] = human_nationalities.get(best_nat, 0) + 1
+
+                wiki_a = auth.get("wikidata_author", {})
+                if wiki_a:
+                    for cit in wiki_a.get("citizenships", []):
+                        human_citizenships[cit] = human_citizenships.get(cit, 0) + 1
+                    for occ in wiki_a.get("occupations", []):
+                        human_occupations[occ] = human_occupations.get(occ, 0) + 1
+
+            # Backward compatibility sums
             gender_prob = auth.get("gender_probability", {})
-            for g, prob in gender_prob.items():
-                gender_sums[g] = gender_sums.get(g, 0.0) + prob
+            for g_key, prob in gender_prob.items():
+                if prob is not None:
+                    gender_sums[g_key] = gender_sums.get(g_key, 0.0) + prob
             authors_analyzed += 1
 
         readability = s.get("readability", {})
@@ -1270,6 +1336,41 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
         oclc_meta = s.get("oclc_metadata", {})
         if (wikidata_book and wikidata_book.get("wikidata_id")) or (google_books and google_books.get("title")) or (oclc_meta and oclc_meta.get("wikidata_id")):
             book_count += 1
+
+    total_authors = sum(author_types.values())
+    total_human = sum(human_gender.values())
+
+    author_type_dist = {
+        k: {"count": v, "percentage": round(v / total_authors * 100, 1)}
+        for k, v in author_types.items()
+    } if total_authors > 0 else {}
+
+    human_gender_dist = {
+        k: {"count": v, "percentage": round(v / total_human * 100, 1)}
+        for k, v in human_gender.items()
+    } if total_human > 0 else {}
+
+    human_subregion_dist = {
+        k: {"count": v, "percentage": round(v / total_human * 100, 1)}
+        for k, v in human_subregions.items()
+    } if total_human > 0 else {}
+
+    human_nationality_dist = {
+        k: {"count": v, "percentage": round(v / total_human * 100, 1)}
+        for k, v in human_nationalities.items()
+    } if total_human > 0 else {}
+
+    total_citizenships = sum(human_citizenships.values())
+    human_citizenship_dist = {
+        k: {"count": v, "percentage": round(v / total_citizenships * 100, 1)}
+        for k, v in human_citizenships.items()
+    } if total_citizenships > 0 else {}
+
+    total_occupations = sum(human_occupations.values())
+    human_occupation_dist = {
+        k: {"count": v, "percentage": round(v / total_occupations * 100, 1)}
+        for k, v in human_occupations.items()
+    } if total_occupations > 0 else {}
 
     geo_distribution = {c: {"count": val, "percentage": round(val / total_sources * 100, 1)} for c, val in countries.items()}
     region_distribution = {reg: {"count": val, "percentage": round(val / total_sources * 100, 1)} for reg, val in regions.items()}
@@ -1295,6 +1396,12 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
         "language_distribution": language_distribution,
         "source_type_distribution": type_distribution,
         "author_gender_distribution_estimate": gender_distribution,
+        "author_type_distribution": author_type_dist,
+        "human_author_gender_distribution": human_gender_dist,
+        "human_author_subregion_distribution": human_subregion_dist,
+        "human_author_nationality_distribution": human_nationality_dist,
+        "human_author_citizenship_distribution": human_citizenship_dist,
+        "human_author_occupation_distribution": human_occupation_dist,
         "language_bias_metrics": {
             "average_subjectivity_score": round(total_sub_score / total_sources, 2),
             "average_sensationalism_score": round(total_sens_score / total_sources, 2),
@@ -1308,7 +1415,28 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-_mbfc_cache: dict[str, dict[str, Any]] = {}
+import os
+import time
+
+CACHE_FILE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mbfc_cache.json")
+
+def _load_mbfc_cache() -> dict[str, dict[str, Any]]:
+    if os.path.exists(CACHE_FILE_PATH):
+        try:
+            with open(CACHE_FILE_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+def _save_mbfc_cache(cache: dict[str, dict[str, Any]]):
+    try:
+        with open(CACHE_FILE_PATH, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+_mbfc_cache: dict[str, dict[str, Any]] = _load_mbfc_cache()
 
 LOCAL_MBFC_RATINGS = {
     "le-point": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
@@ -1339,6 +1467,9 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
     if slug in _mbfc_cache:
         return _mbfc_cache[slug]
         
+    # Introduce rate-limiting delay before outgoing request to be respectful
+    time.sleep(1.0)
+    
     candidates = [
         f"https://mediabiasfactcheck.com/{slug}-bias-and-credibility/",
         f"https://mediabiasfactcheck.com/{slug}/",
@@ -1357,6 +1488,7 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
             pass
             
         if not html:
+            time.sleep(0.5)
             try:
                 api_url = f"https://archive.org/wayback/available?url={url}"
                 api_res = requests.get(api_url, timeout=3)
@@ -1378,7 +1510,7 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
                 
                 bias_match = re.search(r"Bias Rating:\s*([a-zA-Z\-\s]+?)(?=\s*(?:Factual|Credibility|\.|$))", page_text, re.I)
                 factual_match = re.search(r"Factual Reporting:\s*([a-zA-Z\s]+?)(?=\s*(?:Bias|Credibility|\.|$))", page_text, re.I)
-                credibility_match = re.search(r"Credibility Rating:\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias|Factual|\.|$))", page_text, re.I)
+                credibility_match = re.search(r"MBFC Credibility Rating:\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias|Factual|\.|$))", page_text, re.I)
                 
                 bias_val = bias_match.group(1).strip() if bias_match else "unknown"
                 factual_val = factual_match.group(1).strip() if factual_match else "unknown"
@@ -1401,10 +1533,14 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
                         "credibility_rating": credibility_val,
                     }
                     _mbfc_cache[slug] = res
+                    _save_mbfc_cache(_mbfc_cache)
                     return res
             except Exception:
                 pass
                 
+    # Cache negative lookup as empty dict to avoid repeatedly querying invalid domains
+    _mbfc_cache[slug] = {}
+    _save_mbfc_cache(_mbfc_cache)
     return {}
 
 
@@ -1604,6 +1740,36 @@ def render_report(analysis: dict[str, Any]) -> str:
         gender_lines.append(f"     - {gender}: {pct}%")
     gender_str = "\n".join(gender_lines) if gender_lines else "     - No authors identified"
 
+    type_lines = []
+    for k, data in agg.get("author_type_distribution", {}).items():
+        type_lines.append(f"     - {k.capitalize()}: {data['count']} ({data['percentage']}%)")
+    type_str = "\n".join(type_lines) if type_lines else "     - None"
+
+    h_gender_lines = []
+    for k, data in agg.get("human_author_gender_distribution", {}).items():
+        h_gender_lines.append(f"     - {k.capitalize()}: {data['count']} ({data['percentage']}%)")
+    h_gender_str = "\n".join(h_gender_lines) if h_gender_lines else "     - None"
+
+    h_subregion_lines = []
+    for k, data in agg.get("human_author_subregion_distribution", {}).items():
+        h_subregion_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_subregion_str = "\n".join(h_subregion_lines) if h_subregion_lines else "     - None"
+
+    h_nat_lines = []
+    for k, data in agg.get("human_author_nationality_distribution", {}).items():
+        h_nat_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_nat_str = "\n".join(h_nat_lines) if h_nat_lines else "     - None"
+
+    h_cit_lines = []
+    for k, data in agg.get("human_author_citizenship_distribution", {}).items():
+        h_cit_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_cit_str = "\n".join(h_cit_lines) if h_cit_lines else "     - None"
+
+    h_occ_lines = []
+    for k, data in agg.get("human_author_occupation_distribution", {}).items():
+        h_occ_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_occ_str = "\n".join(h_occ_lines) if h_occ_lines else "     - None"
+
     lang_dist_lines = []
     for lang, data in agg.get("language_distribution", {}).items():
         lang_dist_lines.append(f"     - {lang}: {data['count']} ({data['percentage']}%)")
@@ -1634,8 +1800,26 @@ def render_report(analysis: dict[str, Any]) -> str:
         f"3. Source Reliability Mix:",
         rel_str,
         "",
-        f"4. Estimated Author Gender Mix:",
+        f"4. Estimated Author Gender Mix (Probability-weighted):",
         gender_str,
+        "",
+        f"4b. Author Type Mix (Human vs Corporate):",
+        type_str,
+        "",
+        f"4c. Human Author Gender Distribution:",
+        h_gender_str,
+        "",
+        f"4d. Human Author Subregion Distribution:",
+        h_subregion_str,
+        "",
+        f"4e. Human Author Country/Nationality Heuristic Distribution:",
+        h_nat_str,
+        "",
+        f"4f. Human Author Citizenship Distribution (Wikidata):",
+        h_cit_str,
+        "",
+        f"4g. Human Author Occupation Distribution (Wikidata):",
+        h_occ_str,
         "",
         f"5. Citation Language Bias Averages:",
         f"     - Avg Subjectivity Score:   {lang_metrics.get('average_subjectivity_score', 0.0)} (0.0 to 1.0)",
@@ -1668,9 +1852,20 @@ def render_report(analysis: dict[str, Any]) -> str:
         author_profiles = source.get("author_profiles", [])
         author_strs = []
         for a in author_profiles:
-            nationality_str = ", ".join(f"{k} ({round(v*100)}%)" for k, v in a.get("nationality_probability", {}).items())
-            gender_str_detail = ", ".join(f"{k} ({round(v*100)}%)" for k, v in a.get("gender_probability", {}).items() if v > 0.1)
+            nationality_str = ", ".join(f"{k} ({round(v*100) if isinstance(v, (int, float)) else 'N/A'}%)" for k, v in a.get("nationality_probability", {}).items())
+            gender_str_detail = ", ".join(f"{k} ({round(v*100) if isinstance(v, (int, float)) else 'N/A'}%)" for k, v in a.get("gender_probability", {}).items() if v is not None and v > 0.1)
             
+            nt_details = []
+            if a.get("author_type"):
+                nt_details.append(f"Type: {a['author_type']}")
+            if a.get("subregion"):
+                nt_details.append(f"Subregion: {a['subregion']}")
+            conf = a.get("confidence") or {}
+            conf_str = ", ".join(f"{k}: {round(v, 2) if isinstance(v, (int, float)) else 'N/A'}" for k, v in conf.items())
+            if conf_str:
+                nt_details.append(f"Confidence [{conf_str}]")
+            nt_str = f" [Predict: {'; '.join(nt_details)}]" if nt_details else ""
+
             wiki_a = a.get("wikidata_author", {})
             gt_parts = []
             if wiki_a.get("wikidata_id"):
@@ -1685,7 +1880,7 @@ def render_report(analysis: dict[str, Any]) -> str:
                     gt_parts.append(f"Occupations: {', '.join(wiki_a['occupations'])}")
                     
             gt_str = f" [GT: {'; '.join(gt_parts)}]" if gt_parts else ""
-            author_strs.append(f"{a['name']} [Gender: {gender_str_detail} | Est. Nationality: {nationality_str}]{gt_str}")
+            author_strs.append(f"{a['name']} [Gender: {gender_str_detail} | Est. Nationality: {nationality_str}]{nt_str}{gt_str}")
             
         author_val = "; ".join(author_strs) if author_strs else "unknown"
 
