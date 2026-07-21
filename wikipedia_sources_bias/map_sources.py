@@ -61,14 +61,19 @@ def main() -> None:
         sys.exit(1)
 
     features = []
+    country_counts = {}
     
-    for s in data.get("sources", []):
+    sources = data.get("sources", [])
+    total_srcs = len(sources)
+
+    for s in sources:
         geo = s.get("geography", {})
         country = geo.get("country", "Unknown")
         region = geo.get("region", "Unknown")
         
         # Split combined countries (e.g. "France, United Kingdom" -> "France")
         primary_country = country.split(",")[0].strip() if country else "Unknown"
+        country_counts[primary_country] = country_counts.get(primary_country, 0) + 1
         
         coords = COUNTRY_COORDINATES.get(primary_country)
         if not coords:
@@ -111,11 +116,31 @@ def main() -> None:
         }
         features.append(feature)
 
+    # Build country-level features for heatmaps
+    country_features = []
+    for cname, count in country_counts.items():
+        coords = COUNTRY_COORDINATES.get(cname)
+        if not coords:
+            coords = [0.0, 0.0]
+        country_features.append({
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [coords[1], coords[0]]
+            },
+            "properties": {
+                "country": cname,
+                "source_count": count,
+                "percentage": round(count / total_srcs * 100, 1) if total_srcs > 0 else 0.0
+            }
+        })
+
     geojson = {
         "type": "FeatureCollection",
         "page_title": data.get("page_title"),
         "page_url": data.get("page_url"),
-        "features": features
+        "features": features,
+        "country_features": country_features
     }
 
     try:

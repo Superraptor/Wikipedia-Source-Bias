@@ -291,13 +291,16 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         return {}
 
     query = f"""
-    SELECT ?genderLabel ?citizenshipLabel ?partyLabel ?occupationLabel ?employerLabel WHERE {{
+    SELECT ?genderLabel ?citizenshipLabel ?partyLabel ?occupationLabel ?employerLabel ?employerCountryLabel WHERE {{
       BIND(wd:{entity_id} AS ?author)
       OPTIONAL {{ ?author wdt:P21 ?gender. }}
       OPTIONAL {{ ?author wdt:P27 ?citizenship. }}
       OPTIONAL {{ ?author wdt:P102 ?party. }}
       OPTIONAL {{ ?author wdt:P106 ?occupation. }}
-      OPTIONAL {{ ?author wdt:P108 ?employer. }}
+      OPTIONAL {{ 
+        ?author wdt:P108 ?employer.
+        OPTIONAL {{ ?employer wdt:P17 ?employerCountry. }}
+      }}
       SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
     }}
     """
@@ -307,14 +310,18 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
     citizenship = set()
     party = set()
     occupation = set()
-    employer = set()
+    employers = {}
     
     for r in rows:
         if r.get("genderLabel"): gender.add(r["genderLabel"])
         if r.get("citizenshipLabel"): citizenship.add(r["citizenshipLabel"])
         if r.get("partyLabel"): party.add(r["partyLabel"])
         if r.get("occupationLabel"): occupation.add(r["occupationLabel"])
-        if r.get("employerLabel"): employer.add(r["employerLabel"])
+        
+        emp_name = r.get("employerLabel")
+        if emp_name:
+            emp_country = r.get("employerCountryLabel") or "Unknown"
+            employers[emp_name] = emp_country
         
     return {
         "wikidata_id": entity_id,
@@ -323,7 +330,7 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         "citizenships": sorted(list(citizenship)),
         "political_parties": sorted(list(party)),
         "occupations": sorted(list(occupation)),
-        "employers": sorted(list(employer)),
+        "employers": [{"name": k, "country": v} for k, v in employers.items()],
     }
 
 
@@ -1260,6 +1267,8 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     human_nationalities: dict[str, int] = {}
     human_citizenships: dict[str, int] = {}
     human_occupations: dict[str, int] = {}
+    human_employers: dict[str, int] = {}
+    human_employer_countries: dict[str, int] = {}
 
     # Backward compatibility
     gender_sums = {"male": 0.0, "female": 0.0, "unknown": 0.0}
@@ -1317,6 +1326,13 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
                         human_citizenships[cit] = human_citizenships.get(cit, 0) + 1
                     for occ in wiki_a.get("occupations", []):
                         human_occupations[occ] = human_occupations.get(occ, 0) + 1
+                    for emp in wiki_a.get("employers", []):
+                        emp_name = emp.get("name")
+                        emp_country = emp.get("country", "Unknown")
+                        if emp_name:
+                            human_employers[emp_name] = human_employers.get(emp_name, 0) + 1
+                        if emp_country:
+                            human_employer_countries[emp_country] = human_employer_countries.get(emp_country, 0) + 1
 
             # Backward compatibility sums
             gender_prob = auth.get("gender_probability", {})
@@ -1372,6 +1388,18 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
         for k, v in human_occupations.items()
     } if total_occupations > 0 else {}
 
+    total_employers = sum(human_employers.values())
+    human_employer_dist = {
+        k: {"count": v, "percentage": round(v / total_employers * 100, 1)}
+        for k, v in human_employers.items()
+    } if total_employers > 0 else {}
+
+    total_emp_countries = sum(human_employer_countries.values())
+    human_employer_country_dist = {
+        k: {"count": v, "percentage": round(v / total_emp_countries * 100, 1)}
+        for k, v in human_employer_countries.items()
+    } if total_emp_countries > 0 else {}
+
     geo_distribution = {c: {"count": val, "percentage": round(val / total_sources * 100, 1)} for c, val in countries.items()}
     region_distribution = {reg: {"count": val, "percentage": round(val / total_sources * 100, 1)} for reg, val in regions.items()}
     political_leaning_distribution = {pol: {"count": val, "percentage": round(val / total_sources * 100, 1)} for pol, val in political.items()}
@@ -1402,6 +1430,8 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
         "human_author_nationality_distribution": human_nationality_dist,
         "human_author_citizenship_distribution": human_citizenship_dist,
         "human_author_occupation_distribution": human_occupation_dist,
+        "human_author_employer_distribution": human_employer_dist,
+        "human_author_employer_country_distribution": human_employer_country_dist,
         "language_bias_metrics": {
             "average_subjectivity_score": round(total_sub_score / total_sources, 2),
             "average_sensationalism_score": round(total_sens_score / total_sources, 2),
@@ -1424,7 +1454,12 @@ def _load_mbfc_cache() -> dict[str, dict[str, Any]]:
     if os.path.exists(CACHE_FILE_PATH):
         try:
             with open(CACHE_FILE_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
+                data = json.load(f)
+                # Filter out stale/incorrect/empty cache lookups to force a clean re-fetch with new regex
+                return {
+                    k: v for k, v in data.items() 
+                    if v and v.get("credibility_rating") != "unknown" and len(v.get("credibility_rating", "")) > 3
+                }
         except Exception:
             pass
     return {}
@@ -1508,33 +1543,49 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
                 soup = BeautifulSoup(html, "html.parser")
                 page_text = soup.get_text(" ", strip=True)
                 
-                bias_match = re.search(r"Bias Rating:\s*([a-zA-Z\-\s]+?)(?=\s*(?:Factual|Credibility|\.|$))", page_text, re.I)
-                factual_match = re.search(r"Factual Reporting:\s*([a-zA-Z\s]+?)(?=\s*(?:Bias|Credibility|\.|$))", page_text, re.I)
-                credibility_match = re.search(r"MBFC Credibility Rating:\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias|Factual|\.|$))", page_text, re.I)
+                bias_match = re.search(r"Bias Rating:\s*([a-zA-Z\-\/\s]+(?:\s*\([\d\.]+\))?)", page_text, re.I)
+                factual_match = re.search(r"Factual Reporting:\s*([a-zA-Z\-\/\s]+(?:\s*\([\d\.]+\))?)", page_text, re.I)
+                credibility_match = re.search(r"(?:MBFC )?Credibility Rating:\s*([a-zA-Z\s\-]+credibility)", page_text, re.I)
+                country_match = re.search(r"Country:\s*([a-zA-Z\s\-\/\(\),]+?)(?=\s*(?:Bias Rating|Factual Reporting|MBFC|Media Type|Traffic|Credibility|Ad Fontes|Detailed Report|Sources|Notes|$))", page_text, re.I)
+                freedom_match = re.search(r"(?:MBFC[’'s\s]+)?Country Freedom Rating:\s*([a-zA-Z\s]+?)(?=\s*(?:Bias Rating|Factual Reporting|Country|Media Type|Traffic|Credibility|Ad Fontes|Detailed Report|Sources|Notes|$))", page_text, re.I)
+                media_match = re.search(r"Media Type:\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias Rating|Factual Reporting|Country|MBFC|Traffic|Credibility|Ad Fontes|Detailed Report|Sources|Notes|$))", page_text, re.I)
+                traffic_match = re.search(r"(?:Traffic/Popularity|Traffic):\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias Rating|Factual Reporting|Country|MBFC|Media Type|Credibility|Ad Fontes|Detailed Report|Sources|Notes|$))", page_text, re.I)
                 
-                bias_val = bias_match.group(1).strip() if bias_match else "unknown"
-                factual_val = factual_match.group(1).strip() if factual_match else "unknown"
-                credibility_val = credibility_match.group(1).strip() if credibility_match else "unknown"
+                bias_val = bias_match.group(1).strip().rstrip(".") if bias_match else "unknown"
+                factual_val = factual_match.group(1).strip().rstrip(".") if factual_match else "unknown"
+                credibility_val = credibility_match.group(1).strip().rstrip(".") if credibility_match else "unknown"
+                country_val = country_match.group(1).strip().rstrip(".") if country_match else None
+                freedom_val = freedom_match.group(1).strip().rstrip(".") if freedom_match else None
+                media_val = media_match.group(1).strip().rstrip(".") if media_match else None
+                traffic_val = traffic_match.group(1).strip().rstrip(".") if traffic_match else None
                 
                 if bias_val == "unknown":
                     b_m = re.search(r"\b(left|left-center|least biased|right-center|right|conspiracy/pseudoscience|pro-science|questionable-source)\b", page_text.lower())
                     if b_m:
-                        bias_val = b_m.group(0).capitalize()
+                        bias_val = b_m.group(0).upper()
                 if factual_val == "unknown":
                     f_m = re.search(r"\b(high|very high|mostly factual|mixed|low|very low)\b", page_text.lower())
                     if f_m:
-                        factual_val = f_m.group(0).capitalize()
+                        factual_val = f_m.group(0).upper()
                         
-                if len(bias_val) < 40 and len(factual_val) < 40:
-                    res = {
-                        "mbfc_url": url,
-                        "bias_rating": bias_val,
-                        "factual_reporting": factual_val,
-                        "credibility_rating": credibility_val,
-                    }
-                    _mbfc_cache[slug] = res
-                    _save_mbfc_cache(_mbfc_cache)
-                    return res
+                res = {
+                    "mbfc_url": url,
+                    "bias_rating": bias_val,
+                    "factual_reporting": factual_val,
+                    "credibility_rating": credibility_val,
+                }
+                if country_val:
+                    res["country"] = country_val
+                if freedom_val:
+                    res["country_freedom_rating"] = freedom_val
+                if media_val:
+                    res["media_type"] = media_val
+                if traffic_val:
+                    res["traffic_popularity"] = traffic_val
+                    
+                _mbfc_cache[slug] = res
+                _save_mbfc_cache(_mbfc_cache)
+                return res
             except Exception:
                 pass
                 
@@ -1770,10 +1821,25 @@ def render_report(analysis: dict[str, Any]) -> str:
         h_occ_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
     h_occ_str = "\n".join(h_occ_lines) if h_occ_lines else "     - None"
 
+    h_emp_lines = []
+    for k, data in agg.get("human_author_employer_distribution", {}).items():
+        h_emp_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_emp_str = "\n".join(h_emp_lines) if h_emp_lines else "     - None"
+
+    h_emp_country_lines = []
+    for k, data in agg.get("human_author_employer_country_distribution", {}).items():
+        h_emp_country_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    h_emp_country_str = "\n".join(h_emp_country_lines) if h_emp_country_lines else "     - None"
+
     lang_dist_lines = []
     for lang, data in agg.get("language_distribution", {}).items():
         lang_dist_lines.append(f"     - {lang}: {data['count']} ({data['percentage']}%)")
     lang_dist_str = "\n".join(lang_dist_lines) if lang_dist_lines else "     - None"
+
+    source_type_lines = []
+    for k, data in agg.get("source_type_distribution", {}).items():
+        source_type_lines.append(f"     - {k}: {data['count']} ({data['percentage']}%)")
+    source_type_str = "\n".join(source_type_lines) if source_type_lines else "     - None"
 
     lang_metrics = agg.get("language_bias_metrics", {})
     readability_metrics = agg.get("readability_metrics", {})
@@ -1821,6 +1887,12 @@ def render_report(analysis: dict[str, Any]) -> str:
         f"4g. Human Author Occupation Distribution (Wikidata):",
         h_occ_str,
         "",
+        f"4h. Human Author Employer Affiliations (Wikidata):",
+        h_emp_str,
+        "",
+        f"4i. Human Author Employer Countries (Wikidata):",
+        h_emp_country_str,
+        "",
         f"5. Citation Language Bias Averages:",
         f"     - Avg Subjectivity Score:   {lang_metrics.get('average_subjectivity_score', 0.0)} (0.0 to 1.0)",
         f"     - Avg Sensationalism Score: {lang_metrics.get('average_sensationalism_score', 0.0)} (0.0 to 1.0)",
@@ -1832,6 +1904,9 @@ def render_report(analysis: dict[str, Any]) -> str:
         "",
         f"7. Source Language Distribution:",
         lang_dist_str,
+        "",
+        f"8. Source Type Distribution:",
+        source_type_str,
         "",
         f"--------------------------------------------------",
         f" DETAILED SOURCE ANALYSIS",
@@ -1878,6 +1953,9 @@ def render_report(analysis: dict[str, Any]) -> str:
                     gt_parts.append(f"Parties: {', '.join(wiki_a['political_parties'])}")
                 if wiki_a.get("occupations"):
                     gt_parts.append(f"Occupations: {', '.join(wiki_a['occupations'])}")
+                if wiki_a.get("employers"):
+                    emp_strs = [f"{e['name']} ({e['country']})" for e in wiki_a["employers"]]
+                    gt_parts.append(f"Employers: {', '.join(emp_strs)}")
                     
             gt_str = f" [GT: {'; '.join(gt_parts)}]" if gt_parts else ""
             author_strs.append(f"{a['name']} [Gender: {gender_str_detail} | Est. Nationality: {nationality_str}]{nt_str}{gt_str}")
@@ -1899,11 +1977,22 @@ def render_report(analysis: dict[str, Any]) -> str:
 
         mbfc_str = ""
         if mbfc_info.get("mbfc_url"):
-            mbfc_str = (
-                f" (MBFC Bias: {mbfc_info.get('bias_rating')}; "
-                f"Factuality: {mbfc_info.get('factual_reporting')}; "
-                f"Credibility: {mbfc_info.get('credibility_rating')})"
-            )
+            mbfc_parts = []
+            if mbfc_info.get("bias_rating"):
+                mbfc_parts.append(f"Bias: {mbfc_info.get('bias_rating')}")
+            if mbfc_info.get("factual_reporting"):
+                mbfc_parts.append(f"Factuality: {mbfc_info.get('factual_reporting')}")
+            if mbfc_info.get("credibility_rating"):
+                mbfc_parts.append(f"Credibility: {mbfc_info.get('credibility_rating')}")
+            if mbfc_info.get("country"):
+                mbfc_parts.append(f"Country: {mbfc_info.get('country')}")
+            if mbfc_info.get("country_freedom_rating"):
+                mbfc_parts.append(f"Freedom: {mbfc_info.get('country_freedom_rating')}")
+            if mbfc_info.get("media_type"):
+                mbfc_parts.append(f"Type: {mbfc_info.get('media_type')}")
+            if mbfc_info.get("traffic_popularity"):
+                mbfc_parts.append(f"Traffic: {mbfc_info.get('traffic_popularity')}")
+            mbfc_str = f" (MBFC {'; '.join(mbfc_parts)})"
 
         book_details = ""
         if wiki_book.get("wikidata_id"):

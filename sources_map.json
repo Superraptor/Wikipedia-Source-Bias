@@ -1,0 +1,164 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Emmanuel_Macron",
+  "page_url": "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://whoswho.de/bio/emmanuel-macron.html",
+        "domain": "whoswho.de",
+        "publisher_name": "whoswho.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/politique/emmanuel-macron-n-a-pas-paye-sa-cotisation-au-ps-depuis-2009-29-08-2014-1858346_20.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/actualite-france/2018/06/25/01016-20180625ARTFIG00320-emmanuel-macron-un-agnostique-baptise.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "Least biased",
+          "factual_reporting": "High",
+          "credibility_rating": "H"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://archive.is/yL1lg",
+        "domain": "archive.is",
+        "publisher_name": "Q13515725",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.francebleu.fr/infos/ministre/emmanuel-macron-ministre-un-amienois-bercy-1723899",
+        "domain": "francebleu.fr",
+        "publisher_name": "France Bleu",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "country": "Germany",
+        "source_count": 1,
+        "percentage": 20.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 3,
+        "percentage": 60.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "country": "Unknown",
+        "source_count": 1,
+        "percentage": 20.0
+      }
+    }
+  ]
+}
