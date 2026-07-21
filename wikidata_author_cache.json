@@ -1,0 +1,21 @@
+{
+  "NonExistentAuthorXYZ123": {},
+  "AFP": {
+    "wikidata_id": "Q40464",
+    "wikidata_name": "Agence France-Presse",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Le_Figaro": {
+    "wikidata_id": "Q216047",
+    "wikidata_name": "Le Figaro",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "nonexistentdomainxyz.xyz": {},
+  "whoswho.de": {},
+  "lepoint.fr": {
+    "wikidata_id": "Q115553783",
+    "wikidata_name": "lePoint.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "centre-right"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe Artémis",
+      "Le Point"
+    ],
+    "types": [
+      "digital newspaper",
+      "news magazine",
+      "official website",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lefigaro.fr": {
+    "wikidata_id": "Q216047",
+    "wikidata_name": "Le Figaro",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "conservatism"
+    ],
+    "owners": [
+      "Dassault Group",
+      "François Coty",
+      "Robert Hersant"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": "le-figaro-bias"
+  },
+  "archive.is": {},
+  "francebleu.fr": {
+    "wikidata_id": "Q19906",
+    "wikidata_name": "France Bleu",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Radio France"
+    ],
+    "types": [
+      "news website",
+      "radio network"
+    ],
+    "mbfc_id": null
+  }
+}

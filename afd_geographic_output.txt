@@ -1,0 +1,4959 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Alternative_pour_l%27Allemagne",
+  "page_url": "https://fr.wikipedia.org/wiki/Alternative_pour_l%27Allemagne",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.ouest-france.fr/europe/allemagne/neonazi-populiste-ou-d-extreme-droite-comment-qualifier-l-afd-le-sulfureux-parti-politique-allemand-6501060",
+        "domain": "ouest-france.fr",
+        "publisher_name": "ouest-france.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/en/international/article/2024/01/11/leaders-of-germany-s-far-right-afd-party-are-considering-mass-expulsion-of-germans-of-foreign-origin_6422332_4.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.courrierinternational.com/article/allemagne-lafd-plus-dangereuse-que-les-neonazis",
+        "domain": "courrierinternational.com",
+        "publisher_name": "courrierinternational.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceculture/podcasts/cultures-monde/afd-et-le-nazisme-la-strategie-de-l-ambiguite-4892713",
+        "domain": "radiofrance.fr",
+        "publisher_name": "radiofrance.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-68931170",
+        "domain": "bbc.com",
+        "publisher_name": "bbc.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=uiklDwAAQBAJ&pg=PA6",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2024/12/20/world/europe/elon-musk-afd-germany.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/commentisfree/2025/jan/08/elon-musk-political-influence-global",
+        "domain": "theguardian.com",
+        "publisher_name": "theguardian.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.slate.fr/story/154991/sources-oubliees-afd-la-revolution-conservatrice",
+        "domain": "slate.fr",
+        "publisher_name": "slate.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2017/01/18/world/europe/germany-afd-alternative-bjorn-hocke.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.du.edu/korbel/ceuce/media/documents/abenheim-afd-full-interview-11-2016.pdf",
+        "domain": "du.edu",
+        "publisher_name": "du.edu",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.spiegel.de/international/germany/interview-with-frauke-petry-of-the-alternative-for-germany-a-1084493.html",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.thesundaytimes.co.uk/sto/news/world_news/Europe/article1230744.ece",
+        "domain": "thesundaytimes.co.uk",
+        "publisher_name": "thesundaytimes.co.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.alternativefuer.de/pdf/Wahlprogramm-AFD.pdf",
+        "domain": "alternativefuer.de",
+        "publisher_name": "alternativefuer.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.savethearchive.com/NewsLeaders",
+        "domain": "savethearchive.com",
+        "publisher_name": "savethearchive.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://archive.wikiwix.com/cache/?url=https://www.alternativefuer.de/pdf/Wahlprogramm-AFD.pdf",
+        "domain": "archive.wikiwix.com",
+        "publisher_name": "archive.wikiwix.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://webcache.googleusercontent.com/search?hl=fr&q=cache:https://www.alternativefuer.de/pdf/Wahlprogramm-AFD.pdf",
+        "domain": "webcache.googleusercontent.com",
+        "publisher_name": "webcache.googleusercontent.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bundeswahlleiter.de/info/presse/mitteilungen/bundestagswahl-2013/2013-10-09-endgueltiges-amtliches-ergebnis-der-bundestagswahl-2013.html",
+        "domain": "bundeswahlleiter.de",
+        "publisher_name": "bundeswahlleiter.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=I0MTBwAAQBAJ&pg=PT61",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=MWBYBAAAQBAJ&pg=PA283",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=bnYGCAAAQBAJ&pg=PT23",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-37274201",
+        "domain": "bbc.com",
+        "publisher_name": "bbc.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.timesofisrael.com/anti-migrant-anti-muslim-and-anti-merkel-germanys-afd-set-to-enter-parliament/",
+        "domain": "timesofisrael.com",
+        "publisher_name": "timesofisrael.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnbc.com/2017/09/25/germany-far-right-afd-party-5-things-you-need-to-know.html",
+        "domain": "cnbc.com",
+        "publisher_name": "cnbc.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/news/monkey-cage/wp/2017/09/25/the-anti-muslim-afd-just-scored-big-in-germanys-election-what-does-this-mean-for-german-muslims/",
+        "domain": "washingtonpost.com",
+        "publisher_name": "washingtonpost.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.1080/09644008.2016.1184650",
+        "domain": "dx.doi.org",
+        "publisher_name": "dx.doi.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://api.semanticscholar.org/CorpusID:156431715",
+        "domain": "api.semanticscholar.org",
+        "publisher_name": "api.semanticscholar.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.aljazeera.com/news/2017/12/thousands-rally-hanover-anti-islam-afd-party-171202162331260.html",
+        "domain": "aljazeera.com",
+        "publisher_name": "aljazeera.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.newsweek.com/germany-afd-election-669994",
+        "domain": "newsweek.com",
+        "publisher_name": "newsweek.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.theatlantic.com/international/archive/2016/05/afd-germany-anti-immigration/484700/",
+        "domain": "theatlantic.com",
+        "publisher_name": "theatlantic.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-41094785",
+        "domain": "bbc.com",
+        "publisher_name": "bbc.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=_mLBCAAAQBAJ&pg=PA166",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=_mLBCAAAQBAJ&pg=PA8",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=00i8DwAAQBAJ&pg=PT115",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=FDVzAwAAQBAJ&pg=PA532",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=YKSgAwAAQBAJ&pg=PA13",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=kXXfBQAAQBAJ&pg=PA580",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=prS6BwAAQBAJ&pg=PA135",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/world/commentisfree/2020/mar/18/climate-change-denial-germany-far-right-afd",
+        "domain": "theguardian.com",
+        "publisher_name": "theguardian.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.spiegel.de/international/germany/afd-seeks-votes-by-opposing-climate-protection-a-1265494.html",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2021/03/03/world/europe/germany-afd-surveillance-extremism.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.e-ir.info/2021/04/21/the-utilisation-of-historically-revisionist-narratives-by-the-fpo-and-the-afd/",
+        "domain": "e-ir.info",
+        "publisher_name": "e-ir.info",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.irishtimes.com/news/world/europe/afd-embraces-pegida-ahead-of-german-election-1.3226952",
+        "domain": "irishtimes.com",
+        "publisher_name": "irishtimes.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.theatlantic.com/international/archive/2017/09/leipzig-versus-dresden-and-the-battle-for-east-german-identity/540831/",
+        "domain": "theatlantic.com",
+        "publisher_name": "theatlantic.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/article/us-germany-election-afd/waving-german-flag-far-right-and-anti-islam-groups-rally-together-before-vote-idUSKCN1BU1GQ",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.spiegel.de/politik/deutschland/verfassungsschutz-darf-afd-als-verdachtsfall-beobachten-a-b4061d12-da2c-4e6c-ba24-956c837eaf53",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.aljazeera.com/news/2019/7/12/germanys-far-right-afd-party-tearing-itself-apart",
+        "domain": "aljazeera.com",
+        "publisher_name": "aljazeera.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-vorsitz-meuthen-101.html",
+        "domain": "tagesschau.de",
+        "publisher_name": "tagesschau.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.co.uk/news/world-europe-56250460",
+        "domain": "bbc.co.uk",
+        "publisher_name": "bbc.co.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.dw.com/en/germany-places-entire-far-right-afd-under-surveillance-reports/a-56757489",
+        "domain": "dw.com",
+        "publisher_name": "dw.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.ft.com/content/53f12c7e-8bd8-4f3b-8ab3-9b0e508b5008",
+        "domain": "ft.com",
+        "publisher_name": "ft.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.thelocal.de/20210305/german-court-blocks-surveillance-of-far-right-afd/",
+        "domain": "thelocal.de",
+        "publisher_name": "thelocal.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.dw.com/en/german-court-suspends-surveillance-of-far-right-afd-for-now/a-56785125",
+        "domain": "dw.com",
+        "publisher_name": "dw.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/economie-politique/monde/actu/0202626511361-en-allemagne-un-nouveau-parti-demande-la-sortie-de-l-euro-544916.php",
+        "domain": "lesechos.fr",
+        "publisher_name": "lesechos.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/monde/2013/04/10/les-eurosceptiques-allemands-font-leur-parti_895291",
+        "domain": "liberation.fr",
+        "publisher_name": "liberation.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.latribune.fr/bourse/devises-forex/20130305trib000752331/l-allemagne-aussi-cede-a-l-euro-scepticisme-avec-l-aggravation-de-la-crise.html",
+        "domain": "latribune.fr",
+        "publisher_name": "latribune.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/mon-figaro/2013/04/21/10001-20130421ARTFIG00132-l-allemagne-peut-elle-se-passer-de-l-europe.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.monde-diplomatique.fr/2015/05/VIDAL/52918",
+        "domain": "monde-diplomatique.fr",
+        "publisher_name": "monde-diplomatique.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2013/03/05/les-eurosceptiques-allemands-se-lancent-en-politique_1842823_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.dw.de/surprise-surprise/a-16744603/",
+        "domain": "dw.de",
+        "publisher_name": "dw.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lexpress.fr/actualite/monde/l-allemagne-et-merkel-doivent-compter-avec-un-nouveau-parti-anti-euro_1233030.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "lexpress.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.euractiv.fr/institutions/analyse/euroscepticisme-touche-t-il-allemagne-18344.html",
+        "domain": "euractiv.fr",
+        "publisher_name": "euractiv.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/actualite/monde/europe/allemagne-le-trio-de-l-extreme-droite_1954955.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "lexpress.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.spiegel.de/politik/deutschland/alternative-fuer-deutschland-gruendet-sich-und-beschliesst-programm-a-894277.html",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.n-tv.de/politik/AfD-zaehlt-2800-Ueberlaeufer-article10590971.html",
+        "domain": "n-tv.de",
+        "publisher_name": "n-tv.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.alternativefuer.de/wp-content/uploads/2014/03/AfD_Kompakt_02_14.pdf",
+        "domain": "alternativefuer.de",
+        "publisher_name": "alternativefuer.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.savethearchive.com/NewsLeaders",
+        "domain": "savethearchive.com",
+        "publisher_name": "savethearchive.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://archive.wikiwix.com/cache/?url=https://www.alternativefuer.de/wp-content/uploads/2014/03/AfD_Kompakt_02_14.pdf",
+        "domain": "archive.wikiwix.com",
+        "publisher_name": "archive.wikiwix.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://webcache.googleusercontent.com/search?hl=fr&q=cache:https://www.alternativefuer.de/wp-content/uploads/2014/03/AfD_Kompakt_02_14.pdf",
+        "domain": "webcache.googleusercontent.com",
+        "publisher_name": "webcache.googleusercontent.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.bundestag.de/bundestag/parteienfinanzierung/festsetz_staatl_mittel",
+        "domain": "bundestag.de",
+        "publisher_name": "bundestag.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.spiegel.de/international/germany/anti-euro-party-alternative-for-germany-a-growing-problem-for-merkel-a-899803.html",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.defenddemocracy.org/media-hit/the-rise-of-germanys-tea-party/",
+        "domain": "defenddemocracy.org",
+        "publisher_name": "defenddemocracy.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2013/04/12/01003-20130412ARTFIG00613-l-allemagne-se-dote-d-un-parti-eurosceptique.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.challenges.fr/monde/20130414.CHA8345/ce-nouveau-parti-qui-veut-seduire-les-allemands-hostiles-a-l-euro.html",
+        "domain": "challenges.fr",
+        "publisher_name": "challenges.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.wahlrecht.de/umfragen/dimap.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.google.fr/trends/explore#q=afd&geo=DE&cmpt=q",
+        "domain": "google.fr",
+        "publisher_name": "google.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://blogs.lexpress.fr/electorallemand/2013/09/22/elections-allemandes-l-afd-creera-t-elle-la-surprise/",
+        "domain": "blogs.lexpress.fr",
+        "publisher_name": "blogs.lexpress.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.faz.net/aktuell/politik/bundestagswahl/alternative-fuer-deutschland-wir-sind-die-erben-der-fdp-12585743.html",
+        "domain": "faz.net",
+        "publisher_name": "faz.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bundeswahlleiter.de/europawahlen/2014/ergebnisse.html",
+        "domain": "bundeswahlleiter.de",
+        "publisher_name": "bundeswahlleiter.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2014/09/15/01003-20140915ARTFIG00352-allemagneles-eurosceptiques-s-ancrent-a-l-est.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.dw.com/en/germanys-euroskeptic-afd-elects-conservative-leader-petry/a-18561912",
+        "domain": "dw.com",
+        "publisher_name": "dw.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/europe/021187661141-le-parti-eurosceptique-allemand-afd-met-la-barre-a-droite-1134635.php",
+        "domain": "lesechos.fr",
+        "publisher_name": "lesechos.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.faz.net/aktuell/politik/inland/henkel-verlaesst-die-afd-13686202.html",
+        "domain": "faz.net",
+        "publisher_name": "faz.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.shz.de/schleswig-holstein/politik/lucke-vs-petry-afd-in-sh-in-turbulenzen-id10154106.html",
+        "domain": "shz.de",
+        "publisher_name": "shz.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.welt.de/politik/article143753840/Bernd-Lucke-tritt-aus-der-AfD-aus.html",
+        "domain": "welt.de",
+        "publisher_name": "welt.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.faz.net/aktuell/politik/inland/bernd-koelmel-verlaesst-nach-wahl-von-frauke-petry-die-afd-13688062.html",
+        "domain": "faz.net",
+        "publisher_name": "faz.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.tagblatt.de/Home/nachrichten/tuebingen_artikel,-Tuebinger-Professor-enttaeuscht-ueber-Kurs-und-Stil-der-AfD-_arid,308899.html",
+        "domain": "tagblatt.de",
+        "publisher_name": "tagblatt.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.spiegel.de/politik/deutschland/afd-liegt-in-umfrage-bei-12-prozent-a-1074881.html",
+        "domain": "spiegel.de",
+        "publisher_name": "spiegel.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/allemagne-polemique-sur-des-videos-de-la-police-maltraitant-des-refugies-21-02-2016-2020013_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lepoint.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/allemagne-bautzen-symbole-de-la-recrudescence-de-la-violence-raciste-27-09-2016-2071655_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lepoint.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/planete/2016/03/13/en-allemagne-la-droite-dure-fait-son-entree-dans-les-parlements-regionaux_1439373",
+        "domain": "liberation.fr",
+        "publisher_name": "liberation.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.heise.de/tp/artikel/47/47911/1.html",
+        "domain": "heise.de",
+        "publisher_name": "heise.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.politico.eu/article/ecr-afd-von-storch-pretzell-two-members-of-german-far-right-party-asked-to-leave-voluntarily/",
+        "domain": "politico.eu",
+        "publisher_name": "politico.eu",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lexpress.fr/actualites/1/politique/allemagne-un-depute-afd-s-allie-au-fn-francais-au-parlement-europeen_1787866.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "lexpress.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.fr-online.de/politik/afd-von-storch-kommt-ihrer-abschiebung-zuvor-,1472596,34062770.html",
+        "domain": "fr-online.de",
+        "publisher_name": "fr-online.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/flash-actu/2016/07/06/97001-20160706FILWWW00226-allemagne-crise-au-sein-du-parti-afd-apres-des-propos-antisemites.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.zeit.de/politik/deutschland/2016-07/alternative-fuer-baden-wuerttemberg-joerg-meuthen-wolfgang-gedeon-afd",
+        "domain": "zeit.de",
+        "publisher_name": "zeit.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2016/09/04/01003-20160904ARTFIG00142-allemagne-le-parti-d-angela-merkel-vaincu-par-les-populistes.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/opinion/2016/09/04/german-voters-are-rejecting-open-door-immigration-policies-when/",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "telegraph.co.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/vox/monde/2016/09/05/31002-20160905ARTFIG00044-immigration-mondialisation-pourquoi-l-afd-a-battu-angela-merkel-dans-son-fief.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/1926731-20160919-allemagne-populistes-infligent-nouveau-revers-angela-merkel",
+        "domain": "20minutes.fr",
+        "publisher_name": "20minutes.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2017/03/31/01003-20170331ARTFIG00298-allemagne-les-populistes-de-l-afd-au-plus-bas.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/debats/2017/09/25/l-entree-de-l-afd-au-bundestag-un-seisme-politique-en-allemagne_1598847",
+        "domain": "liberation.fr",
+        "publisher_name": "liberation.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2017/09/26/allemagne-marginalisee-par-les-plus-radicaux-frauke-petry-quitte-l-afd-le-parti-d-extreme-droite_5191698_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.europe1.fr/international/allemagne-lex-cheffe-du-parti-dextreme-droite-frauke-petry-fonde-le-parti-bleu-3462680",
+        "domain": "europe1.fr",
+        "publisher_name": "europe1.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.rfi.fr/europe/20171202-allemagne-congres-afd-coup-force-aile-droite-hanovre",
+        "domain": "rfi.fr",
+        "publisher_name": "rfi.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2017/12/02/01003-20171202ARTFIG00171-avec-gauland-et-meuthen-l-afd-choisit-de-se-radicaliser.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bastamag.net/En-Allemagne-les-deputes-de-l-AfD-emploient-des-assistants-neo-nazis-au",
+        "domain": "bastamag.net",
+        "publisher_name": "bastamag.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.rfi.fr/europe/20190108-allemagne-depute-afd-parti-extreme-droite-violemment-agresse",
+        "domain": "rfi.fr",
+        "publisher_name": "rfi.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/europe/allemagne-un-elu-d-extreme-droite-violemment-agresse-08-01-2019-2283954_2626.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lepoint.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.welt.de/politik/deutschland/article186713350/Frank-Magnitz-AfD-macht-rot-gruene-Hetze-fuer-Angriff-verantwortlich.html",
+        "domain": "welt.de",
+        "publisher_name": "welt.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/allemagne-le-parti-d-extreme-droite-afd-remporte-un-nouveau-succes-en-thuringe-20191027",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/neonazis-contre-moderes-l-afd-allemande-cherche-sa-voie-20191130",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.ouest-france.fr/europe/allemagne/en-allemagne-l-extreme-droite-sous-pression-apres-les-attentats-racistes-6748648",
+        "domain": "ouest-france.fr",
+        "publisher_name": "ouest-france.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/02/21/l-allemagne-sous-le-choc-du-terrorisme-d-extreme-droite_6030287_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.thetimes.co.uk/edition/world/germans-point-finger-at-afd-for-hanau-shisha-bar-murders-5pf63ljgn",
+        "domain": "thetimes.co.uk",
+        "publisher_name": "thetimes.co.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/allemagne/allemagne-le-parti-conservateur-d-angela-merkel-en-pleine-crise-subit-un-revers-electoral-a-hambourg_3839111.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "francetvinfo.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/04/26/l-extreme-droite-allemande-suspend-un-de-ses-porte-parole-qui-s-est-dit-fier-d-etre-fasciste_6037816_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/09/28/en-allemagne-l-afd-exclut-un-de-ses-cadres-qui-a-propose-de-gazer-les-refugies_6053944_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.humanite.fr/allemagne-les-nationalistes-de-lafd-grands-perdants-de-la-crise-sanitaire-690791",
+        "domain": "humanite.fr",
+        "publisher_name": "humanite.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.zeit.de/politik/deutschland/2020-06/afd-parteiausschluss-andreas-kalbitz-fraktionschef-brandenburg-bundesvorstand-schiedsgericht",
+        "domain": "zeit.de",
+        "publisher_name": "zeit.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bpb.de/shop/zeitschriften/izpb/558696/parteiensystem-und-koalitionsbeziehungen-seit-der-deutschen-vereinigung/",
+        "domain": "bpb.de",
+        "publisher_name": "bpb.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/allemagne-la-droite-nationaliste-va-diriger-une-collectivite-territoriale-20230625",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2023/10/08/elections-en-allemagne-le-parti-d-extreme-droite-afd-progresse-revers-important-pour-le-sdp-d-olaf-scholz_6193210_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/geheimplan-remigration-vertreibung-afd-rechtsextreme-november-treffen/",
+        "domain": "correctiv.org",
+        "publisher_name": "correctiv.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2024/01/10/en-allemagne-des-responsables-du-parti-d-extreme-droite-afd-envisagent-l-expulsion-en-masse-d-allemands-d-origine-etrangere_6210063_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lorientlejour.com/article/1363871/un-projet-dexpulsions-detrangers-presente-lors-dune-reunion-dextremistes-en-allemagne.html",
+        "domain": "lorientlejour.com",
+        "publisher_name": "lorientlejour.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.courrierinternational.com/article/politique-en-allemagne-les-debats-autour-de-la-remigration-profitent-a-l-extreme-droite",
+        "domain": "courrierinternational.com",
+        "publisher_name": "courrierinternational.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.eu/article/can-a-ban-stop-the-rise-of-germanys-far-right/",
+        "domain": "politico.eu",
+        "publisher_name": "politico.eu",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/world/2024/jan/11/germany-far-right-mass-deportation-masterplan-meeting-olaf-scholz-condemns",
+        "domain": "theguardian.com",
+        "publisher_name": "theguardian.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.ft.com/content/3ac0e052-ad08-46e9-a203-7cf4e5351e3d",
+        "domain": "ft.com",
+        "publisher_name": "ft.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/politique/plan-de-remigration-le-pen-en-total-desaccord-avec-ses-allies-allemands-20240125_JVCE3TSBRBANXGNZCUGXS73K3Q/",
+        "domain": "liberation.fr",
+        "publisher_name": "liberation.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.euractiv.fr/section/elections/news/marine-le-pen-interroge-lalliance-europeenne-du-rn-avec-le-parti-allemand-afd/",
+        "domain": "euractiv.fr",
+        "publisher_name": "euractiv.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bloomberg.com/news/articles/2024-01-25/france-s-le-pen-questions-ties-to-german-afd-over-extremist-plan",
+        "domain": "bloomberg.com",
+        "publisher_name": "bloomberg.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.ilmessaggero.it/fr/l_opposition_des_eveques_allemands_a_l_afd_et_l_impact_sur_les_elections_europeennes-8170788.html?refresh_ce",
+        "domain": "ilmessaggero.it",
+        "publisher_name": "ilmessaggero.it",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.zdf.de/nachrichten/politik/deutschland/demonstrationen-protest-gegen-rechts-100.html",
+        "domain": "zdf.de",
+        "publisher_name": "zdf.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnn.com/2024/01/20/europe/germany-protests-far-right-afd-migrant-deportation-plan-intl/index.html",
+        "domain": "cnn.com",
+        "publisher_name": "cnn.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.timesofisrael.com/250000-protest-in-germany-against-far-right-afd-over-talk-of-mass-exportation-plans/",
+        "domain": "timesofisrael.com",
+        "publisher_name": "timesofisrael.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/elections/europeennes/en-allemagne-severe-defaite-pour-la-coalition-au-pouvoir-dolaf-scholz-2100241",
+        "domain": "lesechos.fr",
+        "publisher_name": "lesechos.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lorientlejour.com/article/1416799/allemagne-lafd-exclut-sa-tete-de-liste-de-sa-delegation-deurodeputes.html",
+        "domain": "lorientlejour.com",
+        "publisher_name": "lorientlejour.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/allemagne/allemagne-l-extreme-droite-arrive-en-tete-en-thuringe-une-premiere-lors-d-un-scrutin-regional_6757357.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "francetvinfo.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.france24.com/fr/europe/20240922-%C3%A9lections-r%C3%A9gionales-en-allemagne-le-spd-devance-de-peu-l-extr%C3%AAme-droite-dans-le-brandebourg",
+        "domain": "france24.com",
+        "publisher_name": "france24.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/europe/en-allemagne-une-loi-sur-limmigration-qui-pourrait-faire-basculer-la-campagne-electorale-2145351",
+        "domain": "lesechos.fr",
+        "publisher_name": "lesechos.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2025/01/29/en-allemagne-la-cdu-fait-sauter-le-cordon-sanitaire-avec-l-extreme-droite_6522492_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2025/02/02/a-berlin-des-milliers-de-manifestants-rassembles-contre-l-extreme-droite_6528260_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceinter/podcasts/le-monde-a-18h50/le-monde-a-18h50-du-jeudi-30-janvier-2025-3732324",
+        "domain": "radiofrance.fr",
+        "publisher_name": "radiofrance.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2025/05/02/en-allemagne-le-parti-afd-classe-comme-mouvement-extremiste-de-droite-avere-par-le-renseignement-interieur_6602268_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2026/02/26/le-parti-d-extreme-droite-allemand-afd-ne-peut-pas-etre-classe-extremiste-averee-a-ce-stade-malgre-un-fort-soupcon-selon-la-justice_6668380_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/flash-actu/le-parti-d-extreme-droite-afd-triple-son-score-dans-l-ouest-de-l-allemagne-20250914",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.economist.com/news/europe/21578105-europe-waits-angela-merkel-faces-new-anti-establishment-party-what-alternative",
+        "domain": "economist.com",
+        "publisher_name": "economist.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.derbund.ch/ausland/europa/Alternative-fuer-Deutschland-/story/12750119",
+        "domain": "derbund.ch",
+        "publisher_name": "derbund.ch",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.tagesschau.de/inland/afdhaeusler100.html",
+        "domain": "tagesschau.de",
+        "publisher_name": "tagesschau.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.1080/01402382.2015.1004230",
+        "domain": "dx.doi.org",
+        "publisher_name": "dx.doi.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://api.semanticscholar.org/CorpusID:14613344",
+        "domain": "api.semanticscholar.org",
+        "publisher_name": "api.semanticscholar.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://repository.essex.ac.uk/14030/1/afd-right-wing-populist-eurosceptic-germany.pdf",
+        "domain": "repository.essex.ac.uk",
+        "publisher_name": "repository.essex.ac.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.1007/s11577-018-0521-2",
+        "domain": "dx.doi.org",
+        "publisher_name": "dx.doi.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://api.semanticscholar.org/CorpusID:149934029",
+        "domain": "api.semanticscholar.org",
+        "publisher_name": "api.semanticscholar.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=jfkyDAAAQBAJ&pg=PA3",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=zaUHCAAAQBAJ&pg=PA34",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=JJsGCAAAQBAJ&pg=PA110",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=vxacCgAAQBAJ&pg=PA30",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/planete/2019/09/03/regionales-en-allemagne-l-afd-mene-une-guerre-culturelle_1748814",
+        "domain": "liberation.fr",
+        "publisher_name": "liberation.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.marianne.net/monde/europe/avec-l-afd-les-nazis-font-ils-de-la-resistance-en-allemagne",
+        "domain": "marianne.net",
+        "publisher_name": "marianne.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.rnd.de/politik/afd-parteitag-magdeburg-angriffslust-und-balsam-fuer-die-voelkische-seele-EIJGNDCAQND6XGXFIE5AFVQWKU.html",
+        "domain": "rnd.de",
+        "publisher_name": "rnd.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.stern.de/politik/deutschland/afd-parteitag-zu-europawahl--so-kommentiert-die-presse-33697070.html",
+        "domain": "stern.de",
+        "publisher_name": "stern.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.youtube.com/watch?v=z-l230oLKXA",
+        "domain": "youtube.com",
+        "publisher_name": "youtube.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/legislatives-allemandes-la-fuite-en-avant-radicale-d-alice-weidel-20250114",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.dw.com/en/german-party-says-no-to-the-euro-yes-to-the-eu/a-16660602",
+        "domain": "dw.com",
+        "publisher_name": "dw.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://cdn.afd.tools/wp-content/uploads/sites/111/2017/04/2017-04-12_afd-grundsatzprogramm-englisch_web.pdf",
+        "domain": "cdn.afd.tools",
+        "publisher_name": "cdn.afd.tools",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://blogs.lse.ac.uk/europpblog/2017/06/27/the-rise-of-germanys-afd/",
+        "domain": "blogs.lse.ac.uk",
+        "publisher_name": "blogs.lse.ac.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://taz.de/AfD-vor-dem-Parteitag/!5516714/",
+        "domain": "taz.de",
+        "publisher_name": "taz.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2014/06/20/business/international/a-german-voice-hans-olaf-henkel-calls-for-euros-abolition.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.zeit.de/politik/deutschland/2013-04/parteitag-alternative-deutschland",
+        "domain": "zeit.de",
+        "publisher_name": "zeit.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.upi.com/Top_News/Analysis/Walker/2013/05/13/Walkers-World-Spring-in-Europe/UPI-93861368444433/",
+        "domain": "upi.com",
+        "publisher_name": "upi.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.publicserviceeurope.com/article/3363/populism-making-euro-crisis-more-combustible",
+        "domain": "publicserviceeurope.com",
+        "publisher_name": "publicserviceeurope.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.ft.com/cms/s/0/bc542732-b17d-11e2-9315-00144feabdc0.html#axzz2Tn2JcWEu",
+        "domain": "ft.com",
+        "publisher_name": "ft.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/en-allemagne-l-afd-ressasse-ses-divisions-20201129",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.kai-arzheimer.com/afd-right-wing-populist-eurosceptic-germany/",
+        "domain": "kai-arzheimer.com",
+        "publisher_name": "kai-arzheimer.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.humanite.fr/merkel-marquee-par-les-nationaux-liberaux-allemands-689584",
+        "domain": "humanite.fr",
+        "publisher_name": "humanite.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/04/12/l-extreme-droite-allemande-prone-la-sortie-de-l-union-europeenne_6076461_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/allemagne-le-parti-d-extreme-droite-afd-souhaite-un-referendum-sur-la-sortie-de-l-ue-20240122",
+        "domain": "lefigaro.fr",
+        "publisher_name": "lefigaro.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.sciencesetavenir.fr/nature-environnement/l-extreme-droite-allemande-mise-sur-le-climato-scepticisme_133789",
+        "domain": "sciencesetavenir.fr",
+        "publisher_name": "sciencesetavenir.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.mediapart.fr/journal/international/121218/la-menace-climatosceptique-pese-aussi-sur-l-europe",
+        "domain": "mediapart.fr",
+        "publisher_name": "mediapart.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bastamag.net/extreme-droite-Europe-rechauffement-climat-negationnisme-vote-energie-fossile-automobile-renouvelables-frontiere-racisme-ecologie",
+        "domain": "bastamag.net",
+        "publisher_name": "bastamag.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.franceinter.fr/bjorn-hocke-le-provocateur-de-l-extreme-droite-allemande",
+        "domain": "franceinter.fr",
+        "publisher_name": "franceinter.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://taz.de/Entwurf-fuer-AfD-Programm/!5290716/",
+        "domain": "taz.de",
+        "publisher_name": "taz.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.tabletmag.com/jewish-news-and-politics/209243/germanys-hot-new-party",
+        "domain": "tabletmag.com",
+        "publisher_name": "tabletmag.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://library.fes.de/pdf-files/dialog/10641.pdf",
+        "domain": "library.fes.de",
+        "publisher_name": "library.fes.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.thelocal.de/20140331/german-anti-euro-party-afd-turns-anti-feminist-alternative-for-germany-facebook",
+        "domain": "thelocal.de",
+        "publisher_name": "thelocal.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://rtlnext.rtl.de/cms/afd-kandidatin-alice-weidel-mit-coming-out-auf-der-wahlkampf-buehne-ich-bin-homosexuell-4127276.html",
+        "domain": "rtlnext.rtl.de",
+        "publisher_name": "rtlnext.rtl.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.badische-zeitung.de/deutschland-1/das-neue-gesicht-der-afd-wer-ist-eigentlich-alice-weidel--135970692.html",
+        "domain": "badische-zeitung.de",
+        "publisher_name": "badische-zeitung.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.welt.de/politik/deutschland/article164121228/AfD-Frontfrau-Alice-Weidel-hat-einen-Wohnsitz-in-der-Schweiz.html",
+        "domain": "welt.de",
+        "publisher_name": "welt.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0307-1235",
+        "domain": "portal.issn.org",
+        "publisher_name": "portal.issn.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/world-news/2023/07/16/germany-far-right-afd-party-attacked-nazi-symbol-campaign/",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "telegraph.co.uk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://besacenter.org/perspectives-papers/afd-germany-israel-antisemitism/",
+        "domain": "besacenter.org",
+        "publisher_name": "besacenter.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://orientxxi.info/magazine/les-yeux-doux-de-benyamin-netanyahou-a-l-extreme-droite-europeenne,2651",
+        "domain": "orientxxi.info",
+        "publisher_name": "orientxxi.info",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.25035/irj.03.01.04",
+        "domain": "dx.doi.org",
+        "publisher_name": "dx.doi.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1038&context=irj",
+        "domain": "scholarworks.bgsu.edu",
+        "publisher_name": "scholarworks.bgsu.edu",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.kp.ru/daily/26951.5/4003938/",
+        "domain": "kp.ru",
+        "publisher_name": "kp.ru",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.ipolitique.fr/archive/2016/09/05/programme-alternative-pour-l-allemagne-afd.html",
+        "domain": "ipolitique.fr",
+        "publisher_name": "ipolitique.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/10/24/en-europe-les-dirigeants-illiberaux-et-l-extreme-droite-croient-toujours-en-donald-trump_6057242_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2026/04/08/en-allemagne-l-afd-prend-ses-distances-avec-l-administration-trump_6678308_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.lalibre.be/dernieres-depeches/afp/allemagne-l-afd-de-la-lutte-contre-l-euro-au-discours-anti-refugies-56e53b8f35708ea2d382b9a9",
+        "domain": "lalibre.be",
+        "publisher_name": "lalibre.be",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.bfmtv.com/international/europe/allemagne/allemagne-le-parti-populiste-af-d-suscite-un-tolle-en-suggerant-de-tirer-sur-les-refugies_AN-201601300009.html",
+        "domain": "bfmtv.com",
+        "publisher_name": "bfmtv.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/allemagne-le-chef-de-l-extreme-droite-soupconne-de-fraude-fiscale-30-01-2020-2360554_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lepoint.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.france24.com/fr/20200213-allemagne-l-afd-tente-d-instrumentaliser-les-comm%C3%A9morations-du-bombardement-de-dresde",
+        "domain": "france24.com",
+        "publisher_name": "france24.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://lvsl.fr/lextreme-droite-et-les-liberaux-main-dans-la-main-en-allemagne/",
+        "domain": "lvsl.fr",
+        "publisher_name": "lvsl.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.monde-diplomatique.fr/2020/04/COMBE/61583",
+        "domain": "monde-diplomatique.fr",
+        "publisher_name": "monde-diplomatique.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/05/06/en-allemagne-l-extreme-droite-a-la-peine_6038838_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0242-6056",
+        "domain": "portal.issn.org",
+        "publisher_name": "portal.issn.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.la-croix.com/Monde/Allemagne-lAfD-adapte-discours-prosperer-2020-11-27-1201126914",
+        "domain": "la-croix.com",
+        "publisher_name": "la-croix.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.nzz.ch/international/bericht-afd-politiker-arbeiten-mit-rechtsextremisten-an-massenabschiebungen-ld.1773665",
+        "domain": "nzz.ch",
+        "publisher_name": "nzz.ch",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.yahoo.com/news/german-afd-mp-received-money-220500961.html",
+        "domain": "yahoo.com",
+        "publisher_name": "yahoo.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://nyheder.tv2.dk/udland/2024-04-23-ansat-hos-tysk-eu-politiker-mistaenkes-for-kinesisk-spionage",
+        "domain": "nyheder.tv2.dk",
+        "publisher_name": "nyheder.tv2.dk",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://taz.de/!6003387/",
+        "domain": "taz.de",
+        "publisher_name": "taz.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.faz.net/aktuell/politik/inland/afd-politiker-daniel-halemba-gibt-fraktionsaemter-ab-19677236.html",
+        "domain": "faz.net",
+        "publisher_name": "faz.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://jean-jaures.org/nos-productions/l-entree-de-l-afd-au-bundestag-un-seisme-politique-en-allemagne",
+        "domain": "jean-jaures.org",
+        "publisher_name": "jean-jaures.org",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "http://www.laviedesidees.fr/La-nouvelle-extreme-droite-allemande.html",
+        "domain": "laviedesidees.fr",
+        "publisher_name": "laviedesidees.fr",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.la-croix.com/Monde/RDA-industrielle-peur-declassement-nourrit-extreme-droite-2019-08-16-1301041329",
+        "domain": "la-croix.com",
+        "publisher_name": "la-croix.com",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/baden-wuerttemberg.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/niedersachsen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/bayern.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/berlin.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/brandenburg.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/bremen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/hamburg.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/hessen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/mecklenburg.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/nordrhein-westfalen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/rheinland-pfalz.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/saarland.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/sachsen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/sachsen-anhalt.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/schleswig-holstein.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "url": "https://www.wahlrecht.de/ergebnisse/thueringen.htm",
+        "domain": "wahlrecht.de",
+        "publisher_name": "wahlrecht.de",
+        "country": "Unknown",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81242026,
+          56.107452266
+        ]
+      },
+      "properties": {
+        "country": "Unknown",
+        "source_count": 235,
+        "percentage": 100.0
+      }
+    }
+  ]
+}

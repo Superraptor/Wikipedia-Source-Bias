@@ -1,0 +1,19 @@
+{
+  "whoswho.de": {},
+  "lepoint.fr": {
+    "wikidata_label": "lePoint.fr",
+    "wikidata_id": "Q115553783",
+    "wikidata_description": "official website of French weekly news magazine Le Point"
+  },
+  "lefigaro.fr": {
+    "wikidata_label": "Le Figaro",
+    "wikidata_id": "Q216047",
+    "wikidata_description": "French daily newspaper"
+  },
+  "archive.is": {
+    "wikidata_label": "archive.today",
+    "wikidata_id": "Q13515725",
+    "wikidata_description": "web-archiving website"
+  },
+  "francebleu.fr": {}
+}

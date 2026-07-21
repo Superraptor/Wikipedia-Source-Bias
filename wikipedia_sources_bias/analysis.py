@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from typing import Any
 from urllib.parse import urlparse, parse_qs
 
@@ -131,6 +132,86 @@ def _extract_source_urls(soup: BeautifulSoup) -> list[str]:
     return sorted(urls)
 
 
+def unwrap_archive_url(url: str) -> str:
+    if not url:
+        return url
+    
+    # 1. Wayback Machine (archive.org/web/...)
+    wayback_match = re.search(r'^https?://(?:web\.)?archive\.org/web/\d+[a-z]*_?/(https?://.+)$', url, re.I)
+    if wayback_match:
+        return wayback_match.group(1)
+        
+    # 2. Long archive.is / archive.today style URLs
+    archive_is_long_match = re.search(r'^https?://archive\.(?:is|today|li|vn|fo|md|ph)/(?:\d+|[a-zA-Z0-9_\-]+)/(https?://.+)$', url, re.I)
+    if archive_is_long_match:
+        return archive_is_long_match.group(1)
+        
+    return url
+
+
+def is_archive_domain(domain: str) -> bool:
+    dom = domain.lower()
+    if dom.startswith("www."):
+        dom = dom[4:]
+    return dom in {
+        "archive.is", "archive.today", "archive.li", "archive.vn", 
+        "archive.fo", "archive.md", "archive.ph", "archive.org", "web.archive.org"
+    }
+
+
+def extract_original_url_from_archive_html(html: str) -> str | None:
+    if not html:
+        return None
+    soup = BeautifulSoup(html, "html.parser")
+    
+    for meta in soup.find_all("meta"):
+        prop = meta.get("property", "").lower()
+        name = meta.get("name", "").lower()
+        content = meta.get("content", "")
+        if prop in {"og:url", "twitter:url"} or name in {"og:url", "twitter:url"}:
+            if content and not any(x in content for x in ["archive.is", "archive.today", "archive.org", "archive.ph", "archive.li", "archive.vn", "archive.fo", "archive.md"]):
+                return content
+                
+    input_q = soup.find("input", {"id": "q"}) or soup.find("input", {"name": "q"})
+    if input_q and input_q.get("value"):
+        val = input_q["value"].strip()
+        if val.startswith("http"):
+            return val
+            
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.startswith("http") and not any(x in href for x in ["archive.is", "archive.today", "archive.org", "archive.ph", "archive.li", "archive.vn", "archive.fo", "archive.md"]):
+            if "original" in a.get_text().lower() or "source" in a.get_text().lower() or a.get("id") == "original":
+                return href
+                
+    urls = re.findall(r'https?://[^\s"\'>]+', html)
+    for u in urls:
+        if not any(x in u for x in ["archive.is", "archive.today", "archive.org", "archive.ph", "archive.li", "archive.vn", "archive.fo", "archive.md"]):
+            return u
+            
+    return None
+
+
+def _resolve_archive_url_content(url: str, skip_rate_limiting: bool = False) -> str:
+    parsed = urlparse(url)
+    if not is_archive_domain(parsed.netloc):
+        return url
+        
+    if skip_rate_limiting:
+        return url
+        
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        response = requests.get(url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            orig = extract_original_url_from_archive_html(response.text)
+            if orig:
+                return orig
+    except Exception:
+        pass
+    return url
+
+
 def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
     parsed = urlparse(url)
     host = parsed.netloc.lower()
@@ -139,6 +220,10 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
     if not host:
         return {}
 
+    if host in _wd_enrichment_cache:
+        return _wd_enrichment_cache[host]
+
+    result = {}
     try:
         response = requests.get(
             "https://www.wikidata.org/w/api.php",
@@ -155,14 +240,17 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
         data = response.json()
         if data.get("search"):
             item = data["search"][0]
-            return {
+            result = {
                 "wikidata_label": item.get("label", ""),
                 "wikidata_id": item.get("id", ""),
                 "wikidata_description": item.get("description", ""),
             }
     except requests.RequestException:
-        return {}
-    return {}
+        pass
+
+    _wd_enrichment_cache[host] = result
+    _save_json_cache("wikidata_enrichment_cache.json", _wd_enrichment_cache)
+    return result
 
 
 def _extract_authors_from_citation(text: str) -> list[str]:
@@ -252,24 +340,24 @@ def _query_wikidata_sparql(query: str) -> list[dict[str, Any]]:
         "User-Agent": "WikipediaSourcesBias/0.1 (https://github.com/OpenAI/wikipedia-sources-bias)",
         "Accept": "application/sparql-results+json"
     }
-    try:
-        response = requests.get(url, params={"query": query, "format": "json"}, headers=headers, timeout=5)
-        response.raise_for_status()
-        data = response.json()
-        bindings = data.get("results", {}).get("bindings", [])
-        
-        results = []
-        for bind in bindings:
-            row = {}
-            for key, val in bind.items():
-                row[key] = val.get("value", "")
-            results.append(row)
-        return results
-    except Exception:
-        return []
+    response = requests.get(url, params={"query": query, "format": "json"}, headers=headers, timeout=10)
+    response.raise_for_status()
+    data = response.json()
+    bindings = data.get("results", {}).get("bindings", [])
+    
+    results = []
+    for bind in bindings:
+        row = {}
+        for key, val in bind.items():
+            row[key] = val.get("value", "")
+        results.append(row)
+    return results
 
 
 def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
+    if author_name in _wd_author_cache:
+        return _wd_author_cache[author_name]
+
     try:
         response = requests.get(
             "https://www.wikidata.org/w/api.php",
@@ -285,56 +373,66 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         response.raise_for_status()
         search_data = response.json()
         if not search_data.get("search"):
+            _wd_author_cache[author_name] = {}
+            _save_json_cache("wikidata_author_cache.json", _wd_author_cache)
             return {}
+            
         entity_id = search_data["search"][0]["id"]
+        
+        query = f"""
+        SELECT ?genderLabel ?citizenshipLabel ?partyLabel ?occupationLabel ?employerLabel ?employerCountryLabel WHERE {{
+          BIND(wd:{entity_id} AS ?author)
+          OPTIONAL {{ ?author wdt:P21 ?gender. }}
+          OPTIONAL {{ ?author wdt:P27 ?citizenship. }}
+          OPTIONAL {{ ?author wdt:P102 ?party. }}
+          OPTIONAL {{ ?author wdt:P106 ?occupation. }}
+          OPTIONAL {{ 
+            ?author wdt:P108 ?employer.
+            OPTIONAL {{ ?employer wdt:P17 ?employerCountry. }}
+          }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+        }}
+        """
+        rows = _query_wikidata_sparql(query)
+        
+        gender = set()
+        citizenship = set()
+        party = set()
+        occupation = set()
+        employers = {}
+        
+        for r in rows:
+            if r.get("genderLabel"): gender.add(r["genderLabel"])
+            if r.get("citizenshipLabel"): citizenship.add(r["citizenshipLabel"])
+            if r.get("partyLabel"): party.add(r["partyLabel"])
+            if r.get("occupationLabel"): occupation.add(r["occupationLabel"])
+            
+            emp_name = r.get("employerLabel")
+            if emp_name:
+                emp_country = r.get("employerCountryLabel") or "Unknown"
+                employers[emp_name] = emp_country
+            
+        result = {
+            "wikidata_id": entity_id,
+            "wikidata_name": search_data["search"][0].get("label", author_name),
+            "gender": list(gender)[0] if gender else None,
+            "citizenships": sorted(list(citizenship)),
+            "political_parties": sorted(list(party)),
+            "occupations": sorted(list(occupation)),
+            "employers": [{"name": k, "country": v} for k, v in employers.items()],
+        }
+        
+        _wd_author_cache[author_name] = result
+        _save_json_cache("wikidata_author_cache.json", _wd_author_cache)
+        return result
     except Exception:
         return {}
 
-    query = f"""
-    SELECT ?genderLabel ?citizenshipLabel ?partyLabel ?occupationLabel ?employerLabel ?employerCountryLabel WHERE {{
-      BIND(wd:{entity_id} AS ?author)
-      OPTIONAL {{ ?author wdt:P21 ?gender. }}
-      OPTIONAL {{ ?author wdt:P27 ?citizenship. }}
-      OPTIONAL {{ ?author wdt:P102 ?party. }}
-      OPTIONAL {{ ?author wdt:P106 ?occupation. }}
-      OPTIONAL {{ 
-        ?author wdt:P108 ?employer.
-        OPTIONAL {{ ?employer wdt:P17 ?employerCountry. }}
-      }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }}
-    """
-    rows = _query_wikidata_sparql(query)
-    
-    gender = set()
-    citizenship = set()
-    party = set()
-    occupation = set()
-    employers = {}
-    
-    for r in rows:
-        if r.get("genderLabel"): gender.add(r["genderLabel"])
-        if r.get("citizenshipLabel"): citizenship.add(r["citizenshipLabel"])
-        if r.get("partyLabel"): party.add(r["partyLabel"])
-        if r.get("occupationLabel"): occupation.add(r["occupationLabel"])
-        
-        emp_name = r.get("employerLabel")
-        if emp_name:
-            emp_country = r.get("employerCountryLabel") or "Unknown"
-            employers[emp_name] = emp_country
-        
-    return {
-        "wikidata_id": entity_id,
-        "wikidata_name": search_data["search"][0].get("label", author_name),
-        "gender": list(gender)[0] if gender else None,
-        "citizenships": sorted(list(citizenship)),
-        "political_parties": sorted(list(party)),
-        "occupations": sorted(list(occupation)),
-        "employers": [{"name": k, "country": v} for k, v in employers.items()],
-    }
-
 
 def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
+    if domain in _wd_publisher_cache:
+        return _wd_publisher_cache[domain]
+
     entity_id = None
     headers = {
         "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
@@ -412,46 +510,49 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
         """
         rows = _query_wikidata_sparql(query_fallback)
 
-    if not rows:
-        return {}
+    result = {}
+    if rows:
+        pub_id = entity_id or ""
+        pub_name = ""
+        countries = set()
+        political_leanings = set()
+        political_ideologies = set()
+        owners = set()
+        types = set()
+        mbfc_ids = set()
         
-    pub_id = entity_id or ""
-    pub_name = ""
-    countries = set()
-    political_leanings = set()
-    political_ideologies = set()
-    owners = set()
-    types = set()
-    mbfc_ids = set()
-    
-    for r in rows:
-        if r.get("publisher"):
-            pub_id = r["publisher"].split("/")[-1]
-        if r.get("publisherLabel"):
-            pub_name = r["publisherLabel"]
-        if r.get("countryLabel"):
-            countries.add(r["countryLabel"])
-        if r.get("politicalLeaningLabel"):
-            political_leanings.add(r["politicalLeaningLabel"])
-        if r.get("politicalIdeologyLabel"):
-            political_ideologies.add(r["politicalIdeologyLabel"])
-        if r.get("ownerLabel"):
-            owners.add(r["ownerLabel"])
-        if r.get("instanceOfLabel"):
-            types.add(r["instanceOfLabel"])
-        if r.get("mbfcId"):
-            mbfc_ids.add(r["mbfcId"])
-            
-    return {
-        "wikidata_id": pub_id,
-        "wikidata_name": pub_name,
-        "countries": sorted(list(countries)),
-        "political_leanings": sorted(list(political_leanings)),
-        "political_ideologies": sorted(list(political_ideologies)),
-        "owners": sorted(list(owners)),
-        "types": sorted(list(types)),
-        "mbfc_id": list(mbfc_ids)[0] if mbfc_ids else None,
-    }
+        for r in rows:
+            if r.get("publisher"):
+                pub_id = r["publisher"].split("/")[-1]
+            if r.get("publisherLabel"):
+                pub_name = r["publisherLabel"]
+            if r.get("countryLabel"):
+                countries.add(r["countryLabel"])
+            if r.get("politicalLeaningLabel"):
+                political_leanings.add(r["politicalLeaningLabel"])
+            if r.get("politicalIdeologyLabel"):
+                political_ideologies.add(r["politicalIdeologyLabel"])
+            if r.get("ownerLabel"):
+                owners.add(r["ownerLabel"])
+            if r.get("instanceOfLabel"):
+                types.add(r["instanceOfLabel"])
+            if r.get("mbfcId"):
+                mbfc_ids.add(r["mbfcId"])
+                
+        result = {
+            "wikidata_id": pub_id,
+            "wikidata_name": pub_name,
+            "countries": sorted(list(countries)),
+            "political_leanings": sorted(list(political_leanings)),
+            "political_ideologies": sorted(list(political_ideologies)),
+            "owners": sorted(list(owners)),
+            "types": sorted(list(types)),
+            "mbfc_id": list(mbfc_ids)[0] if mbfc_ids else None,
+        }
+
+    _wd_publisher_cache[domain] = result
+    _save_json_cache("wikidata_publisher_cache.json", _wd_publisher_cache)
+    return result
 
 
 def _fetch_wikidata_book(isbn: str) -> dict[str, Any]:
@@ -578,6 +679,10 @@ def _fetch_wikidata_oclc(oclc_num: str) -> dict[str, Any]:
 
 
 def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
+    if doi in _crossref_cache:
+        return _crossref_cache[doi]
+
+    result = {}
     url = f"https://api.crossref.org/works/{doi}"
     headers = {
         "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
@@ -610,7 +715,7 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
         if date_parts and date_parts[0]:
             pub_date = "-".join(str(x) for x in date_parts[0])
             
-        return {
+        result = {
             "title": title,
             "authors": authors,
             "publisher": message.get("publisher", ""),
@@ -619,7 +724,11 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
             "subjects": message.get("subject", []),
         }
     except Exception:
-        return {}
+        pass
+
+    _crossref_cache[doi] = result
+    _save_json_cache("crossref_cache.json", _crossref_cache)
+    return result
 
 
 def _fetch_wikidata_doi(doi: str) -> dict[str, Any]:
@@ -989,11 +1098,18 @@ _nametracer_instance = None
 
 def _get_nametrace_prediction(name: str) -> dict[str, Any] | None:
     global _nametracer_instance
+    if name in _nametrace_cache:
+        return _nametrace_cache[name]
+
     try:
         from nametrace import NameTracer
         if _nametracer_instance is None:
             _nametracer_instance = NameTracer()
-        return _nametracer_instance.predict(name)
+        res = _nametracer_instance.predict(name)
+        if res:
+            _nametrace_cache[name] = res
+            _save_json_cache("nametrace_cache.json", _nametrace_cache)
+        return res
     except Exception:
         return None
 
@@ -1473,6 +1589,30 @@ def _save_mbfc_cache(cache: dict[str, dict[str, Any]]):
 
 _mbfc_cache: dict[str, dict[str, Any]] = _load_mbfc_cache()
 
+def _load_json_cache(filename: str) -> dict[str, Any]:
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), filename)
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+def _save_json_cache(filename: str, cache: dict[str, Any]):
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), filename)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+_wd_publisher_cache = _load_json_cache("wikidata_publisher_cache.json")
+_wd_enrichment_cache = _load_json_cache("wikidata_enrichment_cache.json")
+_wd_author_cache = _load_json_cache("wikidata_author_cache.json")
+_nametrace_cache = _load_json_cache("nametrace_cache.json")
+_crossref_cache = _load_json_cache("crossref_cache.json")
+
 LOCAL_MBFC_RATINGS = {
     "le-point": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
     "le-figaro": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
@@ -1491,7 +1631,7 @@ LOCAL_MBFC_RATINGS = {
     "le-monde-diplomatique": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
 }
 
-def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any]:
+def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiting: bool = False) -> dict[str, Any]:
     slug = mbfc_id or domain.split(".")[0].lower()
     
     if slug in LOCAL_MBFC_RATINGS:
@@ -1501,6 +1641,9 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
         
     if slug in _mbfc_cache:
         return _mbfc_cache[slug]
+        
+    if skip_rate_limiting:
+        return {}
         
     # Introduce rate-limiting delay before outgoing request to be respectful
     time.sleep(1.0)
@@ -1523,6 +1666,8 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
             pass
             
         if not html:
+            if skip_rate_limiting:
+                continue
             time.sleep(0.5)
             try:
                 api_url = f"https://archive.org/wayback/available?url={url}"
@@ -1613,45 +1758,88 @@ def _save_page_cache(cache: dict[str, Any]):
         pass
 
 
-def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False) -> dict[str, Any]:
-    cache_suffix = "_countries" if countries_only else ""
+def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False) -> dict[str, Any]:
+    cache_suffix = ""
+    if countries_only:
+        cache_suffix += "_countries"
+    if skip_rate_limiting:
+        cache_suffix += "_fast"
     cache_key = f"{url}_all{cache_suffix}" if max_sources is None else f"{url}_max_{max_sources}{cache_suffix}"
+    
+    sources: list[dict[str, Any]] = []
+    page_metadata = {}
+    references = []
+    citations = []
+    dedup_candidate_urls = []
+    
     if not no_cache:
         cache = _load_page_cache()
         if cache_key in cache:
-            return cache[cache_key]
-    headers = {"User-Agent": "Mozilla/5.0"}
-    try:
-        response = requests.get(url, headers=headers, timeout=15)
-        response.raise_for_status()
-        html = response.text
-    except requests.RequestException:
-        html = "<html><head><title>Fallback page</title></head><body><a href='https://www.reuters.com/world'>Reuters</a></body></html>"
+            cached_data = cache[cache_key]
+            if not cached_data.get("is_partial", False):
+                return cached_data
+                
+            sources = cached_data.get("sources", [])
+            page_metadata = cached_data.get("page_metadata", {})
+            references = cached_data.get("references", [])
+            citations = cached_data.get("citations", [])
+            dedup_candidate_urls = cached_data.get("dedup_candidate_urls", [])
+            if sources:
+                sys.stderr.write(f"\nFound partial cache. Resuming analysis from source {len(sources) + 1}...\n")
+                sys.stderr.flush()
 
-    soup = BeautifulSoup(html, "html.parser")
-    page_metadata = _extract_page_metadata(soup)
-    references = extract_references(soup)
-    citations = parse_citations(references[0]["items"]) if references else []
-    source_urls = _extract_source_urls(soup)
+    if not dedup_candidate_urls:
+        headers = {"User-Agent": "Mozilla/5.0"}
+        try:
+            response = requests.get(url, headers=headers, timeout=15)
+            response.raise_for_status()
+            html = response.text
+        except requests.RequestException:
+            html = "<html><head><title>Fallback page</title></head><body><a href='https://www.reuters.com/world'>Reuters</a></body></html>"
 
-    seen_urls = set()
-    dedup_candidate_urls = []
-    reference_urls = [url for citation in citations for url in citation.get("urls", []) if url]
-    candidate_urls = reference_urls or source_urls
+        soup = BeautifulSoup(html, "html.parser")
+        page_metadata = _extract_page_metadata(soup)
+        references = extract_references(soup)
+        citations = parse_citations(references[0]["items"]) if references else []
+        source_urls = _extract_source_urls(soup)
 
-    for u in candidate_urls:
-        if u not in seen_urls:
-            seen_urls.add(u)
-            dedup_candidate_urls.append(u)
+        seen_urls = set()
+        reference_urls = [url for citation in citations for url in citation.get("urls", []) if url]
+        candidate_urls = reference_urls or source_urls
 
-    sources: list[dict[str, Any]] = []
-    for source_url in dedup_candidate_urls[:max_sources]:
-        wikidata = _fetch_wikidata_enrichment(source_url)
-        profile = analyze_source_bias(source_url, wikidata)
+        for u in candidate_urls:
+            unwrapped = unwrap_archive_url(u)
+            if unwrapped not in seen_urls:
+                seen_urls.add(unwrapped)
+                dedup_candidate_urls.append(unwrapped)
+
+    total = len(dedup_candidate_urls[:max_sources])
+    for idx, source_url in enumerate(dedup_candidate_urls[:max_sources], start=1):
+        if idx <= len(sources):
+            continue
+            
+        resolved_url = _resolve_archive_url_content(source_url, skip_rate_limiting=skip_rate_limiting)
+        parsed_url = urlparse(resolved_url)
+        domain = parsed_url.netloc
+        
+        # Verbose logs
+        sys.stderr.write(f"\n[{idx}/{total}] Processing source: {resolved_url} (Domain: {domain})\n")
+        sys.stderr.flush()
+        
+        # Progress bar
+        percent = int(idx / total * 100) if total > 0 else 100
+        bar_length = 20
+        filled_length = int(bar_length * idx // total) if total > 0 else bar_length
+        bar = '█' * filled_length + '-' * (bar_length - filled_length)
+        sys.stderr.write(f"[{bar}] {percent}% complete\n")
+        sys.stderr.flush()
+
+        wikidata = _fetch_wikidata_enrichment(resolved_url)
+        profile = analyze_source_bias(resolved_url, wikidata)
         
         citation_text = ""
         for citation in citations:
-            if source_url in citation.get("urls", []):
+            if source_url in citation.get("urls", []) or resolved_url in citation.get("urls", []):
                 citation_text = citation.get("text", "")
                 break
                 
@@ -1685,14 +1873,14 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             profile["language_bias"] = {}
         else:
             mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
-            profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id)
+            profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id, skip_rate_limiting=skip_rate_limiting)
 
-            profile["readability"] = _fetch_url_readability(source_url)
+            profile["readability"] = _fetch_url_readability(resolved_url)
             extracted_web_author = profile["readability"].get("extracted_author")
 
-            books_id = _extract_google_books_id(source_url)
-            oclc_num = _extract_oclc(source_url) or _extract_oclc(citation_text)
-            doi_val = _extract_doi(source_url) or _extract_doi(citation_text)
+            books_id = _extract_google_books_id(resolved_url)
+            oclc_num = _extract_oclc(resolved_url) or _extract_oclc(citation_text)
+            doi_val = _extract_doi(resolved_url) or _extract_doi(citation_text)
             isbn_val = _extract_isbn(citation_text)
 
             profile["google_books_metadata"] = {}
@@ -1770,6 +1958,29 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
 
         sources.append(profile)
 
+        # Save intermediate/partial progress to cache
+        if not no_cache:
+            intermediate_result = {
+                "page_title": _extract_page_title(url),
+                "page_url": url,
+                "page_metadata": page_metadata,
+                "references": references,
+                "citations": citations,
+                "dedup_candidate_urls": dedup_candidate_urls,
+                "citation_count": len(citations),
+                "source_count": len(sources),
+                "sources": sources,
+                "countries_only": countries_only,
+                "is_partial": True
+            }
+            cache = _load_page_cache()
+            cache[cache_key] = intermediate_result
+            _save_page_cache(cache)
+
+    if total > 0:
+        sys.stderr.write(f"\r[{'█'*20}] 100% complete! Processing finished.\n")
+        sys.stderr.flush()
+
     if not sources:
         wikidata = _fetch_wikidata_enrichment("https://www.reuters.com/world")
         fallback_source = analyze_source_bias("https://www.reuters.com/world", wikidata)
@@ -1810,7 +2021,8 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             "source_count": len(sources),
             "countries_only": True,
             "geography_distribution": geo_distribution,
-            "sources": simplified_sources
+            "sources": simplified_sources,
+            "is_partial": False
         }
     else:
         aggregated_bias = aggregate_page_bias(sources)
@@ -1828,6 +2040,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 f"Extracted {len(sources)} source links. Analyzed geographic distribution, "
                 f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
             ),
+            "is_partial": False
         }
 
     if not no_cache:

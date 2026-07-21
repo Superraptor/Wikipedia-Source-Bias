@@ -634,6 +634,22 @@ TLD_GEOGRAPHY_MAP: dict[str, tuple[str, str]] = {
     ".ch": ("Switzerland", "Europe"),
     ".at": ("Austria", "Europe"),
     ".be": ("Belgium", "Europe"),
+    ".me": ("Montenegro", "Europe"),
+    ".dk": ("Denmark", "Europe"),
+    ".gr": ("Greece", "Europe"),
+    ".pt": ("Portugal", "Europe"),
+    ".tr": ("Turkey", "Middle East"),
+    ".my": ("Malaysia", "Asia"),
+    ".th": ("Thailand", "Asia"),
+    ".vn": ("Vietnam", "Asia"),
+    ".id": ("Indonesia", "Asia"),
+    ".ph": ("Philippines", "Asia"),
+    ".pk": ("Pakistan", "Asia"),
+    ".ar": ("Argentina", "South America"),
+    ".co": ("Colombia", "South America"),
+    ".cl": ("Chile", "South America"),
+    ".pe": ("Peru", "South America"),
+    ".ve": ("Venezuela", "South America"),
 }
 
 # Multilingual Name Gender Database

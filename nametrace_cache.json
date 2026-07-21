@@ -1,0 +1,42 @@
+{
+  "Jean Dupont": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7308767437934875,
+      "subregion": 0.6568392515182495
+    }
+  },
+  "AFP": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9971798665355891,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Le_Figaro": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999574422836304,
+      "gender": 0.8737711906433105,
+      "subregion": 0.7097165584564209
+    }
+  },
+  "Vincent Delorme": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9593839049339294,
+      "subregion": 0.570410966873169
+    }
+  }
+}

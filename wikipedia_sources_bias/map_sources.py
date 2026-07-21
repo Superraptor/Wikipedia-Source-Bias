@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import os
+import re
 import sys
 from urllib.parse import urlparse
-from wikipedia_sources_bias.analysis import analyze_page
+from wikipedia_sources_bias.analysis import analyze_page, _query_wikidata_sparql
 
-# Coordinates for mapping (latitude, longitude)
+# Default fallbacks coordinates for mapping (latitude, longitude)
 COUNTRY_COORDINATES = {
     "United States": [37.0902, -95.7129],
     "United Kingdom": [55.3781, -3.4360],
@@ -46,6 +48,63 @@ COUNTRY_COORDINATES = {
     "United Arab Emirates": [23.4241, 53.8478],
 }
 
+COUNTRY_COORDS_CACHE_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
+    "country_coordinates_cache.json"
+)
+
+def _query_wikidata_country_coords(country_name: str) -> list[float] | None:
+    query = f"""
+    SELECT ?coords WHERE {{
+      ?item rdfs:label "{country_name}"@en.
+      ?item wdt:P625 ?coords.
+    }} LIMIT 1
+    """
+    try:
+        rows = _query_wikidata_sparql(query)
+        if rows and rows[0].get("coords"):
+            coords_str = rows[0]["coords"]
+            match = re.search(r'Point\(([-\d\.]+)\s+([-\d\.]+)\)', coords_str)
+            if match:
+                lon = float(match.group(1))
+                lat = float(match.group(2))
+                return [lat, lon]
+    except Exception:
+        pass
+    return None
+
+def _load_coords_cache() -> dict[str, list[float]]:
+    cache = COUNTRY_COORDINATES.copy()
+    if os.path.exists(COUNTRY_COORDS_CACHE_FILE):
+        try:
+            with open(COUNTRY_COORDS_CACHE_FILE, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                for k, v in loaded.items():
+                    if isinstance(v, list) and len(v) == 2:
+                        cache[k] = v
+        except Exception:
+            pass
+    return cache
+
+def _save_coords_cache(cache: dict[str, list[float]]):
+    try:
+        with open(COUNTRY_COORDS_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+def get_country_coordinates(country_name: str, cache: dict[str, list[float]]) -> list[float] | None:
+    if country_name in cache:
+        return cache[country_name]
+        
+    coords = _query_wikidata_country_coords(country_name)
+    if coords:
+        cache[country_name] = coords
+        _save_coords_cache(cache)
+        return coords
+        
+    return None
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Map out Wikipedia page sources geographically")
     parser.add_argument("url", help="Wikipedia article URL")
@@ -60,17 +119,28 @@ def main() -> None:
         action="store_true",
         help="Bypass page cache and force fresh analysis",
     )
+    parser.add_argument(
+        "--skip-rate-limiting",
+        action="store_true",
+        help="Bypass all sleep delays and external rate-limited lookups",
+    )
+    parser.add_argument(
+        "--filter-unresolved",
+        action="store_true",
+        help="Filter out sources that do not resolve to a known country in COUNTRY_COORDINATES",
+    )
     parser.add_argument("--output", type=str, default="sources_map.json", help="Path to write JSON mapping to")
     args = parser.parse_args()
 
     max_sources = None if args.all else args.max_sources
     print(f"Analyzing page: {args.url}...", file=sys.stderr)
     try:
-        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache)
+        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache, skip_rate_limiting=args.skip_rate_limiting, countries_only=True)
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 
+    coords_cache = _load_coords_cache()
     features = []
     country_counts = {}
     
@@ -84,9 +154,14 @@ def main() -> None:
         
         # Split combined countries (e.g. "France, United Kingdom" -> "France")
         primary_country = country.split(",")[0].strip() if country else "Unknown"
+        
+        coords = get_country_coordinates(primary_country, coords_cache)
+        if args.filter_unresolved:
+            if primary_country == "Unknown" or not coords or coords == [0.0, 0.0]:
+                continue
+                
         country_counts[primary_country] = country_counts.get(primary_country, 0) + 1
         
-        coords = COUNTRY_COORDINATES.get(primary_country)
         if not coords:
             # Fallback by region
             if region == "Europe":
@@ -130,7 +205,10 @@ def main() -> None:
     # Build country-level features for heatmaps
     country_features = []
     for cname, count in country_counts.items():
-        coords = COUNTRY_COORDINATES.get(cname)
+        coords = get_country_coordinates(cname, coords_cache)
+        if args.filter_unresolved:
+            if cname == "Unknown" or not coords or coords == [0.0, 0.0]:
+                continue
         if not coords:
             coords = [0.0, 0.0]
         country_features.append({

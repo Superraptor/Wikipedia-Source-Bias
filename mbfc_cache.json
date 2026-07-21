@@ -17,15 +17,6 @@
     "media_type": "Website",
     "traffic_popularity": "Medium Traffic"
   },
-  "whoswho": {},
-  "lepoint": {},
-  "archive": {},
-  "francebleu": {},
-  "books": {},
-  "gala": {},
-  "purepeople": {},
-  "parismatch": {},
-  "rfgenealogie": {},
   "le-monde-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
     "bias_rating": "LEFT-CENTER",
@@ -36,9 +27,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "courrier-picard": {},
-  "deces": {},
-  "ouest-france": {},
   "la-depeche-du-midi": {
     "mbfc_url": "https://mediabiasfactcheck.com/la-depeche-du-midi/",
     "bias_rating": "LEFT-CENTER",
@@ -49,11 +37,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "libramemoria": {},
-  "francetvinfo": {},
-  "lesechos": {},
-  "femmeactuelle": {},
-  "rmc": {},
   "liberation-paris-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
     "bias_rating": "LEFT-CENTER",
@@ -63,7 +46,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "europe1": {},
   "le-parisien-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/le-parisien-bias/",
     "bias_rating": "RIGHT-CENTER (3.0)",
@@ -74,19 +56,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "huffingtonpost": {},
-  "portal": {},
-  "la-croix": {},
-  "letudiant": {},
-  "sciencespo": {},
-  "etudiant": {},
-  "tempsreel": {},
-  "lexpress": {},
-  "philomag": {},
-  "lopinion": {},
-  "legifrance": {},
-  "lejdd": {},
-  "jeuneafrique": {},
   "gq-magazine": {
     "mbfc_url": "https://mediabiasfactcheck.com/gq-magazine/",
     "bias_rating": "LEFT Factual Reporting",
@@ -107,9 +76,6 @@
     "media_type": "Magazine",
     "traffic_popularity": "High Traffic"
   },
-  "off-investigation": {},
-  "madame": {},
-  "lavoixdunord": {},
   "challenges": {
     "mbfc_url": "https://mediabiasfactcheck.com/challenges/",
     "bias_rating": "PRO-SCIENCE Factual Reporting",
@@ -120,26 +86,6 @@
     "media_type": "Journal",
     "traffic_popularity": "Minimal Traffic"
   },
-  "tf1info": {},
-  "catalogue": {},
-  "france3-regions": {},
-  "rmcsport": {},
-  "medias": {
-    "mbfc_url": "https://mediabiasfactcheck.com/medias/",
-    "bias_rating": "LEAST BIASED",
-    "factual_reporting": "HIGH Launched in",
-    "credibility_rating": "unknown"
-  },
-  "ccomptes": {},
-  "sudouest": {},
-  "web": {
-    "mbfc_url": "https://mediabiasfactcheck.com/web/",
-    "bias_rating": "LEAST BIASED",
-    "factual_reporting": "unknown",
-    "credibility_rating": "unknown"
-  },
-  "nouvelobs": {},
-  "streetpress": {},
   "mediapart-bias-credibility": {
     "mbfc_url": "https://mediabiasfactcheck.com/mediapart-bias-credibility/",
     "bias_rating": "LEFT-CENTER",
@@ -149,11 +95,6 @@
     "media_type": "Website",
     "traffic_popularity": "High Traffic"
   },
-  "youtube": {},
-  "visionsmag": {},
-  "lesinrocks": {},
-  "arretsurimages": {},
-  "bfmbusiness": {},
   "metro-uk": {
     "mbfc_url": "https://mediabiasfactcheck.com/metro-uk/",
     "bias_rating": "LEFT-CENTER",
@@ -163,9 +104,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "franceinter": {},
-  "lelab": {},
-  "lci": {},
   "rfi-radio-france-internationale": {
     "mbfc_url": "https://mediabiasfactcheck.com/rfi-radio-france-internationale/",
     "bias_rating": "LEAST BIASED Factual Reporting",
@@ -174,9 +112,6 @@
     "media_type": "Radio Station",
     "traffic_popularity": "High Traffic"
   },
-  "dailymotion": {},
-  "busetcar": {},
-  "ege": {},
   "france24": {
     "mbfc_url": "https://mediabiasfactcheck.com/france24/",
     "bias_rating": "LEAST BIASED",
@@ -186,7 +121,6 @@
     "media_type": "TV Station",
     "traffic_popularity": "High Traffic"
   },
-  "estrepublicain": {},
   "slate": {
     "mbfc_url": "https://mediabiasfactcheck.com/slate/",
     "bias_rating": "LEFT",
@@ -196,8 +130,6 @@
     "media_type": "Website",
     "traffic_popularity": "High Traffic"
   },
-  "latribune": {},
-  "lalsace": {},
   "rtl": {
     "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
     "bias_rating": "LEAST BIASED (1.1)",
@@ -208,9 +140,6 @@
     "media_type": "Radio Station",
     "traffic_popularity": "High Traffic"
   },
-  "bfmtv": {},
-  "rts": {},
-  "franceculture": {},
   "capital": {
     "mbfc_url": "https://mediabiasfactcheck.com/capital/",
     "bias_rating": "RIGHT-CENTER (4.3)",
@@ -221,11 +150,6 @@
     "media_type": "Website",
     "traffic_popularity": "Minimal Traffic"
   },
-  "publicsenat": {},
-  "20minutes": {},
-  "countryeconomy": {},
-  "insee": {},
-  "blog": {},
   "daily-telegraph": {
     "mbfc_url": "https://mediabiasfactcheck.com/daily-telegraph/",
     "bias_rating": "RIGHT (6.4)",
@@ -245,8 +169,6 @@
     "media_type": "Website",
     "traffic_popularity": "Minimal Traffic"
   },
-  "service-public": {},
-  "elysee": {},
   "afp-agence-france-presse": {
     "mbfc_url": "https://mediabiasfactcheck.com/afp-agence-france-presse/",
     "bias_rating": "LEFT-CENTER",
@@ -277,21 +199,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "jean-jaures": {},
-  "nicematin": {},
-  "ladepeche": {},
-  "bva-group": {},
-  "linternaute": {},
-  "charentelibre": {},
-  "conseil-constitutionnel": {},
-  "atlantico": {},
-  "leprogres": {},
-  "edition": {},
-  "letemps": {},
-  "lorientlejour": {},
-  "courrierinternational": {},
-  "afriquexxi": {},
-  "all-andorra": {},
   "ad": {
     "mbfc_url": "https://mediabiasfactcheck.com/ad/",
     "bias_rating": "LEFT-CENTER",
@@ -302,8 +209,6 @@
     "media_type": "Website",
     "traffic_popularity": "Medium Traffic"
   },
-  "histoiresroyales": {},
-  "lindependant": {},
   "information": {
     "mbfc_url": "https://mediabiasfactcheck.com/information/",
     "bias_rating": "LEFT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
@@ -312,7 +217,6 @@
     "media_type": "Website",
     "traffic_popularity": "Minimal Traffic"
   },
-  "lemonde": {},
   "actu": {
     "mbfc_url": "https://mediabiasfactcheck.com/actu/",
     "bias_rating": "PSEUDOSCIENCE",
@@ -322,11 +226,6 @@
     "media_type": "Website",
     "traffic_popularity": "Medium Traffic"
   },
-  "dx": {},
-  "lamontagne": {},
-  "midilibre": {},
-  "lefigaro": {},
-  "cnews": {},
   "liberation": {
     "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
     "bias_rating": "LEFT",
@@ -336,8 +235,6 @@
     "media_type": "Website",
     "traffic_popularity": "Minimal Traffic"
   },
-  "radiofrance": {},
-  "humanite": {},
   "el-pais": {
     "mbfc_url": "https://mediabiasfactcheck.com/el-pais/",
     "bias_rating": "LEFT-CENTER",
@@ -348,7 +245,6 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
-  "thetimes": {},
   "politico-europe-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/politico-europe-bias/",
     "bias_rating": "LEFT-CENTER",
@@ -368,7 +264,6 @@
     "media_type": "Website",
     "traffic_popularity": "High Traffic"
   },
-  "alternatives-economiques": {},
   "fr": {
     "mbfc_url": "https://mediabiasfactcheck.com/fr/",
     "bias_rating": "NOT RATED Factual Reporting",
@@ -377,5 +272,46 @@
     "country": "Unknown",
     "media_type": "Website",
     "traffic_popularity": "Medium Traffic"
-  }
+  },
+  "planet": {
+    "mbfc_url": "https://mediabiasfactcheck.com/planet/",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MIXED (4.8)",
+    "credibility_rating": "MEDIUM CREDIBILITY",
+    "country": "USA",
+    "media_type": "Website",
+    "traffic_popularity": "Mimimal Traffic"
+  },
+  "cairn": {
+    "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+    "bias_rating": "EXTREME RIGHT Factual Reporting",
+    "factual_reporting": "LOW Country",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "Australia",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  },
+  "valeurs-actuelles-bias": {
+    "mbfc_url": "https://mediabiasfactcheck.com/valeurs-actuelles-bias/",
+    "bias_rating": "RIGHT (8.5)",
+    "factual_reporting": "MIXED (6.3)",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "France",
+    "media_type": "Magazine",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "amnesty": {
+    "mbfc_url": "https://mediabiasfactcheck.com/amnesty/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH (1.0)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "United Kingdom",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Organization/Foundation",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "whoswho": {},
+  "lepoint": {},
+  "archive": {}
 }

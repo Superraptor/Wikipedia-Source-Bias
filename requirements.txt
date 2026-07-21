@@ -3,6 +3,7 @@
 # Core dependencies
 requests>=2.31.0
 beautifulsoup4>=4.12.0
+nametrace>=0.1.1
 
 # Sentiment Analysis (Optional / Hugging Face pipeline support)
 transformers>=4.40.0
