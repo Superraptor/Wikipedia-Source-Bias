@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Analyze Wikipedia article sources for geographic and author profile insights"
 requires-python = ">=3.11"
 readme = "README.md"
-authors = [{name = "OpenAI"}]
+authors = [{name = "Clair Kronk"}]
 dependencies = [
     "requests>=2.31.0",
     "beautifulsoup4>=4.12.0",
