@@ -94,15 +94,29 @@ def test_analyze_source_bias():
 
 
 def test_analyze_author_bias():
-    # Female gender heuristic, no origin match -> source geography fallback
-    author_res = analyze_author_bias("Jane Doe", {"country": "United Kingdom", "region": "Europe"})
-    assert author_res["name"] == "Jane Doe"
-    assert author_res["gender_probability"]["female"] > 0.8
-    assert author_res["nationality_probability"]["United Kingdom"] == 0.7
+    import wikipedia_sources_bias.analysis as analysis
+    original_fn = analysis._get_nametrace_prediction
+    analysis._get_nametrace_prediction = lambda name: None
+    try:
+        # Female gender heuristic, no origin match -> source geography fallback
+        author_res = analyze_author_bias("Jane Doe", {"country": "United Kingdom", "region": "Europe"})
+        assert author_res["name"] == "Jane Doe"
+        assert author_res["gender_probability"]["female"] > 0.8
+        assert author_res["nationality_probability"]["United Kingdom"] == 0.7
 
-    # Surname pattern match (Eastern European / Russian)
-    author_res2 = analyze_author_bias("Ivan Petrov", {"country": "Germany", "region": "Europe"})
-    assert author_res2["nationality_probability"]["Russia/Eastern Europe"] == 0.7
+        # Surname pattern match (Eastern European / Russian)
+        author_res2 = analyze_author_bias("Ivan Petrov", {"country": "Germany", "region": "Europe"})
+        assert author_res2["nationality_probability"]["Russia/Eastern Europe"] == 0.7
+    finally:
+        analysis._get_nametrace_prediction = original_fn
+
+
+def test_analyze_author_bias_nametrace():
+    res = analyze_author_bias("Jean Dupont", {"country": "Germany", "region": "Europe"})
+    assert res["name"] == "Jean Dupont"
+    assert res["gender_probability"]["male"] > 0.6
+    # Should resolve to Western Europe via nametrace
+    assert any("Western Europe" in k for k in res["nationality_probability"].keys())
 
 
 def test_analyze_language_bias():

@@ -28,7 +28,6 @@ def _extract_page_title(url: str) -> str:
 
 
 def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
-    # Find all reference containers
     ref_containers = []
     
     # 1. Look for ol elements with class "references" (most standard)
@@ -36,7 +35,6 @@ def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
     
     # 2. Look for elements with class reflist or refbegin
     for c in soup.find_all(class_=["reflist", "refbegin"]):
-        # If it contains an ol.references, that's already captured, otherwise capture it
         if not c.find("ol", class_="references"):
             ref_containers.append(c)
             
@@ -60,14 +58,12 @@ def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
     
     for container in ref_containers:
         for li in container.find_all("li"):
-            # Decompose backlinks to clean the text
             li_copy = BeautifulSoup(str(li), "html.parser").find("li")
             if not li_copy:
                 continue
             for backlink in li_copy.find_all(class_="mw-cite-backlink"):
                 backlink.decompose()
                 
-            # Prefer reference-text container if present
             ref_text_el = li_copy.find(class_="reference-text")
             if ref_text_el:
                 text = " ".join(ref_text_el.get_text(" ", strip=True).split())
@@ -78,7 +74,6 @@ def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
             if not text:
                 continue
                 
-            # Gather urls from the reference text
             urls = []
             for a in li_copy.find_all("a", href=True):
                 href = a.get("href")
@@ -86,7 +81,6 @@ def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
                     if href.startswith("http"):
                         urls.append(href)
                         
-            # Deduplicate urls preserving order
             seen_urls = set()
             dedup_urls = []
             for u in urls:
@@ -172,7 +166,6 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
 
 
 def _extract_authors_from_citation(text: str) -> list[str]:
-    # Look for "by Author Name" (case-sensitive)
     by_matches = re.findall(
         r"\b[bB][yY]\s+([A-Z][a-zA-Z'\-]+\s+[A-Z][a-zA-Z'\-]+(?:\s+[A-Z][a-zA-Z'\-]+)*)",
         text
@@ -188,8 +181,6 @@ def _extract_authors_from_citation(text: str) -> list[str]:
         if valid_authors:
             return valid_authors
 
-    # Look for "Last, First" at start (highly common in citation formats)
-    # e.g., "Smith, John. (2020)" or "Smith, J. (2020)"
     start_match = re.match(r"^([A-Z][a-zA-Z'\-]+,\s+[A-Z][a-zA-Z'\-]*\.?(?:\s+[A-Z]\.?)?)", text)
     if start_match:
         name = start_match.group(1).strip()
@@ -201,7 +192,6 @@ def _extract_authors_from_citation(text: str) -> list[str]:
             name = f"{first_name} {parts[0].strip()}"
         return [name]
 
-    # Look for "First Last" followed by title/date boundary
     first_last_match = re.match(r"^([A-Z][a-zA-Z'\-]+\s+[A-Z][a-zA-Z'\-]+(?:\s+[A-Z][a-zA-Z'\-]+)?)(?=\.|\s+\(|,)", text)
     if first_last_match:
         name = first_last_match.group(1).strip()
@@ -345,7 +335,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
     
     # 1. Try VALUES exact URI matching (extremely fast, avoids timeouts completely)
     query_exact = f"""
-    SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
+    SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
       VALUES ?website {{
         <http://{domain}/> <https://{domain}/> <http://www.{domain}/> <https://www.{domain}/>
         <http://{domain}> <https://{domain}> <http://www.{domain}> <https://www.{domain}>
@@ -356,6 +346,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
       OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
       OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
       OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+      OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
       SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
     }}
     """
@@ -384,13 +375,14 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
 
         if entity_id:
             query_direct = f"""
-            SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
+            SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
               BIND(wd:{entity_id} AS ?publisher)
               OPTIONAL {{ ?publisher wdt:P17 ?country. }}
               OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
               OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
               OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
               OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+              OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
               SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
             }}
             """
@@ -399,7 +391,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
     # 3. Hard fallback to un-indexed regex scan (timeout-prone, last resort)
     if not rows:
         query_fallback = f"""
-        SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
+        SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
           ?publisher wdt:P856 ?website.
           FILTER(regex(str(?website), "https?://(www\\\\.)?{domain}(/|$)", "i")).
           OPTIONAL {{ ?publisher wdt:P17 ?country. }}
@@ -407,6 +399,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
           OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
           OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
           OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+          OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
           SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
         }} LIMIT 10
         """
@@ -422,6 +415,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
     political_ideologies = set()
     owners = set()
     types = set()
+    mbfc_ids = set()
     
     for r in rows:
         if r.get("publisher"):
@@ -438,6 +432,8 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
             owners.add(r["ownerLabel"])
         if r.get("instanceOfLabel"):
             types.add(r["instanceOfLabel"])
+        if r.get("mbfcId"):
+            mbfc_ids.add(r["mbfcId"])
             
     return {
         "wikidata_id": pub_id,
@@ -447,6 +443,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
         "political_ideologies": sorted(list(political_ideologies)),
         "owners": sorted(list(owners)),
         "types": sorted(list(types)),
+        "mbfc_id": list(mbfc_ids)[0] if mbfc_ids else None,
     }
 
 
@@ -831,7 +828,6 @@ def _fetch_url_readability(url: str) -> dict[str, Any]:
         response.raise_for_status()
         html = response.text
     except Exception:
-        # Fall back to Internet Archive Wayback Machine
         try:
             api_url = f"https://archive.org/wayback/available?url={url}"
             api_res = requests.get(api_url, timeout=5)
@@ -887,7 +883,6 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
     if host.startswith("www."):
         host = host[4:]
 
-    # Domain lookup
     domain_info = None
     candidate = host
     while "." in candidate:
@@ -908,7 +903,6 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
         source_type = domain_info.get("type", "unknown")
         language = domain_info.get("default_language", "English")
     else:
-        # Fallback to TLD geography
         country = "Unknown"
         region = "Unknown"
         for suffix, geo in TLD_GEOGRAPHY_MAP.items():
@@ -916,7 +910,6 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
                 country, region = geo
                 break
 
-        # Fallback language mapping
         language = "English"
         for suffix in TLD_GEOGRAPHY_MAP.keys():
             if host.endswith(suffix):
@@ -938,7 +931,6 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
                     language = "Italian"
                 break
 
-        # Path-based language fallback
         path = parsed.path.lower()
         if "/fr/" in path or "fr." in host:
             language = "French"
@@ -957,7 +949,6 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
         elif "/zh/" in path or "zh." in host:
             language = "Chinese"
 
-        # Reliability and source type heuristics
         if host.endswith(".edu") or "ac.uk" in host:
             source_type = "academic_institution"
             reliability = "academic/peer-reviewed"
@@ -987,8 +978,72 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
     }
 
 
+_nametracer_instance = None
+
+def _get_nametrace_prediction(name: str) -> dict[str, Any] | None:
+    global _nametracer_instance
+    try:
+        from nametrace import NameTracer
+        if _nametracer_instance is None:
+            _nametracer_instance = NameTracer()
+        return _nametracer_instance.predict(name)
+    except Exception:
+        return None
+
+
 def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> dict[str, Any]:
     clean_name = author_name.strip()
+    
+    nt_res = _get_nametrace_prediction(clean_name)
+    if nt_res and nt_res.get("is_human"):
+        gender = nt_res.get("gender")
+        subregion = nt_res.get("subregion", "")
+        conf = nt_res.get("confidence", {})
+        
+        gender_conf = conf.get("gender", 0.85)
+        if gender == "male":
+            gender_prob = {
+                "male": round(gender_conf, 2),
+                "female": round((1 - gender_conf) * 0.1, 2),
+                "unknown": round((1 - gender_conf) * 0.9, 2)
+            }
+        elif gender == "female":
+            gender_prob = {
+                "male": round((1 - gender_conf) * 0.1, 2),
+                "female": round(gender_conf, 2),
+                "unknown": round((1 - gender_conf) * 0.9, 2)
+            }
+        else:
+            gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
+            
+        region = "Unknown"
+        if subregion:
+            if "Europe" in subregion:
+                region = "Europe"
+            elif "Asia" in subregion:
+                region = "Asia"
+            elif "America" in subregion:
+                region = "North America" if "Northern" in subregion else "South/Central America"
+            elif "Africa" in subregion:
+                region = "Africa"
+            elif "Oceania" in subregion:
+                region = "Oceania"
+            elif "Middle East" in subregion:
+                region = "Middle East"
+                
+        subregion_conf = conf.get("subregion", 0.70)
+        nationality_prob = {
+            subregion or "Unknown": round(subregion_conf, 2),
+            "Unknown": round(1 - subregion_conf, 2)
+        }
+        
+        return {
+            "name": clean_name,
+            "gender_probability": gender_prob,
+            "nationality_probability": nationality_prob,
+            "notes": f"Author background estimated using nametrace package (region: {subregion}).",
+        }
+
     first_name = clean_name.split()[0].lower() if clean_name.split() else clean_name.lower()
 
     gender_guess = FIRST_NAME_GENDER.get(first_name, "unknown")
@@ -1034,11 +1089,10 @@ def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
     try:
         from transformers import pipeline
         if _sentiment_pipeline is None:
-            # Loads tiny, multilingual DistilBERT model
             _sentiment_pipeline = pipeline(
                 "sentiment-analysis",
                 model="lxyuan/distilbert-base-multilingual-cased-sentiments-student",
-                device=-1, # CPU only
+                device=-1,
             )
         result = _sentiment_pipeline(text[:512])[0]
         label = result["label"].lower()
@@ -1093,16 +1147,12 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
             "sentiment_source": "Lexical Heuristics",
         }
 
-    # 1. Query Hugging Face model
     hf_res = _get_huggingface_sentiment(citation_text)
-    
-    # 2. Multilingual stop-word language detector
     lang = _detect_language(citation_text)
     
     words = re.findall(r"\b[a-zA-Z'\-]+\b", citation_text.lower())
     total_words = len(words)
 
-    # 3. Multilingual lexical keyword lookups
     loaded_lexicon = MULTILINGUAL_LOADED_WORDS.get(lang, SUBJECTIVE_LOADED_WORDS)
     opinion_lexicon = MULTILINGUAL_OPINION_INDICATORS.get(lang, OPINION_EDITORIAL_INDICATORS)
 
@@ -1178,37 +1228,30 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     book_count = 0
 
     for s in sources:
-        # Geography
         geo = s.get("geography", {})
         c = geo.get("country", "Unknown")
         r = geo.get("region", "Unknown")
         countries[c] = countries.get(c, 0) + 1
         regions[r] = regions.get(r, 0) + 1
 
-        # Political Leaning
         pol = s.get("political_leaning", "unknown")
         political[pol] = political.get(pol, 0) + 1
 
-        # Reliability
         rel = s.get("reliability", "unknown")
         reliability[rel] = reliability.get(rel, 0) + 1
 
-        # Language
         lang = s.get("language", "English")
         languages[lang] = languages.get(lang, 0) + 1
 
-        # Source Type
         t = s.get("source_type", "unknown")
         types[t] = types.get(t, 0) + 1
 
-        # Language Level Bias
         lang_bias = s.get("language_bias", {})
         total_sub_score += lang_bias.get("subjectivity_score", 0.0)
         total_sens_score += lang_bias.get("sensationalism_score", 0.0)
         if lang_bias.get("is_opinion", False):
             opinion_count += 1
 
-        # Author profiles
         author_profiles = s.get("author_profiles", [])
         for auth in author_profiles:
             gender_prob = auth.get("gender_probability", {})
@@ -1216,14 +1259,12 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
                 gender_sums[g] = gender_sums.get(g, 0.0) + prob
             authors_analyzed += 1
 
-        # Readability stats
         readability = s.get("readability", {})
         ease = readability.get("flesch_reading_ease")
         if ease is not None:
             total_readability += ease
             readability_count += 1
 
-        # Book source count
         wikidata_book = s.get("wikidata_book", {})
         google_books = s.get("google_books_metadata", {})
         oclc_meta = s.get("oclc_metadata", {})
@@ -1267,6 +1308,106 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+_mbfc_cache: dict[str, dict[str, Any]] = {}
+
+LOCAL_MBFC_RATINGS = {
+    "le-point": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "le-figaro": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "reuters": {"bias_rating": "Least Biased", "factual_reporting": "Very High", "credibility_rating": "High Credibility"},
+    "associated-press": {"bias_rating": "Least Biased", "factual_reporting": "Very High", "credibility_rating": "High Credibility"},
+    "the-new-york-times": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "the-washington-post": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "wall-street-journal": {"bias_rating": "Right-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "bbc": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "cnn": {"bias_rating": "Left-Center", "factual_reporting": "Mostly Factual", "credibility_rating": "Medium Credibility"},
+    "fox-news-channel": {"bias_rating": "Right", "factual_reporting": "Mixed", "credibility_rating": "Medium Credibility"},
+    "msnbc": {"bias_rating": "Left", "factual_reporting": "Mostly Factual", "credibility_rating": "Medium Credibility"},
+    "breitbart": {"bias_rating": "Right", "factual_reporting": "Mixed", "credibility_rating": "Low Credibility"},
+    "guardian": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "le-monde": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+    "le-monde-diplomatique": {"bias_rating": "Left-Center", "factual_reporting": "High", "credibility_rating": "High Credibility"},
+}
+
+def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any]:
+    slug = mbfc_id or domain.split(".")[0].lower()
+    
+    if slug in LOCAL_MBFC_RATINGS:
+        res = LOCAL_MBFC_RATINGS[slug].copy()
+        res["mbfc_url"] = f"https://mediabiasfactcheck.com/{slug}/"
+        return res
+        
+    if slug in _mbfc_cache:
+        return _mbfc_cache[slug]
+        
+    candidates = [
+        f"https://mediabiasfactcheck.com/{slug}-bias-and-credibility/",
+        f"https://mediabiasfactcheck.com/{slug}/",
+        f"https://mediabiasfactcheck.com/{slug}-bias/"
+    ]
+    
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    
+    for url in candidates:
+        html = ""
+        try:
+            response = requests.get(url, headers=headers, timeout=3)
+            if response.status_code == 200:
+                html = response.text
+        except Exception:
+            pass
+            
+        if not html:
+            try:
+                api_url = f"https://archive.org/wayback/available?url={url}"
+                api_res = requests.get(api_url, timeout=3)
+                if api_res.status_code == 200:
+                    data = api_res.json()
+                    snapshots = data.get("archived_snapshots", {})
+                    if "closest" in snapshots:
+                        archive_url = snapshots["closest"]["url"]
+                        archive_res = requests.get(archive_url, headers=headers, timeout=3)
+                        if archive_res.status_code == 200:
+                            html = archive_res.text
+            except Exception:
+                pass
+                
+        if html:
+            try:
+                soup = BeautifulSoup(html, "html.parser")
+                page_text = soup.get_text(" ", strip=True)
+                
+                bias_match = re.search(r"Bias Rating:\s*([a-zA-Z\-\s]+?)(?=\s*(?:Factual|Credibility|\.|$))", page_text, re.I)
+                factual_match = re.search(r"Factual Reporting:\s*([a-zA-Z\s]+?)(?=\s*(?:Bias|Credibility|\.|$))", page_text, re.I)
+                credibility_match = re.search(r"Credibility Rating:\s*([a-zA-Z\s\-\/]+?)(?=\s*(?:Bias|Factual|\.|$))", page_text, re.I)
+                
+                bias_val = bias_match.group(1).strip() if bias_match else "unknown"
+                factual_val = factual_match.group(1).strip() if factual_match else "unknown"
+                credibility_val = credibility_match.group(1).strip() if credibility_match else "unknown"
+                
+                if bias_val == "unknown":
+                    b_m = re.search(r"\b(left|left-center|least biased|right-center|right|conspiracy/pseudoscience|pro-science|questionable-source)\b", page_text.lower())
+                    if b_m:
+                        bias_val = b_m.group(0).capitalize()
+                if factual_val == "unknown":
+                    f_m = re.search(r"\b(high|very high|mostly factual|mixed|low|very low)\b", page_text.lower())
+                    if f_m:
+                        factual_val = f_m.group(0).capitalize()
+                        
+                if len(bias_val) < 40 and len(factual_val) < 40:
+                    res = {
+                        "mbfc_url": url,
+                        "bias_rating": bias_val,
+                        "factual_reporting": factual_val,
+                        "credibility_rating": credibility_val,
+                    }
+                    _mbfc_cache[slug] = res
+                    return res
+            except Exception:
+                pass
+                
+    return {}
+
+
 def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
@@ -1294,13 +1435,9 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
 
     sources: list[dict[str, Any]] = []
     for source_url in dedup_candidate_urls[:max_sources]:
-        # Basic Wikidata lookup
         wikidata = _fetch_wikidata_enrichment(source_url)
-        
-        # Source level analysis
         profile = analyze_source_bias(source_url, wikidata)
         
-        # Match URL back to citation to get text
         citation_text = ""
         for citation in citations:
             if source_url in citation.get("urls", []):
@@ -1309,19 +1446,27 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
                 
         profile["citation_text"] = citation_text
         
-        # Resolve details from publisher domain in Wikidata SPARQL (ideology, alignment, owner, type)
         wikidata_pub = _fetch_wikidata_publisher(profile["domain"])
         profile["wikidata_publisher"] = wikidata_pub
-        if wikidata_pub and wikidata_pub.get("political_leanings"):
-            profile["political_leaning"] = ", ".join(wikidata_pub["political_leanings"])
-        if wikidata_pub and wikidata_pub.get("countries"):
-            profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
+        if wikidata_pub:
+            wd_leanings = []
+            if wikidata_pub.get("political_ideologies"):
+                wd_leanings.extend(wikidata_pub["political_ideologies"])
+            if wikidata_pub.get("political_leanings"):
+                for l in wikidata_pub["political_leanings"]:
+                    if l not in wd_leanings:
+                        wd_leanings.append(l)
+            if wd_leanings:
+                profile["political_leaning"] = ", ".join(wd_leanings)
+            if wikidata_pub.get("countries"):
+                profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
 
-        # Fetch URL readability score & extract page author
+        mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
+        profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id)
+
         profile["readability"] = _fetch_url_readability(source_url)
         extracted_web_author = profile["readability"].get("extracted_author")
 
-        # Look for identifiers (Google Books ID, OCLC, DOI, ISBN)
         books_id = _extract_google_books_id(source_url)
         oclc_num = _extract_oclc(source_url) or _extract_oclc(citation_text)
         doi_val = _extract_doi(source_url) or _extract_doi(citation_text)
@@ -1367,7 +1512,6 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
             profile["source_type"] = "book"
             profile["reliability"] = "high"
 
-        # Resolve Authors names (prioritize: book/doi metadata -> citation text -> extracted web page -> page metadata)
         citation_authors = _extract_authors_from_citation(citation_text)
         
         meta_authors = []
@@ -1399,8 +1543,6 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
             
         profile["author_profiles"] = author_profiles
         profile["author_profile"] = author_profiles[0] if author_profiles else None
-
-        # Language level analysis (multilingual + Hugging Face)
         profile["language_bias"] = analyze_language_bias(citation_text)
 
         sources.append(profile)
@@ -1414,13 +1556,13 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         fallback_source["google_books_metadata"] = {}
         fallback_source["oclc_metadata"] = {}
         fallback_source["doi_metadata"] = {}
+        fallback_source["mbfc"] = {}
         fallback_source["readability"] = _calculate_readability("Reuters World News")
         fallback_source["author_profiles"] = []
         fallback_source["author_profile"] = None
         fallback_source["language_bias"] = analyze_language_bias("Reuters World News")
         sources = [fallback_source]
 
-    # Perform page-wide bias aggregation
     aggregated_bias = aggregate_page_bias(sources)
 
     return {
@@ -1462,6 +1604,11 @@ def render_report(analysis: dict[str, Any]) -> str:
         gender_lines.append(f"     - {gender}: {pct}%")
     gender_str = "\n".join(gender_lines) if gender_lines else "     - No authors identified"
 
+    lang_dist_lines = []
+    for lang, data in agg.get("language_distribution", {}).items():
+        lang_dist_lines.append(f"     - {lang}: {data['count']} ({data['percentage']}%)")
+    lang_dist_str = "\n".join(lang_dist_lines) if lang_dist_lines else "     - None"
+
     lang_metrics = agg.get("language_bias_metrics", {})
     readability_metrics = agg.get("readability_metrics", {})
 
@@ -1499,6 +1646,9 @@ def render_report(analysis: dict[str, Any]) -> str:
         f"     - Avg Flesch Reading Ease:  {readability_metrics.get('average_flesch_reading_ease', 'N/A')}",
         f"     - Book/OCLC Source Count:   {agg.get('book_count', 0)}",
         "",
+        f"7. Source Language Distribution:",
+        lang_dist_str,
+        "",
         f"--------------------------------------------------",
         f" DETAILED SOURCE ANALYSIS",
         f"--------------------------------------------------",
@@ -1513,8 +1663,8 @@ def render_report(analysis: dict[str, Any]) -> str:
         gbooks = source.get("google_books_metadata") or {}
         oclc_m = source.get("oclc_metadata") or {}
         doi_m = source.get("doi_metadata") or {}
+        mbfc_info = source.get("mbfc") or {}
 
-        # Author details
         author_profiles = source.get("author_profiles", [])
         author_strs = []
         for a in author_profiles:
@@ -1539,7 +1689,6 @@ def render_report(analysis: dict[str, Any]) -> str:
             
         author_val = "; ".join(author_strs) if author_strs else "unknown"
 
-        # Publisher ground truth details
         pub_parts = []
         if wiki_pub.get("wikidata_id"):
             pub_parts.append(f"WD ID: {wiki_pub['wikidata_id']}")
@@ -1553,7 +1702,14 @@ def render_report(analysis: dict[str, Any]) -> str:
                 pub_parts.append(f"Types: {', '.join(wiki_pub['types'])}")
         pub_gt_str = f" ({'; '.join(pub_parts)})" if pub_parts else ""
 
-        # Book details
+        mbfc_str = ""
+        if mbfc_info.get("mbfc_url"):
+            mbfc_str = (
+                f" (MBFC Bias: {mbfc_info.get('bias_rating')}; "
+                f"Factuality: {mbfc_info.get('factual_reporting')}; "
+                f"Credibility: {mbfc_info.get('credibility_rating')})"
+            )
+
         book_details = ""
         if wiki_book.get("wikidata_id"):
             book_details = (
@@ -1578,7 +1734,6 @@ def render_report(analysis: dict[str, Any]) -> str:
                 f"   Book Pub Date:     {oclc_m.get('pub_date')}\n"
             )
 
-        # DOI details
         doi_details = ""
         if doi_m.get("doi"):
             doi_details = (
@@ -1590,7 +1745,6 @@ def render_report(analysis: dict[str, Any]) -> str:
                 f"   DOI Wikidata:      {doi_m.get('wikidata_id') or 'n/a'}\n"
             )
 
-        # Readability formatting
         ease_score = readability.get("flesch_reading_ease")
         grade_score = readability.get("flesch_kincaid_grade")
         readability_str = (
@@ -1600,7 +1754,7 @@ def render_report(analysis: dict[str, Any]) -> str:
 
         lines.append(
             f"{index}. URL: {source['url']}\n"
-            f"   Domain:            {source['domain']}{pub_gt_str}\n"
+            f"   Domain:            {source['domain']}{pub_gt_str}{mbfc_str}\n"
             f"   Source Type:       {source['source_type']}\n"
             f"   Geography:         {source['geography']['country']} ({source['geography']['region']})\n"
             f"   Language:          {source['language']}\n"
