@@ -9,6 +9,10 @@ description = "Analyze Wikipedia article sources for geographic and author profi
 requires-python = ">=3.11"
 readme = "README.md"
 authors = [{name = "OpenAI"}]
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
 
 [project.scripts]
 wikipedia-sources-bias = "wikipedia_sources_bias.cli:main"

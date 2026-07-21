@@ -2,17 +2,54 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 
-from .analysis import analyze_page
+from .analysis import analyze_page, render_report
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Analyze Wikipedia article sources")
+    parser = argparse.ArgumentParser(description="Analyze Wikipedia article sources and their biases")
     parser.add_argument("url", help="Wikipedia page URL")
+    parser.add_argument(
+        "--format",
+        choices=["text", "json"],
+        default="text",
+        help="Output format (default: text)",
+    )
+    parser.add_argument(
+        "--max-sources",
+        type=int,
+        default=10,
+        help="Maximum number of sources to analyze (default: 10)",
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        help="File path to write output to",
+    )
     args = parser.parse_args()
 
-    result = analyze_page(args.url)
-    print(json.dumps(result, indent=2))
+    try:
+        result = analyze_page(args.url, max_sources=args.max_sources)
+    except Exception as e:
+        print(f"Error during analysis: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    if args.format == "json":
+        output_str = json.dumps(result, indent=2)
+    else:
+        output_str = render_report(result)
+
+    if args.output:
+        try:
+            with open(args.output, "w", encoding="utf-8") as f:
+                f.write(output_str)
+            print(f"Report successfully saved to: {args.output}")
+        except Exception as e:
+            print(f"Failed to write to file: {e}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        print(output_str)
 
 
 if __name__ == "__main__":
