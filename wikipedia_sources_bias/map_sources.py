@@ -50,12 +50,23 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Map out Wikipedia page sources geographically")
     parser.add_argument("url", help="Wikipedia article URL")
     parser.add_argument("--max-sources", type=int, default=20, help="Max sources to analyze")
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Analyze all sources on the page (overrides --max-sources)",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Bypass page cache and force fresh analysis",
+    )
     parser.add_argument("--output", type=str, default="sources_map.json", help="Path to write JSON mapping to")
     args = parser.parse_args()
 
+    max_sources = None if args.all else args.max_sources
     print(f"Analyzing page: {args.url}...", file=sys.stderr)
     try:
-        data = analyze_page(args.url, max_sources=args.max_sources)
+        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache)
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)

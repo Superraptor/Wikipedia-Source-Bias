@@ -1,12 +1,4 @@
 {
-  "en": {
-    "mbfc_url": "https://mediabiasfactcheck.com/en/",
-    "bias_rating": "EXTREME RIGHT",
-    "factual_reporting": "Low",
-    "credibility_rating": "LOW CREDIBILITY History En Volve is an anonymously run conservative news and opinion website that publishes misinformation"
-  },
-  "whoswho": {},
-  "lepoint": {},
   "le-figaro-bias": {
     "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
     "bias_rating": "RIGHT-CENTER (4.0)",
@@ -17,6 +9,16 @@
     "media_type": "Newspaper",
     "traffic_popularity": "High Traffic"
   },
+  "en": {
+    "mbfc_url": "https://mediabiasfactcheck.com/en/",
+    "bias_rating": "EXTREME RIGHT Factual Reporting",
+    "factual_reporting": "VERY-LOW Country",
+    "credibility_rating": "LOW CREDIBILITY",
+    "media_type": "Website",
+    "traffic_popularity": "Medium Traffic"
+  },
+  "whoswho": {},
+  "lepoint": {},
   "archive": {},
   "francebleu": {}
 }

@@ -1594,8 +1594,31 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None) -> dict[str, Any
     _save_mbfc_cache(_mbfc_cache)
     return {}
 
+PAGE_CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "page_cache.json")
 
-def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
+def _load_page_cache() -> dict[str, Any]:
+    if os.path.exists(PAGE_CACHE_FILE):
+        try:
+            with open(PAGE_CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+def _save_page_cache(cache: dict[str, Any]):
+    try:
+        with open(PAGE_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+
+def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False) -> dict[str, Any]:
+    cache_key = f"{url}_all" if max_sources is None else f"{url}_max_{max_sources}"
+    if not no_cache:
+        cache = _load_page_cache()
+        if cache_key in cache:
+            return cache[cache_key]
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
         response = requests.get(url, headers=headers, timeout=15)
@@ -1752,7 +1775,7 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
 
     aggregated_bias = aggregate_page_bias(sources)
 
-    return {
+    result = {
         "page_title": _extract_page_title(url),
         "page_url": url,
         "page_metadata": page_metadata,
@@ -1766,6 +1789,13 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
             f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
         ),
     }
+
+    if not no_cache:
+        cache = _load_page_cache()
+        cache[cache_key] = result
+        _save_page_cache(cache)
+
+    return result
 
 
 def render_report(analysis: dict[str, Any]) -> str:

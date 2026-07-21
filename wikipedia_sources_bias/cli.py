@@ -23,14 +23,25 @@ def main() -> None:
         help="Maximum number of sources to analyze (default: 10)",
     )
     parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Analyze all sources on the page (overrides --max-sources)",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Bypass page cache and force fresh analysis",
+    )
+    parser.add_argument(
         "--output",
         type=str,
         help="File path to write output to",
     )
     args = parser.parse_args()
 
+    max_sources = None if args.all else args.max_sources
     try:
-        result = analyze_page(args.url, max_sources=args.max_sources)
+        result = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache)
     except Exception as e:
         print(f"Error during analysis: {e}", file=sys.stderr)
         sys.exit(1)
