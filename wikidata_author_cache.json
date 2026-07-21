@@ -17,5 +17,25 @@
     "political_parties": [],
     "occupations": [],
     "employers": []
+  },
+  "Vincent Delorme": {
+    "wikidata_id": "Q89271861",
+    "wikidata_name": "Vincent Delorme",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "researcher"
+    ],
+    "employers": [
+      {
+        "name": "Institut Pasteur Korea",
+        "country": "South Korea"
+      },
+      {
+        "name": "Center for Infection and Immunity of Lille",
+        "country": "France"
+      }
+    ]
   }
 }
