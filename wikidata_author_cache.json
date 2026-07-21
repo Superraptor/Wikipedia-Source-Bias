@@ -37,5 +37,369 @@
         "country": "France"
       }
     ]
+  },
+  "Daniel Wezler-Lang": {},
+  "George S. Larke-Walsh": {},
+  "Emmanuelle Beaubatie": {},
+  "Solène Cordier": {
+    "wikidata_id": "Q117531461",
+    "wikidata_name": "Solène Cordier",
+    "gender": "female",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Michelle Filice": {},
+  "CCDI": {
+    "wikidata_id": "Q1192996",
+    "wikidata_name": "Central Commission for Discipline Inspection of the Chinese Communist Party",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Dustin Gruber": {},
+  "Louys Moreri": {},
+  "Jane Mayer": {
+    "wikidata_id": "Q6152537",
+    "wikidata_name": "Jane Mayer",
+    "gender": "female",
+    "citizenships": [
+      "United States"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "author",
+      "investigative journalist",
+      "journalist",
+      "writer"
+    ],
+    "employers": [
+      {
+        "name": "The New Yorker",
+        "country": "United States"
+      }
+    ]
+  },
+  "The Pussy": {
+    "wikidata_id": "Q102385",
+    "wikidata_name": "The Pussycat Dolls",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Jean-Marie Le Pen": {
+    "wikidata_id": "Q7177",
+    "wikidata_name": "Jean-Marie Le Pen",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [
+      "Comités Jeanne",
+      "Front national",
+      "Front national pour français"
+    ],
+    "occupations": [
+      "lawyer",
+      "politician"
+    ],
+    "employers": []
+  },
+  "le_parisien": {
+    "wikidata_id": "Q142348",
+    "wikidata_name": "Le Parisien",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Olivier Beaumont": {
+    "wikidata_id": "Q130948195",
+    "wikidata_name": "Olivier Beaumont",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "cnews": {
+    "wikidata_id": "Q3083542",
+    "wikidata_name": "CNews",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "franceinfo": {
+    "wikidata_id": "Q19904",
+    "wikidata_name": "Franceinfo",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Benoit Deshayes": {
+    "wikidata_id": "Q132561856",
+    "wikidata_name": "Benoît Deshayes",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Le_NouvelObs": {},
+  "Valérie Igounet": {
+    "wikidata_id": "Q3554270",
+    "wikidata_name": "Valérie Igounet",
+    "gender": "female",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "historian",
+      "political scientist"
+    ],
+    "employers": [
+      {
+        "name": "National Center for Scientific Research",
+        "country": "France"
+      },
+      {
+        "name": "Institut d'histoire du temps présent",
+        "country": "France"
+      }
+    ]
+  },
+  "Jean-Louis Beaucarnot": {
+    "wikidata_id": "Q3166623",
+    "wikidata_name": "Jean-Louis Beaucarnot",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "genealogist",
+      "journalist",
+      "radio personality"
+    ],
+    "employers": []
+  },
+  "La Rédaction": {
+    "wikidata_id": "Q6087289",
+    "wikidata_name": "Procrastination",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Tugdual Denis": {
+    "wikidata_id": "Q72985819",
+    "wikidata_name": "Tugdual Denis",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist",
+      "writer"
+    ],
+    "employers": [
+      {
+        "name": "France Inter",
+        "country": "France"
+      },
+      {
+        "name": "RTL",
+        "country": "Germany"
+      },
+      {
+        "name": "Q517444",
+        "country": "France"
+      },
+      {
+        "name": "Q770596",
+        "country": "France"
+      },
+      {
+        "name": "France Soir",
+        "country": "France"
+      },
+      {
+        "name": "Le Point",
+        "country": "France"
+      },
+      {
+        "name": "Valeurs Actuelles",
+        "country": "France"
+      }
+    ]
+  },
+  "Ivanne Trippenbach": {
+    "wikidata_id": "Q99535432",
+    "wikidata_name": "Ivanne Trippenbach",
+    "gender": "female",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "political reporter"
+    ],
+    "employers": [
+      {
+        "name": "Le Monde",
+        "country": "France"
+      },
+      {
+        "name": "L'Opinion",
+        "country": "France"
+      }
+    ]
+  },
+  "La rédaction": {
+    "wikidata_id": "Q6087289",
+    "wikidata_name": "Procrastination",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Europarl_EN": {},
+  "Etudiant, Figaro": {},
+  "LEXPRESS": {
+    "wikidata_id": "Q770596",
+    "wikidata_name": "L'Express",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "David Doucet, Mathieu Dejean": {},
+  "Christiane Chombeau": {
+    "wikidata_id": "Q42345837",
+    "wikidata_name": "Christiane Chombeau",
+    "gender": "female",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [
+      "La France insoumise",
+      "Left Front",
+      "Parti de gauche"
+    ],
+    "occupations": [
+      "journalist",
+      "politician"
+    ],
+    "employers": []
+  },
+  "Nicolas Prissette": {
+    "wikidata_id": "Q46090671",
+    "wikidata_name": "Nicolas Prissette",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Christophe Forcari": {
+    "wikidata_id": "Q42345686",
+    "wikidata_name": "Christophe Forcari",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Le Pen": {
+    "wikidata_id": "Q23833684",
+    "wikidata_name": "Le Pen",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Le Monde": {
+    "wikidata_id": "Q12461",
+    "wikidata_name": "Le Monde",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Le Monde avec AFP": {},
+  "Dominique Albertini": {
+    "wikidata_id": "Q33313474",
+    "wikidata_name": "Dominique Albertini",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Ministère de l'Intérieur": {
+    "wikidata_id": "Q1518496",
+    "wikidata_name": "Ministry of the Interior",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "ELLEFrance": {},
+  "Valérie Igounet, historienne": {},
+  "Statistiques VoteWatch": {},
+  "Marine Turchi": {
+    "wikidata_id": "Q33313264",
+    "wikidata_name": "Marine Turchi",
+    "gender": "female",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist",
+      "teacher"
+    ],
+    "employers": [
+      {
+        "name": "Mediapart",
+        "country": "France"
+      },
+      {
+        "name": "Centre de formation et de perfectionnement des journalistes",
+        "country": "France"
+      },
+      {
+        "name": "Lille school of journalism - École supérieure de journalisme de Lille",
+        "country": "France"
+      }
+    ]
   }
 }

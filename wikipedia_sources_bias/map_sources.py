@@ -107,42 +107,16 @@ def get_country_coordinates(country_name: str, cache: dict[str, list[float]]) ->
         
     return None
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Map out Wikipedia page sources geographically")
-    parser.add_argument("url", help="Wikipedia article URL")
-    parser.add_argument("--max-sources", type=int, default=20, help="Max sources to analyze")
-    parser.add_argument(
-        "--all",
-        action="store_true",
-        help="Analyze all sources on the page (overrides --max-sources)",
-    )
-    parser.add_argument(
-        "--no-cache",
-        action="store_true",
-        help="Bypass page cache and force fresh analysis",
-    )
-    parser.add_argument(
-        "--skip-rate-limiting",
-        action="store_true",
-        help="Bypass all sleep delays and external rate-limited lookups",
-    )
-    parser.add_argument(
-        "--filter-unresolved",
-        action="store_true",
-        help="Filter out sources that do not resolve to a known country in COUNTRY_COORDINATES",
-    )
-    parser.add_argument("--output", type=str, default="sources_map.json", help="Path to write JSON mapping to")
-    args = parser.parse_args()
+from typing import Any
 
-    max_sources = None if args.all else args.max_sources
-    print(f"Analyzing page: {args.url}...", file=sys.stderr)
-    try:
-        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache, skip_rate_limiting=args.skip_rate_limiting, countries_only=True)
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-    coords_cache = _load_coords_cache()
+def generate_source_map(
+    data: dict[str, Any],
+    coords_cache: dict[str, list[float]] | None = None,
+    filter_unresolved: bool = False
+) -> dict[str, Any]:
+    if coords_cache is None:
+        coords_cache = _load_coords_cache()
+        
     features = []
     country_counts = {}
     
@@ -158,7 +132,7 @@ def main() -> None:
         primary_country = country.split(",")[0].strip() if country else "Unknown"
         
         coords = get_country_coordinates(primary_country, coords_cache)
-        if args.filter_unresolved:
+        if filter_unresolved:
             if primary_country == "Unknown" or not coords or coords == [0.0, 0.0]:
                 continue
                 
@@ -208,7 +182,7 @@ def main() -> None:
     country_features = []
     for cname, count in country_counts.items():
         coords = get_country_coordinates(cname, coords_cache)
-        if args.filter_unresolved:
+        if filter_unresolved:
             if cname == "Unknown" or not coords or coords == [0.0, 0.0]:
                 continue
         if not coords:
@@ -233,6 +207,44 @@ def main() -> None:
         "features": features,
         "country_features": country_features
     }
+    return geojson
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Map out Wikipedia page sources geographically")
+    parser.add_argument("url", help="Wikipedia article URL")
+    parser.add_argument("--max-sources", type=int, default=20, help="Max sources to analyze")
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Analyze all sources on the page (overrides --max-sources)",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Bypass page cache and force fresh analysis",
+    )
+    parser.add_argument(
+        "--skip-rate-limiting",
+        action="store_true",
+        help="Bypass all sleep delays and external rate-limited lookups",
+    )
+    parser.add_argument(
+        "--filter-unresolved",
+        action="store_true",
+        help="Filter out sources that do not resolve to a known country in COUNTRY_COORDINATES",
+    )
+    parser.add_argument("--output", type=str, default="sources_map.json", help="Path to write JSON mapping to")
+    args = parser.parse_args()
+
+    max_sources = None if args.all else args.max_sources
+    print(f"Analyzing page: {args.url}...", file=sys.stderr)
+    try:
+        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache, skip_rate_limiting=args.skip_rate_limiting, countries_only=True)
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    geojson = generate_source_map(data, filter_unresolved=args.filter_unresolved)
 
     try:
         with open(args.output, "w", encoding="utf-8") as f:

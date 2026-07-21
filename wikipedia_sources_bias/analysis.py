@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from typing import Any
@@ -8,6 +9,28 @@ from urllib.parse import urlparse, parse_qs
 
 import requests
 from bs4 import BeautifulSoup
+
+
+def _load_env_tokens():
+    env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+    if os.path.exists(env_path):
+        try:
+            with open(env_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if "=" in line:
+                        k, v = line.split("=", 1)
+                        k = k.strip()
+                        v = v.strip().strip("'\"")
+                        if k in ("HF_TOKEN", "HUGGINGFACE_TOKEN", "HF_API_KEY"):
+                            os.environ["HF_TOKEN"] = v
+                            os.environ["HUGGINGFACE_CO_API_KEY"] = v
+        except Exception:
+            pass
+
+_load_env_tokens()
 
 from .heuristics_data import (
     DOMAIN_BIAS_DATABASE,
@@ -225,7 +248,7 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
 
     result = {}
     try:
-        response = requests.get(
+        response = _robust_wikidata_get(
             "https://www.wikidata.org/w/api.php",
             params={
                 "action": "wbsearchentities",
@@ -334,13 +357,40 @@ def _extract_doi(text_or_url: str) -> str | None:
     return None
 
 
+def _robust_wikidata_get(url: str, params: dict[str, Any], headers: dict[str, Any], timeout: int = 10) -> requests.Response:
+    # Small mandatory delay to be respectful of Wikidata's servers
+    time.sleep(0.3)
+    
+    retries = 3
+    backoff = 2.0
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, params=params, headers=headers, timeout=timeout)
+            if response.status_code == 429:
+                retry_after = response.headers.get("Retry-After")
+                wait_time = int(retry_after) if retry_after and retry_after.isdigit() else backoff
+                sys.stderr.write(f"\n[Wikidata 429] Rate limited. Retrying in {wait_time}s...\n")
+                sys.stderr.flush()
+                time.sleep(wait_time)
+                backoff *= 2
+                continue
+            return response
+        except requests.RequestException as e:
+            if attempt == retries - 1:
+                raise e
+            time.sleep(backoff)
+            backoff *= 2
+            
+    return requests.get(url, params=params, headers=headers, timeout=timeout)
+
+
 def _query_wikidata_sparql(query: str) -> list[dict[str, Any]]:
     url = "https://query.wikidata.org/sparql"
     headers = {
         "User-Agent": "WikipediaSourcesBias/0.1 (https://github.com/OpenAI/wikipedia-sources-bias)",
         "Accept": "application/sparql-results+json"
     }
-    response = requests.get(url, params={"query": query, "format": "json"}, headers=headers, timeout=10)
+    response = _robust_wikidata_get(url, params={"query": query, "format": "json"}, headers=headers, timeout=15)
     response.raise_for_status()
     data = response.json()
     bindings = data.get("results", {}).get("bindings", [])
@@ -359,7 +409,7 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         return _wd_author_cache[author_name]
 
     try:
-        response = requests.get(
+        response = _robust_wikidata_get(
             "https://www.wikidata.org/w/api.php",
             params={
                 "action": "wbsearchentities",
@@ -438,67 +488,15 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
         "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
     }
     
-    # 1. Try VALUES exact URI matching (extremely fast, avoids timeouts completely)
-    query_exact = f"""
-    SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
-      VALUES ?website {{
-        <http://{domain}/> <https://{domain}/> <http://www.{domain}/> <https://www.{domain}/>
-        <http://{domain}> <https://{domain}> <http://www.{domain}> <https://www.{domain}>
-      }}
-      ?publisher wdt:P856 ?website.
-      OPTIONAL {{ ?publisher wdt:P17 ?country. }}
-      OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
-      OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
-      OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
-      OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
-      OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }}
-    """
-    rows = _query_wikidata_sparql(query_exact)
-    
-    # 2. Fall back to search API if VALUES lookup fails
-    if not rows:
-        try:
-            response = requests.get(
-                "https://www.wikidata.org/w/api.php",
-                params={
-                    "action": "wbsearchentities",
-                    "format": "json",
-                    "language": "en",
-                    "search": domain,
-                },
-                headers=headers,
-                timeout=5,
-            )
-            response.raise_for_status()
-            search_data = response.json()
-            if search_data.get("search"):
-                entity_id = search_data["search"][0]["id"]
-        except Exception:
-            pass
-
-        if entity_id:
-            query_direct = f"""
-            SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
-              BIND(wd:{entity_id} AS ?publisher)
-              OPTIONAL {{ ?publisher wdt:P17 ?country. }}
-              OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
-              OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
-              OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
-              OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
-              OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
-              SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-            }}
-            """
-            rows = _query_wikidata_sparql(query_direct)
-
-    # 3. Hard fallback to un-indexed regex scan (timeout-prone, last resort)
-    if not rows:
-        query_fallback = f"""
+    try:
+        # 1. Try VALUES exact URI matching (extremely fast, avoids timeouts completely)
+        query_exact = f"""
         SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
+          VALUES ?website {{
+            <http://{domain}/> <https://{domain}/> <http://www.{domain}/> <https://www.{domain}/>
+            <http://{domain}> <https://{domain}> <http://www.{domain}> <https://www.{domain}>
+          }}
           ?publisher wdt:P856 ?website.
-          FILTER(regex(str(?website), "https?://(www\\\\.)?{domain}(/|$)", "i")).
           OPTIONAL {{ ?publisher wdt:P17 ?country. }}
           OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
           OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
@@ -506,99 +504,157 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
           OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
           OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
           SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-        }} LIMIT 10
+        }}
         """
-        rows = _query_wikidata_sparql(query_fallback)
-
-    result = {}
-    if rows:
-        pub_id = entity_id or ""
-        pub_name = ""
-        countries = set()
-        political_leanings = set()
-        political_ideologies = set()
-        owners = set()
-        types = set()
-        mbfc_ids = set()
+        rows = _query_wikidata_sparql(query_exact)
         
-        for r in rows:
-            if r.get("publisher"):
-                pub_id = r["publisher"].split("/")[-1]
-            if r.get("publisherLabel"):
-                pub_name = r["publisherLabel"]
-            if r.get("countryLabel"):
-                countries.add(r["countryLabel"])
-            if r.get("politicalLeaningLabel"):
-                political_leanings.add(r["politicalLeaningLabel"])
-            if r.get("politicalIdeologyLabel"):
-                political_ideologies.add(r["politicalIdeologyLabel"])
-            if r.get("ownerLabel"):
-                owners.add(r["ownerLabel"])
-            if r.get("instanceOfLabel"):
-                types.add(r["instanceOfLabel"])
-            if r.get("mbfcId"):
-                mbfc_ids.add(r["mbfcId"])
-                
-        result = {
-            "wikidata_id": pub_id,
-            "wikidata_name": pub_name,
-            "countries": sorted(list(countries)),
-            "political_leanings": sorted(list(political_leanings)),
-            "political_ideologies": sorted(list(political_ideologies)),
-            "owners": sorted(list(owners)),
-            "types": sorted(list(types)),
-            "mbfc_id": list(mbfc_ids)[0] if mbfc_ids else None,
-        }
+        # 2. Fall back to search API if VALUES lookup fails
+        if not rows:
+            try:
+                response = _robust_wikidata_get(
+                    "https://www.wikidata.org/w/api.php",
+                    params={
+                        "action": "wbsearchentities",
+                        "format": "json",
+                        "language": "en",
+                        "search": domain,
+                    },
+                    headers=headers,
+                    timeout=5,
+                )
+                response.raise_for_status()
+                search_data = response.json()
+                if search_data.get("search"):
+                    entity_id = search_data["search"][0]["id"]
+            except Exception:
+                pass
 
-    _wd_publisher_cache[domain] = result
-    _save_json_cache("wikidata_publisher_cache.json", _wd_publisher_cache)
-    return result
+            if entity_id:
+                query_direct = f"""
+                SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
+                  BIND(wd:{entity_id} AS ?publisher)
+                  OPTIONAL {{ ?publisher wdt:P17 ?country. }}
+                  OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
+                  OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
+                  OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
+                  OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+                  OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
+                  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+                }}
+                """
+                rows = _query_wikidata_sparql(query_direct)
+
+        # 3. Hard fallback to un-indexed regex scan (timeout-prone, last resort)
+        if not rows:
+            query_fallback = f"""
+            SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel ?mbfcId WHERE {{
+              ?publisher wdt:P856 ?website.
+              FILTER(regex(str(?website), "https?://(www\\\\.)?{domain}(/|$)", "i")).
+              OPTIONAL {{ ?publisher wdt:P17 ?country. }}
+              OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
+              OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
+              OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
+              OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+              OPTIONAL {{ ?publisher wdt:P9852 ?mbfcId. }}
+              SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+            }} LIMIT 10
+            """
+            rows = _query_wikidata_sparql(query_fallback)
+
+        result = {}
+        if rows:
+            pub_id = entity_id or ""
+            pub_name = ""
+            countries = set()
+            political_leanings = set()
+            political_ideologies = set()
+            owners = set()
+            types = set()
+            mbfc_ids = set()
+            
+            for r in rows:
+                if r.get("publisher"):
+                    pub_id = r["publisher"].split("/")[-1]
+                if r.get("publisherLabel"):
+                    pub_name = r["publisherLabel"]
+                if r.get("countryLabel"):
+                    countries.add(r["countryLabel"])
+                if r.get("politicalLeaningLabel"):
+                    political_leanings.add(r["politicalLeaningLabel"])
+                if r.get("politicalIdeologyLabel"):
+                    political_ideologies.add(r["politicalIdeologyLabel"])
+                if r.get("ownerLabel"):
+                    owners.add(r["ownerLabel"])
+                if r.get("instanceOfLabel"):
+                    types.add(r["instanceOfLabel"])
+                if r.get("mbfcId"):
+                    mbfc_ids.add(r["mbfcId"])
+                    
+            result = {
+                "wikidata_id": pub_id,
+                "wikidata_name": pub_name,
+                "countries": sorted(list(countries)),
+                "political_leanings": sorted(list(political_leanings)),
+                "political_ideologies": sorted(list(political_ideologies)),
+                "owners": sorted(list(owners)),
+                "types": sorted(list(types)),
+                "mbfc_id": list(mbfc_ids)[0] if mbfc_ids else None,
+            }
+
+        _wd_publisher_cache[domain] = result
+        _save_json_cache("wikidata_publisher_cache.json", _wd_publisher_cache)
+        return result
+    except Exception:
+        return {}
 
 
 def _fetch_wikidata_book(isbn: str) -> dict[str, Any]:
-    query = f"""
-    SELECT ?book ?bookLabel ?publisherLabel ?authorLabel ?pubDate ?countryLabel WHERE {{
-      {{ ?book wdt:P212 "{isbn}". }} UNION {{ ?book wdt:P957 "{isbn}". }}
-      OPTIONAL {{ ?book wdt:P123 ?publisher. }}
-      OPTIONAL {{ ?book wdt:P50 ?author. }}
-      OPTIONAL {{ ?book wdt:P577 ?pubDate. }}
-      OPTIONAL {{ ?book wdt:P495 ?country. }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }} LIMIT 5
-    """
-    rows = _query_wikidata_sparql(query)
-    if not rows:
-        return {}
-        
-    book_id = ""
-    book_title = ""
-    publishers = set()
-    authors = set()
-    countries = set()
-    pub_date = None
-    
-    for r in rows:
-        if r.get("book"):
-            book_id = r["book"].split("/")[-1]
-        if r.get("bookLabel"):
-            book_title = r["bookLabel"]
-        if r.get("publisherLabel"):
-            publishers.add(r["publisherLabel"])
-        if r.get("authorLabel"):
-            authors.add(r["authorLabel"])
-        if r.get("pubDate"):
-            pub_date = r["pubDate"]
-        if r.get("countryLabel"):
-            countries.add(r["countryLabel"])
+    try:
+        query = f"""
+        SELECT ?book ?bookLabel ?publisherLabel ?authorLabel ?pubDate ?countryLabel WHERE {{
+          {{ ?book wdt:P212 "{isbn}". }} UNION {{ ?book wdt:P957 "{isbn}". }}
+          OPTIONAL {{ ?book wdt:P123 ?publisher. }}
+          OPTIONAL {{ ?book wdt:P50 ?author. }}
+          OPTIONAL {{ ?book wdt:P577 ?pubDate. }}
+          OPTIONAL {{ ?book wdt:P495 ?country. }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+        }} LIMIT 5
+        """
+        rows = _query_wikidata_sparql(query)
+        if not rows:
+            return {}
             
-    return {
-        "wikidata_id": book_id,
-        "wikidata_name": book_title,
-        "publishers": sorted(list(publishers)),
-        "authors": sorted(list(authors)),
-        "pub_date": pub_date,
-        "countries": sorted(list(countries)),
-    }
+        book_id = ""
+        book_title = ""
+        publishers = set()
+        authors = set()
+        countries = set()
+        pub_date = None
+        
+        for r in rows:
+            if r.get("book"):
+                book_id = r["book"].split("/")[-1]
+            if r.get("bookLabel"):
+                book_title = r["bookLabel"]
+            if r.get("publisherLabel"):
+                publishers.add(r["publisherLabel"])
+            if r.get("authorLabel"):
+                authors.add(r["authorLabel"])
+            if r.get("pubDate"):
+                pub_date = r["pubDate"]
+            if r.get("countryLabel"):
+                countries.add(r["countryLabel"])
+                
+        return {
+            "wikidata_id": book_id,
+            "wikidata_name": book_title,
+            "publishers": sorted(list(publishers)),
+            "authors": sorted(list(authors)),
+            "pub_date": pub_date,
+            "countries": sorted(list(countries)),
+        }
+    except Exception:
+        return {}
 
 
 def _fetch_google_books_metadata(volume_id: str) -> dict[str, Any]:
@@ -628,54 +684,57 @@ def _fetch_google_books_metadata(volume_id: str) -> dict[str, Any]:
 
 
 def _fetch_wikidata_oclc(oclc_num: str) -> dict[str, Any]:
-    query = f"""
-    SELECT ?item ?itemLabel ?publisherLabel ?authorLabel ?pubDate ?isbnLabel ?countryLabel WHERE {{
-      ?item wdt:P243 "{oclc_num}".
-      OPTIONAL {{ ?item wdt:P123 ?publisher. }}
-      OPTIONAL {{ ?item wdt:P50 ?author. }}
-      OPTIONAL {{ ?item wdt:P577 ?pubDate. }}
-      OPTIONAL {{ ?item wdt:P212 ?isbn. }}
-      OPTIONAL {{ ?item wdt:P495 ?country. }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }} LIMIT 5
-    """
-    rows = _query_wikidata_sparql(query)
-    if not rows:
-        return {}
-        
-    item_id = ""
-    title = ""
-    publishers = set()
-    authors = set()
-    isbns = set()
-    countries = set()
-    pub_date = None
-    
-    for r in rows:
-        if r.get("item"):
-            item_id = r["item"].split("/")[-1]
-        if r.get("itemLabel"):
-            title = r["itemLabel"]
-        if r.get("publisherLabel"):
-            publishers.add(r["publisherLabel"])
-        if r.get("authorLabel"):
-            authors.add(r["authorLabel"])
-        if r.get("isbnLabel"):
-            isbns.add(r["isbnLabel"])
-        if r.get("pubDate"):
-            pub_date = r["pubDate"]
-        if r.get("countryLabel"):
-            countries.add(r["countryLabel"])
+    try:
+        query = f"""
+        SELECT ?item ?itemLabel ?publisherLabel ?authorLabel ?pubDate ?isbnLabel ?countryLabel WHERE {{
+          ?item wdt:P243 "{oclc_num}".
+          OPTIONAL {{ ?item wdt:P123 ?publisher. }}
+          OPTIONAL {{ ?item wdt:P50 ?author. }}
+          OPTIONAL {{ ?item wdt:P577 ?pubDate. }}
+          OPTIONAL {{ ?item wdt:P212 ?isbn. }}
+          OPTIONAL {{ ?item wdt:P495 ?country. }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+        }} LIMIT 5
+        """
+        rows = _query_wikidata_sparql(query)
+        if not rows:
+            return {}
             
-    return {
-        "wikidata_id": item_id,
-        "wikidata_name": title,
-        "publishers": sorted(list(publishers)),
-        "authors": sorted(list(authors)),
-        "isbns": sorted(list(isbns)),
-        "countries": sorted(list(countries)),
-        "pub_date": pub_date,
-    }
+        item_id = ""
+        title = ""
+        publishers = set()
+        authors = set()
+        isbns = set()
+        countries = set()
+        pub_date = None
+        
+        for r in rows:
+            if r.get("item"):
+                item_id = r["item"].split("/")[-1]
+            if r.get("itemLabel"):
+                title = r["itemLabel"]
+            if r.get("publisherLabel"):
+                publishers.add(r["publisherLabel"])
+            if r.get("authorLabel"):
+                authors.add(r["authorLabel"])
+            if r.get("isbnLabel"):
+                isbns.add(r["isbnLabel"])
+            if r.get("pubDate"):
+                pub_date = r["pubDate"]
+            if r.get("countryLabel"):
+                countries.add(r["countryLabel"])
+                
+        return {
+            "wikidata_id": item_id,
+            "wikidata_name": title,
+            "publishers": sorted(list(publishers)),
+            "authors": sorted(list(authors)),
+            "isbns": sorted(list(isbns)),
+            "countries": sorted(list(countries)),
+            "pub_date": pub_date,
+        }
+    except Exception:
+        return {}
 
 
 def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
@@ -732,58 +791,61 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
 
 
 def _fetch_wikidata_doi(doi: str) -> dict[str, Any]:
-    doi_upper = doi.upper()
-    query = f"""
-    SELECT ?work ?workLabel ?publisherLabel ?authorLabel ?pubDate ?journalLabel ?countryLabel ?politicalLeaningLabel WHERE {{
-      ?work wdt:P356 "{doi_upper}".
-      OPTIONAL {{ ?work wdt:P123 ?publisher. }}
-      OPTIONAL {{ ?work wdt:P50 ?author. }}
-      OPTIONAL {{ ?work wdt:P577 ?pubDate. }}
-      OPTIONAL {{ ?work wdt:P1433 ?journal. }}
-      OPTIONAL {{ ?work wdt:P495 ?country. }}
-      OPTIONAL {{ ?work wdt:P1387 ?politicalLeaning. }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }} LIMIT 5
-    """
-    rows = _query_wikidata_sparql(query)
-    if not rows:
-        return {}
-        
-    work_id = ""
-    title = ""
-    publishers = set()
-    authors = set()
-    journals = set()
-    countries = set()
-    political_leanings = set()
-    pub_date = None
-    
-    for r in rows:
-        if r.get("work"):
-            work_id = r["work"].split("/")[-1]
-        if r.get("workLabel"):
-            title = r["workLabel"]
-        if r.get("publisherLabel"):
-            publishers.add(r["publisherLabel"])
-        if r.get("authorLabel"):
-            authors.add(r["authorLabel"])
-        if r.get("journalLabel"):
-            journals.add(r["journalLabel"])
-        if r.get("countryLabel"):
-            countries.add(r["countryLabel"])
-        if r.get("politicalLeaningLabel"):
-            political_leanings.add(r["politicalLeaningLabel"])
+    try:
+        doi_upper = doi.upper()
+        query = f"""
+        SELECT ?work ?workLabel ?publisherLabel ?authorLabel ?pubDate ?journalLabel ?countryLabel ?politicalLeaningLabel WHERE {{
+          ?work wdt:P356 "{doi_upper}".
+          OPTIONAL {{ ?work wdt:P123 ?publisher. }}
+          OPTIONAL {{ ?work wdt:P50 ?author. }}
+          OPTIONAL {{ ?work wdt:P577 ?pubDate. }}
+          OPTIONAL {{ ?work wdt:P1433 ?journal. }}
+          OPTIONAL {{ ?work wdt:P495 ?country. }}
+          OPTIONAL {{ ?work wdt:P1387 ?politicalLeaning. }}
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+        }} LIMIT 5
+        """
+        rows = _query_wikidata_sparql(query)
+        if not rows:
+            return {}
             
-    return {
-        "wikidata_id": work_id,
-        "wikidata_name": work_id,
-        "publishers": sorted(list(publishers)),
-        "authors": sorted(list(authors)),
-        "journals": sorted(list(journals)),
-        "countries": sorted(list(countries)),
-        "political_leanings": sorted(list(political_leanings)),
-        "pub_date": pub_date,
-    }
+        work_id = ""
+        title = ""
+        publishers = set()
+        authors = set()
+        journals = set()
+        countries = set()
+        political_leanings = set()
+        pub_date = None
+        
+        for r in rows:
+            if r.get("work"):
+                work_id = r["work"].split("/")[-1]
+            if r.get("workLabel"):
+                title = r["workLabel"]
+            if r.get("publisherLabel"):
+                publishers.add(r["publisherLabel"])
+            if r.get("authorLabel"):
+                authors.add(r["authorLabel"])
+            if r.get("journalLabel"):
+                journals.add(r["journalLabel"])
+            if r.get("countryLabel"):
+                countries.add(r["countryLabel"])
+            if r.get("politicalLeaningLabel"):
+                political_leanings.add(r["politicalLeaningLabel"])
+                
+        return {
+            "wikidata_id": work_id,
+            "wikidata_name": work_id,
+            "publishers": sorted(list(publishers)),
+            "authors": sorted(list(authors)),
+            "journals": sorted(list(journals)),
+            "countries": sorted(list(countries)),
+            "political_leanings": sorted(list(political_leanings)),
+            "pub_date": pub_date,
+        }
+    except Exception:
+        return {}
 
 
 def _count_syllables_word(word: str) -> int:
@@ -1237,6 +1299,37 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
 
 
 _sentiment_pipeline = None
+_vader_analyzer = None
+
+def _get_vader_sentiment(text: str) -> dict[str, Any] | None:
+    global _vader_analyzer
+    try:
+        import nltk
+        from nltk.sentiment.vader import SentimentIntensityAnalyzer
+        if _vader_analyzer is None:
+            nltk.download('vader_lexicon', quiet=True)
+            _vader_analyzer = SentimentIntensityAnalyzer()
+            
+        scores = _vader_analyzer.polarity_scores(text)
+        compound = scores["compound"]
+        
+        if compound >= 0.05:
+            label = "positive"
+        elif compound <= -0.05:
+            label = "negative"
+        else:
+            label = "neutral"
+            
+        subj_score = round(min(scores["pos"] + scores["neg"], 1.0), 2)
+        
+        return {
+            "sentiment": label,
+            "subjectivity_score": subj_score,
+            "confidence": round(abs(compound), 2),
+            "source": "VADER Lexicon Fallback",
+        }
+    except Exception:
+        return None
 
 def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
     global _sentiment_pipeline
@@ -1247,7 +1340,7 @@ def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
         if _sentiment_pipeline is None:
             _sentiment_pipeline = pipeline(
                 "sentiment-analysis",
-                model="lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+                model="distilbert-base-uncased-finetuned-sst-2-english",
                 device=-1,
             )
         result = _sentiment_pipeline(text[:512])[0]
@@ -1265,7 +1358,7 @@ def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
             "source": "Hugging Face Pipeline",
         }
     except Exception:
-        return None
+        return _get_vader_sentiment(text)
 
 
 def _detect_language(text: str) -> str:

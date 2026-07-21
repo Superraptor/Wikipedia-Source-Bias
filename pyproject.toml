@@ -12,6 +12,7 @@ authors = [{name = "Clair Kronk"}]
 dependencies = [
     "requests>=2.31.0",
     "beautifulsoup4>=4.12.0",
+    "nltk>=3.8.1",
 ]
 
 [project.scripts]

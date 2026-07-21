@@ -263,5 +263,537 @@
       "online newspaper"
     ],
     "mbfc_id": "reuters"
+  },
+  "urbandictionary.com": {
+    "wikidata_id": "Q134470161",
+    "wikidata_name": "Q134470161",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q134470161"
+    ],
+    "types": [
+      "company",
+      "online dictionary",
+      "slang dictionary"
+    ],
+    "mbfc_id": null
+  },
+  "books.google.fr": {
+    "wikidata_id": "Q138767860",
+    "wikidata_name": "Q138767860",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "open.ac.uk": {
+    "wikidata_id": "Q86015348",
+    "wikidata_name": "Open University Faculty of Business and Law",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "educational organization",
+      "faculty",
+      "higher education institution",
+      "open-access publisher",
+      "organization",
+      "public university"
+    ],
+    "mbfc_id": null
+  },
+  "portal.issn.org": {
+    "wikidata_id": "Q70460099",
+    "wikidata_name": "ISSN Portal",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "ISSN International Centre"
+    ],
+    "types": [
+      "bibliographic database",
+      "online database",
+      "serial",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "worldcat.org": {
+    "wikidata_id": "Q846596",
+    "wikidata_name": "WorldCat",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "OCLC, Inc."
+    ],
+    "types": [
+      "bibliography",
+      "database",
+      "online public access catalog",
+      "organization",
+      "union catalog",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "thecanadianencyclopedia.ca": {
+    "wikidata_id": "Q130334",
+    "wikidata_name": "Canadian Encyclopedia",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Historica Canada"
+    ],
+    "types": [
+      "national encyclopedia",
+      "online encyclopedia"
+    ],
+    "mbfc_id": null
+  },
+  "en.wiktionary.org": {
+    "wikidata_id": "Q22001375",
+    "wikidata_name": "English Wiktionary",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "Wiktionary language edition"
+    ],
+    "mbfc_id": null
+  },
+  "gallica.bnf.fr": {
+    "wikidata_id": "Q1492436",
+    "wikidata_name": "Gallica",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "digital library",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "newyorker.com": {
+    "wikidata_id": "Q217305",
+    "wikidata_name": "The New Yorker",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine",
+      "news magazine",
+      "production team",
+      "publishing house"
+    ],
+    "mbfc_id": "new-yorker"
+  },
+  "liberation.fr": {
+    "wikidata_id": "Q13717",
+    "wikidata_name": "Libération",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [
+      "social democracy"
+    ],
+    "owners": [
+      "Bruno Ledoux",
+      "SFR Presse"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "liberation-paris-bias"
+  },
+  "leparisien.fr": {
+    "wikidata_id": "Q142348",
+    "wikidata_name": "Le Parisien",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "LVMH"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "le-parisien-bias"
+  },
+  "cnews.fr": {
+    "wikidata_id": "Q137519305",
+    "wikidata_name": "Q137519305",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Bolloré",
+      "Canal+ S.A."
+    ],
+    "types": [
+      "specialty channel",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "franceinfo.fr": {
+    "wikidata_id": "Q51879657",
+    "wikidata_name": "France Info",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "France Télévisions",
+      "Radio France"
+    ],
+    "types": [
+      "business",
+      "news website",
+      "radio station"
+    ],
+    "mbfc_id": "france-info"
+  },
+  "linternaute.com": {
+    "wikidata_id": "Q3204254",
+    "wikidata_name": "L'Internaute",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Internet forum",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "nouvelobs.com": {
+    "wikidata_id": "Q1044328",
+    "wikidata_name": "Le Nouvel Obs",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "atlantico.fr": {
+    "wikidata_id": "Q2869404",
+    "wikidata_name": "Atlantico",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "archive.wikiwix.com": {
+    "wikidata_id": "Q950195",
+    "wikidata_name": "Wikiwix",
+    "countries": [
+      "Italy"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "search engine",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "vsd.fr": {
+    "wikidata_id": "Q3553009",
+    "wikidata_name": "VSD",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Prisma Media"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lopinion.fr": {
+    "wikidata_id": "Q14940658",
+    "wikidata_name": "L'Opinion",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lexpress.fr": {
+    "wikidata_id": "Q770596",
+    "wikidata_name": "Q770596",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Patrick Drahi"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lejdd.fr": {
+    "wikidata_id": "Q501461",
+    "wikidata_name": "Le Journal du Dimanche",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "far-right"
+    ],
+    "owners": [
+      "Lagardère News"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "europarl.europa.eu": {
+    "wikidata_id": "Q109657939",
+    "wikidata_name": "Q109657939",
+    "countries": [
+      "European Union"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "institutions of the European Union",
+      "international parliament",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "etudiant.lefigaro.fr": {
+    "wikidata_id": "Q3222765",
+    "wikidata_name": "Le Figaro étudiant",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Le Figaro"
+    ],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "dailymotion.com": {
+    "wikidata_id": "Q769222",
+    "wikidata_name": "Dailymotion",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "online community",
+      "online video platform",
+      "organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "ina.fr": {
+    "wikidata_id": "Q1665109",
+    "wikidata_name": "Institut national de l'audiovisuel",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "cinematheque",
+      "institute",
+      "legal deposit",
+      "production company"
+    ],
+    "mbfc_id": null
+  },
+  "data.gouv.fr": {
+    "wikidata_id": "Q3016893",
+    "wikidata_name": "data.gouv.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Etalab"
+    ],
+    "types": [
+      "open data portal",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "lesinrocks.com": {
+    "wikidata_id": "Q2758142",
+    "wikidata_name": "Les Inrockuptibles",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q3299928"
+    ],
+    "types": [
+      "music magazine",
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "mediapart.fr": {
+    "wikidata_id": "Q619342",
+    "wikidata_name": "Mediapart",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Q124488228"
+    ],
+    "types": [
+      "online newspaper",
+      "organization"
+    ],
+    "mbfc_id": "mediapart-bias-credibility"
+  },
+  "lexpansion.lexpress.fr": {
+    "wikidata_id": "Q3203380",
+    "wikidata_name": "L'Expansion",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q3117403",
+      "Q770596"
+    ],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "interieur.gouv.fr": {
+    "wikidata_id": "Q1518496",
+    "wikidata_name": "Ministry of the Interior",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "interior ministry",
+      "ministry",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "elle.fr": {
+    "wikidata_id": "Q154020",
+    "wikidata_name": "Elle",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Lagardère News"
+    ],
+    "types": [
+      "magazine",
+      "women's magazine"
+    ],
+    "mbfc_id": "elle-magazine"
+  },
+  "votewatch.eu": {
+    "wikidata_id": "Q2534810",
+    "wikidata_name": "VoteWatch Europe",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "non-governmental organization"
+    ],
+    "mbfc_id": null
+  },
+  "prochoix.org": {
+    "wikidata_id": "Q3406132",
+    "wikidata_name": "Q3406132",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "trade magazine"
+    ],
+    "mbfc_id": null
   }
 }

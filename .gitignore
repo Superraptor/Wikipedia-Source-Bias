@@ -2,3 +2,11 @@
 */.vscode/
 tests/__pycache__/
 wikipedia_sources_bias/__pycache__/
+.env
+country_coordinates_cache.json
+wikidata_publisher_cache.json
+wikidata_enrichment_cache.json
+wikidata_author_cache.json
+nametrace_cache.json
+crossref_cache.json
+page_cache.json

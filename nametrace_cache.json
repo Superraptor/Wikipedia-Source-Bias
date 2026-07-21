@@ -38,5 +38,395 @@
       "gender": 0.9593839049339294,
       "subregion": 0.570410966873169
     }
+  },
+  "Daniel Wezler-Lang": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9498199224472046,
+      "subregion": 0.5828089118003845
+    }
+  },
+  "George S. Larke-Walsh": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8902676105499268,
+      "subregion": 0.5033279061317444
+    }
+  },
+  "Emmanuelle Beaubatie": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9333921670913696,
+      "subregion": 0.5709205865859985
+    }
+  },
+  "Solène Cordier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8651780486106873,
+      "subregion": 0.6342642903327942
+    }
+  },
+  "Michelle Filice": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9082585573196411,
+      "subregion": 0.5957716703414917
+    }
+  },
+  "CCDI": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999890760245762,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Dustin Gruber": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8892554640769958,
+      "subregion": 0.7021210193634033
+    }
+  },
+  "Louys Moreri": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 0.9999634027481079,
+      "gender": 0.8221625089645386,
+      "subregion": 0.3152572810649872
+    }
+  },
+  "Jane Mayer": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8811020851135254,
+      "subregion": 0.5801495909690857
+    }
+  },
+  "The Pussy": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5330107808113098,
+      "subregion": 0.6108070611953735
+    }
+  },
+  "Jean-Marie Le Pen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999986886978149,
+      "gender": 0.9389928579330444,
+      "subregion": 0.5367165803909302
+    }
+  },
+  "le_parisien": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999949932098389,
+      "gender": 0.761137068271637,
+      "subregion": 0.43389031291007996
+    }
+  },
+  "Olivier Beaumont": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9453012347221375,
+      "subregion": 0.612882673740387
+    }
+  },
+  "cnews": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9801494460552931,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "franceinfo": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Africa",
+    "confidence": {
+      "human": 0.9999995231628418,
+      "gender": 0.7339996695518494,
+      "subregion": 0.30790480971336365
+    }
+  },
+  "Benoit Deshayes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7686975598335266,
+      "subregion": 0.5238540172576904
+    }
+  },
+  "Le_NouvelObs": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.5952966213226318,
+      "gender": 0.7183990478515625,
+      "subregion": 0.4123656153678894
+    }
+  },
+  "Valérie Igounet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8229605555534363,
+      "subregion": 0.6727663278579712
+    }
+  },
+  "Jean-Louis Beaucarnot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999978542327881,
+      "gender": 0.9701751470565796,
+      "subregion": 0.7797252535820007
+    }
+  },
+  "La Rédaction": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5126599669456482,
+      "subregion": 0.603248119354248
+    }
+  },
+  "Tugdual Denis": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999895095825195,
+      "gender": 0.6952946782112122,
+      "subregion": 0.5041218400001526
+    }
+  },
+  "Ivanne Trippenbach": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999412298202515,
+      "gender": 0.7049427032470703,
+      "subregion": 0.4030626714229584
+    }
+  },
+  "La rédaction": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5126599669456482,
+      "subregion": 0.603248119354248
+    }
+  },
+  "Europarl_EN": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.998027503490448,
+      "gender": 0.6724693179130554,
+      "subregion": 0.26148656010627747
+    }
+  },
+  "Etudiant, Figaro": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 0.9999161958694458,
+      "gender": 0.9242506623268127,
+      "subregion": 0.36475539207458496
+    }
+  },
+  "LEXPRESS": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.7800073623657227,
+      "gender": 0.7165796160697937,
+      "subregion": 0.31405121088027954
+    }
+  },
+  "David Doucet, Mathieu Dejean": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9321730136871338,
+      "subregion": 0.6353806257247925
+    }
+  },
+  "Marine Turchi": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7652913928031921,
+      "subregion": 0.4224446415901184
+    }
+  },
+  "Christiane Chombeau": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9357677102088928,
+      "subregion": 0.5345948338508606
+    }
+  },
+  "Nicolas Prissette": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9561030268669128,
+      "subregion": 0.5716782808303833
+    }
+  },
+  "Christophe Forcari": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9432738423347473,
+      "subregion": 0.6190112829208374
+    }
+  },
+  "Le Pen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5871829390525818,
+      "subregion": 0.6254143118858337
+    }
+  },
+  "Le Monde": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7358118891716003,
+      "subregion": 0.32577839493751526
+    }
+  },
+  "Le Monde avec AFP": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8056883811950684,
+      "subregion": 0.4687727093696594
+    }
+  },
+  "Dominique Albertini": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5707046389579773,
+      "subregion": 0.7082051634788513
+    }
+  },
+  "Ministère de l'Intérieur": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.920997142791748,
+      "subregion": 0.7002992033958435
+    }
+  },
+  "ELLEFrance": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999994039535522,
+      "gender": 0.5456129312515259,
+      "subregion": 0.2606044113636017
+    }
+  },
+  "Valérie Igounet, historienne": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9995288848876953,
+      "gender": 0.8496392369270325,
+      "subregion": 0.8973817825317383
+    }
+  },
+  "Statistiques VoteWatch": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999992847442627,
+      "gender": 0.8337104916572571,
+      "subregion": 0.4731523096561432
+    }
   }
 }

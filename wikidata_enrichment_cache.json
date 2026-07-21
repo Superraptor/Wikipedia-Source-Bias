@@ -53,5 +53,138 @@
     "wikidata_label": "Reuters",
     "wikidata_id": "Q130879",
     "wikidata_description": "international news agency"
-  }
+  },
+  "urbandictionary.com": {
+    "wikidata_label": "Urban Dictionary",
+    "wikidata_id": "Q310004",
+    "wikidata_description": "crowdsourced online dictionary of slang terms"
+  },
+  "books.google.fr": {},
+  "open.ac.uk": {},
+  "doi-org-s.proxy.bu.dauphine.fr": {},
+  "portal.issn.org": {},
+  "dx.doi.org": {},
+  "worldcat.org": {
+    "wikidata_label": "WorldCat",
+    "wikidata_id": "Q846596",
+    "wikidata_description": "international union library catalog"
+  },
+  "thecanadianencyclopedia.ca": {},
+  "ccdi.ca": {},
+  "unfe.org": {},
+  "ypinaction.org.": {},
+  "revuecygnenoir.org": {},
+  "en.wiktionary.org": {
+    "wikidata_label": "English Wiktionary",
+    "wikidata_id": "Q22001375",
+    "wikidata_description": "English edition of the free dictionary Wiktionary"
+  },
+  "daphealth.org": {},
+  "geneq.berkeley.edu": {},
+  "lgbcenter.ucdavis.edu": {},
+  "gallica.bnf.fr": {
+    "wikidata_label": "Gallica",
+    "wikidata_id": "Q1492436",
+    "wikidata_description": "digital library of Bibliothèque Nationale de France"
+  },
+  "ukrstat.gov.ua": {},
+  "newyorker.com": {},
+  "liberation.fr": {
+    "wikidata_label": "Libération",
+    "wikidata_id": "Q13717",
+    "wikidata_description": "French daily newspaper"
+  },
+  "mon-compte.lesinrocks.com": {},
+  "vosdroits.service-public.fr": {},
+  "leparisien.fr": {
+    "wikidata_label": "Le Parisien",
+    "wikidata_id": "Q142348",
+    "wikidata_description": "French newspaper"
+  },
+  "cnews.fr": {},
+  "franceinfo.fr": {
+    "wikidata_label": "France Info",
+    "wikidata_id": "Q51879657",
+    "wikidata_description": "online newspaper"
+  },
+  "linternaute.com": {
+    "wikidata_label": "L'Internaute",
+    "wikidata_id": "Q3204254",
+    "wikidata_description": "French news website"
+  },
+  "nouvelobs.com": {},
+  "blog.francetvinfo.fr": {},
+  "atlantico.fr": {
+    "wikidata_label": "Atlantico",
+    "wikidata_id": "Q2869404",
+    "wikidata_description": "French news website"
+  },
+  "archive.wikiwix.com": {
+    "wikidata_label": "Wikiwix",
+    "wikidata_id": "Q950195",
+    "wikidata_description": "Internet search engine and web archive for French Wikipedia"
+  },
+  "vsd.fr": {},
+  "archive.francesoir.fr": {},
+  "lopinion.fr": {},
+  "lexpress.fr": {
+    "wikidata_label": "L'Express",
+    "wikidata_id": "Q770596",
+    "wikidata_description": "French weekly news magazine"
+  },
+  "lejdd.fr": {
+    "wikidata_label": "Le Journal du Dimanche",
+    "wikidata_id": "Q501461",
+    "wikidata_description": "French weekly newspaper"
+  },
+  "europarl.europa.eu": {
+    "wikidata_label": "europarl.europa.eu",
+    "wikidata_id": "Q109657939",
+    "wikidata_description": "website of the European Parliament"
+  },
+  "etudiant.lefigaro.fr": {
+    "wikidata_label": "Le Figaro étudiant",
+    "wikidata_id": "Q3222765",
+    "wikidata_description": "press website"
+  },
+  "dailymotion.com": {
+    "wikidata_label": "Dailymotion",
+    "wikidata_id": "Q769222",
+    "wikidata_description": "video streaming site"
+  },
+  "ina.fr": {
+    "wikidata_label": "Institut national de l'audiovisuel",
+    "wikidata_id": "Q1665109",
+    "wikidata_description": "French public cultural undertaking responsible for preserving, promoting, and broadcasting the French audiovisual heritage"
+  },
+  "data.gouv.fr": {
+    "wikidata_label": "data.gouv.fr",
+    "wikidata_id": "Q3016893",
+    "wikidata_description": "French national open-data platform"
+  },
+  "lesinrocks.com": {
+    "wikidata_label": "Les Inrockuptibles",
+    "wikidata_id": "Q2758142",
+    "wikidata_description": "French music and politics magazine, issued monthly from 1986, weekly from 1995"
+  },
+  "mediapart.fr": {
+    "wikidata_label": "Mediapart",
+    "wikidata_id": "Q619342",
+    "wikidata_description": "French independent online newspaper"
+  },
+  "hebdo.nouvelobs.com": {},
+  "lexpansion.lexpress.fr": {},
+  "teleobs.nouvelobs.com": {},
+  "interieur.gouv.fr": {},
+  "elle.fr": {},
+  "votewatch.eu": {
+    "wikidata_label": "VoteWatch Europe",
+    "wikidata_id": "Q2534810",
+    "wikidata_description": "non-governmental organization"
+  },
+  "prochoix.org": {},
+  "gss.revues.org": {},
+  "tempsreel.nouvelobs.com": {},
+  "frontnational.com": {},
+  "spire.sciencespo.fr": {}
 }
