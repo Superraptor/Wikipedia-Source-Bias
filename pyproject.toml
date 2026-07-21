@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wikipedia-sources-bias"
+version = "0.1.0"
+description = "Analyze Wikipedia article sources for geographic and author profile insights"
+requires-python = ">=3.11"
+readme = "README.md"
+authors = [{name = "OpenAI"}]
+
+[project.scripts]
+wikipedia-sources-bias = "wikipedia_sources_bias.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
