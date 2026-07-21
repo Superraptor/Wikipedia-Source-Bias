@@ -21,6 +21,8 @@ from wikipedia_sources_bias.analysis import (
     _fetch_crossref_metadata,
     _fetch_wikidata_oclc,
     _fetch_wikidata_doi,
+    _extract_author_from_html,
+    _detect_language,
 )
 
 
@@ -202,3 +204,42 @@ def test_apis_graceful_fallbacks():
     assert _fetch_crossref_metadata("10.9999/nonexistentdoi") == {}
     assert _fetch_wikidata_oclc("000000000") == {}
     assert _fetch_wikidata_doi("10.9999/nonexistentdoi") == {}
+
+
+def test_detect_language():
+    assert _detect_language("The quick brown fox jumps over the lazy dog.") == "English"
+    assert _detect_language("Le chat noir boit du lait frais.") == "French"
+    assert _detect_language("Der Hund rennt schnell durch den Wald.") == "German"
+    assert _detect_language("El perro corre rápidamente por el bosque.") == "Spanish"
+    assert _detect_language("Il cane corre velocemente nel bosco.") == "Italian"
+
+
+def test_extract_author_from_html():
+    html_meta = '<html><head><meta name="author" content="Jane Doe"></head><body></body></html>'
+    soup = BeautifulSoup(html_meta, "html.parser")
+    assert _extract_author_from_html(soup) == "Jane Doe"
+
+    html_json_ld = """
+    <html>
+      <head>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "author": {
+            "@type": "Person",
+            "name": "Jean Dupont"
+          }
+        }
+        </script>
+      </head>
+      <body></body>
+    </html>
+    """
+    soup_json = BeautifulSoup(html_json_ld, "html.parser")
+    assert _extract_author_from_html(soup_json) == "Jean Dupont"
+
+    html_fallback = '<html><body><span class="author">By Marie Curie</span></body></html>'
+    soup_fb = BeautifulSoup(html_fallback, "html.parser")
+    assert _extract_author_from_html(soup_fb) == "Marie Curie"
+

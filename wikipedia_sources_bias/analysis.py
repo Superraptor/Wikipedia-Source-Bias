@@ -15,6 +15,8 @@ from .heuristics_data import (
     SURNAME_ORIGIN_PATTERNS,
     SUBJECTIVE_LOADED_WORDS,
     OPINION_EDITORIAL_INDICATORS,
+    MULTILINGUAL_LOADED_WORDS,
+    MULTILINGUAL_OPINION_INDICATORS,
 )
 
 
@@ -152,7 +154,7 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
                 "language": "en",
                 "search": host,
             },
-            headers={"User-Agent": "WikipediaSourcesBias/0.1 (mailto:antigravity@openai.com)"},
+            headers={"User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"},
             timeout=5,
         )
         response.raise_for_status()
@@ -178,7 +180,6 @@ def _extract_authors_from_citation(text: str) -> list[str]:
     if by_matches:
         valid_authors = []
         for match in by_matches:
-            # Filter out non-person entities or stop words
             if not any(
                 stop in match.lower()
                 for stop in ["press", "journal", "university", "associated", "reuters", "times", "post", "bbc", "news", "society"]
@@ -288,7 +289,7 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
                 "language": "en",
                 "search": author_name,
             },
-            headers={"User-Agent": "WikipediaSourcesBias/0.1 (mailto:antigravity@openai.com)"},
+            headers={"User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"},
             timeout=5,
         )
         response.raise_for_status()
@@ -339,43 +340,65 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
 def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
     entity_id = None
     headers = {
-        "User-Agent": "WikipediaSourcesBias/0.1 (mailto:antigravity@openai.com)"
+        "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
     }
-    # 1. Try search API for quick and indexed lookup
-    try:
-        response = requests.get(
-            "https://www.wikidata.org/w/api.php",
-            params={
-                "action": "wbsearchentities",
-                "format": "json",
-                "language": "en",
-                "search": domain,
-            },
-            headers=headers,
-            timeout=5,
-        )
-        response.raise_for_status()
-        search_data = response.json()
-        if search_data.get("search"):
-            entity_id = search_data["search"][0]["id"]
-    except Exception:
-        pass
+    
+    # 1. Try VALUES exact URI matching (extremely fast, avoids timeouts completely)
+    query_exact = f"""
+    SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
+      VALUES ?website {{
+        <http://{domain}/> <https://{domain}/> <http://www.{domain}/> <https://www.{domain}/>
+        <http://{domain}> <https://{domain}> <http://www.{domain}> <https://www.{domain}>
+      }}
+      ?publisher wdt:P856 ?website.
+      OPTIONAL {{ ?publisher wdt:P17 ?country. }}
+      OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
+      OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
+      OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
+      OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }}
+    """
+    rows = _query_wikidata_sparql(query_exact)
+    
+    # 2. Fall back to search API if VALUES lookup fails
+    if not rows:
+        try:
+            response = requests.get(
+                "https://www.wikidata.org/w/api.php",
+                params={
+                    "action": "wbsearchentities",
+                    "format": "json",
+                    "language": "en",
+                    "search": domain,
+                },
+                headers=headers,
+                timeout=5,
+            )
+            response.raise_for_status()
+            search_data = response.json()
+            if search_data.get("search"):
+                entity_id = search_data["search"][0]["id"]
+        except Exception:
+            pass
 
-    if entity_id:
-        query = f"""
-        SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
-          BIND(wd:{entity_id} AS ?publisher)
-          OPTIONAL {{ ?publisher wdt:P17 ?country. }}
-          OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
-          OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
-          OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
-          OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
-          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-        }}
-        """
-    else:
-        # Fallback to regex-based scan (highly un-indexed, might time out)
-        query = f"""
+        if entity_id:
+            query_direct = f"""
+            SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
+              BIND(wd:{entity_id} AS ?publisher)
+              OPTIONAL {{ ?publisher wdt:P17 ?country. }}
+              OPTIONAL {{ ?publisher wdt:P1387 ?politicalLeaning. }}
+              OPTIONAL {{ ?publisher wdt:P1142 ?politicalIdeology. }}
+              OPTIONAL {{ ?publisher wdt:P127 ?owner. }}
+              OPTIONAL {{ ?publisher wdt:P31 ?instanceOf. }}
+              SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+            }}
+            """
+            rows = _query_wikidata_sparql(query_direct)
+
+    # 3. Hard fallback to un-indexed regex scan (timeout-prone, last resort)
+    if not rows:
+        query_fallback = f"""
         SELECT ?publisher ?publisherLabel ?countryLabel ?politicalLeaningLabel ?politicalIdeologyLabel ?ownerLabel ?instanceOfLabel WHERE {{
           ?publisher wdt:P856 ?website.
           FILTER(regex(str(?website), "https?://(www\\\\.)?{domain}(/|$)", "i")).
@@ -387,8 +410,8 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
           SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
         }} LIMIT 10
         """
+        rows = _query_wikidata_sparql(query_fallback)
 
-    rows = _query_wikidata_sparql(query)
     if not rows:
         return {}
         
@@ -553,7 +576,7 @@ def _fetch_wikidata_oclc(oclc_num: str) -> dict[str, Any]:
 def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
     url = f"https://api.crossref.org/works/{doi}"
     headers = {
-        "User-Agent": "WikipediaSourcesBias/0.1 (mailto:antigravity@openai.com)"
+        "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
     }
     try:
         response = requests.get(url, headers=headers, timeout=5)
@@ -640,7 +663,7 @@ def _fetch_wikidata_doi(doi: str) -> dict[str, Any]:
             
     return {
         "wikidata_id": work_id,
-        "wikidata_name": title,
+        "wikidata_name": work_id,
         "publishers": sorted(list(publishers)),
         "authors": sorted(list(authors)),
         "journals": sorted(list(journals)),
@@ -723,18 +746,107 @@ def _calculate_readability(text: str) -> dict[str, Any]:
     }
 
 
+def _extract_author_from_html(soup: BeautifulSoup) -> str | None:
+    # 1. Check meta tags
+    meta_auth = soup.find("meta", attrs={"name": "author"})
+    if meta_auth and meta_auth.get("content"):
+        return meta_auth["content"].strip()
+        
+    meta_art_auth = soup.find("meta", attrs={"property": "article:author"})
+    if meta_art_auth and meta_art_auth.get("content"):
+        content = meta_art_auth["content"].strip()
+        if not content.startswith("http"):
+            return content
+            
+    for name in ["parsely-author", "sailthru.author", "twitter:creator"]:
+        meta = soup.find("meta", attrs={"name": name})
+        if meta and meta.get("content"):
+            val = meta["content"].strip()
+            if val.startswith("@"):
+                val = val[1:]
+            if val:
+                return val
+                
+    # 2. Check JSON-LD
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string)
+            if isinstance(data, list):
+                items = data
+            elif isinstance(data, dict):
+                items = data.get("@graph", [data])
+            else:
+                continue
+                
+            for item in items:
+                author_field = item.get("author")
+                if author_field:
+                    if isinstance(author_field, dict):
+                        name = author_field.get("name")
+                        if name:
+                            return name.strip()
+                    elif isinstance(author_field, list) and author_field:
+                        first = author_field[0]
+                        if isinstance(first, dict):
+                            name = first.get("name")
+                            if name:
+                                return name.strip()
+                        elif isinstance(first, str):
+                            return first.strip()
+                    elif isinstance(author_field, str):
+                        return author_field.strip()
+        except Exception:
+            pass
+
+    # 3. Check microdata / common class or itemprop tags
+    author_el = soup.find(itemprop="author") or soup.find(rel="author")
+    if author_el:
+        name_el = author_el.find(itemprop="name") if hasattr(author_el, "find") else None
+        if name_el:
+            return name_el.get_text(" ", strip=True)
+        text = author_el.get_text(" ", strip=True)
+        text = re.sub(r"(?i)^(by|par|von|de|published\s+by|source)\s+", "", text)
+        if len(text) > 2 and len(text) < 60:
+            return text
+
+    # 4. Scan all classes containing author/byline/signature
+    for el in soup.find_all(class_=True):
+        classes = el.get("class", [])
+        if any(("author" in c or "byline" in c or "signature" in c) for c in classes):
+            text = el.get_text(" ", strip=True)
+            text = re.sub(r"(?i)^(by|par|von|de|published\s+by|source)\s+", "", text)
+            if len(text) > 2 and len(text) < 60:
+                return text
+            
+    return None
+
+
 def _fetch_url_readability(url: str) -> dict[str, Any]:
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    html = ""
     try:
         response = requests.get(url, headers=headers, timeout=5)
+        if response.status_code in (403, 401):
+            raise requests.HTTPError("Direct request blocked with status code " + str(response.status_code))
         response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        for element in soup(["script", "style", "nav", "footer", "header", "aside"]):
-            element.decompose()
-        text = soup.get_text(" ", strip=True)
-        text = " ".join(text.split())
-        return _calculate_readability(text)
+        html = response.text
     except Exception:
+        # Fall back to Internet Archive Wayback Machine
+        try:
+            api_url = f"https://archive.org/wayback/available?url={url}"
+            api_res = requests.get(api_url, timeout=5)
+            if api_res.status_code == 200:
+                data = api_res.json()
+                snapshots = data.get("archived_snapshots", {})
+                if "closest" in snapshots:
+                    archive_url = snapshots["closest"]["url"]
+                    archive_res = requests.get(archive_url, headers=headers, timeout=5)
+                    archive_res.raise_for_status()
+                    html = archive_res.text
+        except Exception:
+            pass
+
+    if not html:
         return {
             "flesch_reading_ease": None,
             "flesch_kincaid_grade": None,
@@ -742,6 +854,30 @@ def _fetch_url_readability(url: str) -> dict[str, Any]:
             "sentence_count": 0,
             "syllable_count": 0,
             "description": "Failed to fetch source content",
+            "extracted_author": None,
+        }
+
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+        extracted_author = _extract_author_from_html(soup)
+        
+        for element in soup(["script", "style", "nav", "footer", "header", "aside"]):
+            element.decompose()
+        text = soup.get_text(" ", strip=True)
+        text = " ".join(text.split())
+        
+        readability = _calculate_readability(text)
+        readability["extracted_author"] = extracted_author
+        return readability
+    except Exception:
+        return {
+            "flesch_reading_ease": None,
+            "flesch_kincaid_grade": None,
+            "word_count": 0,
+            "sentence_count": 0,
+            "syllable_count": 0,
+            "description": "Failed to parse source content",
+            "extracted_author": None,
         }
 
 
@@ -889,6 +1025,62 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
     }
 
 
+_sentiment_pipeline = None
+
+def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
+    global _sentiment_pipeline
+    if not text:
+        return None
+    try:
+        from transformers import pipeline
+        if _sentiment_pipeline is None:
+            # Loads tiny, multilingual DistilBERT model
+            _sentiment_pipeline = pipeline(
+                "sentiment-analysis",
+                model="lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+                device=-1, # CPU only
+            )
+        result = _sentiment_pipeline(text[:512])[0]
+        label = result["label"].lower()
+        score = result["score"]
+        
+        subjectivity_score = 0.0
+        if label in ("positive", "negative"):
+            subjectivity_score = round(score, 2)
+            
+        return {
+            "sentiment": label,
+            "subjectivity_score": subjectivity_score,
+            "confidence": round(score, 2),
+            "source": "Hugging Face Pipeline",
+        }
+    except Exception:
+        return None
+
+
+def _detect_language(text: str) -> str:
+    text_lower = text.lower()
+    scores = {
+        "English": len(re.findall(r"\b(the|and|of|in|to|a|is|that|for|it|on|with|as)\b", text_lower)),
+        "French": len(re.findall(r"\b(le|la|les|un|une|et|en|de|du|des|pour|dans|qui|que)\b", text_lower)),
+        "German": len(re.findall(r"\b(der|die|das|und|in|zu|von|den|dem|des|ein|eine|für)\b", text_lower)),
+        "Spanish": len(re.findall(r"\b(el|la|los|las|un|una|y|en|de|para|con|por|que|este)\b", text_lower)),
+        "Italian": len(re.findall(r"\b(il|la|i|gli|le|un|una|e|in|di|da|per|con|su|che)\b", text_lower)),
+    }
+    detected = max(scores, key=scores.get)
+    if scores[detected] > 0:
+        return detected
+        
+    if re.search(r"[\u0400-\u04FF]", text):
+        return "Russian"
+    if re.search(r"[\u4e00-\u9fff]", text):
+        return "Chinese"
+    if re.search(r"[\u3040-\u30ff\u31f0-\u31ff]", text):
+        return "Japanese"
+        
+    return "English"
+
+
 def analyze_language_bias(citation_text: str) -> dict[str, Any]:
     if not citation_text:
         return {
@@ -897,32 +1089,50 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
             "is_opinion": False,
             "sentiment": "neutral",
             "sensationalism_score": 0.0,
+            "detected_language": "English",
+            "sentiment_source": "Lexical Heuristics",
         }
 
+    # 1. Query Hugging Face model
+    hf_res = _get_huggingface_sentiment(citation_text)
+    
+    # 2. Multilingual stop-word language detector
+    lang = _detect_language(citation_text)
+    
     words = re.findall(r"\b[a-zA-Z'\-]+\b", citation_text.lower())
     total_words = len(words)
 
-    loaded_found = [w for w in words if w in SUBJECTIVE_LOADED_WORDS]
-    opinion_found = [w for w in words if w in OPINION_EDITORIAL_INDICATORS]
+    # 3. Multilingual lexical keyword lookups
+    loaded_lexicon = MULTILINGUAL_LOADED_WORDS.get(lang, SUBJECTIVE_LOADED_WORDS)
+    opinion_lexicon = MULTILINGUAL_OPINION_INDICATORS.get(lang, OPINION_EDITORIAL_INDICATORS)
+
+    loaded_found = [w for w in words if w in loaded_lexicon]
+    opinion_found = [w for w in words if w in opinion_lexicon]
 
     subjectivity_score = 0.0
     if total_words > 0:
         subjectivity_score = min(len(loaded_found) / (total_words ** 0.5), 1.0)
 
-    is_opinion = len(opinion_found) > 0 or "opinion" in citation_text.lower()
+    is_opinion = len(opinion_found) > 0 or "opinion" in citation_text.lower() or (lang == "French" and "avis" in citation_text.lower())
 
-    positive_words = {"heroic", "courageous", "spectacular", "unquestionably"}
-    negative_words = {"disastrous", "tyrant", "despicable", "infamous", "catastrophic", "atrocity", "corrupt", "sham", "ruthless", "cynical"}
-
-    pos_count = sum(1 for w in loaded_found if w in positive_words)
-    neg_count = sum(1 for w in loaded_found if w in negative_words)
-
-    if neg_count > pos_count:
-        sentiment = "negative"
-    elif pos_count > neg_count:
-        sentiment = "positive"
+    if hf_res and (loaded_found or is_opinion):
+        sentiment = hf_res["sentiment"]
+        subjectivity_score = round(max(subjectivity_score, hf_res["subjectivity_score"]), 2)
     else:
-        sentiment = "neutral"
+        positive_words = {"heroic", "courageous", "spectacular", "unquestionably"}
+        negative_words = {"disastrous", "tyrant", "despicable", "infamous", "catastrophic", "atrocity", "corrupt", "sham", "ruthless", "cynical"}
+
+        pos_count = sum(1 for w in loaded_found if w in positive_words)
+        neg_count = sum(1 for w in loaded_found if w in negative_words)
+
+        if neg_count > pos_count:
+            sentiment = "negative"
+        elif pos_count > neg_count:
+            sentiment = "positive"
+        else:
+            sentiment = "neutral"
+        
+        subjectivity_score = round(subjectivity_score, 2)
 
     uppercase_words = re.findall(r"\b[A-Z]{3,}\b", citation_text)
     exclamation_marks = citation_text.count("!")
@@ -938,6 +1148,8 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
         "is_opinion": is_opinion,
         "sentiment": sentiment,
         "sensationalism_score": round(sensationalism_score, 2),
+        "detected_language": lang,
+        "sentiment_source": "Hugging Face" if hf_res else "Lexical Heuristics",
     }
 
 
@@ -1070,11 +1282,11 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
     citations = parse_citations(references[0]["items"]) if references else []
     source_urls = _extract_source_urls(soup)
 
+    seen_urls = set()
+    dedup_candidate_urls = []
     reference_urls = [url for citation in citations for url in citation.get("urls", []) if url]
     candidate_urls = reference_urls or source_urls
 
-    seen_urls = set()
-    dedup_candidate_urls = []
     for u in candidate_urls:
         if u not in seen_urls:
             seen_urls.add(u)
@@ -1088,7 +1300,7 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         # Source level analysis
         profile = analyze_source_bias(source_url, wikidata)
         
-        # Match URL back to citation to get text and authors
+        # Match URL back to citation to get text
         citation_text = ""
         for citation in citations:
             if source_url in citation.get("urls", []):
@@ -1105,8 +1317,9 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         if wikidata_pub and wikidata_pub.get("countries"):
             profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
 
-        # Fetch URL readability score
+        # Fetch URL readability score & extract page author
         profile["readability"] = _fetch_url_readability(source_url)
+        extracted_web_author = profile["readability"].get("extracted_author")
 
         # Look for identifiers (Google Books ID, OCLC, DOI, ISBN)
         books_id = _extract_google_books_id(source_url)
@@ -1130,7 +1343,6 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         elif doi_val:
             crossref_meta = _fetch_crossref_metadata(doi_val)
             wiki_doi_meta = _fetch_wikidata_doi(doi_val)
-            # Merge DOI metadata
             merged_doi = {
                 "doi": doi_val,
                 "title": crossref_meta.get("title") or wiki_doi_meta.get("wikidata_name") or "",
@@ -1155,10 +1367,9 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
             profile["source_type"] = "book"
             profile["reliability"] = "high"
 
-        # Resolve Authors names
+        # Resolve Authors names (prioritize: book/doi metadata -> citation text -> extracted web page -> page metadata)
         citation_authors = _extract_authors_from_citation(citation_text)
         
-        # Override metadata authors with ones resolved from specific book/article metadata if found
         meta_authors = []
         if profile["doi_metadata"] and profile["doi_metadata"].get("authors"):
             meta_authors = profile["doi_metadata"]["authors"]
@@ -1169,8 +1380,16 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         elif profile["wikidata_book"] and profile["wikidata_book"].get("authors"):
             meta_authors = profile["wikidata_book"]["authors"]
 
-        final_authors = meta_authors or citation_authors or ([page_metadata["author"]] if page_metadata.get("author") else [])
-        
+        final_authors = []
+        if meta_authors:
+            final_authors = meta_authors
+        elif citation_authors:
+            final_authors = citation_authors
+        elif extracted_web_author:
+            final_authors = [extracted_web_author]
+        elif page_metadata.get("author"):
+            final_authors = [page_metadata["author"]]
+
         author_profiles = []
         for auth in final_authors:
             auth_prof = analyze_author_bias(auth, profile["geography"])
@@ -1181,7 +1400,7 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
         profile["author_profiles"] = author_profiles
         profile["author_profile"] = author_profiles[0] if author_profiles else None
 
-        # Language level analysis
+        # Language level analysis (multilingual + Hugging Face)
         profile["language_bias"] = analyze_language_bias(citation_text)
 
         sources.append(profile)
@@ -1223,25 +1442,21 @@ def analyze_page(url: str, max_sources: int = 10) -> dict[str, Any]:
 def render_report(analysis: dict[str, Any]) -> str:
     agg = analysis.get("aggregated_bias", {})
     
-    # Format Geographic Distribution
     geo_lines = []
     for country, data in agg.get("geography_distribution", {}).items():
         geo_lines.append(f"     - {country}: {data['count']} ({data['percentage']}%)")
     geo_str = "\n".join(geo_lines) if geo_lines else "     - None"
     
-    # Format Political Leaning Distribution
     pol_lines = []
     for pol, data in agg.get("political_leaning_distribution", {}).items():
         pol_lines.append(f"     - {pol}: {data['count']} ({data['percentage']}%)")
     pol_str = "\n".join(pol_lines) if pol_lines else "     - None"
     
-    # Format Reliability Distribution
     rel_lines = []
     for rel, data in agg.get("reliability_distribution", {}).items():
         rel_lines.append(f"     - {rel}: {data['count']} ({data['percentage']}%)")
     rel_str = "\n".join(rel_lines) if rel_lines else "     - None"
 
-    # Format Gender Distribution
     gender_lines = []
     for gender, pct in agg.get("author_gender_distribution_estimate", {}).items():
         gender_lines.append(f"     - {gender}: {pct}%")
@@ -1338,7 +1553,7 @@ def render_report(analysis: dict[str, Any]) -> str:
                 pub_parts.append(f"Types: {', '.join(wiki_pub['types'])}")
         pub_gt_str = f" ({'; '.join(pub_parts)})" if pub_parts else ""
 
-        # Book details (Wikidata ISBN / Google Books / OCLC WorldCat)
+        # Book details
         book_details = ""
         if wiki_book.get("wikidata_id"):
             book_details = (
@@ -1396,7 +1611,7 @@ def render_report(analysis: dict[str, Any]) -> str:
             f"   Readability Score: {readability_str}\n"
             f"   Language Bias:     Subjectivity={lang_bias.get('subjectivity_score', 0.0)}, "
             f"Sensationalism={lang_bias.get('sensationalism_score', 0.0)}, "
-            f"IsOpinion={lang_bias.get('is_opinion', False)}\n"
+            f"IsOpinion={lang_bias.get('is_opinion', False)} (Language={lang_bias.get('detected_language')}, Source={lang_bias.get('sentiment_source')})\n"
             f"{book_details}"
             f"{doi_details}"
             f"   Citation Text:     \"{source.get('citation_text', 'n/a')}\"\n"
