@@ -15,5 +15,43 @@
     "wikidata_id": "Q13515725",
     "wikidata_description": "web-archiving website"
   },
-  "francebleu.fr": {}
+  "francebleu.fr": {},
+  "ouest-france.fr": {},
+  "lemonde.fr": {
+    "wikidata_label": "Le Monde",
+    "wikidata_id": "Q12461",
+    "wikidata_description": "French daily newspaper founded in 1944"
+  },
+  "courrierinternational.com": {},
+  "radiofrance.fr": {},
+  "bbc.com": {
+    "wikidata_label": "BBC Online",
+    "wikidata_id": "Q747860",
+    "wikidata_description": "brand name and home for the BBC's UK online service"
+  },
+  "books.google.com": {
+    "wikidata_label": "Google Books",
+    "wikidata_id": "Q206033",
+    "wikidata_description": "search engine for books by Google"
+  },
+  "nytimes.com": {
+    "wikidata_label": "nytimes.com",
+    "wikidata_id": "Q135925219",
+    "wikidata_description": "news website of The New York Times"
+  },
+  "theguardian.com": {
+    "wikidata_label": "TheGuardian.com",
+    "wikidata_id": "Q5614018",
+    "wikidata_description": "British news website"
+  },
+  "slate.fr": {
+    "wikidata_label": "slate.fr",
+    "wikidata_id": "Q64003230",
+    "wikidata_description": "French version of the U.S.-based Slate magazine"
+  },
+  "reuters.com": {
+    "wikidata_label": "Reuters",
+    "wikidata_id": "Q130879",
+    "wikidata_description": "international news agency"
+  }
 }

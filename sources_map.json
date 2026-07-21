@@ -1,94 +1,26 @@
 {
   "type": "FeatureCollection",
-  "page_title": "Emmanuel_Macron",
-  "page_url": "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+  "page_title": "Alternative_pour_l%27Allemagne",
+  "page_url": "https://fr.wikipedia.org/wiki/Alternative_pour_l%27Allemagne",
   "features": [
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.4515,
-          51.1657
-        ]
-      },
-      "properties": {
-        "url": "https://whoswho.de/bio/emmanuel-macron.html",
-        "domain": "whoswho.de",
-        "publisher_name": "whoswho.de",
-        "country": "Germany",
-        "region": "Europe",
-        "language": "German",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
       },
       "properties": {
-        "url": "https://www.lepoint.fr/politique/emmanuel-macron-n-a-pas-paye-sa-cotisation-au-ps-depuis-2009-29-08-2014-1858346_20.php",
-        "domain": "lepoint.fr",
-        "publisher_name": "lePoint.fr",
+        "url": "https://www.ouest-france.fr/europe/allemagne/neonazi-populiste-ou-d-extreme-droite-comment-qualifier-l-afd-le-sulfureux-parti-politique-allemand-6501060",
+        "domain": "ouest-france.fr",
+        "publisher_name": "ouest-france.fr",
         "country": "France",
-        "region": "Europe",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.2137,
-          46.2276
-        ]
-      },
-      "properties": {
-        "url": "https://www.lefigaro.fr/actualite-france/2018/06/25/01016-20180625ARTFIG00320-emmanuel-macron-un-agnostique-baptise.php",
-        "domain": "lefigaro.fr",
-        "publisher_name": "Le Figaro",
-        "country": "France",
-        "region": "Europe",
-        "language": "French",
-        "political_leaning": "conservatism",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
-          "bias_rating": "Least biased",
-          "factual_reporting": "High",
-          "credibility_rating": "H"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.is/yL1lg",
-        "domain": "archive.is",
-        "publisher_name": "Q13515725",
-        "country": "Unknown",
         "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
         "mbfc": {}
       }
     },
@@ -102,14 +34,182 @@
         ]
       },
       "properties": {
-        "url": "http://www.francebleu.fr/infos/ministre/emmanuel-macron-ministre-un-amienois-bercy-1723899",
-        "domain": "francebleu.fr",
-        "publisher_name": "France Bleu",
+        "url": "https://www.lemonde.fr/en/international/article/2024/01/11/leaders-of-germany-s-far-right-afd-party-are-considering-mass-expulsion-of-germans-of-foreign-origin_6422332_4.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
         "country": "France",
-        "region": "Europe",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.courrierinternational.com/article/allemagne-lafd-plus-dangereuse-que-les-neonazis",
+        "domain": "courrierinternational.com",
+        "publisher_name": "courrierinternational.com",
+        "country": "France",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceculture/podcasts/cultures-monde/afd-et-le-nazisme-la-strategie-de-l-ambiguite-4892713",
+        "domain": "radiofrance.fr",
+        "publisher_name": "radiofrance.fr",
+        "country": "France",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-68931170",
+        "domain": "bbc.com",
+        "publisher_name": "bbc.com",
+        "country": "United Kingdom",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=uiklDwAAQBAJ&pg=PA6",
+        "domain": "books.google.com",
+        "publisher_name": "books.google.com",
+        "country": "Canada, United Kingdom, United States",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2024/12/20/world/europe/elon-musk-afd-germany.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/commentisfree/2025/jan/08/elon-musk-political-influence-global",
+        "domain": "theguardian.com",
+        "publisher_name": "theguardian.com",
+        "country": "United Kingdom",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.slate.fr/story/154991/sources-oubliees-afd-la-revolution-conservatrice",
+        "domain": "slate.fr",
+        "publisher_name": "slate.fr",
+        "country": "France",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2017/01/18/world/europe/germany-afd-alternative-bjorn-hocke.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "Unknown",
+        "language": null,
+        "political_leaning": null,
+        "reliability": null,
         "mbfc": {}
       }
     }
@@ -120,13 +220,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.4515,
-          51.1657
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "country": "Germany",
-        "source_count": 1,
+        "country": "France",
+        "source_count": 5,
+        "percentage": 50.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 2,
         "percentage": 20.0
       }
     },
@@ -135,14 +250,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.2137,
-          46.2276
+          -106.3468,
+          56.1304
         ]
       },
       "properties": {
-        "country": "France",
-        "source_count": 3,
-        "percentage": 60.0
+        "country": "Canada",
+        "source_count": 1,
+        "percentage": 10.0
       }
     },
     {
@@ -150,13 +265,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
+          -95.7129,
+          37.0902
         ]
       },
       "properties": {
-        "country": "Unknown",
-        "source_count": 1,
+        "country": "United States",
+        "source_count": 2,
         "percentage": 20.0
       }
     }

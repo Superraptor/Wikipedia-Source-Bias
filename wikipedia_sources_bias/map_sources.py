@@ -94,6 +94,8 @@ def _save_coords_cache(cache: dict[str, list[float]]):
         pass
 
 def get_country_coordinates(country_name: str, cache: dict[str, list[float]]) -> list[float] | None:
+    if not country_name or country_name == "Unknown":
+        return None
     if country_name in cache:
         return cache[country_name]
         
@@ -149,7 +151,7 @@ def main() -> None:
 
     for s in sources:
         geo = s.get("geography", {})
-        country = geo.get("country", "Unknown")
+        country = geo.get("country") or s.get("country", "Unknown")
         region = geo.get("region", "Unknown")
         
         # Split combined countries (e.g. "France, United Kingdom" -> "France")

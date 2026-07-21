@@ -61,5 +61,207 @@
       "radio network"
     ],
     "mbfc_id": null
+  },
+  "dw.com": {
+    "wikidata_id": "Q1156181",
+    "wikidata_name": "DW-TV",
+    "countries": [
+      "Germany"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q49653"
+    ],
+    "types": [
+      "broadcaster",
+      "mass media",
+      "public television station",
+      "specialty channel",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "ouest-france.fr": {
+    "wikidata_id": "Q3117551",
+    "wikidata_name": "SIPA - Ouest-France group",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "lemonde.fr": {
+    "wikidata_id": "Q69565062",
+    "wikidata_name": "lemonde.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [
+      "social liberalism"
+    ],
+    "owners": [
+      "Groupe Le Monde"
+    ],
+    "types": [
+      "daily newspaper",
+      "online newspaper"
+    ],
+    "mbfc_id": "le-monde-bias"
+  },
+  "courrierinternational.com": {
+    "wikidata_id": "Q1137712",
+    "wikidata_name": "Courrier international",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe Le Monde"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "radiofrance.fr": {
+    "wikidata_id": "Q2120364",
+    "wikidata_name": "Radio France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "France"
+    ],
+    "types": [
+      "organization",
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "bbc.com": {
+    "wikidata_id": "Q747860",
+    "wikidata_name": "BBC Online",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "public interest"
+    ],
+    "owners": [
+      "British Broadcasting Corporation"
+    ],
+    "types": [
+      "public broadcaster",
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "books.google.com": {
+    "wikidata_id": "Q15766672",
+    "wikidata_name": "Archives of Neurology",
+    "countries": [
+      "Canada",
+      "United Kingdom",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "American Medical Association",
+      "Google"
+    ],
+    "types": [
+      "bibliographic database",
+      "digital library",
+      "scientific journal"
+    ],
+    "mbfc_id": null
+  },
+  "nytimes.com": {
+    "wikidata_id": "Q135925219",
+    "wikidata_name": "nytimes.com",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "The New York Times Company"
+    ],
+    "types": [
+      "daily newspaper",
+      "online database",
+      "online newspaper",
+      "online service"
+    ],
+    "mbfc_id": "new-york-times"
+  },
+  "theguardian.com": {
+    "wikidata_id": "Q11148",
+    "wikidata_name": "The Guardian",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [
+      "neoliberalism"
+    ],
+    "owners": [
+      "Guardian Media Group"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": "the-guardian"
+  },
+  "slate.fr": {
+    "wikidata_id": "Q64003230",
+    "wikidata_name": "slate.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online magazine",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "reuters.com": {
+    "wikidata_id": "Q22343541",
+    "wikidata_name": "reuters.com",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Thomson Reuters"
+    ],
+    "types": [
+      "business",
+      "news agency",
+      "online newspaper"
+    ],
+    "mbfc_id": "reuters"
   }
 }
