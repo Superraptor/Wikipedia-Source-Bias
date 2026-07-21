@@ -1758,7 +1758,7 @@ def _save_page_cache(cache: dict[str, Any]):
         pass
 
 
-def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False) -> dict[str, Any]:
+def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False, output: str | None = None) -> dict[str, Any]:
     cache_suffix = ""
     if countries_only:
         cache_suffix += "_countries"
@@ -2047,6 +2047,13 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         cache = _load_page_cache()
         cache[cache_key] = result
         _save_page_cache(cache)
+
+    if output:
+        try:
+            with open(output, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
 
     return result
 

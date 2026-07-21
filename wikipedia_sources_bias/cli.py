@@ -57,7 +57,7 @@ def main() -> None:
         sys.exit(1)
 
     if args.format == "json":
-        output_str = json.dumps(result, indent=2)
+        output_str = json.dumps(result, indent=2, ensure_ascii=False)
     else:
         output_str = render_report(result)
 
