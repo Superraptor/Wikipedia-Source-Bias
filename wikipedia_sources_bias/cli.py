@@ -33,6 +33,11 @@ def main() -> None:
         help="Bypass page cache and force fresh analysis",
     )
     parser.add_argument(
+        "--countries-only",
+        action="store_true",
+        help="Only extract and summarize the countries for each source (much faster)",
+    )
+    parser.add_argument(
         "--output",
         type=str,
         help="File path to write output to",
@@ -41,7 +46,7 @@ def main() -> None:
 
     max_sources = None if args.all else args.max_sources
     try:
-        result = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache)
+        result = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache, countries_only=args.countries_only)
     except Exception as e:
         print(f"Error during analysis: {e}", file=sys.stderr)
         sys.exit(1)

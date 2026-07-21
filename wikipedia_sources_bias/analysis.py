@@ -1613,8 +1613,9 @@ def _save_page_cache(cache: dict[str, Any]):
         pass
 
 
-def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False) -> dict[str, Any]:
-    cache_key = f"{url}_all" if max_sources is None else f"{url}_max_{max_sources}"
+def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False) -> dict[str, Any]:
+    cache_suffix = "_countries" if countries_only else ""
+    cache_key = f"{url}_all{cache_suffix}" if max_sources is None else f"{url}_max_{max_sources}{cache_suffix}"
     if not no_cache:
         cache = _load_page_cache()
         if cache_key in cache:
@@ -1671,89 +1672,101 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False)
             if wikidata_pub.get("countries"):
                 profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
 
-        mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
-        profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id)
+        if countries_only:
+            profile["citation_text"] = ""
+            profile["mbfc"] = {}
+            profile["readability"] = {}
+            profile["google_books_metadata"] = {}
+            profile["oclc_metadata"] = {}
+            profile["doi_metadata"] = {}
+            profile["wikidata_book"] = {}
+            profile["author_profiles"] = []
+            profile["author_profile"] = None
+            profile["language_bias"] = {}
+        else:
+            mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
+            profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id)
 
-        profile["readability"] = _fetch_url_readability(source_url)
-        extracted_web_author = profile["readability"].get("extracted_author")
+            profile["readability"] = _fetch_url_readability(source_url)
+            extracted_web_author = profile["readability"].get("extracted_author")
 
-        books_id = _extract_google_books_id(source_url)
-        oclc_num = _extract_oclc(source_url) or _extract_oclc(citation_text)
-        doi_val = _extract_doi(source_url) or _extract_doi(citation_text)
-        isbn_val = _extract_isbn(citation_text)
+            books_id = _extract_google_books_id(source_url)
+            oclc_num = _extract_oclc(source_url) or _extract_oclc(citation_text)
+            doi_val = _extract_doi(source_url) or _extract_doi(citation_text)
+            isbn_val = _extract_isbn(citation_text)
 
-        profile["google_books_metadata"] = {}
-        profile["oclc_metadata"] = {}
-        profile["doi_metadata"] = {}
-        profile["wikidata_book"] = {}
+            profile["google_books_metadata"] = {}
+            profile["oclc_metadata"] = {}
+            profile["doi_metadata"] = {}
+            profile["wikidata_book"] = {}
 
-        if books_id:
-            profile["google_books_metadata"] = _fetch_google_books_metadata(books_id)
-            profile["source_type"] = "book"
-            profile["reliability"] = "high"
-        elif oclc_num:
-            profile["oclc_metadata"] = _fetch_wikidata_oclc(oclc_num)
-            profile["source_type"] = "book/library_record"
-            profile["reliability"] = "high"
-        elif doi_val:
-            crossref_meta = _fetch_crossref_metadata(doi_val)
-            wiki_doi_meta = _fetch_wikidata_doi(doi_val)
-            merged_doi = {
-                "doi": doi_val,
-                "title": crossref_meta.get("title") or wiki_doi_meta.get("wikidata_name") or "",
-                "authors": crossref_meta.get("authors") or wiki_doi_meta.get("authors") or [],
-                "publisher": crossref_meta.get("publisher") or ", ".join(wiki_doi_meta.get("publishers", [])) or "",
-                "journal": crossref_meta.get("journal") or ", ".join(wiki_doi_meta.get("journals", [])) or "",
-                "published_date": crossref_meta.get("published_date") or wiki_doi_meta.get("pub_date") or "",
-                "subjects": crossref_meta.get("subjects") or [],
-                "wikidata_id": wiki_doi_meta.get("wikidata_id", ""),
-                "countries": wiki_doi_meta.get("countries", []),
-                "political_leanings": wiki_doi_meta.get("political_leanings", []),
-            }
-            profile["doi_metadata"] = merged_doi
-            profile["source_type"] = "journal_article"
-            profile["reliability"] = "academic/peer-reviewed"
-            if merged_doi.get("countries"):
-                profile["geography"]["country"] = ", ".join(merged_doi["countries"])
-            if merged_doi.get("political_leanings"):
-                profile["political_leaning"] = ", ".join(merged_doi["political_leanings"])
-        elif isbn_val:
-            profile["wikidata_book"] = _fetch_wikidata_book(isbn_val)
-            profile["source_type"] = "book"
-            profile["reliability"] = "high"
+            if books_id:
+                profile["google_books_metadata"] = _fetch_google_books_metadata(books_id)
+                profile["source_type"] = "book"
+                profile["reliability"] = "high"
+            elif oclc_num:
+                profile["oclc_metadata"] = _fetch_wikidata_oclc(oclc_num)
+                profile["source_type"] = "book/library_record"
+                profile["reliability"] = "high"
+            elif doi_val:
+                crossref_meta = _fetch_crossref_metadata(doi_val)
+                wiki_doi_meta = _fetch_wikidata_doi(doi_val)
+                merged_doi = {
+                    "doi": doi_val,
+                    "title": crossref_meta.get("title") or wiki_doi_meta.get("wikidata_name") or "",
+                    "authors": crossref_meta.get("authors") or wiki_doi_meta.get("authors") or [],
+                    "publisher": crossref_meta.get("publisher") or ", ".join(wiki_doi_meta.get("publishers", [])) or "",
+                    "journal": crossref_meta.get("journal") or ", ".join(wiki_doi_meta.get("journals", [])) or "",
+                    "published_date": crossref_meta.get("published_date") or wiki_doi_meta.get("pub_date") or "",
+                    "subjects": crossref_meta.get("subjects") or [],
+                    "wikidata_id": wiki_doi_meta.get("wikidata_id", ""),
+                    "countries": wiki_doi_meta.get("countries", []),
+                    "political_leanings": wiki_doi_meta.get("political_leanings", []),
+                }
+                profile["doi_metadata"] = merged_doi
+                profile["source_type"] = "journal_article"
+                profile["reliability"] = "academic/peer-reviewed"
+                if merged_doi.get("countries"):
+                    profile["geography"]["country"] = ", ".join(merged_doi["countries"])
+                if merged_doi.get("political_leanings"):
+                    profile["political_leaning"] = ", ".join(merged_doi["political_leanings"])
+            elif isbn_val:
+                profile["wikidata_book"] = _fetch_wikidata_book(isbn_val)
+                profile["source_type"] = "book"
+                profile["reliability"] = "high"
 
-        citation_authors = _extract_authors_from_citation(citation_text)
-        
-        meta_authors = []
-        if profile["doi_metadata"] and profile["doi_metadata"].get("authors"):
-            meta_authors = profile["doi_metadata"]["authors"]
-        elif profile["google_books_metadata"] and profile["google_books_metadata"].get("authors"):
-            meta_authors = profile["google_books_metadata"]["authors"]
-        elif profile["oclc_metadata"] and profile["oclc_metadata"].get("authors"):
-            meta_authors = profile["oclc_metadata"]["authors"]
-        elif profile["wikidata_book"] and profile["wikidata_book"].get("authors"):
-            meta_authors = profile["wikidata_book"]["authors"]
-
-        final_authors = []
-        if meta_authors:
-            final_authors = meta_authors
-        elif citation_authors:
-            final_authors = citation_authors
-        elif extracted_web_author:
-            final_authors = [extracted_web_author]
-        elif page_metadata.get("author"):
-            final_authors = [page_metadata["author"]]
-
-        author_profiles = []
-        for auth in final_authors:
-            auth_prof = analyze_author_bias(auth, profile["geography"])
-            wiki_author = _fetch_wikidata_author(auth)
-            auth_prof["wikidata_author"] = wiki_author
-            author_profiles.append(auth_prof)
+            citation_authors = _extract_authors_from_citation(citation_text)
             
-        profile["author_profiles"] = author_profiles
-        profile["author_profile"] = author_profiles[0] if author_profiles else None
-        profile["language_bias"] = analyze_language_bias(citation_text)
+            meta_authors = []
+            if profile["doi_metadata"] and profile["doi_metadata"].get("authors"):
+                meta_authors = profile["doi_metadata"]["authors"]
+            elif profile["google_books_metadata"] and profile["google_books_metadata"].get("authors"):
+                meta_authors = profile["google_books_metadata"]["authors"]
+            elif profile["oclc_metadata"] and profile["oclc_metadata"].get("authors"):
+                meta_authors = profile["oclc_metadata"]["authors"]
+            elif profile["wikidata_book"] and profile["wikidata_book"].get("authors"):
+                meta_authors = profile["wikidata_book"]["authors"]
+
+            final_authors = []
+            if meta_authors:
+                final_authors = meta_authors
+            elif citation_authors:
+                final_authors = citation_authors
+            elif extracted_web_author:
+                final_authors = [extracted_web_author]
+            elif page_metadata.get("author"):
+                final_authors = [page_metadata["author"]]
+
+            author_profiles = []
+            for auth in final_authors:
+                auth_prof = analyze_author_bias(auth, profile["geography"])
+                wiki_author = _fetch_wikidata_author(auth)
+                auth_prof["wikidata_author"] = wiki_author
+                author_profiles.append(auth_prof)
+                
+            profile["author_profiles"] = author_profiles
+            profile["author_profile"] = author_profiles[0] if author_profiles else None
+            profile["language_bias"] = analyze_language_bias(citation_text)
 
         sources.append(profile)
 
@@ -1773,22 +1786,49 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False)
         fallback_source["language_bias"] = analyze_language_bias("Reuters World News")
         sources = [fallback_source]
 
-    aggregated_bias = aggregate_page_bias(sources)
+    if countries_only:
+        country_counts = {}
+        simplified_sources = []
+        for s in sources:
+            c = s["geography"]["country"]
+            country_counts[c] = country_counts.get(c, 0) + 1
+            simplified_sources.append({
+                "url": s["url"],
+                "domain": s["domain"],
+                "country": c
+            })
+        
+        geo_distribution = {
+            c: {"count": val, "percentage": round(val / len(sources) * 100, 1)}
+            for c, val in country_counts.items()
+        }
+        
+        result = {
+            "page_title": _extract_page_title(url),
+            "page_url": url,
+            "citation_count": len(citations),
+            "source_count": len(sources),
+            "countries_only": True,
+            "geography_distribution": geo_distribution,
+            "sources": simplified_sources
+        }
+    else:
+        aggregated_bias = aggregate_page_bias(sources)
 
-    result = {
-        "page_title": _extract_page_title(url),
-        "page_url": url,
-        "page_metadata": page_metadata,
-        "references": references,
-        "citation_count": len(citations),
-        "source_count": len(sources),
-        "sources": sources,
-        "aggregated_bias": aggregated_bias,
-        "summary": (
-            f"Extracted {len(sources)} source links. Analyzed geographic distribution, "
-            f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
-        ),
-    }
+        result = {
+            "page_title": _extract_page_title(url),
+            "page_url": url,
+            "page_metadata": page_metadata,
+            "references": references,
+            "citation_count": len(citations),
+            "source_count": len(sources),
+            "sources": sources,
+            "aggregated_bias": aggregated_bias,
+            "summary": (
+                f"Extracted {len(sources)} source links. Analyzed geographic distribution, "
+                f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
+            ),
+        }
 
     if not no_cache:
         cache = _load_page_cache()
@@ -1799,6 +1839,37 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False)
 
 
 def render_report(analysis: dict[str, Any]) -> str:
+    if analysis.get("countries_only"):
+        lines = [
+            f"==================================================",
+            f" Wikipedia Source & Country Report (Simplified)",
+            f"==================================================",
+            f"Page Title:  {analysis['page_title']}",
+            f"Page URL:    {analysis['page_url']}",
+            f"Total References Found: {analysis['citation_count']}",
+            f"Sources Analyzed:       {analysis['source_count']}",
+            "",
+            f"--------------------------------------------------",
+            f" GEOGRAPHIC DISTRIBUTION",
+            f"--------------------------------------------------",
+        ]
+        for country, data in analysis.get("geography_distribution", {}).items():
+            lines.append(f"     - {country}: {data['count']} ({data['percentage']}%)")
+        
+        lines.extend([
+            "",
+            f"--------------------------------------------------",
+            f" SOURCE COUNTRIES",
+            f"--------------------------------------------------",
+        ])
+        for index, s in enumerate(analysis.get("sources", []), start=1):
+            lines.append(
+                f"{index}. URL:     {s['url']}\n"
+                f"   Domain:  {s['domain']}\n"
+                f"   Country: {s['country']}\n"
+            )
+        return "\n".join(lines)
+
     agg = analysis.get("aggregated_bias", {})
     
     geo_lines = []

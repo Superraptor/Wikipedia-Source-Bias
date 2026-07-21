@@ -8777,5 +8777,53 @@
       "book_count": 0
     },
     "summary": "Extracted 5 source links. Analyzed geographic distribution, political leanings, reliability tiers, author profiles, and linguistic bias markers."
+  },
+  "https://fr.wikipedia.org/wiki/Emmanuel_Macron_max_5_countries": {
+    "page_title": "Emmanuel_Macron",
+    "page_url": "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+    "citation_count": 918,
+    "source_count": 5,
+    "countries_only": true,
+    "geography_distribution": {
+      "Germany": {
+        "count": 1,
+        "percentage": 20.0
+      },
+      "France": {
+        "count": 3,
+        "percentage": 60.0
+      },
+      "Unknown": {
+        "count": 1,
+        "percentage": 20.0
+      }
+    },
+    "sources": [
+      {
+        "url": "https://whoswho.de/bio/emmanuel-macron.html",
+        "domain": "whoswho.de",
+        "country": "Germany"
+      },
+      {
+        "url": "https://www.lepoint.fr/politique/emmanuel-macron-n-a-pas-paye-sa-cotisation-au-ps-depuis-2009-29-08-2014-1858346_20.php",
+        "domain": "lepoint.fr",
+        "country": "France"
+      },
+      {
+        "url": "https://www.lefigaro.fr/actualite-france/2018/06/25/01016-20180625ARTFIG00320-emmanuel-macron-un-agnostique-baptise.php",
+        "domain": "lefigaro.fr",
+        "country": "France"
+      },
+      {
+        "url": "https://archive.is/yL1lg",
+        "domain": "archive.is",
+        "country": "Unknown"
+      },
+      {
+        "url": "http://www.francebleu.fr/infos/ministre/emmanuel-macron-ministre-un-amienois-bercy-1723899",
+        "domain": "francebleu.fr",
+        "country": "France"
+      }
+    ]
   }
 }
