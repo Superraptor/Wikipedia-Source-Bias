@@ -279,11 +279,22 @@ def test_display_title_falls_back_to_the_url_slug():
 def test_status_rows_link_to_the_tool_not_wikipedia():
     from app import _analysis_url
 
-    row = {"page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux"}
-    link = _analysis_url(row)
-    assert link.startswith("/article/Catherine_Barbaroux?src=")
-    # The source URL must be encoded, or the query string breaks on the ? and &.
-    assert "https%3A%2F%2Ffr.wikipedia.org" in link
+    # Canonical shape mirrors Wikipedia's own: no percent-encoded ?src=.
+    assert _analysis_url({"page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux"}) \
+        == "/wikipedia/fr/Catherine_Barbaroux"
+    assert _analysis_url({"page_url": "https://en.wikipedia.org/wiki/Brexit"}) \
+        == "/wikipedia/en/Brexit"
+    assert _analysis_url({"page_url": "https://de.m.wikipedia.org/wiki/Berlin"}) \
+        == "/wikipedia/de/Berlin"
+
+
+def test_non_wikipedia_sources_keep_the_src_form():
+    """There is no lang/title to put in the path, so the query string stays."""
+    from app import _analysis_url
+
+    link = _analysis_url({"page_url": "https://example.org/page"})
+    assert link.startswith("/article/page?src=")
+    assert "https%3A%2F%2Fexample.org" in link
 
 
 def test_analysis_url_is_none_without_a_slug():

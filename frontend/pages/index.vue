@@ -29,6 +29,7 @@
 
 <script setup>
 import AppHeader from "~/components/AppHeader.vue";
+import { routeForUrl } from "~/utils/wikiroute.js";
 import ArticleInput from "~/components/ArticleInput.vue";
 import CorpusExamples from "~/components/CorpusExamples.vue";
 import MethodologyFooter from "~/components/MethodologyFooter.vue";
@@ -38,7 +39,7 @@ const router = useRouter();
 
 function goToArticle(url) {
   const title = extractTitle(url);
-  router.push(`/article/${encodeURIComponent(title)}?src=${encodeURIComponent(url)}`);
+  router.push(routeForUrl(url));
 }
 
 function extractTitle(url) {

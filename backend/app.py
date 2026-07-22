@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 from urllib.parse import urlparse, unquote, quote
 
@@ -250,12 +251,24 @@ def _health(row):
     return "working"
 
 
+# <lang>.wikipedia.org / <lang>.m.wikipedia.org
+_WIKI_HOST = re.compile(r"^([a-z][a-z0-9-]*)\.(?:m\.)?wikipedia\.org$", re.I)
+
+
 def _analysis_url(row):
-    """Link to this tool's own dashboard for the article, not to Wikipedia."""
+    """Link to this tool's own dashboard for the article, not to Wikipedia.
+
+    Mirrors Wikipedia's own shape (/wikipedia/fr/Brexit) rather than the old
+    /article/<title>?src=<whole url percent-encoded> form.
+    """
     url = row.get("page_url") or ""
-    slug = urlparse(url).path.rsplit("/", 1)[-1]
+    parts = urlparse(url)
+    slug = parts.path.rsplit("/", 1)[-1]
     if not slug:
         return None
+    host = _WIKI_HOST.match(parts.netloc or "")
+    if host and parts.path.startswith("/wiki/"):
+        return f"/wikipedia/{host.group(1).lower()}/{slug}"
     return f"/article/{slug}?src={quote(url, safe='')}"
 
 
