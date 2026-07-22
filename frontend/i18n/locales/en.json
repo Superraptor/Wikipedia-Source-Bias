@@ -30,7 +30,8 @@
     "sourceCount": "{count} sources",
     "running": "analysing… {pct}%",
     "queued": "queued",
-    "failed": "analysis failed"
+    "failed": "analysis failed",
+    "countUnknown": "analysed"
   },
   "article": {
     "eyebrow": "Dashboard"

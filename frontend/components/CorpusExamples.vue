@@ -18,7 +18,14 @@
           <span class="corpus__title">{{ item.title }}</span>
           <span class="corpus__meta">
             <template v-if="item.status === 'done'">
-              <span class="corpus__count">{{ t("corpus.sourceCount", { count: item.sourceCount ?? 0 }) }}</span>
+              <!-- An unknown count is not zero. The placeholder entries used
+                   when the queue is unreachable carry no count, and rendering
+                   `?? 0` made the page claim "0 sources" for articles that
+                   plainly had plenty. -->
+              <span v-if="typeof item.sourceCount === 'number'" class="corpus__count">
+                {{ t("corpus.sourceCount", { count: item.sourceCount }) }}
+              </span>
+              <span v-else class="corpus__pending">{{ t("corpus.countUnknown") }}</span>
             </template>
             <template v-else-if="item.status === 'error'">
               <span class="corpus__failed">{{ t("corpus.failed") }}</span>

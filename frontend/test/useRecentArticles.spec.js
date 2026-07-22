@@ -52,3 +52,20 @@ describe("useRecentArticles", () => {
     expect(items.value).toEqual([]);
   });
 });
+
+describe("unknown source counts", () => {
+  it("keeps a missing count as null rather than coercing it to 0", async () => {
+    const { useRecentArticles } = await import("../composables/useRecentArticles.js");
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true, status: 200,
+      json: () => Promise.resolve({
+        recent: [{ page_url: "https://fr.wikipedia.org/wiki/A", display_title: "A",
+                   status: "done", source_count: null }],
+      }),
+    });
+    const { items, load } = useRecentArticles();
+    await load();
+    // "0 sources" for an article with plenty was the visible symptom.
+    expect(items.value[0].sourceCount).toBeNull();
+  });
+});

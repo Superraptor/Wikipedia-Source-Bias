@@ -268,6 +268,77 @@ class Cache:
             cur.close()
         self._commit()
 
+    # -- introspection ---------------------------------------------------
+
+    def queue_stats(self):
+        """{status: count} across the whole table."""
+        cur = self.conn.cursor()
+        try:
+            cur.execute("SELECT status, COUNT(*) FROM analysis_cache GROUP BY status")
+            rows = cur.fetchall()
+        finally:
+            cur.close()
+        return {row[0]: row[1] for row in rows}
+
+    # Shared projection for the status views. Deliberately excludes the
+    # payload: those blobs run to several MB each and live in analysis_result.
+    _ROW_SELECT = (
+        "SELECT page_url, page_title, status, attempts, error, "
+        "       source_count, created_at, updated_at, "
+        # Ages come from the server clock: pods have their own, and a skewed
+        # one would show negative waits.
+        "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
+        "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
+        "       stage, progress_done, progress_total, eta_seconds, "
+        "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s, "
+        # Wall-clock length of a finished run: claim -> completion.
+        "       TIMESTAMPDIFF(SECOND, started_at, updated_at) AS total_s "
+        "FROM analysis_cache "
+    )
+
+    @staticmethod
+    def _row_to_dict(r):
+        return {
+            "page_url": r[0],
+            "page_title": r[1],
+            "status": r[2],
+            "attempts": r[3],
+            "error": r[4],
+            "source_count": r[5],
+            "created_at": r[6].isoformat() if r[6] else None,
+            "updated_at": r[7].isoformat() if r[7] else None,
+            # For a running row this is how long since the last progress
+            # write; for a pending row, how long it has been waiting.
+            "age_seconds": int(r[8]) if r[8] is not None else None,
+            "since_update_seconds": int(r[9]) if r[9] is not None else None,
+            "stage": r[10],
+            "progress_done": r[11],
+            "progress_total": r[12],
+            "eta_seconds": r[13],
+            # Time actually spent analysing, excluding the queue wait.
+            "running_seconds": int(r[14]) if r[14] is not None else None,
+            "total_seconds": int(r[15]) if r[15] is not None else None,
+        }
+
+    def _rows(self, where="", args=(), limit=50, order=None):
+        order = order or (
+            "ORDER BY FIELD(status,'running','pending','error','done'), updated_at DESC "
+        )
+        cur = self.conn.cursor()
+        try:
+            cur.execute(
+                self._ROW_SELECT + where + " " + order + "LIMIT %s",
+                tuple(args) + (int(limit),),
+            )
+            rows = cur.fetchall()
+        finally:
+            cur.close()
+        return [self._row_to_dict(r) for r in rows]
+
+    def recent(self, limit=50):
+        """Most recently touched rows, running and pending first."""
+        return self._rows(limit=limit)
+
     def requeue_stale_running(self, older_than_minutes=30):
         """Recover rows abandoned by a killed worker.
 

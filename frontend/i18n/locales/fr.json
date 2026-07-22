@@ -30,7 +30,8 @@
     "sourceCount": "{count} sources",
     "running": "analyse en cours… {pct} %",
     "queued": "en file d'attente",
-    "failed": "échec de l'analyse"
+    "failed": "échec de l'analyse",
+    "countUnknown": "analysé"
   },
   "article": {
     "eyebrow": "Tableau de bord"
