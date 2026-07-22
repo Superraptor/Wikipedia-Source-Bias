@@ -2,7 +2,12 @@
 */.vscode/
 tests/__pycache__/
 wikipedia_sources_bias/__pycache__/
+backend/__pycache__/
 .env
+node_modules/
+.nuxt/
+.output/
+dist/
 country_coordinates_cache.json
 wikidata_publisher_cache.json
 wikidata_enrichment_cache.json
