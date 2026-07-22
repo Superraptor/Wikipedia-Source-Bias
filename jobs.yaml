@@ -13,17 +13,20 @@
   command: worker
   continuous: true
   # Replicas parallelise ACROSS articles; WSB_SOURCE_CONCURRENCY parallelises
-  # within one, which is what actually helps a single huge article.
-  # claim_next() takes rows under a `WHERE status='pending'` guard, so parallel
-  # workers never collide.
-  replicas: 3
-  # Sized from measurement, twice. Idle workers sit at ~30-70Mi, but a worker
-  # running an article at WSB_SOURCE_CONCURRENCY=6 was observed at 502Mi -- the
-  # thread pool holds several fetched pages at once. 512Mi would have been on
-  # the edge of an OOM kill; 1Gi keeps ~2x headroom over the real peak while
-  # still being half the original 2Gi guess.
+  # within one, which is what actually helps a single large article. Two rather
+  # than three: idle workers were measured at ~21Mi, so a third was reserving
+  # 1Gi of quota to do nothing. claim_next() guards on status='pending', so
+  # parallel workers never collide.
+  replicas: 2
+  # Kept at 1Gi despite idling at ~21Mi. This is the one place headroom is
+  # genuinely needed: a large article holds every source profile in memory and
+  # the checkpoint serialises the whole growing result, and a worker running at
+  # WSB_SOURCE_CONCURRENCY=6 was measured at 502Mi. 512Mi would sit on the edge
+  # of an OOM kill.
   mem: 1Gi
-  cpu: "1"
+  # I/O-bound -- almost all of the time is spent waiting on external APIs, so
+  # a full reserved core was waste.
+  cpu: "0.5"
   emails: onfailure
 
 # Re-queues any corpus article missing from the cache. Cheap when warm: it

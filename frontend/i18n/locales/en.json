@@ -162,7 +162,8 @@
     "pendingEta": "Estimated time remaining: {eta}",
     "pendingQueue": "Queued: {n} analysis(es) ahead of this one.",
     "pendingAlive": "The analysis is progressing normally.",
-    "pendingStalled": "No progress for {quiet}. The analysis will be retried automatically."
+    "pendingStalled": "No progress for {quiet}. The analysis will be retried automatically.",
+    "errorArticleNotFound": "This Wikipedia article does not exist. Check the title and language in the URL."
   },
   "footer": {
     "methodologyLabel": "Methodology",

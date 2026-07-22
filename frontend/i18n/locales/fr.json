@@ -162,7 +162,8 @@
     "pendingEta": "Temps restant estimé : {eta}",
     "pendingQueue": "En file d'attente : {n} analyse(s) devant celle-ci.",
     "pendingAlive": "L'analyse progresse normalement.",
-    "pendingStalled": "Aucune progression depuis {quiet}. L'analyse sera relancée automatiquement."
+    "pendingStalled": "Aucune progression depuis {quiet}. L'analyse sera relancée automatiquement.",
+    "errorArticleNotFound": "Cet article Wikipédia n'existe pas. Vérifiez le titre et la langue de l'URL."
   },
   "footer": {
     "methodologyLabel": "Méthodologie",

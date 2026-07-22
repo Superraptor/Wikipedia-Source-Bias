@@ -259,3 +259,33 @@ def test_mark_error_is_what_counts_an_attempt():
 
     Cache(Conn()).mark_error("https://fr.wikipedia.org/wiki/X", "boom")
     assert "attempts = attempts + 1" in seen["sql"]
+
+
+def test_permanent_errors_exhaust_the_retry_budget():
+    """A missing article will not start existing on the third attempt."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen.append(" ".join(sql.split()))
+
+        def close(self):
+            pass
+
+    from cache import MAX_ATTEMPTS
+
+    Cache(Conn()).mark_error("https://x/wiki/A", "gone", permanent=True)
+    assert f"attempts = {MAX_ATTEMPTS}" in seen[-1]
+
+    seen.clear()
+    Cache(Conn()).mark_error("https://x/wiki/A", "transient")
+    assert "attempts = attempts + 1" in seen[-1]

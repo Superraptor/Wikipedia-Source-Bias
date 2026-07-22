@@ -1,24 +1,27 @@
 # Webservice configuration. Copy to $HOME/service.template on the tool account;
 # `toolforge webservice start|restart` then picks these up with no flags.
-#
-# Two settings exist purely to remove deployment downtime:
-#
-#   replicas: 2          With one replica there is nothing left serving while
-#                        the pod is replaced, so every deploy was a short
-#                        outage. Two lets the RollingUpdate strategy (already
-#                        maxUnavailable 25% / maxSurge 25%) keep one pod up.
-#
-#   health-check-path    Without a readiness probe Kubernetes treats a pod as
-#                        ready the instant the container starts -- before
-#                        gunicorn is listening -- and routes traffic into a
-#                        socket that is not accepting yet. /healthz answers
-#                        only once Flask is up.
 type: buildservice
 mount: none
-cpu: "1"
-# The web tier only reads from ToolsDB and serves static files; measured at
-# ~71Mi. 2Gi was reserving a quarter of the namespace quota per replica, which
-# is why a second replica could not schedule at all.
-mem: 512Mi
-replicas: 2
+
+# The web tier only reads from ToolsDB and serves static files. Measured at
+# ~72Mi, so 256Mi is already ~3.5x headroom. It previously reserved 2Gi --
+# a quarter of the whole namespace quota -- for nothing.
+mem: 256Mi
+# I/O-bound and almost idle: 2-3 millicores observed.
+# Must be a Kubernetes quantity: "0.5" is REJECTED here (unlike jobs.yaml,
+# which accepts it), and the whole template is then silently ignored -- which
+# is why earlier sizing changes appeared to do nothing.
+cpu: 500m
+
+# ONE replica. A second was only ever a way to survive a rollout, and the
+# rollout does not need it: with replicas=1, maxSurge 25% rounds UP to 1 while
+# maxUnavailable 25% rounds DOWN to 0, so Kubernetes starts the new pod and
+# waits for it to become Ready BEFORE terminating the old one. The transient
+# second pod costs 256Mi for a few seconds instead of permanently.
+replicas: 1
+
+# This is what makes the surge safe. With no probe, a pod counts as Ready the
+# instant the container starts -- before gunicorn is listening -- so the old
+# pod was torn down while the new one still refused connections. /healthz
+# answers only once Flask is up.
 health-check-path: /healthz

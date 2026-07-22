@@ -501,3 +501,49 @@ def test_unknown_locale_cookie_does_not_break_the_page(app_with_fake_cache):
     client, fake = app_with_fake_cache
     client.set_cookie("wikibias_locale", "xx")
     assert client.get("/status").status_code == 200
+
+
+# -- a missing Wikipedia article ----------------------------------------
+
+
+def test_missing_article_is_a_404_with_a_code_not_a_500(app_with_fake_cache, monkeypatch):
+    """It used to fabricate a Reuters source for a page it could not fetch."""
+    monkeypatch.setattr("app.SYNC_ANALYSIS", False)
+    client, fake = app_with_fake_cache
+    url = "https://fr.wikipedia.org/wiki/Nope_12345"
+    fake.states[url] = ("error", "ARTICLE_NOT_FOUND: No Wikipedia article at ... (HTTP 404).")
+
+    resp = client.get(f"/api/analyze?url={url}")
+    assert resp.status_code == 404
+    body = resp.get_json()
+    assert body["code"] == "article_not_found"
+    # The wire marker is stripped before the message reaches the UI.
+    assert not body["error"].startswith("ARTICLE_NOT_FOUND")
+
+
+def test_other_failures_stay_500_without_a_code(app_with_fake_cache, monkeypatch):
+    monkeypatch.setattr("app.SYNC_ANALYSIS", False)
+    client, fake = app_with_fake_cache
+    url = "https://fr.wikipedia.org/wiki/Broken2"
+    fake.states[url] = ("error", "scrape exploded")
+    resp = client.get(f"/api/analyze?url={url}")
+    assert resp.status_code == 500
+    assert "code" not in resp.get_json()
+
+
+def test_sync_mode_surfaces_not_found_as_404(monkeypatch):
+    import app as appmod
+    from wikipedia_sources_bias.analysis import ArticleNotFound
+
+    fake = FakeCache()
+    monkeypatch.setattr("app.get_cache", lambda: fake)
+    monkeypatch.setattr("app.SYNC_ANALYSIS", True)
+
+    def boom(url):
+        raise ArticleNotFound("No Wikipedia article at X (HTTP 404).")
+
+    monkeypatch.setattr("app.run_analysis", boom)
+    with appmod.app.test_client() as c:
+        resp = c.get("/api/analyze?url=https://fr.wikipedia.org/wiki/Nope")
+    assert resp.status_code == 404
+    assert resp.get_json()["code"] == "article_not_found"

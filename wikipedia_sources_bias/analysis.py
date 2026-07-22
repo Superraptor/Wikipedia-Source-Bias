@@ -50,6 +50,10 @@ from .heuristics_data import (
 
 
 # Sources between partial-progress checkpoints. See the note at the call site.
+class ArticleNotFound(Exception):
+    """The Wikipedia article does not exist (or could not be fetched)."""
+
+
 CHECKPOINT_EVERY = 10
 
 # Sources analysed concurrently within one article. The work is almost
@@ -1962,10 +1966,23 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         headers = {"User-Agent": "Mozilla/5.0"}
         try:
             response = _polite_get(url, headers=headers, timeout=15)
+            status = getattr(response, "status_code", None)
+            if status == 404:
+                raise ArticleNotFound(
+                    f"No Wikipedia article at {url} (HTTP 404)."
+                )
             response.raise_for_status()
             html = response.text
-        except requests.RequestException:
-            html = "<html><head><title>Fallback page</title></head><body><a href='https://www.reuters.com/world'>Reuters</a></body></html>"
+        except ArticleNotFound:
+            raise
+        except requests.RequestException as exc:
+            # Previously this substituted a FABRICATED page containing a
+            # Reuters link, so a non-existent article was analysed as though
+            # it cited Reuters. Inventing sources for a page we could not read
+            # is worse than failing.
+            raise ArticleNotFound(
+                f"Could not fetch {url}: {exc}"
+            ) from exc
 
         soup = BeautifulSoup(html, "html.parser")
         page_metadata = _extract_page_metadata(soup)
@@ -2213,21 +2230,9 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         sys.stderr.write(f"\r[{'█'*20}] 100% complete! Processing finished.\n")
         sys.stderr.flush()
 
-    if not sources:
-        wikidata = _fetch_wikidata_enrichment("https://www.reuters.com/world")
-        fallback_source = analyze_source_bias("https://www.reuters.com/world", wikidata)
-        fallback_source["citation_text"] = "Reuters World News"
-        fallback_source["wikidata_publisher"] = {}
-        fallback_source["wikidata_book"] = {}
-        fallback_source["google_books_metadata"] = {}
-        fallback_source["oclc_metadata"] = {}
-        fallback_source["doi_metadata"] = {}
-        fallback_source["mbfc"] = {}
-        fallback_source["readability"] = _calculate_readability("Reuters World News")
-        fallback_source["author_profiles"] = []
-        fallback_source["author_profile"] = None
-        fallback_source["language_bias"] = analyze_language_bias("Reuters World News")
-        sources = [fallback_source]
+    # An article with no usable references is a real, reportable outcome: the
+    # aggregate is empty and the UI shows its empty state. It used to invent a
+    # Reuters source here, which fabricated an entire analysis out of nothing.
 
     if countries_only:
         country_counts = {}

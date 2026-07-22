@@ -9,6 +9,7 @@ import config
 from cache import Cache, PENDING, RUNNING, DONE, ERROR
 from runner import run_analysis, AnalysisUnavailable
 from analyzer import normalize_analysis
+from wikipedia_sources_bias.analysis import ArticleNotFound
 import status_i18n
 
 # The Nuxt SPA is generated into backend/static at build time (see the root
@@ -112,6 +113,13 @@ def analyze():
                     pass
             return jsonify(body), 202
         if status == ERROR and not SYNC_ANALYSIS:
+            # A missing article is a 404 with a code the UI can translate, not
+            # a generic 500 with a stack-flavoured string.
+            if (err or "").startswith(NOT_FOUND_MARKER):
+                return jsonify({
+                    "error": err[len(NOT_FOUND_MARKER):].lstrip(": ").strip(),
+                    "code": "article_not_found",
+                }), 404
             return jsonify({"error": err or "Analysis failed"}), 500
 
     if not SYNC_ANALYSIS:
@@ -122,6 +130,8 @@ def analyze():
 
     try:
         result = run_analysis(url)
+    except ArticleNotFound as e:
+        return jsonify({"error": str(e), "code": "article_not_found"}), 404
     except AnalysisUnavailable as e:
         return jsonify({"error": str(e)}), 500
     except Exception as e:
@@ -244,6 +254,9 @@ def _progress(row, t=None):
 # "large article, working fine" is the difference between waiting patiently
 # and assuming the tool is broken.
 STALL_SECONDS = 180
+
+# Prefix the worker writes into `error` for a missing Wikipedia article.
+NOT_FOUND_MARKER = "ARTICLE_NOT_FOUND"
 
 
 def _health(row):

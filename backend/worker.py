@@ -16,6 +16,7 @@ import time
 import config
 from cache import Cache
 from runner import run_analysis, AnalysisUnavailable
+from wikipedia_sources_bias.analysis import ArticleNotFound
 
 IDLE_SLEEP_SECONDS = 10
 STALE_SWEEP_EVERY = 6  # loop iterations between stale-row sweeps (~1 min)
@@ -136,6 +137,15 @@ def main():
 
         try:
             result = run_analysis(url, progress_cb=report)
+        except ArticleNotFound as e:
+            log(f"  NOT FOUND after {time.monotonic() - started:.1f}s: {e}")
+            globals()["_current_url"] = None
+            try:
+                # ARTICLE_NOT_FOUND is the wire marker the API turns into a 404.
+                cache.mark_error(url, f"ARTICLE_NOT_FOUND: {e}", permanent=True)
+            except Exception as inner:
+                log(f"  could not record failure: {inner}")
+            continue
         except Exception as e:
             log(f"  FAILED after {time.monotonic() - started:.1f}s: {e}")
             # Cleared here too: this branch `continue`s past the finally
