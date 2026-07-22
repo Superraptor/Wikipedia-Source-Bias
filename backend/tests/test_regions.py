@@ -56,3 +56,47 @@ def test_every_region_has_a_label_in_both_locales():
             assert region in labels, f"{loc} missing {region}"
         # Legacy payloads still carry the coarse bucket.
         assert "Americas" in labels
+
+
+def test_region_distribution_is_recomputed_not_inherited():
+    """Brexit named Australia and Belgium as countries while reporting their
+    region as 'Unknown': the upstream aggregate's region_distribution was stale
+    and normalize_analysis trusted it wholesale."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "page_title": "X",
+        "page_url": "https://en.wikipedia.org/wiki/X",
+        "sources": [
+            {"domain": "a.au", "geography": {"country": "Australia", "region": "Unknown"}},
+            {"domain": "b.be", "geography": {"country": "Belgium", "region": "Unknown"}},
+            {"domain": "c.us", "geography": {"country": "United States", "region": "Americas"}},
+        ],
+        "aggregated_bias": {
+            # Deliberately wrong, as the real cached payloads are.
+            "geography_distribution": {"Australia": {"count": 1, "percentage": 33.3}},
+            "region_distribution": {"Unknown": {"count": 3, "percentage": 100.0}},
+        },
+    }
+    out = normalize_analysis(raw)
+    regions = out["aggregated_bias"]["region_distribution"]
+    assert "Unknown" not in regions
+    assert regions["Oceania"]["count"] == 1
+    assert regions["Europe"]["count"] == 1
+    assert regions["North America"]["count"] == 1
+
+
+def test_upstream_geography_distribution_is_still_respected():
+    """Only regions are recomputed; the rest of the upstream aggregate stays."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "sources": [{"domain": "a.fr", "geography": {"country": "France"}}],
+        "aggregated_bias": {
+            "geography_distribution": {"France": {"count": 99, "percentage": 100.0}},
+            "language_distribution": {"French": {"count": 99, "percentage": 100.0}},
+        },
+    }
+    agg = normalize_analysis(raw)["aggregated_bias"]
+    assert agg["geography_distribution"]["France"]["count"] == 99
+    assert agg["language_distribution"]["French"]["count"] == 99

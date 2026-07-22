@@ -259,12 +259,18 @@ def normalize_analysis(raw):
     agg = raw.get("aggregated_bias") or {}
     if not agg.get("geography_distribution"):
         agg = _aggregate(sources)
-    elif any(k not in agg for k in _DERIVED_KEYS):
-        # Keep the upstream distributions, fill in what it omitted.
+    else:
         computed = _aggregate(sources)
         agg = dict(agg)
+        # Fill in what the upstream aggregate omits.
         for k in _DERIVED_KEYS:
             agg.setdefault(k, computed[k])
+        # ALWAYS recompute the region distribution. _norm_source is now the
+        # authority on regions (it derives them from the country), but the
+        # upstream aggregate carries its own, older answer -- which is how
+        # Brexit reported Australia and Belgium as region "Unknown" while
+        # naming both countries correctly in the same payload.
+        agg["region_distribution"] = computed["region_distribution"]
     return {
         "page_title": raw.get("page_title", ""),
         "page_url": raw.get("page_url", ""),
