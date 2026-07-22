@@ -1,0 +1,3411 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Charles_de_Gaulle",
+  "page_url": "https://fr.wikipedia.org/wiki/Charles_de_Gaulle",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/langue-francaise/expressions-francaises/2018/10/17/37003-20181017ARTFIG00044-babar-tonton-sphynx-ces-curieux-surnoms-des-hommes-politiques.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://archives.lille.fr/ark:/74900/c9n2fjvqgxtp/1423e394-d12b-45ba-a1c9-40c6170ed566",
+        "domain": "archives.lille.fr",
+        "publisher_name": "archives.lille.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://info.lenord.fr/charles-de-gaulle-de-1890-a-1912--l-enfance-d-un-chef-chapitre-1",
+        "domain": "info.lenord.fr",
+        "publisher_name": "info.lenord.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/info/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Argentina",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/jeunesse-et-formation/documents/la-genealogie-du-general-de-gaulle.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.swissinfo.ch/fre/histoire/les-anc%c3%aatres-jurassiens-du-g%c3%a9n%c3%a9ral-de-gaulle-au-c%c5%93ur-dune-exposition/79099223",
+        "domain": "swissinfo.ch",
+        "publisher_name": "Swissinfo, Dokumentation und Archive",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/swi-swissinfo-ch/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Switzerland",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.rts.ch/info/regions/jura/2024/article/les-ancetres-jurassiens-du-general-de-gaulle-au-coeur-d-une-exposition-a-porrentruy-28518830.html",
+        "domain": "rts.ch",
+        "publisher_name": "Radio Genève",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.rfj.ch/rfj/Actualite/Region/20240528-Les-liens-ambigus-du-general-de-Gaulle-avec-la-Suisse.html",
+        "domain": "rfj.ch",
+        "publisher_name": "Radio fréquence Jura",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/jeunesse-et-formation/analyses/la-famille-de-gaulle.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "url": "https://archive.wikiwix.com/cache/?url=http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/jeunesse-et-formation/documents/la-genealogie-du-general-de-gaulle.php",
+        "domain": "archive.wikiwix.com",
+        "publisher_name": "Wikiwix",
+        "country": "Italy",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://webcache.googleusercontent.com/search?hl=fr&q=cache:http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/jeunesse-et-formation/documents/la-genealogie-du-general-de-gaulle.php",
+        "domain": "webcache.googleusercontent.com",
+        "publisher_name": "Timothy Adès",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://worldcat.org/fr/title/421727938",
+        "domain": "worldcat.org",
+        "publisher_name": "WorldCat",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/accueil/biographie/1890-1914-une-education-traditionnelle.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.gaullisme.fr/cdg_14_18.htm",
+        "domain": "gaullisme.fr",
+        "publisher_name": "gaullisme.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ouest-france.fr/culture/histoire/guerre-14-18/14-aout-1914-le-jour-ou-de-gaulle-echappe-de-peu-la-mort-6044293",
+        "domain": "ouest-france.fr",
+        "publisher_name": "SIPA - Ouest-France group",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://grandeguerre.icrc.org/fr/File/Details/95942/6/2",
+        "domain": "grandeguerre.icrc.org",
+        "publisher_name": "Prisoners of the First World War: The ICRC Archives / Prisonniers de la Premiere guerre mondiale : les archives du CICR",
+        "country": "Switzerland",
+        "region": "Unknown",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/histoire/centenaire-14-18/2014/08/04/26002-20140804ARTFIG00191-les-prisonniers-de-la-grande-guerre-retrouvent-une-existence-numerique.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=ernpBAAAQBAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=v6hPti6cS4gC&pg=PA504",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=d9Ili7YOaeoC&pg=PT83",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=qwujDwAAQBAJ&pg=PT320",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=_7ahzVoL4vsC&pg=PT57",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/un-officier-non-conformiste/reperes/chronologie-1921-1939.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.charles-de-gaulle.org/etape-2-de-gaulle-liban/",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.766667,
+          33.833333
+        ]
+      },
+      "properties": {
+        "url": "https://www.lorientlejour.com/article/930313/lorsque-de-gaulle-vivait-au-liban.html",
+        "domain": "lorientlejour.com",
+        "publisher_name": "L'Orient-Le Jour",
+        "country": "Lebanon",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?redir_esc=y&hl=fr&id=ZUUfBQAAQBAJ&q=tigre#v=snippet&q=tigre&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.cheminsdememoire.gouv.fr/page/affichegh.php?idGH=130&idLang=fr",
+        "domain": "cheminsdememoire.gouv.fr",
+        "publisher_name": "Q28872020",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lhistoire.fr/de-gaulle-et-p%C3%A9guy",
+        "domain": "lhistoire.fr",
+        "publisher_name": "L'Histoire",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=RuiV3pYFx6UC",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=bjJDAwAAQBAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=P5l2J_lZ9jIC",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=oOTmM9u07Y4C",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?hl=fr&id=LQq5AAAAIAAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.atf40.fr/ATF40/documents/chapitre%202.pdf",
+        "domain": "atf40.fr",
+        "publisher_name": "atf40.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/livres/article/2010/01/28/georges-boris-trente-ans-d-influence-blum-de-gaulle-mendes-france-de-jean-louis-cremieux-brilhac_1297864_3260.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social liberalism, centre-left",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.solidariteetprogres.org/Boris-Roosevelt-De-Gaulle-Mendes-sources-inspiration-combat-aujourdhui.html",
+        "domain": "solidariteetprogres.org",
+        "publisher_name": "Solidarity and Progress",
+        "country": "France",
+        "region": "Unknown",
+        "language": "Spanish",
+        "political_leaning": "protectionism",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/culture/livre/georges-boris-trente-ans-d-influence-leon-blum-de-gaulle-et-mendes-france_904973.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1940-1944-la-seconde-guerre-mondiale/l-appel-du-18-juin/documents/l-appel-du-21-mai-1940-a-savigny-sur-ardres.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9614099x/f4.item",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?ei=fi_kS7WGKouumAPP07BA&ct=result&id=Rd9nAAAAMAAJ&dq=de+Gaulle+%2225+mai+1940%22+%22g%C3%A9n%C3%A9ral+de+brigade+%C3%A0+titre+temporaire%22&q=%2225+mai+1940%22+",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=FDvT4J3ajCgC&pg=PA255&dq=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.charles-de-gaulle.org/lhomme/biographie/",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=8Ht2AwAAQBAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "http://www.swissinfo.ch/fre/politique_suisse/Lumiere_suisse_sur_l_Appel_du_General_de_Gaulle.html?cid=9101130",
+        "domain": "swissinfo.ch",
+        "publisher_name": "Swissinfo, Dokumentation und Archive",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/swi-swissinfo-ch/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Switzerland",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.archives-nationales.culture.gouv.fr/dossiers-thematiques/lappel-du-18-juin-1940",
+        "domain": "archives-nationales.culture.gouv.fr",
+        "publisher_name": "Museum of National Archives",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1940-1944-la-seconde-guerre-mondiale/l-appel-du-18-juin/audience/l-appel-dans-la-presse-quotidienne-francaise.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2023/01/18/appel-du-18-juin-le-general-de-gaulle-enfin-de-vive-voix_6158274_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social liberalism, centre-left",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/revue-espoir/articles-comptes-rendus-et-chroniques/point-d-histoire--a-propos-de-weygand-par-le-general-de-boissieu.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.france-libre.net/mise-retraite-d-office-de-gaulle/",
+        "domain": "france-libre.net",
+        "publisher_name": "Fondation de la France libre",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ladepeche.fr/article/2014/11/09/1987987-en-juillet-1940-de-gaulle-etait-condamne-a-toulouse.html",
+        "domain": "ladepeche.fr",
+        "publisher_name": "La Dépêche du Midi",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/la-depeche-du-midi/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceinter/podcasts/archives-secretes/1940-de-gaulle-condamne-par-contumace-2885217",
+        "domain": "radiofrance.fr",
+        "publisher_name": "Radio France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://lhistoireenrafale.lunion.fr/2015/07/08/8-juillet-1940-le-richelieu-et-le-jean-bart-frappes/",
+        "domain": "lhistoireenrafale.lunion.fr",
+        "publisher_name": "lhistoireenrafale.lunion.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.museeliberation-leclerc-moulin.paris.fr/ressources/ressource-pour-les-scolaires/eclairage-sur-une-oeuvre-la-condamnation-mort-de-charles-de",
+        "domain": "museeliberation-leclerc-moulin.paris.fr",
+        "publisher_name": "Musée de la Libération de Paris – musée du Général-Leclerc – musée Jean-Moulin",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9611018j/f8",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.france-libre.net/temoignages-documents/temoignages/origines-fnfl.php",
+        "domain": "france-libre.net",
+        "publisher_name": "Fondation de la France libre",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.france-libre.net/france-libre-france-combattante/france-libre-france-combattante/voix-relais-comites.php",
+        "domain": "france-libre.net",
+        "publisher_name": "Fondation de la France libre",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.france-libre.net/",
+        "domain": "france-libre.net",
+        "publisher_name": "Fondation de la France libre",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=F2bGDQAAQBAJ",
+        "domain": "books.google.com",
+        "publisher_name": "Archives of Neurology",
+        "country": "Canada, United Kingdom, United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://worldcat.org/fr/title/460992617",
+        "domain": "worldcat.org",
+        "publisher_name": "WorldCat",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=cQjwSAAACAAJ",
+        "domain": "books.google.com",
+        "publisher_name": "Archives of Neurology",
+        "country": "Canada, United Kingdom, United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/wp-content/uploads/2017/12/Le-Général-et-les-Juifs.pdf",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.4000/eac.1107",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.orepeditions.com/1458-article-creully-juin-44.html",
+        "domain": "orepeditions.com",
+        "publisher_name": "Q3579454",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ina.fr/ina-eclaire-actu/25-aout-1944-paris-outrage-paris-brise-mais-paris-libere",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/france/2015/04/29/est-ce-vraiment-de-gaulle-qui-a-donne-le-droit-de-vote-aux-femmes_1277138/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social democracy, centre-left",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.2)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.4000/crcv.11815",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.charles-de-gaulle.org/lhomme/biographies/leon-delbecque/",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.2307/3769774",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.jstor.org/stable/3769774",
+        "domain": "jstor.org",
+        "publisher_name": "The Langston Hughes Review",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/jstore/",
+          "bias_rating": "PRO-SCIENCE (0.0)",
+          "factual_reporting": "VERY HIGH (0.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Organization/Foundation",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.assemblee-nationale.fr/histoire/de_gaulle.asp",
+        "domain": "assemblee-nationale.fr",
+        "publisher_name": "Palais Bourbon",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/accueil/biographie/mai-decembre-1958-de-gaulle-le-retour.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.youtube.com/watch?v=QXr-WaeAys8",
+        "domain": "youtube.com",
+        "publisher_name": "Q112247183",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.jstor.org/stable/24254873",
+        "domain": "jstor.org",
+        "publisher_name": "The Langston Hughes Review",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/jstore/",
+          "bias_rating": "PRO-SCIENCE (0.0)",
+          "factual_reporting": "VERY HIGH (0.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Organization/Foundation",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.conseil-constitutionnel.fr/conseil-constitutionnel/francais/les-decisions/acces-par-date/decisions-par-date/1959/proclamation-presidentielle-1958/decision-proclamation-presidentielle-1958-du-08-janvier-1959.6261.html",
+        "domain": "conseil-constitutionnel.fr",
+        "publisher_name": "Constitutional Council of France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ina.fr/video/I00012745/discours-d-ouverture-des-jeux-olympiques-d-hiver-par-le-general-de-gaulle.fr.html",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://memoire.ciclic.fr/decouvrir/article/itineraires/de-gaulle-en-region-centre-val-de-loire#:~:text=Charles%20de%20Gaulle%20est%20le,pendant%20une%20semaine%20en%20moyenne",
+        "domain": "memoire.ciclic.fr",
+        "publisher_name": "memoire.ciclic.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/accueil/discours/le-president-de-la-cinquieme-republique-1958-1969/discours-de-mostaganem-6-juin-1958.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.youtube.com/watch?v=AkTzWAMNJ-I",
+        "domain": "youtube.com",
+        "publisher_name": "Q112247183",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=sZYRYVlapA8C&pg=PA99&dq=de+gaulle+alger+je+vous+ai+compris&hl=fr&ei=2_rnTMKZKIPoOffKsKYK&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCwQ6AEwAA#v=onepage&q=de%20gaulle%20alger%20je%20vous%20ai%20compris&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.monde-diplomatique.fr/2020/12/RIGOUSTE/62543",
+        "domain": "monde-diplomatique.fr",
+        "publisher_name": "Le Monde diplomatique",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "alter-globalization, anti-imperialism, democratic socialism, left-wing",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-diplomatique-bias/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "HIGH (1.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.criminocorpus.cnrs.fr/article78.html",
+        "domain": "criminocorpus.cnrs.fr",
+        "publisher_name": "Criminocorpus",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=uJLOjVCHX2IC&pg=PA34&dq",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.conseil-constitutionnel.fr/decision/1962/6220DC.htm",
+        "domain": "conseil-constitutionnel.fr",
+        "publisher_name": "Constitutional Council of France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.autocult.fr/il-sappelait-francis-marroux/",
+        "domain": "autocult.fr",
+        "publisher_name": "autocult.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?ei=KgJVTZ7ZDcmv8gOqk4TVDQ&ct=result&id=ZoyRAAAAIAAJ&dq=%2223+mai+1962%22+attentat+De+Gaulle&q=%22tireur+d%27%C3%A9lite+devait+tuer+%22",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=tERyAAAAMAAJ&q=%2215+ao%C3%BBt+1964%22%22+mont+faron%22+attentat&dq=%2215+ao%C3%BBt+1964%22%22+mont+faron%22+attentat&hl=fr&ei=eANVTbvkAcGg8QOS4sy1DQ&sa=X&oi=book_result&ct=result&resnum=4&ved=0CDoQ6AEwAw",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.bienpublic.com/actualite/2012/04/16/1981-valery-giscard-d-estaing-et-les-diamants-maudits",
+        "domain": "bienpublic.com",
+        "publisher_name": "Le Bien Public",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.parismatch.com/Actu/Societe/Philippe-de-Gaulle-Mon-pere-etait-un-vrai-saint-cyrien-mais-pas-un-scrogneugneu-militaire-1660068",
+        "domain": "parismatch.com",
+        "publisher_name": "Paris Match",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.persee.fr/web/revues/home/prescript/article/hes_0752-5702_1994_num_13_1_1734",
+        "domain": "persee.fr",
+        "publisher_name": "Persée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://fresques.ina.fr/de-gaulle/fiche-media/Gaulle00078/conference-de-presse-du-15-mai-1962-questions-europeennes.html",
+        "domain": "fresques.ina.fr",
+        "publisher_name": "fresques.ina.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/vox/monde/2014/03/23/31002-20140323ARTFIG00225-belgrade-15-ans-apres-le-bombardement-les-serbes-n-oublient-pas.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/accueil/discours/le-president-de-la-cinquieme-republique-1958-1969/discours-de-phnom-penh-1er-septembre-1966.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.slate.fr/story/103409/etats-unis-espionnaient-general-de-gaulle",
+        "domain": "slate.fr",
+        "publisher_name": "slate.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/slate/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (2.7)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.charles-de-gaulle.org/wp-content/uploads/2017/12/Le-voyage-du-general-de-Gaulle-en-Amerique-du-Sud.pdf",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.chroniqueshistoire.fr/index_fichiers/Charles_de_gaulle_page_2.htm",
+        "domain": "chroniqueshistoire.fr",
+        "publisher_name": "chroniqueshistoire.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1958-1970-la-ve-republique/la-modernisation-de-l-economie/analyses/de-gaulle-et-les-relations-monetaires-internationales.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://news.google.com/newspapers?nid=1774&dat=19671225&id=3kc0AAAAIBAJ&sjid=8mUEAAAAIBAJ&pg=1647,6669550&hl=en",
+        "domain": "news.google.com",
+        "publisher_name": "Google News",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/google-news/",
+          "bias_rating": "LEFT-CENTER Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Organization/Foundation",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://news.google.com/newspapers?nid=1946&dat=19671226&id=xsQtAAAAIBAJ&sjid=1p8FAAAAIBAJ&pg=1893,5326015&hl=en",
+        "domain": "news.google.com",
+        "publisher_name": "Google News",
+        "country": "United States",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/google-news/",
+          "bias_rating": "LEFT-CENTER Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Organization/Foundation",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ina.fr/fresques/de-gaulle/notice/Gaulle00139/conference-de-presse-du-27-novembre-1967",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=HMQcX2ATXPwC&pg=PA42&dq=%22Georges+Pompidou%22+iran+Afghanistan+mai+1968",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/replay-radio/toute-derniere-fois/toute-derniere-fois-1969-le-dernier-grand-discours-public-du-general-de-gaulle_2287106.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.persee.fr/doc/rfsp_0035-2950_1970_num_20_2_393224",
+        "domain": "persee.fr",
+        "publisher_name": "Persée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.france-politique.fr/referendum-1969.htm",
+        "domain": "france-politique.fr",
+        "publisher_name": "France politique",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.parismatch.com/Actu-Match/Politique/Actu/27-avril-1969-De-Gaulle-s-en-va-92089/",
+        "domain": "parismatch.com",
+        "publisher_name": "Paris Match",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://francearchives.gouv.fr/fr/pages_histoire/38694",
+        "domain": "francearchives.gouv.fr",
+        "publisher_name": "FranceArchives",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.union-nationale.fr/le-general-de-gaulle-a-refuse-sa-retraite-de-general-et-dancien-president-de-la-republique/",
+        "domain": "union-nationale.fr",
+        "publisher_name": "union-nationale.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/archives/article/1970/06/09/le-general-de-gaulle-est-l-hote-du-general-franco-au-palais-du-pardo_2639106_1819218.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social liberalism, centre-left",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/archives/article/1971/06/17/si-de-gaulle-etait-vivant-il-serait-actuellement-en-chine_2465532_1819218.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social liberalism, centre-left",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.quechoisir.org/decryptage-anevrisme-de-l-aorte-abdominale-un-depistage-meconnu-et-debattu-n99472",
+        "domain": "quechoisir.org",
+        "publisher_name": "Que Choisir Ensemble",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.histoire-en-questions.fr/personnages/de%20gaulle%20mort.html",
+        "domain": "histoire-en-questions.fr",
+        "publisher_name": "histoire-en-questions.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ina.fr/contenus-editoriaux/articles-editoriaux/charles-de-gaulle-le-depart/",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.la-croix.com/Religion/Actualite/Deces-du-P.-Maurice-Cordier-ancien-de-la-2e-DB-2014-08-24-1196022",
+        "domain": "la-croix.com",
+        "publisher_name": "La Croix",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/societe/2184659-20171209-video-hommage-johnny-hallyday-piaf-gaulle-gabin-funerailles-personnalites-rassemble-france",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/archives/article/1970/11/14/trois-cents-millions-de-temoins_2655767_1819218.html?search-type=classic&ise_click_rank=26",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social liberalism, centre-left",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "url": "https://archive.wikiwix.com/cache/?url=http%3A%2F%2Fcharles-de-gaulle.org%2Fenseigner-de-gaulle%2Fles-funerailles-de-de-gaulle%2F",
+        "domain": "archive.wikiwix.com",
+        "publisher_name": "Wikiwix",
+        "country": "Italy",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffingtonpost.fr/2017/05/27/la-tombe-du-general-de-gaulle-vandalisee-a-colombey-les-deux-eglises_a_22112626/",
+        "domain": "huffingtonpost.fr",
+        "publisher_name": "Huffington Post France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.culture.gouv.fr/LH/LH280/PG/FRDAFAN83_OC18V002.htm",
+        "domain": "culture.gouv.fr",
+        "publisher_name": "Ministry of Culture of France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/culture/",
+          "bias_rating": "RIGHT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ordredelaliberation.fr/fr_doc/1_1_2_creation.html",
+        "domain": "ordredelaliberation.fr",
+        "publisher_name": "Q2994176",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.culture.gouv.fr/LH/LH280/PG/FRDAFAN83_OC18V007.htm",
+        "domain": "culture.gouv.fr",
+        "publisher_name": "Ministry of Culture of France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/culture/",
+          "bias_rating": "RIGHT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www2.culture.gouv.fr/LH/LH280/PG/FRDAFAN83_OC18V025.htm",
+        "domain": "www2.culture.gouv.fr",
+        "publisher_name": "www2.culture.gouv.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1451,
+          51.9194
+        ]
+      },
+      "properties": {
+        "url": "https://www.rp.pl/artykul/216865.html",
+        "domain": "rp.pl",
+        "publisher_name": "Rzeczpospolita",
+        "country": "Poland",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "liberal conservatism",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lexpress.fr/actualite/politique/l-express-publie-les-bulletins-de-notes-de-l-officier-de-gaulle_1231140.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "http://www.oberstnünlist.ch/Fotos.html#3",
+        "domain": "oberstnünlist.ch",
+        "publisher_name": "oberstnünlist.ch",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/2018/06/25/01003-20180625ARTFIG00130-les-presidents-francais-au-vatican-une-longue-tradition.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.183333333,
+          8.833333333
+        ]
+      },
+      "properties": {
+        "url": "https://sgg.gouv.bj/doc/decret-1961-403",
+        "domain": "sgg.gouv.bj",
+        "publisher_name": "Secrétariat général du Gouvernement",
+        "country": "Benin",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&dateJO=19701224&numTexte=&pageDebut=11891&pageFin=",
+        "domain": "legifrance.gouv.fr",
+        "publisher_name": "Légifrance",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.senat.fr/comptes-rendus-seances/5eme/pdf/1970/12/s19701218_2989_3042.pdf",
+        "domain": "senat.fr",
+        "publisher_name": "senat.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/senat/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://archives.assemblee-nationale.fr/4/cri/1970-1971-ordinaire1/088.pdf",
+        "domain": "archives.assemblee-nationale.fr",
+        "publisher_name": "Bibliothèque de l'Assemblée Nationale",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/histoire/9-novembre-1970-adieu-de-gaulle-20201106",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/france/2020/09/23/jacques-chirac-les-rues-et-l-honneur_1800315",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "social democracy, centre-left",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.2)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://lci.tf1.fr/france/2006-01/mitterrand-prefere-francais-4856424.html",
+        "domain": "lci.tf1.fr",
+        "publisher_name": "lci.tf1.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/flash-actu/2013/04/28/97001-20130428FILWWW00015-24-des-francais-satisfaits-par-hollande.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/flash-actu/2013/04/28/97001-20130428FILWWW00015-24-des-francais-satisfaits-par-hollande.php?page=&pagination=12",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.tns-sofres.com/_assets/files/2010.11.08-de-gaulle.pdf",
+        "domain": "tns-sofres.com",
+        "publisher_name": "SOFRES",
+        "country": "France",
+        "region": "Unknown",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.sudouest.fr/2011/05/07/pour-les-francais-de-gaulle-est-le-president-de-la-ve-republique-qui-a-le-plus-change-la-france-391952-755.php",
+        "domain": "sudouest.fr",
+        "publisher_name": "Sud-Ouest",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/actualite/politique/de-gaulle-voyait-plus-loin_491159.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ladocumentationfrancaise.fr/dossiers/1958-constitution-cinquieme-republique/contexte-particulier.shtml",
+        "domain": "ladocumentationfrancaise.fr",
+        "publisher_name": "La Documentation française",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ina.fr/divertissement/humour/video/I00012921/charles-de-gaulle-et-la-carriere-de-dictateur.fr.html",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ina.fr/politique/politique-internationale/video/CAF89046394/conference-de-presse-du-general-de-gaulle.fr.html",
+        "domain": "ina.fr",
+        "publisher_name": "Institut national de l'audiovisuel",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://histoire-image.org/mots-cles/gaulle-charles",
+        "domain": "histoire-image.org",
+        "publisher_name": "Histoire par l’image",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.charles-de-gaulle.org/pages/l-homme/dossiers-thematiques/1890-1940-la-genese/jeunesse-et-formation/reperes/chronologie-1890-1913.php",
+        "domain": "charles-de-gaulle.org",
+        "publisher_name": "Fondation Charles-de-Gaulle",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/livres/2014/01/06/03005-20140106ARTFIG00466-le-general-de-gaulle-aurait-pu-etre-prix-nobel-de-litterature.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "conservatism",
+        "reliability": "high",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lepoint.fr/histoire/un-manuscrit-inedit-de-petain-retrouve-13-05-2014-1822519_1615.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "centre-right",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4689,
+          60.472
+        ]
+      },
+      "properties": {
+        "url": "http://www.nobelprize.org/nomination/literature/1963.html",
+        "domain": "nobelprize.org",
+        "publisher_name": "2022 Nobel Prizes",
+        "country": "Norway, Sweden",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 117,
+        "percentage": 65.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "country": "Switzerland",
+        "source_count": 6,
+        "percentage": 3.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "country": "Italy",
+        "source_count": 2,
+        "percentage": 1.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 9,
+        "percentage": 5.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.766667,
+          33.833333
+        ]
+      },
+      "properties": {
+        "country": "Lebanon",
+        "source_count": 1,
+        "percentage": 0.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "country": "Canada",
+        "source_count": 2,
+        "percentage": 1.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "country": "Global",
+        "source_count": 3,
+        "percentage": 1.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1451,
+          51.9194
+        ]
+      },
+      "properties": {
+        "country": "Poland",
+        "source_count": 1,
+        "percentage": 0.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.183333333,
+          8.833333333
+        ]
+      },
+      "properties": {
+        "country": "Benin",
+        "source_count": 1,
+        "percentage": 0.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4689,
+          60.472
+        ]
+      },
+      "properties": {
+        "country": "Norway",
+        "source_count": 1,
+        "percentage": 0.6
+      }
+    }
+  ]
+}

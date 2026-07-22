@@ -10778,5 +10778,505 @@
       "gender": 0.9177172183990479,
       "subregion": 0.5115026235580444
     }
+  },
+  "Emmanuel Hecht": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9673882126808167,
+      "subregion": 0.6255586743354797
+    }
+  },
+  "Daniel Laurent": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9648531675338745,
+      "subregion": 0.5323468446731567
+    }
+  },
+  "Patrice Buffotot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9034845232963562,
+      "subregion": 0.6194953918457031
+    }
+  },
+  "16 juin 2010 - 06:00": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9984910488128662,
+      "gender": 0.5772469639778137,
+      "subregion": 0.37123024463653564
+    }
+  },
+  "général de Gaulle": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9545055627822876,
+      "subregion": 0.7758040428161621
+    }
+  },
+  "Administrateur": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9994335031951778,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "B.Dv.": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.7221829295158386,
+      "subregion": 0.43241608142852783
+    }
+  },
+  "Fabrice d'Almeida": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9511311054229736,
+      "subregion": 0.4780993163585663
+    }
+  },
+  "Peillon": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999841451644897,
+      "gender": 0.7884431481361389,
+      "subregion": 0.3509786128997803
+    }
+  },
+  "Amos Reichman": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.900796115398407,
+      "subregion": 0.569405198097229
+    }
+  },
+  "Vincent Lemire": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9539743065834045,
+      "subregion": 0.5810225009918213
+    }
+  },
+  "Lead Off": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9945573238655925,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Serge Gadal": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9157214164733887,
+      "subregion": 0.39595550298690796
+    }
+  },
+  "Par&nbsp;Florence Dartois": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.5754324793815613,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Marie Kirschen": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8324960470199585,
+      "subregion": 0.5787659883499146
+    }
+  },
+  "François Lagrange": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9686121940612793,
+      "subregion": 0.5899441242218018
+    }
+  },
+  "Marc Martin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9115633368492126,
+      "subregion": 0.4407060146331787
+    }
+  },
+  "Christian Delporte": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8949010968208313,
+      "subregion": 0.5004204511642456
+    }
+  },
+  "Philippe Varnoteaux": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9655722975730896,
+      "subregion": 0.6114628911018372
+    }
+  },
+  "Mathieu Rigouste": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9474692940711975,
+      "subregion": 0.7469879984855652
+    }
+  },
+  "Charles Cogan": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9377604722976685,
+      "subregion": 0.47144147753715515
+    }
+  },
+  "Miloud Zaater": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.999996542930603,
+      "gender": 0.7116683721542358,
+      "subregion": 0.49174827337265015
+    }
+  },
+  "Rédaction": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.627985268831253,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "David Carrette": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9453004002571106,
+      "subregion": 0.5438860058784485
+    }
+  },
+  "Françoise de La Serre": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8912554979324341,
+      "subregion": 0.6394074559211731
+    }
+  },
+  "Conférence de presse du 15 mai 1962 (questions européennes) 15 mai 1962 01h 10m 44s Réf. 00078 Partager Exporter Email Tweeter Imprimer Notice Résumé : Cette conférence de presse est pour une grande part consacrée aux questions internationales et européennes. Elle est donnée au lendemain du rejet, le 17 avril, du \"plan Fouchet\" par les membres de la Communauté européenne, pour deux motifs principaux : l'absence de dimension supranationale et l'exclusion du Royaume-Uni. La conférence porte sur les thèmes de l'organisation politique de l'Europe des six, sur le problème de l'Allemagne, sur les rapports de la France et de l'OTAN, sur les problèmes Est-Ouest et la construction d'une force de frappe française, enfin sur les rapports avec l'Afrique Noire et du Nord. A propos de la CEE et du \"Plan Fouchet\", le Général explique pourquoi une Europe unie est nécessaire. Il rappelle que le Marché Commun existe déjà mais que l'Europe doit également avoir une existence politique, formulée dans le plan Fouchet. Le Général démonte les objections qui ont amené le rejet de ce plan. Sur la question de l'Allemagne, le Général explique pourquoi elle est l'enjeu capital entre les deux Grands. Il attaque l'URSS qui se sert de la situation de la ville de Berlin comme moyen de pression. Dans l'atmosphère internationale actuelle, le Général pense qu'une négociation sur l'Allemagne ne peut aboutir. Il insiste sur la nécessaire solidarité entre la France et l'Allemagne (RFA) dans le cadre de la construction européenne. A propos de l'OTAN, de Gaulle commence par affirmer que la France fait partie intégrante de l'Alliance atlantique. Mais selon lui, le problème de la défense de la France a changé. Il explique longuement pourquoi et comment il considère que le rôle de l'OTAN n'est plus le même. Sur la Conférence de Genève, à laquelle la France n'a pas participé, le Général explique que dans la mesure où les deux grands ne veulent pas arrêter la course aux armements, il n'est pas question pour la France de suspendre ses essais nucléaires. Sur l'Afrique, de Gaulle évoque la nouvelle Algérie, et plus largement l'Afrique, dont il souhaite le développement harmonieux, et qu'elle continue à entretenir d'étroits liens avec la France. Enfin, sur l'élection du président au Suffrage universel direct, le général de Gaulle explique avec humour que ce n'est pas encore le moment d'en parler. Type de média : Vidéo Date de diffusion : 15 mai 1962 Type de parole : Conférence de presse Conditions de tournage : Intérieur - Public sélectionné - Tenue civile Petite(s) phrase(s) : On trouve agréable de rêver à la lampe merveilleuse, vous savez, celle qu'il suffisait à Aladin de frotter pour voler au-dessus du réel. Dante, Goethe, Chateaubriand, appartiennent à toute l'Europe, dans la mesure même où ils étaient respectivement et éminement Italien, Allemand et Français. Ils n'auraient pas beaucoup servi l'Europe s'ils avaient été des apatrides, et qu'ils avaient pensé et écrit en quelque esperanto ou Volapük intégré. Le problème allemand est certainement le plus brûlant du monde. Ce qui est a redouter, ce n'est pas le vide politique, c'est plutôt le trop plein. Je n'ai, dans aucune de mes déclarations parlé de \"l'Europe des patries\" L'Angleterre, en tant que grand Etat et que nation fidèle à elle même, ne consentirait jamais à se dissoudre dans quelque utopique construction. La France inspire sa politique, autant que possible, de sens pratique et, tranchons le mot, de modestie. Un fait immense qui tient en suspens le destin de chaque peuple et de chaque individu. Il s'agit, bien sûr, du fait atomique. Thèmes : Colonisation et décolonisation Politique extérieure > Relations internationales > Organisation internationale > OTAN Politique intérieure > Défense nationale > Armement > Arme atomique Lieux : Afrique > Algérie Afrique > Madagascar Afrique > Maroc Amérique du Nord > Etats-Unis > Washington Europe > Allemagne > Bonn Europe > Belgique > Bruxelles Europe > France > Alsace > Bas-Rhin > Strasbourg Europe > France > Ile-de-France > Paris Europe > Grande-Bretagne > Angleterre Europe > Grèce URSS > Russie > Moscou Éclairage Intervenant un peu plus d'un mois après le référendum du 8 avril 1962 qui a ratifié les Accords d'Evian à plus de 90% des suffrages, apportant ainsi un éclatant soutien au général de Gaulle qui a réussi à résoudre un conflit apparemment insoluble, la conférence de presse du 15 mai 1962 indique que la page est tournée et que de Gaulle a désormais les mains libres pour mener la grande politique planétaire qui constitue son objectif. Le remplacement le 14 avril du Premier ministre Michel Debré dont le Général estime la tâche accomplie avec la fin de la guerre d'Algérie par Georges Pompidou, inconnu du public, mais collaborateur du Général est un autre signe qu'une nouvelle période vient de s'ouvrir. Aussi cette conférence de presse est-elle consacrée à la politique étrangère. Elle s'ouvre toutefois sous de mauvais auspices. Dans les semaines qui précèdent, le projet français d'union politique de l'Europe autour des Etats souverains prévu par le \"Plan Fouchet\" a été rejeté par les Belges et les Néerlandais, au motif de l'absence de l'Angleterre et du fait que le projet proposé excluait toute idée de supranationalité. Après avoir, dans son propos liminaire, décrit la politique de la France dans le monde autour de trois thèmes : la rupture des liens coloniaux, la construction de l'Europe et la mise en place d'une force militaite indépendante, il répond à une question sur le plan Fouchet en brossant le tableau d'une union européenne fondée sur la coopération entre Etats souverains dans les domaines de la politique, de la défense et de la culture, brocardant durement la supranationalité et ironisant sur une Europe s'exprimant en quelque \"espéranto\" ou \"volapük\" intégrés (ce qui provoquera la démission des ministres MRP). Quant aux oppositions au \"Plan Fouchet\", il montre leurs contradictions et soupçonne l'entreprise supranationale de ne viser rien d'autre qu'une Europe impuissante fédérée par les Etats-Unis. En ce qui concerne le sort de l'Allemagne, située au coeur de l'affrontement Est-Ouest, il dénonce le chantage soviétique sur Berlin et annonce le refus de la France de participer à des conversations sur le statut de l'Allemagne qui ne pourraient qu'aboutir à un recul des Occidentaux, affirmant sa solidarité avec la République fédérale. Interrogé sur la volonté française d'une réforme de l'OTAN, de Gaulle affirme que la situation internationale a profondément changé depuis la création de celle-ci et que la France entend adapter sa participation à la situation nouvelle. Concernant la non-participation de la France à la conférence de Genève réunie pour envisager la limitation des armements atomiques, il la juge vouée à l'échec, d'autant que la France n'acceptera pas un arrêt des expériences nucléaires qui la laisserait dépourvue d'un arsenal atomique que les autres puissances nucléaires conserveraient. En revanche, il s'associerait volontiers à une destruction généralisée des armes nucléaires. Enfin, il souhaite aider les pays africains à s'organiser pour vivre en paix et se développer économiquement. C'est bien l'ensemble de sa doctrine de politique étrangère que de Gaulle expose dans sa conférence de presse du 15 mai 1962, refusant de se prononcer sur un éventuel projet de révision constitutionnelle Serge Berstein Transcription (Silence) Charles de Gaulle Mesdames, messieurs, je vous assure que je suis heureux de vous voir. Avant que nous n'entamions notre dialogue, je vous demande la permission de vous dire quelques mots d'ensemble qui sont, en quelque sorte, la philosophie de ce que je pourrais avoir à vous répondre tout à l'heure. Notre temps et notre monde sont dominés par un fait immense et qui tient, en suspens, le destin de chaque peuple et de chaque individu. Il s'agit, bien sûr, du fait atomique. Il y a deux puissances dans l'univers, qui détiennent l'une et l'autre, les moyens de détruire des nations en quelques heures. Je pense qu'il ne faut pas chercher ailleurs la raison fondamentale de cette sorte de doute, de désintéressement politique que les générations d'à présent manifestent à l'égard des principes, des doctrines qui, naguère, suscitaient la foi et l'ardeur. Beaucoup ne croient pas qu'il y ait lieu de se fier aux idéologies. Dès lors qu'en un instant, tout peut être anéanti jusqu'aux tréfonds et que, dans les conditions qui résultent de cette situation-là, les grands problèmes du monde ne peuvent pas être délibérément résolus. Alors, dans cette situation mondiale, la France inspire sa politique, autant que possible, de sens pratique. Et, tranchons le mot, de modestie. Elle cherche à réaliser ce qui lui paraît possible et ce qui est à sa portée. Tirant partie de la continuité, de la stabilité que ces institutions lui procurent, elle vise, pour mener son action internationale, trois objectifs essentiels, et qui, d'ailleurs, sont liés entre eux. Se dégager vis-à-vis des peuples d'outremer qui, naguère, étaient sous sa dépendance, des obligations politiques, économiques et militaires qui lui incombait chez eux, et que l'évolution générale rendait, chaque jour, plus vaine et plus coûteuse, et transformer ces rapports avec eux en une coopération contractuelle et régulière où trouvent leur compte le développement et l'amitié, et qui, d'ailleurs, peut s'étendre à d'autres. D'autre part, contribuer à construire l'Europe dans le domaine de la politique, c'est-à-dire de la défense comme dans celui de l'économie, de telle sorte que l'expansion et l'action de cet ensemble aident à la prospérité et à la sécurité française, et en même temps fasse renaître les possibilités d'un équilibre européen vis-à-vis des pays de l'Est. Enfin, conjuguer la création d'une force nationale moderne. Conjuguer cette création avec nos progrès scientifiques, techniques, économiques et sociaux afin que dans le cadre d'une alliance nécessaire et en vue, si cela se présente, d'une détente internationale, nous puissions, quoi qu'il arrive, avoir notre propre part dans notre propre destin. Voilà ce que je voulais vous dire en commençant. Et maintenant, à vous, si vous voulez bien, la parole. Je vous demanderai de formuler les questions que les uns ou les autres d'entre vous voudront me poser. Nous les mettrons en ordre, en série, et j'y répondrai dans la mesure de mes moyens. Je prie donc ceux d'entre vous, mesdames et messieurs, qui désirent me demander quelque chose, de bien vouloir se lever et le dire. Journaliste 1 [inaudible] de Paris Presse. Mon général, je voudrai vous demander pour quelle raison la France a présenté son projet d'organisation politique de l'Europe des Six ? Charles de Gaulle Je vous remercie. Journaliste 2 Autour du même problème. Pourriez-vous, monsieur le président, nous dire ce que vous pensez des objections qui sont faites au projet français d'organisation politique de la communauté économique européenne ? Charles de Gaulle Pourquoi nous avons proposé un projet d'organisation et qu'est-ce que je pense des objections qui ont été faites ? Voilà pour l'Europe. Y a-t-il une autre question ? Journaliste 3 [Jean Marie Zerman], Libération. Monsieur le président, l'existence de forces armées modernes en République Fédérale Allemande peut paraître, à un certain nombre d'entre nous, comme pouvoir représenter, pour l'avenir, un danger pour notre sécurité et pour la paix. Mais ces craintes ne deviendraient aiguës que si cette armée disposait de ces armes redoutables dont vous venez de parler. Quel est, là-dessus, le sentiment du gouvernement français ? Et que devons-nous croire, nous, des informations publiées dans la presse étrangère sur certains projets qui aboutiraient à doter la Bundeswehr de ces armements ? Charles de Gaulle Bien, je vous remercie. Je note votre question, quoique je ne puisse pas répondre de ce qu'on écrit dans la presse étrangère. Journaliste 4 Monsieur le président, si, à votre avis, on ne tient pas suffisamment compte du point de vue français en déterminant la politique du monde occidental vis-à-vis du bloc oriental, pourquoi la France refuse-t-elle de participer aux conversations actuelles entre les Etats-Unis et l'Union soviétique au sujet de l'Allemagne ? Charles de Gaulle Bien, je rapproche cette question de celle qui m'a été posée. Il s'agit du problème allemand dont nous aurons, en effet, à parler. Je vous en prie. Journaliste 5 [inaudible] que la France ait l'intention de modifier les conditions de sa participation à l'organisation du traité de l'Atlantique Nord. Charles de Gaulle Voilà ce qui apparaît être l'OTAN. Ca ne m'étonne pas. Journaliste 6 Jean Claude Servan-Schreiber, Les Echos. Qu'entendez-vous exactement par l'\"équilibre européen\" entre l'Est et l'Ouest, auquel vous venez de faire allusion dans votre préambule ? Charles de Gaulle Bien, nous en parlerons, en effet. Journaliste 7 [inaudible] ...les temps modernes à cette conception de patrie telle que la voit le gouvernement français ? Charles de Gaulle Bien. Et encore ? Je vous en prie. Journaliste 8 Bernard [Lefort], Paris [Jour]. Mon général, mes confrères, à l'instant, viennent de vous poser des questions de politique étrangère. Je ne crois pas changer de sujet, puisque vous l'avez, vous-même, abordé dans votre prologue, en vous posant la question suivante. Comment, à la veille de l'autodétermination en Algérie et au lendemain de vos conversations avec le roi du Maroc, concevez-vous les rapports de la France avec l'Afrique du Nord ? Charles de Gaulle Très bien. Journaliste 9 [inaudible] après la signature de l'accord d'Evian marquant le terme de la vaste entreprise de décolonisation menée par la France, que pensez-vous du voeu récemment exprimé par plusieurs chefs d'Etat africains de voir définir, dans leur ensemble, de nouveaux rapports entre la France et les états africains et malgache francophones ? Charles de Gaulle Bien. C'est une question qui se rattache à celle qu'on vient de me poser, quoique la vôtre s'étende plus loin. Je vous en prie. Journaliste 10 Mon général, à la suite de l'explosion atomique française du 1er mai, pouvez-vous faire le point des progrès accomplis par la France dans la construction de sa force de frappe ? Charles de Gaulle Vous voudriez que je vous dise tous nos secrets ! Remarquez que nous serions les seuls à le faire ! Je vous en prie. Journaliste 11 [inaudible] Telegraph. Monsieur le président, certains observateurs ont fait remarquer que l'entrée de la Grande Bretagne dans une union politique européenne à sept ne serait pas souhaitable à cause des relations spéciales anglo-américaines. Pourriez-vous nous dire ce que vous en pensez ? Charles de Gaulle Y a-t-il des relations spéciales anglo-américaines ? Je vous en prie. Journaliste 12 Je m'excuse, mon général, mais si vous voulez me permettre, je voudrais vous poser une question de politique intérieure. Il y a déjà quelques temps, vous avez manifesté l'intention de procéder à une révision de la constitution. Est-ce que dans cette allusion que vous faites, tout à l'heure, que vous avez faite, tout à l'heure, à une force nationale, est-ce que vous entendez également redresser d'une manière nationale la situation française en procédant à une révision de la constitution dans le sens de l'élection du président de la république au suffrage universel ? Charles de Gaulle Ah ? Enfin, je vois que dans l'ensemble, et à part la question que vient de me poser monsieur [Alshuner] au sujet de cette perspective, cette hypothèse, dans l'ensemble, nos questions se centrent sur l'attitude, la position, la politique de la France au-dehors. Et je constate que les questions qui sont posées se rapportent, en premier lieu, à l'Europe, à la conception que la France a mise en avant au sujet de l'organisation de l'Europe, aux objections qui lui sont faites au sujet de son projet, et puis, d'autre part, à la question allemande dans son ensemble et à l'attitude que la France garde à cet égard, en particulier sous l'angle des conversations actuellement engagées au sujet de l'Allemagne entre Washington et Moscou. Et puis aussi, l'affaire de l'OTAN, la part que prend la France et les intentions de la France à l'égard de cette organisation. Corrélativement, la question de la force atomique française. Et puis, la perspective qui peut s'ouvrir et qui, déjà, s'ouvre largement quant aux rapports de la France avec l'ensemble africain, plus particulièrement avec l'Afrique du nord, et aussi, du reste, avec l'Afrique Noire, à la suite des arrangements d'Evian, à la veille de l'autodétermination et au lendemain du voyage fort heureux et agréable que le roi du Maroc a bien voulu faire, en privé, à Paris. Et bien, je m'en vais répondre à vos diverses questions. Reprenons, si vous le voulez bien, pour éclaircir le dialogue, la question de l'Europe telle qu'elle m'a été posée. Quelqu'un m'a demandé quelle était la raison pour laquelle la France a proposé son projet. Je voudrais que vous répétiez votre question. Journaliste 1 Mon général, quelles sont les raisons qui ont déterminé la France à présenter un projet, connu sous le nom de plan Fouchet, d'organisation politique de l'Europe des Six ? Charles de Gaulle Dans un monde comme le nôtre où tout se ramène à la menace d'un conflit mondial, l'idée d'une Europe unie et qui aurait assez de force, assez de moyens et assez de cohésion pour exister par elle-même, cette idée-là apparaît tout naturellement. Et elle apparaît d'autant mieux que les inimitiés qui l'avaient séculairement déchirée, et en particulier l'opposition entre l'Allemagne et la France, ont actuellement cessé. Alors, du coup, voilà, mis en lumière, d'abord le caractère qu'on peut appeler complémentaire au point de vue géographique, stratégique, économique, culturel, etc. qui existe, les caractères communs, complémentaires qui existent entre les peuples de cette partie de l'ancien continent, l'Europe occidentale, et puis, en même temps, la capacité globale qu'ils représentent en fait de puissance, en fait de production, de création, d'échanges, etc., par rapport à l'activité générale de l'univers. Et puis, enfin, les possibilités que leur ensemble pourrait offrir aux deux milliards d'hommes qui peuplent les pays sous-développés. Voilà des données de fait qui ont conduit six Etats du continent à tâcher d'établir entre eux des liens particuliers. Déjà, pendant la guerre mondiale, je me permets de le rappeler, je proclamais que cette évolution était un des buts essentiels de la France. Dans cet ordre d'idée-là, on a déjà fait quelque chose, quelque chose de positif, et qui s'appelle la Communauté Economique Européenne, qui a été créée en vertu du traité de Rome, créée en principe, et qui a été mise en oeuvre grâce, d'abord, à notre redressement économique et financier de 58-59, car si nous n'avions pas fait ce redressement-là, il n'y avait pas de communauté qui tienne. En second lieu, grâce au fait que nous avons obtenu, en janvier dernier, que l'agriculture entre dans le marché commun. Et corrélativement, nous avons accepté de passer à ce que l'on appelle la deuxième phase, c'est-à-dire à une réelle application. Alors, ceci est fait. Il existe une organisation économique telle que peu à peu, les barrières douanières entre les Six s'effacent, ce qui ne manque pas de susciter leurs efforts. Et puis aussi, progressivement, leurs productions respectives sont ajustées, sont réglementées de telle sorte que le marché commun puisse, en bon ordre, ou bien les absorber lui-même ou bien les échanger au-dehors. C'est quelque chose, c'est beaucoup. Ce n'est pas tout. Aux yeux de la France, cette construction économique ne suffit pas. L'Europe occidentale, qu'il s'agisse de son action vis-à-vis des autres peuples ou de sa défense ou de sa contribution au développement des régions qui en ont besoin ou de son devoir d'équilibre européen et de détente internationale, l'Europe occidentale doit se constituer politiquement. Et puis, d'ailleurs, si elle ne le fait pas, la communauté économique elle-même ne pourra, à la longue, s'affermir ni même se maintenir. Autrement dit, il faut, à l'Europe, des institutions qui la constituent en un ensemble politique aussi bien qu'elle en est un déjà, tout au moins son commencement dans l'ordre économique. La France a donc pris l'initiative de proposer une telle organisation. Et vous savez bien que l'année dernière, au mois d'avril, les six chefs d'état ou de gouvernement se sont réunis à Paris pour discuter de son projet. Et puis, qu'ils l'ont fait, de nouveau, à Bonn, au mois de juillet. Et puis, qu'on a formé, à Paris, une commission politique, la commission Fouchet, qui était destinée à mettre sur pieds, à mettre au point un projet de traité d'union. Et puis, entre-temps, il y avait beaucoup de contacts pris, bilatéraux ou multilatéraux sur ce sujet. Il était finalement convenu que les six se réuniraient au sommet, à Rome, pour conclure le cas échéant. On sait pourquoi et on sait comment on n'a pas encore abouti. Qu'est-ce que la France propose à ces cinq partenaires ? Voici. Je le répète une fois de plus. Pour que nous nous organisions politiquement, commençons par le commencement. Organisons notre coopération. Réunissons périodiquement nos chefs d'Etat ou de gouvernement pour qu'ils examinent en commun les problèmes qui sont les nôtres et pour qu'ils prennent, à leur égard, des décisions qui seront celles de l'Europe. Formons une commission politique, une commission de défense et une commission culturelle, tout de même que nous avons déjà une commission économique à Bruxelles, qui étudie les questions communes et qui prépare les décisions des six gouvernements. Naturellement, la commission politique et les autres procéderont, à cet égard, dans des conditions propres aux domaines particuliers qui seront les leurs, pour appliquer de concert les décisions qui ont été prises par le conseil. Nous avons une assemblée parlementaire européenne qui est composée des délégations de nos six parlements nationaux, mettons, et qui siège à Strasbourg, mettons cette assemblée à même de discuter des questions politiques communes, comme elle discute déjà des questions économiques. Après expérience, et bien, nous verrons, dans trois ans, comment nous pourrons faire pour resserrer nos liens. Mais tout au moins, nous aurons commencé à prendre l'habitude de vivre et d'agir ensemble. Voilà ce que la France a proposé. Elle croit que c'est ce qu'il y a, à l'heure qu'il est, de plus pratique qui puisse être fait. Voilà pourquoi elle l'a fait et voilà ce qu'elle a fait. Et ceci dit, je voudrais répondre à une autre question qui m'a été posée sur le même sujet et qui se rapporte, je crois, aux objections qu'on nous a faites. Qui est-ce qui avait fait cette demande ? Journaliste 2 Monsieur le président, je vous demandais ce que vous pensiez des objections faites à ce projet, et si vous le permettez, de préciser ma question, ma question vise aussi bien les objections faites à l'extérieur, notamment par monsieur Paul-Henri Spaak que celles qui ont été faites en France, notamment au cours du récent débat à l'Assemblée nationale. Charles de Gaulle Il est parfaitement vrai que les propositions de la France ont soulevé deux objections, d'ailleurs, parfaitement contradictoires, quoiqu'elles soient présentées par les mêmes opposants. Et voici ces deux objections. Ces opposants nous disent : \" Vous voulez faire l'Europe des patries, nous voulons, nous, faire l'Europe supranationale \". Comme s'il suffisait d'une formule pour confondre ensemble ces entités puissamment établies qui s'appellent les peuples et les Etats. Et puis, les mêmes opposants nous disent, en même temps : \" L'Angleterre a posé sa candidature pour entrer au marché commun. Tant qu'elle n'y est pas, nous ne pouvons rien faire de politique \". Et pourtant, tout le monde sait que l'Angleterre, en tant que grand Etat, et que nation fidèle à elle-même, ne consentirait jamais à se dissoudre dans quelque utopique construction. Je voudrais, incidemment, puisqu'en voici l'occasion, je m'excuse messieurs les journalistes. Vous allez être assez étonnés, mais je n'ai jamais, quant à moi, dans aucune de mes déclarations, parlé de l'Europe des patries, bien qu'on prétende toujours que je l'ai fait. Ce n'est pas, bien sûr, que je renie, moi, la mienne, bien au contraire. Je lui suis attaché plus que jamais. Et d'ailleurs, je ne crois pas que l'Europe puisse avoir aucune réalité vivante si elle ne comporte pas la France avec ses Français, l'Allemagne avec ses Allemands, l'Italie avec ses Italiens, etc. Dante, Goethe, Chateaubriand appartiennent à toute l'Europe dans la mesure-même où ils étaient respectivement et éminemment italiens, allemands et français. Ils n'auraient pas beaucoup servi l'Europe s'ils avaient été des apatrides et qu'ils avaient pensé, écrit en quelque  esperanto ou volapük intégré. Alors, il est vrai que la patrie est un élément humain sentimental et que c'est sur des éléments d'action, d'autorité, de responsabilité qu'on peut construire l'Europe. Quels éléments ? Et bien, les Etats. Car il n'y a que les Etats qui, à cet égard, soient valables, soient légitimes, et, en outre, soient capables de réaliser. J'ai déjà dit, je répète qu'à l'heure qu'il est, il ne peut pas y avoir d'autre Europe possible que celle des Etats, en dehors, naturellement, des mythes, des fictions, des parades. D'ailleurs, ce qui se passe pour la communauté économique le prouve tous les jours. Car ce sont les Etats, et les Etats seulement qui ont créé cette communauté économique, qui l'ont pourvue de crédit et qui l'ont dotée de fonctionnaires. Et ce sont les Etats qui lui donnent une réalité et une efficacité. Et d'autant plus qu'on ne peut prendre aucune mesure  économique importante sans commettre un acte politique. On fait de la politique quand on manie en commun, les tarifs, quand on convertit les charbonnages, quand on tâche de faire en sorte que les salaires et les charges sociales soient les mêmes dans les six Etats, quand chaque Etat permet aux travailleurs des cinq autres de venir s'installer chez lui, quand on prend des décrets en conséquence de tout ça, quand on demande au Parlement de voter des lois, des crédits, des sanctions nécessaires. On fait de la politique quand on fait entrer l'agriculture dans le marché commun. Ce sont les six Etats, et eux seulement, qui sont parvenus, au mois de janvier dernier, par leurs instances politiques. On fait de la politique quand on traite de l'association de la Grèce ou des Etats africains ou de la République malgache. On fait de la politique quand on négocie avec la Grande Bretagne au sujet de la demande qu'elle a déposée, de faire partie du marché commun. On en fait quand on considère les candidatures qui sont avancées par d 'autres Etats au sujet de leur participation ou de leur association. On en fait quand on est amené à envisager les demandes que les Etats-Unis annoncent en ce qui concerne leur rapport économique avec la communauté. En vérité, on ne peut pas assurer le développement économique de l'Europe sans son union politique. Et à ce sujet, je signale combien est arbitraire une certaine idée qui était apparue dans les débats récents, et qui prétendait soustraire le domaine économique aux réunions de chefs d'Etat ou de gouvernement, alors que pour chacun d'eux, dans leur pays respectif, c'est là le sujet quotidien et capital. Je voudrais parler plus spécialement de l'objection de l'intégration. On nous l'oppose en nous disant : \" Fondons ensemble les six Etats dans quelque chose de supra national, dans une entité supra nationale. Et ainsi, tout sera très simple et très pratique \". Cette entité nationale, on ne la propose pas parce qu'elle n'existe pas. Il n'y a pas de fédérateur, aujourd'hui, en Europe, qui ait la force, le crédit et l'attrait suffisants. Alors, on se rabat sur une espèce d'hybride et on dit : \" Et bien, tout au moins que les six Etats acceptent, s'engagent à se soumettre à ce qui sera décidé par une certaine majorité\". En même temps, on dit : \" Il y a déjà six parlements européens, six parlements nationaux, plus exactement, une assemblée parlementaire européenne. Il y a même une assemblée parlementaire du conseil de l'Europe qui, il est vrai, est antérieure à la conception des Six et qui, me dit-on, se meurt au bord où elle fut laissée. Et bien malgré tout cela, élisons un parlement de plus, que nous qualifierons d'européen, et qui fera la loi aux six Etats \". Ce sont des idées qui peuvent, peut-être, charmer quelques esprits, mais je ne vois pas du tout comment on pourrait les réaliser pratiquement quand bien même on aurait six signatures au bas d'un papier. Y a-t-il une France, y a-t-il une Allemagne, y a-t-il une Italie, y a-t-il une Hollande, y a-t-il une Belgique, y a-t-il un Luxembourg qui soient prêts à faire, sur une question importante pour eux au point de vue national et au point de vue international, ce qui leur paraîtrait mauvais parce que ça leur serait commandé par d'autres ? Est-ce que le peuple français, le peuple allemand, le peuple italien, le peuple hollandais, le peuple belge, le peuple luxembourgeois sont prêts à se soumettre à des lois que voteraient des députés étrangers dès lors que ces lois iraient à l'encontre de leur volonté profonde ? Ce n'est pas vrai. Il n'y a pas moyen, à l'heure qu'il est, de faire en sorte qu'une majorité puisse contraindre, une majorité étrangère, puisse contraindre des nations récalcitrantes. Il est vrai que dans cette Europe intégrée, comme on dit, et bien, il n'y aurait peut-être pas de politique du tout. Ca simplifierait beaucoup les choses. Et puis, en effet, dès lors qu'il n'y aurait pas de France, pas d'Europe, qu'il n'y aurait qu'une politique, et faute qu'on puisse en imposer une à chacun des six Etats, on s'abstiendrait d'en faire. Mais alors, peut-être, tout ce monde se mettrait à la suite de quelqu'un du dehors, et qui, lui, en aurait une. Il y aurait peut-être un fédérateur, mais il ne serait pas européen, et ça ne serait pas l'Europe intégrée. Ce serait tout autre chose de beaucoup plus large et de beaucoup plus étendu avec, je le répète, un fédérateur. Et peut-être que c'est ça qui, dans quelque mesure et quelquefois, inspire certains propos de tels ou tels partisans de l'intégration de l'Europe. Alors, il vaudrait mieux le dire. Voyez-vous, quand on évoque les grandes affaires, et bien, on trouve agréable de rêver à la lampe merveilleuse, vous savez, celle qu'il suffisait à Aladin de frotter pour voler au-dessus du réel. Mais il n'y a pas de formule magique qui permette de construire quelque chose d'aussi difficile que l'Europe unie. Alors, mettons la réalité à la base de l'édifice. Quand nous aurons fait le travail, nous pourrons nous bercer aux contes des Mille-et-une nuits. On m'a parlé de l'Allemagne. Je voudrais que ceux qui m'ont posé les questions veuillent bien me les répéter. Je leur en serai fort obligé. Journaliste 4 [inaudible] entre Moscou et Washington au sujet de l'Allemagne. Et pourquoi la France refuse-t-elle d'y participer ? Charles de Gaulle Pourquoi elle ne s'en mêle pas. Oui. Vous savez, le problème allemand est certainement le plus brûlant du monde à l'heure qu'il est. Ca se comprend très bien étant donnée la position, la situation de l'Allemagne au point de vue géographique, et par conséquent stratégique, et puis, ses ressources économiques. Et puis, sa capacité humaine. Et même, je peux bien le dire, le fait qu'elle a employé, de la manière abusive que l'on sait sa puissance de naguère dans la grande querelle qui est, en ce moment-ci, posée et alimentée par les ambitions des Soviets. L'Allemagne est tout naturellement l'enjeu capital. A ce sujet, je dois dire qu'en ce qui nous concerne, nous pensons que dans la situation internationale d'aujourd'hui, dont les éléments s'appellent la tension, la menace, la Guerre froide, il est vain de vouloir régler d'une manière satisfaisante le problème de l'Allemagne. Ca nous fait l'effet de prétendre résoudre la quadrature du cercle. Les Soviets, d'ailleurs, qui somment l'Occident de trancher la question à leur façon se servent, pour faire pression et pour faire menace, se servent de la situation de la ville de Berlin, là où elle est placée, et se servent du fait que les forces internationales, les forces occidentales, plutôt, qui s'y trouvent, et qui sont sa sauvegarde, et bien, on peut les contrarier, les tarabuster, les harceler facilement dans leur communication. Et alors, les Soviets, d'annoncer périodiquement qu'ils vont transmettre, à leurs agents de Pankow, les droits qu'ils tiennent d'un traité quadripartite. Et de bâtir, en travers de la ville, un mur qui la coupe en deux. Et de mettre en cause, de temps en temps, la liberté des couloirs aériens, etc. Toutes ces manifestations étant destinées à amener l'Occident à entrer en négociation avec Moscou sur l'ensemble de l'affaire allemande, en comptant que les occidentaux, à force d'être soumis à la lassitude, à la larme et à l'attrait des compromis, finiront par consentir un commencement de recul. Après quoi, les Soviets passeraient à la phase suivante qui serait plus facile que la première, parce que ça se produirait dans un moment où il y aurait quelques troubles et quelques dispersions entre les occidentaux. Franchement, je le répète, dans l'atmosphère internationale actuelle, et tant que l'Est se comporte comme il le fait, en particulier à Berlin, nous doutons fort que d'une telle négociation où la poussée est unilatérale, il puisse sortir de bons résultats. Bien entendu, la France ne saurait s'opposer à ce que son alliée, l'Amérique, entreprenne, pour son propre compte, avec Moscou, des conversations que, par euphémisme, on appelle des sondages, sachant très bien que la charge des Etats-Unis en valeur absolue, leur charge dans le total des armements de la défense est de beaucoup la plus lourde entre tous les Etats occidentaux, sachant que d'ailleurs, les Etats-Unis sont en train d'accroître cette charge dans des conditions très méritoires et très coûteuses, sachant que dans le cas d'un conflit, c'est eux qui auraient à assumer non pas, sans doute, le plus grand risque, mais en tout cas, le plus grand effort. La France ne peut faire d'objection à ce que les Etats-Unis  mettent en oeuvre comme ils l'entendent leurs moyens diplomatiques. Mais quant à nous, nous estimons de beaucoup préférable de rester sur la réserve. Et notre idée sur l'Allemagne, à l'heure qu'il est, étant donné, je le répète, ce déséquilibre... cet équilibre absolument précaire qui existe entre l'Est et l'Ouest, notre idée sur l'Allemagne, c'est que ce n'est pas le moment d'y modifier les faits qui s'y trouvent accomplis. Nous croyons que ces faits-là, il faut les prendre comme ils sont et vivre avec. Par exemple, pour le statut de Berlin qui a été réglé par un accord quadripartite, nous estimons qu'il ne faut pas le changer. Et a fortiori, nous ne serions pas disposés à accepter une mesure qui soumettrait les forces occidentales à Berlin, en particulier les nôtres, à d'autres contrôles que ceux qui ont été, en leur temps, réglés par les quatre vainqueurs. Si nous estimons qu'il ne faut pas, à l'heure qu'il est, dans les circonstances présentes, s'en prendre à ce qui existe en Allemagne, c'est d'abord, sans doute, parce que nous croyons que toute négociation sur ce sujet risquerait, comme je l'ai dit, tout à l'heure, d'aboutir à un recul de l'Occident et aggraverait le danger. Mais c'est aussi parce qu'il y a une solidarité entre l'Allemagne et la France. De cette solidarité dépend la sécurité immédiate des deux peuples. Il n'y a qu'à regarder la carte pour en être convaincu. De cette solidarité dépend tout espoir d'unir l'Europe dans le domaine politique et dans le domaine de la défense comme dans le domaine économique. De cette solidarité dépend, par conséquent, le destin de l'Europe toute entière depuis l'Atlantique jusqu'à l'Oural. Car s'il peut se créer, à l'occident de l'Europe une construction, une organisation qui soit ferme, prospère, attrayante, alors réapparaissent les possibilités d'un équilibre européen avec les Etats de l'Est et réapparaît la perspective d'une coopération proprement européenne, surtout si, en même temps, le régime totalitaire cesse d'empoisonner les sources. Dans ce cas-là, on pourrait et on devrait, je le crois, résoudre le problème allemand d'une manière objective. Et dans ce cas-là, je l'ai déjà dit, je le répète, la France serait prête à apporter de solides propositions. Autrement, si la solidarité dont je parle n'existait pas ou cessait d'être, c'est l'Europe toute entière qui serait exposée à être la carrière des démons du malheur. Quelqu'un m'a parlé... Je vous en prie, oui ? Journaliste 3 Je m'étais permis de vous poser une question concernant l'éventualité de la dotation en armes nucléaires, de ces armes dont vous avez dépeint éloquemment le danger, des unités de la Bundeswehr. Je pense que ce serait, peut-être, une modification grave du statu quo auquel, pour l'instant, vous vous déclaré attaché en Allemagne. Charles de Gaulle Nous n'avons pas, à l'heure qu'il est, d'arme atomique à donner. Par conséquent, cette question ne nous concerne pas. Mais peut-être pourriez-vous aller la poser à la Maison Blanche. On m'a posé, cependant, sur la question de l'OTAN et l'ensemble de l'alliance atlantique, l'organisation de l'alliance atlantique, une question que je voudrais qu'on me répète. Journaliste 5 Monsieur le président, je vous ai demandé s'il était exact que la France avait l'intention de modifier les conditions de sa participation à l'OTAN. Charles de Gaulle Il y a une alliance atlantique. Elle existe. Et tant que les Soviets menacent le monde libre, cette alliance doit être maintenue. La France en fait partie intégrante. Si le monde libre était attaqué, soit dans l'ancien, soit dans le nouveau continent, la France prendrait part à la défense commune aux côtés de ses alliés et avec tous les moyens qu'elle a. Ceci dit, ce qui est indiscutable, il y a, dans l'alliance atlantique, une certaine organisation militaire qui s'appelle l'OTAN et qui a été faite il y a treize ans dans des conditions qui ont, aujourd'hui, profondément changé. Il est apparu, depuis lors, un certain nombre d'éléments nouveaux qu'il suffit d'évoquer, je crois, pour faire comprendre à tout le monde que pour ce qui concerne sa défense, le problème pour la France n'est plus ce qu'il était auparavant. A l'origine, quand on a fait l'OTAN, seules dans l'univers, l'Amérique, et, dans une certaine mesure, la Grande Bretagne, possédaient des armes nucléaires. Alors, l'Europe occidentale a trouvé fort expédient de s'en remettre aux Etats-Unis de la responsabilité de sa protection, étant admis que les bombes américaines suffisaient à empêcher toute agression qui serait dirigée contre l'Europe. En échange, l'Europe occidentale, ou, du moins, l'Europe occidentale du continent, remettait aux Etats-Unis le commandement de ses forces, et par conséquent, sa politique et sa stratégie de défense. C'est ce qu'on appelait l'intégration. L'Amérique, sur cette base, a transporté, en Europe, un certain nombre de ses armes atomiques, un grand nombre, d'ailleurs. Et d'autre part, un corps expéditionnaire. Et puis elle a gardé, par-devers elle, des moyens immenses pour les employer, le cas échéant, où que ce soit, suivant les circonstances. L'Angleterre, elle, a délégué certains éléments terrestres et aériens pour la défense de l'Europe, et elle s'est réservée le reste. Quant à la France, il était entendu, à ce moment-là, que tout ce dont elle disposait en Europe appartenait à l'OTAN. Seulement, comme le plus clair de ses moyens militaires étaient engagés outremer, sa contribution directe était assez limitée. Depuis lors, je le répète, des éléments nouveaux d'une extraordinaire dimension se sont introduits dans le sujet. D'abord, la Russie soviétique a, maintenant, elle aussi, un armement nucléaire énorme, et qui s'accroît tous les jours, comme, d'ailleurs, celui des Etats-Unis. Alors, maintenant, l'Amérique et la Russie soviétique sont en mesure de se frapper directement l'une l'autre et même de se mettre réciproquement à mort, ou peu s'en faut. Il n'est pas sûr qu'elles s'y risquent. Nul, aujourd'hui, ne peut savoir si, quand, où, comment, pourquoi l'une ou l'autre de ces grandes puissances atomiques emploierait son armement nucléaire. Il suffit que je dise cela pour qu'on comprenne qu'en ce qui concerne la défense de la France, la bataille de l'Europe et même la Guerre mondiale telles qu'on les imaginait quand l'OTAN est née, tout se trouve actuellement mis en cause. D'autre part, il commence à exister, et il va sans cesse se développer une force atomique française de dissuasion. Oh, relativement modeste, il est vrai, mais qui change et va changer complètement les conditions de notre propre défense, celle de nos interventions lointaines et celles du concours que nous pourrions apporter à la sauvegarde de nos alliés. Et puis, le retour progressif de nos éléments militaires d'Algérie nous permet de nous doter d'une armée modernisée qui ne sera pas, naturellement, destinée à jouer un rôle séparé ou isolé mais qui peut et qui doit jouer un rôle propre à la France. Et puis, enfin, il nous est absolument nécessaire, moralement et politiquement, de faire en sorte que notre armée fasse corps plus étroitement avec la nation. Par conséquent, il est nécessaire que nous la réimplantions, pour l'essentiel, sur notre sol, que nous lui rendions une responsabilité directe dans la sécurité extérieure du pays. Bref, que notre défense redevienne une défense nationale. Je le répète, c'est indispensable moralement et politiquement. Je crois qu'il m'a suffi d'indiquer ces éléments nouveaux du problème pour que tout le monde comprenne qu'en ce qui concerne notre défense, et sans que je dise, je m'excuse, comment nous la concevons et comment nous la fabriquons, que cependant, les errements que nous avons suivis, jusqu'à présent, ne sont pas ceux que nous suivons, aujourd'hui, et que nous suivrons demain. Quelqu'un m'avait posé une question sur la conférence de Genève, je crois. Oui ou non ? Sur le fait que nous n'y étions pas. Parce que nous ne sommes pas dans la négociation des Etats-Unis avec Moscou, nous ne sommes pas non plus dans la conférence de Genève, alors, il est possible que vous ne soyez pas curieux des raisons pour lesquelles nous n'y sommes pas. Mais pour le cas où vous le seriez tout de même, je m'en vais vous les indiquer rapidement. Je crois qu'il faudrait avoir beaucoup d'imagination ou beaucoup d'illusions pour se figurer qu'une telle conférence puisse déterminer les grandes puissances atomiques dont j'ai parlé, tout à l'heure, à se défaire de leurs armements. Et en tout cas, la France qui est, comme je l'ai dit, aussi, fort modeste, ne croit pas que sa présence dans une telle conférence y changerait grand-chose. Ce n'est pas, bien sûr, que nous ne déplorions pas, nous aussi, la prolifération des bombes et des engins dans les deux camps. Et je rappelle que nous avons proposé, naguère, à plusieurs reprises, une mesure qui était, à notre sens, la seule pratique et qui consistait à interdire, pendant qu'il en est temps, encore, peut-être, en est-il temps encore, les véhicules, que ce soit des fusées, des avions, des sous-marins, etc., qui sont destinés à lancer les projectiles nucléaires. Mais encore une fois, même cette mesure, nous ne pensons pas qu'elle puisse être prise à Genève alors qu'elle n'a jamais été prise ailleurs. Nous ne voyons pas, donc, de raison, pour grossir l'aréopage qui y est et qui entend exposer des plans inconciliables et qui ne peut rien faire que gémir, un peu comme le choeur des vieillards dans la tragédie antique... inextricables difficultés, Comment en sortir ? Dans ces conditions, nous ne sommes pas à Genève. Il est vrai qu'on aurait pu imaginer que les Etats-Unis et les Anglo-saxons, qui semblaient en avoir eu l'idée, à un certain moment, veuillent s'accorder pour s'interdire de faire, tout au moins, des expériences nouvelles. Et s'ils s'accordaient, s'ils s'étaient accordés sur ce sujet, car je crois qu'ils n'en sont plus là, s'ils étaient accordés sur ce sujet, ils pouvaient imaginer qu'alors tout autre Etat du monde, et ça veut dire la France, suspendrait ses propres essais. Alors, comme ça, les deux puissances auraient, bien entendu, gardé et continueraient de développer leurs armements effrayants. Mais elles donneraient, à la galerie, non pas leur désarmement, bien sûr, mais une satisfaction apparente. Et puis, elles conserveraient leur monopole. Seulement, nous ne croyons pas que ce soit là le problème. Naturellement, nous sommes tout prêts à applaudir les Anglo-saxons et les Soviets s'ils décidaient de ne plus faire d'expériences nouvelles. Mais encore une fois, ce n'est pas là le problème. Le problème, c'est le désarmement, c'est-à-dire la destruction réciproquement contrôlée des armes en commençant par les véhicules. Alors, à cet égard, nous avons, nous, notre problème aussi. C'est que tant qu'on n'a pas procédé à ce désarmement, et rien n'indique qu'on en prenne le chemin, nous avons l'obligation vis-à-vis de nous-mêmes, la nécessité de nous constituer, à notre tour, une force de dissuasion atomique. Et par conséquent, nous, nous continuerions, de toute manière, nos essais jusqu'à ce que ce but soit atteint, à moins, je me répète, que les autres ne se dépouillent de leurs moyens de destruction. Sous cet angle-là non plus, nous ne voyons pas pourquoi nous nous serions trouvés à Genève. Bien sûr, si un jour se produit l'occasion d'une réunion d'Etats qui veuillent vraiment organiser le désarmement - et une telle réunion, à notre avis, elle doit se composer des quatre puissances atomiques - si cette réunion peut se faire, la France y prendra part de tout son coeur. Jusque-là, elle ne voit pas la nécessité de s'associer à des instances dont le terme inévitable s'appelle la désillusion. Quelqu'un m'a demandé quelque chose au sujet des Etats africains, l'un, au sujet des Etats d'Afrique du Nord, l'autre au sujet des Etats africains en général. Je voudrais que vous vouliez bien répéter vos questions. Journaliste 9 Monsieur le président... Journaliste 8 [inaudible] aux entretiens avec l'Europe, comment concevez-vous les rapports de la France avec l'Afrique du Nord ? Charles de Gaulle Je vous remercie. Et l'autre question sur l'Afrique ? Journaliste 9 Qu'est-ce que vous pensez du voeu récemment exprimé par plusieurs chefs d'Etat africains de voir définir de nouveaux rapports avec la France et les Etats africains et malgache francophones ? Charles de Gaulle Bien. Je vais tâcher de répondre à ces deux questions qui se joignent, quoiqu'elles ne se confondent pas. Il y a, effectivement, la certitude que dans peu de semaines, l'Algérie apparaîtra comme un Etat indépendant. Et j'en sui sûr, en coopération organisée avec la France. Ce qui se produit en ce moment, et qui est, évidemment, lamentable - je parle des crimes - salissent cet aboutissement. Mais ça ne l'empêchera sûrement pas. Ceci dit, l'apparition de l'Algérie dans la situation d'un Etat indépendant, coopérant organiquement avec la France est, évidemment, un élément nouveau ultime dans le processus que vous savez et qui est tout près de son terme en ce qui concerne nos rapports avec les territoires qui étaient, naguère, nos colonies en Afrique. D'autre part, il y a des faits comme celui qu'on a cité, qui était le voyage du roi Hassan II à Paris, et dont je profite de la circonstance pour dire quel honneur, quel plaisir il nous a fait, car on le sait, j'ai beaucoup de considération, d'estime, de confiance à l'égard de ce jeune souverain à cause du courage, de la dignité qu'il montre dans la conduite des affaires du pays dont il est le roi, il y avait eu, je le rappelle, avant, une visite du président de la République tunisienne et j'avais pu croire que peut-être cela permettrait, de ce côté-là aussi, de nouer quelque chose de positif. Rien n'est, d'ailleurs, désespéré à cet égard, je me hâte de le dire. Enfin, tout cet ensemble fait que, sans nul doute, en ce qui concerne l'Afrique du Nord, quelque chose de nouveau apparaît. Du reste, dans quelques jours, vous le savez, va venir à Paris le président de la Mauritanie. Et nous aurons, avec lui, je le pense, des conversions utiles et précises. Enfin, plus loin, au-delà du Sahara où se trouve l'Afrique Noire, elle est déjà en plein essor dans ses Etats au point de vue de leur indépendance, de leur souveraineté et du commencement de leur développement. Tout cet ensemble est, en réalité, très varié. Ce serait une erreur que de le considérer comme une seule et même chose. En fait, il y a beaucoup de situations différentes, c'est très naturel, entre les Etats d'Afrique du Nord et les Etats Noirs, en Afrique du Nord entre les différents Etats qui s'y trouvent, en Afrique Noire entre les différents Etats qui y vivent. Et par conséquent, la France ne peut pas, en ce qui concerne ses rapports avec eux, adopter une politique trop simpliste. Et cependant, les idées qu'elle a sur les uns et sur les autres se ramènent aux mêmes principes. D'abord, elle souhaite ardemment qu'ils soient en paix. Ils en ont besoin pour leur développement et nous en avons besoin. Car tout ce qui leur arriverait de fâcheux ne manquerait pas d'avoir des conséquences pour nous. De même que ce qui leur arrive d'heureux nous fait du bien et nous fait plaisir. D'autre part, nous ne souhaitons pas seulement la paix. Nous souhaitons... pour eux, nous souhaitons qu'ils se développent. C'est indispensable pour eux-mêmes mais c'est indispensable au monde. Il faut que ces états-là, parvenus à leur souveraineté, apportent à leur tour quelque chose dans le bien commun de l'humanité. Et pour cela, il faut qu'ils se développent comme l'époque moderne les y invite et le leur permet. Enfin, il est bon qu'ils s'organisent, non pas, je ne crois pas que ce soit possible, en un tout, mais tout au moins en divers groupements qui aient leur intérêt commun, en particulier au point de vue économique car toute la vie du monde dépend, aujourd'hui, de cela, même la politique, je l'ai dit tout à l'heure. Que ces Etats soient en paix. Et nous sommes tout disposés dans la mesure de nos moyens, et du moment qu'ils le veuillent, à les y aider. Que ces Etats se développent. Nous nous sommes engagés à leur porter aide et assistance pour cela, en toute amitié, et nous y trouvons notre compte. Enfin, nous souhaitons qu'ils s'organisent, qu'ils s'organisent entre eux de façon que leurs rapports avec nous soient plus cohérents, si j'ose dire, plus rassemblés. Si les Etats dont vous parliez tout à l'heure jugent à propos de constituer, entre eux, quelque chose qui, en tant que tel, veuille entrer en rapport direct avec nous, ce n'est pas le général de Gaulle qui y fera la moindre objection. Mesdames, messieurs, il me reste à vous remercie de votre attention. Cependant, je veux répondre à monsieur [Alshuner] qui m'a demandé si je voulais mettre, à l'ordre du jour, l'élection du président de la république au suffrage universel. Ah, et bien, j'en ai dit un mot, l'année dernière. Je vous réponds que ce n'est pas pour le moment. Je dirais, à ce sujet, puisque j'ai le plaisir de vous voir et de vous parler, en pensant à ce qui est une idée assez répandue, c'est-à-dire à ce qui arrivera quand de Gaulle aura disparu, je vous dis ceci. Peut-être, ça vous expliquera dans quelle direction nous allons marcher à cet égard. Ce qui est à redouter, à mon sens, après l'événement dont je parle, ce n'est pas le vide politique. C'est plutôt le trop-plein. Mesdames, messieurs, je vous remercie de votre aimable attention. (Applaudissements) (Silence)": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8146872520446777,
+      "subregion": 0.5795872807502747
+    }
+  },
+  "Marcel Duval": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9308034181594849,
+      "subregion": 0.46404728293418884
+    }
+  },
+  "Vincent Manilève": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9362653493881226,
+      "subregion": 0.605185329914093
+    }
+  },
+  "Union des Gaullistes de France (UGF)": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6781641244888306,
+      "subregion": 0.7057556509971619
+    }
+  },
+  "Samy Mesli": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7002801299095154,
+      "subregion": 0.17822222411632538
+    }
+  },
+  "Alain Lancelot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9326609373092651,
+      "subregion": 0.6991387009620667
+    }
+  },
+  "Liliane Gallifet\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t - Paris Match": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9190834760665894,
+      "subregion": 0.7854843735694885
+    }
+  },
+  "Michel Psellos": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9009308815002441,
+      "subregion": 0.46355047821998596
+    }
+  },
+  "JEAN MAURIAC": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7222894430160522,
+      "subregion": 0.636062741279602
+    }
+  },
+  "Anne-Laure Lebrun": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999995231628418,
+      "gender": 0.9047385454177856,
+      "subregion": 0.5732698440551758
+    }
+  },
+  "Institut National de l’Audiovisuel – Ina.fr": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.5265535712242126,
+      "gender": 0.5981755256652832,
+      "subregion": 0.327019065618515
+    }
+  },
+  "Floréal Hernandez": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8060751557350159,
+      "subregion": 0.49848777055740356
+    }
+  },
+  "rp.pl": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.5782425403594971,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Romain Rosso": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9366753697395325,
+      "subregion": 0.7254638671875
+    }
+  },
+  "Bernard Blanc": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9555894732475281,
+      "subregion": 0.560530424118042
+    }
+  },
+  "Philippe Oulmont": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9634846448898315,
+      "subregion": 0.7260452508926392
+    }
+  },
+  "Clément Le Merlus": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9421634674072266,
+      "subregion": 0.7616562247276306
+    }
+  },
+  "HelpMeFind": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9926382303237915,
+      "gender": 0.7469041347503662,
+      "subregion": 0.48622575402259827
+    }
+  },
+  "le 02 janvier 2006 à 07h43 Temps de lecture 3min": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8373513221740723,
+      "subregion": 0.8865846991539001
+    }
+  },
+  "L'Histoire par l'image": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Africa",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.6780742406845093,
+      "subregion": 0.24049991369247437
+    }
+  },
+  "Wikimedia Foundation and contributors": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.9886476397514343,
+      "gender": 0.709326446056366,
+      "subregion": 0.5530760288238525
+    }
+  },
+  "Contributors to Wikimedia projects": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 0.9986044764518738,
+      "gender": 0.6905847191810608,
+      "subregion": 0.5396078824996948
+    }
+  },
+  "Roger McDermott": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9512472152709961,
+      "subregion": 0.49504584074020386
+    }
+  },
+  "ukrinform": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9798395074903965,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "ukrpravda_news": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999994060287918,
+      "gender": null,
+      "subregion": null
+    }
   }
 }

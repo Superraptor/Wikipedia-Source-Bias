@@ -5097,5 +5097,487 @@
       "political party"
     ],
     "mbfc_id": null
+  },
+  "archives-nationales.culture.gouv.fr": {
+    "wikidata_id": "Q3330111",
+    "wikidata_name": "Museum of National Archives",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Ministry of Culture of France"
+    ],
+    "types": [
+      "museum",
+      "national archives",
+      "national library"
+    ],
+    "mbfc_id": null
+  },
+  "france-libre.net": {
+    "wikidata_id": "Q3075629",
+    "wikidata_name": "Fondation de la France libre",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "museeliberation-leclerc-moulin.paris.fr": {
+    "wikidata_id": "Q85854194",
+    "wikidata_name": "Musée de la Libération de Paris – musée du Général-Leclerc – musée Jean-Moulin",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "military museum",
+      "museum"
+    ],
+    "mbfc_id": null
+  },
+  "orepeditions.com": {
+    "wikidata_id": "Q3579454",
+    "wikidata_name": "Q3579454",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "criminocorpus.cnrs.fr": {
+    "wikidata_id": "Q3002657",
+    "wikidata_name": "Criminocorpus",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "National Center for Scientific Research"
+    ],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "defnat.com": {
+    "wikidata_id": "Q3428709",
+    "wikidata_name": "Q3428709",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "degaulle.fondationlionelgroulx.org": {},
+  "francearchives.gouv.fr": {
+    "wikidata_id": "Q51045276",
+    "wikidata_name": "FranceArchives",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "French Interministerial Service of Archives"
+    ],
+    "types": [
+      "archives portal",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "herodote.net": {
+    "wikidata_id": "Q16641701",
+    "wikidata_name": "herodote.net",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online magazine"
+    ],
+    "mbfc_id": null
+  },
+  "quechoisir.org": {
+    "wikidata_id": "Q3550282",
+    "wikidata_name": "Que Choisir Ensemble",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Que Choisir Ensemble"
+    ],
+    "types": [
+      "consumer organization",
+      "nonprofit organization",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "ordredelaliberation.fr": {
+    "wikidata_id": "Q2994176",
+    "wikidata_name": "Q2994176",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "military museum",
+      "order",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "www2.culture.gouv.fr": {},
+  "rp.pl": {
+    "wikidata_id": "Q2164678",
+    "wikidata_name": "Rzeczpospolita",
+    "countries": [
+      "Poland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "liberal conservatism"
+    ],
+    "owners": [],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "sgg.gouv.bj": {
+    "wikidata_id": "Q133295517",
+    "wikidata_name": "Secrétariat général du Gouvernement",
+    "countries": [
+      "Benin"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "flickr.com": {
+    "wikidata_id": "Q103204",
+    "wikidata_name": "Flickr",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Wikimedia type of file source",
+      "image hosting service",
+      "image sharing",
+      "mobile app",
+      "online community",
+      "online video platform"
+    ],
+    "mbfc_id": null
+  },
+  "archives.assemblee-nationale.fr": {
+    "wikidata_id": "Q2901367",
+    "wikidata_name": "Bibliothèque de l'Assemblée Nationale",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "parliamentary archives",
+      "research library"
+    ],
+    "mbfc_id": null
+  },
+  "histoire-image.org": {
+    "wikidata_id": "Q26263213",
+    "wikidata_name": "Histoire par l’image",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "digital journal"
+    ],
+    "mbfc_id": null
+  },
+  "nobelprize.org": {
+    "wikidata_id": "Q114358385",
+    "wikidata_name": "2022 Nobel Prizes",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Nobel Prize",
+      "Wikimedia list article",
+      "award",
+      "award ceremony",
+      "chemistry award",
+      "group of awards",
+      "group of humans",
+      "physics award",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "commons.wikimedia.org": {
+    "wikidata_id": "Q565",
+    "wikidata_name": "Wikimedia Commons",
+    "countries": [
+      "internationality"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "Wikimedia content project",
+      "Wikimedia multilingual project",
+      "archives",
+      "photo library",
+      "search engine",
+      "user-generated content platform",
+      "wiki with script conversion"
+    ],
+    "mbfc_id": null
+  },
+  "creativecommons.org": {
+    "wikidata_id": "Q284742",
+    "wikidata_name": "Creative Commons license",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "author",
+      "nonprofit organization",
+      "publishing house",
+      "type of license"
+    ],
+    "mbfc_id": null
+  },
+  "foundation.wikimedia.org": {
+    "wikidata_id": "Q57077840",
+    "wikidata_name": "Wikimedia Foundation Governance Wiki",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "Wikimedia multilingual project",
+      "Wikimedia special project"
+    ],
+    "mbfc_id": null
+  },
+  "wikimediafoundation.org": {
+    "wikidata_id": "Q180",
+    "wikidata_name": "Wikimedia Foundation",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "charitable organization",
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "mediawiki.org": {
+    "wikidata_id": "Q15633578",
+    "wikidata_name": "MediaWiki.org",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "MediaWiki instance",
+      "MediaWiki wiki",
+      "Wikimedia multilingual project",
+      "Wikimedia special project",
+      "free software",
+      "wiki software",
+      "wiki with script conversion"
+    ],
+    "mbfc_id": null
+  },
+  "wikidata.org": {
+    "wikidata_id": "Q2013",
+    "wikidata_name": "Wikidata",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "Wikimedia content project",
+      "knowledge base",
+      "knowledge graph",
+      "online database"
+    ],
+    "mbfc_id": null
+  },
+  "wikimedia.org": {
+    "wikidata_id": "Q28479672",
+    "wikidata_name": "wikimedia.org",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "social movement",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "academia.edu": {
+    "wikidata_id": "Q2777905",
+    "wikidata_name": "Academia.edu",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "academic publisher",
+      "document repository",
+      "social networking service",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "un.org": {
+    "wikidata_id": "Q1065",
+    "wikidata_name": "United Nations",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "internationalism"
+    ],
+    "owners": [],
+    "types": [
+      "intergovernmental organization",
+      "international organization",
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "segodnya.ua": {
+    "wikidata_id": "Q1063254",
+    "wikidata_name": "Segodnya",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "ukrinform.ua": {
+    "wikidata_id": "Q987030",
+    "wikidata_name": "Ukrinform",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Cabinet of Ministers of Ukraine"
+    ],
+    "types": [
+      "government agency",
+      "news agency",
+      "online newspaper"
+    ],
+    "mbfc_id": "ukrinform-bias"
+  },
+  "books.google.co.uk": {
+    "wikidata_id": "Q139679524",
+    "wikidata_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+    "countries": [
+      "Kingdom of the Netherlands"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "labor union"
+    ],
+    "mbfc_id": null
+  },
+  "pravda.com.ua": {
+    "wikidata_id": "Q904463",
+    "wikidata_name": "Ukrainska Pravda",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Dragon Capital",
+      "Olena Prytula"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": "ukrayinska-pravda-the-ukrainian-truth"
+  },
+  "news.yahoo.com": {
+    "wikidata_id": "Q3044717",
+    "wikidata_name": "Yahoo News",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Yahoo"
+    ],
+    "types": [
+      "news aggregation website",
+      "website"
+    ],
+    "mbfc_id": "yahoo-news"
   }
 }

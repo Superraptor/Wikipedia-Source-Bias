@@ -113,5 +113,36 @@
     "journal": "Cités",
     "published_date": "2020-3-6",
     "subjects": []
+  },
+  "10.4000/eac.1107": {
+    "title": "Jérusalem, 1939-1945 : une ville en paix ?",
+    "authors": [
+      "Amos Reichman",
+      "Vincent Lemire"
+    ],
+    "publisher": "OpenEdition",
+    "journal": "Études arméniennes contemporaines",
+    "published_date": "2017",
+    "subjects": []
+  },
+  "10.4000/crcv.11815": {
+    "title": "Signes du pouvoir militaire : de l’épée de connétable au bâton de maréchal",
+    "authors": [
+      "François Lagrange"
+    ],
+    "publisher": "OpenEdition",
+    "journal": "Bulletin du Centre de recherche du château de Versailles",
+    "published_date": "2007",
+    "subjects": []
+  },
+  "10.2307/3769774": {
+    "title": "\"Radio-Algerie,\" un acteur meconnu de mai 1958",
+    "authors": [
+      "Marc Martin"
+    ],
+    "publisher": "JSTOR",
+    "journal": "Vingtième Siècle. Revue d'histoire",
+    "published_date": "1988-7",
+    "subjects": []
   }
 }

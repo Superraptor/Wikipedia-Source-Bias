@@ -1059,5 +1059,124 @@
   "cheminsdememoire.gouv.fr": {},
   "books.openedition.org": {},
   "atf40.fr": {},
-  "solidariteetprogres.org": {}
+  "solidariteetprogres.org": {},
+  "histoquiz-contemporain.com": {},
+  "archives-nationales.culture.gouv.fr": {},
+  "appeldu18juin70eme.org": {},
+  "france-libre.net": {},
+  "de-gaulle-edu.net": {},
+  "lhistoireenrafale.lunion.fr": {},
+  "museeliberation-leclerc-moulin.paris.fr": {},
+  "memoresist.org": {},
+  "orepeditions.com": {},
+  "memoire.ciclic.fr": {},
+  "enfant-du-soleil.com": {},
+  "criminocorpus.cnrs.fr": {},
+  "tandfonline.com": {
+    "wikidata_label": "Taylor & Francis Online",
+    "wikidata_id": "Q23014832",
+    "wikidata_description": "digital journal platform"
+  },
+  "fr.geneawiki.com": {},
+  "autocult.fr": {},
+  "fresques.ina.fr": {},
+  "defnat.com": {},
+  "union-gaulliste-de-france.org": {},
+  "chroniqueshistoire.fr": {},
+  "degaulle.fondationlionelgroulx.org": {},
+  "francearchives.gouv.fr": {
+    "wikidata_label": "FranceArchives",
+    "wikidata_id": "Q51045276",
+    "wikidata_description": "portal to French national archives"
+  },
+  "union-nationale.fr": {},
+  "herodote.net": {
+    "wikidata_label": "herodote.net",
+    "wikidata_id": "Q16641701",
+    "wikidata_description": "website"
+  },
+  "quechoisir.org": {},
+  "histoire-en-questions.fr": {},
+  "ordredelaliberation.fr": {},
+  "www2.culture.gouv.fr": {},
+  "rp.pl": {
+    "wikidata_label": "Rzeczpospolita",
+    "wikidata_id": "Q2164678",
+    "wikidata_description": "Polish newspaper"
+  },
+  "oberstnünlist.ch": {},
+  "sgg.gouv.bj": {},
+  "flickr.com": {
+    "wikidata_label": "Flickr",
+    "wikidata_id": "Q103204",
+    "wikidata_description": "American image and video hosting website"
+  },
+  "archives.assemblee-nationale.fr": {},
+  "helpmefind.com": {},
+  "histoire-image.org": {},
+  "nobelprize.org": {
+    "wikidata_label": "nobelprize.org",
+    "wikidata_id": "Q23684016",
+    "wikidata_description": "website"
+  },
+  "commons.wikimedia.org": {
+    "wikidata_label": "Wikimedia Commons",
+    "wikidata_id": "Q565",
+    "wikidata_description": "online repository of free-use image, audio, and other media files"
+  },
+  "creativecommons.org": {
+    "wikidata_label": "Creative Commons",
+    "wikidata_id": "Q43449",
+    "wikidata_description": "non-profit-organization creating copyright licenses for the public release of creative works"
+  },
+  "developer.wikimedia.org": {},
+  "foundation.wikimedia.org": {
+    "wikidata_label": "Wikimedia Foundation Governance Wiki",
+    "wikidata_id": "Q57077840",
+    "wikidata_description": "Wikimedia special project"
+  },
+  "wikimediafoundation.org": {
+    "wikidata_label": "Wikimedia Foundation website",
+    "wikidata_id": "Q32134339",
+    "wikidata_description": "the Wikimedia Foundation official website (wikimediafoundation.org)"
+  },
+  "mediawiki.org": {
+    "wikidata_label": "MediaWiki.org",
+    "wikidata_id": "Q15633578",
+    "wikidata_description": "site for the documentation of the MediaWiki software"
+  },
+  "wikidata.org": {
+    "wikidata_label": "Wikidata",
+    "wikidata_id": "Q2013",
+    "wikidata_description": "free multilingual online knowledge graph"
+  },
+  "wikimedia.org": {
+    "wikidata_label": "wikimedia.org",
+    "wikidata_id": "Q28479672",
+    "wikidata_description": "website, domain for non language dependent Wikimedia foundation projects"
+  },
+  "books.google.co.uk": {},
+  "academia.edu": {
+    "wikidata_label": "Academia.edu",
+    "wikidata_id": "Q2777905",
+    "wikidata_description": "open repository of academic articles"
+  },
+  "un.org": {},
+  "segodnya.ua": {},
+  "ukrinform.ua": {
+    "wikidata_label": "Ukrinform",
+    "wikidata_id": "Q987030",
+    "wikidata_description": "Ukrainian state news agency"
+  },
+  "pravda.com.ua": {
+    "wikidata_label": "Ukrainska Pravda",
+    "wikidata_id": "Q904463",
+    "wikidata_description": "Ukrainian online newspaper"
+  },
+  "news.yahoo.com": {
+    "wikidata_label": "Yahoo News",
+    "wikidata_id": "Q3044717",
+    "wikidata_description": "news website from Yahoo!"
+  },
+  "unian.info": {}
 }

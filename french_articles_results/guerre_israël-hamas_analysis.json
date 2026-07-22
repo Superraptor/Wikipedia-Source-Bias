@@ -1,0 +1,1123 @@
+{
+  "page_title": "Guerre_Isra%C3%ABl-Hamas",
+  "page_url": "https://fr.wikipedia.org/wiki/Guerre_Isra%C3%ABl-Hamas",
+  "page_metadata": {
+    "title": "Guerre de Gaza — Wikipédia",
+    "author": ""
+  },
+  "references": [],
+  "citation_count": 0,
+  "source_count": 14,
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Gaza_war",
+      "domain": "commons.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "internationality",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Commons",
+        "wikidata_id": "Q565",
+        "wikidata_description": "online repository of free-use image, audio, and other media files"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q565",
+        "wikidata_name": "Wikimedia Commons",
+        "countries": [
+          "internationality"
+        ],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia content project",
+          "Wikimedia multilingual project",
+          "archives",
+          "photo library",
+          "search engine",
+          "user-generated content platform",
+          "wiki with script conversion"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 39.49,
+        "flesch_kincaid_grade": 10.48,
+        "word_count": 143,
+        "sentence_count": 13,
+        "syllable_count": 264,
+        "description": "Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr",
+      "domain": "creativecommons.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "United States",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Creative Commons",
+        "wikidata_id": "Q43449",
+        "wikidata_description": "non-profit-organization creating copyright licenses for the public release of creative works"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q284742",
+        "wikidata_name": "Creative Commons license",
+        "countries": [
+          "United States"
+        ],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [],
+        "types": [
+          "author",
+          "nonprofit organization",
+          "publishing house",
+          "type of license"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 41.77,
+        "flesch_kincaid_grade": 12.22,
+        "word_count": 443,
+        "sentence_count": 23,
+        "syllable_count": 762,
+        "description": "Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://developer.wikimedia.org",
+      "domain": "developer.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {},
+      "citation_text": "",
+      "wikidata_publisher": {},
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 21.85,
+        "flesch_kincaid_grade": 14.26,
+        "word_count": 114,
+        "sentence_count": 7,
+        "syllable_count": 227,
+        "description": "Very Difficult",
+        "extracted_author": "Wikimedia Foundation and contributors"
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [
+        {
+          "name": "Wikimedia Foundation and contributors",
+          "is_human": true,
+          "author_type": "human",
+          "gender": "female",
+          "subregion": "Northern Europe",
+          "confidence": {
+            "human": 0.9886476397514343,
+            "gender": 0.709326446056366,
+            "subregion": 0.5530760288238525
+          },
+          "gender_probability": {
+            "male": 0.03,
+            "female": 0.71,
+            "unknown": 0.26
+          },
+          "nationality_probability": {
+            "Northern Europe": 0.55,
+            "Unknown": 0.45
+          },
+          "notes": "Author background estimated using nametrace package (region: Northern Europe).",
+          "wikidata_author": {}
+        }
+      ],
+      "author_profile": {
+        "name": "Wikimedia Foundation and contributors",
+        "is_human": true,
+        "author_type": "human",
+        "gender": "female",
+        "subregion": "Northern Europe",
+        "confidence": {
+          "human": 0.9886476397514343,
+          "gender": 0.709326446056366,
+          "subregion": 0.5530760288238525
+        },
+        "gender_probability": {
+          "male": 0.03,
+          "female": 0.71,
+          "unknown": 0.26
+        },
+        "nationality_probability": {
+          "Northern Europe": 0.55,
+          "Unknown": 0.45
+        },
+        "notes": "Author background estimated using nametrace package (region: Northern Europe).",
+        "wikidata_author": {}
+      },
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/fr",
+      "domain": "foundation.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation Governance Wiki",
+        "wikidata_id": "Q57077840",
+        "wikidata_description": "Wikimedia special project"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q57077840",
+        "wikidata_name": "Wikimedia Foundation Governance Wiki",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia multilingual project",
+          "Wikimedia special project"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {
+        "mbfc_url": "https://mediabiasfactcheck.com/foundation/",
+        "bias_rating": "RIGHT (6.0)",
+        "factual_reporting": "MOSTLY FACTUAL (3.6)",
+        "credibility_rating": "MEDIUM CREDIBILITY",
+        "country": "USA",
+        "country_freedom_rating": "MOSTLY FREE",
+        "media_type": "Organization/Foundation",
+        "traffic_popularity": "Minimal Traffic"
+      },
+      "readability": {
+        "flesch_reading_ease": 32.8,
+        "flesch_kincaid_grade": 15.93,
+        "word_count": 8141,
+        "sentence_count": 279,
+        "syllable_count": 13897,
+        "description": "Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information",
+      "domain": "foundation.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation Governance Wiki",
+        "wikidata_id": "Q57077840",
+        "wikidata_description": "Wikimedia special project"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q57077840",
+        "wikidata_name": "Wikimedia Foundation Governance Wiki",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia multilingual project",
+          "Wikimedia special project"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {
+        "mbfc_url": "https://mediabiasfactcheck.com/foundation/",
+        "bias_rating": "RIGHT (6.0)",
+        "factual_reporting": "MOSTLY FACTUAL (3.6)",
+        "credibility_rating": "MEDIUM CREDIBILITY",
+        "country": "USA",
+        "country_freedom_rating": "MOSTLY FREE",
+        "media_type": "Organization/Foundation",
+        "traffic_popularity": "Minimal Traffic"
+      },
+      "readability": {
+        "flesch_reading_ease": 27.29,
+        "flesch_kincaid_grade": 13.65,
+        "word_count": 1031,
+        "sentence_count": 61,
+        "syllable_count": 1979,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement",
+      "domain": "foundation.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation Governance Wiki",
+        "wikidata_id": "Q57077840",
+        "wikidata_description": "Wikimedia special project"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q57077840",
+        "wikidata_name": "Wikimedia Foundation Governance Wiki",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia multilingual project",
+          "Wikimedia special project"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {
+        "mbfc_url": "https://mediabiasfactcheck.com/foundation/",
+        "bias_rating": "RIGHT (6.0)",
+        "factual_reporting": "MOSTLY FACTUAL (3.6)",
+        "credibility_rating": "MEDIUM CREDIBILITY",
+        "country": "USA",
+        "country_freedom_rating": "MOSTLY FREE",
+        "media_type": "Organization/Foundation",
+        "traffic_popularity": "Minimal Traffic"
+      },
+      "readability": {
+        "flesch_reading_ease": 32.48,
+        "flesch_kincaid_grade": 13.69,
+        "word_count": 2037,
+        "sentence_count": 102,
+        "syllable_count": 3710,
+        "description": "Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/fr",
+      "domain": "foundation.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation Governance Wiki",
+        "wikidata_id": "Q57077840",
+        "wikidata_description": "Wikimedia special project"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q57077840",
+        "wikidata_name": "Wikimedia Foundation Governance Wiki",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia multilingual project",
+          "Wikimedia special project"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {
+        "mbfc_url": "https://mediabiasfactcheck.com/foundation/",
+        "bias_rating": "RIGHT (6.0)",
+        "factual_reporting": "MOSTLY FACTUAL (3.6)",
+        "credibility_rating": "MEDIUM CREDIBILITY",
+        "country": "USA",
+        "country_freedom_rating": "MOSTLY FREE",
+        "media_type": "Organization/Foundation",
+        "traffic_popularity": "Minimal Traffic"
+      },
+      "readability": {
+        "flesch_reading_ease": 32.51,
+        "flesch_kincaid_grade": 14.46,
+        "word_count": 8179,
+        "sentence_count": 354,
+        "syllable_count": 14586,
+        "description": "Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct",
+      "domain": "foundation.wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation Governance Wiki",
+        "wikidata_id": "Q57077840",
+        "wikidata_description": "Wikimedia special project"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q57077840",
+        "wikidata_name": "Wikimedia Foundation Governance Wiki",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia multilingual project",
+          "Wikimedia special project"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {
+        "mbfc_url": "https://mediabiasfactcheck.com/foundation/",
+        "bias_rating": "RIGHT (6.0)",
+        "factual_reporting": "MOSTLY FACTUAL (3.6)",
+        "credibility_rating": "MEDIUM CREDIBILITY",
+        "country": "USA",
+        "country_freedom_rating": "MOSTLY FREE",
+        "media_type": "Organization/Foundation",
+        "traffic_popularity": "Minimal Traffic"
+      },
+      "readability": {
+        "flesch_reading_ease": 18.41,
+        "flesch_kincaid_grade": 16.59,
+        "word_count": 1853,
+        "sentence_count": 78,
+        "syllable_count": 3599,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://wikimediafoundation.org/",
+      "domain": "wikimediafoundation.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "United States",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikimedia Foundation website",
+        "wikidata_id": "Q32134339",
+        "wikidata_description": "the Wikimedia Foundation official website (wikimediafoundation.org)"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q180",
+        "wikidata_name": "Wikimedia Foundation",
+        "countries": [
+          "United States"
+        ],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [],
+        "types": [
+          "charitable organization",
+          "nonprofit organization"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 27.87,
+        "flesch_kincaid_grade": 13.42,
+        "word_count": 1272,
+        "sentence_count": 78,
+        "syllable_count": 2442,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://www.mediawiki.org/",
+      "domain": "mediawiki.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "MediaWiki.org",
+        "wikidata_id": "Q15633578",
+        "wikidata_description": "site for the documentation of the MediaWiki software"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q15633578",
+        "wikidata_name": "MediaWiki.org",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "MediaWiki instance",
+          "MediaWiki wiki",
+          "Wikimedia multilingual project",
+          "Wikimedia special project",
+          "free software",
+          "wiki software",
+          "wiki with script conversion"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 25.05,
+        "flesch_kincaid_grade": 12.35,
+        "word_count": 291,
+        "sentence_count": 28,
+        "syllable_count": 589,
+        "description": "Very Difficult",
+        "extracted_author": "Contributors to Wikimedia projects"
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [
+        {
+          "name": "Contributors to Wikimedia projects",
+          "is_human": true,
+          "author_type": "human",
+          "gender": "male",
+          "subregion": "Eastern Europe",
+          "confidence": {
+            "human": 0.9986044764518738,
+            "gender": 0.6905847191810608,
+            "subregion": 0.5396078824996948
+          },
+          "gender_probability": {
+            "male": 0.69,
+            "female": 0.03,
+            "unknown": 0.28
+          },
+          "nationality_probability": {
+            "Eastern Europe": 0.54,
+            "Unknown": 0.46
+          },
+          "notes": "Author background estimated using nametrace package (region: Eastern Europe).",
+          "wikidata_author": {}
+        }
+      ],
+      "author_profile": {
+        "name": "Contributors to Wikimedia projects",
+        "is_human": true,
+        "author_type": "human",
+        "gender": "male",
+        "subregion": "Eastern Europe",
+        "confidence": {
+          "human": 0.9986044764518738,
+          "gender": 0.6905847191810608,
+          "subregion": 0.5396078824996948
+        },
+        "gender_probability": {
+          "male": 0.69,
+          "female": 0.03,
+          "unknown": 0.28
+        },
+        "nationality_probability": {
+          "Eastern Europe": 0.54,
+          "Unknown": 0.46
+        },
+        "notes": "Author background estimated using nametrace package (region: Eastern Europe).",
+        "wikidata_author": {}
+      },
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid",
+      "domain": "mediawiki.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "MediaWiki.org",
+        "wikidata_id": "Q15633578",
+        "wikidata_description": "site for the documentation of the MediaWiki software"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q15633578",
+        "wikidata_name": "MediaWiki.org",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "MediaWiki instance",
+          "MediaWiki wiki",
+          "Wikimedia multilingual project",
+          "Wikimedia special project",
+          "free software",
+          "wiki software",
+          "wiki with script conversion"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 36.41,
+        "flesch_kincaid_grade": 12.35,
+        "word_count": 2382,
+        "sentence_count": 142,
+        "syllable_count": 4319,
+        "description": "Difficult",
+        "extracted_author": "Contributors to Wikimedia projects"
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [
+        {
+          "name": "Contributors to Wikimedia projects",
+          "is_human": true,
+          "author_type": "human",
+          "gender": "male",
+          "subregion": "Eastern Europe",
+          "confidence": {
+            "human": 0.9986044764518738,
+            "gender": 0.6905847191810608,
+            "subregion": 0.5396078824996948
+          },
+          "gender_probability": {
+            "male": 0.69,
+            "female": 0.03,
+            "unknown": 0.28
+          },
+          "nationality_probability": {
+            "Eastern Europe": 0.54,
+            "Unknown": 0.46
+          },
+          "notes": "Author background estimated using nametrace package (region: Eastern Europe).",
+          "wikidata_author": {}
+        }
+      ],
+      "author_profile": {
+        "name": "Contributors to Wikimedia projects",
+        "is_human": true,
+        "author_type": "human",
+        "gender": "male",
+        "subregion": "Eastern Europe",
+        "confidence": {
+          "human": 0.9986044764518738,
+          "gender": 0.6905847191810608,
+          "subregion": 0.5396078824996948
+        },
+        "gender_probability": {
+          "male": 0.69,
+          "female": 0.03,
+          "unknown": 0.28
+        },
+        "nationality_probability": {
+          "Eastern Europe": 0.54,
+          "Unknown": 0.46
+        },
+        "notes": "Author background estimated using nametrace package (region: Eastern Europe).",
+        "wikidata_author": {}
+      },
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Special:EntityPage/Q2335900",
+      "domain": "wikidata.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikidata",
+        "wikidata_id": "Q2013",
+        "wikidata_description": "free multilingual online knowledge graph"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q2013",
+        "wikidata_name": "Wikidata",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia content project",
+          "knowledge base",
+          "knowledge graph",
+          "online database"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": -18.31,
+        "flesch_kincaid_grade": 23.41,
+        "word_count": 153,
+        "sentence_count": 5,
+        "syllable_count": 351,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Special:EntityPage/Q2335900#sitelinks-wikipedia",
+      "domain": "wikidata.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "Wikidata",
+        "wikidata_id": "Q2013",
+        "wikidata_description": "free multilingual online knowledge graph"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q2013",
+        "wikidata_name": "Wikidata",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [
+          "Wikimedia Foundation"
+        ],
+        "types": [
+          "Wikimedia content project",
+          "knowledge base",
+          "knowledge graph",
+          "online database"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": -18.31,
+        "flesch_kincaid_grade": 23.41,
+        "word_count": 153,
+        "sentence_count": 5,
+        "syllable_count": 351,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    },
+    {
+      "url": "https://www.wikimedia.org/",
+      "domain": "wikimedia.org",
+      "source_type": "web_source",
+      "language": "English",
+      "geography": {
+        "country": "Unknown",
+        "region": "Unknown"
+      },
+      "political_leaning": "unknown",
+      "reliability": "medium",
+      "wikidata": {
+        "wikidata_label": "wikimedia.org",
+        "wikidata_id": "Q28479672",
+        "wikidata_description": "website, domain for non language dependent Wikimedia foundation projects"
+      },
+      "citation_text": "",
+      "wikidata_publisher": {
+        "wikidata_id": "Q28479672",
+        "wikidata_name": "wikimedia.org",
+        "countries": [],
+        "political_leanings": [],
+        "political_ideologies": [],
+        "owners": [],
+        "types": [
+          "social movement",
+          "website"
+        ],
+        "mbfc_id": null
+      },
+      "mbfc": {},
+      "readability": {
+        "flesch_reading_ease": 8.35,
+        "flesch_kincaid_grade": 16.91,
+        "word_count": 194,
+        "sentence_count": 10,
+        "syllable_count": 410,
+        "description": "Very Difficult",
+        "extracted_author": null
+      },
+      "google_books_metadata": {},
+      "oclc_metadata": {},
+      "doi_metadata": {},
+      "wikidata_book": {},
+      "author_profiles": [],
+      "author_profile": null,
+      "language_bias": {
+        "loaded_words_found": [],
+        "subjectivity_score": 0.0,
+        "is_opinion": false,
+        "sentiment": "neutral",
+        "sensationalism_score": 0.0,
+        "detected_language": "English",
+        "sentiment_source": "Lexical Heuristics"
+      }
+    }
+  ],
+  "aggregated_bias": {
+    "source_count": 14,
+    "geography_distribution": {
+      "internationality": {
+        "count": 1,
+        "percentage": 7.1
+      },
+      "United States": {
+        "count": 2,
+        "percentage": 14.3
+      },
+      "Unknown": {
+        "count": 11,
+        "percentage": 78.6
+      }
+    },
+    "region_distribution": {
+      "Unknown": {
+        "count": 14,
+        "percentage": 100.0
+      }
+    },
+    "political_leaning_distribution": {
+      "unknown": {
+        "count": 14,
+        "percentage": 100.0
+      }
+    },
+    "reliability_distribution": {
+      "medium": {
+        "count": 14,
+        "percentage": 100.0
+      }
+    },
+    "language_distribution": {
+      "English": {
+        "count": 14,
+        "percentage": 100.0
+      }
+    },
+    "source_type_distribution": {
+      "web_source": {
+        "count": 14,
+        "percentage": 100.0
+      }
+    },
+    "author_gender_distribution_estimate": {
+      "male": 47.0,
+      "female": 25.7,
+      "unknown": 27.3
+    },
+    "author_type_distribution": {
+      "human": {
+        "count": 3,
+        "percentage": 100.0
+      },
+      "corporate/organizational": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "human_author_gender_distribution": {
+      "male": {
+        "count": 2,
+        "percentage": 66.7
+      },
+      "female": {
+        "count": 1,
+        "percentage": 33.3
+      },
+      "unknown": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "human_author_subregion_distribution": {
+      "Northern Europe": {
+        "count": 1,
+        "percentage": 33.3
+      },
+      "Eastern Europe": {
+        "count": 2,
+        "percentage": 66.7
+      }
+    },
+    "human_author_nationality_distribution": {
+      "Northern Europe": {
+        "count": 1,
+        "percentage": 33.3
+      },
+      "Eastern Europe": {
+        "count": 2,
+        "percentage": 66.7
+      }
+    },
+    "human_author_citizenship_distribution": {},
+    "human_author_occupation_distribution": {},
+    "human_author_employer_distribution": {},
+    "human_author_employer_country_distribution": {},
+    "language_bias_metrics": {
+      "average_subjectivity_score": 0.0,
+      "average_sensationalism_score": 0.0,
+      "opinion_percentage": 0.0
+    },
+    "readability_metrics": {
+      "average_flesch_reading_ease": 21.98,
+      "readability_count": 14
+    },
+    "book_count": 0
+  },
+  "summary": "Extracted 14 source links. Analyzed geographic distribution, political leanings, reliability tiers, author profiles, and linguistic bias markers.",
+  "is_partial": false
+}
