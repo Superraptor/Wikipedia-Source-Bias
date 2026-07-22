@@ -14,8 +14,14 @@
         <p class="methodology-footer__label">Projet</p>
         <p class="methodology-footer__text">
           Wikimania 2026 — Team 05E <em>Deciphering Biases</em>.
-          Outil open-source déployé sur Toolforge.
+          Outil open-source (MIT) déployé sur Toolforge.
         </p>
+        <ul class="methodology-footer__links">
+          <li><a href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">Méthodologie &amp; équipe</a></li>
+          <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">Code source (GitHub)</a></li>
+          <li><a href="https://wikibias-analyzer.toolforge.org/" rel="noopener">wikibias-analyzer.toolforge.org</a></li>
+          <li><a href="/status">File d'analyse</a></li>
+        </ul>
       </div>
     </div>
   </footer>
@@ -27,6 +33,18 @@
   background: linear-gradient(180deg, transparent, var(--wsi-surface-raised));
   padding: var(--space-6) 0;
   margin-top: auto;
+}
+.methodology-footer__links {
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  font-size: 0.85rem;
+}
+.methodology-footer__links a {
+  color: var(--wsi-blue);
 }
 .methodology-footer__inner {
   display: grid;

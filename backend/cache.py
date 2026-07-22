@@ -169,6 +169,27 @@ class Cache:
         self._commit()
         return url if claimed else None
 
+    def release(self, url):
+        """Hand a claimed row back to the queue.
+
+        Used on graceful shutdown so a redeploy does not strand a row in
+        'running' until the stale sweep reclaims it. Guarded on the current
+        status so it can never resurrect a finished or failed analysis.
+        """
+        h = self._hash(url)
+        cur = self.conn.cursor()
+        try:
+            cur.execute(
+                "UPDATE analysis_cache SET status = 'pending' "
+                "WHERE url_hash = %s AND status = 'running'",
+                (h,),
+            )
+            released = cur.rowcount
+        finally:
+            cur.close()
+        self._commit()
+        return released
+
     def mark_error(self, url, message):
         h = self._hash(url)
         cur = self.conn.cursor()

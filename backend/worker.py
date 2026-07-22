@@ -18,15 +18,25 @@ from cache import Cache
 from runner import run_analysis, AnalysisUnavailable
 
 IDLE_SLEEP_SECONDS = 10
-STALE_SWEEP_EVERY = 60  # loop iterations between stale-row sweeps
+STALE_SWEEP_EVERY = 6  # loop iterations between stale-row sweeps (~1 min)
+
+# How long a row may sit in 'running' before another worker may reclaim it.
+# Kubernetes kills a pod ~30s after SIGTERM, so an analysis interrupted by a
+# redeploy leaves its row claimed with nobody working on it. This used to be
+# 30 minutes, which is how a redeploy left articles apparently "running" for
+# half an hour.
+STALE_MINUTES = 10
 
 _running = True
+# The row this process currently holds, so a graceful shutdown can release it
+# instead of leaving it claimed.
+_current_url = None
 
 
 def _stop(signum, _frame):
     global _running
     _running = False
-    print(f"Received signal {signum}, finishing current item then exiting.", flush=True)
+    print(f"Received signal {signum}, releasing current item and exiting.", flush=True)
 
 
 def log(msg):
@@ -64,7 +74,7 @@ def main():
     ticks = 0
     while _running:
         if ticks % STALE_SWEEP_EVERY == 0:
-            recovered = cache.requeue_stale_running()
+            recovered = cache.requeue_stale_running(STALE_MINUTES)
             if recovered:
                 log(f"Requeued {recovered} stale running row(s)")
         ticks += 1
@@ -81,11 +91,16 @@ def main():
             continue
 
         log(f"Analyzing {url}")
+        globals()["_current_url"] = url
         started = time.monotonic()
         try:
             result = run_analysis(url)
         except Exception as e:
             log(f"  FAILED after {time.monotonic() - started:.1f}s: {e}")
+            # Cleared here too: this branch `continue`s past the finally
+            # below, and a stale value would make the shutdown handler
+            # re-queue a row we just marked failed.
+            globals()["_current_url"] = None
             try:
                 cache.mark_error(url, e)
             except Exception as inner:
@@ -100,6 +115,17 @@ def main():
             )
         except Exception as e:
             log(f"  analysis succeeded but caching failed: {e}")
+        finally:
+            globals()["_current_url"] = None
+
+    # Hand back anything still claimed, so a redeploy does not strand a row in
+    # 'running' until the stale sweep notices.
+    if _current_url:
+        try:
+            cache.release(_current_url)
+            log(f"Released {_current_url} back to the queue.")
+        except Exception as e:
+            log(f"Could not release {_current_url}: {e}")
 
     log("Worker stopped.")
 

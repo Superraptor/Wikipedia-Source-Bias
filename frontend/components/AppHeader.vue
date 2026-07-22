@@ -6,12 +6,12 @@
           <CdxIcon :icon="cdxIconLogoWikimedia" />
         </span>
         <span class="app-header__wordmark">
-          <span class="app-header__title">Wiki Source Bias Analyzer</span>
+          <span class="app-header__title">WikiBias Analyzer</span>
           <span class="app-header__subtitle">Décrypter les biais citationnels des articles Wikipedia</span>
         </span>
       </a>
       <nav class="app-header__nav" aria-label="Principal">
-        <a class="app-header__navlink" href="https://www.mediawiki.org/wiki/Wikimedia_Codex" target="_blank" rel="noopener">
+        <a class="app-header__navlink" href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">
           Méthodologie
         </a>
         <a class="app-header__navlink" href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">

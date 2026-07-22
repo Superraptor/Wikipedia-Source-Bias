@@ -128,3 +128,28 @@ def test_set_does_not_use_replace_into():
     cache = make_cache()
     cache.set("https://fr.wikipedia.org/wiki/X", {"page_title": "X"})
     assert not any(s.strip().upper().startswith("REPLACE") for s in cache.conn.statements)
+
+
+def test_release_only_affects_running_rows():
+    """Must never resurrect a finished or failed analysis."""
+    seen = {}
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        def execute(self, sql, args=()):
+            seen["sql"] = " ".join(sql.split())
+            seen["args"] = args
+            self.rowcount = 1
+
+        def close(self):
+            pass
+
+    Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
+    assert "SET status = 'pending'" in seen["sql"]
+    assert "status = 'running'" in seen["sql"]

@@ -1,6 +1,24 @@
-# Wikipedia Sources & Bias Analyzer
+# WikiBias Analyzer
 
-A comprehensive Python auditing toolkit to extract, analyze, and profile the bibliography and reference list of any Wikipedia article. The package resolves source-level metadata, political leanings, author demographics, readability scores, and geographic origins to produce detailed bias analysis reports and country-level geographic maps.
+**Mapping the geographic origins of Wikipedia sources to reveal citation bias.**
+
+A Python auditing toolkit — plus a web front end — that extracts and profiles the reference list of any Wikipedia article. It resolves source-level metadata, political leanings, author demographics, readability scores, and geographic origins to produce bias analysis reports and country-level maps.
+
+Are French Wikipedia articles predominantly citing French media? Do English articles rely mostly on US and UK publications? Are western publications dominating the platform?
+
+| | |
+|---|---|
+| **Live tool** | <https://wikibias-analyzer.toolforge.org/> |
+| **Analysis queue** | <https://wikibias-analyzer.toolforge.org/status> |
+| **Team & methodology** | [Wikimania 2026 — Team 05E Europe](https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe) |
+| **Source** | <https://github.com/Superraptor/Wikipedia-Source-Bias> |
+| **Licence** | MIT (see `LICENSE`, contributors in `AUTHORS.md`) |
+
+The project ships two front ends over one analysis package:
+
+- a **CLI** for local use, caching to plain JSON files (below);
+- a **web app** deployed on Wikimedia Toolforge, caching to MariaDB, where
+  analyses run asynchronously on a worker. See `toolforge/README.md`.
 
 ---
 
@@ -55,9 +73,14 @@ The analyzer follows a multi-layered extraction pipeline:
 - **Flesch Readability**: Resolves Flesch Reading Ease and Flesch-Kincaid Grade Levels for the linked article text, with automatic Wayback Machine web-archive retrieval fallbacks.
 
 ### 5. Multi-Level Caching & Rate Limiting
-- **Page Cache (`page_cache.json`)**: Caches complete returned profiles of pages keyed by URL and source counts to allow instantaneous subsequent executions.
-- **Domain Cache (`mbfc_cache.json`)**: Caches parsed publisher ratings (including negative/empty lookups) to prevent duplicate lookups.
-- **Polite Rate-Limiting**: Enforces minimum sleep delays (0.5s - 1.0s) between consecutive outgoing requests.
+Caching goes through a pluggable `CacheStore` (`wikipedia_sources_bias/cachestore.py`), so the same analysis code backs onto different storage depending on where it runs:
+
+- **CLI** — one JSON file per namespace next to the repo (`page_cache.json`, `mbfc_cache.json`, ...), exactly as before.
+- **Toolforge** — MariaDB (`kv_cache`), because a container filesystem is wiped on restart and is not shared between worker replicas.
+
+Cached namespaces: complete page profiles keyed by URL, MBFC publisher ratings (including negative lookups), Wikidata publisher/author/enrichment results, Crossref DOI metadata, and nametrace predictions.
+
+- **Polite Rate-Limiting**: minimum sleep delays (0.5s – 1.0s) between consecutive outgoing requests, plus `Retry-After` and exponential backoff on Wikidata 429s.
 
 ---
 
@@ -65,6 +88,7 @@ The analyzer follows a multi-layered extraction pipeline:
 
 ### Prerequisites
 - Python `>= 3.11`
+- Node.js `22.x` and npm `11.x` — only if you want to build the web front end
 - Optional: CUDA-enabled GPU (for faster HuggingFace sentiment pipeline processing)
 
 ### Setup
@@ -74,14 +98,27 @@ The analyzer follows a multi-layered extraction pipeline:
    cd Wikipedia-Source-Bias
    ```
 
-2. Install the required dependencies:
+2. Install dependencies. `requirements.txt` is the lean set the Toolforge
+   image builds from; `requirements-dev.txt` adds the test suite and the
+   optional `transformers`/`torch` sentiment backend:
    ```bash
+   pip install -r requirements-dev.txt   # local development
+   # or, for the deployment set only:
    pip install -r requirements.txt
    ```
+   The transformers backend is deliberately excluded from the deployed image:
+   a container gets 10GB including the image and Toolforge has no GPUs, so the
+   analyzer falls back to its NLTK/lexicon path there.
 
 3. (Optional) Run the test suite to verify configuration:
    ```bash
    python -m pytest -v
+   ```
+
+4. (Optional) Build the web front end:
+   ```bash
+   npm run build      # nuxt generate -> backend/static, served by Flask
+   gunicorn --chdir backend --bind 127.0.0.1:5000 app:app
    ```
 
 ---
