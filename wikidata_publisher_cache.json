@@ -5579,5 +5579,750 @@
       "website"
     ],
     "mbfc_id": "yahoo-news"
+  },
+  "legrandcontinent.eu": {
+    "wikidata_id": "Q101599109",
+    "wikidata_name": "Le Grand Continent",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online magazine"
+    ],
+    "mbfc_id": null
+  },
+  "contrepoints.org": {
+    "wikidata_id": "Q2996004",
+    "wikidata_name": "Contrepoints",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "liberalism",
+      "libertarianism"
+    ],
+    "owners": [],
+    "types": [
+      "magazine",
+      "project"
+    ],
+    "mbfc_id": null
+  },
+  "om.nl": {
+    "wikidata_id": "Q2595790",
+    "wikidata_name": "Netherlands Public Prosecution Service",
+    "countries": [
+      "Netherlands"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government organization",
+      "public prosecutor's office"
+    ],
+    "mbfc_id": null
+  },
+  "foreignpolicy.com": {
+    "wikidata_id": "Q1063573",
+    "wikidata_name": "Foreign Policy",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Graham Holdings Company"
+    ],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": "foreign-policy"
+  },
+  "channel4.com": {
+    "wikidata_id": "Q4639144",
+    "wikidata_name": "Channel 4",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Channel Four Television Corporation"
+    ],
+    "types": [
+      "broadcaster",
+      "software",
+      "television channel",
+      "television station",
+      "video on demand",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "tagesschau.de": {
+    "wikidata_id": "Q1409067",
+    "wikidata_name": "tagesschau.de",
+    "countries": [
+      "Germany"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "1sn.ru": {},
+  "rferl.org": {
+    "wikidata_id": "Q485500",
+    "wikidata_name": "Radio Free Europe/Radio Liberty",
+    "countries": [
+      "Czech Republic",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "anti-communism"
+    ],
+    "owners": [
+      "U.S. Agency for Global Media"
+    ],
+    "types": [
+      "mass media",
+      "news agency",
+      "radio station",
+      "state media"
+    ],
+    "mbfc_id": "radio-free-europe-radio-liberty"
+  },
+  "news.bbc.co.uk": {
+    "wikidata_id": "Q1160945",
+    "wikidata_name": "BBC News",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "impartiality"
+    ],
+    "owners": [
+      "British Broadcasting Corporation"
+    ],
+    "types": [
+      "division",
+      "news broadcasting",
+      "news desk",
+      "news media",
+      "newspaper"
+    ],
+    "mbfc_id": "bbc"
+  },
+  "tass.ru": {
+    "wikidata_id": "Q223799",
+    "wikidata_name": "TASS",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news agency"
+    ],
+    "mbfc_id": "russian-news-agency-tass"
+  },
+  "interfax.ru": {
+    "wikidata_id": "Q379271",
+    "wikidata_name": "Interfax",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Mikhail Komissar"
+    ],
+    "types": [
+      "business",
+      "enterprise",
+      "news agency"
+    ],
+    "mbfc_id": "interfax-russia-bias"
+  },
+  "radiosvoboda.org": {
+    "wikidata_id": "Q85999798",
+    "wikidata_name": "Radio Svoboda Ukraine",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper",
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "foxnews.com": {
+    "wikidata_id": "Q186068",
+    "wikidata_name": "Fox News",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "right-wing"
+    ],
+    "political_ideologies": [
+      "Trumpism",
+      "conservatism in the United States"
+    ],
+    "owners": [
+      "21st Century Fox",
+      "Fox Corporation",
+      "News Corporation"
+    ],
+    "types": [
+      "United States cable news",
+      "specialty channel"
+    ],
+    "mbfc_id": "fox-news"
+  },
+  "politifact.com": {
+    "wikidata_id": "Q3394318",
+    "wikidata_name": "PolitiFact",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Times Publishing Company"
+    ],
+    "types": [
+      "fact-checking organisation",
+      "organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "kyivpost.com": {
+    "wikidata_id": "Q1795015",
+    "wikidata_name": "Kyiv Post",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper",
+      "periodical"
+    ],
+    "mbfc_id": "kyiv-post"
+  },
+  "archimag.com": {
+    "wikidata_id": "Q2860164",
+    "wikidata_name": "Q2860164",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "axl.cefan.ulaval.ca": {
+    "wikidata_id": "Q1476829",
+    "wikidata_name": "Jacques Leclerc",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "tsn.ua": {
+    "wikidata_id": "Q4449066",
+    "wikidata_name": "TSN",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "television program"
+    ],
+    "mbfc_id": null
+  },
+  "sport24.lefigaro.fr": {
+    "wikidata_id": "Q12336707",
+    "wikidata_name": "Sport24.com",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "nbcnews.com": {
+    "wikidata_id": "Q2877626",
+    "wikidata_name": "NBC News",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "NBCUniversal"
+    ],
+    "types": [
+      "online newspaper",
+      "production company",
+      "specialty channel",
+      "television channel"
+    ],
+    "mbfc_id": "nbc-news"
+  },
+  "en.interfax.com.ua": {
+    "wikidata_id": "Q2448686",
+    "wikidata_name": "Interfax-Ukraine",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Oleksandr Martynenko"
+    ],
+    "types": [
+      "business",
+      "enterprise",
+      "news agency"
+    ],
+    "mbfc_id": "interfax-ukraine-bias"
+  },
+  "fr.news.yahoo.com": {},
+  "abcnews.go.com": {
+    "wikidata_id": "Q287171",
+    "wikidata_name": "ABC News",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "American Broadcasting Company"
+    ],
+    "types": [
+      "online newspaper",
+      "specialty channel"
+    ],
+    "mbfc_id": "abc-news"
+  },
+  "unian.ua": {
+    "wikidata_id": "Q2095222",
+    "wikidata_name": "Ukrainian Independent Information Agency",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "1+1 media"
+    ],
+    "types": [
+      "news agency",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "irishtimes.com": {
+    "wikidata_id": "Q109970583",
+    "wikidata_name": "IrishTimes.com",
+    "countries": [
+      "Ireland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "liberalism"
+    ],
+    "owners": [
+      "The Irish Times"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper",
+      "website"
+    ],
+    "mbfc_id": "the-irish-times"
+  },
+  "edition.cnn.com": {
+    "wikidata_id": "Q18386157",
+    "wikidata_name": "CNN Today",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "CNN",
+      "Turner Broadcasting System"
+    ],
+    "types": [
+      "subscription television",
+      "television channel",
+      "television program",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "nikvesti.com": {
+    "wikidata_id": "Q55608783",
+    "wikidata_name": "NikVesti",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "news.obozrevatel.com": {},
+  "fr.aleteia.org": {
+    "wikidata_id": "Q16010657",
+    "wikidata_name": "Aleteia",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": "aleteia"
+  },
+  "lapresse.ca": {
+    "wikidata_id": "Q3083289",
+    "wikidata_name": "Q3083289",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "federalism"
+    ],
+    "owners": [
+      "Gesca Limitée"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper of record",
+      "online newspaper"
+    ],
+    "mbfc_id": "la-presse"
+  },
+  "politico.com": {
+    "wikidata_id": "Q3109740",
+    "wikidata_name": "Politico",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Axel Springer SE"
+    ],
+    "types": [
+      "magazine",
+      "news website",
+      "newspaper"
+    ],
+    "mbfc_id": "politico"
+  },
+  "vaticannews.va": {
+    "wikidata_id": "Q1471987",
+    "wikidata_name": "Vatican Media",
+    "countries": [
+      "Vatican City"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Roman Curia"
+    ],
+    "types": [
+      "international broadcasting",
+      "news website",
+      "specialty channel"
+    ],
+    "mbfc_id": null
+  },
+  "thecradle.co": {
+    "wikidata_id": "Q135975371",
+    "wikidata_name": "The Cradle",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": "the-cradle-bias-and-credibility"
+  },
+  "politico": {
+    "wikidata_id": "Q3109740",
+    "wikidata_name": "Politico",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Axel Springer SE"
+    ],
+    "types": [
+      "magazine",
+      "news website",
+      "newspaper"
+    ],
+    "mbfc_id": "politico"
+  },
+  "lequipe.fr": {
+    "wikidata_id": "Q815748",
+    "wikidata_name": "L'Équipe",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Éditions Philippe Amaury"
+    ],
+    "types": [
+      "sports newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "iaea.org": {
+    "wikidata_id": "Q41984",
+    "wikidata_name": "International Atomic Energy Agency",
+    "countries": [
+      "Austria"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization established by the United Nations"
+    ],
+    "mbfc_id": null
+  },
+  "lesafriques.com": {
+    "wikidata_id": "Q3230404",
+    "wikidata_name": "Les Afriques",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "voanews.com": {
+    "wikidata_id": "Q228389",
+    "wikidata_name": "Voice of America",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Federal Government of the United States"
+    ],
+    "types": [
+      "501(c)(4) organization",
+      "international broadcasting",
+      "online newspaper",
+      "public broadcasting",
+      "radio station",
+      "state media"
+    ],
+    "mbfc_id": "voice-of-america"
+  },
+  "imf.org": {
+    "wikidata_id": "Q96726654",
+    "wikidata_name": "Policy Papers",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "international financial institution",
+      "scientific journal",
+      "specialized agency of the United Nations"
+    ],
+    "mbfc_id": null
+  },
+  "hdr.undp.org": {},
+  "cnig.gouv.fr": {
+    "wikidata_id": "Q2994147",
+    "wikidata_name": "Conseil national de l'information géolocalisée",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Commission and consultative or deliberative ministerial body"
+    ],
+    "mbfc_id": null
+  },
+  "pubs.usgs.gov": {
+    "wikidata_id": "Q137294837",
+    "wikidata_name": "USGS Publications Warehouse",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "U.S. government website",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "world-nuclear.org": {
+    "wikidata_id": "Q2534166",
+    "wikidata_name": "World Nuclear Association",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "international organization",
+      "trade association"
+    ],
+    "mbfc_id": null
+  },
+  "encyclopediaofukraine.com": {
+    "wikidata_id": "Q87193076",
+    "wikidata_name": "Internet Encyclopedia of Ukraine",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online encyclopedia"
+    ],
+    "mbfc_id": null
+  },
+  "litopys.org.ua": {},
+  "armyinform.com.ua": {
+    "wikidata_id": "Q97381756",
+    "wikidata_name": "ArmyInform",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news agency"
+    ],
+    "mbfc_id": null
+  },
+  "agorha.inha.fr": {
+    "wikidata_id": "Q21994367",
+    "wikidata_name": "AGORHA",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online database"
+    ],
+    "mbfc_id": null
+  },
+  "day.kyiv.ua": {
+    "wikidata_id": "Q1186724",
+    "wikidata_name": "Den",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "resource.history.org.ua": {
+    "wikidata_id": "Q1032143",
+    "wikidata_name": "Encyclopedia of the History of Ukraine",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "written work"
+    ],
+    "mbfc_id": null
+  },
+  "izyaslav-miskrada.gov.ua": {
+    "wikidata_id": "Q841029",
+    "wikidata_name": "Iziaslav",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "city in Ukraine"
+    ],
+    "mbfc_id": null
+  },
+  "uinp.gov.ua": {
+    "wikidata_id": "Q4470584",
+    "wikidata_name": "Ukrainian Institute of National Remembrance",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government agency"
+    ],
+    "mbfc_id": null
   }
 }

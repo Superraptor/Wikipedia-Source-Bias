@@ -11278,5 +11278,725 @@
       "gender": null,
       "subregion": null
     }
+  },
+  "unian": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9928790926933289,
+      "gender": 0.559758186340332,
+      "subregion": 0.5213103890419006
+    }
+  },
+  "By Yaroslav Lukov & Paul Kirby": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9804023802280426,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Alain Finkielkraut": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9365744590759277,
+      "subregion": 0.6416478753089905
+    }
+  },
+  "Matheo Malik": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8797426819801331,
+      "subregion": 0.6269395351409912
+    }
+  },
+  "Cyrille Bret": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8892005681991577,
+      "subregion": 0.7034717798233032
+    }
+  },
+  "Yves Bourdillon": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9376746416091919,
+      "subregion": 0.6885405778884888
+    }
+  },
+  "Sébastien Gobert": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9708881974220276,
+      "subregion": 0.6851316690444946
+    }
+  },
+  "Le Monde.fr avec AFP": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.902810275554657,
+      "subregion": 0.8082072734832764
+    }
+  },
+  "© 2018 AFP": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9920336604118347,
+      "gender": 0.6867575645446777,
+      "subregion": 0.5254380106925964
+    }
+  },
+  "null null": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.8728778958320618,
+      "gender": 0.7423506379127502,
+      "subregion": 0.40407392382621765
+    }
+  },
+  "bbcrussian": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.999991229448824,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Carl Bildt, Nicu Popescu": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9821826815605164,
+      "gender": 0.9395530819892883,
+      "subregion": 0.552961528301239
+    }
+  },
+  "ARD Das Erste": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.7637616395950317,
+      "gender": 0.9342286586761475,
+      "subregion": 0.6264878511428833
+    }
+  },
+  "tagesschau.de": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999986886978149,
+      "gender": 0.5979630351066589,
+      "subregion": 0.6207940578460693
+    }
+  },
+  "RFE/RL": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9995470384310465,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "BBC_ua": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999977187671902,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Тарас Левченко": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9994080066680908,
+      "gender": 0.5162783265113831,
+      "subregion": 0.36991798877716064
+    }
+  },
+  "Sarah Rainsford": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9162532091140747,
+      "subregion": 0.4625023603439331
+    }
+  },
+  "By Alys Davies": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9804023802280426,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Associated Press": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999531582579948,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Nafeez Ahmed": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 0.9999932050704956,
+      "gender": 0.7423600554466248,
+      "subregion": 0.6889941692352295
+    }
+  },
+  "Katie Sanders": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9154765009880066,
+      "subregion": 0.4410589039325714
+    }
+  },
+  "Aline Robert": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8935931324958801,
+      "subregion": 0.5567096471786499
+    }
+  },
+  "Pierre Avril": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9411081671714783,
+      "subregion": 0.6501970887184143
+    }
+  },
+  "Ukrainian News": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9989468455314636,
+      "gender": 0.6116297841072083,
+      "subregion": 0.5945748090744019
+    }
+  },
+  "20 minutes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9993177652359009,
+      "gender": 0.8662149310112,
+      "subregion": 0.7331754565238953
+    }
+  },
+  "Clémence Jost": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8984522819519043,
+      "subregion": 0.6009290218353271
+    }
+  },
+  "Mathilde Gérard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8952006101608276,
+      "subregion": 0.6563557386398315
+    }
+  },
+  "Дяченко Олена": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999877214431763,
+      "gender": 0.6059976816177368,
+      "subregion": 0.3235314190387726
+    }
+  },
+  "tsnua": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9942910075187683,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Interfax-Ukraine": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.996166467666626,
+      "gender": 0.7666109800338745,
+      "subregion": 0.7388224601745605
+    }
+  },
+  "Daryna Shevchenko": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6975728869438171,
+      "subregion": 0.8554272651672363
+    }
+  },
+  "Новый День": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9994080066680908,
+      "gender": 0.6417774558067322,
+      "subregion": 0.3519948124885559
+    }
+  },
+  "Joshua Keating": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8601791262626648,
+      "subregion": 0.3937925398349762
+    }
+  },
+  "26 septembre 2015 à 20:32": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.9990424513816833,
+      "gender": 0.7875105738639832,
+      "subregion": 0.7618277668952942
+    }
+  },
+  "Louis Imbert": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9212712645530701,
+      "subregion": 0.4928928315639496
+    }
+  },
+  "NBCNews": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999964982505389,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Yossi": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6795288324356079,
+      "subregion": 0.1765361726284027
+    }
+  },
+  "yahooactufr": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9878172222524881,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "VOA News": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.7790752053260803,
+      "gender": 0.5376560688018799,
+      "subregion": 0.5969756841659546
+    }
+  },
+  "Reuters Editorial": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9996378421783447,
+      "gender": 0.5969885587692261,
+      "subregion": 0.49770596623420715
+    }
+  },
+  "Kyiv Post": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9605933539569378,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "ABC News": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9919168557971716,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "France Ukraine": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5462123155593872,
+      "subregion": 0.7616530060768127
+    }
+  },
+  "Michel Goya": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.888429582118988,
+      "subregion": 0.46530434489250183
+    }
+  },
+  "Mon Apr 07 2014 - 13:09": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7757602334022522,
+      "subregion": 0.7247746586799622
+    }
+  },
+  "Laura Smith-Spark,Marie-Louise Gumuchian,Victoria Butenko": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9025480151176453,
+      "subregion": 0.8804307579994202
+    }
+  },
+  "Olga Rudenko": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8653133511543274,
+      "subregion": 0.8317675590515137
+    }
+  },
+  "RTL Newmedia": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9971637076232582,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Дмитро Булаш": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999858140945435,
+      "gender": 0.6142246723175049,
+      "subregion": 0.31554996967315674
+    }
+  },
+  "OBOZ.UA": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9379473328590393,
+      "gender": 0.6168176531791687,
+      "subregion": 0.5231755375862122
+    }
+  },
+  "20 хвилин": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9993177652359009,
+      "gender": 0.724943220615387,
+      "subregion": 0.4650491178035736
+    }
+  },
+  "Українська правда. Життя": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.5752031207084656,
+      "subregion": 0.35702604055404663
+    }
+  },
+  "La Presse Canadienne": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.586165189743042,
+      "subregion": 0.465390145778656
+    }
+  },
+  "Vatican News": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999951124191284,
+      "gender": 0.8070105910301208,
+      "subregion": 0.4365447461605072
+    }
+  },
+  "TheCradleMedia": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999879224724282,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Yahoo": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9986525774002075,
+      "gender": 0.5797196626663208,
+      "subregion": 0.5067553520202637
+    }
+  },
+  "Sangeeth Francis James": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.5214791297912598,
+      "subregion": 0.4949006140232086
+    }
+  },
+  "Pierre-Louis Caron": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999995231628418,
+      "gender": 0.9386836886405945,
+      "subregion": 0.7057710886001587
+    }
+  },
+  "Julien Vercueil": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9484063982963562,
+      "subregion": 0.678225040435791
+    }
+  },
+  "Le nouvel Economiste": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6734369397163391,
+      "subregion": 0.5721056461334229
+    }
+  },
+  "Alexandre del Valle": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9697769284248352,
+      "subregion": 0.7801763415336609
+    }
+  },
+  "Isabelle Choquet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9101099371910095,
+      "subregion": 0.6658326983451843
+    }
+  },
+  "Arnaud Lecomte": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9200796484947205,
+      "subregion": 0.7369693517684937
+    }
+  },
+  "International Atomic Energy Agency": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999755718272354,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Nicolas Ligneul": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9684440493583679,
+      "subregion": 0.7257183790206909
+    }
+  },
+  "UN_News_Centre": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9911408321931958,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "moussangomm": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999840259552002,
+      "gender": 0.7779087424278259,
+      "subregion": 0.4393480122089386
+    }
+  },
+  "Mohammed Yusuf": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Africa",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9032695293426514,
+      "subregion": 0.3624287545681
+    }
+  },
+  "armyinformcomua": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9738537445664406,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "УІНП": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9392200112342834,
+      "gender": 0.623450517654419,
+      "subregion": 0.514473557472229
+    }
+  },
+  "J. G. (Джей Джи)": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.9995842576026917,
+      "gender": 0.7783316373825073,
+      "subregion": 0.5275591015815735
+    }
   }
 }

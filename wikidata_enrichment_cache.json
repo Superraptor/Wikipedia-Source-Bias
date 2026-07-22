@@ -1178,5 +1178,153 @@
     "wikidata_id": "Q3044717",
     "wikidata_description": "news website from Yahoo!"
   },
-  "unian.info": {}
+  "unian.info": {},
+  "legrandcontinent.eu": {},
+  "contrepoints.org": {},
+  "om.nl": {},
+  "foreignpolicy.com": {},
+  "channel4.com": {
+    "wikidata_label": "Channel 4",
+    "wikidata_id": "Q4639144",
+    "wikidata_description": "video on demand service from Channel Four Television Corporation"
+  },
+  "presseportal.de": {},
+  "tagesschau.de": {
+    "wikidata_label": "tagesschau.de",
+    "wikidata_id": "Q1409067",
+    "wikidata_description": "ARD's online news portal"
+  },
+  "1sn.ru": {},
+  "rferl.org": {},
+  "news.bbc.co.uk": {
+    "wikidata_label": "BBC News",
+    "wikidata_id": "Q1160945",
+    "wikidata_description": "news division of the publicly funded British Broadcasting Corporation"
+  },
+  "tass.ru": {
+    "wikidata_label": "TASS",
+    "wikidata_id": "Q223799",
+    "wikidata_description": "Russian state-owned news agency"
+  },
+  "interfax.ru": {},
+  "radiosvoboda.org": {},
+  "foxnews.com": {
+    "wikidata_label": "Fox News",
+    "wikidata_id": "Q186068",
+    "wikidata_description": "American cable television news channel"
+  },
+  "2009-2017.state.gov": {},
+  "politifact.com": {
+    "wikidata_label": "PolitiFact",
+    "wikidata_id": "Q3394318",
+    "wikidata_description": "American nonprofit fact-checking website"
+  },
+  "kyivpost.com": {},
+  "20min.ch": {},
+  "archimag.com": {
+    "wikidata_label": "archimag.com",
+    "wikidata_id": "Q2860164",
+    "wikidata_description": ""
+  },
+  "axl.cefan.ulaval.ca": {},
+  "uapress.info": {},
+  "tsn.ua": {
+    "wikidata_label": "TSN.ua",
+    "wikidata_id": "Q114316032",
+    "wikidata_description": "news Website"
+  },
+  "newdaynews.ru": {},
+  "sport24.lefigaro.fr": {},
+  "nbcnews.com": {
+    "wikidata_label": "NBCNews.com",
+    "wikidata_id": "Q12184050",
+    "wikidata_description": "NBC News' website"
+  },
+  "hamodia.com": {},
+  "en.interfax.com.ua": {},
+  "ukrinform.net": {},
+  "voanews.com": {},
+  "uk.reuters.com": {},
+  "imgace.com": {},
+  "abcnews.go.com": {
+    "wikidata_label": "ABC News",
+    "wikidata_id": "Q287171",
+    "wikidata_description": "news division of the American Broadcasting Company"
+  },
+  "unian.ua": {},
+  "franceukraine.fr": {},
+  "fr.calameo.com": {},
+  "irishtimes.com": {
+    "wikidata_label": "IrishTimes.com",
+    "wikidata_id": "Q109970583",
+    "wikidata_description": "website"
+  },
+  "edition.cnn.com": {},
+  "nikvesti.com": {
+    "wikidata_label": "NikVesti",
+    "wikidata_id": "Q55608783",
+    "wikidata_description": "Ukrainian online media outlet based in Mykolaiv"
+  },
+  "news.obozrevatel.com": {},
+  "vn.20minut.ua": {},
+  "life.pravda.com.ua": {},
+  "fr.aleteia.org": {},
+  "lapresse.ca": {
+    "wikidata_label": "La Presse",
+    "wikidata_id": "Q3083289",
+    "wikidata_description": "Canadian newspaper"
+  },
+  "politico.com": {
+    "wikidata_label": "Politico",
+    "wikidata_id": "Q3109740",
+    "wikidata_description": "American journalism company and news website"
+  },
+  "vaticannews.va": {},
+  "thecradle.co": {},
+  "politico": {
+    "wikidata_label": "Politico",
+    "wikidata_id": "Q3109740",
+    "wikidata_description": "American journalism company and news website"
+  },
+  "fr.style.yahoo.com": {},
+  "thecanadian.news": {},
+  "niubball.com": {},
+  "lequipe.fr": {
+    "wikidata_label": "L'Équipe",
+    "wikidata_id": "Q815748",
+    "wikidata_description": "French sports newspaper"
+  },
+  "iaea.org": {
+    "wikidata_label": "International Atomic Energy Agency",
+    "wikidata_id": "Q41984",
+    "wikidata_description": "international organization that seeks to promote the peaceful use of nuclear energy, and to inhibit its use for any military purpose, including nuclear weapons"
+  },
+  "lesafriques.com": {},
+  "imf.org": {
+    "wikidata_label": "IMF.org",
+    "wikidata_id": "Q57682486",
+    "wikidata_description": "journal article; published in 2015"
+  },
+  "hdr.undp.org": {},
+  "epi.yale.edu": {},
+  "cnig.gouv.fr": {},
+  "books.google.nl": {},
+  "pubs.usgs.gov": {},
+  "world-nuclear.org": {},
+  "encyclopediaofukraine.com": {},
+  "novasich.top": {},
+  "litopys.org.ua": {},
+  "armyinform.com.ua": {},
+  "agorha.inha.fr": {},
+  "day.kyiv.ua": {
+    "wikidata_label": "Den",
+    "wikidata_id": "Q1186724",
+    "wikidata_description": "Ukrainian daily newspaper"
+  },
+  "resource.history.org.ua": {},
+  "zvenlib.in.ua": {},
+  "izyaslav-miskrada.gov.ua": {},
+  "uinp.gov.ua": {},
+  "dovidka.biz.ua": {},
+  "tut-cikavo.com": {}
 }

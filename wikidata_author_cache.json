@@ -9858,5 +9858,625 @@
     "occupations": [],
     "employers": []
   },
-  "ukrpravda_news": {}
+  "ukrpravda_news": {},
+  "unian": {
+    "wikidata_id": "Q2095222",
+    "wikidata_name": "Ukrainian Independent Information Agency",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "By Yaroslav Lukov & Paul Kirby": {},
+  "Alain Finkielkraut": {
+    "wikidata_id": "Q380443",
+    "wikidata_name": "Alain Finkielkraut",
+    "gender": "male",
+    "citizenships": [
+      "France",
+      "Poland"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "critic",
+      "literary scholar",
+      "non-fiction writer",
+      "opinion journalist",
+      "philosopher",
+      "radio personality",
+      "radio producer",
+      "writer"
+    ],
+    "employers": [
+      {
+        "name": "France Culture",
+        "country": "France"
+      },
+      {
+        "name": "École polytechnique",
+        "country": "France"
+      }
+    ]
+  },
+  "Matheo Malik": {
+    "wikidata_id": "Q111382787",
+    "wikidata_name": "Mathéo Malik",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "editor-in-chief"
+    ],
+    "employers": []
+  },
+  "Cyrille Bret": {
+    "wikidata_id": "Q38226126",
+    "wikidata_name": "Cyrille Bret",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "official",
+      "philosopher"
+    ],
+    "employers": [
+      {
+        "name": "Libération",
+        "country": "France"
+      },
+      {
+        "name": "Sciences Po",
+        "country": "France"
+      },
+      {
+        "name": "Les Échos",
+        "country": "France"
+      },
+      {
+        "name": "La Croix",
+        "country": "France"
+      }
+    ]
+  },
+  "Yves Bourdillon": {
+    "wikidata_id": "Q45374619",
+    "wikidata_name": "Yves Bourdillon",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": [
+      {
+        "name": "Les Échos",
+        "country": "France"
+      }
+    ]
+  },
+  "Sébastien Gobert": {
+    "wikidata_id": "Q115687609",
+    "wikidata_name": "Sébastien Gobert",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Le Monde.fr avec AFP": {},
+  "© 2018 AFP": {},
+  "null null": {
+    "wikidata_id": "Q134286794",
+    "wikidata_name": "null²",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "bbcrussian": {},
+  "Carl Bildt, Nicu Popescu": {},
+  "ARD Das Erste": {},
+  "tagesschau.de": {
+    "wikidata_id": "Q1409067",
+    "wikidata_name": "tagesschau.de",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "RFE/RL": {
+    "wikidata_id": "Q485500",
+    "wikidata_name": "Radio Free Europe/Radio Liberty",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "BBC_ua": {},
+  "Тарас Левченко": {},
+  "Sarah Rainsford": {
+    "wikidata_id": "Q108081903",
+    "wikidata_name": "Sarah Rainsford",
+    "gender": "female",
+    "citizenships": [
+      "United Kingdom"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": [
+      {
+        "name": "British Broadcasting Corporation",
+        "country": "United Kingdom"
+      }
+    ]
+  },
+  "By Alys Davies": {},
+  "Associated Press": {
+    "wikidata_id": "Q40469",
+    "wikidata_name": "Associated Press",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Nafeez Ahmed": {
+    "wikidata_id": "Q3335032",
+    "wikidata_name": "Nafeez Mosaddeq Ahmed",
+    "gender": "male",
+    "citizenships": [
+      "United Kingdom"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "editor",
+      "journalist",
+      "political activist",
+      "political analyst",
+      "political scientist"
+    ],
+    "employers": [
+      {
+        "name": "University of Sussex",
+        "country": "United Kingdom"
+      },
+      {
+        "name": "INSURGE intelligence",
+        "country": "Unknown"
+      }
+    ]
+  },
+  "Katie Sanders": {
+    "wikidata_id": "Q119560385",
+    "wikidata_name": "Katie Sanders",
+    "gender": "female",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "basketball player"
+    ],
+    "employers": []
+  },
+  "Aline Robert": {
+    "wikidata_id": "Q101042522",
+    "wikidata_name": "Aline Roberta da Silva",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "researcher"
+    ],
+    "employers": []
+  },
+  "Pierre Avril": {
+    "wikidata_id": "Q3383816",
+    "wikidata_name": "Pierre Avril",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [
+      "Radical Party",
+      "Radical-Socialist and Radical Republican Party"
+    ],
+    "occupations": [
+      "constitutional lawyer",
+      "jurist",
+      "university teacher"
+    ],
+    "employers": [
+      {
+        "name": "University of Poitiers",
+        "country": "France"
+      }
+    ]
+  },
+  "Ukrainian News": {
+    "wikidata_id": "Q12164298",
+    "wikidata_name": "Ukrainian news",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "20 minutes": {
+    "wikidata_id": "Q2814749",
+    "wikidata_name": "20 minutes",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Clémence Jost": {},
+  "Mathilde Gérard": {
+    "wikidata_id": "Q131178660",
+    "wikidata_name": "Mathilde Gérard",
+    "gender": "female",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Дяченко Олена": {
+    "wikidata_id": "Q27063128",
+    "wikidata_name": "Olena Diachenko",
+    "gender": "female",
+    "citizenships": [
+      "Ukraine"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "rhythmic gymnast"
+    ],
+    "employers": []
+  },
+  "tsnua": {},
+  "Interfax-Ukraine": {
+    "wikidata_id": "Q2448686",
+    "wikidata_name": "Interfax-Ukraine",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Daryna Shevchenko": {
+    "wikidata_id": "Q5226284",
+    "wikidata_name": "Daryna Shevchenko",
+    "gender": "female",
+    "citizenships": [
+      "Ukraine"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "television actor"
+    ],
+    "employers": []
+  },
+  "Новый День": {
+    "wikidata_id": "Q18637043",
+    "wikidata_name": "The New Day",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Joshua Keating": {
+    "wikidata_id": "Q17306113",
+    "wikidata_name": "Joshua Keating",
+    "gender": "male",
+    "citizenships": [
+      "United States"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "26 septembre 2015 à 20:32": {},
+  "Louis Imbert": {
+    "wikidata_id": "Q117387378",
+    "wikidata_name": "Louis Imbert",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "NBCNews": {
+    "wikidata_id": "Q2877626",
+    "wikidata_name": "NBC News",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Yossi": {
+    "wikidata_id": "Q8056362",
+    "wikidata_name": "Yossi",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "yahooactufr": {},
+  "VOA News": {
+    "wikidata_id": "Q228389",
+    "wikidata_name": "Voice of America",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Reuters Editorial": {},
+  "Kyiv Post": {
+    "wikidata_id": "Q1795015",
+    "wikidata_name": "Kyiv Post",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "ABC News": {
+    "wikidata_id": "Q287171",
+    "wikidata_name": "ABC News",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "France Ukraine": {
+    "wikidata_id": "Q16509864",
+    "wikidata_name": "France–Ukraine relations",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Michel Goya": {
+    "wikidata_id": "Q3309794",
+    "wikidata_name": "Michel Goya",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "editing staff",
+      "historian",
+      "military historian",
+      "military officer",
+      "soldier"
+    ],
+    "employers": [
+      {
+        "name": "École pratique des hautes études",
+        "country": "France"
+      },
+      {
+        "name": "Sciences Po",
+        "country": "France"
+      },
+      {
+        "name": "Strategic Research Institute of the Military School - Paris-Pantheon-Assas University",
+        "country": "France"
+      },
+      {
+        "name": "Institut de Relations Internationales et Stratégiques",
+        "country": "France"
+      },
+      {
+        "name": "École de guerre",
+        "country": "France"
+      },
+      {
+        "name": "IPAG Business School",
+        "country": "France"
+      }
+    ]
+  },
+  "Mon Apr 07 2014 - 13:09": {},
+  "Laura Smith-Spark,Marie-Louise Gumuchian,Victoria Butenko": {},
+  "Olga Rudenko": {
+    "wikidata_id": "Q58231622",
+    "wikidata_name": "Olga V. Rudenko",
+    "gender": "female",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "researcher"
+    ],
+    "employers": [
+      {
+        "name": "Orel State University",
+        "country": "Russia"
+      }
+    ]
+  },
+  "RTL Newmedia": {},
+  "Дмитро Булаш": {},
+  "OBOZ.UA": {
+    "wikidata_id": "Q4329488",
+    "wikidata_name": "OBOZ.UA",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "20 хвилин": {},
+  "Українська правда. Життя": {},
+  "La Presse Canadienne": {
+    "wikidata_id": "Q2410130",
+    "wikidata_name": "The Canadian Press",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Vatican News": {
+    "wikidata_id": "Q1034213",
+    "wikidata_name": "Vatican News",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "TheCradleMedia": {},
+  "Yahoo": {
+    "wikidata_id": "Q37093",
+    "wikidata_name": "Yahoo",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Sangeeth Francis James": {},
+  "Pierre-Louis Caron": {},
+  "Julien Vercueil": {
+    "wikidata_id": "Q105698493",
+    "wikidata_name": "Julien Vercueil",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "Russian studies scholar",
+      "economist",
+      "research fellow",
+      "university teacher"
+    ],
+    "employers": [
+      {
+        "name": "Institut national des langues et civilisations orientales",
+        "country": "France"
+      }
+    ]
+  },
+  "Le nouvel Economiste": {
+    "wikidata_id": "Q3225059",
+    "wikidata_name": "Le Nouvel Économiste",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Alexandre del Valle": {
+    "wikidata_id": "Q2834220",
+    "wikidata_name": "Alexandre del Valle",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [
+      "La Droite libre",
+      "Rally for France",
+      "Rally for the Republic",
+      "Union for a Popular Movement"
+    ],
+    "occupations": [
+      "columnist",
+      "conferencier",
+      "essayist",
+      "geopolitical analyst",
+      "historian",
+      "teacher",
+      "writer"
+    ],
+    "employers": [
+      {
+        "name": "Secrétariat général de la défense et de la sécurité nationale",
+        "country": "France"
+      },
+      {
+        "name": "Excelia",
+        "country": "France"
+      },
+      {
+        "name": "IPAG Business School",
+        "country": "France"
+      }
+    ]
+  },
+  "Isabelle Choquet": {},
+  "Arnaud Lecomte": {},
+  "International Atomic Energy Agency": {
+    "wikidata_id": "Q41984",
+    "wikidata_name": "International Atomic Energy Agency",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Nicolas Ligneul": {
+    "wikidata_id": "Q133644583",
+    "wikidata_name": "Nicolas Ligneul",
+    "gender": "male",
+    "citizenships": [
+      "France",
+      "Switzerland"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "docent",
+      "jurist"
+    ],
+    "employers": []
+  },
+  "UN_News_Centre": {},
+  "moussangomm": {},
+  "Mohammed Yusuf": {
+    "wikidata_id": "Q1364672",
+    "wikidata_name": "Mohammed Yusuf",
+    "gender": "male",
+    "citizenships": [
+      "Nigeria"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "preacher"
+    ],
+    "employers": []
+  },
+  "armyinformcomua": {},
+  "УІНП": {
+    "wikidata_id": "Q4470584",
+    "wikidata_name": "Ukrainian Institute of National Remembrance",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "J. G. (Джей Джи)": {}
 }
