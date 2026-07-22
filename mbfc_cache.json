@@ -943,5 +943,38 @@
   "askell": {},
   "gametrip": {},
   "maze": {},
-  "madame": {}
+  "madame": {},
+  "sudouest": {},
+  "archives": {},
+  "info": {
+    "mbfc_url": "https://mediabiasfactcheck.com/info/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH (1.0)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "Argentina",
+    "country_freedom_rating": "MODERATE FREEDOM",
+    "media_type": "Website",
+    "traffic_popularity": "High Traffic"
+  },
+  "charles-de-gaulle": {},
+  "swi-swissinfo-ch": {
+    "mbfc_url": "https://mediabiasfactcheck.com/swi-swissinfo-ch/",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH (1.0)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "Switzerland",
+    "media_type": "Website",
+    "traffic_popularity": "High Traffic"
+  },
+  "rts": {},
+  "rfj": {},
+  "worldcat": {},
+  "gaullisme": {},
+  "grandeguerre": {},
+  "books": {},
+  "journals": {},
+  "lorientlejour": {},
+  "cheminsdememoire": {},
+  "lhistoire": {},
+  "atf40": {}
 }

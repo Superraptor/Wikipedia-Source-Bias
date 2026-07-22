@@ -10648,5 +10648,135 @@
       "gender": 0.5462031364440918,
       "subregion": 0.7056516408920288
     }
+  },
+  "Corine Lesnes": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7715003490447998,
+      "subregion": 0.47087404131889343
+    }
+  },
+  "FigaroPlume": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 0.9999991655349731,
+      "gender": 0.7446914911270142,
+      "subregion": 0.335202693939209
+    }
+  },
+  "Aurélie Lemaire": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8854342699050903,
+      "subregion": 0.6079853177070618
+    }
+  },
+  "Gaël Klein": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999938011169434,
+      "gender": 0.920169472694397,
+      "subregion": 0.7500430345535278
+    }
+  },
+  "www.rfj.ch, RFJ, Radio Fréquence Jura": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9997583954682341,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Cette Marie Nicot": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9157865047454834,
+      "subregion": 0.6051096320152283
+    }
+  },
+  "Alain KERHERVE": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9169982075691223,
+      "subregion": 0.6404877305030823
+    }
+  },
+  "Figaro_Histoire": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South America",
+    "confidence": {
+      "human": 0.9769171476364136,
+      "gender": 0.9187493920326233,
+      "subregion": 0.27414175868034363
+    }
+  },
+  "Olivier Forcade": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.958191454410553,
+      "subregion": 0.7466683387756348
+    }
+  },
+  "Julien ABI RAMIA": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8818406462669373,
+      "subregion": 0.4540520906448364
+    }
+  },
+  "Jean-Baptiste Estienne": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999983310699463,
+      "gender": 0.9639362692832947,
+      "subregion": 0.6462948322296143
+    }
+  },
+  "Daniel Bermond": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9526710510253906,
+      "subregion": 0.4689611494541168
+    }
+  },
+  "Ladislas Mysyrowicz": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 0.9999994039535522,
+      "gender": 0.9177172183990479,
+      "subregion": 0.5115026235580444
+    }
   }
 }

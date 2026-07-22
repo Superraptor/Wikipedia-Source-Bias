@@ -1043,5 +1043,21 @@
   },
   "askell.com": {},
   "gametrip.net": {},
-  "maze.fr": {}
+  "maze.fr": {},
+  "archives.lille.fr": {},
+  "info.lenord.fr": {},
+  "charles-de-gaulle.org": {},
+  "swissinfo.ch": {
+    "wikidata_label": "SWI swissinfo",
+    "wikidata_id": "Q568173",
+    "wikidata_description": "Swiss news and information platform"
+  },
+  "rfj.ch": {},
+  "gaullisme.fr": {},
+  "grandeguerre.icrc.org": {},
+  "ouest-france.fr:80": {},
+  "cheminsdememoire.gouv.fr": {},
+  "books.openedition.org": {},
+  "atf40.fr": {},
+  "solidariteetprogres.org": {}
 }

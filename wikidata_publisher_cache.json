@@ -4982,5 +4982,120 @@
       "video game database"
     ],
     "mbfc_id": null
+  },
+  "charles-de-gaulle.org": {
+    "wikidata_id": "Q3075406",
+    "wikidata_name": "Fondation Charles-de-Gaulle",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "foundation"
+    ],
+    "mbfc_id": null
+  },
+  "swissinfo.ch": {
+    "wikidata_id": "Q27479810",
+    "wikidata_name": "Swissinfo, Dokumentation und Archive",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Swiss Broadcasting Corporation"
+    ],
+    "types": [
+      "company archives",
+      "memory institution",
+      "online newspaper"
+    ],
+    "mbfc_id": "swi-swissinfo-ch"
+  },
+  "rfj.ch": {
+    "wikidata_id": "Q3416938",
+    "wikidata_name": "Radio fréquence Jura",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "grandeguerre.icrc.org": {
+    "wikidata_id": "Q131576367",
+    "wikidata_name": "Prisoners of the First World War: The ICRC Archives / Prisonniers de la Premiere guerre mondiale : les archives du CICR",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online exhibition"
+    ],
+    "mbfc_id": null
+  },
+  "cheminsdememoire.gouv.fr": {
+    "wikidata_id": "Q28872020",
+    "wikidata_name": "Q28872020",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "network"
+    ],
+    "mbfc_id": null
+  },
+  "lhistoire.fr": {
+    "wikidata_id": "Q2890690",
+    "wikidata_name": "L'Histoire",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "books.openedition.org": {
+    "wikidata_id": "Q27612534",
+    "wikidata_name": "OpenEdition Press",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "publishing house",
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "solidariteetprogres.org": {
+    "wikidata_id": "Q3489438",
+    "wikidata_name": "Solidarity and Progress",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "protectionism"
+    ],
+    "owners": [],
+    "types": [
+      "political party"
+    ],
+    "mbfc_id": null
   }
 }

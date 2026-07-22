@@ -9252,5 +9252,124 @@
   },
   "Clara Gabillet": {},
   "Marion Galy-Ramounot": {},
-  "Laurence Méride": {}
+  "Laurence Méride": {},
+  "Corine Lesnes": {
+    "wikidata_id": "Q110842374",
+    "wikidata_name": "Corine Lesnes",
+    "gender": "female",
+    "citizenships": [
+      "United States"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "FigaroPlume": {},
+  "Aurélie Lemaire": {},
+  "Gaël Klein": {},
+  "www.rfj.ch, RFJ, Radio Fréquence Jura": {},
+  "Cette Marie Nicot": {},
+  "Alain KERHERVE": {
+    "wikidata_id": "Q51226921",
+    "wikidata_name": "Alain Kerhervé",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "scholar of English"
+    ],
+    "employers": []
+  },
+  "Figaro_Histoire": {},
+  "Olivier Forcade": {
+    "wikidata_id": "Q3351037",
+    "wikidata_name": "Olivier Forcade",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "docent",
+      "historian",
+      "research fellow",
+      "secondary school teacher",
+      "university teacher"
+    ],
+    "employers": [
+      {
+        "name": "Paris-Sorbonne University - Paris IV",
+        "country": "France"
+      },
+      {
+        "name": "University of Picardie Jules Verne",
+        "country": "France"
+      },
+      {
+        "name": "Lycée Hoche",
+        "country": "France"
+      },
+      {
+        "name": "Coëtquidan",
+        "country": "France"
+      },
+      {
+        "name": "Lycée Paul Lapie",
+        "country": "France"
+      },
+      {
+        "name": "Sorbonne University",
+        "country": "France"
+      }
+    ]
+  },
+  "Julien ABI RAMIA": {},
+  "Jean-Baptiste Estienne": {
+    "wikidata_id": "Q375484",
+    "wikidata_name": "Jean Baptiste Eugène Estienne",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "engineer",
+      "military officer",
+      "military personnel"
+    ],
+    "employers": []
+  },
+  "Daniel Bermond": {
+    "wikidata_id": "Q55672803",
+    "wikidata_name": "Daniel Bermond",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "biographer",
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Ladislas Mysyrowicz": {
+    "wikidata_id": "Q131824121",
+    "wikidata_name": "Ladislas Mysyrowicz",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "historian",
+      "university teacher"
+    ],
+    "employers": [
+      {
+        "name": "University of Geneva",
+        "country": "Switzerland"
+      }
+    ]
+  }
 }
