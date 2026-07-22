@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 from .cachestore import get_store
 from . import ratelimit
 from .urlnorm import canonical_page_url
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 def _load_env_tokens():
@@ -2129,15 +2129,16 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
 
         return profile
 
+    def _report(done):
+        if progress_cb is not None:
+            try:
+                progress_cb("sources", done, total)
+            except Exception:
+                pass
+
     def _collect(profile):
         """Runs on the calling thread only, so `sources` needs no locking."""
         sources.append(profile)
-
-        if progress_cb is not None:
-            try:
-                progress_cb("sources", len(sources), total)
-            except Exception:
-                pass
 
         # Checkpoint partial progress so a killed process resumes instead of
         # restarting. Throttled: this writes the WHOLE growing result, so
@@ -2171,14 +2172,36 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
     workers = min(_source_concurrency(), len(pending)) if pending else 1
 
     if workers > 1:
+        # NOT pool.map: it yields strictly in submission order, so a single
+        # slow source blocked every completed one behind it. An article whose
+        # first source hung reported no progress and checkpointed nothing for
+        # its whole run, then got requeued as stale every 10 minutes forever.
+        #
+        # as_completed lets progress track work actually finished, while
+        # `sources` is still appended in index order (draining the contiguous
+        # prefix) because resumption relies on that ordering.
+        pending_results = {}
+        next_index = pending[0][0]
+        completed = 0
         with ThreadPoolExecutor(max_workers=workers) as pool:
-            # map() yields in submission order, so results are appended in the
-            # same order as the serial path produced them.
-            for profile in pool.map(lambda pair: _process_one(*pair), pending):
-                _collect(profile)
+            futures = {pool.submit(_process_one, i, u): i for i, u in pending}
+            for future in as_completed(futures):
+                index = futures[future]
+                # .result() re-raises, preserving the previous behaviour where
+                # a failing source fails the analysis.
+                pending_results[index] = future.result()
+                completed += 1
+                _report(completed)
+                while next_index in pending_results:
+                    _collect(pending_results.pop(next_index))
+                    next_index += 1
+        # Anything left is non-contiguous only if indices were skipped.
+        for index in sorted(pending_results):
+            _collect(pending_results[index])
     else:
         for i, u in pending:
             _collect(_process_one(i, u))
+            _report(len(sources))
 
     if progress_cb is not None:
         try:

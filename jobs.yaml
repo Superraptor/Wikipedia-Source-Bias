@@ -17,10 +17,12 @@
   # claim_next() takes rows under a `WHERE status='pending'` guard, so parallel
   # workers never collide.
   replicas: 3
-  # Measured usage is ~100Mi per worker; 2Gi was a 20x over-reservation that
-  # made the 8Gi namespace quota look like the binding constraint when it was
-  # not. 512Mi still leaves ~5x headroom over the observed peak.
-  mem: 512Mi
+  # Sized from measurement, twice. Idle workers sit at ~30-70Mi, but a worker
+  # running an article at WSB_SOURCE_CONCURRENCY=6 was observed at 502Mi -- the
+  # thread pool holds several fetched pages at once. 512Mi would have been on
+  # the edge of an OOM kill; 1Gi keeps ~2x headroom over the real peak while
+  # still being half the original 2Gi guess.
+  mem: 1Gi
   cpu: "1"
   emails: onfailure
 
