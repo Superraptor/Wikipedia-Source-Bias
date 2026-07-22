@@ -165,8 +165,10 @@ class Cache:
                 "INSERT INTO analysis_cache (url_hash, page_url, status) "
                 "VALUES (%s, %s, 'pending') "
                 "ON DUPLICATE KEY UPDATE "
-                "  status = IF(status = 'error' AND attempts < %s, 'pending', status), "
-                "  recoveries = IF(status = 'error' AND attempts < %s, 0, recoveries)",
+                "  status = IF(status = 'error' AND permanent = 0 AND attempts < %s, "
+                "              'pending', status), "
+                "  recoveries = IF(status = 'error' AND permanent = 0 AND attempts < %s, "
+                "                  0, recoveries)",
                 (h, url, MAX_ATTEMPTS, MAX_ATTEMPTS),
             )
         finally:
@@ -249,20 +251,22 @@ class Cache:
     def mark_error(self, url, message, permanent=False):
         """Record a failure.
 
-        `permanent` exhausts the retry budget outright: a missing article will
-        not start existing on the third attempt, so retrying it only burns
-        worker time and hammers Wikipedia.
+        `permanent` marks a failure that retrying cannot fix -- a missing
+        article will not start existing later, so re-running only burns worker
+        time and hammers Wikipedia. It is a flag rather than an inflated
+        attempt count, so the UI can report one attempt and still not retry.
         """
         h = self._hash(url)
-        # The attempts expression is a literal, never user input.
-        attempts_sql = str(int(MAX_ATTEMPTS)) if permanent else "attempts + 1"
         cur = self.conn.cursor()
         try:
+            # attempts always reflects what actually happened. Whether to retry
+            # is a separate flag, so a 404 is not reported as three tries.
             cur.execute(
                 "UPDATE analysis_cache "
-                f"SET status = 'error', error = %s, attempts = {attempts_sql} "
+                "SET status = 'error', error = %s, attempts = attempts + 1, "
+                "    permanent = %s "
                 "WHERE url_hash = %s",
-                (str(message)[:2000], h),
+                (str(message)[:2000], 1 if permanent else 0, h),
             )
         finally:
             cur.close()
@@ -289,7 +293,7 @@ class Cache:
         # one would show negative waits.
         "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
         "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
-        "       stage, progress_done, progress_total, eta_seconds, "
+        "       stage, progress_done, progress_total, eta_seconds, permanent, "
         "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s, "
         # Wall-clock length of a finished run: claim -> completion.
         "       TIMESTAMPDIFF(SECOND, started_at, updated_at) AS total_s "
@@ -315,9 +319,10 @@ class Cache:
             "progress_done": r[11],
             "progress_total": r[12],
             "eta_seconds": r[13],
+            "permanent": bool(r[14]),
             # Time actually spent analysing, excluding the queue wait.
-            "running_seconds": int(r[14]) if r[14] is not None else None,
-            "total_seconds": int(r[15]) if r[15] is not None else None,
+            "running_seconds": int(r[15]) if r[15] is not None else None,
+            "total_seconds": int(r[16]) if r[16] is not None else None,
         }
 
     def _rows(self, where="", args=(), limit=50, order=None):

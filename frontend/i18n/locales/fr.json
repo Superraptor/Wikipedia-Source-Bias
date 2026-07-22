@@ -164,7 +164,10 @@
     "pendingQueue": "En file d'attente : {n} analyse(s) devant celle-ci.",
     "pendingAlive": "L'analyse progresse normalement.",
     "pendingStalled": "Aucune progression depuis {quiet}. L'analyse sera relancée automatiquement.",
-    "errorArticleNotFound": "Cet article Wikipédia n'existe pas. Vérifiez le titre et la langue de l'URL."
+    "errorArticleNotFound": "Cet article Wikipédia n'existe pas. Vérifiez le titre et la langue de l'URL.",
+    "notFoundTitle": "Article introuvable",
+    "notFoundBackHome": "Analyser un autre article",
+    "notFoundCheckWikipedia": "Vérifier sur Wikipédia"
   },
   "footer": {
     "methodologyLabel": "Méthodologie",

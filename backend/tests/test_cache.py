@@ -281,10 +281,11 @@ def test_permanent_errors_exhaust_the_retry_budget():
         def close(self):
             pass
 
-    from cache import MAX_ATTEMPTS
-
     Cache(Conn()).mark_error("https://x/wiki/A", "gone", permanent=True)
-    assert f"attempts = {MAX_ATTEMPTS}" in seen[-1]
+    # attempts must stay truthful -- a 404 was tried ONCE. Permanence is a
+    # separate flag, not an inflated counter.
+    assert "attempts = attempts + 1" in seen[-1]
+    assert "permanent = %s" in seen[-1]
 
     seen.clear()
     Cache(Conn()).mark_error("https://x/wiki/A", "transient")

@@ -131,7 +131,10 @@
                 </span>
               {% elif r.status == "error" %}
                 <span class="ko">{{ t('failed') }}</span>
-                <span class="dl">{{ t('attemptsMade', n=r.attempts) }}</span>
+                <span class="dl">
+                  {% if r.permanent %}{{ t('permanentFailure') }}
+                  {% else %}{{ t('attemptsMade', n=r.attempts) }}{% endif %}
+                </span>
               {% elif r.status == "pending" %}
                 <span class="dl">{{ t('waitingForWorker') }}</span>
               {% elif r.progress_pct is not none %}

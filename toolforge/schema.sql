@@ -86,3 +86,9 @@ ALTER TABLE analysis_cache
 -- retry budget of a perfectly healthy article and stranded it.
 ALTER TABLE analysis_cache
     ADD COLUMN IF NOT EXISTS recoveries INT NOT NULL DEFAULT 0;
+
+-- A failure that will never succeed on retry (a missing article). Previously
+-- this was expressed by setting attempts to MAX_ATTEMPTS, which stopped the
+-- retries but reported "3 attempts" for something tried exactly once.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS permanent TINYINT(1) NOT NULL DEFAULT 0;
