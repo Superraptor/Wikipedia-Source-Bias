@@ -42,11 +42,17 @@ export function useAnalysis(options = {}) {
         const payload = await resp.json();
 
         if (!resp.ok) {
+          // A coded error gets a translated sentence; anything else falls back
+          // to whatever the backend said.
+          const errorKey =
+            payload.code === "article_not_found"
+              ? "states.errorArticleNotFound"
+              : null;
           state.value = {
             status: "error",
             data: null,
-            error: payload.error || `HTTP ${resp.status}`,
-            errorKey: null,
+            error: errorKey ? null : payload.error || `HTTP ${resp.status}`,
+            errorKey,
           };
           return;
         }
@@ -62,7 +68,25 @@ export function useAnalysis(options = {}) {
             };
             return;
           }
-          state.value = { status: "pending", data: null, error: null, errorKey: null };
+          // Carry the queue detail through so the UI can show progress and say
+          // whether the worker is alive; a bare "pending" left users unable to
+          // tell a long analysis from a dead one.
+          state.value = {
+            status: "pending",
+            data: null,
+            error: null,
+            errorKey: null,
+            progress: {
+              done: payload.progress_done ?? null,
+              total: payload.progress_total ?? null,
+              pct: payload.progress_pct ?? null,
+              eta: payload.eta ?? null,
+              health: payload.health ?? null,
+              quietFor: payload.quiet_for ?? null,
+              queuePosition: payload.queue_position ?? null,
+              queueState: payload.queue_state ?? null,
+            },
+          };
           await sleep(pollIntervalMs);
           continue;
         }
