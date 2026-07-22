@@ -255,6 +255,49 @@ DOMAIN_BIAS_DATABASE: dict[str, dict[str, Any]] = {
     # reported as unmapped despite being unambiguously French.
     # Country/language/type are factual; political_leaning is deliberately left
     # unknown so it comes from Wikidata or MBFC rather than being asserted here.
+    # Recurring registries, academic hosts and outlets measured as unmapped
+    # across the analysed corpus. Country/type only; leaning stays unknown so
+    # it comes from Wikidata or MBFC rather than being asserted here.
+    "wikimedia.org": {
+        "name": "Wikimedia Foundation", "country": "United States",
+        "region": "North America", "political_leaning": "unknown",
+        "reliability": "medium", "default_language": "English", "type": "wiki",
+    },
+    "issn.org": {
+        "name": "ISSN International Centre", "country": "France",
+        "region": "Europe", "political_leaning": "neutral",
+        "reliability": "high", "default_language": "English", "type": "registry",
+    },
+    "cairn.info": {
+        "name": "Cairn.info", "country": "France", "region": "Europe",
+        "political_leaning": "academic/neutral", "reliability": "academic/peer-reviewed",
+        "default_language": "French", "type": "academic_portal",
+    },
+    "springeropen.com": {
+        "name": "Springer Open", "country": "Germany", "region": "Europe",
+        "political_leaning": "academic/neutral", "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
+    "springer.com": {
+        "name": "Springer", "country": "Germany", "region": "Europe",
+        "political_leaning": "academic/neutral", "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
+    "worldbank.org": {
+        "name": "World Bank", "country": "United States", "region": "North America",
+        "political_leaning": "unknown", "reliability": "high",
+        "default_language": "English", "type": "intergovernmental",
+    },
+    "undp.org": {
+        "name": "United Nations Development Programme", "country": "United States",
+        "region": "North America", "political_leaning": "unknown",
+        "reliability": "high", "default_language": "English", "type": "intergovernmental",
+    },
+    "politico.eu": {
+        "name": "Politico Europe", "country": "European Union", "region": "Europe",
+        "political_leaning": "unknown", "reliability": "medium",
+        "default_language": "English", "type": "news_website",
+    },
     "marianne.net": {
         "name": "Marianne",
         "country": "France",
@@ -616,6 +659,25 @@ DOMAIN_BIAS_DATABASE: dict[str, dict[str, Any]] = {
 
 # TLD & ccTLD Mappings for Fallback Geography
 TLD_GEOGRAPHY_MAP: dict[str, tuple[str, str]] = {
+    # Supranational and multi-part TLDs that real citations use. ".eu" was
+    # absent, so politico.eu had no country signal at all.
+    ".eu": ("European Union", "Europe"),
+    ".com.au": ("Australia", "Oceania"),
+    ".net.au": ("Australia", "Oceania"),
+    ".org.au": ("Australia", "Oceania"),
+    ".co.nz": ("New Zealand", "Oceania"),
+    ".co.jp": ("Japan", "Asia"),
+    ".or.jp": ("Japan", "Asia"),
+    ".com.br": ("Brazil", "South America"),
+    ".com.ar": ("Argentina", "South America"),
+    ".com.mx": ("Mexico", "North America"),
+    ".co.za": ("South Africa", "Africa"),
+    ".org.uk": ("United Kingdom", "Europe"),
+    ".ac.uk": ("United Kingdom", "Europe"),
+    ".gov.uk": ("United Kingdom", "Europe"),
+    ".co.in": ("India", "Asia"),
+    ".com.tr": ("Turkey", "Middle East"),
+    ".co.kr": ("South Korea", "Asia"),
     ".uk": ("United Kingdom", "Europe"),
     ".co.uk": ("United Kingdom", "Europe"),
     ".gov.uk": ("United Kingdom", "Europe"),

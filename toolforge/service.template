@@ -1,0 +1,24 @@
+# Webservice configuration. Copy to $HOME/service.template on the tool account;
+# `toolforge webservice start|restart` then picks these up with no flags.
+#
+# Two settings exist purely to remove deployment downtime:
+#
+#   replicas: 2          With one replica there is nothing left serving while
+#                        the pod is replaced, so every deploy was a short
+#                        outage. Two lets the RollingUpdate strategy (already
+#                        maxUnavailable 25% / maxSurge 25%) keep one pod up.
+#
+#   health-check-path    Without a readiness probe Kubernetes treats a pod as
+#                        ready the instant the container starts -- before
+#                        gunicorn is listening -- and routes traffic into a
+#                        socket that is not accepting yet. /healthz answers
+#                        only once Flask is up.
+type: buildservice
+mount: none
+cpu: "1"
+# The web tier only reads from ToolsDB and serves static files; measured at
+# ~71Mi. 2Gi was reserving a quarter of the namespace quota per replica, which
+# is why a second replica could not schedule at all.
+mem: 512Mi
+replicas: 2
+health-check-path: /healthz
