@@ -323,4 +323,10 @@ def normalize_analysis(raw):
         "source_count": raw.get("source_count", len(sources)),
         "sources": sources,
         "aggregated_bias": agg,
+        # Provenance of the INPUT and the METHOD. Without these a figure cannot
+        # be reproduced: the article changes, and so does the code.
+        "revision_id": raw.get("revision_id"),
+        "page_id": raw.get("page_id"),
+        "revision_permalink": raw.get("revision_permalink"),
+        "method_version": raw.get("method_version"),
     }

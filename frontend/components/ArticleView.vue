@@ -30,6 +30,7 @@
     </main>
 
     <main v-else class="wsi-container page-article__main">
+      <ProvenanceBar v-if="state.status === 'loaded'" :analysis="state.data" />
       <LoadingState v-if="state.status === 'loading'" />
       <LoadingState v-else-if="state.status === 'pending'" pending :progress="state.progress" />
       <ErrorState v-else-if="state.status === 'error'" :detail="errorDetail" />
@@ -60,6 +61,7 @@ import LoadingState from "~/components/LoadingState.vue";
 import ErrorState from "~/components/ErrorState.vue";
 import EmptyState from "~/components/EmptyState.vue";
 import DashboardLayout from "~/components/DashboardLayout.vue";
+import ProvenanceBar from "~/components/ProvenanceBar.vue";
 import { useAnalysis } from "~/composables/useAnalysis.js";
 import { routeForUrl } from "~/utils/wikiroute.js";
 

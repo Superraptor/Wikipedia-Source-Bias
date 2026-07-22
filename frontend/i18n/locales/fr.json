@@ -99,7 +99,11 @@
     "noDetails": "Aucune donnée enrichie (Wikidata / MBFC / auteur) pour cette source.",
     "previous": "Précédent",
     "next": "Suivant",
-    "pageInfo": "Page {page} / {total}"
+    "pageInfo": "Page {page} / {total}",
+    "contest": "Corriger",
+    "fixOnWikidata": "Corriger sur Wikidata ({id})",
+    "noWikidataItem": "aucun élément Wikidata associé",
+    "reportHere": "signaler ici"
   },
   "lean": {
     "left": "Gauche",
@@ -455,5 +459,14 @@
       "human": "Personne physique",
       "corporate/organizational": "Entité ou organisation"
     }
+  },
+  "provenance": {
+    "input": "Entrée",
+    "revision": "révision {id}",
+    "revisionUnknown": "révision inconnue (analyse antérieure au suivi)",
+    "method": "Méthode",
+    "methodUnknown": "version inconnue",
+    "howItWorks": "Comment ces chiffres sont calculés",
+    "dispute": "Contester ce résultat"
   }
 }

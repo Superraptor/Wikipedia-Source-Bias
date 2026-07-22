@@ -92,3 +92,11 @@ ALTER TABLE analysis_cache
 -- retries but reported "3 attempts" for something tried exactly once.
 ALTER TABLE analysis_cache
     ADD COLUMN IF NOT EXISTS permanent TINYINT(1) NOT NULL DEFAULT 0;
+
+-- Provenance of the input and the method. Without these no figure is
+-- reproducible: the article changes continuously, and so does the analyser.
+-- method_version is a content hash of the modules that determine a result, so
+-- it moves exactly when the method moves.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS revision_id BIGINT NULL,
+    ADD COLUMN IF NOT EXISTS method_version VARCHAR(32) NULL;

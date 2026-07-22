@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 from .cachestore import get_store
 from . import ratelimit
 from .urlnorm import canonical_page_url
+from .provenance import METHOD_VERSION, extract_revision, permalink
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
@@ -1996,6 +1997,8 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 return cached_data
                 
             sources = cached_data.get("sources", [])
+            resumed_revision = cached_data.get("revision_id")
+            resumed_page_id = cached_data.get("page_id")
             page_metadata = cached_data.get("page_metadata", {})
             references = cached_data.get("references", [])
             citations = cached_data.get("citations", [])
@@ -2025,6 +2028,10 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             raise ArticleNotFound(
                 f"Could not fetch {url}: {exc}"
             ) from exc
+
+        # Pin the exact input. MediaWiki embeds the revision in the page's JS
+        # config, so this costs no extra request.
+        revision_id, page_id = extract_revision(html)
 
         soup = BeautifulSoup(html, "html.parser")
         page_metadata = _extract_page_metadata(soup)
@@ -2218,6 +2225,9 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 "source_count": len(sources),
                 "sources": sources,
                 "countries_only": countries_only,
+                "revision_id": revision_id,
+                "page_id": page_id,
+                "method_version": METHOD_VERSION,
                 "is_partial": True
             }
             _put_page_cache(cache_key, intermediate_result)
@@ -2301,6 +2311,10 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             "countries_only": True,
             "geography_distribution": geo_distribution,
             "sources": simplified_sources,
+            "revision_id": revision_id,
+            "page_id": page_id,
+            "revision_permalink": permalink(url, revision_id),
+            "method_version": METHOD_VERSION,
             "is_partial": False
         }
     else:
@@ -2319,6 +2333,10 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 f"Extracted {len(sources)} source links. Analyzed geographic distribution, "
                 f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
             ),
+            "revision_id": revision_id,
+            "page_id": page_id,
+            "revision_permalink": permalink(url, revision_id),
+            "method_version": METHOD_VERSION,
             "is_partial": False
         }
 

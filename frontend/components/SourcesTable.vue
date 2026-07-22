@@ -63,6 +63,25 @@
                     <dt>{{ t("sourcesTable.authors") }}</dt>
                     <dd><pre>{{ fmt(s.author_profiles) }}</pre></dd>
                   </div>
+                  <div class="sources-table__contest">
+                    <dt>{{ t("sourcesTable.contest") }}</dt>
+                    <dd>
+                      <!-- Wikidata first: a wrong country there is wrong for
+                           everyone, and anyone can fix it. Filing an issue
+                           against this tool only helps this tool. -->
+                      <a
+                        v-if="s.wikidata_publisher?.wikidata_id"
+                        :href="`https://www.wikidata.org/wiki/${s.wikidata_publisher.wikidata_id}`"
+                        target="_blank"
+                        rel="noopener"
+                      >{{ t("sourcesTable.fixOnWikidata", { id: s.wikidata_publisher.wikidata_id }) }}</a>
+                      <span v-else>{{ t("sourcesTable.noWikidataItem") }}</span>
+                      <span aria-hidden="true"> · </span>
+                      <a :href="contestUrl(s)" target="_blank" rel="noopener">
+                        {{ t("sourcesTable.reportHere") }}
+                      </a>
+                    </dd>
+                  </div>
                   <div v-if="!hasAnyDetail(s)">
                     <dt>{{ t("sourcesTable.enrichedDetails") }}</dt>
                     <dd><p class="sources-table__nodetail">{{ t("sourcesTable.noDetails") }}</p></dd>
@@ -129,6 +148,31 @@ function hasAnyDetail(s) {
 }
 function fmt(o) {
   return JSON.stringify(o, null, 2);
+}
+
+// Pre-fills an issue with what the tool concluded and where, so a disagreement
+// arrives with its evidence attached rather than as "this looks wrong".
+function contestUrl(s) {
+  const repo = "https://github.com/Superraptor/Wikipedia-Source-Bias";
+  const title = `Source classification: ${s.domain || s.url}`;
+  const body = [
+    `**Article:** ${props.analysis.page_url || "?"}`,
+    `**Revision:** ${props.analysis.revision_id || "unknown"}`,
+    `**Method version:** ${props.analysis.method_version || "unknown"}`,
+    "",
+    `**Source:** ${s.url || s.domain}`,
+    `**Country reported:** ${s.geography?.country ?? "?"}`,
+    `**Region reported:** ${s.geography?.region ?? "?"}`,
+    `**Political leaning reported:** ${s.political_leaning ?? "?"}`,
+    `**Reliability reported:** ${s.reliability ?? "?"}`,
+    s.wikidata_publisher?.wikidata_id
+      ? `**Wikidata item used:** ${s.wikidata_publisher.wikidata_id}`
+      : "**Wikidata item used:** none matched",
+    "",
+    "**What is wrong, and what the correct value should be:**",
+    "",
+  ].join("\n");
+  return `${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
 }
 
 // The value -> badge mapping lives in ~/utils/labels.js so it can be unit

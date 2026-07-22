@@ -138,11 +138,15 @@ class Cache:
         try:
             cur.execute(
                 "INSERT INTO analysis_cache "
-                "(url_hash, page_url, page_title, source_count, status) "
-                "VALUES (%s, %s, %s, %s, 'done') "
+                "(url_hash, page_url, page_title, source_count, status, "
+                " revision_id, method_version) "
+                "VALUES (%s, %s, %s, %s, 'done', %s, %s) "
                 "ON DUPLICATE KEY UPDATE page_title = VALUES(page_title), "
-                "  source_count = VALUES(source_count), status = 'done', error = NULL",
-                (h, url, payload.get("page_title"), payload.get("source_count")),
+                "  source_count = VALUES(source_count), status = 'done', error = NULL, "
+                "  revision_id = VALUES(revision_id), "
+                "  method_version = VALUES(method_version)",
+                (h, url, payload.get("page_title"), payload.get("source_count"),
+                 payload.get("revision_id"), payload.get("method_version")),
             )
             cur.execute(
                 "INSERT INTO analysis_result "
@@ -294,6 +298,7 @@ class Cache:
         "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
         "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
         "       stage, progress_done, progress_total, eta_seconds, permanent, "
+        "       revision_id, method_version, "
         "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s, "
         # Wall-clock length of a finished run: claim -> completion.
         "       TIMESTAMPDIFF(SECOND, started_at, updated_at) AS total_s "
@@ -320,9 +325,11 @@ class Cache:
             "progress_total": r[12],
             "eta_seconds": r[13],
             "permanent": bool(r[14]),
+            "revision_id": r[15],
+            "method_version": r[16],
             # Time actually spent analysing, excluding the queue wait.
-            "running_seconds": int(r[15]) if r[15] is not None else None,
-            "total_seconds": int(r[16]) if r[16] is not None else None,
+            "running_seconds": int(r[17]) if r[17] is not None else None,
+            "total_seconds": int(r[18]) if r[18] is not None else None,
         }
 
     def _rows(self, where="", args=(), limit=50, order=None):
