@@ -8,6 +8,7 @@ from flask import Flask, request, jsonify, send_from_directory, render_template
 import config
 from cache import Cache, PENDING, RUNNING, DONE, ERROR
 from runner import run_analysis, AnalysisUnavailable
+from analyzer import normalize_analysis
 import status_i18n
 
 # The Nuxt SPA is generated into backend/static at build time (see the root
@@ -76,7 +77,13 @@ def analyze():
     if cache is not None:
         cached = cache.get(url)
         if cached is not None:
-            return jsonify(cached)
+            # Re-normalise on READ, not just at analysis time. Normalisation is
+            # cheap presentation logic (region derivation, unmapped markers,
+            # derived aggregate fields), so applying it here means a fix to it
+            # reaches every stored analysis immediately instead of only those
+            # re-scraped afterwards. It is idempotent: every field it writes is
+            # a field it reads.
+            return jsonify(normalize_analysis(cached))
 
         status, err = cache.status_of(url)
         if status in (PENDING, RUNNING):

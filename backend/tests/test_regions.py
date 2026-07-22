@@ -100,3 +100,26 @@ def test_upstream_geography_distribution_is_still_respected():
     agg = normalize_analysis(raw)["aggregated_bias"]
     assert agg["geography_distribution"]["France"]["count"] == 99
     assert agg["language_distribution"]["French"]["count"] == 99
+
+
+def test_normalize_analysis_is_idempotent():
+    """It runs on read as well as on write, so applying it twice must not drift."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "page_title": "X",
+        "page_url": "https://en.wikipedia.org/wiki/X",
+        "source_count": 2,
+        "sources": [
+            {"domain": "a.au", "geography": {"country": "Australia", "region": "Unknown"}},
+            {"domain": "b.com", "geography": {"country": "Unknown"}},
+        ],
+        "aggregated_bias": {
+            "geography_distribution": {"Australia": {"count": 1, "percentage": 50.0}},
+            "region_distribution": {"Unknown": {"count": 2, "percentage": 100.0}},
+        },
+    }
+    once = normalize_analysis(raw)
+    twice = normalize_analysis(once)
+    assert once == twice
+    assert once["aggregated_bias"]["region_distribution"]["Oceania"]["count"] == 1
