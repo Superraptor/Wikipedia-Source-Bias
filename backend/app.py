@@ -1,6 +1,6 @@
 import os
 import sys
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, quote
 
 from flask import Flask, request, jsonify, send_from_directory, render_template
 
@@ -149,9 +149,54 @@ def _humanize(seconds):
     return f"{hours} h {minutes:02d} min"
 
 
+STAGE_LABELS = {
+    "sources": "analyse des sources",
+    "aggregating": "agrégation des résultats",
+}
+
+
+def _progress(row):
+    """Percent complete, plus a rough ETA from the observed rate so far.
+
+    The ETA is extrapolated from this run's own throughput rather than a fixed
+    per-source constant, because time per source varies hugely with how many
+    external lookups each one triggers.
+    """
+    done = row.get("progress_done")
+    total = row.get("progress_total")
+    if not total or done is None:
+        return None, None, None
+
+    pct = min(100, int(done * 100 / total)) if total else None
+    # age_seconds, not since_update_seconds: the latter resets on every
+    # progress write. age spans queueing too, so the ETA is approximate and
+    # labelled as such in the UI.
+    elapsed = row.get("age_seconds")
+    eta = None
+    if elapsed and done > 0 and done < total:
+        per_item = elapsed / done
+        eta = _humanize(int(per_item * (total - done)))
+    return pct, f"{done}/{total}", eta
+
+
+def _analysis_url(row):
+    """Link to this tool's own dashboard for the article, not to Wikipedia."""
+    url = row.get("page_url") or ""
+    slug = urlparse(url).path.rsplit("/", 1)[-1]
+    if not slug:
+        return None
+    return f"/article/{slug}?src={quote(url, safe='')}"
+
+
 def _decorate(row):
     """Add the presentation fields the status view needs."""
     row["display_title"] = _display_title(row)
+    row["analysis_url"] = _analysis_url(row)
+    pct, counted, eta = _progress(row)
+    row["progress_pct"] = pct
+    row["progress_text"] = counted
+    row["eta"] = eta
+    row["stage_label"] = STAGE_LABELS.get(row.get("stage"), row.get("stage"))
     # A running row's clock started when a worker claimed it (updated_at); a
     # waiting row's when it was queued (created_at).
     if row["status"] == RUNNING:

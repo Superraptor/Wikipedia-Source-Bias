@@ -37,6 +37,13 @@ def _load_analyzer():
         return mock_analysis
 
 
-def run_analysis(url):
+def run_analysis(url, progress_cb=None):
     analyze = _load_analyzer()
-    return normalize_analysis(analyze(url))
+    if progress_cb is None:
+        return normalize_analysis(analyze(url))
+    try:
+        raw = analyze(url, progress_cb=progress_cb)
+    except TypeError:
+        # The demo mock takes only a url.
+        raw = analyze(url)
+    return normalize_analysis(raw)

@@ -27,6 +27,9 @@ STALE_SWEEP_EVERY = 6  # loop iterations between stale-row sweeps (~1 min)
 # half an hour.
 STALE_MINUTES = 10
 
+# Minimum gap between progress writes for one analysis.
+PROGRESS_EVERY_SECONDS = 5
+
 _running = True
 # The row this process currently holds, so a graceful shutdown can release it
 # instead of leaving it claimed.
@@ -93,8 +96,22 @@ def main():
         log(f"Analyzing {url}")
         globals()["_current_url"] = url
         started = time.monotonic()
+
+        # Throttled: an 880-source article would otherwise issue 880 UPDATEs.
+        last_report = [0.0]
+
+        def report(stage, done, total):
+            now = time.monotonic()
+            if now - last_report[0] < PROGRESS_EVERY_SECONDS and done != total:
+                return
+            last_report[0] = now
+            try:
+                cache.set_progress(url, stage, done, total)
+            except Exception:
+                pass
+
         try:
-            result = run_analysis(url)
+            result = run_analysis(url, progress_cb=report)
         except Exception as e:
             log(f"  FAILED after {time.monotonic() - started:.1f}s: {e}")
             # Cleared here too: this branch `continue`s past the finally

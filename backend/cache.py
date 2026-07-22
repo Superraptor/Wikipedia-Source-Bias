@@ -190,6 +190,24 @@ class Cache:
         self._commit()
         return released
 
+    def set_progress(self, url, stage, done, total):
+        """Record how far an in-flight analysis has got.
+
+        Guarded on status='running' so a late callback from a worker being
+        shut down cannot revive a row that has already been released.
+        """
+        cur = self.conn.cursor()
+        try:
+            cur.execute(
+                "UPDATE analysis_cache "
+                "SET stage = %s, progress_done = %s, progress_total = %s "
+                "WHERE url_hash = %s AND status = 'running'",
+                (stage, done, total, self._hash(url)),
+            )
+        finally:
+            cur.close()
+        self._commit()
+
     def mark_error(self, url, message):
         h = self._hash(url)
         cur = self.conn.cursor()
@@ -229,7 +247,8 @@ class Cache:
                 "SELECT page_url, page_title, status, attempts, error, "
                 "       source_count, created_at, updated_at, "
                 "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
-                "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s "
+                "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
+                "       stage, progress_done, progress_total "
                 "FROM analysis_cache "
                 "ORDER BY FIELD(status,'running','pending','error','done'), updated_at DESC "
                 "LIMIT %s",
@@ -252,6 +271,9 @@ class Cache:
                 # for a pending row, how long it has been waiting.
                 "age_seconds": int(r[8]) if r[8] is not None else None,
                 "since_update_seconds": int(r[9]) if r[9] is not None else None,
+                "stage": r[10],
+                "progress_done": r[11],
+                "progress_total": r[12],
             }
             for r in rows
         ]

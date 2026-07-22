@@ -256,3 +256,19 @@ def test_display_title_falls_back_to_the_url_slug():
     row = {"page_title": None,
            "page_url": "https://fr.wikipedia.org/wiki/Guerre_d%27Alg%C3%A9rie"}
     assert _display_title(row) == "Guerre d'Algérie"
+
+
+def test_status_rows_link_to_the_tool_not_wikipedia():
+    from app import _analysis_url
+
+    row = {"page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux"}
+    link = _analysis_url(row)
+    assert link.startswith("/article/Catherine_Barbaroux?src=")
+    # The source URL must be encoded, or the query string breaks on the ? and &.
+    assert "https%3A%2F%2Ffr.wikipedia.org" in link
+
+
+def test_analysis_url_is_none_without_a_slug():
+    from app import _analysis_url
+
+    assert _analysis_url({"page_url": ""}) is None

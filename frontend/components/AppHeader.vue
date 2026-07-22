@@ -14,6 +14,9 @@
         <a class="app-header__navlink" href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">
           Méthodologie
         </a>
+        <a class="app-header__navlink" href="/status">
+          File d'analyse
+        </a>
         <a class="app-header__navlink" href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">
           Code source
         </a>

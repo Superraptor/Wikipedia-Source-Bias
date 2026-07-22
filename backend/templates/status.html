@@ -46,6 +46,9 @@
   .empty, .dberr { border: 1px solid var(--line); border-radius: 4px; padding: 1rem; color: var(--muted); }
   .dberr { border-color: var(--error); color: var(--error); }
   .u { color: var(--muted); font-size: .75rem; word-break: break-all; }
+  .prog { min-width: 12rem; }
+  .bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; margin-bottom: .2rem; }
+  .bar span { display: block; height: 100%; background: var(--running); }
   .dur { white-space: nowrap; font-variant-numeric: tabular-nums; }
   .dl { color: var(--muted); font-size: .7rem; display: block; }
   .active { border: 1px solid var(--running); border-radius: 4px; padding: .75rem 1rem; margin-bottom: 1.25rem; }
@@ -83,8 +86,11 @@
           {% for r in active %}
             <li>
               <span class="badge s-{{ r.status }}">{{ r.status }}</span>
-              <strong>{{ r.display_title }}</strong>
+              <strong><a href="{{ r.analysis_url or r.page_url }}">{{ r.display_title }}</a></strong>
               — {{ r.duration_label }} {{ r.duration or "?" }}
+              {% if r.progress_pct is not none %}
+                · {{ r.stage_label }} {{ r.progress_text }} ({{ r.progress_pct }}%){% if r.eta %}, reste ~{{ r.eta }}{% endif %}
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
@@ -96,7 +102,7 @@
       <table>
         <thead>
           <tr>
-            <th>Article</th><th>Statut</th><th>Durée</th><th class="num">Sources</th>
+            <th>Article</th><th>Statut</th><th>Avancement</th><th>Durée</th><th class="num">Sources</th>
             <th class="num">Essais</th><th>Erreur</th><th>Mis à jour</th>
           </tr>
         </thead>
@@ -104,10 +110,27 @@
         {% for r in rows %}
           <tr>
             <td class="url">
-              <a href="{{ r.page_url }}" rel="noreferrer">{{ r.display_title }}</a>
-              <div class="u">{{ r.page_url }}</div>
+              {% if r.analysis_url %}
+                <a href="{{ r.analysis_url }}">{{ r.display_title }}</a>
+              {% else %}
+                {{ r.display_title }}
+              {% endif %}
+              <div class="u">
+                <a href="{{ r.page_url }}" target="_blank" rel="noreferrer noopener">{{ r.page_url }}</a>
+              </div>
             </td>
             <td><span class="badge s-{{ r.status }}">{{ r.status }}</span></td>
+            <td class="prog">
+              {% if r.progress_pct is not none %}
+                <div class="bar"><span style="width: {{ r.progress_pct }}%"></span></div>
+                <span class="dl">
+                  {{ r.stage_label or "" }} {{ r.progress_text }} ({{ r.progress_pct }}%)
+                  {% if r.eta %}· reste ~{{ r.eta }}{% endif %}
+                </span>
+              {% elif r.status == "running" %}
+                <span class="dl">extraction des références…</span>
+              {% else %}—{% endif %}
+            </td>
             <td class="dur">
               {% if r.duration %}<span class="dl">{{ r.duration_label }}</span> {{ r.duration }}{% else %}—{% endif %}
             </td>

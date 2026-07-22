@@ -63,3 +63,11 @@ CREATE TABLE IF NOT EXISTS kv_cache (
                ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (namespace, key_hash)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Progress reporting for in-flight analyses. Without this a long article sits
+-- at "running" for tens of minutes with no indication of where it has got to
+-- or how much is left.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS stage VARCHAR(24) NULL,
+    ADD COLUMN IF NOT EXISTS progress_done INT NULL,
+    ADD COLUMN IF NOT EXISTS progress_total INT NULL;

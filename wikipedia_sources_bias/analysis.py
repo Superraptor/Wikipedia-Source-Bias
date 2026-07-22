@@ -1852,7 +1852,15 @@ def _save_page_cache(cache: dict[str, Any]):
         _put_page_cache(k, v)
 
 
-def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False, output: str | None = None) -> dict[str, Any]:
+def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False, output: str | None = None, progress_cb: Any = None) -> dict[str, Any]:
+    """Analyze a Wikipedia article's references.
+
+    progress_cb: optional callable(stage, done, total). Called as sources are
+    processed so a long-running caller (the Toolforge worker) can report where
+    an analysis has got to, instead of leaving it opaque for tens of minutes.
+    Exceptions raised by the callback are swallowed: reporting must never
+    break an analysis.
+    """
     cache_suffix = ""
     if countries_only:
         cache_suffix += "_countries"
@@ -1926,6 +1934,12 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         bar = '█' * filled_length + '-' * (bar_length - filled_length)
         sys.stderr.write(f"[{bar}] {percent}% complete\n")
         sys.stderr.flush()
+
+        if progress_cb is not None:
+            try:
+                progress_cb("sources", idx, total)
+            except Exception:
+                pass
 
         wikidata = _fetch_wikidata_enrichment(resolved_url)
         profile = analyze_source_bias(resolved_url, wikidata)
@@ -2067,6 +2081,12 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 "is_partial": True
             }
             _put_page_cache(cache_key, intermediate_result)
+
+    if progress_cb is not None:
+        try:
+            progress_cb("aggregating", total, total)
+        except Exception:
+            pass
 
     if total > 0:
         sys.stderr.write(f"\r[{'█'*20}] 100% complete! Processing finished.\n")
