@@ -10488,5 +10488,191 @@
     "occupations": [],
     "employers": []
   },
-  "Корнюшкін Юра": {}
+  "Корнюшкін Юра": {},
+  "Gazeta.ua": {
+    "wikidata_id": "Q47080752",
+    "wikidata_name": "gazeta.ua",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Володимир Лук'янюк": {},
+  "Кавун.Сity": {},
+  "Alexandra Goujon": {
+    "wikidata_id": "Q15943337",
+    "wikidata_name": "Alexandra Goujon",
+    "gender": "female",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "political scientist",
+      "research fellow",
+      "university teacher"
+    ],
+    "employers": [
+      {
+        "name": "University of Burgundy Europe",
+        "country": "France"
+      },
+      {
+        "name": "Sciences Po",
+        "country": "France"
+      },
+      {
+        "name": "Paris North University",
+        "country": "France"
+      }
+    ]
+  },
+  "evpf29": {},
+  "CFR_org": {},
+  "ONU_fr": {},
+  "Pierre Sautreuil et Fabrice Deprez": {},
+  "Blaise Gauquelin": {
+    "wikidata_id": "Q2905783",
+    "wikidata_name": "Blaise Gauquelin",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Ivana Kottasová,Tamara Qiblawi,Helen Regan": {},
+  "https://x.com/anadolufrancais": {},
+  "bbcafrique": {},
+  "Barak Ravid,Dave Lawler": {},
+  "Liudmyla Pidkuimukha": {},
+  "Zbigniew Truchlewski": {},
+  "Shaun Walker": {
+    "wikidata_id": "Q112523961",
+    "wikidata_name": "Shaun Walker",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "Foreign correspondent",
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Sasha Petrova": {},
+  "Лилия  Ржеутская": {},
+  "Ирина Шелудкова": {},
+  "Регіональний фактчек": {},
+  "Николай Семена": {},
+  "Polygraph": {
+    "wikidata_id": "Q2330979",
+    "wikidata_name": "polygraph",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Voice of America": {
+    "wikidata_id": "Q4016047",
+    "wikidata_name": "Voice of America",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Alexandre Billette": {
+    "wikidata_id": "Q26214487",
+    "wikidata_name": "Alexandre Billette",
+    "gender": "male",
+    "citizenships": [
+      "Canada"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": [
+      {
+        "name": "Radio France Internationale",
+        "country": "France"
+      }
+    ]
+  },
+  "Voir tous les articles par Cyrille BRET": {},
+  "Eva Moysan": {
+    "wikidata_id": "Q117466474",
+    "wikidata_name": "Eva Moysan",
+    "gender": "female",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "journalist"
+    ],
+    "employers": []
+  },
+  "Данило Дубчак, Вікторія Калімбет": {},
+  "ET Online": {},
+  "Тетяна Колісник": {},
+  "volynpost": {},
+  "Philippe Rekacewicz": {
+    "wikidata_id": "Q3380611",
+    "wikidata_name": "Philippe Rekacewicz",
+    "gender": "male",
+    "citizenships": [
+      "France"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "cartographer",
+      "geographer",
+      "information designer"
+    ],
+    "employers": []
+  },
+  "Dmytro Kouzoubov": {},
+  "Emmanuel Grynszpan": {
+    "wikidata_id": "Q122746034",
+    "wikidata_name": "Emmanuel Grynszpan",
+    "gender": "male",
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  },
+  "Jacques Audran": {},
+  "Nigel Gould-Davies": {
+    "wikidata_id": "Q56821949",
+    "wikidata_name": "Nigel Gould-Davies",
+    "gender": "male",
+    "citizenships": [
+      "United Kingdom"
+    ],
+    "political_parties": [],
+    "occupations": [
+      "diplomat"
+    ],
+    "employers": [
+      {
+        "name": "Foreign, Commonwealth and Development Office",
+        "country": "United Kingdom"
+      }
+    ]
+  },
+  "Andrei Kolesnikov": {
+    "wikidata_id": "Q85801682",
+    "wikidata_name": "Andrei L Kolesnikov",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [
+      "researcher"
+    ],
+    "employers": []
+  }
 }

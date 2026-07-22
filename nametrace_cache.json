@@ -12018,5 +12018,365 @@
       "gender": 0.640735387802124,
       "subregion": 0.3536500036716461
     }
+  },
+  "Gazeta.ua": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999996423721313,
+      "gender": 0.5049834251403809,
+      "subregion": 0.39145857095718384
+    }
+  },
+  "Володимир Лук'янюк": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999884366989136,
+      "gender": 0.6079171299934387,
+      "subregion": 0.38044363260269165
+    }
+  },
+  "Кавун.Сity": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8293455243110657,
+      "subregion": 0.8107168674468994
+    }
+  },
+  "Alexandra Goujon": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9248714447021484,
+      "subregion": 0.6655943393707275
+    }
+  },
+  "evpf29": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999912183930064,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "CFR_org": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999944680739645,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "ONU_fr": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9990395103232004,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Pierre Sautreuil et Fabrice Deprez": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9680585861206055,
+      "subregion": 0.8483304381370544
+    }
+  },
+  "Blaise Gauquelin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7251986861228943,
+      "subregion": 0.6151168346405029
+    }
+  },
+  "Ivana Kottasová,Tamara Qiblawi,Helen Regan": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9033454656600952,
+      "subregion": 0.6781179308891296
+    }
+  },
+  "https://x.com/anadolufrancais": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 0.9999994039535522,
+      "gender": 0.7890652418136597,
+      "subregion": 0.27972692251205444
+    }
+  },
+  "bbcafrique": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999927589788058,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Barak Ravid,Dave Lawler": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8733853697776794,
+      "subregion": 0.5698716044425964
+    }
+  },
+  "Liudmyla Pidkuimukha": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Africa",
+    "confidence": {
+      "human": 0.9989709854125977,
+      "gender": 0.7892659902572632,
+      "subregion": 0.1854752153158188
+    }
+  },
+  "Zbigniew Truchlewski": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7743168473243713,
+      "subregion": 0.3216647803783417
+    }
+  },
+  "Shaun Walker": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9052522778511047,
+      "subregion": 0.3917161822319031
+    }
+  },
+  "Sasha Petrova": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7854257822036743,
+      "subregion": 0.6559711694717407
+    }
+  },
+  "Лилия  Ржеутская": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9994080066680908,
+      "gender": 0.5176787972450256,
+      "subregion": 0.35777387022972107
+    }
+  },
+  "Ирина Шелудкова": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9994080066680908,
+      "gender": 0.5067389607429504,
+      "subregion": 0.3648442327976227
+    }
+  },
+  "Регіональний фактчек": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999988079071045,
+      "gender": 0.5439910292625427,
+      "subregion": 0.38570675253868103
+    }
+  },
+  "Николай Семена": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999877214431763,
+      "gender": 0.5538079142570496,
+      "subregion": 0.367281436920166
+    }
+  },
+  "Polygraph": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9991666078567505,
+      "gender": 0.609582781791687,
+      "subregion": 0.42678776383399963
+    }
+  },
+  "Voice of America": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9992699159774929,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Alexandre Billette": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9374169707298279,
+      "subregion": 0.5136917233467102
+    }
+  },
+  "Voir tous les articles par Cyrille BRET": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999810457229614,
+      "gender": 0.9228030443191528,
+      "subregion": 0.7900104522705078
+    }
+  },
+  "Eva Moysan": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8941494822502136,
+      "subregion": 0.32722583413124084
+    }
+  },
+  "Данило Дубчак, Вікторія Калімбет": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999845027923584,
+      "gender": 0.5041408538818359,
+      "subregion": 0.4656454920768738
+    }
+  },
+  "ET Online": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9541922025382519,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Тетяна Колісник": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999858140945435,
+      "gender": 0.5254368185997009,
+      "subregion": 0.3682760000228882
+    }
+  },
+  "volynpost": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9998044371604919,
+      "gender": 0.6793904900550842,
+      "subregion": 0.29106929898262024
+    }
+  },
+  "Philippe Rekacewicz": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9609678983688354,
+      "subregion": 0.7131765484809875
+    }
+  },
+  "Dmytro Kouzoubov": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9241998195648193,
+      "subregion": 0.643622100353241
+    }
+  },
+  "Emmanuel Grynszpan": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9644775390625,
+      "subregion": 0.7362110018730164
+    }
+  },
+  "Jacques Audran": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9526836276054382,
+      "subregion": 0.69292813539505
+    }
+  },
+  "Nigel Gould-Davies": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9289529919624329,
+      "subregion": 0.7755553722381592
+    }
+  },
+  "Andrei Kolesnikov": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9704174995422363,
+      "subregion": 0.7543573975563049
+    }
   }
 }

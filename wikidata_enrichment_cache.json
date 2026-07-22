@@ -1330,5 +1330,91 @@
   "iuv.guide": {},
   "nbuv.gov.ua": {},
   "romny-vk.gov.ua": {},
-  "m.gazeta.ua": {}
+  "m.gazeta.ua": {},
+  "solovki.ca": {},
+  "jnsm.com.ua": {},
+  "dumskaya.net": {
+    "wikidata_label": "dumskaya",
+    "wikidata_id": "Q56357936",
+    "wikidata_description": ""
+  },
+  "kavun.city": {},
+  "france-ukraine.com": {},
+  "place-armes.fr": {},
+  "cfr.org": {},
+  "cnn.com": {
+    "wikidata_label": "CNN.com",
+    "wikidata_id": "Q12217473",
+    "wikidata_description": "news website of CNN"
+  },
+  "aa.com.tr": {},
+  "axios.com": {},
+  "demoscope.ru": {},
+  "ukrainian-studies.ca": {},
+  "nouvelle-europe.eu": {},
+  "aljazeera.com": {
+    "wikidata_label": "aljazeera.com",
+    "wikidata_id": "Q4727585",
+    "wikidata_description": "website for Al Jazeera"
+  },
+  "kiis.com.ua": {},
+  "ratinggroup.ua": {},
+  "dw.com": {
+    "wikidata_label": "Deutsche Welle.com",
+    "wikidata_id": "Q116424635",
+    "wikidata_description": "official website of international German public radio and television channel Deutsche Welle"
+  },
+  "ru.euronews.com": {},
+  "without-lie.info": {},
+  "hrw.org": {
+    "wikidata_label": "Human Rights Watch",
+    "wikidata_id": "Q187052",
+    "wikidata_description": "international human rights advocacy and research non-governmental organization"
+  },
+  "ru.krymr.com": {},
+  "golosameriki.com": {},
+  "polygraph.info": {
+    "wikidata_label": "Polygraph.info",
+    "wikidata_id": "Q54321718",
+    "wikidata_description": "fact-checking website-aggregator"
+  },
+  "fr.rian.ru": {},
+  "actualite.portail.free.fr": {},
+  "eurasiaprospective.net": {},
+  "electionguide.org": {},
+  "frontliner.ua": {},
+  "warpowerukraine.com": {},
+  "economictimes.indiatimes.com": {
+    "wikidata_label": "The Economic Times",
+    "wikidata_id": "Q1954757",
+    "wikidata_description": "Indian financial newspaper"
+  },
+  "crsreports.congress.gov": {},
+  "databank.worldbank.org": {},
+  "cia.gov": {},
+  "wipo.int": {},
+  "trade.gov": {},
+  "urbanrail.net": {
+    "wikidata_label": "UrbanRail",
+    "wikidata_id": "Q32150755",
+    "wikidata_description": ""
+  },
+  "en.info-kmu.com.ua": {},
+  "dozor.kr.ua": {},
+  "dakiro.kr-admin.gov.ua": {},
+  "persha.kr.ua": {},
+  "gre4ka.info": {},
+  "kroptravel.gov.ua": {},
+  "volynpost.com": {},
+  "subotsi.info": {},
+  "wumag.kiev.ua": {},
+  "derev.org.ua": {},
+  "themoscowtimes.com": {},
+  "carnegieendowment.org": {},
+  "citypopulation.de": {
+    "wikidata_label": "Citypopulation.de",
+    "wikidata_id": "Q117001310",
+    "wikidata_description": "German demography site"
+  },
+  "showdata.gks.ru": {}
 }

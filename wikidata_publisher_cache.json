@@ -6357,5 +6357,331 @@
       "human settlement"
     ],
     "mbfc_id": null
+  },
+  "dumskaya.net": {
+    "wikidata_id": "Q56357936",
+    "wikidata_name": "dumskaya",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "cfr.org": {
+    "wikidata_id": "Q594712",
+    "wikidata_name": "Council on Foreign Relations",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "think tank"
+    ],
+    "mbfc_id": "council-on-foreign-relations"
+  },
+  "cnn.com": {
+    "wikidata_id": "Q12217473",
+    "wikidata_name": "CNN.com",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "CNN",
+      "Warner Bros. Discovery"
+    ],
+    "types": [
+      "United States cable news",
+      "film production company",
+      "news website",
+      "online newspaper",
+      "specialty channel"
+    ],
+    "mbfc_id": "cnn-bias"
+  },
+  "axios.com": {
+    "wikidata_id": "Q28230873",
+    "wikidata_name": "Axios",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Cox Enterprises"
+    ],
+    "types": [
+      "business",
+      "news website"
+    ],
+    "mbfc_id": "axios"
+  },
+  "demoscope.ru": {
+    "wikidata_id": "Q4157690",
+    "wikidata_name": "Demoskop Weekly",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "aljazeera.com": {
+    "wikidata_id": "Q4727585",
+    "wikidata_name": "aljazeera.com",
+    "countries": [
+      "Qatar"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Al Jazeera Media Network"
+    ],
+    "types": [
+      "broadcaster",
+      "online newspaper",
+      "television station"
+    ],
+    "mbfc_id": "al-jazeera"
+  },
+  "ratinggroup.ua": {
+    "wikidata_id": "Q12147447",
+    "wikidata_name": "Sociological group \"RATING\"",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "ru.euronews.com": {
+    "wikidata_id": "Q106823021",
+    "wikidata_name": "Euronews Russian",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Euronews"
+    ],
+    "types": [
+      "subsidiary company",
+      "television channel"
+    ],
+    "mbfc_id": null
+  },
+  "hrw.org": {
+    "wikidata_id": "Q187052",
+    "wikidata_name": "Human Rights Watch",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Undesirable foreign organization in Russia",
+      "human rights organization",
+      "international non-governmental organization",
+      "nonprofit organization"
+    ],
+    "mbfc_id": "human-rights-watch"
+  },
+  "polygraph.info": {
+    "wikidata_id": "Q54321718",
+    "wikidata_name": "Polygraph.info",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "aggregator",
+      "website"
+    ],
+    "mbfc_id": "polygraph-info"
+  },
+  "electionguide.org": {
+    "wikidata_id": "Q133488145",
+    "wikidata_name": "ElectionGuide",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "International Foundation for Electoral Systems"
+    ],
+    "types": [
+      "database"
+    ],
+    "mbfc_id": null
+  },
+  "warpowerukraine.com": {},
+  "economictimes.indiatimes.com": {
+    "wikidata_id": "Q1954757",
+    "wikidata_name": "The Economic Times",
+    "countries": [
+      "India"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "The Times Group"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": "the-economic-times"
+  },
+  "crsreports.congress.gov": {
+    "wikidata_id": "Q6451276",
+    "wikidata_name": "Congressional Research Service report",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "official publication"
+    ],
+    "mbfc_id": null
+  },
+  "databank.worldbank.org": {},
+  "cia.gov": {
+    "wikidata_id": "Q60519356",
+    "wikidata_name": "list of CIA controversies",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Wikimedia list article",
+      "foreign intelligence service",
+      "independent agency of the United States government"
+    ],
+    "mbfc_id": null
+  },
+  "wipo.int": {
+    "wikidata_id": "Q177773",
+    "wikidata_name": "World Intellectual Property Organization",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "intellectual property organization",
+      "specialized agency of the United Nations"
+    ],
+    "mbfc_id": null
+  },
+  "trade.gov": {
+    "wikidata_id": "Q6054002",
+    "wikidata_name": "International Trade Administration",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "United States federal agency"
+    ],
+    "mbfc_id": null
+  },
+  "urbanrail.net": {
+    "wikidata_id": "Q32150755",
+    "wikidata_name": "UrbanRail",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "dakiro.kr-admin.gov.ua": {
+    "wikidata_id": "Q4146769",
+    "wikidata_name": "State Archive of Kirovohrad Oblast",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "state archives"
+    ],
+    "mbfc_id": null
+  },
+  "gre4ka.info": {},
+  "themoscowtimes.com": {
+    "wikidata_id": "Q1202611",
+    "wikidata_name": "The Moscow Times",
+    "countries": [
+      "Netherlands",
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Derk Sauer"
+    ],
+    "types": [
+      "daily newspaper",
+      "news website",
+      "newspaper",
+      "organization"
+    ],
+    "mbfc_id": "moscow-times"
+  },
+  "carnegieendowment.org": {
+    "wikidata_id": "Q1153595",
+    "wikidata_name": "Carnegie Endowment for International Peace",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "foundation",
+      "nonprofit organization",
+      "peace organization",
+      "think tank"
+    ],
+    "mbfc_id": "carnegie-endowment-for-international-peace"
+  },
+  "citypopulation.de": {
+    "wikidata_id": "Q117001310",
+    "wikidata_name": "Citypopulation.de",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "database",
+      "website"
+    ],
+    "mbfc_id": null
   }
 }
