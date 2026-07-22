@@ -158,12 +158,13 @@
   },
   "footer": {
     "methodologyLabel": "Methodology",
-    "methodologyText": "Geographic assignment via the Wikidata publisher (P17 / P495) with a TLD fallback; political leans via Wikidata conditionals with an MBFC fallback. “{unmapped}” sources are flagged explicitly, never hidden.",
+    "methodologyText": "Geographic origin: curated domain database, then country-code TLD, then the publisher's country on Wikidata (P17/P495). Political leaning: Wikidata claims, then Media Bias/Fact Check. Author data from Wikidata is sourced; anything inferred from a name is an estimate and is marked as one. Unresolved sources are always shown with the reason, never hidden.",
     "projectLabel": "Project",
     "projectText": "Wikimania 2026 — Team 05E {team}. Open-source tool (MIT) deployed on Toolforge.",
     "teamName": "Deciphering Biases",
     "linkMethodology": "Methodology & team",
     "linkSource": "Source code (GitHub)",
-    "linkQueue": "Analysis queue"
+    "linkQueue": "Analysis queue",
+    "methodologyLink": "Full methodology"
   }
 }

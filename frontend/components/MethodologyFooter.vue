@@ -13,6 +13,7 @@
           {{ t("footer.projectText", { team: t("footer.teamName") }) }}
         </p>
         <ul class="methodology-footer__links">
+          <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">{{ t("footer.methodologyLink") }}</a></li>
           <li><a href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">{{ t("footer.linkMethodology") }}</a></li>
           <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">{{ t("footer.linkSource") }}</a></li>
           <li><a href="https://wikibias-analyzer.toolforge.org/" rel="noopener">wikibias-analyzer.toolforge.org</a></li>

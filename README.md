@@ -10,7 +10,8 @@ Are French Wikipedia articles predominantly citing French media? Do English arti
 |---|---|
 | **Live tool** | <https://wikibias-analyzer.toolforge.org/> |
 | **Analysis queue** | <https://wikibias-analyzer.toolforge.org/status> |
-| **Team & methodology** | [Wikimania 2026 — Team 05E Europe](https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe) |
+| **Methodology** | [METHODOLOGY.md](METHODOLOGY.md) — how each number is derived, and what it does not mean |
+| **Team** | [Wikimania 2026 — Team 05E Europe](https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe) |
 | **Source** | <https://github.com/Superraptor/Wikipedia-Source-Bias> |
 | **Licence** | MIT (see `LICENSE`, contributors in `AUTHORS.md`) |
 
