@@ -98,3 +98,38 @@ describe("empty analyses", () => {
     expect(axes.neutrality).toBe(75);
   });
 });
+
+describe("neutrality vs missing data", () => {
+  it("scores 0 when subjectivity was never measured", () => {
+    // Regression: `1 - undefined` coerced to a perfect 100.
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: { geography_distribution: { France: { count: 8, percentage: 100 } } },
+    });
+    expect(axes.neutrality).toBe(0);
+  });
+
+  it("scores 0 when the sample count is explicitly zero", () => {
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: {
+        geography_distribution: { France: { count: 8, percentage: 100 } },
+        average_subjectivity_score: 0,
+        subjectivity_sample_count: 0,
+      },
+    });
+    expect(axes.neutrality).toBe(0);
+  });
+
+  it("scores 100 only when zero subjectivity was genuinely measured", () => {
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: {
+        geography_distribution: { France: { count: 8, percentage: 100 } },
+        average_subjectivity_score: 0,
+        subjectivity_sample_count: 8,
+      },
+    });
+    expect(axes.neutrality).toBe(100);
+  });
+});

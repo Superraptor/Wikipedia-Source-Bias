@@ -176,6 +176,9 @@ def _aggregate(sources):
     gender_dist = {k: {"count": v, "percentage": round(100.0 * v / gender_total, 1)} for k, v in gender.items()}
     avg_subj = round(sum(subj_scores) / len(subj_scores), 3) if subj_scores else 0.0
     avg_sens = round(sum(sens_scores) / len(sens_scores), 3) if sens_scores else 0.0
+    # How many sources actually contributed a score. Without this the frontend
+    # cannot tell "measured, and it was 0" from "never measured", and
+    # neutrality (1 - subjectivity) turns a missing score into a perfect 100.
     return {
         "geography_distribution": geo,
         "political_leaning_distribution": lean,
@@ -183,6 +186,8 @@ def _aggregate(sources):
         "average_subjectivity_score": avg_subj,
         "average_sensationalism_score": avg_sens,
         "opinion_source_count": opinion_count,
+        "subjectivity_sample_count": len(subj_scores),
+        "sensationalism_sample_count": len(sens_scores),
         "reliability_distribution": reliability,
         "source_type_distribution": source_type,
         "region_distribution": region,
@@ -190,11 +195,29 @@ def _aggregate(sources):
     }
 
 
+# Fields the upstream analyzer's own aggregate does not always produce. When
+# they are missing the frontend cannot distinguish absent from zero, so they
+# are recomputed from the normalised sources rather than left undefined.
+_DERIVED_KEYS = (
+    "average_subjectivity_score",
+    "average_sensationalism_score",
+    "opinion_source_count",
+    "subjectivity_sample_count",
+    "sensationalism_sample_count",
+)
+
+
 def normalize_analysis(raw):
     sources = [_norm_source(s) for s in raw.get("sources", [])]
     agg = raw.get("aggregated_bias") or {}
     if not agg.get("geography_distribution"):
         agg = _aggregate(sources)
+    elif any(k not in agg for k in _DERIVED_KEYS):
+        # Keep the upstream distributions, fill in what it omitted.
+        computed = _aggregate(sources)
+        agg = dict(agg)
+        for k in _DERIVED_KEYS:
+            agg.setdefault(k, computed[k])
     return {
         "page_title": raw.get("page_title", ""),
         "page_url": raw.get("page_url", ""),

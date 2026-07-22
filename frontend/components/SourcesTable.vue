@@ -29,7 +29,7 @@
                 <span class="sources-table__domain">{{ s.domain || truncate(s.url, 28) }}</span>
                 <span class="sources-table__url">{{ truncate(s.url, 52) }}</span>
               </td>
-              <td>
+              <td :data-label="t('sourcesTable.columnCountry')">
                 {{ countryLabel(s.geography?.country, t) }}
                 <!-- Explains WHY a source is unmapped; without it an unmapped
                      row is indistinguishable from a bug. The backend sends a
@@ -41,8 +41,8 @@
                   >&#9432;</abbr
                 >
               </td>
-              <td><LeanBadge :lean="s.political_leaning" /></td>
-              <td><ReliabilityBadge :level="s.reliability" /></td>
+              <td :data-label="t('sourcesTable.columnLean')"><LeanBadge :lean="s.political_leaning" /></td>
+              <td :data-label="t('sourcesTable.columnReliability')"><ReliabilityBadge :level="s.reliability" /></td>
             </tr>
             <tr v-if="expanded === i" class="sources-table__detail">
               <td colspan="4">
@@ -147,6 +147,63 @@ ReliabilityBadge.props = ["level"];
 </script>
 
 <style scoped>
+/* Below 640px the four columns cannot coexist: the table became a horizontal
+   scroller whose country / leaning / reliability columns sat off-screen, so
+   the numbers that matter were invisible unless you thought to swipe. Each
+   row becomes a card with labelled fields instead. */
+@media (max-width: 640px) {
+  .sources-table__scroll {
+    overflow-x: visible;
+  }
+  .sources-table thead {
+    /* Visually hidden, still announced to screen readers. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .sources-table table,
+  .sources-table tbody,
+  .sources-table tr,
+  .sources-table td {
+    display: block;
+    width: 100%;
+  }
+  .sources-table__row {
+    border: 1px solid var(--wsi-line-soft);
+    border-radius: 4px;
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  .sources-table__row td {
+    border-bottom: 0;
+    padding: 2px 0;
+  }
+  .sources-table__row td[data-label]::before {
+    content: attr(data-label) " ";
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wsi-ink-faint);
+    margin-right: 0.4em;
+  }
+  .sources-table__src {
+    min-width: 0;
+  }
+  .sources-table__url {
+    word-break: break-all;
+  }
+  .sources-table__detail td {
+    padding: var(--space-2) 0;
+  }
+  .sources-table__detail pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
 .sources-table {
   padding: var(--space-5);
 }

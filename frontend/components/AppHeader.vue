@@ -172,9 +172,30 @@ function onLocaleChange(event) {
 }
 
 @media (max-width: 720px) {
-  .app-header__subtitle,
-  .app-header__nav {
+  /* The tagline is decorative, so it goes. The nav must NOT: hiding it left
+     the language switcher, the analysis queue and the source link completely
+     unreachable on a phone. It wraps onto its own row instead. */
+  .app-header__subtitle {
     display: none;
+  }
+  .app-header__bar {
+    flex-wrap: wrap;
+    row-gap: var(--space-2);
+  }
+  .app-header__nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    font-size: 0.85rem;
+  }
+  .app-header__navlink,
+  .app-header__lang-select {
+    font-size: 0.85rem;
+  }
+  /* Comfortable touch targets without making the bar tall. */
+  .app-header__navlink {
+    padding: 2px 0;
   }
 }
 </style>

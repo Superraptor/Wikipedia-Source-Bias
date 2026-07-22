@@ -44,10 +44,16 @@ function authorParity(genderDist) {
 // from a genuine 0 -- and `1 - 0` is a perfect 100. An article with no
 // references therefore scored full marks for neutrality. `hasData` makes the
 // "nothing measured" case explicit.
-function neutrality(avgSubj, hasData) {
+function neutrality(agg, hasData) {
   if (!hasData) return 0;
-  const s = typeof avgSubj === "number" ? avgSubj : 0;
-  return Math.round((1 - s) * 1000) / 10;
+  // An absent score is NOT a zero. `1 - undefined` coerced to a perfect 100,
+  // so an analysis that never measured subjectivity scored full marks for
+  // neutrality. sample_count says whether anything was actually measured.
+  const sampled = agg.subjectivity_sample_count;
+  if (sampled === 0) return 0;
+  const avg = agg.average_subjectivity_score;
+  if (typeof avg !== "number") return 0;
+  return Math.round((1 - avg) * 1000) / 10;
 }
 
 function reliability(relDist) {
@@ -102,7 +108,7 @@ export function computeRadarAxes(analysis) {
     geo_diversity: geoDiversity(agg.geography_distribution),
     political_pluralism: politicalPluralism(agg.political_leaning_distribution),
     author_parity: authorParity(agg.author_gender_distribution),
-    neutrality: neutrality(agg.average_subjectivity_score, hasSources),
+    neutrality: neutrality(agg, hasSources),
     reliability: reliability(agg.reliability_distribution),
   };
 }
