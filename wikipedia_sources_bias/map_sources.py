@@ -112,7 +112,8 @@ from typing import Any
 def generate_source_map(
     data: dict[str, Any],
     coords_cache: dict[str, list[float]] | None = None,
-    filter_unresolved: bool = False
+    filter_unresolved: bool = False,
+    split_multiple: bool = False,
 ) -> dict[str, Any]:
     if coords_cache is None:
         coords_cache = _load_coords_cache()
@@ -125,58 +126,62 @@ def generate_source_map(
 
     for s in sources:
         geo = s.get("geography", {})
-        country = geo.get("country") or s.get("country", "Unknown")
+        country_raw = geo.get("country") or s.get("country", "Unknown")
         region = geo.get("region", "Unknown")
         
-        # Split combined countries (e.g. "France, United Kingdom" -> "France")
-        primary_country = country.split(",")[0].strip() if country else "Unknown"
-        
-        coords = get_country_coordinates(primary_country, coords_cache)
-        if filter_unresolved:
-            if primary_country == "Unknown" or not coords or coords == [0.0, 0.0]:
-                continue
-                
-        country_counts[primary_country] = country_counts.get(primary_country, 0) + 1
-        
-        if not coords:
-            # Fallback by region
-            if region == "Europe":
-                coords = [48.69096, 9.14062]
-            elif region == "Asia":
-                coords = [34.04786, 100.61035]
-            elif region == "North America":
-                coords = [45.4161, -75.7]
-            elif region == "South/Central America":
-                coords = [-15.0, -50.0]
-            elif region == "Africa":
-                coords = [8.7832, 34.5085]
-            elif region == "Middle East":
-                coords = [29.2985, 42.5510]
-            elif region == "Oceania":
-                coords = [-22.7359, 140.0188]
-            else:
-                coords = [0.0, 0.0]  # Null Island fallback
+        if split_multiple and country_raw:
+            target_countries = [c.strip() for c in re.split(r'[,/;]', country_raw) if c.strip()]
+        else:
+            primary = country_raw.split(",")[0].strip() if country_raw else "Unknown"
+            target_countries = [primary]
 
-        # Build geo feature
-        feature = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [coords[1], coords[0]] # geojson coordinates order: [longitude, latitude]
-            },
-            "properties": {
-                "url": s.get("url"),
-                "domain": s.get("domain"),
-                "publisher_name": s.get("wikidata_publisher", {}).get("wikidata_name") or s.get("wikidata", {}).get("wikidata_label") or s.get("domain"),
-                "country": country,
-                "region": region,
-                "language": s.get("language"),
-                "political_leaning": s.get("political_leaning"),
-                "reliability": s.get("reliability"),
-                "mbfc": s.get("mbfc", {}),
+        for primary_country in target_countries:
+            coords = get_country_coordinates(primary_country, coords_cache)
+            if filter_unresolved:
+                if primary_country == "Unknown" or not coords or coords == [0.0, 0.0]:
+                    continue
+                    
+            country_counts[primary_country] = country_counts.get(primary_country, 0) + 1
+            
+            if not coords:
+                # Fallback by region
+                if region == "Europe":
+                    coords = [48.69096, 9.14062]
+                elif region == "Asia":
+                    coords = [34.04786, 100.61035]
+                elif region == "North America":
+                    coords = [45.4161, -75.7]
+                elif region == "South/Central America":
+                    coords = [-15.0, -50.0]
+                elif region == "Africa":
+                    coords = [8.7832, 34.5085]
+                elif region == "Middle East":
+                    coords = [29.2985, 42.5510]
+                elif region == "Oceania":
+                    coords = [-22.7359, 140.0188]
+                else:
+                    coords = [0.0, 0.0]  # Null Island fallback
+
+            # Build geo feature
+            feature = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [coords[1], coords[0]] # geojson coordinates order: [longitude, latitude]
+                },
+                "properties": {
+                    "url": s.get("url"),
+                    "domain": s.get("domain"),
+                    "publisher_name": s.get("wikidata_publisher", {}).get("wikidata_name") or s.get("wikidata", {}).get("wikidata_label") or s.get("domain"),
+                    "country": primary_country,
+                    "region": region,
+                    "language": s.get("language"),
+                    "political_leaning": s.get("political_leaning"),
+                    "reliability": s.get("reliability"),
+                    "mbfc": s.get("mbfc", {}),
+                }
             }
-        }
-        features.append(feature)
+            features.append(feature)
 
     # Build country-level features for heatmaps
     country_features = []
@@ -233,18 +238,30 @@ def main() -> None:
         action="store_true",
         help="Filter out sources that do not resolve to a known country in COUNTRY_COORDINATES",
     )
+    parser.add_argument(
+        "--split-multiple",
+        action="store_true",
+        help="Count each country individually when multiple are listed (e.g. 'Canada, United States')",
+    )
     parser.add_argument("--output", type=str, default="sources_map.json", help="Path to write JSON mapping to")
     args = parser.parse_args()
 
     max_sources = None if args.all else args.max_sources
     print(f"Analyzing page: {args.url}...", file=sys.stderr)
     try:
-        data = analyze_page(args.url, max_sources=max_sources, no_cache=args.no_cache, skip_rate_limiting=args.skip_rate_limiting, countries_only=True)
+        data = analyze_page(
+            args.url,
+            max_sources=max_sources,
+            no_cache=args.no_cache,
+            skip_rate_limiting=args.skip_rate_limiting,
+            countries_only=True,
+            split_multiple=args.split_multiple
+        )
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 
-    geojson = generate_source_map(data, filter_unresolved=args.filter_unresolved)
+    geojson = generate_source_map(data, filter_unresolved=args.filter_unresolved, split_multiple=args.split_multiple)
 
     try:
         with open(args.output, "w", encoding="utf-8") as f:

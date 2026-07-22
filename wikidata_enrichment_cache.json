@@ -1416,5 +1416,193 @@
     "wikidata_id": "Q117001310",
     "wikidata_description": "German demography site"
   },
-  "showdata.gks.ru": {}
+  "showdata.gks.ru": {},
+  "cambridge.org": {
+    "wikidata_label": "Cambridge Core",
+    "wikidata_id": "Q131351760",
+    "wikidata_description": "bibliographical database"
+  },
+  "books.google.ee": {},
+  "fao.org": {
+    "wikidata_label": "Food and Agriculture Organization of the United Nations",
+    "wikidata_id": "Q82151",
+    "wikidata_description": "international organization with the objective of ending hunger"
+  },
+  "consilium.europa.eu": {},
+  "sgae.gouv.fr": {},
+  "hir.harvard.edu": {},
+  "cdi.org": {},
+  "globalissues.org": {},
+  "armscontrolcenter.org": {},
+  "oryxspioenkop.com": {},
+  "asiatimes.com": {},
+  "lexology.com": {},
+  "tass.com": {
+    "wikidata_label": "TASS",
+    "wikidata_id": "Q223799",
+    "wikidata_description": "Russian state-owned news agency"
+  },
+  "bp.com": {},
+  "studentsoftheworld.info": {},
+  "indexmundi.com": {},
+  "productions-animales.org": {},
+  "eia.doe.gov": {},
+  "eia.gov": {},
+  "iea.org": {
+    "wikidata_label": "International Energy Agency",
+    "wikidata_id": "Q826700",
+    "wikidata_description": "autonomous intergovernmental organisation"
+  },
+  "oilprice.com": {},
+  "dorinfo.ru": {},
+  "rosstat.gov.ru": {},
+  "transparency-france.org": {},
+  "amnesty.org": {
+    "wikidata_label": "Amnesty International",
+    "wikidata_id": "Q42970",
+    "wikidata_description": "non-governmental organization based in the United Kingdom"
+  },
+  "rsf.org": {},
+  "occrp.org": {},
+  "cpj.org": {},
+  "ined.fr": {},
+  "unaids.org": {},
+  "ecsocman.hse.ru": {},
+  "unicef.org": {},
+  "rg.ru": {
+    "wikidata_label": "Rossiyskaya Gazeta",
+    "wikidata_id": "Q1853433",
+    "wikidata_description": "Russian government newspaper"
+  },
+  "ovideo.ru": {},
+  "deadline.com": {
+    "wikidata_label": "Deadline Hollywood",
+    "wikidata_id": "Q4037100",
+    "wikidata_description": "online entertainment news magazine"
+  },
+  "rusarch.ru": {},
+  "unesco.org": {},
+  "media.kremlin.ru": {},
+  "sabaka.over-blog.com": {},
+  "ibtimes.co.uk": {},
+  "larevue.info": {},
+  "maski-proekt.media": {},
+  "mirror.co.uk": {
+    "wikidata_label": "Daily Mirror",
+    "wikidata_id": "Q217623",
+    "wikidata_description": "British daily tabloid newspaper"
+  },
+  "pagesix.com": {},
+  "theweek.com": {},
+  "dossier.center": {},
+  "scmp.com": {
+    "wikidata_label": "South China Morning Post",
+    "wikidata_id": "Q1198574",
+    "wikidata_description": "Hong Kong newspaper"
+  },
+  "ntv.ru": {
+    "wikidata_label": "NTV",
+    "wikidata_id": "Q574625",
+    "wikidata_description": "Russian television channel"
+  },
+  "atalayar.com": {},
+  "terror1999.narod.ru": {},
+  "lemonde.fr:80": {},
+  "cafe-geo.net": {},
+  "kommersant.com": {},
+  "bricsnwd.com": {},
+  "lenta.ru": {
+    "wikidata_label": "lenta.ru",
+    "wikidata_id": "Q658909",
+    "wikidata_description": "Russian online news publication"
+  },
+  "coe.int": {},
+  "regard-est.com": {},
+  "robert-schuman.eu": {},
+  "siteresources.worldbank.org": {},
+  "libramemoria.com": {},
+  "letudiant.fr": {},
+  "gqmagazine.fr": {},
+  "rmcsport.bfmtv.com": {},
+  "medias.vie-publique.fr": {},
+  "visionsmag.com": {},
+  "bfmbusiness.bfmtv.com": {},
+  "metro.co.uk": {
+    "wikidata_label": "Metro",
+    "wikidata_id": "Q3307433",
+    "wikidata_description": "British free daily newspaper"
+  },
+  "busetcar.com": {},
+  "ege.fr": {},
+  "countryeconomy.com": {},
+  "blog.insee.fr": {},
+  "service-public.fr": {
+    "wikidata_label": "Service-public.gouv.fr",
+    "wikidata_id": "Q3480047",
+    "wikidata_description": "official website of the French public administration"
+  },
+  "afp.com": {},
+  "en-marche.fr": {},
+  "afriquexxi.info": {
+    "wikidata_label": "Afrique XXI",
+    "wikidata_id": "Q122700911",
+    "wikidata_description": "French webzine"
+  },
+  "all-andorra.com": {},
+  "ad.ambafrance.org": {},
+  "histoiresroyales.fr": {},
+  "thetimes.co.uk": {},
+  "france3-regions.franceinfo.fr": {
+    "wikidata_label": "france3-regions.franceinfo.fr",
+    "wikidata_id": "Q133802640",
+    "wikidata_description": "French news website"
+  },
+  "archive.ph": {},
+  "comptoir.org": {},
+  "planet.fr": {},
+  "amnesty.fr": {},
+  "usinenouvelle.com": {},
+  "contexte.com": {
+    "wikidata_label": "Contexte",
+    "wikidata_id": "Q61825507",
+    "wikidata_description": "French online media"
+  },
+  "e-marketing.fr": {},
+  "frenchamerican.org": {},
+  "zap-tele.com": {},
+  "culturebox.francetvinfo.fr": {},
+  "comixtrip.fr": {
+    "wikidata_label": "Comixtrip",
+    "wikidata_id": "Q139827428",
+    "wikidata_description": ""
+  },
+  "brain-magazine.fr": {},
+  "bopa.ad": {},
+  "metropoles.com": {},
+  "sintese.com": {},
+  "lechiquiersocial.com": {},
+  "pressecotedivoire.ci": {},
+  "wam.ae": {},
+  "ritarikunnat.fi": {},
+  "maroc-diplomatique.net": {},
+  "defimedia.info": {},
+  "newsmaker.md": {},
+  "pointdevue.fr": {},
+  "radiobijelopolje.me": {},
+  "royalwatcherblog.com": {},
+  "diwan.gov.qa": {},
+  "assets.publishing.service.gov.uk": {},
+  "kungahuset.se": {
+    "wikidata_label": "Kungahuset.se, ordnar och medaljer",
+    "wikidata_id": "Q123456891",
+    "wikidata_description": "website"
+  },
+  "leaders.com.tn": {},
+  "utoronto.ca": {
+    "wikidata_label": "University of Toronto",
+    "wikidata_id": "Q180865",
+    "wikidata_description": "public research university in the Greater Toronto Area of Ontario, Canada"
+  },
+  "koreatimes.co.kr": {},
+  "atlanticcouncil.org": {}
 }

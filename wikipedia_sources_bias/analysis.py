@@ -7,6 +7,7 @@ import sys
 from typing import Any
 from urllib.parse import urlparse, parse_qs
 
+import math
 import requests
 from bs4 import BeautifulSoup
 
@@ -43,6 +44,8 @@ from .heuristics_data import (
     OPINION_EDITORIAL_INDICATORS,
     MULTILINGUAL_LOADED_WORDS,
     MULTILINGUAL_OPINION_INDICATORS,
+    COUNTRY_POPULATION_DATA,
+    COUNTRY_NEIGHBORS,
 )
 
 
@@ -1057,6 +1060,133 @@ def _fetch_url_readability(url: str) -> dict[str, Any]:
         }
 
 
+def _split_items(val: Any) -> list[str]:
+    if not val:
+        return []
+    if isinstance(val, list):
+        items = []
+        for v in val:
+            items.extend(_split_items(v))
+        return items
+    if isinstance(val, str):
+        parts = re.split(r'[,/;]', val)
+        res = [p.strip() for p in parts if p.strip()]
+        return res if res else [val]
+    return [str(val)]
+
+
+DATABASE_DOMAINS = {
+    "ncbi.nlm.nih.gov", "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov",
+    "europepmc.org", "jstor.org", "arxiv.org", "persee.fr", "cairn.info",
+    "semanticscholar.org", "researchgate.net", "books.google.com",
+    "books.google.fr", "books.google.de", "books.google.co.uk", "books.google.ca",
+    "books.google.es", "books.google.it"
+}
+
+def _is_database_domain(host: str) -> bool:
+    dom = host.lower()
+    if dom.startswith("www."):
+        dom = dom[4:]
+    return any(dom == d or dom.endswith("." + d) or d in dom for d in DATABASE_DOMAINS)
+
+
+def _fetch_database_page_metadata(url: str, skip_rate_limiting: bool = False) -> dict[str, Any]:
+    parsed = urlparse(url)
+    host = parsed.netloc.lower()
+    if not _is_database_domain(host):
+        return {}
+
+    result: dict[str, Any] = {}
+    
+    html = ""
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    if not skip_rate_limiting:
+        try:
+            resp = requests.get(url, headers=headers, timeout=5)
+            if resp.status_code == 200:
+                html = resp.text
+        except Exception:
+            pass
+
+    meta_doi = None
+    meta_publisher = None
+    meta_journal = None
+    meta_title = None
+    meta_authors = []
+    
+    if html:
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+            
+            doi_tag = soup.find("meta", attrs={"name": re.compile(r"^(citation_doi|dc\.identifier)$", re.I)})
+            if doi_tag and doi_tag.get("content"):
+                meta_doi = doi_tag["content"].strip()
+                
+            pub_tag = soup.find("meta", attrs={"name": re.compile(r"^(citation_publisher|dc\.publisher)$", re.I)})
+            if pub_tag and pub_tag.get("content"):
+                meta_publisher = pub_tag["content"].strip()
+                
+            j_tag = soup.find("meta", attrs={"name": re.compile(r"^(citation_journal_title|citation_journal_abbrev|dc\.relation\.ispartof)$", re.I)})
+            if j_tag and j_tag.get("content"):
+                meta_journal = j_tag["content"].strip()
+                
+            t_tag = soup.find("meta", attrs={"name": re.compile(r"^(citation_title|dc\.title|og:title)$", re.I)})
+            if t_tag and t_tag.get("content"):
+                meta_title = t_tag["content"].strip()
+                
+            for a_tag in soup.find_all("meta", attrs={"name": re.compile(r"^(citation_author|dc\.creator)$", re.I)}):
+                if a_tag.get("content"):
+                    meta_authors.append(a_tag["content"].strip())
+        except Exception:
+            pass
+
+    if not meta_doi:
+        meta_doi = _extract_doi(url)
+
+    if meta_doi:
+        crossref_meta = _fetch_crossref_metadata(meta_doi)
+        wiki_doi_meta = _fetch_wikidata_doi(meta_doi)
+        title = crossref_meta.get("title") or wiki_doi_meta.get("wikidata_name") or meta_title or ""
+        publisher = crossref_meta.get("publisher") or ", ".join(wiki_doi_meta.get("publishers", [])) or meta_publisher or ""
+        journal = crossref_meta.get("journal") or ", ".join(wiki_doi_meta.get("journals", [])) or meta_journal or ""
+        authors = crossref_meta.get("authors") or wiki_doi_meta.get("authors") or meta_authors or []
+        countries = wiki_doi_meta.get("countries", [])
+        leanings = wiki_doi_meta.get("political_leanings", [])
+        
+        result["doi"] = meta_doi
+        result["title"] = title
+        result["publisher"] = publisher or journal
+        result["journal"] = journal
+        result["authors"] = authors
+        result["source_type"] = "journal_article"
+        if countries:
+            result["countries"] = countries
+        if leanings:
+            result["political_leanings"] = leanings
+
+    books_id = _extract_google_books_id(url)
+    if books_id and not result.get("publisher"):
+        gb_meta = _fetch_google_books_metadata(books_id)
+        if gb_meta:
+            result["title"] = gb_meta.get("title") or meta_title or ""
+            result["authors"] = gb_meta.get("authors") or meta_authors or []
+            result["publisher"] = gb_meta.get("publisher") or meta_publisher or ""
+            result["source_type"] = "book"
+
+    target_pub = result.get("publisher") or meta_publisher or meta_journal
+    if target_pub and not result.get("countries"):
+        wd_pub = _fetch_wikidata_publisher(target_pub)
+        if wd_pub and wd_pub.get("countries"):
+            result["countries"] = wd_pub["countries"]
+        if wd_pub and wd_pub.get("political_leanings"):
+            result["political_leanings"] = wd_pub["political_leanings"]
+
+    if target_pub:
+        result["publisher"] = target_pub
+
+    return result
+
+
 def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dict[str, Any]:
     parsed = urlparse(url)
     host = parsed.netloc.lower()
@@ -1079,7 +1209,7 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
         country = domain_info["country"]
         region = domain_info["region"]
         political = domain_info["political_leaning"]
-        reliability = domain_info["reliability"]
+        reliability = domain_info.get("reliability", "unknown")
         source_type = domain_info.get("type", "unknown")
         language = domain_info.get("default_language", "English")
     else:
@@ -1131,19 +1261,19 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
 
         if host.endswith(".edu") or "ac.uk" in host:
             source_type = "academic_institution"
-            reliability = "academic/peer-reviewed"
+            reliability = "unknown"
             political = "academic/neutral"
         elif host.endswith(".gov") or "gov." in host:
             source_type = "government_agency"
-            reliability = "high"
+            reliability = "unknown"
             political = "neutral"
         elif "blog" in host or "opinion" in path or "editorial" in path:
             source_type = "blog/opinion"
-            reliability = "variable/opinion"
+            reliability = "unknown"
             political = "unknown"
         else:
             source_type = "web_source"
-            reliability = "medium"
+            reliability = "unknown"
             political = "unknown"
 
     return {
@@ -1178,22 +1308,79 @@ def _get_nametrace_prediction(name: str) -> dict[str, Any] | None:
         return None
 
 
-def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> dict[str, Any]:
+def _fetch_genderize_gender(first_name: str, skip_rate_limiting: bool = False) -> dict[str, Any]:
+    if not first_name or len(first_name) < 2:
+        return {}
+    clean_name = first_name.strip().lower()
+    
+    cached = get_store().get("genderize_cache", clean_name)
+    if cached is not None:
+        return cached
+
+    if skip_rate_limiting:
+        return {}
+
+    time.sleep(0.4)
+
+    url = f"https://api.genderize.io?name={clean_name}"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        res = requests.get(url, headers=headers, timeout=3)
+        if res.status_code == 200:
+            data = res.json()
+            if data and data.get("gender"):
+                parsed = {
+                    "gender": data["gender"],
+                    "probability": data.get("probability", 0.8),
+                    "count": data.get("count", 10),
+                }
+                get_store().put("genderize_cache", clean_name, parsed)
+                return parsed
+    except Exception:
+        pass
+
+    get_store().put("genderize_cache", clean_name, {})
+    return {}
+
+
+def analyze_author_bias(author_name: str, source_geography: dict[str, Any], skip_rate_limiting: bool = False) -> dict[str, Any]:
     clean_name = author_name.strip()
+    first_name = clean_name.split()[0].lower() if clean_name.split() else clean_name.lower()
     
     # 1. Try nametrace package for comprehensive AI-based gender/origin prediction
     nt_res = _get_nametrace_prediction(clean_name)
+    gender_source = "unknown"
+
     if nt_res:
         is_human = nt_res.get("is_human", True)
         gender = nt_res.get("gender") or "unknown"
         subregion = nt_res.get("subregion") or "Unknown"
         conf = nt_res.get("confidence") or {}
         
-        # Gender probability mapping safely
         gender_conf = conf.get("gender")
         if gender_conf is None or not isinstance(gender_conf, (int, float)):
             gender_conf = 0.85
             
+        if is_human:
+            if gender != "unknown" and gender_conf >= 0.60:
+                gender_source = "Nametrace"
+            else:
+                g_meta = _fetch_genderize_gender(first_name, skip_rate_limiting=skip_rate_limiting)
+                if g_meta and g_meta.get("gender"):
+                    gender = g_meta["gender"]
+                    gender_conf = g_meta.get("probability", 0.80)
+                    gender_source = "Genderize.io"
+                else:
+                    g_guess = FIRST_NAME_GENDER.get(first_name, "unknown")
+                    if g_guess != "unknown":
+                        gender = g_guess
+                        gender_conf = 0.80
+                        gender_source = "gender-guesser"
+                    else:
+                        gender = "unknown"
+                        gender_conf = 0.10
+                        gender_source = "unknown"
+
         if gender == "male":
             gender_prob = {
                 "male": round(gender_conf, 2),
@@ -1209,7 +1396,6 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
         else:
             gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
             
-        # Region mapping
         region = "Unknown"
         if subregion:
             if "Europe" in subregion:
@@ -1239,6 +1425,7 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
             "is_human": is_human,
             "author_type": "human" if is_human else "corporate/organizational",
             "gender": gender,
+            "gender_source": gender_source if is_human else "N/A",
             "subregion": subregion,
             "confidence": conf,
             "gender_probability": gender_prob,
@@ -1247,9 +1434,6 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
         }
 
     # 2. Fallback to offline lexical heuristics
-    first_name = clean_name.split()[0].lower() if clean_name.split() else clean_name.lower()
-
-    # Fallback human determination
     words = clean_name.lower().split()
     is_human = True
     stop_words = ["press", "journal", "university", "reuters", "times", "post", "bbc", "news", "society", 
@@ -1257,16 +1441,33 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
     if len(words) > 3 or any(w in stop_words for w in words):
         is_human = False
 
-    gender_guess = FIRST_NAME_GENDER.get(first_name, "unknown")
-    gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
-    if gender_guess == "male":
-        gender_prob = {"male": 0.85, "female": 0.05, "unknown": 0.10}
-        gender = "male"
-    elif gender_guess == "female":
-        gender_prob = {"male": 0.05, "female": 0.85, "unknown": 0.10}
-        gender = "female"
+    if is_human:
+        g_meta = _fetch_genderize_gender(first_name, skip_rate_limiting=skip_rate_limiting)
+        if g_meta and g_meta.get("gender"):
+            gender = g_meta["gender"]
+            gender_source = "Genderize.io"
+            gender_conf = g_meta.get("probability", 0.80)
+        else:
+            gender_guess = FIRST_NAME_GENDER.get(first_name, "unknown")
+            if gender_guess != "unknown":
+                gender = gender_guess
+                gender_source = "gender-guesser"
+                gender_conf = 0.85
+            else:
+                gender = "unknown"
+                gender_source = "unknown"
+                gender_conf = 0.10
     else:
         gender = "unknown"
+        gender_source = "N/A"
+        gender_conf = 0.10
+
+    if gender == "male":
+        gender_prob = {"male": round(gender_conf, 2), "female": round((1 - gender_conf) * 0.1, 2), "unknown": round((1 - gender_conf) * 0.9, 2)}
+    elif gender == "female":
+        gender_prob = {"male": round((1 - gender_conf) * 0.1, 2), "female": round(gender_conf, 2), "unknown": round((1 - gender_conf) * 0.9, 2)}
+    else:
+        gender_prob = {"male": 0.05, "female": 0.05, "unknown": 0.90}
 
     country = "Unknown"
     region = "Unknown"
@@ -1292,8 +1493,9 @@ def analyze_author_bias(author_name: str, source_geography: dict[str, Any]) -> d
         "is_human": is_human,
         "author_type": "human" if is_human else "corporate/organizational",
         "gender": gender,
+        "gender_source": gender_source,
         "subregion": region,
-        "confidence": {"human": 0.80, "gender": 0.70, "subregion": 0.60},
+        "confidence": {"human": 0.80, "gender": gender_conf, "subregion": 0.60},
         "gender_probability": gender_prob,
         "nationality_probability": nationality_prob,
         "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
@@ -1324,11 +1526,20 @@ def _get_vader_sentiment(text: str) -> dict[str, Any] | None:
             
         subj_score = round(min(scores["pos"] + scores["neg"], 1.0), 2)
         
+        if compound >= 0.05:
+            label = "positive"
+        elif compound <= -0.05:
+            label = "negative"
+        else:
+            label = "neutral"
+            
+        subj_score = round(min(scores["pos"] + scores["neg"], 1.0), 2)
+        
         return {
             "sentiment": label,
             "subjectivity_score": subj_score,
             "confidence": round(abs(compound), 2),
-            "source": "VADER Lexicon Fallback",
+            "source": "VADER Sentiment",
         }
     except Exception:
         return None
@@ -1342,7 +1553,7 @@ def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
         if _sentiment_pipeline is None:
             _sentiment_pipeline = pipeline(
                 "sentiment-analysis",
-                model="distilbert-base-uncased-finetuned-sst-2-english",
+                model="cardiffnlp/twitter-xlm-roberta-base-sentiment",
                 device=-1,
             )
         result = _sentiment_pipeline(text[:512])[0]
@@ -1357,7 +1568,7 @@ def _get_huggingface_sentiment(text: str) -> dict[str, Any] | None:
             "sentiment": label,
             "subjectivity_score": subjectivity_score,
             "confidence": round(score, 2),
-            "source": "Hugging Face Pipeline",
+            "source": "Hugging Face (XLM-RoBERTa)",
         }
     except Exception:
         return _get_vader_sentiment(text)
@@ -1395,7 +1606,7 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
             "sentiment": "neutral",
             "sensationalism_score": 0.0,
             "detected_language": "English",
-            "sentiment_source": "Lexical Heuristics",
+            "sentiment_source": "Multilingual Lexical Heuristics",
         }
 
     hf_res = _get_huggingface_sentiment(citation_text)
@@ -1416,9 +1627,10 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
 
     is_opinion = len(opinion_found) > 0 or "opinion" in citation_text.lower() or (lang == "French" and "avis" in citation_text.lower())
 
-    if hf_res and (loaded_found or is_opinion):
+    if hf_res:
         sentiment = hf_res["sentiment"]
         subjectivity_score = round(max(subjectivity_score, hf_res["subjectivity_score"]), 2)
+        sent_source = hf_res.get("source", "Hugging Face (XLM-RoBERTa)")
     else:
         positive_words = {"heroic", "courageous", "spectacular", "unquestionably"}
         negative_words = {"disastrous", "tyrant", "despicable", "infamous", "catastrophic", "atrocity", "corrupt", "sham", "ruthless", "cynical"}
@@ -1434,6 +1646,7 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
             sentiment = "neutral"
         
         subjectivity_score = round(subjectivity_score, 2)
+        sent_source = "Multilingual Lexical Heuristics"
 
     uppercase_words = re.findall(r"\b[A-Z]{3,}\b", citation_text)
     exclamation_marks = citation_text.count("!")
@@ -1450,11 +1663,592 @@ def analyze_language_bias(citation_text: str) -> dict[str, Any]:
         "sentiment": sentiment,
         "sensationalism_score": round(sensationalism_score, 2),
         "detected_language": lang,
-        "sentiment_source": "Hugging Face" if hf_res else "Lexical Heuristics",
+        "sentiment_source": sent_source,
     }
 
 
-def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
+def _calculate_neutrality_metrics(sources: list[dict[str, Any]]) -> dict[str, Any]:
+    neut_desc = "Evaluates citation language neutrality on a 0 to 100 scale (100 = completely neutral, non-sensational academic language), incorporating subjectivity penalties, sensationalism penalties, opinion ratios, and loaded words ratios across multilingual sentiment layers."
+    if not sources:
+        return {
+            "description": neut_desc,
+            "neutrality_score": 100.0,
+            "average_subjectivity_score": 0.0,
+            "average_sensationalism_score": 0.0,
+            "opinion_citation_percentage": 0.0,
+            "sentiment_distribution": {"neutral": 0, "positive": 0, "negative": 0},
+            "sentiment_source_breakdown": {
+                "Hugging Face (XLM-RoBERTa)": 0,
+                "VADER Sentiment": 0,
+                "Multilingual Lexical Heuristics": 0,
+            }
+        }
+
+    total_sources = len(sources)
+    total_sub = 0.0
+    total_sens = 0.0
+    opinion_cnt = 0
+    loaded_words_cnt = 0
+
+    sent_dist: dict[str, int] = {"neutral": 0, "positive": 0, "negative": 0}
+    source_breakdown: dict[str, int] = {
+        "Hugging Face (XLM-RoBERTa)": 0,
+        "VADER Sentiment": 0,
+        "Multilingual Lexical Heuristics": 0,
+    }
+
+    for s in sources:
+        lang_bias = s.get("language_bias", {})
+        sub = lang_bias.get("subjectivity_score", 0.0)
+        sens = lang_bias.get("sensationalism_score", 0.0)
+        is_op = lang_bias.get("is_opinion", False)
+        loaded_found = lang_bias.get("loaded_words_found", [])
+        sent = str(lang_bias.get("sentiment", "neutral")).lower()
+        src_name = lang_bias.get("sentiment_source", "Multilingual Lexical Heuristics")
+
+        total_sub += sub
+        total_sens += sens
+        if is_op:
+            opinion_cnt += 1
+        if loaded_found:
+            loaded_words_cnt += 1
+
+        if sent in sent_dist:
+            sent_dist[sent] += 1
+        else:
+            sent_dist[sent] = 1
+
+        source_breakdown[src_name] = source_breakdown.get(src_name, 0) + 1
+
+    avg_sub = round(total_sub / total_sources, 2)
+    avg_sens = round(total_sens / total_sources, 2)
+    opinion_pct = round((opinion_cnt / total_sources) * 100, 1)
+
+    sub_penalty = 50.0 * avg_sub
+    sens_penalty = 30.0 * avg_sens
+    op_penalty = 20.0 * (opinion_cnt / total_sources)
+    loaded_penalty = 10.0 * min(1.0, loaded_words_cnt / total_sources)
+
+    total_penalties = sub_penalty + sens_penalty + op_penalty + loaded_penalty
+    final_neutrality = round(max(0.0, min(100.0, 100.0 - total_penalties)), 1)
+
+    return {
+        "description": neut_desc,
+        "neutrality_score": final_neutrality,
+        "average_subjectivity_score": avg_sub,
+        "average_sensationalism_score": avg_sens,
+        "opinion_citation_percentage": opinion_pct,
+        "sentiment_distribution": sent_dist,
+        "sentiment_source_breakdown": source_breakdown,
+    }
+
+
+def _calculate_jsd(p_dist: dict[str, float], q_dist: dict[str, float]) -> float:
+    all_keys = set(p_dist.keys()) | set(q_dist.keys())
+    if not all_keys:
+        return 0.0
+
+    m_dist = {}
+    for k in all_keys:
+        p_val = p_dist.get(k, 0.0)
+        q_val = q_dist.get(k, 0.0)
+        m_dist[k] = 0.5 * (p_val + q_val)
+
+    kl_pm = 0.0
+    kl_qm = 0.0
+
+    for k in all_keys:
+        m_val = m_dist[k]
+        if m_val > 0:
+            p_val = p_dist.get(k, 0.0)
+            if p_val > 0:
+                kl_pm += p_val * math.log2(p_val / m_val)
+            q_val = q_dist.get(k, 0.0)
+            if q_val > 0:
+                kl_qm += q_val * math.log2(q_val / m_val)
+
+    jsd = 0.5 * kl_pm + 0.5 * kl_qm
+    return max(0.0, min(1.0, jsd))
+
+
+def _fetch_wikidata_neighbors(country_name: str, skip_rate_limiting: bool = False) -> set[str]:
+    if not country_name or country_name == "Unknown":
+        return set()
+
+    query = f"""
+    SELECT ?borderingCountryLabel WHERE {{
+      ?country ?r ?countryLabel .
+      ?country wdt:P31/wdt:P279* wd:Q3624078 ;
+               rdfs:label "{country_name}"@en ;
+               wdt:P47 ?borderingCountry .
+      ?borderingCountry rdfs:label ?borderingCountryLabel .
+      FILTER(LANG(?borderingCountryLabel) = "en")
+    }}
+    LIMIT 50
+    """
+    url = "https://query.wikidata.org/sparql"
+    headers = {
+        "User-Agent": "WikipediaSourcesBias/1.0 (https://github.com/Superraptor/Wikipedia-Source-Bias)",
+        "Accept": "application/sparql-results+json"
+    }
+
+    try:
+        if not skip_rate_limiting:
+            time.sleep(0.3)
+        res = requests.get(url, params={"query": query, "format": "json"}, headers=headers, timeout=4)
+        if res.status_code == 200:
+            data = res.json()
+            bindings = data.get("results", {}).get("bindings", [])
+            neighbors = set()
+            for b in bindings:
+                lbl = b.get("borderingCountryLabel", {}).get("value")
+                if lbl:
+                    neighbors.add(lbl)
+            if neighbors:
+                return neighbors
+    except Exception:
+        pass
+
+    return COUNTRY_NEIGHBORS.get(country_name, set())
+
+
+def _get_cached_country_neighbors(country_name: str, skip_rate_limiting: bool = False) -> set[str]:
+    if not country_name or country_name == "Unknown":
+        return set()
+
+    cached = get_store().get("wikidata_neighbors_cache", country_name)
+    if cached is not None and isinstance(cached, list):
+        return set(cached)
+
+    neighbors = _fetch_wikidata_neighbors(country_name, skip_rate_limiting=skip_rate_limiting)
+    get_store().put("wikidata_neighbors_cache", country_name, list(neighbors))
+    return set(neighbors)
+
+
+def _determine_geographic_specificity(
+    page_title: str,
+    sources: list[dict[str, Any]],
+    country_counts: dict[str, int]
+) -> tuple[str, str | None]:
+    if not country_counts:
+        return "global", None
+
+    total_count = sum(country_counts.values())
+    sorted_countries = sorted(country_counts.items(), key=lambda x: x[1], reverse=True)
+    top_country, top_cnt = sorted_countries[0]
+    top_prop = top_cnt / total_count if total_count > 0 else 0.0
+
+    clean_title = page_title.replace("_", " ").lower()
+    
+    primary_country = None
+    if top_prop >= 0.35 or (clean_title and top_country.lower() in clean_title):
+        primary_country = top_country
+
+    if primary_country:
+        neighbors = _get_cached_country_neighbors(primary_country)
+        local_regional_cnt = top_cnt
+        for c, cnt in country_counts.items():
+            if c != primary_country and c in neighbors:
+                local_regional_cnt += cnt
+        
+        local_regional_prop = local_regional_cnt / total_count if total_count > 0 else 0.0
+        if top_prop >= 0.50 or local_regional_prop >= 0.70:
+            return "local", primary_country
+        else:
+            return "regional", primary_country
+
+    return "global", None
+
+
+def _get_cached_country_population(country_name: str) -> float:
+    if not country_name:
+        return 20000000.0
+
+    cached = get_store().get("wikidata_population_cache", country_name)
+    if cached is not None and isinstance(cached, (int, float)):
+        return float(cached)
+
+    pop_val = COUNTRY_POPULATION_DATA.get(country_name, 20000000.0)
+    get_store().put("wikidata_population_cache", country_name, pop_val)
+    return pop_val
+
+
+def _calculate_geographic_diversity_score(
+    sources: list[dict[str, Any]],
+    page_title: str = "",
+    split_multiple: bool = False
+) -> dict[str, Any]:
+    geo_desc = "Evaluates geographic balance on a 0 to 100 scale using Jensen-Shannon Divergence against global population distributions and event-local benchmark weighting based on Wikidata border data."
+    if not sources:
+        return {
+            "description": geo_desc,
+            "geographic_diversity_score": 0.0,
+            "geographic_scope": "global",
+            "primary_country": None,
+            "jensen_shannon_divergence": 0.0,
+            "jsd_population_score": 0.0,
+            "event_local_benchmark_score": 0.0,
+            "breakdown": {
+                "primary_country_proportion": 0.0,
+                "neighboring_countries_proportion": 0.0,
+                "same_region_proportion": 0.0,
+                "rest_of_world_proportion": 0.0,
+            }
+        }
+
+    country_counts: dict[str, int] = {}
+    region_counts: dict[str, int] = {}
+
+    for s in sources:
+        c_raw = s.get("geography", {}).get("country", "Unknown")
+        reg_raw = s.get("geography", {}).get("region", "Unknown")
+        if c_raw and c_raw != "Unknown":
+            c_list = _split_items(c_raw) if split_multiple else [c_raw]
+            for c in c_list:
+                country_counts[c] = country_counts.get(c, 0) + 1
+        if reg_raw and reg_raw != "Unknown":
+            reg_list = _split_items(reg_raw) if split_multiple else [reg_raw]
+            for r in reg_list:
+                region_counts[r] = region_counts.get(r, 0) + 1
+
+    if not country_counts:
+        return {
+            "description": geo_desc,
+            "geographic_diversity_score": 0.0,
+            "geographic_scope": "global",
+            "primary_country": None,
+            "jensen_shannon_divergence": 1.0,
+            "jsd_population_score": 0.0,
+            "event_local_benchmark_score": 0.0,
+            "breakdown": {
+                "primary_country_proportion": 0.0,
+                "neighboring_countries_proportion": 0.0,
+                "same_region_proportion": 0.0,
+                "rest_of_world_proportion": 0.0,
+            }
+        }
+
+    total_country_refs = sum(country_counts.values())
+
+    p_dist = {c: cnt / total_country_refs for c, cnt in country_counts.items()}
+
+    pop_universe = set(country_counts.keys()) | {"China", "India", "United States", "Indonesia", "Brazil", "Nigeria", "Pakistan", "Russia", "Japan", "Mexico", "France", "Germany", "United Kingdom"}
+    pop_sum = sum(_get_cached_country_population(c) for c in pop_universe)
+    q_pop_dist = {c: _get_cached_country_population(c) / pop_sum for c in pop_universe}
+
+    jsd_val = _calculate_jsd(p_dist, q_pop_dist)
+    jsd_pop_score = round(100.0 * (1.0 - jsd_val), 1)
+
+    scope, primary_country = _determine_geographic_specificity(page_title, sources, country_counts)
+
+    primary_prop = 0.0
+    neighbor_prop = 0.0
+    same_region_prop = 0.0
+    rest_world_prop = 0.0
+
+    if primary_country:
+        primary_prop = country_counts.get(primary_country, 0) / total_country_refs
+        neighbors = _get_cached_country_neighbors(primary_country)
+        
+        neighbor_cnt = sum(cnt for c, cnt in country_counts.items() if c in neighbors and c != primary_country)
+        neighbor_prop = neighbor_cnt / total_country_refs
+
+        same_reg_cnt = sum(
+            cnt for c, cnt in country_counts.items()
+            if c != primary_country and c not in neighbors
+        )
+        same_region_prop = same_reg_cnt / total_country_refs
+        rest_world_prop = max(0.0, 1.0 - (primary_prop + neighbor_prop + same_region_prop))
+
+        target = (0.45, 0.25, 0.18, 0.12) if scope == "local" else (0.30, 0.35, 0.20, 0.15)
+        dev = (
+            abs(primary_prop - target[0]) +
+            abs(neighbor_prop - target[1]) +
+            abs(same_region_prop - target[2]) +
+            abs(rest_world_prop - target[3])
+        )
+        event_local_score = round(100.0 * max(0.0, 1.0 - 0.5 * dev), 1)
+    else:
+        if len(country_counts) > 1:
+            entropy = -sum(p * math.log2(p) for p in p_dist.values() if p > 0)
+            max_entropy = math.log2(len(country_counts))
+            entropy_score = entropy / max_entropy if max_entropy > 0 else 1.0
+        else:
+            entropy_score = 0.2
+        event_local_score = round(100.0 * entropy_score, 1)
+
+    if scope == "local":
+        final_score = round(0.70 * event_local_score + 0.30 * jsd_pop_score, 1)
+    elif scope == "regional":
+        final_score = round(0.60 * event_local_score + 0.40 * jsd_pop_score, 1)
+    else:
+        final_score = round(0.50 * event_local_score + 0.50 * jsd_pop_score, 1)
+
+    return {
+        "description": geo_desc,
+        "geographic_diversity_score": final_score,
+        "geographic_scope": scope,
+        "primary_country": primary_country,
+        "jensen_shannon_divergence": round(jsd_val, 3),
+        "jsd_population_score": jsd_pop_score,
+        "event_local_benchmark_score": event_local_score,
+        "breakdown": {
+            "primary_country_proportion": round(primary_prop, 2),
+            "neighboring_countries_proportion": round(neighbor_prop, 2),
+            "same_region_proportion": round(same_region_prop, 2),
+            "rest_of_world_proportion": round(rest_world_prop, 2),
+        }
+    }
+
+
+def _map_political_to_numeric_axis(leaning_str: str | None, mbfc_bias_score: float | None = None) -> float | None:
+    if mbfc_bias_score is not None:
+        return round(max(-3.0, min(3.0, mbfc_bias_score * 0.3)), 2)
+
+    if not leaning_str or str(leaning_str).lower() == "unknown":
+        return None
+
+    s = str(leaning_str).lower()
+
+    if any(k in s for k in ("far-left", "extreme-left", "far left", "extreme left")):
+        return -3.0
+    if any(k in s for k in ("left-center", "left center", "center-left", "center left")):
+        return -1.0
+    if any(k in s for k in ("far-right", "extreme-right", "far right", "extreme right")):
+        return +3.0
+    if any(k in s for k in ("right-center", "right center", "center-right", "center right")):
+        return +1.0
+    if any(k in s for k in ("left", "socialism", "communism", "left-wing")):
+        return -2.0
+    if any(k in s for k in ("right", "conservatism", "right-wing")):
+        return +2.0
+    if any(k in s for k in ("least biased", "center", "pro-science", "neutral", "academic/neutral", "balanced")):
+        return 0.0
+
+    return None
+
+
+def _detect_consensus_topic_type(page_title: str) -> str:
+    title_lower = page_title.replace("_", " ").lower()
+
+    consensus_science_keywords = {
+        "climate change", "global warming", "vaccine", "vaccination", "evolution",
+        "holocaust", "flat earth", "hiv/aids", "hiv", "aids", "genetically modified",
+        "gmo", "tobacco smoking", "round earth", "shape of the earth"
+    }
+    mixed_policy_keywords = {
+        "carbon tax", "renewable energy policy", "healthcare reform", "nuclear power",
+        "minimum wage", "trade policy", "tariff", "gun control policy"
+    }
+
+    if any(kw in title_lower for kw in consensus_science_keywords):
+        return "consensus_science"
+    if any(kw in title_lower for kw in mixed_policy_keywords):
+        return "mixed_policy"
+    return "open_political"
+
+
+def _calculate_political_spread_score(
+    sources: list[dict[str, Any]],
+    page_title: str = ""
+) -> dict[str, Any]:
+    pol_desc = "Evaluates article political spread on a 0 to 100 scale by mapping outlets to a -3 to +3 ideological axis, assessing standard deviation against target diversity tiers, penalizing extreme-source dominance, and adjusting for consensus science topics."
+    if not sources:
+        return {
+            "description": pol_desc,
+            "political_spread_score": 50.0,
+            "mean_bias_axis": 0.0,
+            "standard_deviation": 0.0,
+            "spread_category": "insufficient_data",
+            "consensus_topic_type": _detect_consensus_topic_type(page_title),
+            "extreme_source_proportion": 0.0,
+            "breakdown": {"left_proportion": 0.0, "center_proportion": 0.0, "right_proportion": 0.0}
+        }
+
+    axis_values = []
+    left_cnt = 0
+    center_cnt = 0
+    right_cnt = 0
+    extreme_cnt = 0
+
+    for s in sources:
+        mbfc_bias = s.get("mbfc", {}).get("mbfc_bias_score")
+        leaning = s.get("political_leaning")
+        val = _map_political_to_numeric_axis(leaning, mbfc_bias)
+        if val is not None:
+            axis_values.append(val)
+            if val <= -0.5:
+                left_cnt += 1
+            elif val >= 0.5:
+                right_cnt += 1
+            else:
+                center_cnt += 1
+
+            if abs(val) >= 2.5:
+                extreme_cnt += 1
+
+    total_valid = len(axis_values)
+    if total_valid < 2:
+        return {
+            "description": pol_desc,
+            "political_spread_score": 50.0,
+            "mean_bias_axis": round(axis_values[0], 2) if axis_values else 0.0,
+            "standard_deviation": 0.0,
+            "spread_category": "insufficient_data",
+            "consensus_topic_type": _detect_consensus_topic_type(page_title),
+            "extreme_source_proportion": 0.0,
+            "breakdown": {
+                "left_proportion": round(left_cnt / max(1, total_valid), 2),
+                "center_proportion": round(center_cnt / max(1, total_valid), 2),
+                "right_proportion": round(right_cnt / max(1, total_valid), 2),
+            }
+        }
+
+    mean_val = sum(axis_values) / total_valid
+    variance = sum((x - mean_val) ** 2 for x in axis_values) / total_valid
+    std_dev = math.sqrt(variance)
+
+    if 0.4 <= std_dev <= 1.0:
+        spread_category = "healthy_diversity"
+        base_score = 90.0 + 10.0 * (1.0 - abs(std_dev - 0.7) / 0.3)
+    elif 1.1 <= std_dev <= 1.5:
+        spread_category = "wide_acceptable"
+        base_score = 75.0 - 15.0 * ((std_dev - 1.1) / 0.4)
+    elif std_dev > 1.5:
+        spread_category = "potentially_polarized"
+        base_score = max(20.0, 60.0 - 25.0 * (std_dev - 1.5))
+    else:
+        spread_category = "too_homogeneous"
+        base_score = max(30.0, 40.0 + 100.0 * std_dev)
+
+    extreme_prop = extreme_cnt / total_valid
+    extreme_penalty = 0.0
+    if extreme_prop > 0.25:
+        extreme_penalty = 40.0 * (extreme_prop - 0.25)
+
+    base_score -= extreme_penalty
+
+    topic_type = _detect_consensus_topic_type(page_title)
+    if topic_type == "consensus_science":
+        if extreme_prop == 0.0 and std_dev <= 1.0:
+            final_score = max(base_score, 95.0)
+        else:
+            final_score = base_score * 0.70
+    elif topic_type == "mixed_policy":
+        final_score = base_score * 0.90
+    else:
+        final_score = base_score
+
+    final_score = round(max(0.0, min(100.0, final_score)), 1)
+
+    return {
+        "description": pol_desc,
+        "political_spread_score": final_score,
+        "mean_bias_axis": round(mean_val, 2),
+        "standard_deviation": round(std_dev, 2),
+        "spread_category": spread_category,
+        "consensus_topic_type": topic_type,
+        "extreme_source_proportion": round(extreme_prop, 2),
+        "breakdown": {
+            "left_proportion": round(left_cnt / total_valid, 2),
+            "center_proportion": round(center_cnt / total_valid, 2),
+            "right_proportion": round(right_cnt / total_valid, 2),
+        }
+    }
+
+
+def _calculate_gender_parity_metrics(sources: list[dict[str, Any]]) -> dict[str, Any]:
+    gender_desc = "Evaluates human author gender balance on a 0 to 100 scale (100 = 50/50 male/female parity), incorporating composite inference confidence, unknown author dampening, and multi-tier provenance tracking (Wikidata, Nametrace, Genderize.io, gender-guesser)."
+    total_authors = 0
+    human_authors = 0
+    female_cnt = 0
+    male_cnt = 0
+    non_binary_cnt = 0
+    unknown_gender_cnt = 0
+
+    conf_scores = []
+    provenance_counts: dict[str, int] = {
+        "Wikidata": 0,
+        "Nametrace": 0,
+        "Genderize.io": 0,
+        "gender-guesser": 0,
+        "unknown": 0,
+    }
+
+    for s in sources:
+        auth_profiles = s.get("author_profiles", [])
+        if not auth_profiles and s.get("author_profile"):
+            auth_profiles = [s["author_profile"]]
+
+        for auth in auth_profiles:
+            total_authors += 1
+            if not auth.get("is_human", True):
+                continue
+            
+            human_authors += 1
+            gender = str(auth.get("gender", "unknown")).lower()
+            source = auth.get("gender_source", "unknown")
+            provenance_counts[source] = provenance_counts.get(source, 0) + 1
+
+            g_prob = auth.get("gender_probability", {})
+            if gender == "female":
+                female_cnt += 1
+                conf_scores.append(g_prob.get("female", 0.85))
+            elif gender == "male":
+                male_cnt += 1
+                conf_scores.append(g_prob.get("male", 0.85))
+            elif gender in ("non-binary", "nonbinary", "transgender"):
+                non_binary_cnt += 1
+                conf_scores.append(0.90)
+            else:
+                unknown_gender_cnt += 1
+                conf_scores.append(0.10)
+
+    if human_authors == 0:
+        return {
+            "description": gender_desc,
+            "gender_parity_score": 50.0,
+            "composite_confidence_score": 0.0,
+            "unknown_author_proportion": 1.0,
+            "human_author_count": 0,
+            "gender_counts": {"female": 0, "male": 0, "non_binary": 0, "unknown": 0},
+            "provenance_breakdown": provenance_counts,
+        }
+
+    known_cnt = female_cnt + male_cnt + non_binary_cnt
+    unknown_prop = round(unknown_gender_cnt / human_authors, 2)
+    composite_conf = round(sum(conf_scores) / len(conf_scores) * 100, 1) if conf_scores else 0.0
+
+    if known_cnt == 0:
+        parity_score = 50.0
+    else:
+        binary_total = female_cnt + male_cnt
+        if binary_total > 0:
+            female_ratio = female_cnt / binary_total
+            raw_parity = 100.0 * (1.0 - 2.0 * abs(female_ratio - 0.50))
+        else:
+            raw_parity = 100.0
+
+        unknown_dampening = max(0.40, 1.0 - 0.60 * unknown_prop)
+        parity_score = round(max(0.0, min(100.0, raw_parity * unknown_dampening)), 1)
+
+    return {
+        "description": gender_desc,
+        "gender_parity_score": parity_score,
+        "composite_confidence_score": composite_conf,
+        "unknown_author_proportion": unknown_prop,
+        "human_author_count": human_authors,
+        "gender_counts": {
+            "female": female_cnt,
+            "male": male_cnt,
+            "non_binary": non_binary_cnt,
+            "unknown": unknown_gender_cnt,
+        },
+        "provenance_breakdown": provenance_counts,
+    }
+
+
+def aggregate_page_bias(sources: list[dict[str, Any]], split_multiple: bool = False, page_title: str = "") -> dict[str, Any]:
     if not sources:
         return {}
 
@@ -1491,22 +2285,32 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
 
     for s in sources:
         geo = s.get("geography", {})
-        c = geo.get("country", "Unknown")
-        r = geo.get("region", "Unknown")
-        countries[c] = countries.get(c, 0) + 1
-        regions[r] = regions.get(r, 0) + 1
+        c_raw = geo.get("country", "Unknown")
+        r_raw = geo.get("region", "Unknown")
+        pol_raw = s.get("political_leaning", "unknown")
+        rel_raw = s.get("reliability", "unknown")
+        lang_raw = s.get("language", "English")
+        t_raw = s.get("source_type", "unknown")
 
-        pol = s.get("political_leaning", "unknown")
-        political[pol] = political.get(pol, 0) + 1
+        c_list = _split_items(c_raw) if split_multiple else [c_raw]
+        r_list = _split_items(r_raw) if split_multiple else [r_raw]
+        pol_list = _split_items(pol_raw) if split_multiple else [pol_raw]
+        rel_list = _split_items(rel_raw) if split_multiple else [rel_raw]
+        lang_list = _split_items(lang_raw) if split_multiple else [lang_raw]
+        t_list = _split_items(t_raw) if split_multiple else [t_raw]
 
-        rel = s.get("reliability", "unknown")
-        reliability[rel] = reliability.get(rel, 0) + 1
-
-        lang = s.get("language", "English")
-        languages[lang] = languages.get(lang, 0) + 1
-
-        t = s.get("source_type", "unknown")
-        types[t] = types.get(t, 0) + 1
+        for c in c_list:
+            countries[c] = countries.get(c, 0) + 1
+        for r in r_list:
+            regions[r] = regions.get(r, 0) + 1
+        for pol in pol_list:
+            political[pol] = political.get(pol, 0) + 1
+        for rel in rel_list:
+            reliability[rel] = reliability.get(rel, 0) + 1
+        for lang in lang_list:
+            languages[lang] = languages.get(lang, 0) + 1
+        for t in t_list:
+            types[t] = types.get(t, 0) + 1
 
         lang_bias = s.get("language_bias", {})
         total_sub_score += lang_bias.get("subjectivity_score", 0.0)
@@ -1626,6 +2430,32 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
     if readability_count > 0:
         avg_readability = round(total_readability / readability_count, 2)
 
+    total_composite_rel = 0.0
+    mbfc_fact_scores = []
+    mbfc_cred_scores = []
+    mbfc_bias_scores = []
+
+    for s in sources:
+        rel_scores = s.get("reliability_scores")
+        if not rel_scores:
+            rel_scores = _calculate_composite_reliability(s, s.get("mbfc"), s.get("wikidata_publisher"))
+            
+        comp = rel_scores.get("composite_reliability_score")
+        if comp is not None:
+            total_composite_rel += comp
+            
+        f_score = rel_scores.get("mbfc_factuality_score")
+        if f_score is not None:
+            mbfc_fact_scores.append(f_score)
+            
+        c_score = rel_scores.get("mbfc_credibility_score")
+        if c_score is not None:
+            mbfc_cred_scores.append(c_score)
+            
+        b_score = rel_scores.get("mbfc_bias_score")
+        if b_score is not None:
+            mbfc_bias_scores.append(b_score)
+
     return {
         "source_count": total_sources,
         "geography_distribution": geo_distribution,
@@ -1643,14 +2473,24 @@ def aggregate_page_bias(sources: list[dict[str, Any]]) -> dict[str, Any]:
         "human_author_occupation_distribution": human_occupation_dist,
         "human_author_employer_distribution": human_employer_dist,
         "human_author_employer_country_distribution": human_employer_country_dist,
+        "reliability_metrics": {
+            "description": "Evaluates source trustworthiness and factuality on a 0 to 100 scale by blending Media Bias/Fact Check (MBFC) credibility, factuality ratings, and Wikidata peer-reviewed academic statements.",
+            "average_composite_reliability_score": round(total_composite_rel / total_sources, 1) if total_sources > 0 else None,
+            "average_mbfc_factuality_score": round(sum(mbfc_fact_scores) / len(mbfc_fact_scores), 1) if mbfc_fact_scores else None,
+            "average_mbfc_credibility_score": round(sum(mbfc_cred_scores) / len(mbfc_cred_scores), 1) if mbfc_cred_scores else None,
+            "average_mbfc_bias_score": round(sum(mbfc_bias_scores) / len(mbfc_bias_scores), 1) if mbfc_bias_scores else None,
+            "average_flesch_reading_ease": avg_readability,
+            "readability_count": readability_count,
+        },
+        "geographic_diversity_metrics": _calculate_geographic_diversity_score(sources, page_title=page_title, split_multiple=split_multiple),
+        "political_spread_metrics": _calculate_political_spread_score(sources, page_title=page_title),
+        "gender_parity_metrics": _calculate_gender_parity_metrics(sources),
+        "neutrality_metrics": _calculate_neutrality_metrics(sources),
         "language_bias_metrics": {
+            "description": "Aggregates lexical subjectivity scores, sensationalism scores, and opinion/editorial citation percentages across analyzed sources.",
             "average_subjectivity_score": round(total_sub_score / total_sources, 2),
             "average_sensationalism_score": round(total_sens_score / total_sources, 2),
             "opinion_percentage": round(opinion_count / total_sources * 100, 1),
-        },
-        "readability_metrics": {
-            "average_flesch_reading_ease": avg_readability,
-            "readability_count": readability_count,
         },
         "book_count": book_count,
     }
@@ -1829,6 +2669,141 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
     _cache_put("mbfc_cache.json", slug, {})
     return {}
 
+
+def _parse_mbfc_scores(mbfc: dict[str, Any]) -> dict[str, Any]:
+    if not mbfc:
+        return {
+            "mbfc_credibility_score": None,
+            "mbfc_factuality_score": None,
+            "mbfc_bias_score": None,
+        }
+
+    cred_str = str(mbfc.get("credibility_rating", "")).upper()
+    cred_score = None
+    if "HIGH" in cred_str:
+        cred_score = 100.0
+    elif "MEDIUM" in cred_str:
+        cred_score = 50.0
+    elif "LOW" in cred_str:
+        cred_score = 10.0
+
+    fact_str = str(mbfc.get("factual_reporting", "")).upper()
+    fact_score = None
+    if "VERY HIGH" in fact_str:
+        fact_score = 100.0
+    elif "HIGH" in fact_str:
+        fact_score = 80.0
+    elif "MOSTLY" in fact_str or "MOSTLY FACTUAL" in fact_str:
+        fact_score = 60.0
+    elif "MIXED" in fact_str:
+        fact_score = 40.0
+    elif "LOW" in fact_str and "VERY LOW" not in fact_str:
+        fact_score = 20.0
+    elif "VERY LOW" in fact_str:
+        fact_score = 0.0
+
+    match_num = re.search(r'\(([-\d\.]+)\)', fact_str)
+    if match_num and fact_score is None:
+        try:
+            val = float(match_num.group(1))
+            if 0.0 <= val <= 6.0:
+                fact_score = round(max(0.0, min(100.0, 100.0 - (val * 16.67))), 1)
+        except ValueError:
+            pass
+
+    bias_str = str(mbfc.get("bias_rating", "")).upper()
+    bias_score = None
+    match_bias_num = re.search(r'\(([-\d\.]+)\)', bias_str)
+    num_val = None
+    if match_bias_num:
+        try:
+            num_val = float(match_bias_num.group(1))
+        except ValueError:
+            pass
+
+    if "EXTREME LEFT" in bias_str or ("LEFT" in bias_str and "LEFT-CENTER" not in bias_str):
+        bias_score = -100.0 if num_val is None else -abs(num_val)
+    elif "LEFT-CENTER" in bias_str:
+        bias_score = -50.0 if num_val is None else -abs(num_val)
+    elif "LEAST BIASED" in bias_str or "CENTER" in bias_str or "PRO-SCIENCE" in bias_str:
+        bias_score = 0.0
+    elif "RIGHT-CENTER" in bias_str:
+        bias_score = +50.0 if num_val is None else abs(num_val)
+    elif "RIGHT" in bias_str and "RIGHT-CENTER" not in bias_str:
+        bias_score = +100.0 if num_val is None else abs(num_val)
+
+    return {
+        "mbfc_credibility_score": cred_score,
+        "mbfc_factuality_score": fact_score,
+        "mbfc_bias_score": bias_score,
+    }
+
+
+def _calculate_composite_reliability(
+    profile: dict[str, Any],
+    mbfc: dict[str, Any] | None = None,
+    wikidata_pub: dict[str, Any] | None = None
+) -> dict[str, Any]:
+    mbfc_scores = _parse_mbfc_scores(mbfc or {})
+    
+    wikidata_score = None
+    if wikidata_pub:
+        types = [str(t).lower() for t in wikidata_pub.get("types", [])]
+        if any("scientific journal" in t or "academic journal" in t or "peer-reviewed" in t for t in types):
+            wikidata_score = 100.0
+        elif any("fake news" in t or "tabloid" in t for t in types):
+            wikidata_score = 10.0
+            
+    if wikidata_score is None and (profile.get("wikidata_book") or profile.get("doi_metadata")):
+        wikidata_score = 100.0
+
+    provenance = []
+    weighted_sum = 0.0
+    weight_total = 0.0
+    
+    cred_score = mbfc_scores.get("mbfc_credibility_score")
+    fact_score = mbfc_scores.get("mbfc_factuality_score")
+    
+    if cred_score is not None:
+        weighted_sum += cred_score * 0.55
+        weight_total += 0.55
+        provenance.append("Media Bias/Fact Check (MBFC)")
+        
+    if fact_score is not None:
+        weighted_sum += fact_score * 0.45
+        weight_total += 0.45
+        if "Media Bias/Fact Check (MBFC)" not in provenance:
+            provenance.append("Media Bias/Fact Check (MBFC)")
+            
+    if wikidata_score is not None:
+        weighted_sum += wikidata_score * 0.30
+        weight_total += 0.30
+        provenance.append("Wikidata")
+
+    if weight_total == 0.0:
+        composite_score = None
+    else:
+        composite_score = round(max(0.0, min(100.0, weighted_sum / weight_total)), 1)
+
+    # Derive dynamic reliability classification string from empirical evidence only
+    dynamic_rel = "unknown"
+    if mbfc and mbfc.get("credibility_rating") and mbfc.get("credibility_rating") != "unknown":
+        dynamic_rel = str(mbfc["credibility_rating"]).lower()
+    elif mbfc and mbfc.get("factual_reporting") and mbfc.get("factual_reporting") != "unknown":
+        dynamic_rel = str(mbfc["factual_reporting"]).lower()
+    elif wikidata_score == 100.0:
+        dynamic_rel = "academic/peer-reviewed"
+
+    profile["reliability"] = dynamic_rel
+
+    return {
+        "composite_reliability_score": composite_score,
+        "mbfc_credibility_score": cred_score,
+        "mbfc_factuality_score": fact_score,
+        "mbfc_bias_score": mbfc_scores.get("mbfc_bias_score"),
+        "provenance": provenance,
+    }
+
 PAGE_CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "page_cache.json")
 
 def _get_page_cache(cache_key: str) -> Any | None:
@@ -1852,12 +2827,22 @@ def _save_page_cache(cache: dict[str, Any]):
         _put_page_cache(k, v)
 
 
-def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False, output: str | None = None) -> dict[str, Any]:
+def analyze_page(
+    url: str,
+    max_sources: int | None = 10,
+    no_cache: bool = False,
+    countries_only: bool = False,
+    skip_rate_limiting: bool = False,
+    output: str | None = None,
+    split_multiple: bool = False,
+) -> dict[str, Any]:
     cache_suffix = ""
     if countries_only:
         cache_suffix += "_countries"
     if skip_rate_limiting:
         cache_suffix += "_fast"
+    if split_multiple:
+        cache_suffix += "_split"
     cache_key = f"{url}_all{cache_suffix}" if max_sources is None else f"{url}_max_{max_sources}{cache_suffix}"
     
     sources: list[dict[str, Any]] = []
@@ -1882,222 +2867,68 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 sys.stderr.flush()
 
     if not dedup_candidate_urls:
-        headers = {"User-Agent": "Mozilla/5.0"}
         try:
-            response = requests.get(url, headers=headers, timeout=15)
-            response.raise_for_status()
-            html = response.text
-        except requests.RequestException:
-            html = "<html><head><title>Fallback page</title></head><body><a href='https://www.reuters.com/world'>Reuters</a></body></html>"
-
-        soup = BeautifulSoup(html, "html.parser")
-        page_metadata = _extract_page_metadata(soup)
-        references = extract_references(soup)
-        citations = parse_citations(references[0]["items"]) if references else []
-        source_urls = _extract_source_urls(soup)
-
-        seen_urls = set()
-        reference_urls = [url for citation in citations for url in citation.get("urls", []) if url]
-        candidate_urls = reference_urls or source_urls
-
-        for u in candidate_urls:
-            unwrapped = unwrap_archive_url(u)
-            if unwrapped not in seen_urls:
-                seen_urls.add(unwrapped)
-                dedup_candidate_urls.append(unwrapped)
-
-    total = len(dedup_candidate_urls[:max_sources])
-    for idx, source_url in enumerate(dedup_candidate_urls[:max_sources], start=1):
-        if idx <= len(sources):
-            continue
+            if skip_rate_limiting:
+                html = _fetch_url_content_fast(url)
+            else:
+                html = _fetch_url_content(url)
+                
+            page_metadata = _extract_page_metadata(html, url)
+            references = _extract_references_from_html(html)
+            citations = _extract_citations_from_html(html, references)
             
-        resolved_url = _resolve_archive_url_content(source_url, skip_rate_limiting=skip_rate_limiting)
-        parsed_url = urlparse(resolved_url)
-        domain = parsed_url.netloc
-        
-        # Verbose logs
-        sys.stderr.write(f"\n[{idx}/{total}] Processing source: {resolved_url} (Domain: {domain})\n")
-        sys.stderr.flush()
-        
-        # Progress bar
-        percent = int(idx / total * 100) if total > 0 else 100
-        bar_length = 20
-        filled_length = int(bar_length * idx // total) if total > 0 else bar_length
-        bar = '█' * filled_length + '-' * (bar_length - filled_length)
-        sys.stderr.write(f"[{bar}] {percent}% complete\n")
-        sys.stderr.flush()
+            all_candidate_urls = []
+            for cit in citations:
+                all_candidate_urls.extend(cit["extracted_urls"])
+                
+            dedup_candidate_urls = list(dict.fromkeys(all_candidate_urls))
+            
+            if max_sources is not None:
+                dedup_candidate_urls = dedup_candidate_urls[:max_sources]
+                
+        except Exception as e:
+            sys.stderr.write(f"Error extracting page metadata/citations from {url}: {e}\n")
+            sys.stderr.flush()
+            dedup_candidate_urls = []
 
-        wikidata = _fetch_wikidata_enrichment(resolved_url)
-        profile = analyze_source_bias(resolved_url, wikidata)
+    total = len(dedup_candidate_urls)
+    for idx, cand_url in enumerate(dedup_candidate_urls, start=1):
+        if not skip_rate_limiting:
+            progress_pct = int((idx / total) * 100) if total > 0 else 100
+            bar_len = 20
+            filled_len = int(bar_len * idx // total) if total > 0 else bar_len
+            bar = '█' * filled_len + '-' * (bar_len - filled_len)
+            sys.stderr.write(f"\r[{bar}] {progress_pct}% complete ({idx}/{total}) - Processing source: {cand_url[:40]}...")
+            sys.stderr.flush()
+            
+        resolved_url = _resolve_archive_url_content(cand_url, skip_rate_limiting=skip_rate_limiting)
+        wikidata_info = _fetch_wikidata_enrichment(resolved_url)
+        profile = analyze_source_bias(resolved_url, wikidata_info)
         
         citation_text = ""
-        for citation in citations:
-            if source_url in citation.get("urls", []) or resolved_url in citation.get("urls", []):
-                citation_text = citation.get("text", "")
+        for cit in citations:
+            if cand_url in cit["extracted_urls"]:
+                citation_text = cit["citation_text"]
                 break
                 
         profile["citation_text"] = citation_text
         
         wikidata_pub = _fetch_wikidata_publisher(profile["domain"])
-        profile["wikidata_publisher"] = wikidata_pub
-        if wikidata_pub:
-            wd_leanings = []
-            if wikidata_pub.get("political_ideologies"):
-                wd_leanings.extend(wikidata_pub["political_ideologies"])
-            if wikidata_pub.get("political_leanings"):
-                for l in wikidata_pub["political_leanings"]:
-                    if l not in wd_leanings:
-                        wd_leanings.append(l)
-            if wd_leanings:
-                profile["political_leaning"] = ", ".join(wd_leanings)
-            if wikidata_pub.get("countries"):
-                profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
 
-        if countries_only:
-            profile["citation_text"] = ""
-            profile["mbfc"] = {}
-            profile["readability"] = {}
-            profile["google_books_metadata"] = {}
-            profile["oclc_metadata"] = {}
-            profile["doi_metadata"] = {}
-            profile["wikidata_book"] = {}
-            profile["author_profiles"] = []
-            profile["author_profile"] = None
-            profile["language_bias"] = {}
-        else:
-            mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
-            profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id, skip_rate_limiting=skip_rate_limiting)
-
-            profile["readability"] = _fetch_url_readability(resolved_url)
-            extracted_web_author = profile["readability"].get("extracted_author")
-
-            books_id = _extract_google_books_id(resolved_url)
-            oclc_num = _extract_oclc(resolved_url) or _extract_oclc(citation_text)
-            doi_val = _extract_doi(resolved_url) or _extract_doi(citation_text)
-            isbn_val = _extract_isbn(citation_text)
-
-            profile["google_books_metadata"] = {}
-            profile["oclc_metadata"] = {}
-            profile["doi_metadata"] = {}
-            profile["wikidata_book"] = {}
-
-            if books_id:
-                profile["google_books_metadata"] = _fetch_google_books_metadata(books_id)
-                profile["source_type"] = "book"
-                profile["reliability"] = "high"
-            elif oclc_num:
-                profile["oclc_metadata"] = _fetch_wikidata_oclc(oclc_num)
-                profile["source_type"] = "book/library_record"
-                profile["reliability"] = "high"
-            elif doi_val:
-                crossref_meta = _fetch_crossref_metadata(doi_val)
-                wiki_doi_meta = _fetch_wikidata_doi(doi_val)
-                merged_doi = {
-                    "doi": doi_val,
-                    "title": crossref_meta.get("title") or wiki_doi_meta.get("wikidata_name") or "",
-                    "authors": crossref_meta.get("authors") or wiki_doi_meta.get("authors") or [],
-                    "publisher": crossref_meta.get("publisher") or ", ".join(wiki_doi_meta.get("publishers", [])) or "",
-                    "journal": crossref_meta.get("journal") or ", ".join(wiki_doi_meta.get("journals", [])) or "",
-                    "published_date": crossref_meta.get("published_date") or wiki_doi_meta.get("pub_date") or "",
-                    "subjects": crossref_meta.get("subjects") or [],
-                    "wikidata_id": wiki_doi_meta.get("wikidata_id", ""),
-                    "countries": wiki_doi_meta.get("countries", []),
-                    "political_leanings": wiki_doi_meta.get("political_leanings", []),
-                }
-                profile["doi_metadata"] = merged_doi
-                profile["source_type"] = "journal_article"
-                profile["reliability"] = "academic/peer-reviewed"
-                if merged_doi.get("countries"):
-                    profile["geography"]["country"] = ", ".join(merged_doi["countries"])
-                if merged_doi.get("political_leanings"):
-                    profile["political_leaning"] = ", ".join(merged_doi["political_leanings"])
-            elif isbn_val:
-                profile["wikidata_book"] = _fetch_wikidata_book(isbn_val)
-                profile["source_type"] = "book"
-                profile["reliability"] = "high"
-
-            citation_authors = _extract_authors_from_citation(citation_text)
-            
-            meta_authors = []
-            if profile["doi_metadata"] and profile["doi_metadata"].get("authors"):
-                meta_authors = profile["doi_metadata"]["authors"]
-            elif profile["google_books_metadata"] and profile["google_books_metadata"].get("authors"):
-                meta_authors = profile["google_books_metadata"]["authors"]
-            elif profile["oclc_metadata"] and profile["oclc_metadata"].get("authors"):
-                meta_authors = profile["oclc_metadata"]["authors"]
-            elif profile["wikidata_book"] and profile["wikidata_book"].get("authors"):
-                meta_authors = profile["wikidata_book"]["authors"]
-
-            final_authors = []
-            if meta_authors:
-                final_authors = meta_authors
-            elif citation_authors:
-                final_authors = citation_authors
-            elif extracted_web_author:
-                final_authors = [extracted_web_author]
-            elif page_metadata.get("author"):
-                final_authors = [page_metadata["author"]]
-
-            author_profiles = []
-            for auth in final_authors:
-                auth_prof = analyze_author_bias(auth, profile["geography"])
-                wiki_author = _fetch_wikidata_author(auth)
-                auth_prof["wikidata_author"] = wiki_author
-                author_profiles.append(auth_prof)
-                
-            profile["author_profiles"] = author_profiles
-            profile["author_profile"] = author_profiles[0] if author_profiles else None
-            profile["language_bias"] = analyze_language_bias(citation_text)
-
-        sources.append(profile)
-
-        # Save intermediate/partial progress to cache
-        if not no_cache:
-            intermediate_result = {
-                "page_title": _extract_page_title(url),
-                "page_url": url,
-                "page_metadata": page_metadata,
-                "references": references,
-                "citations": citations,
-                "dedup_candidate_urls": dedup_candidate_urls,
-                "citation_count": len(citations),
-                "source_count": len(sources),
-                "sources": sources,
-                "countries_only": countries_only,
-                "is_partial": True
-            }
-            _put_page_cache(cache_key, intermediate_result)
-
-    if total > 0:
-        sys.stderr.write(f"\r[{'█'*20}] 100% complete! Processing finished.\n")
-        sys.stderr.flush()
-
-    if not sources:
-        wikidata = _fetch_wikidata_enrichment("https://www.reuters.com/world")
-        fallback_source = analyze_source_bias("https://www.reuters.com/world", wikidata)
-        fallback_source["citation_text"] = "Reuters World News"
-        fallback_source["wikidata_publisher"] = {}
-        fallback_source["wikidata_book"] = {}
-        fallback_source["google_books_metadata"] = {}
-        fallback_source["oclc_metadata"] = {}
-        fallback_source["doi_metadata"] = {}
-        fallback_source["mbfc"] = {}
-        fallback_source["readability"] = _calculate_readability("Reuters World News")
-        fallback_source["author_profiles"] = []
-        fallback_source["author_profile"] = None
-        fallback_source["language_bias"] = analyze_language_bias("Reuters World News")
-        sources = [fallback_source]
+    page_title_val = _extract_page_title(url)
 
     if countries_only:
         country_counts = {}
         simplified_sources = []
         for s in sources:
-            c = s["geography"]["country"]
-            country_counts[c] = country_counts.get(c, 0) + 1
+            c_raw = s["geography"]["country"]
+            c_list = _split_items(c_raw) if split_multiple else [c_raw]
+            for c in c_list:
+                country_counts[c] = country_counts.get(c, 0) + 1
             simplified_sources.append({
                 "url": s["url"],
                 "domain": s["domain"],
-                "country": c
+                "country": c_raw
             })
         
         geo_distribution = {
@@ -2106,7 +2937,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         }
         
         result = {
-            "page_title": _extract_page_title(url),
+            "page_title": page_title_val,
             "page_url": url,
             "citation_count": len(citations),
             "source_count": len(sources),
@@ -2116,10 +2947,10 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             "is_partial": False
         }
     else:
-        aggregated_bias = aggregate_page_bias(sources)
+        aggregated_bias = aggregate_page_bias(sources, split_multiple=split_multiple, page_title=page_title_val)
 
         result = {
-            "page_title": _extract_page_title(url),
+            "page_title": page_title_val,
             "page_url": url,
             "page_metadata": page_metadata,
             "references": references,

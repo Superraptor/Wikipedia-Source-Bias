@@ -6683,5 +6683,1118 @@
       "website"
     ],
     "mbfc_id": null
+  },
+  "cambridge.org": {
+    "wikidata_id": "Q111948287",
+    "wikidata_name": "Cambridge University Press and Assessment",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "publishing house",
+      "university press"
+    ],
+    "mbfc_id": null
+  },
+  "fao.org": {
+    "wikidata_id": "Q82151",
+    "wikidata_name": "Food and Agriculture Organization of the United Nations",
+    "countries": [
+      "Italy"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "specialized agency of the United Nations"
+    ],
+    "mbfc_id": null
+  },
+  "consilium.europa.eu": {
+    "wikidata_id": "Q8896",
+    "wikidata_name": "Council of the European Union",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "executive branch",
+      "institutions of the European Union",
+      "legislature",
+      "upper house"
+    ],
+    "mbfc_id": null
+  },
+  "sgae.gouv.fr": {
+    "wikidata_id": "Q3477336",
+    "wikidata_name": "Secrétariat général des affaires européennes",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "hir.harvard.edu": {
+    "wikidata_id": "Q5676450",
+    "wikidata_name": "Harvard International Review",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": "harvard-international-review-bias"
+  },
+  "globalissues.org": {},
+  "armscontrolcenter.org": {
+    "wikidata_id": "Q54556407",
+    "wikidata_name": "Center for Arms Control and Non-Proliferation",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "oryxspioenkop.com": {
+    "wikidata_id": "Q111889690",
+    "wikidata_name": "Oryx",
+    "countries": [
+      "Netherlands"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "asiatimes.com": {
+    "wikidata_id": "Q727162",
+    "wikidata_name": "Asia Times Online",
+    "countries": [
+      "People's Republic of China"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news website",
+      "periodical"
+    ],
+    "mbfc_id": "asia-times"
+  },
+  "tass.com": {
+    "wikidata_id": "Q223799",
+    "wikidata_name": "TASS",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news agency"
+    ],
+    "mbfc_id": "russian-news-agency-tass"
+  },
+  "bp.com": {
+    "wikidata_id": "Q113466018",
+    "wikidata_name": "BP Gas Marketing",
+    "countries": [
+      "Spain",
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "enterprise",
+      "oil company",
+      "public company"
+    ],
+    "mbfc_id": null
+  },
+  "indexmundi.com": {
+    "wikidata_id": "Q133540168",
+    "wikidata_name": "Q133540168",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "productions-animales.org": {
+    "wikidata_id": "Q3031065",
+    "wikidata_name": "INRAE Productions Animales",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Q117355825",
+      "open-access journal"
+    ],
+    "mbfc_id": null
+  },
+  "eia.gov": {
+    "wikidata_id": "Q1133499",
+    "wikidata_name": "Energy Information Administration",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "United States federal agency"
+    ],
+    "mbfc_id": null
+  },
+  "iea.org": {
+    "wikidata_id": "Q826700",
+    "wikidata_name": "International Energy Agency",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "intergovernmental organization"
+    ],
+    "mbfc_id": "international-energy-agency-iea"
+  },
+  "rosstat.gov.ru": {
+    "wikidata_id": "Q2624680",
+    "wikidata_name": "Federal State Statistics Service",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Federal service (Russian Federation)",
+      "statistical service"
+    ],
+    "mbfc_id": null
+  },
+  "transparency-france.org": {
+    "wikidata_id": "Q28810711",
+    "wikidata_name": "Q28810711",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "amnesty.org": {
+    "wikidata_id": "Q137456697",
+    "wikidata_name": "Q137456697",
+    "countries": [
+      "Mexico",
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "international award",
+      "non-governmental organization",
+      "nonprofit corporation",
+      "nonprofit organization"
+    ],
+    "mbfc_id": "amnesty-international"
+  },
+  "occrp.org": {
+    "wikidata_id": "Q131900956",
+    "wikidata_name": "Q131900956",
+    "countries": [
+      "Netherlands",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Undesirable foreign organization in Russia",
+      "consortium",
+      "nonprofit organization",
+      "organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "cpj.org": {
+    "wikidata_id": "Q1115813",
+    "wikidata_name": "Committee to Protect Journalists",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": "committee-to-protect-journalists"
+  },
+  "ined.fr": {
+    "wikidata_id": "Q131907553",
+    "wikidata_name": "Q131907553",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "unaids.org": {
+    "wikidata_id": "Q588982",
+    "wikidata_name": "Joint United Nations Programme on HIV/AIDS",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization established by the United Nations"
+    ],
+    "mbfc_id": null
+  },
+  "news.un.org": {
+    "wikidata_id": "Q120029524",
+    "wikidata_name": "Millions of children deprived of life-saving vaccinations amid COVID pandemic, misinformation surge",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [],
+    "mbfc_id": null
+  },
+  "unicef.org": {
+    "wikidata_id": "Q95946141",
+    "wikidata_name": "UNICEF Meena Media Award",
+    "countries": [
+      "Bangladesh",
+      "Poland",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "United Nations programmes and funds",
+      "award",
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "rg.ru": {
+    "wikidata_id": "Q4493017",
+    "wikidata_name": "Vladislav Fronin",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Government of Russia"
+    ],
+    "types": [
+      "government gazette",
+      "human",
+      "newspaper",
+      "periodical",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "deadline.com": {
+    "wikidata_id": "Q4037100",
+    "wikidata_name": "Deadline Hollywood",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Penske Media Corporation"
+    ],
+    "types": [
+      "news website",
+      "website"
+    ],
+    "mbfc_id": "deadline-hollywood"
+  },
+  "ibtimes.co.uk": {
+    "wikidata_id": "Q6510653",
+    "wikidata_name": "International Business Times",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "IBT Media"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": "international-business-times"
+  },
+  "larevue.info": {
+    "wikidata_id": "Q3212271",
+    "wikidata_name": "Q3212271",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "mirror.co.uk": {
+    "wikidata_id": "Q26792861",
+    "wikidata_name": "Mirror Online",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [
+      "Labour Party"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Reach plc"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper",
+      "periodical",
+      "website"
+    ],
+    "mbfc_id": "daily-mirror"
+  },
+  "pagesix.com": {
+    "wikidata_id": "Q61710157",
+    "wikidata_name": "Page Six",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical section"
+    ],
+    "mbfc_id": null
+  },
+  "theweek.com": {
+    "wikidata_id": "Q7774107",
+    "wikidata_name": "The Week",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news magazine"
+    ],
+    "mbfc_id": "the-week"
+  },
+  "scmp.com": {
+    "wikidata_id": "Q1198574",
+    "wikidata_name": "South China Morning Post",
+    "countries": [
+      "People's Republic of China"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Alibaba Group",
+      "Great Wall Pan Asia Holdings",
+      "News Corporation"
+    ],
+    "types": [
+      "daily newspaper",
+      "online newspaper"
+    ],
+    "mbfc_id": "south-china-morning-post"
+  },
+  "ntv.ru": {
+    "wikidata_id": "Q574625",
+    "wikidata_name": "NTV",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Gazprom-Media",
+      "Media-Most",
+      "Most Group"
+    ],
+    "types": [
+      "film production company",
+      "film studio",
+      "television channel",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "tandfonline.com": {
+    "wikidata_id": "Q96704132",
+    "wikidata_name": "Current Issues and Research in Advertising",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "academic journal",
+      "digital journal",
+      "scientific journal"
+    ],
+    "mbfc_id": null
+  },
+  "kommersant.com": {
+    "wikidata_id": "Q1780189",
+    "wikidata_name": "Kommersant",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Alisher Usmanov"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lenta.ru": {
+    "wikidata_id": "Q658909",
+    "wikidata_name": "lenta.ru",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Rambler&Co"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "coe.int": {
+    "wikidata_id": "Q8908",
+    "wikidata_name": "Council of Europe",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "intergovernmental organization"
+    ],
+    "mbfc_id": null
+  },
+  "regard-est.com": {
+    "wikidata_id": "Q3423369",
+    "wikidata_name": "Q3423369",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "cultural magazine",
+      "digital journal",
+      "open-access journal"
+    ],
+    "mbfc_id": null
+  },
+  "robert-schuman.eu": {
+    "wikidata_id": "Q3075561",
+    "wikidata_name": "Robert Schuman foundation",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "foundation",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "libramemoria.com": {
+    "wikidata_id": "Q130735389",
+    "wikidata_name": "Libra Memoria",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "database",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "letudiant.fr": {
+    "wikidata_id": "Q3205559",
+    "wikidata_name": "L'Étudiant",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q3117403"
+    ],
+    "types": [
+      "communications media",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "gqmagazine.fr": {
+    "wikidata_id": "Q311249",
+    "wikidata_name": "GQ",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Condé Nast"
+    ],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": "gq-magazine"
+  },
+  "rmcsport.bfmtv.com": {
+    "wikidata_id": "Q24938257",
+    "wikidata_name": "RMC Sport News",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "RMC BFM"
+    ],
+    "types": [
+      "business",
+      "enterprise",
+      "news website",
+      "sports newspaper",
+      "television channel"
+    ],
+    "mbfc_id": null
+  },
+  "medias.vie-publique.fr": {},
+  "metro.co.uk": {
+    "wikidata_id": "Q3307433",
+    "wikidata_name": "Metro",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "DMG Media"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "metro-uk"
+  },
+  "service-public.fr": {
+    "wikidata_id": "Q142",
+    "wikidata_name": "France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "country",
+      "republic",
+      "sovereign state"
+    ],
+    "mbfc_id": null
+  },
+  "afp.com": {
+    "wikidata_id": "Q3136846",
+    "wikidata_name": "Q3136846",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "fact-checking organisation",
+      "news agency",
+      "recorded history",
+      "website"
+    ],
+    "mbfc_id": "afp-agence-france-presse"
+  },
+  "en-marche.fr": {},
+  "afriquexxi.info": {
+    "wikidata_id": "Q122700911",
+    "wikidata_name": "Afrique XXI",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online magazine"
+    ],
+    "mbfc_id": null
+  },
+  "ad.ambafrance.org": {
+    "wikidata_id": "Q2841713",
+    "wikidata_name": "Embassy of France, Andorra la Vella",
+    "countries": [
+      "Andorra"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "embassy"
+    ],
+    "mbfc_id": null
+  },
+  "histoiresroyales.fr": {
+    "wikidata_id": "Q136527338",
+    "wikidata_name": "Q136527338",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "france3-regions.franceinfo.fr": {
+    "wikidata_id": "Q133802640",
+    "wikidata_name": "Q133802640",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "France 3 Régions",
+      "France Télévisions"
+    ],
+    "types": [
+      "news website",
+      "television network"
+    ],
+    "mbfc_id": null
+  },
+  "amnesty.fr": {
+    "wikidata_id": "Q20666304",
+    "wikidata_name": "Amnesty International France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "usinenouvelle.com": {
+    "wikidata_id": "Q3204848",
+    "wikidata_name": "L'Usine nouvelle",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Infopro Digital"
+    ],
+    "types": [
+      "trade magazine"
+    ],
+    "mbfc_id": null
+  },
+  "contexte.com": {
+    "wikidata_id": "Q61825507",
+    "wikidata_name": "Contexte",
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human",
+      "online newspaper",
+      "pure play"
+    ],
+    "mbfc_id": null
+  },
+  "e-marketing.fr": {
+    "wikidata_id": "Q100268585",
+    "wikidata_name": "Marketing",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "trade magazine"
+    ],
+    "mbfc_id": null
+  },
+  "france3-regions.francetvinfo.fr": {
+    "wikidata_id": "Q3080592",
+    "wikidata_name": "Q3080592",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "France Télévisions"
+    ],
+    "types": [
+      "television channel",
+      "television program",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "frenchamerican.org": {
+    "wikidata_id": "Q3075672",
+    "wikidata_name": "French-American Foundation",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "teleobs.nouvelobs.com": {},
+  "culturebox.francetvinfo.fr": {
+    "wikidata_id": "Q3526270",
+    "wikidata_name": "Thé ou Café",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "television program"
+    ],
+    "mbfc_id": null
+  },
+  "comixtrip.fr": {
+    "wikidata_id": "Q139827428",
+    "wikidata_name": "Q139827428",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "brain-magazine.fr": {
+    "wikidata_id": "Q2923590",
+    "wikidata_name": "Q2923590",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "bopa.ad": {
+    "wikidata_id": "Q8250524",
+    "wikidata_name": "Official Bulletin of the Principality of Andorra",
+    "countries": [
+      "Andorra"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government gazette"
+    ],
+    "mbfc_id": null
+  },
+  "metropoles.com": {
+    "wikidata_id": "Q56350071",
+    "wikidata_name": "Metrópoles",
+    "countries": [
+      "Brazil"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "wam.ae": {
+    "wikidata_id": "Q12251159",
+    "wikidata_name": "Emirates News Agency",
+    "countries": [
+      "United Arab Emirates"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government agency",
+      "news agency"
+    ],
+    "mbfc_id": null
+  },
+  "ritarikunnat.fi": {
+    "wikidata_id": "Q335233",
+    "wikidata_name": "Pro Finlandia Medal of the Order of the Lion of Finland",
+    "countries": [
+      "Finland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "grade of an order",
+      "medal of an order",
+      "order",
+      "state decoration"
+    ],
+    "mbfc_id": null
+  },
+  "defimedia.info": {
+    "wikidata_id": "Q30594760",
+    "wikidata_name": "Le Défi Plus",
+    "countries": [
+      "Mauritius"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "newsmaker.md": {},
+  "pointdevue.fr": {
+    "wikidata_id": "Q3393434",
+    "wikidata_name": "Point de vue",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q3117403"
+    ],
+    "types": [
+      "gossip magazine",
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "royalwatcherblog.com": {},
+  "diwan.gov.qa": {
+    "wikidata_id": "Q19406958",
+    "wikidata_name": "Amiri Diwan of the State of Qatar",
+    "countries": [
+      "Qatar"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Qatar"
+    ],
+    "types": [
+      "Emirate",
+      "Wikimedia list article",
+      "country",
+      "official residence",
+      "palace",
+      "sovereign state"
+    ],
+    "mbfc_id": null
+  },
+  "kungahuset.se": {
+    "wikidata_id": "Q6338017",
+    "wikidata_name": "Royal Court of Sweden",
+    "countries": [
+      "Sweden"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "royal family",
+      "royal household"
+    ],
+    "mbfc_id": null
+  },
+  "leaders.com.tn": {
+    "wikidata_id": "Q3228624",
+    "wikidata_name": "Leaders",
+    "countries": [
+      "Tunisia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "utoronto.ca": {
+    "wikidata_id": "Q180865",
+    "wikidata_name": "University of Toronto",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "collegiate university",
+      "public research university",
+      "university in Ontario"
+    ],
+    "mbfc_id": null
+  },
+  "koreatimes.co.kr": {
+    "wikidata_id": "Q486950",
+    "wikidata_name": "The Korea Times",
+    "countries": [
+      "South Korea"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Hankook Ilbo"
+    ],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": "the-korea-times"
+  },
+  "atlanticcouncil.org": {
+    "wikidata_id": "Q756373",
+    "wikidata_name": "Atlantic Council",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "Atlanticism"
+    ],
+    "owners": [],
+    "types": [
+      "advocacy group",
+      "nonprofit organization",
+      "think tank"
+    ],
+    "mbfc_id": "atlantic-council"
+  },
+  "gss.revues.org": {
+    "wikidata_id": "Q3100807",
+    "wikidata_name": "Genre, Sexualité et Société",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "academic journal",
+      "open-access journal",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "lci.tf1.fr": {
+    "wikidata_id": "Q3212777",
+    "wikidata_name": "Q3212777",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "radio station",
+      "television program"
+    ],
+    "mbfc_id": null
   }
 }

@@ -12378,5 +12378,3475 @@
       "gender": 0.9704174995422363,
       "subregion": 0.7543573975563049
     }
+  },
+  "Zhanna Popova": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9201433062553406,
+      "subregion": 0.8774489760398865
+    }
+  },
+  "Maxime Petrovski": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8758629560470581,
+      "subregion": 0.3711808919906616
+    }
+  },
+  "Joseph Stiglitz": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9404568672180176,
+      "subregion": 0.5779299139976501
+    }
+  },
+  "Benjamin Quénelle": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.894540011882782,
+      "subregion": 0.6832038760185242
+    }
+  },
+  "Olga Kiyan": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7235327959060669,
+      "subregion": 0.4992986023426056
+    }
+  },
+  "Vincent Lamigeon": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9309002161026001,
+      "subregion": 0.5903290510177612
+    }
+  },
+  "Anup Shah": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7068866491317749,
+      "subregion": 0.5496610999107361
+    }
+  },
+  "username": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9787930846214294,
+      "gender": 0.5954740047454834,
+      "subregion": 0.1951962262392044
+    }
+  },
+  "Romain Yakemtchouk": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8962745070457458,
+      "subregion": 0.6244882941246033
+    }
+  },
+  "Methode": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999979734420776,
+      "gender": 0.678703784942627,
+      "subregion": 0.45074549317359924
+    }
+  },
+  "Nikola Mikovic": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7630907893180847,
+      "subregion": 0.29690468311309814
+    }
+  },
+  "Robert Lewis": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9072248339653015,
+      "subregion": 0.5150575041770935
+    }
+  },
+  "TASS": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7336186170578003,
+      "subregion": 0.2795460820198059
+    }
+  },
+  "Benoît Vitkine": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999980926513672,
+      "gender": 0.9585912227630615,
+      "subregion": 0.607079029083252
+    }
+  },
+  "Muryel Jacque": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 0.9999858140945435,
+      "gender": 0.5996037125587463,
+      "subregion": 0.3186967968940735
+    }
+  },
+  "Vincent CHATELLIER": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9402899742126465,
+      "subregion": 0.5648847222328186
+    }
+  },
+  "Thierry POUCH": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9305700659751892,
+      "subregion": 0.6890293955802917
+    }
+  },
+  "Cécile LE ROY": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.8854913115501404,
+      "subregion": 0.6960530281066895
+    }
+  },
+  "Quentin MATHIEU": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9721531271934509,
+      "subregion": 0.6164746284484863
+    }
+  },
+  "Vincent Collen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9032096266746521,
+      "subregion": 0.47868335247039795
+    }
+  },
+  "Charles Kennedy": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9488368630409241,
+      "subregion": 0.4146355092525482
+    }
+  },
+  "TI_France": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999943971633911,
+      "gender": 0.6259757876396179,
+      "subregion": 0.5924471616744995
+    }
+  },
+  "Yulia Gorbunova": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9252343773841858,
+      "subregion": 0.7074387073516846
+    }
+  },
+  "Jean-Marc Four": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9998692274093628,
+      "gender": 0.9708122611045837,
+      "subregion": 0.5962258577346802
+    }
+  },
+  "Lucas Da Silva": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9223092198371887,
+      "subregion": 0.572385847568512
+    }
+  },
+  "Reported by David Klein": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9964555501937866,
+      "gender": 0.9473941922187805,
+      "subregion": 0.7433260083198547
+    }
+  },
+  "pressfreedom": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.972251582890749,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "RFI avec AFP": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999154418765102,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "GregSauvage": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9995315739070065,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Jean-Philippe Liabot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999990463256836,
+      "gender": 0.9703744053840637,
+      "subregion": 0.6298465132713318
+    }
+  },
+  "Селина Марина": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999858140945435,
+      "gender": 0.5638834238052368,
+      "subregion": 0.3504711985588074
+    }
+  },
+  "Антон Благовещенский": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9994080066680908,
+      "gender": 0.5499029159545898,
+      "subregion": 0.3306107223033905
+    }
+  },
+  "Автор: MIXall, 29.04.2018": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9982281653210521,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Patrick Hipes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9682203531265259,
+      "subregion": 0.42523688077926636
+    }
+  },
+  "Edited by Arthur Ashpitel": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.9999756813049316,
+      "gender": 0.8570151329040527,
+      "subregion": 0.6669406890869141
+    }
+  },
+  "SABAKA": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9979538917541504,
+      "gender": 0.5558577179908752,
+      "subregion": 0.1668732613325119
+    }
+  },
+  "Véronique Soulé": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.8655527234077454,
+      "subregion": 0.5967581272125244
+    }
+  },
+  "Lucy Pasha-Robinson": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9138365387916565,
+      "subregion": 0.44726672768592834
+    }
+  },
+  "Juliette Morillot": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.945925772190094,
+      "subregion": 0.6343920230865479
+    }
+  },
+  "Mark Galeotti": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9541151523590088,
+      "subregion": 0.5821433067321777
+    }
+  },
+  "By Mark Galeotti": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9804023802280426,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Dossier réalisé par Philippe Rioux, D.D. et Jean-Pierre Bédéï": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9195512533187866,
+      "subregion": 0.9772223830223083
+    }
+  },
+  "Allen V Lynch": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8772756457328796,
+      "subregion": 0.5602120161056519
+    }
+  },
+  "wwwproektmedia": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999933201002023,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Luke Harding": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9343104958534241,
+      "subregion": 0.461527943611145
+    }
+  },
+  "Will Stewart": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9411439299583435,
+      "subregion": 0.4083470106124878
+    }
+  },
+  "pagesix": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9874519249424338,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "The Week UK": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 0.9999990463256836,
+      "gender": 0.6751611232757568,
+      "subregion": 0.7854289412498474
+    }
+  },
+  "Marc Nexon": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9297462105751038,
+      "subregion": 0.37091147899627686
+    }
+  },
+  "Agence France-Presse": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9867234574630857,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "ntvru": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999702851746406,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "philipoltermann": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999992847442627,
+      "gender": 0.7313507199287415,
+      "subregion": 0.6074936985969543
+    }
+  },
+  "Anthony Bellanger": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9447000622749329,
+      "subregion": 0.48167505860328674
+    }
+  },
+  "Nerea Belmonte": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "South America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8738295435905457,
+      "subregion": 0.3734383285045624
+    }
+  },
+  "David Crawford": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9541561603546143,
+      "subregion": 0.42493483424186707
+    }
+  },
+  "Agathe Duparc": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9005782604217529,
+      "subregion": 0.3015662729740143
+    }
+  },
+  "Nicolas Tonev": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9772213697433472,
+      "subregion": 0.6849318146705627
+    }
+  },
+  "François Christophe": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.974175751209259,
+      "subregion": 0.867495059967041
+    }
+  },
+  "Miriam Palisson": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8922944068908691,
+      "subregion": 0.48905250430107117
+    }
+  },
+  "Michael Wines": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9526755213737488,
+      "subregion": 0.4101661741733551
+    }
+  },
+  "Stephen White": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9488062858581543,
+      "subregion": 0.4087325930595398
+    }
+  },
+  "Ian Mcallister": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.926083505153656,
+      "subregion": 0.5130172371864319
+    }
+  },
+  "Vladislav Zubok": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9655821323394775,
+      "subregion": 0.8925163745880127
+    }
+  },
+  "Yevgenia Borisova": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9438188076019287,
+      "subregion": 0.8182058334350586
+    }
+  },
+  "AxelGylden": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9986082159448415,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Jean-NoÃ«l Jeanneney": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999761581420898,
+      "gender": 0.9541658163070679,
+      "subregion": 0.7316476702690125
+    }
+  },
+  "Association des cafés géographiques, Patrick Poncet": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8210883140563965,
+      "subregion": 0.9070972800254822
+    }
+  },
+  "Afanasy Sborov": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 0.9917929768562317,
+      "gender": 0.938250720500946,
+      "subregion": 0.8124822378158569
+    }
+  },
+  "Jacques Hubert-Rodier": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.962218701839447,
+      "subregion": 0.7996458411216736
+    }
+  },
+  "Christian Jouvenot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8846845626831055,
+      "subregion": 0.7351146936416626
+    }
+  },
+  "Samya Yakoubaly": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Africa",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6900977492332458,
+      "subregion": 0.6490514874458313
+    }
+  },
+  "Emilie Cabot": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8745781183242798,
+      "subregion": 0.42283302545547485
+    }
+  },
+  "Antoine Flandrin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.877058744430542,
+      "subregion": 0.5522488951683044
+    }
+  },
+  "Viktoria Telek": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.851118803024292,
+      "subregion": 0.6006886959075928
+    }
+  },
+  "Anaëlle Grondin": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8944341540336609,
+      "subregion": 0.6143844127655029
+    }
+  },
+  "Marie-Laure Zonszain": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999997615814209,
+      "gender": 0.8438224196434021,
+      "subregion": 0.6274279952049255
+    }
+  },
+  "Marc Fourny": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9518790245056152,
+      "subregion": 0.5069774985313416
+    }
+  },
+  "Mathilde Roche": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.931780993938446,
+      "subregion": 0.7325615882873535
+    }
+  },
+  "Cinq VDM": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9940131525509059,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Dionysios Dervis-Bournias": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9358060956001282,
+      "subregion": 0.6328018307685852
+    }
+  },
+  "Natacha Lefauconnier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7874857783317566,
+      "subregion": 0.6743742227554321
+    }
+  },
+  "Jean-Marc De Jaeger": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9998692274093628,
+      "gender": 0.9654673337936401,
+      "subregion": 0.7789995074272156
+    }
+  },
+  "Odile Benyahia-Kouider": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8624745011329651,
+      "subregion": 0.5467148423194885
+    }
+  },
+  "Emmanuel Macron": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9460051655769348,
+      "subregion": 0.5263737440109253
+    }
+  },
+  "François Clemenceau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9708600044250488,
+      "subregion": 0.566865086555481
+    }
+  },
+  "Alain Faujas": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9164130687713623,
+      "subregion": 0.5012285709381104
+    }
+  },
+  "Gaël Rivallain": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999938011169434,
+      "gender": 0.9292516112327576,
+      "subregion": 0.7659331560134888
+    }
+  },
+  "Elsa Guiol et Vincent Coquebert": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7783191204071045,
+      "subregion": 0.6897658705711365
+    }
+  },
+  "Charlotte Chabas": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8853064775466919,
+      "subregion": 0.6272263526916504
+    }
+  },
+  "Camille Adaoust": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6687607765197754,
+      "subregion": 0.6550446152687073
+    }
+  },
+  "ANAELLE GRONDIN": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8291255235671997,
+      "subregion": 0.5155897736549377
+    }
+  },
+  "Mathieu Lecerf": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9400131702423096,
+      "subregion": 0.6376450061798096
+    }
+  },
+  "Fabrice Leviel": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.859508752822876,
+      "subregion": 0.5995002388954163
+    }
+  },
+  "Marie Boscher": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8624703288078308,
+      "subregion": 0.6212511658668518
+    }
+  },
+  "David Bensoussan": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.917036235332489,
+      "subregion": 0.3270331025123596
+    }
+  },
+  "Cécile Frechinos": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.873166024684906,
+      "subregion": 0.7984645366668701
+    }
+  },
+  "ICI": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Asia",
+    "confidence": {
+      "human": 0.6250594854354858,
+      "gender": 0.5776228308677673,
+      "subregion": 0.5958306789398193
+    }
+  },
+  "RMCSport": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999572835768049,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Luc Vinogradoff": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8226747512817383,
+      "subregion": 0.4308302104473114
+    }
+  },
+  "Sophie Coignard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8746865391731262,
+      "subregion": 0.48055580258369446
+    }
+  },
+  "Maxence LANGLOIS-BERTHELOT": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.940041184425354,
+      "subregion": 0.889319896697998
+    }
+  },
+  "Kira Mitrofanoff": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8223285675048828,
+      "subregion": 0.517275333404541
+    }
+  },
+  "Adrien de Tricornot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9304126501083374,
+      "subregion": 0.694190263748169
+    }
+  },
+  "Isabelle Chaperon": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9247499108314514,
+      "subregion": 0.5501017570495605
+    }
+  },
+  "VisionsMag": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9966013226658106,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Julien Rebucci": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9242603182792664,
+      "subregion": 0.6655960083007812
+    }
+  },
+  "Fanny Guinochet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8591561913490295,
+      "subregion": 0.659596860408783
+    }
+  },
+  "Amy Willis": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8332043290138245,
+      "subregion": 0.5045037865638733
+    }
+  },
+  "Sophie Fay": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8834851980209351,
+      "subregion": 0.4569512605667114
+    }
+  },
+  "Nicolas Daniel": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9491806626319885,
+      "subregion": 0.6536934971809387
+    }
+  },
+  "Laurent Mauduit": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9365333914756775,
+      "subregion": 0.6163138747215271
+    }
+  },
+  "Thibaut Pezerat": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7939422726631165,
+      "subregion": 0.7876517176628113
+    }
+  },
+  "Claire Cambier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7924500703811646,
+      "subregion": 0.4694478511810303
+    }
+  },
+  "V.V. (avec Nicolas Prissette)": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999995231628418,
+      "gender": 0.8821771144866943,
+      "subregion": 0.4912607967853546
+    }
+  },
+  "Lénaïg Bredoux, Martine Orange": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7478331923484802,
+      "subregion": 0.7923007607460022
+    }
+  },
+  "Guillaume Stoll": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7981920838356018,
+      "subregion": 0.7102079391479492
+    }
+  },
+  "Auteur La rédaction": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999949932098389,
+      "gender": 0.8330332040786743,
+      "subregion": 0.2855830192565918
+    }
+  },
+  "Alexandre Pouchard": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9625007510185242,
+      "subregion": 0.6428979635238647
+    }
+  },
+  "Philippe Jacqué": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9676960706710815,
+      "subregion": 0.6496429443359375
+    }
+  },
+  "Patrick Roger": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9635293483734131,
+      "subregion": 0.48584479093551636
+    }
+  },
+  "Claude Soula": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7579393982887268,
+      "subregion": 0.561268150806427
+    }
+  },
+  "Guillaume Errard": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9360873103141785,
+      "subregion": 0.5730318427085876
+    }
+  },
+  "Anne Drif": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8827576637268066,
+      "subregion": 0.42960742115974426
+    }
+  },
+  "Gilles Servient": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9661225080490112,
+      "subregion": 0.6503701210021973
+    }
+  },
+  "Vanessa Ratignier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8866786956787109,
+      "subregion": 0.4723176062107086
+    }
+  },
+  "Bastien Bonnefous": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9113768935203552,
+      "subregion": 0.6956039667129517
+    }
+  },
+  "Clément Fayol": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9338489174842834,
+      "subregion": 0.738744854927063
+    }
+  },
+  "Mathieu Magnaudeix": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9470208883285522,
+      "subregion": 0.6684271693229675
+    }
+  },
+  "Damien Leloup": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9550898671150208,
+      "subregion": 0.6341461539268494
+    }
+  },
+  "Françoise Marmouyet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9186107516288757,
+      "subregion": 0.6724132895469666
+    }
+  },
+  "Philippe Piot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9625887870788574,
+      "subregion": 0.7267276048660278
+    }
+  },
+  "David Malle": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9494760036468506,
+      "subregion": 0.2969736158847809
+    }
+  },
+  "Elie Cohen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7686333060264587,
+      "subregion": 0.6668612957000732
+    }
+  },
+  "Natacha Polony": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Africa",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6023370027542114,
+      "subregion": 0.2323274463415146
+    }
+  },
+  "Bruno Amable": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9014548659324646,
+      "subregion": 0.34208884835243225
+    }
+  },
+  "Cédric Pietralunga": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9288856983184814,
+      "subregion": 0.4302913546562195
+    }
+  },
+  "Marie-Béatrice Baudet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.6155361533164978,
+      "subregion": 0.708544135093689
+    }
+  },
+  "Vincent Martigny": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9397842288017273,
+      "subregion": 0.5799983143806458
+    }
+  },
+  "Martine Orange": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7808669209480286,
+      "subregion": 0.3735893666744232
+    }
+  },
+  "Antoine Llorca": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9133184552192688,
+      "subregion": 0.573201596736908
+    }
+  },
+  "Nathalie Raulin": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9061568975448608,
+      "subregion": 0.5804395079612732
+    }
+  },
+  "Baptiste Legrand": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8314477801322937,
+      "subregion": 0.7210752964019775
+    }
+  },
+  "Thomas Baïetto": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9460597634315491,
+      "subregion": 0.32810211181640625
+    }
+  },
+  "@ClaireGaveau": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9869590699672699,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Ludovic Vigogne": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9284837245941162,
+      "subregion": 0.6625889539718628
+    }
+  },
+  "François Clapeau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9649295210838318,
+      "subregion": 0.5936439633369446
+    }
+  },
+  "Daniel Schneidermann": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9683207273483276,
+      "subregion": 0.5454424619674683
+    }
+  },
+  "Didier Kottelat": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9623987078666687,
+      "subregion": 0.7785853147506714
+    }
+  },
+  "Eric Auchard, Bate Felix": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 0.7947458624839783,
+      "gender": 0.9516894817352295,
+      "subregion": 0.65362548828125
+    }
+  },
+  "Maxime Delrue": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8937219977378845,
+      "subregion": 0.6712915897369385
+    }
+  },
+  "Cyril Simon": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9033686518669128,
+      "subregion": 0.40660035610198975
+    }
+  },
+  "Harold Hauzy": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9364806413650513,
+      "subregion": 0.7720972895622253
+    }
+  },
+  "Elodie Guéguen": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6896193027496338,
+      "subregion": 0.6294857263565063
+    }
+  },
+  "Jean-Marc Vittori": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9998692274093628,
+      "gender": 0.9688578844070435,
+      "subregion": 0.765357255935669
+    }
+  },
+  "Maryline Baumard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9252387881278992,
+      "subregion": 0.5693509578704834
+    }
+  },
+  "Valérie Mazuir": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.889362633228302,
+      "subregion": 0.590173065662384
+    }
+  },
+  "Philippine Robert": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7159876823425293,
+      "subregion": 0.589540958404541
+    }
+  },
+  "Audrey Tonnelier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8587476015090942,
+      "subregion": 0.4673326909542084
+    }
+  },
+  "Guillaume Guichard": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.940805971622467,
+      "subregion": 0.727016270160675
+    }
+  },
+  "Frédéric Couteau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9429219365119934,
+      "subregion": 0.5724285840988159
+    }
+  },
+  "Virginie Malingre": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8553497195243835,
+      "subregion": 0.5546514987945557
+    }
+  },
+  "Lucie Bras": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8612967133522034,
+      "subregion": 0.6365100145339966
+    }
+  },
+  "Jean-Victor Semeraro": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999980926513672,
+      "gender": 0.9212563037872314,
+      "subregion": 0.46503910422325134
+    }
+  },
+  "Benoît Ourliac": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999980926513672,
+      "gender": 0.9304934740066528,
+      "subregion": 0.622322678565979
+    }
+  },
+  "Alice Galopin": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7952444553375244,
+      "subregion": 0.3448663651943207
+    }
+  },
+  "Beyer, Caroline": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8335361480712891,
+      "subregion": 0.7917364239692688
+    }
+  },
+  "Floriane Louison": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999986886978149,
+      "gender": 0.8963103294372559,
+      "subregion": 0.5829813480377197
+    }
+  },
+  "Thomas Liabot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9612423181533813,
+      "subregion": 0.6430863738059998
+    }
+  },
+  "Morgane Rubetti": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8077093958854675,
+      "subregion": 0.502704918384552
+    }
+  },
+  "Jacques Klopp": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9532591700553894,
+      "subregion": 0.6911642551422119
+    }
+  },
+  "Romain Brunet": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9717262983322144,
+      "subregion": 0.7817679047584534
+    }
+  },
+  "Matthieu Jublin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9621894359588623,
+      "subregion": 0.6273193955421448
+    }
+  },
+  "Jean-Yves Dormagen & Geoffrey Pion": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.999998927116394,
+      "gender": 0.9597443342208862,
+      "subregion": 0.8909860849380493
+    }
+  },
+  "ISABELLE FICEK": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9182361364364624,
+      "subregion": 0.5646185874938965
+    }
+  },
+  "Juliette Mickiewicz": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9401006102561951,
+      "subregion": 0.5648384690284729
+    }
+  },
+  "Vianney Passot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.624828040599823,
+      "subregion": 0.6106163859367371
+    }
+  },
+  "Liv Audigane": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7497279047966003,
+      "subregion": 0.8251699805259705
+    }
+  },
+  "Chris Bickerton": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8636872172355652,
+      "subregion": 0.4244506359100342
+    }
+  },
+  "Jérôme Fourquet , Chloé Morin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.970183789730072,
+      "subregion": 0.8884410262107849
+    }
+  },
+  "Marc Bettinelli": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9492021203041077,
+      "subregion": 0.5612714290618896
+    }
+  },
+  "Nice Matin": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6622133851051331,
+      "subregion": 0.3408408463001251
+    }
+  },
+  "Hervé Gattegno": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9081177711486816,
+      "subregion": 0.708455502986908
+    }
+  },
+  "Fabien Dabert": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.954054594039917,
+      "subregion": 0.6476738452911377
+    }
+  },
+  "Carl Meeus": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9412290453910828,
+      "subregion": 0.6137574911117554
+    }
+  },
+  "Solveig Godeluck": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8209145665168762,
+      "subregion": 0.4429149031639099
+    }
+  },
+  "Nathaniel Herzberg": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.897270917892456,
+      "subregion": 0.5427492260932922
+    }
+  },
+  "Antoine Beau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9321954846382141,
+      "subregion": 0.6327342391014099
+    }
+  },
+  "Noémie Lair": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.8373293876647949,
+      "subregion": 0.4813447594642639
+    }
+  },
+  "Isabelle Lasserre": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9146684408187866,
+      "subregion": 0.5750037431716919
+    }
+  },
+  "Thierry Portes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9615671634674072,
+      "subregion": 0.7403271794319153
+    }
+  },
+  "Margot Ruyter": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8651636838912964,
+      "subregion": 0.44544151425361633
+    }
+  },
+  "Anne Rovan": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8855251669883728,
+      "subregion": 0.35135823488235474
+    }
+  },
+  "Adrien Gaboulaud": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9399968385696411,
+      "subregion": 0.7307056188583374
+    }
+  },
+  "David Cayla": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9243180751800537,
+      "subregion": 0.42796286940574646
+    }
+  },
+  "Marcelo Wesfreid": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9532896876335144,
+      "subregion": 0.44759103655815125
+    }
+  },
+  "Cécile Ducourtieux": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9013978838920593,
+      "subregion": 0.6380868554115295
+    }
+  },
+  "Maxime Bourdeau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9015241861343384,
+      "subregion": 0.5710603594779968
+    }
+  },
+  "Updated\n          4:56 PM EDT, Sat June 3, 2017": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9324948191642761,
+      "subregion": 0.8361690044403076
+    }
+  },
+  "Ifri     / Institut francais des relations internationales": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.8075612783432007,
+      "gender": 0.7840870022773743,
+      "subregion": 0.6730663180351257
+    }
+  },
+  "Hala Kodmani": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5253465175628662,
+      "subregion": 0.5151366591453552
+    }
+  },
+  "Anthony SAMRANI": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8482842445373535,
+      "subregion": 0.514470636844635
+    }
+  },
+  "Marine Pennetier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9061134457588196,
+      "subregion": 0.665123701095581
+    }
+  },
+  "Antoine Ajoury": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9461658596992493,
+      "subregion": 0.7620386481285095
+    }
+  },
+  "Marc Endeweld": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9514779448509216,
+      "subregion": 0.48912471532821655
+    }
+  },
+  "Charlotte Lalanne": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9060712456703186,
+      "subregion": 0.514373242855072
+    }
+  },
+  "Sarah Diffalah": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8378700017929077,
+      "subregion": 0.2201882153749466
+    }
+  },
+  "Camille Poher": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5800445675849915,
+      "subregion": 0.5562320947647095
+    }
+  },
+  "Rémi Carayol": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999978542327881,
+      "gender": 0.9477993249893188,
+      "subregion": 0.7562950253486633
+    }
+  },
+  "Renaud Girard": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9348320364952087,
+      "subregion": 0.7286643981933594
+    }
+  },
+  "cdaniez": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9995893153245561,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Gauthier Vaillant": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999960660934448,
+      "gender": 0.9294779300689697,
+      "subregion": 0.7304803133010864
+    }
+  },
+  "Georges Malbrunot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9661293029785156,
+      "subregion": 0.7360731959342957
+    }
+  },
+  "Charles Carrasco": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9337086081504822,
+      "subregion": 0.6087430715560913
+    }
+  },
+  "Sébastien Berriot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9733150005340576,
+      "subregion": 0.6994059085845947
+    }
+  },
+  "Nicolas Fontaine": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9575282335281372,
+      "subregion": 0.6909747123718262
+    }
+  },
+  "Matthieu Terrats": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9683690071105957,
+      "subregion": 0.7437435388565063
+    }
+  },
+  "Mehdi Abirez": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8126160502433777,
+      "subregion": 0.46079221367836
+    }
+  },
+  "France Culture": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6112524271011353,
+      "subregion": 0.468400776386261
+    }
+  },
+  "ActufrBordeaux": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9393721222877502,
+      "gender": 0.6533545851707458,
+      "subregion": 0.6088314056396484
+    }
+  },
+  "Jules Brelaz": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9120606780052185,
+      "subregion": 0.6949834227561951
+    }
+  },
+  "Boris Johnson": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9115820527076721,
+      "subregion": 0.5026611089706421
+    }
+  },
+  "Malik Kebour": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Africa",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7501661777496338,
+      "subregion": 0.32362130284309387
+    }
+  },
+  "Benoît Jourdain": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999980926513672,
+      "gender": 0.9596801400184631,
+      "subregion": 0.6131780743598938
+    }
+  },
+  "Matthieu Goar": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9450926184654236,
+      "subregion": 0.6700092554092407
+    }
+  },
+  "Pierre Bouvier": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9524784088134766,
+      "subregion": 0.6753086447715759
+    }
+  },
+  "Ludovic Trabuchet": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9452098608016968,
+      "subregion": 0.5813215374946594
+    }
+  },
+  "Isabelle Ficek": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9182361364364624,
+      "subregion": 0.5646185874938965
+    }
+  },
+  "bfmtech_": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999727034337411,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Mickaël Lavaine": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999996423721313,
+      "gender": 0.9501979947090149,
+      "subregion": 0.7704793214797974
+    }
+  },
+  "Pierre Barbancey": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8922884464263916,
+      "subregion": 0.6438366770744324
+    }
+  },
+  "Armand Hatchuel": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9337214827537537,
+      "subregion": 0.5625373721122742
+    }
+  },
+  "Diego Chauvet": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9350684881210327,
+      "subregion": 0.5227255821228027
+    }
+  },
+  "Lina Sankari": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8331512212753296,
+      "subregion": 0.23292149603366852
+    }
+  },
+  "Mathilde Karsenti": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9309430718421936,
+      "subregion": 0.719617486000061
+    }
+  },
+  "Sidonie Rahola-Boyer": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8587248921394348,
+      "subregion": 0.6552421450614929
+    }
+  },
+  "Catherine Duthu": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8985138535499573,
+      "subregion": 0.5732478499412537
+    }
+  },
+  "Marc Bassets": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9510325193405151,
+      "subregion": 0.5292407274246216
+    }
+  },
+  "Marion Monforta": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5668590664863586,
+      "subregion": 0.37421172857284546
+    }
+  },
+  "Julie  Marie-Leconte": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9380174279212952,
+      "subregion": 0.49132663011550903
+    }
+  },
+  "François Vignal": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9624151587486267,
+      "subregion": 0.7440159320831299
+    }
+  },
+  "Simon Barbarit": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9028819799423218,
+      "subregion": 0.47265127301216125
+    }
+  },
+  "Élisa Bertholomey": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999996423721313,
+      "gender": 0.9102236032485962,
+      "subregion": 0.6865460276603699
+    }
+  },
+  "HervÃ© Gardette": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South America",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9007453322410583,
+      "subregion": 0.46248579025268555
+    }
+  },
+  "ErwanBruckert": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9999823055804882,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Lise Abou Mansour, Diane Regny": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8384742736816406,
+      "subregion": 0.9450690746307373
+    }
+  },
+  "Service vidéo avec Yves-Marie ROBIN et Reuters": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9993577324203216,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Aurélie Herbemont": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8858364224433899,
+      "subregion": 0.6757528185844421
+    }
+  },
+  "Maxime Lefebvre": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.882807195186615,
+      "subregion": 0.6084918975830078
+    }
+  },
+  "Enzo Quenescourt": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9380351305007935,
+      "subregion": 0.3029406666755676
+    }
+  },
+  "Stéphane DUPONT": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9425338506698608,
+      "subregion": 0.6791804432868958
+    }
+  },
+  "Aurelien Soucheyre": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6241430640220642,
+      "subregion": 0.5517938733100891
+    }
+  },
+  "Alexander Kazakevich": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.969131350517273,
+      "subregion": 0.5893628597259521
+    }
+  },
+  "Isabelle FICEK": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9182361364364624,
+      "subregion": 0.5646185874938965
+    }
+  },
+  "Erwan ALIX.": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8338932991027832,
+      "subregion": 0.4433654248714447
+    }
+  },
+  "Jonathan Bouchet-Petersen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.942497968673706,
+      "subregion": 0.5734113454818726
+    }
+  },
+  "Jean-Éric Schoettl": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999990463256836,
+      "gender": 0.9741214513778687,
+      "subregion": 0.6839802861213684
+    }
+  },
+  "Joëlle Mermoud": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999997615814209,
+      "gender": 0.888942301273346,
+      "subregion": 0.705386757850647
+    }
+  },
+  "Leocadie Petillot": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999933242797852,
+      "gender": 0.5105322599411011,
+      "subregion": 0.5230233073234558
+    }
+  },
+  "Tom Demars-Granja": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9280381202697754,
+      "subregion": 0.47053998708724976
+    }
+  },
+  "Florian Chaaban": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9208643436431885,
+      "subregion": 0.6362378001213074
+    }
+  },
+  "Maïté Koda": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5536611676216125,
+      "subregion": 0.4965081214904785
+    }
+  },
+  "Florent Barraco": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8146387934684753,
+      "subregion": 0.6761590838432312
+    }
+  },
+  "Service vidéo": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9993577324203216,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Philippe Salvador": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9689000844955444,
+      "subregion": 0.7166011333465576
+    }
+  },
+  "Jean-Baptiste Daoulas": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999983310699463,
+      "gender": 0.9286826252937317,
+      "subregion": 0.4567130208015442
+    }
+  },
+  "Mehdi Pfeiffer": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7200486063957214,
+      "subregion": 0.40141361951828003
+    }
+  },
+  "Paul Aveline": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.946319043636322,
+      "subregion": 0.4730810523033142
+    }
+  },
+  "Agathe Dahyot": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8882506489753723,
+      "subregion": 0.3501901626586914
+    }
+  },
+  "Johann Chapoutot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.94798743724823,
+      "subregion": 0.7805429100990295
+    }
+  },
+  "Guillaume Erner": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8623563647270203,
+      "subregion": 0.7245911359786987
+    }
+  },
+  "Anthony Cortes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9120195508003235,
+      "subregion": 0.38603338599205017
+    }
+  },
+  "Annick Steta": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8571041822433472,
+      "subregion": 0.5220376253128052
+    }
+  },
+  "Maxime Combes": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8895830512046814,
+      "subregion": 0.6758805513381958
+    }
+  },
+  "Le__Comptoir": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.97179114818573,
+      "gender": 0.88514643907547,
+      "subregion": 0.47601592540740967
+    }
+  },
+  "Guillaume Poingt": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.934733510017395,
+      "subregion": 0.7486897706985474
+    }
+  },
+  "Victor Dhollande-Monnier victor.dhollande@europe1.fr": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8233029842376709,
+      "subregion": 0.49216973781585693
+    }
+  },
+  "Michel Feltin-Palas": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.921234667301178,
+      "subregion": 0.5508105754852295
+    }
+  },
+  "Nicolas Rauline": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.952377200126648,
+      "subregion": 0.7266303896903992
+    }
+  },
+  "Daniel Rosenweg": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9606208205223083,
+      "subregion": 0.5084532499313354
+    }
+  },
+  "Caroline Brizard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9049978852272034,
+      "subregion": 0.35752394795417786
+    }
+  },
+  "Thierry Fabre": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.946806788444519,
+      "subregion": 0.72544264793396
+    }
+  },
+  "Thomas Chemel": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9562056660652161,
+      "subregion": 0.5508603453636169
+    }
+  },
+  "Sophie Brunn": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8929466009140015,
+      "subregion": 0.41104406118392944
+    }
+  },
+  "Josselin Dravigny": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.6721867322921753,
+      "subregion": 0.47210758924484253
+    }
+  },
+  "Kevin Liptak": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8872769474983215,
+      "subregion": 0.6180351376533508
+    }
+  },
+  "Marc A. Thiessen": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9536397457122803,
+      "subregion": 0.5889379382133484
+    }
+  },
+  "Vincent Coquaz": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9419175982475281,
+      "subregion": 0.4666302800178528
+    }
+  },
+  "Amnesty International France": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South-eastern Asia",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7937378287315369,
+      "subregion": 0.4392958879470825
+    }
+  },
+  "Renaud Dély": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9136338829994202,
+      "subregion": 0.7167792916297913
+    }
+  },
+  "Arthur Berdah": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9301707148551941,
+      "subregion": 0.3347304165363312
+    }
+  },
+  "ADRIEN LELIEVRE": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8904300332069397,
+      "subregion": 0.6114221215248108
+    }
+  },
+  "Ludovic Dupin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.949591338634491,
+      "subregion": 0.6763651371002197
+    }
+  },
+  "Perrine Mouterde": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8842145800590515,
+      "subregion": 0.5858193039894104
+    }
+  },
+  "Aline Brachet": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7937447428703308,
+      "subregion": 0.647506833076477
+    }
+  },
+  "Philippe Rioux": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9661456346511841,
+      "subregion": 0.6780960559844971
+    }
+  },
+  "Benjamin Barthe": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9358415007591248,
+      "subregion": 0.4573234021663666
+    }
+  },
+  "Jean-Sébastien Lefebvre": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9700888991355896,
+      "subregion": 0.6152242422103882
+    }
+  },
+  "Marc DAOU": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9180195331573486,
+      "subregion": 0.6237818002700806
+    }
+  },
+  "Richard Werly": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9490877389907837,
+      "subregion": 0.45897790789604187
+    }
+  },
+  "Garance Bailly": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999706745147705,
+      "gender": 0.8804450035095215,
+      "subregion": 0.464552104473114
+    }
+  },
+  "Fiona Gentilleau": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9043242931365967,
+      "subregion": 0.40746039152145386
+    }
+  },
+  "mdeprieck": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.763449177145958,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "Guillaume Evin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8719741702079773,
+      "subregion": 0.6289597153663635
+    }
+  },
+  "CECILE CORNUDET": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8349679112434387,
+      "subregion": 0.43511098623275757
+    }
+  },
+  "Gabriel Vedrenne": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9389283061027527,
+      "subregion": 0.5094895958900452
+    }
+  },
+  "Johanna Luyssen": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8987345099449158,
+      "subregion": 0.6258599162101746
+    }
+  },
+  "Bernard Domeyne": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.941627562046051,
+      "subregion": 0.46290868520736694
+    }
+  },
+  "Nathalie Bourrus": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9065892696380615,
+      "subregion": 0.640080988407135
+    }
+  },
+  "inrockstv": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 0.9972473978996277,
+      "gender": 0.7845637798309326,
+      "subregion": 0.23442156612873077
+    }
+  },
+  "I. El Kaladi": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Africa",
+    "confidence": {
+      "human": 0.9998985528945923,
+      "gender": 0.6818619966506958,
+      "subregion": 0.24418388307094574
+    }
+  },
+  "Gabriel Nedelec": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "South America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9523791670799255,
+      "subregion": 0.35421237349510193
+    }
+  },
+  "Faustine Vincent": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.629650890827179,
+      "subregion": 0.42654964327812195
+    }
+  },
+  "6 Medias": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.999174177646637,
+      "gender": 0.7382886409759521,
+      "subregion": 0.32671040296554565
+    }
+  },
+  "Thomas Carbonnier": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9394866824150085,
+      "subregion": 0.5139433741569519
+    }
+  },
+  "le_Parisien": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999949932098389,
+      "gender": 0.761137068271637,
+      "subregion": 0.43389031291007996
+    }
+  },
+  "Mathias Thépot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9663976430892944,
+      "subregion": 0.7109819650650024
+    }
+  },
+  "Sara Ghibaudo": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8161815404891968,
+      "subregion": 0.5118128061294556
+    }
+  },
+  "RTLFrance": {
+    "is_human": false,
+    "gender": null,
+    "subregion": null,
+    "confidence": {
+      "human": 0.9997930495737819,
+      "gender": null,
+      "subregion": null
+    }
+  },
+  "François Krug": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.9436599016189575,
+      "subregion": 0.7562454342842102
+    }
+  },
+  "Justine Chevalier": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8931172490119934,
+      "subregion": 0.5487961769104004
+    }
+  },
+  "Nicolas Berrod": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9609951972961426,
+      "subregion": 0.6635704636573792
+    }
+  },
+  "Guillaume Jacquot": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9372952580451965,
+      "subregion": 0.8269795179367065
+    }
+  },
+  "Jean-Pierre Robin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.999985933303833,
+      "gender": 0.9594736695289612,
+      "subregion": 0.651846170425415
+    }
+  },
+  "David -": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7782697081565857,
+      "subregion": 0.21521079540252686
+    }
+  },
+  "Silvana Grasso": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9379304647445679,
+      "subregion": 0.4226857125759125
+    }
+  },
+  "Myriam Roche": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8212496638298035,
+      "subregion": 0.5022066831588745
+    }
+  },
+  "Marion Gadea": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.5798458456993103,
+      "subregion": 0.4143344461917877
+    }
+  },
+  "Jean-Michel Gouin": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999326467514038,
+      "gender": 0.9736799597740173,
+      "subregion": 0.6615803241729736
+    }
+  },
+  "Isabelle  Labeyrie": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.938598096370697,
+      "subregion": 0.4887855052947998
+    }
+  },
+  "Daniela Santos": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Southern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9309095144271851,
+      "subregion": 0.3147473931312561
+    }
+  },
+  ": Aip": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9701106548309326,
+      "gender": 0.6903745532035828,
+      "subregion": 0.391566663980484
+    }
+  },
+  "Eric Hacquemand": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9526461958885193,
+      "subregion": 0.504960298538208
+    }
+  },
+  "Mouhamet NDIONGUE": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Middle Africa",
+    "confidence": {
+      "human": 0.9999998807907104,
+      "gender": 0.8278858661651611,
+      "subregion": 0.6546322107315063
+    }
+  },
+  "Ana Maria Dolghii": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Eastern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9013740420341492,
+      "subregion": 0.5972972512245178
+    }
+  },
+  "Jérôme Carron": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9625900983810425,
+      "subregion": 0.6672511696815491
+    }
+  },
+  "JM": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8284434676170349,
+      "subregion": 0.2790873348712921
+    }
+  },
+  "~ Saad719": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9920336604118347,
+      "gender": 0.8064765930175781,
+      "subregion": 0.4748643636703491
+    }
+  },
+  "Martin Lagrave": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9517849683761597,
+      "subregion": 0.4425041675567627
+    }
+  },
+  "French President": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9246231317520142,
+      "subregion": 0.4858825206756592
+    }
+  },
+  "leaders": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.6366991400718689,
+      "gender": 0.6832157373428345,
+      "subregion": 0.5248156189918518
+    }
+  },
+  "Foreign Policy": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7367416024208069,
+      "subregion": 0.572174072265625
+    }
+  },
+  "The Korea Times": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999964237213135,
+      "gender": 0.6419667601585388,
+      "subregion": 0.6615849733352661
+    }
+  },
+  "Gisèle Lombard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999980926513672,
+      "gender": 0.8744102120399475,
+      "subregion": 0.6080684065818787
+    }
+  },
+  "Anne-Fleur ANDRLE.": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999997615814209,
+      "gender": 0.8774818181991577,
+      "subregion": 0.5716513991355896
+    }
+  },
+  "Kevin Boderau": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9638112187385559,
+      "subregion": 0.5101056694984436
+    }
+  },
+  "La rédaction numérique de RTL et AFP": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.7788451910018921,
+      "subregion": 0.7310292720794678
+    }
+  },
+  "Marie Curie": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Northern Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.8057944774627686,
+      "subregion": 0.35914313793182373
+    }
   }
 }

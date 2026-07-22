@@ -79,7 +79,7 @@ def test_analyze_source_bias():
     assert nytimes_res["domain"] == "nytimes.com"
     assert nytimes_res["geography"]["country"] == "United States"
     assert nytimes_res["political_leaning"] == "center-left"
-    assert nytimes_res["reliability"] == "high"
+    assert nytimes_res["reliability"] == "unknown"
 
     # TLD geography & language fallback
     de_res = analyze_source_bias("https://spiegel.de/international")
@@ -90,7 +90,7 @@ def test_analyze_source_bias():
     # Academic fallback
     edu_res = analyze_source_bias("https://physics.mit.edu/papers")
     assert edu_res["source_type"] == "academic_institution"
-    assert edu_res["reliability"] == "academic/peer-reviewed"
+    assert edu_res["reliability"] == "unknown"
 
 
 def test_analyze_author_bias():
@@ -256,4 +256,260 @@ def test_extract_author_from_html():
     html_fallback = '<html><body><span class="author">By Marie Curie</span></body></html>'
     soup_fb = BeautifulSoup(html_fallback, "html.parser")
     assert _extract_author_from_html(soup_fb) == "Marie Curie"
+
+
+def test_split_items_and_aggregate_split_multiple():
+    from wikipedia_sources_bias.analysis import _split_items, aggregate_page_bias
+
+    assert _split_items("Canada, United States") == ["Canada", "United States"]
+    assert _split_items("France / Germany") == ["France", "Germany"]
+    assert _split_items("center-left, center-right") == ["center-left", "center-right"]
+
+    mock_sources = [
+        {
+            "geography": {"country": "Canada, United States", "region": "North America"},
+            "political_leaning": "center-left, center-right",
+            "reliability": "high",
+            "language": "English",
+            "source_type": "journal_article",
+        }
+    ]
+
+    # Without split_multiple
+    agg_single = aggregate_page_bias(mock_sources, split_multiple=False)
+    assert "Canada, United States" in agg_single["geography_distribution"]
+    assert agg_single["geography_distribution"]["Canada, United States"]["count"] == 1
+
+    # With split_multiple
+    agg_split = aggregate_page_bias(mock_sources, split_multiple=True)
+    assert "Canada" in agg_split["geography_distribution"]
+    assert "United States" in agg_split["geography_distribution"]
+    assert agg_split["geography_distribution"]["Canada"]["count"] == 1
+    assert agg_split["geography_distribution"]["United States"]["count"] == 1
+    assert "center-left" in agg_split["political_leaning_distribution"]
+    assert "center-right" in agg_split["political_leaning_distribution"]
+
+
+def test_database_domain_detection():
+    from wikipedia_sources_bias.analysis import _is_database_domain
+
+    assert _is_database_domain("pubmed.ncbi.nlm.nih.gov") is True
+    assert _is_database_domain("ncbi.nlm.nih.gov") is True
+    assert _is_database_domain("europepmc.org") is True
+    assert _is_database_domain("books.google.fr") is True
+    assert _is_database_domain("nytimes.com") is False
+
+
+def test_parse_mbfc_scores_and_composite_reliability():
+    from wikipedia_sources_bias.analysis import _parse_mbfc_scores, _calculate_composite_reliability
+
+    mbfc_sample = {
+        "credibility_rating": "HIGH CREDIBILITY",
+        "factual_reporting": "MOSTLY FACTUAL (2.9)",
+        "bias_rating": "LEFT-CENTER (-3.5)",
+    }
+    parsed = _parse_mbfc_scores(mbfc_sample)
+    assert parsed["mbfc_credibility_score"] == 100.0
+    assert parsed["mbfc_factuality_score"] == 60.0
+
+    profile = {
+        "source_type": "news_outlet",
+    }
+    rel = _calculate_composite_reliability(profile, mbfc_sample)
+    assert rel["composite_reliability_score"] > 70.0
+    assert profile["reliability"] == "high credibility"
+    assert "Media Bias/Fact Check (MBFC)" in rel["provenance"]
+
+
+def test_geographic_diversity_score_and_jsd():
+    from wikipedia_sources_bias.analysis import (
+        _calculate_jsd,
+        _determine_geographic_specificity,
+        _calculate_geographic_diversity_score,
+    )
+
+    p = {"France": 0.6, "Germany": 0.4}
+    q = {"France": 0.6, "Germany": 0.4}
+    assert _calculate_jsd(p, q) == 0.0
+
+    p_diff = {"France": 1.0}
+    q_diff = {"China": 1.0}
+    assert _calculate_jsd(p_diff, q_diff) == 1.0
+
+    country_counts_local = {"France": 8, "Germany": 2}
+    scope_local, primary_local = _determine_geographic_specificity("Emmanuel Macron", [], country_counts_local)
+    assert scope_local == "local"
+    assert primary_local == "France"
+
+    country_counts_global = {"United States": 3, "France": 3, "Japan": 3, "Brazil": 3}
+    scope_global, primary_global = _determine_geographic_specificity("Climate Change", [], country_counts_global)
+    assert scope_global == "global"
+
+    mock_sources = [
+        {"geography": {"country": "France", "region": "Europe"}},
+        {"geography": {"country": "France", "region": "Europe"}},
+        {"geography": {"country": "Germany", "region": "Europe"}},
+        {"geography": {"country": "United States", "region": "North America"}},
+    ]
+    geo_metrics = _calculate_geographic_diversity_score(mock_sources, page_title="Emmanuel Macron")
+    assert "geographic_diversity_score" in geo_metrics
+    assert 0.0 <= geo_metrics["geographic_diversity_score"] <= 100.0
+    assert geo_metrics["geographic_scope"] == "local"
+    assert geo_metrics["primary_country"] == "France"
+
+
+def test_political_spread_score_and_axis_mapping():
+    from wikipedia_sources_bias.analysis import (
+        _map_political_to_numeric_axis,
+        _detect_consensus_topic_type,
+        _calculate_political_spread_score,
+    )
+
+    assert _map_political_to_numeric_axis("Far Left") == -3.0
+    assert _map_political_to_numeric_axis("Center-Left") == -1.0
+    assert _map_political_to_numeric_axis("Center") == 0.0
+    assert _map_political_to_numeric_axis("Right-Center") == 1.0
+    assert _map_political_to_numeric_axis("Far Right") == 3.0
+    assert _map_political_to_numeric_axis(None, mbfc_bias_score=-5.0) == -1.5
+
+    assert _detect_consensus_topic_type("Global warming") == "consensus_science"
+    assert _detect_consensus_topic_type("Carbon tax policy") == "mixed_policy"
+    assert _detect_consensus_topic_type("French presidential election") == "open_political"
+
+    mock_sources = [
+        {"political_leaning": "Left-Center", "mbfc": {"mbfc_bias_score": -3.0}},
+        {"political_leaning": "Center", "mbfc": {"mbfc_bias_score": 0.0}},
+        {"political_leaning": "Right-Center", "mbfc": {"mbfc_bias_score": 3.0}},
+    ]
+    pol_metrics = _calculate_political_spread_score(mock_sources, page_title="Taxation in France")
+    assert "political_spread_score" in pol_metrics
+    assert 0.0 <= pol_metrics["political_spread_score"] <= 100.0
+    assert pol_metrics["spread_category"] == "healthy_diversity"
+
+
+def test_population_caching_and_gender_parity_metrics():
+    from wikipedia_sources_bias.analysis import (
+        _get_cached_country_population,
+        analyze_author_bias,
+        _calculate_gender_parity_metrics,
+    )
+
+    # Test population caching
+    pop_fr = _get_cached_country_population("France")
+    assert pop_fr > 60000000.0
+
+    # Test author gender inference & provenance
+    auth_female = analyze_author_bias("Marie Curie", {"country": "France"}, skip_rate_limiting=True)
+    assert auth_female["is_human"] is True
+    assert auth_female["gender"] in ("female", "unknown")
+    assert "gender_source" in auth_female
+
+    # Test gender parity metrics calculation
+    mock_sources = [
+        {
+            "author_profiles": [
+                {"is_human": True, "gender": "female", "gender_source": "Nametrace", "gender_probability": {"female": 0.95}},
+                {"is_human": True, "gender": "male", "gender_source": "Nametrace", "gender_probability": {"male": 0.90}},
+            ]
+        },
+        {
+            "author_profiles": [
+                {"is_human": True, "gender": "female", "gender_source": "Genderize.io", "gender_probability": {"female": 0.80}},
+                {"is_human": True, "gender": "unknown", "gender_source": "unknown", "gender_probability": {"unknown": 0.90}},
+            ]
+        }
+    ]
+    parity_metrics = _calculate_gender_parity_metrics(mock_sources)
+    assert "gender_parity_score" in parity_metrics
+    assert 0.0 <= parity_metrics["gender_parity_score"] <= 100.0
+    assert parity_metrics["human_author_count"] == 4
+    assert parity_metrics["gender_counts"]["female"] == 2
+    assert parity_metrics["gender_counts"]["male"] == 1
+    assert parity_metrics["gender_counts"]["unknown"] == 1
+    assert parity_metrics["unknown_author_proportion"] == 0.25
+    assert parity_metrics["provenance_breakdown"]["Nametrace"] == 2
+    assert parity_metrics["provenance_breakdown"]["Genderize.io"] == 1
+
+
+def test_multilingual_sentiment_and_neutrality_score():
+    from wikipedia_sources_bias.analysis import (
+        analyze_language_bias,
+        _calculate_neutrality_metrics,
+    )
+
+    # Test analyze_language_bias with fallback provenance
+    res_en = analyze_language_bias("The article provides an objective summary of recent developments.")
+    assert "sentiment" in res_en
+    assert "sentiment_source" in res_en
+
+    res_fr = analyze_language_bias("Un rapport catastrophique et monstrueux publié par le gouvernement.")
+    assert res_fr["detected_language"] == "French"
+    assert res_fr["subjectivity_score"] > 0.0
+
+    # Test neutrality score calculation
+    mock_sources = [
+        {
+            "language_bias": {
+                "subjectivity_score": 0.10,
+                "sensationalism_score": 0.05,
+                "is_opinion": False,
+                "loaded_words_found": [],
+                "sentiment": "neutral",
+                "sentiment_source": "Multilingual Lexical Heuristics",
+            }
+        },
+        {
+            "language_bias": {
+                "subjectivity_score": 0.20,
+                "sensationalism_score": 0.15,
+                "is_opinion": True,
+                "loaded_words_found": ["disastrous"],
+                "sentiment": "negative",
+                "sentiment_source": "Hugging Face (XLM-RoBERTa)",
+            }
+        }
+    ]
+    neutrality = _calculate_neutrality_metrics(mock_sources)
+    assert "neutrality_score" in neutrality
+    assert 0.0 <= neutrality["neutrality_score"] <= 100.0
+    assert neutrality["opinion_citation_percentage"] == 50.0
+    assert neutrality["sentiment_source_breakdown"]["Hugging Face (XLM-RoBERTa)"] == 1
+    assert neutrality["sentiment_source_breakdown"]["Multilingual Lexical Heuristics"] == 1
+
+
+def test_wikidata_neighbors_caching_and_metric_descriptions():
+    from wikipedia_sources_bias.analysis import (
+        _get_cached_country_neighbors,
+        aggregate_page_bias,
+    )
+
+    # Test P47 Wikidata border caching
+    neighbors = _get_cached_country_neighbors("France", skip_rate_limiting=True)
+    assert isinstance(neighbors, set)
+    assert len(neighbors) > 0
+
+    # Test metric description fields in aggregate output
+    mock_sources = [
+        {
+            "geography": {"country": "France", "region": "Europe"},
+            "political_leaning": "Center",
+            "mbfc": {"mbfc_bias_score": 0.0, "credibility_rating": "HIGH"},
+            "language_bias": {"subjectivity_score": 0.10, "sensationalism_score": 0.05, "is_opinion": False},
+        }
+    ]
+    agg = aggregate_page_bias(mock_sources, page_title="Emmanuel Macron")
+    assert "description" in agg["reliability_metrics"]
+    assert "description" in agg["geographic_diversity_metrics"]
+    assert "description" in agg["political_spread_metrics"]
+    assert "description" in agg["gender_parity_metrics"]
+    assert "description" in agg["neutrality_metrics"]
+    assert "description" in agg["language_bias_metrics"]
+
+
+
+
+
+
+
+
 

@@ -154,5 +154,67 @@
     "journal": "Perspectives en éducation et formation",
     "published_date": "2007-1-1",
     "subjects": []
+  },
+  "10.1017/S0020859018000251": {
+    "title": "Exile as Imperial Practice: Western Siberia and the Russian Empire, 1879–1900",
+    "authors": [
+      "Zhanna Popova"
+    ],
+    "publisher": "Cambridge University Press (CUP)",
+    "journal": "International Review of Social History",
+    "published_date": "2018-8",
+    "subjects": []
+  },
+  "10.20870/productions-animales.2018.31.2.2317": {
+    "title": "Les relations commerciales agroalimentaires de la Russie avec l’Union européenne, l’embargo russe et les productions animales",
+    "authors": [
+      "Vincent CHATELLIER",
+      "Thierry POUCH",
+      "Cécile LE ROY",
+      "Quentin MATHIEU"
+    ],
+    "publisher": "Universite de Bordeaux",
+    "journal": "INRA Productions Animales",
+    "published_date": "2018-10-25",
+    "subjects": []
+  },
+  "10.1017/cbo9781139839419.010": {
+    "title": "ROOF",
+    "authors": [],
+    "publisher": "Cambridge University Press",
+    "journal": "Treatise on Architecture",
+    "published_date": "2013-6-27",
+    "subjects": []
+  },
+  "10.1080/13523270802510610": {
+    "title": "The Putin Phenomenon",
+    "authors": [
+      "Stephen White",
+      "Ian Mcallister"
+    ],
+    "publisher": "Informa UK Limited",
+    "journal": "Journal of Communist Studies and Transition Politics",
+    "published_date": "2008-12",
+    "subjects": []
+  },
+  "10.1080/00963402.2022.2132731": {
+    "title": "After Putin – what?",
+    "authors": [
+      "Vladislav Zubok"
+    ],
+    "publisher": "Informa UK Limited",
+    "journal": "Bulletin of the Atomic Scientists",
+    "published_date": "2022-11-2",
+    "subjects": []
+  },
+  "10.3917/deba.181.0037": {
+    "title": "L'info à la chaîne",
+    "authors": [
+      "Régis Soubrouillard"
+    ],
+    "publisher": "CAIRN",
+    "journal": "Le Débat",
+    "published_date": "2014-10-7",
+    "subjects": []
   }
 }

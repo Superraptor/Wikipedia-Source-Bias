@@ -38,6 +38,7 @@ def test_cli_single_url_works(mock_analyze, mock_parse_args):
     mock_args.no_cache = False
     mock_args.countries_only = False
     mock_args.skip_rate_limiting = False
+    mock_args.split_multiple = False
     mock_args.output = None
     mock_parse_args.return_value = mock_args
 
@@ -51,7 +52,8 @@ def test_cli_single_url_works(mock_analyze, mock_parse_args):
             max_sources=10,
             no_cache=False,
             countries_only=False,
-            skip_rate_limiting=False
+            skip_rate_limiting=False,
+            split_multiple=False
         )
         # Verify JSON print was called
         mock_print.assert_called()
@@ -77,6 +79,8 @@ def test_cli_batch_mode_works(mock_generate_map, mock_analyze, mock_parse_args, 
     mock_args.no_cache = True
     mock_args.countries_only = False
     mock_args.skip_rate_limiting = True
+    mock_args.filter_unresolved = False
+    mock_args.split_multiple = False
     mock_parse_args.return_value = mock_args
 
     # Mock analysis responses
@@ -98,14 +102,16 @@ def test_cli_batch_mode_works(mock_generate_map, mock_analyze, mock_parse_args, 
         max_sources=5,
         no_cache=True,
         countries_only=False,
-        skip_rate_limiting=True
+        skip_rate_limiting=True,
+        split_multiple=False
     )
     mock_analyze.assert_any_call(
         "https://fr.wikipedia.org/wiki/Russie",
         max_sources=5,
         no_cache=True,
         countries_only=False,
-        skip_rate_limiting=True
+        skip_rate_limiting=True,
+        split_multiple=False
     )
 
     # Check files were created in results directory
@@ -143,6 +149,7 @@ def test_cli_batch_mode_filter_unresolved(mock_generate_map, mock_analyze, mock_
     mock_args.countries_only = False
     mock_args.skip_rate_limiting = True
     mock_args.filter_unresolved = True
+    mock_args.split_multiple = False
     mock_parse_args.return_value = mock_args
 
     analysis_res = {"page_title": "Emmanuel_Macron", "sources": []}
@@ -151,5 +158,45 @@ def test_cli_batch_mode_filter_unresolved(mock_generate_map, mock_analyze, mock_
 
     main()
 
-    mock_generate_map.assert_called_once_with(analysis_res, filter_unresolved=True)
+    mock_generate_map.assert_called_once_with(analysis_res, filter_unresolved=True, split_multiple=False)
+
+
+@patch("wikipedia_sources_bias.cli.argparse.ArgumentParser.parse_args")
+@patch("wikipedia_sources_bias.cli.analyze_page")
+@patch("wikipedia_sources_bias.cli.generate_source_map")
+def test_cli_batch_mode_split_multiple(mock_generate_map, mock_analyze, mock_parse_args, tmp_path):
+    batch_file = tmp_path / "batch.txt"
+    batch_file.write_text("Emmanuel Macron\n", encoding="utf-8")
+    results_dir = tmp_path / "results"
+
+    mock_args = MagicMock()
+    mock_args.url = None
+    mock_args.batch_file = str(batch_file)
+    mock_args.prefix = "fr"
+    mock_args.results_dir = str(results_dir)
+    mock_args.all = False
+    mock_args.max_sources = 5
+    mock_args.no_cache = True
+    mock_args.countries_only = False
+    mock_args.skip_rate_limiting = True
+    mock_args.filter_unresolved = False
+    mock_args.split_multiple = True
+    mock_parse_args.return_value = mock_args
+
+    analysis_res = {"page_title": "Emmanuel_Macron", "sources": []}
+    mock_analyze.return_value = analysis_res
+    mock_generate_map.return_value = {"type": "FeatureCollection", "features": []}
+
+    main()
+
+    mock_analyze.assert_called_once_with(
+        "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+        max_sources=5,
+        no_cache=True,
+        countries_only=False,
+        skip_rate_limiting=True,
+        split_multiple=True
+    )
+    mock_generate_map.assert_called_once_with(analysis_res, filter_unresolved=False, split_multiple=True)
+
 

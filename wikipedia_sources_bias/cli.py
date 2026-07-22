@@ -85,6 +85,11 @@ def main() -> None:
         action="store_true",
         help="Filter out sources that do not resolve to a known country when building source maps",
     )
+    parser.add_argument(
+        "--split-multiple",
+        action="store_true",
+        help="Count each country and leaning individually when multiple are listed (e.g., 'Canada, United States')",
+    )
     args = parser.parse_args()
 
     if not args.url and not args.batch_file:
@@ -127,7 +132,8 @@ def main() -> None:
                     max_sources=max_sources,
                     no_cache=args.no_cache,
                     countries_only=args.countries_only,
-                    skip_rate_limiting=args.skip_rate_limiting
+                    skip_rate_limiting=args.skip_rate_limiting,
+                    split_multiple=args.split_multiple
                 )
                 
                 sanitized_title = _sanitize_filename(title)
@@ -135,7 +141,11 @@ def main() -> None:
                 with open(analysis_filename, "w", encoding="utf-8") as out_f:
                     json.dump(result, out_f, indent=2, ensure_ascii=False)
                     
-                source_map = generate_source_map(result, filter_unresolved=args.filter_unresolved)
+                source_map = generate_source_map(
+                    result,
+                    filter_unresolved=args.filter_unresolved,
+                    split_multiple=args.split_multiple
+                )
                 map_filename = os.path.join(results_dir, f"{sanitized_title}_map.json")
                 with open(map_filename, "w", encoding="utf-8") as out_f:
                     json.dump(source_map, out_f, indent=2, ensure_ascii=False)
@@ -153,7 +163,8 @@ def main() -> None:
                 max_sources=max_sources,
                 no_cache=args.no_cache,
                 countries_only=args.countries_only,
-                skip_rate_limiting=args.skip_rate_limiting
+                skip_rate_limiting=args.skip_rate_limiting,
+                split_multiple=args.split_multiple
             )
         except Exception as e:
             print(f"Error during analysis: {e}", file=sys.stderr)

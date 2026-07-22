@@ -1,0 +1,12 @@
+{
+  "jane": {
+    "gender": "female",
+    "probability": 0.99,
+    "count": 402529
+  },
+  "ivan": {
+    "gender": "male",
+    "probability": 0.99,
+    "count": 698976
+  }
+}

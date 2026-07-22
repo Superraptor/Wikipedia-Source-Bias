@@ -139,7 +139,49 @@
         "url": "https://books.google.com/books?id=5Z-RDwAAQBAJ&printsec=frontcover",
         "domain": "books.google.com",
         "publisher_name": "Archives of Neurology",
-        "country": "Canada, United Kingdom, United States",
+        "country": "Canada",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=5Z-RDwAAQBAJ&printsec=frontcover",
+        "domain": "books.google.com",
+        "publisher_name": "Archives of Neurology",
+        "country": "United Kingdom",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.com/books?id=5Z-RDwAAQBAJ&printsec=frontcover",
+        "domain": "books.google.com",
+        "publisher_name": "Archives of Neurology",
+        "country": "United States",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -459,7 +501,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/emmanuel-macron-s-offre-un-bain-de-foule-a-bagneres-de-bigorre_3544383.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -523,7 +565,28 @@
         "url": "https://rmc.bfmtv.com/actualites/politique/germaine-nogues-influence-majeure-de-la-vie-d-emmanuel-macron_AN-202204290082.html",
         "domain": "rmc.bfmtv.com",
         "publisher_name": "RMC",
-        "country": "France, Monaco",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.42,
+          43.731111111
+        ]
+      },
+      "properties": {
+        "url": "https://rmc.bfmtv.com/actualites/politique/germaine-nogues-influence-majeure-de-la-vie-d-emmanuel-macron_AN-202204290082.html",
+        "domain": "rmc.bfmtv.com",
+        "publisher_name": "RMC",
+        "country": "Monaco",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -1079,7 +1142,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/presidentielle-dix-choses-que-vous-ignorez-peut-etre-sur-emmanuel-macron_2159736.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -1224,7 +1287,28 @@
         "url": "https://rmc.bfmtv.com/replay-emissions/les-grandes-gueules/les-dessous-de-la-rencontre-entre-brigitte-et-emmanuel-macron-devoiles_AV-201801170328.html",
         "domain": "rmc.bfmtv.com",
         "publisher_name": "RMC",
-        "country": "France, Monaco",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.42,
+          43.731111111
+        ]
+      },
+      "properties": {
+        "url": "https://rmc.bfmtv.com/replay-emissions/les-grandes-gueules/les-dessous-de-la-rencontre-entre-brigitte-et-emmanuel-macron-devoiles_AV-201801170328.html",
+        "domain": "rmc.bfmtv.com",
+        "publisher_name": "RMC",
+        "country": "Monaco",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -1922,24 +2006,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20170109215010/https://www.challenges.fr/challenges-soir/ipesup-la-prepa-cherie-des-csp-est-a-vendre_13182",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
+        "url": "https://www.challenges.fr/challenges-soir/ipesup-la-prepa-cherie-des-csp-est-a-vendre_13182",
+        "domain": "challenges.fr",
+        "publisher_name": "Challenges",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
+          "mbfc_url": "https://mediabiasfactcheck.com/challenges/",
+          "bias_rating": "PRO-SCIENCE Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "Switzerland",
+          "country_freedom_rating": "EXCELLENT",
+          "media_type": "Journal",
+          "traffic_popularity": "Minimal Traffic"
         }
       }
     },
@@ -2180,7 +2268,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/presidentielle/quand-emmanuel-macron-etait-banquier-d-affaires-un-element-prometteur-mais-sans-plus_2171646.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -2257,7 +2345,12 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
       }
     },
     {
@@ -2321,32 +2414,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.7129,
-          37.0902
-        ]
-      },
-      "properties": {
-        "url": "https://web.archive.org/web/20151117023610/https://www.marianne.net/macron-ce-jeune-chevenementiste-100237905.html",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
       }
     },
     {
@@ -2556,25 +2623,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20120518070325/http://www.elysee.fr/president/la-presidence/le-fonctionnement-de-la-presidence/le-cabinet-du-president-de-la-republique/le-cabinet-du-president-de-la-republique.13214.html",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
+        "url": "http://www.elysee.fr/president/la-presidence/le-fonctionnement-de-la-presidence/le-cabinet-du-president-de-la-republique/le-cabinet-du-president-de-la-republique.13214.html",
+        "domain": "elysee.fr",
+        "publisher_name": "Q131744704",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
       }
     },
     {
@@ -2812,7 +2874,7 @@
       "properties": {
         "url": "https://www.lesechos.fr/politique-societe/politique/0203552972800-elysee-trois-conseillers-de-hollande-sur-le-depart-1011220.php",
         "domain": "lesechos.fr",
-        "publisher_name": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -2833,7 +2895,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-magazine/france-2/envoye-special/video-portrait-d-emmanuel-macron_835521.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -2847,24 +2909,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20150531003124/http://www.capital.fr/enquetes/hommes-et-affaires/emmanuel-macron-ses-reseaux-ses-amis-patrons-ses-adversaires-ses-camarades-du-peuple-1043120",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
+        "url": "http://www.capital.fr/enquetes/hommes-et-affaires/emmanuel-macron-ses-reseaux-ses-amis-patrons-ses-adversaires-ses-camarades-du-peuple-1043120",
+        "domain": "capital.fr",
+        "publisher_name": "Capital",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
+          "mbfc_url": "https://mediabiasfactcheck.com/capital/",
+          "bias_rating": "RIGHT-CENTER (4.3)",
+          "factual_reporting": "MIXED (6.1)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
         }
       }
     },
@@ -2880,7 +2946,7 @@
       "properties": {
         "url": "https://www.franceinter.fr/emissions/histoires-politiques/histoires-politiques-10-mai-2017",
         "domain": "franceinter.fr",
-        "publisher_name": "franceinter.fr",
+        "publisher_name": "C'est encore nous",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -3496,7 +3562,7 @@
       "properties": {
         "url": "https://www.ege.fr/infoguerre/les-pertes-de-souverainete-industrielle-cas-decole-la-francaise",
         "domain": "ege.fr",
-        "publisher_name": "École de guerre économique",
+        "publisher_name": "ege.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -3927,7 +3993,7 @@
       "properties": {
         "url": "https://www.franceinter.fr/emissions/en-toute-subjectivite/en-toute-subjectivite-du-lundi-24-janvier-2022",
         "domain": "franceinter.fr",
-        "publisher_name": "franceinter.fr",
+        "publisher_name": "C'est encore nous",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -4271,7 +4337,12 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
       }
     },
     {
@@ -4336,7 +4407,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/emmanuel-macron-aurait-pu-devenir-premier-ministre-de-francois-hollande-en-fevrier-2016_2448456.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -4413,25 +4484,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20160424111150/http://lelab.europe1.fr/emmanuel-macron-refuse-detre-loblige-de-francois-hollande-2726290",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
+        "url": "http://lelab.europe1.fr/emmanuel-macron-refuse-detre-loblige-de-francois-hollande-2726290",
+        "domain": "lelab.europe1.fr",
+        "publisher_name": "Le Lab",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
       }
     },
     {
@@ -4766,7 +4832,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/l-histoire-secrete-de-la-demission-d-emmanuel-macron_1803851.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -4882,25 +4948,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20170227222410/http://www.ifop.com/?option=com_publication&type=poll&id=3464",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
+        "url": "http://www.ifop.com/?option=com_publication&type=poll&id=3464",
+        "domain": "ifop.com",
+        "publisher_name": "Ifop",
+        "country": "France",
+        "region": "Unknown",
         "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
       }
     },
     {
@@ -5038,7 +5099,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/direct-presidentielle-regardez-le-grand-meeting-de-macron-a-paris_1962887.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -5080,7 +5141,7 @@
       "properties": {
         "url": "https://www.rtl.fr/actu/politique/presidentielle-2017-que-retenir-du-meeting-d-emmanuel-macron-a-paris-7788365175",
         "domain": "rtl.fr",
-        "publisher_name": "rtl.fr",
+        "publisher_name": "RTL",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -5552,7 +5613,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/gouvernement-d-edouard-philippe/ce-qu-il-faut-retenir-de-la-nomination-du-premier-gouvernement-d-edouard-philippe_2195063.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -5573,7 +5634,7 @@
       "properties": {
         "url": "https://www.franceculture.fr/politique/president-jupiterien-comment-macron-compte-regner-sur-lolympe",
         "domain": "franceculture.fr",
-        "publisher_name": "franceculture.fr",
+        "publisher_name": "Les Chemins de la philosophie",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -5594,7 +5655,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/politique/hamon-trouve-jupiter-ridicule-1200372.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -5738,7 +5799,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/modem/assistants-parlementaires-du-modem/goulard-bayrou-de-sarnez-comment-expliquer-la-demission-de-tous-les-ministres-modem_2246927.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -6279,7 +6340,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/economie/emploi/chomage/vrai-ou-fake-la-france-a-t-elle-cree-un-million-d-emplois-depuis-2017-comme-l-affirme-bruno-le-maire_4929021.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -6392,7 +6453,7 @@
       "properties": {
         "url": "http://www.education.gouv.fr/cid133479/interdiction-du-telephone-portable-dans-les-ecoles-et-les-colleges.html",
         "domain": "education.gouv.fr",
-        "publisher_name": "education.gouv.fr",
+        "publisher_name": "French Ministry of education",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -6823,7 +6884,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/front-national/europeennes-les-deux-tiers-de-l-electorat-des-republicains-en-2017-n-ont-pas-vote-pour-la-liste-bellamy-selon-un-sondage_3461535.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -6988,14 +7049,14 @@
       "properties": {
         "url": "https://www.afp.com/fr/infos/334/face-aux-francais-macron-se-defend-davoir-fait-fausse-route-et-multiplie-les-annonces-fiscales-et-institutionnelles-doc-1fw5qy5",
         "domain": "afp.com",
-        "publisher_name": "Q3136846",
+        "publisher_name": "afp.com",
         "country": "France",
         "region": "Europe",
         "language": "French",
         "political_leaning": "center",
         "reliability": "high",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/afp-agence-france-presse/",
+          "mbfc_url": "https://mediabiasfactcheck.com/afp/",
           "bias_rating": "LEFT-CENTER",
           "factual_reporting": "HIGH (0.5)",
           "credibility_rating": "HIGH CREDIBILITY",
@@ -7071,25 +7132,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          2.2137,
+          46.2276
         ]
       },
       "properties": {
-        "url": "https://web.archive.org/web/20210804175126/https://en-marche.fr/emmanuel-macron/le-programme/retraites",
-        "domain": "web.archive.org",
-        "publisher_name": "Wayback Machine",
-        "country": "United States",
-        "region": "North America",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/web/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
+        "url": "https://en-marche.fr/emmanuel-macron/le-programme/retraites",
+        "domain": "en-marche.fr",
+        "publisher_name": "en-marche.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
       }
     },
     {
@@ -7534,6 +7590,27 @@
         ]
       },
       "properties": {
+        "url": "http://www.nicematin.com/politique/notre-sondage-odoxa-spectaculaire-remontee-de-macron-et-philippe-192838",
+        "domain": "nicematin.com",
+        "publisher_name": "Q17355286",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/le-bilan-d-emmanuel-macron-satisfaisant-pour-la-majorite-des-francais-mais-il-reste-percu-comme-le-president-des-riches-selon-un-sondage_2524205.html",
         "domain": "francetvinfo.fr",
         "publisher_name": "Q25395519",
@@ -7614,7 +7691,16 @@
         "language": "French",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/la-depeche-du-midi/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -7833,7 +7919,7 @@
       "properties": {
         "url": "https://www.lexpress.fr/actualite/politique/emmanuel-macron-positif-au-covid-19_2140997.html",
         "domain": "lexpress.fr",
-        "publisher_name": "L'Express",
+        "publisher_name": "Q770596",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -8079,7 +8165,7 @@
       "properties": {
         "url": "https://www.charentelibre.fr/2021/07/19/manifestations-anti-pass-sanitaire-polemique-apres-les-references-au-nazisme-et-a-la-shoah,3772899.php",
         "domain": "charentelibre.fr",
-        "publisher_name": "charentelibre.fr",
+        "publisher_name": "Charente libre",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -8474,6 +8560,27 @@
         ]
       },
       "properties": {
+        "url": "https://www.parismatch.com/Actu/International/Emmanuel-Macron-bete-noire-des-pro-Brexit-1575751",
+        "domain": "parismatch.com",
+        "publisher_name": "Paris Match",
+        "country": "France",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
         "url": "http://www.lefigaro.fr/vox/economie/2018/09/24/31007-20180924ARTFIG00118--la-france-risque-d-etre-la-grande-perdante-du-brexit.php",
         "domain": "lefigaro.fr",
         "publisher_name": "Le Figaro",
@@ -8596,7 +8703,7 @@
       "properties": {
         "url": "https://www.leprogres.fr/france-monde/2019/10/10/commission-europeenne-sylvie-goulard-desavouee",
         "domain": "leprogres.fr",
-        "publisher_name": "leprogres.fr",
+        "publisher_name": "Le Progrès",
         "country": "France",
         "region": "Europe",
         "language": "Spanish",
@@ -8709,7 +8816,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/monde/environnement/retrait-americain-de-l-accord-de-paris/make-our-planet-great-again-macron-bat-le-record-d-hanouna-sur-twitter_2219229.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -8899,7 +9006,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/syrie-emmanuel-macron-ne-voit-pas-de-successeur-legitime-a-bachar-al-assad_2247773.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9052,7 +9159,7 @@
       "properties": {
         "url": "https://www.publicsenat.fr/article/politique/syrie-il-faudrait-qu-emmanuel-macron-nous-dise-quelles-sont-ses-preuves-estime",
         "domain": "publicsenat.fr",
-        "publisher_name": "publicsenat.fr",
+        "publisher_name": "Public Sénat",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9689,7 +9796,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/international/europe/accord-d-association-avec-l-ue-emmanuel-macron-avertit-que-si-andorre-le-refuse-la-porte-ne-se-rouvrira-pas_AD-202604280590.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -9731,7 +9838,7 @@
       "properties": {
         "url": "https://www.lemonde.fr/politique/article/2021/02/20/malgre-la-crise-emmanuel-macron-pense-deja-a-2022_6070630_823448.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9803,7 +9910,7 @@
       "properties": {
         "url": "https://www.latribune.fr/technos-medias/medias/concentration-des-medias-la-france-au-coeur-d-un-grand-monopoly-899440.html",
         "domain": "latribune.fr",
-        "publisher_name": "latribune.fr",
+        "publisher_name": "La Tribune",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9845,7 +9952,7 @@
       "properties": {
         "url": "https://www.europe1.fr/politique/emmanuel-macron-au-parlement-europeen-le-piege-tendu-a-ses-opposants-politiques-4088902",
         "domain": "europe1.fr",
-        "publisher_name": "europe1.fr",
+        "publisher_name": "Q3060725",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9866,13 +9973,22 @@
       "properties": {
         "url": "https://www.lemonde.fr/election-presidentielle-2022/article/2022/01/20/a-strasbourg-macron-fait-entrer-la-campagne-presidentielle-francaise-au-parlement-europeen_6110179_6059010.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "center-left",
+        "political_leaning": "social liberalism, centre-left",
         "reliability": "high",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-monde-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -9887,7 +10003,7 @@
       "properties": {
         "url": "https://www.franceculture.fr/emissions/journal-de-8-h/journal-de-08h00-margot-delpierre-du-mercredi-05-janvier-2022",
         "domain": "franceculture.fr",
-        "publisher_name": "franceculture.fr",
+        "publisher_name": "Les Chemins de la philosophie",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9908,7 +10024,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-radio/c-est-tout-com/presidentielle-2022-emmanuel-macron-ne-veut-pas-participer-aux-debats-du-premier-tour_4908195.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -9959,7 +10075,7 @@
       "properties": {
         "url": "https://www.lemonde.fr/election-presidentielle-2022/article/2022/03/11/le-candidat-emmanuel-macron-sermonne-par-la-commission-nationale-de-controle-de-la-campagne-electorale-pour-son-usage-des-reseaux-sociaux_6117105_6059010.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10089,7 +10205,7 @@
       "properties": {
         "url": "https://dx.doi.org/10.3917/deba.181.0037",
         "domain": "dx.doi.org",
-        "publisher_name": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
         "country": "Global",
         "region": "Global",
         "language": "English",
@@ -10224,7 +10340,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/elections-legislatives-2022-on-vous-explique-pourquoi-la-nupes-denonce-une-manipulation-des-resultats-par-le-ministere-de-l-interieur_5195032.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10304,7 +10420,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-radio/entre-les-lignes/legislatives-2022-olivier-veran-en-guerre-contre-lanupes_5146609.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10325,7 +10441,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/legislatives/discours-d-emmanuel-macron-sur-le-tarmac-cela-prouve-l-inquietude-du-camp-presidentiel-analyse-un-politologue_5198992.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10346,7 +10462,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/legislatives/legislatives-2022-emmanuel-macron-reclame-une-majorite-solide-au-nom-de-l-interet-superieur-de-la-nation_5197771.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10418,7 +10534,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/legislatives/legislatives-2022-quelle-responsabilite-pour-emmanuel-macron-dans-le-score-historique-du-rn-et-l-essor-de-la-france-insoumise_5212357.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10672,7 +10788,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/economie/syndicats/reforme-des-retraites-emmanuel-macron-refuse-de-recevoir-les-syndicats_5700176.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10773,7 +10889,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/economie/retraite/reforme-des-retraites/videos-toulouse-rennes-paris-des-concerts-de-casseroles-organises-dans-plusieurs-villes-durant-l-allocution-d-emmanuel-macron_5776667.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10845,7 +10961,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/video-ce-ne-sont-pas-les-casseroles-qui-feront-avancer-la-france-lance-emmanuel-macron-en-visite-en-alsace_5779904.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -10912,9 +11028,18 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "center-right",
+        "political_leaning": "conservatism",
         "reliability": "high",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -11043,7 +11168,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/police-justice/affaire-hedi-a-marseille-ce-que-les-policiers-mis-en-cause-ont-dit-aux-enqueteurs-de-l-igpn_AV-202307270442.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -11068,16 +11193,16 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "social democracy, centre-left",
         "reliability": "medium",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
-          "bias_rating": "LEFT",
-          "factual_reporting": "MOSTLY FACTUAL (4.1)",
-          "credibility_rating": "MEDIUM CREDIBILITY",
-          "country": "USA",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.2)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
         }
       }
     },
@@ -11093,7 +11218,7 @@
       "properties": {
         "url": "https://www.radiofrance.fr/franceinter/un-policier-n-a-pas-sa-place-en-prison-les-propos-du-patron-de-la-police-juges-gravissimes-a-gauche-2290493",
         "domain": "radiofrance.fr",
-        "publisher_name": "radiofrance.fr",
+        "publisher_name": "Radio France",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11135,7 +11260,7 @@
       "properties": {
         "url": "https://www.lemonde.fr/politique/article/2023/07/24/apres-les-propos-du-directeur-general-de-la-police-nationale-emmanuel-macron-dit-vouloir-entendre-l-emotion-des-policiers-tout-en-faisant-respecter-l-etat-de-droit_6183192_823448.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11267,11 +11392,11 @@
       "properties": {
         "url": "https://www.humanite.fr/monde/emmanuel-macron/la-coalition-de-macron-fait-un-flop-au-proche-orient",
         "domain": "humanite.fr",
-        "publisher_name": "humanite.fr",
+        "publisher_name": "L'Humanité",
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "communism",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -11339,7 +11464,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/monde/proche-orient/israel-palestine/guerre-entre-israel-et-le-hamas-pourquoi-emmanuel-macron-a-du-s-expliquer-apres-ses-propos-sur-les-bombardements-de-civils-a-gaza_6180996.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11390,7 +11515,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/societe/antisemitisme/politique-la-marche-contre-l-antisemitisme-provoque-la-polemique_6171390.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11905,7 +12030,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/societe/immigration/projet-de-loi-immigration-emmanuel-macron-va-saisir-le-conseil-constitutionnel_6255720.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11926,7 +12051,7 @@
       "properties": {
         "url": "https://www.publicsenat.fr/actualites/politique/immigration-ladoption-du-texte-est-une-defaite-du-rn-soutient-emmanuel-macron",
         "domain": "publicsenat.fr",
-        "publisher_name": "publicsenat.fr",
+        "publisher_name": "Public Sénat",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -11976,7 +12101,7 @@
       "properties": {
         "url": "https://www.publicsenat.fr/actualites/politique/loi-immigration-pourquoi-laurent-fabius-reproche-a-lexecutif-de-politiser-le-conseil-constitutionnel",
         "domain": "publicsenat.fr",
-        "publisher_name": "publicsenat.fr",
+        "publisher_name": "Public Sénat",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12120,7 +12245,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/gouvernement-de-gabriel-attal/gouvernement-attal-une-reconstitution-de-la-ligue-sarkozyste-dissoute-selon-le-president-du-groupe-socialiste-a-l-assemblee-boris-vallaud_6298647.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12243,7 +12368,7 @@
       "properties": {
         "url": "https://www.ouest-france.fr/politique/gouvernement/remaniement/video-virage-a-droite-surprise-pour-rachida-dati-l-analyse-du-remaniement-400850e5-3f10-46a1-b1ff-5fcf7bb5cbc9",
         "domain": "ouest-france.fr",
-        "publisher_name": "ouest-france.fr",
+        "publisher_name": "SIPA - Ouest-France group",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12306,7 +12431,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/politique/elections/europeennes/europeennes-bruno-le-maire-assure-qu-il-ne-sera-pas-candidat-en-2024_AN-202311120322.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -12327,7 +12452,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-radio/le-brief-politique/elections-europeennes-stephane-sejourne-nomme-au-quai-d-orsay-la-majorite-recommence-a-cogiter-sur-sa-tete-de-liste_6284820.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12772,7 +12897,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/elections/legislatives/une-nouvelle-maniere-de-gouverner-malgre-emmanuel-macron-qui-temporise-gabriel-attal-prend-ses-distances-avec-l-elysee_6653742.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12814,7 +12939,7 @@
       "properties": {
         "url": "https://www.lemonde.fr/politique/article/2024/07/10/le-maintien-du-gouvernement-attal-par-emmanuel-macron-conteste-a-droite-comme-a-gauche_6248290_823448.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -12886,7 +13011,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/parlement-francais/assemblee-nationale/emmanuel-macron-estime-que-le-nouveau-front-populaire-n-a-pas-de-majorite-quelle-qu-elle-soit_6682791.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -13058,13 +13183,42 @@
       "properties": {
         "url": "https://www.humanite.fr/politique/democratie/nouveau-premier-ministre-emmanuel-macron-aurait-il-peur-que-la-gauche-fasse-mieux-que-lui",
         "domain": "humanite.fr",
-        "publisher_name": "humanite.fr",
+        "publisher_name": "L'Humanité",
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "communism",
         "reliability": "medium",
         "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://fr.euronews.com/my-europe/2024/08/27/crise-politique-en-france-reactions-au-rejet-dun-gouvernement-nfp-par-emmanuel-macron",
+        "domain": "fr.euronews.com",
+        "publisher_name": "Q2720711",
+        "country": "France",
+        "region": "Unknown",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/fr/",
+          "bias_rating": "NOT RATED Factual Reporting",
+          "factual_reporting": "MIXED Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Unknown",
+          "media_type": "Website",
+          "traffic_popularity": "Medium Traffic"
+        }
       }
     },
     {
@@ -13108,7 +13262,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/la-france-insoumise/veillons-deja-a-faire-respecter-le-resultat-des-legislatives-la-menace-des-insoumis-de-destituer-emmanuel-macron-continue-de-diviser-la-gauche_6732720.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -13416,7 +13570,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/michel-barnier/michel-barnier-nomme-premier-ministre-ce-que-l-on-sait-des-allegations-d-accord-entre-marine-le-pen-et-emmanuel-macron_6770146.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -13542,9 +13696,18 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "center-right",
+        "political_leaning": "conservatism",
         "reliability": "high",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-figaro-bias/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -13950,7 +14113,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/politique/emmanuel-macron-affirme-qu-il-n-y-a-ni-abrogation-ni-suspension-de-la-reforme-des-retraites-mais-un-decalage_AN-202510210465.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -14086,16 +14249,16 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "social democracy, centre-left",
         "reliability": "medium",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
-          "bias_rating": "LEFT",
-          "factual_reporting": "MOSTLY FACTUAL (4.1)",
-          "credibility_rating": "MEDIUM CREDIBILITY",
-          "country": "USA",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation-paris-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.2)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
         }
       }
     },
@@ -14315,7 +14478,7 @@
       "properties": {
         "url": "http://www.bfmtv.com/politique/macron-l-honnetete-m-oblige-a-vous-dire-que-je-ne-suis-pas-socialiste-1027738.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -14819,10 +14982,31 @@
       "properties": {
         "url": "https://www.franceculture.fr/emissions/l-invite-e-des-matins/l-invite-des-matins-du-lundi-18-avril-2022",
         "domain": "franceculture.fr",
-        "publisher_name": "franceculture.fr",
+        "publisher_name": "Les Chemins de la philosophie",
         "country": "France",
         "region": "Europe",
         "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.0,
+          12.0
+        ]
+      },
+      "properties": {
+        "url": "https://archive.ph/jNH8f",
+        "domain": "archive.ph",
+        "publisher_name": "archive.ph",
+        "country": "Philippines",
+        "region": "Asia",
+        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -14845,6 +15029,27 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "centre-right",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.0,
+          12.0
+        ]
+      },
+      "properties": {
+        "url": "https://archive.ph/bQWri#selection-1083.0-1091.705",
+        "domain": "archive.ph",
+        "publisher_name": "archive.ph",
+        "country": "Philippines",
+        "region": "Asia",
+        "language": "English",
+        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -15224,7 +15429,16 @@
         "language": "French",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-parisien-bias/",
+          "bias_rating": "RIGHT-CENTER (3.0)",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -15545,7 +15759,7 @@
       "properties": {
         "url": "https://www.franceculture.fr/emissions/le-billet-politique/la-tentation-monarchique-demmanuel-macron",
         "domain": "franceculture.fr",
-        "publisher_name": "franceculture.fr",
+        "publisher_name": "Les Chemins de la philosophie",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -15566,7 +15780,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/proportionnelle-cumul-des-mandats-les-pistes-d-emmanuel-macron-pour-ameliorer-l-hygiene-democratique-en-france_1855707.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -15684,10 +15898,14 @@
         "political_leaning": "center-left",
         "reliability": "medium",
         "mbfc": {
-          "bias_rating": "Left-Center",
-          "factual_reporting": "Mostly Factual",
-          "credibility_rating": "Medium Credibility",
-          "mbfc_url": "https://mediabiasfactcheck.com/cnn/"
+          "mbfc_url": "https://mediabiasfactcheck.com/cnn-bias/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (2.7)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "TV Station/Website",
+          "traffic_popularity": "High Traffic"
         }
       }
     },
@@ -15902,7 +16120,7 @@
       "properties": {
         "url": "https://www.europe1.fr/societe/immigration-et-asile-61-des-francais-jugent-la-politique-trop-laxiste-3688430",
         "domain": "europe1.fr",
-        "publisher_name": "europe1.fr",
+        "publisher_name": "Q3060725",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -16536,7 +16754,7 @@
         "political_leaning": "Trumpism, conservatism in the United States, right-wing",
         "reliability": "variable/opinion",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/fox-news-bias/",
+          "mbfc_url": "https://mediabiasfactcheck.com/fox-news/",
           "bias_rating": "RIGHT (8.0)",
           "factual_reporting": "LOW (7.6)",
           "credibility_rating": "LOW CREDIBILITY",
@@ -16724,7 +16942,28 @@
         "url": "https://www.contexte.com/article/pouvoirs/macron-leuropeen-entre-discours-de-modernite-et-tradition-francaise_82627.html",
         "domain": "contexte.com",
         "publisher_name": "Contexte",
-        "country": "Belgium, France",
+        "country": "Belgium",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.contexte.com/article/pouvoirs/macron-leuropeen-entre-discours-de-modernite-et-tradition-francaise_82627.html",
+        "domain": "contexte.com",
+        "publisher_name": "Contexte",
+        "country": "France",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -16964,7 +17203,7 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "centre-right",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -17031,7 +17270,7 @@
       "properties": {
         "url": "http://www.europe1.fr/economie/macron-et-les-illettres-des-abattoirs-gad-un-vrai-sujet-2234175",
         "domain": "europe1.fr",
-        "publisher_name": "europe1.fr",
+        "publisher_name": "Q3060725",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -17154,7 +17393,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/politique/emmanuel-macron/pour-emmanuel-macron-les-anti-mariage-pour-tous-ont-ete-humilies-par-le-gouvernement_2063231.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -17424,7 +17663,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-radio/en-un-mot/en-un-mot-foutre-le-bordel-c-est-mal_2381649.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -17466,7 +17705,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-radio/8h30-aphatie/macron-sur-ceux-qui-foutent-le-bordel-il-ne-connait-pas-la-france-et-meprise-les-gens-dit-christian-jacob_2381641.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -17487,7 +17726,7 @@
       "properties": {
         "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/bordel-ugo-bernalicis-retourne-petite-phrase-macron-contre-lui-1342601.html",
         "domain": "france3-regions.francetvinfo.fr",
-        "publisher_name": "france3-regions.francetvinfo.fr",
+        "publisher_name": "Q3080592",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -17700,7 +17939,7 @@
       "properties": {
         "url": "https://www.bfmtv.com/politique/elections/presidentielle/un-irresponsable-n-est-plus-un-citoyen-l-autre-phrase-choc-de-macron-sur-les-non-vaccines_AN-202201050169.html",
         "domain": "bfmtv.com",
-        "publisher_name": "Dirigeants BFM Business",
+        "publisher_name": "BFM2",
         "country": "France",
         "region": "Unknown",
         "language": "English",
@@ -17776,6 +18015,27 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "centre-right",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "url": "https://archive.wikiwix.com/cache/index2.php?url=http%3A%2F%2Fwww.capital.fr%2Fenquetes%2Fhommes-et-affaires%2Femmanuel-macron-matthieu-pigasse-guerre-froide-entre-les-banquiers-roses-976858",
+        "domain": "archive.wikiwix.com",
+        "publisher_name": "Wikiwix",
+        "country": "Italy",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -18118,7 +18378,7 @@
       "properties": {
         "url": "https://www.franceinter.fr/justice/emmanuel-macron-a-las-vegas-une-enquete-ouverte",
         "domain": "franceinter.fr",
-        "publisher_name": "franceinter.fr",
+        "publisher_name": "C'est encore nous",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -18394,7 +18654,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/sante/maladie/coronavirus/vaccin/covid-19-on-vous-resume-la-polemique-autour-de-mckinsey-le-cabinet-qui-conseille-le-gouvernement-sur-la-strategie-vaccinale_4291131.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -18496,7 +18756,7 @@
       "properties": {
         "url": "https://www.lemonde.fr/politique/article/2022/11/24/deux-enquetes-sur-les-conditions-d-intervention-des-cabinets-de-conseil-dans-les-campagnes-de-2017-et-2022-ouvertes-par-le-parquet-national-financier_6151453_823448.html",
         "domain": "lemonde.fr",
-        "publisher_name": "Le Monde",
+        "publisher_name": "lemonde.fr",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -18787,7 +19047,12 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
       }
     },
     {
@@ -18808,7 +19073,12 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/youtube/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
       }
     },
     {
@@ -18874,7 +19144,7 @@
       "properties": {
         "url": "https://culturebox.francetvinfo.fr/arts/expos/dessine-moi-un-macron-77-dessinateurs-de-presse-croquent-le-president-277483",
         "domain": "culturebox.francetvinfo.fr",
-        "publisher_name": "culturebox.francetvinfo.fr",
+        "publisher_name": "Thé ou Café",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -18988,7 +19258,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/replay-jt/france-2/13-heures/jt-de-13h-du-samedi-29-decembre-2018_3098277.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -19088,7 +19358,7 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/franceinfo-bias-and-credibility/",
+          "mbfc_url": "https://mediabiasfactcheck.com/france-info/",
           "bias_rating": "LEFT-CENTER",
           "factual_reporting": "HIGH (1.0)",
           "credibility_rating": "HIGH CREDIBILITY",
@@ -19257,6 +19527,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          1.555277777,
+          42.558333333
+        ]
+      },
+      "properties": {
+        "url": "https://www.bopa.ad/Documents/Detall?doc=GD_2024_07_11_14_39_27",
+        "domain": "bopa.ad",
+        "publisher_name": "Official Bulletin of the Principality of Andorra",
+        "country": "Andorra",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -19357,7 +19648,7 @@
       "properties": {
         "url": "https://www.francetvinfo.fr/monde/afrique/egypte/legion-d-honneur-au-president-egyptien-sissi-un-intellectuel-italien-rend-sa-decoration_4218215.html",
         "domain": "francetvinfo.fr",
-        "publisher_name": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -19384,7 +19675,16 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/wam/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (0.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "Medium Traffic"
+        }
       }
     },
     {
@@ -19445,7 +19745,7 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
+        "political_leaning": "centre-right",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -19518,6 +19818,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.216667,
+          42.766667
+        ]
+      },
+      "properties": {
+        "url": "https://radiobijelopolje.me/en/crna-gora/77774/milatovic-u-cetvrtak-urucuje-makronu-orden-crne-gore",
+        "domain": "radiobijelopolje.me",
+        "publisher_name": "radiobijelopolje.me",
+        "country": "Montenegro",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -19531,6 +19852,27 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.212767,
+          25.269535
+        ]
+      },
+      "properties": {
+        "url": "https://www.diwan.gov.qa/briefing-room/news/foreign-visits/2024/february/27/hh-the-amir-attends-dinner-banquet-held-by-french-president?sc_lang=en",
+        "domain": "diwan.gov.qa",
+        "publisher_name": "Amiri Diwan of the State of Qatar",
+        "country": "Qatar",
+        "region": "Unknown",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "high",
         "mbfc": {}
       }
     },
@@ -19711,13 +20053,20 @@
       "properties": {
         "url": "https://www.koreatimes.co.kr/www/nation/2019/04/356_240414.html",
         "domain": "koreatimes.co.kr",
-        "publisher_name": "koreatimes.co.kr",
+        "publisher_name": "The Korea Times",
         "country": "South Korea",
         "region": "Asia",
         "language": "Spanish",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/the-korea-times/",
+          "bias_rating": "LEFT-CENTER Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "media_type": "Newspaper",
+          "traffic_popularity": "Medium Traffic"
+        }
       }
     },
     {
@@ -19861,7 +20210,16 @@
         "language": "French",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/le-parisien-bias/",
+          "bias_rating": "RIGHT-CENTER (3.0)",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "High Traffic"
+        }
       }
     },
     {
@@ -19876,7 +20234,7 @@
       "properties": {
         "url": "https://www.francebleu.fr/infos/politique/pour-une-renaissance-europeenne-decouvrez-la-tribune-publiee-par-emmanuel-macron-1551730226",
         "domain": "francebleu.fr",
-        "publisher_name": "francebleu.fr",
+        "publisher_name": "France Bleu",
         "country": "France",
         "region": "Europe",
         "language": "French",
@@ -19913,8 +20271,8 @@
       },
       "properties": {
         "country": "France",
-        "source_count": 752,
-        "percentage": 85.4
+        "source_count": 762,
+        "percentage": 86.5
       }
     },
     {
@@ -19937,14 +20295,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.7129,
-          37.0902
+          -3.436,
+          55.3781
         ]
       },
       "properties": {
-        "country": "United States",
-        "source_count": 18,
-        "percentage": 2.0
+        "country": "United Kingdom",
+        "source_count": 9,
+        "percentage": 1.0
       }
     },
     {
@@ -19952,14 +20310,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.436,
-          55.3781
+          -95.7129,
+          37.0902
         ]
       },
       "properties": {
-        "country": "United Kingdom",
-        "source_count": 8,
-        "percentage": 0.9
+        "country": "United States",
+        "source_count": 12,
+        "percentage": 1.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.42,
+          43.731111111
+        ]
+      },
+      "properties": {
+        "country": "Monaco",
+        "source_count": 2,
+        "percentage": 0.2
       }
     },
     {
@@ -20003,8 +20376,8 @@
       },
       "properties": {
         "country": "Andorra",
-        "source_count": 2,
-        "percentage": 0.2
+        "source_count": 3,
+        "percentage": 0.3
       }
     },
     {
@@ -20057,6 +20430,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          123.0,
+          12.0
+        ]
+      },
+      "properties": {
+        "country": "Philippines",
+        "source_count": 2,
+        "percentage": 0.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.4699,
           50.5039
         ]
@@ -20065,6 +20453,21 @@
         "country": "Belgium",
         "source_count": 1,
         "percentage": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "country": "Italy",
+        "source_count": 2,
+        "percentage": 0.2
       }
     },
     {
@@ -20117,12 +20520,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.5674,
-          41.8719
+          57.5,
+          -20.2
         ]
       },
       "properties": {
-        "country": "Italy",
+        "country": "Mauritius",
         "source_count": 1,
         "percentage": 0.1
       }
@@ -20132,12 +20535,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          57.5,
-          -20.2
+          19.216667,
+          42.766667
         ]
       },
       "properties": {
-        "country": "Mauritius",
+        "country": "Montenegro",
+        "source_count": 1,
+        "percentage": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.212767,
+          25.269535
+        ]
+      },
+      "properties": {
+        "country": "Qatar",
         "source_count": 1,
         "percentage": 0.1
       }
