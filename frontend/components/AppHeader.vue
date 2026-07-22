@@ -181,6 +181,12 @@ function onLocaleChange(event) {
   .app-header__bar {
     flex-wrap: wrap;
     row-gap: var(--space-2);
+    /* The desktop bar is a fixed 68px. Once the nav wraps to a second row it
+       overflowed that box and the language switcher rendered *below* the
+       header's accent line, on top of the page content. */
+    height: auto;
+    min-height: 68px;
+    padding-bottom: var(--space-2);
   }
   .app-header__nav {
     width: 100%;
