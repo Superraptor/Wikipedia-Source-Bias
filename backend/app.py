@@ -10,7 +10,9 @@ from cache import Cache, PENDING, RUNNING, DONE, ERROR
 from runner import run_analysis, AnalysisUnavailable
 from analyzer import normalize_analysis
 from wikipedia_sources_bias.analysis import ArticleNotFound
+from wikipedia_sources_bias.provenance import METHOD_VERSION
 import status_i18n
+from invariants import check_analysis, INVARIANTS
 
 # The Nuxt SPA is generated into backend/static at build time (see the root
 # package.json). In production Flask serves both the bundle and /api from the
@@ -350,6 +352,118 @@ def status_page():
         t=t,
         locale=locale,
     )
+
+
+def _audit_all(cache, limit=200):
+    """Run every invariant over every stored analysis."""
+    rows = cache.recent(limit)
+    done = [r for r in rows if r.get("status") == "done"]
+    results, failures = [], []
+    for row in done:
+        payload = cache.get(row["page_url"])
+        if payload is None:
+            continue
+        payload = normalize_analysis(payload)
+        payload.setdefault("revision_id", row.get("revision_id"))
+        payload.setdefault("method_version", row.get("method_version"))
+        found = check_analysis(payload)
+        results.append({
+            "page_url": row["page_url"],
+            "title": _display_title(row),
+            "analysis_url": _analysis_url(row),
+            "revision_id": row.get("revision_id"),
+            "method_version": row.get("method_version"),
+            "passed": len(INVARIANTS) - len({n for n, _ in found}),
+            "total": len(INVARIANTS),
+            "failures": found,
+        })
+        failures.extend((row["page_url"], n, msg) for n, msg in found)
+    return results, failures
+
+
+@app.route("/api/audit")
+def api_audit():
+    """Machine-readable version of the public audit."""
+    try:
+        cache = get_cache()
+    except Exception as e:
+        return jsonify({"error": f"Cache unavailable: {e}"}), 503
+    results, failures = _audit_all(cache)
+    by_invariant = {}
+    for _url, name, _msg in failures:
+        by_invariant[name] = by_invariant.get(name, 0) + 1
+    return jsonify({
+        "invariants": [{"name": n, "description": d} for n, d in INVARIANTS],
+        "analyses_checked": len(results),
+        "analyses_clean": sum(1 for r in results if not r["failures"]),
+        "failures_by_invariant": by_invariant,
+        "results": results,
+    })
+
+
+@app.route("/audit")
+def audit_page():
+    """Published self-check.
+
+    A tool that only publishes its results asks to be trusted. Publishing the
+    checks -- and the ones currently failing -- makes it criticisable instead.
+    """
+    locale = status_i18n.pick_locale(request)
+    t = status_i18n.translator(locale)
+    try:
+        cache = get_cache()
+        results, failures = _audit_all(cache)
+        err = None
+    except Exception as e:
+        results, failures, err = [], [], str(e)
+
+    by_invariant = {}
+    for _url, name, _msg in failures:
+        by_invariant.setdefault(name, []).append(_msg)
+
+    return render_template(
+        "audit.html",
+        t=t,
+        locale=locale,
+        db_error=err,
+        invariants=INVARIANTS,
+        by_invariant=by_invariant,
+        results=results,
+        checked=len(results),
+        clean=sum(1 for r in results if not r["failures"]),
+        method_version=METHOD_VERSION,
+    )
+
+
+@app.route("/api/reference")
+def api_reference():
+    """Every judgement the tool itself asserts, in one place.
+
+    These were 267 statements buried in .py files: which domain belongs to
+    which country, which TLD implies which country, which country sits in
+    which region. A tool that audits sourcing should not hide its own.
+    """
+    from wikipedia_sources_bias.heuristics_data import (
+        DOMAIN_BIAS_DATABASE, TLD_GEOGRAPHY_MAP,
+    )
+    from analyzer import REGION_MAP
+
+    return jsonify({
+        "method_version": METHOD_VERSION,
+        "note": (
+            "The curated domain table deliberately asserts NO political "
+            "leaning. Leaning comes only from Wikidata (P1387) or Media "
+            "Bias/Fact Check, and is 'unknown' when neither has an opinion."
+        ),
+        "curated_domains": {
+            k: dict(v) for k, v in sorted(DOMAIN_BIAS_DATABASE.items())
+        },
+        "tld_to_country": {
+            k: {"country": v[0], "region": v[1]}
+            for k, v in sorted(TLD_GEOGRAPHY_MAP.items())
+        },
+        "country_to_region": dict(sorted(REGION_MAP.items())),
+    })
 
 
 @app.route("/robots.txt")

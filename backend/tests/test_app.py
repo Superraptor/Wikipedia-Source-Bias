@@ -547,3 +547,48 @@ def test_sync_mode_surfaces_not_found_as_404(monkeypatch):
         resp = c.get("/api/analyze?url=https://fr.wikipedia.org/wiki/Nope")
     assert resp.status_code == 404
     assert resp.get_json()["code"] == "article_not_found"
+
+
+# -- the published self-check -------------------------------------------
+
+
+def test_audit_page_renders(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    url = "https://fr.wikipedia.org/wiki/A"
+    fake.store[url] = {
+        "source_count": 1, "revision_id": 7, "method_version": "abc",
+        "sources": [{"domain": "a.fr", "geography": {"country": "France", "region": "Europe"}}],
+        "aggregated_bias": {
+            "geography_distribution": {"France": {"count": 1, "percentage": 100.0}},
+            "region_distribution": {"Europe": {"count": 1, "percentage": 100.0}},
+        },
+    }
+    fake.states[url] = ("done", None)
+    resp = client.get("/audit")
+    assert resp.status_code == 200
+    html = resp.get_data(as_text=True)
+    # The checks themselves must be visible, not just a verdict.
+    assert "no_fabricated_analysis" in html
+    assert "input_is_pinned" in html
+
+
+def test_audit_api_reports_failures_it_finds(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    url = "https://fr.wikipedia.org/wiki/Bad"
+    # No revision, no method: unreproducible by construction.
+    fake.store[url] = {"source_count": 1, "sources": [{"domain": "x.fr", "geography": {}}],
+                       "aggregated_bias": {}}
+    fake.states[url] = ("done", None)
+    body = client.get("/api/audit").get_json()
+    assert body["analyses_checked"] == 1
+    assert body["analyses_clean"] == 0
+    assert "input_is_pinned" in body["failures_by_invariant"]
+
+
+def test_reference_endpoint_publishes_our_own_claims(client):
+    body = client.get("/api/reference").get_json()
+    assert "curated_domains" in body and body["curated_domains"]
+    assert "tld_to_country" in body and "country_to_region" in body
+    # The whole point of Phase 3: no domain carries a leaning we authored.
+    for domain, entry in body["curated_domains"].items():
+        assert "political_leaning" not in entry, domain

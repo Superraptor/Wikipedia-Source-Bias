@@ -1192,7 +1192,9 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
     if domain_info:
         country = domain_info["country"]
         region = domain_info["region"]
-        political = domain_info["political_leaning"]
+        # The curated table no longer asserts a leaning; it comes from Wikidata
+        # or MBFC later, or stays unknown.
+        political = domain_info.get("political_leaning", "unknown")
         reliability = domain_info["reliability"]
         source_type = domain_info.get("type", "unknown")
         language = domain_info.get("default_language", "English")
@@ -1267,6 +1269,8 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
         "language": language,
         "geography": {"country": country, "region": region},
         "political_leaning": political,
+        # Attribution for the leaning above: never "because we said so".
+        "political_leaning_source": None,
         "reliability": reliability,
         "wikidata": wikidata or {},
     }
@@ -2094,6 +2098,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                         wd_leanings.append(l)
             if wd_leanings:
                 profile["political_leaning"] = ", ".join(wd_leanings)
+                profile["political_leaning_source"] = "wikidata"
             if wikidata_pub.get("countries"):
                 profile["geography"]["country"] = ", ".join(wikidata_pub["countries"])
 
@@ -2111,6 +2116,16 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         else:
             mbfc_id = wikidata_pub.get("mbfc_id") if wikidata_pub else None
             profile["mbfc"] = _fetch_mbfc_rating(profile["domain"], mbfc_id, skip_rate_limiting=skip_rate_limiting)
+
+            # MBFC was already being fetched but never used for leaning, so
+            # removing our own judgements would have left almost everything
+            # "unknown" while attributed data sat unused. Wikidata wins when it
+            # has an opinion; MBFC fills in behind it; neither is silent about
+            # where the value came from.
+            if (profile.get("political_leaning") in (None, "", "unknown")
+                    and profile["mbfc"].get("bias_rating")):
+                profile["political_leaning"] = profile["mbfc"]["bias_rating"]
+                profile["political_leaning_source"] = "mbfc"
 
             profile["readability"] = _fetch_url_readability(resolved_url)
             extracted_web_author = profile["readability"].get("extracted_author")

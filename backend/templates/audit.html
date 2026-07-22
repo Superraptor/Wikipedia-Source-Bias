@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="{{ locale }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t('auditTitle') }}</title>
+<style>
+  :root {
+    --bg:#fff; --fg:#202122; --muted:#54595d; --line:#c8ccd1;
+    --ok:#14866d; --bad:#bf3c2c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#101418; --fg:#eaecf0; --muted:#a2a9b1; --line:#27292d; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:1.5rem; background:var(--bg); color:var(--fg);
+         font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; line-height:1.5; }
+  main { max-width:64rem; margin:0 auto; }
+  h1 { font-size:1.4rem; margin:0 0 .25rem; }
+  h2 { font-size:1rem; margin:2rem 0 .5rem; }
+  .sub { color:var(--muted); font-size:.875rem; margin-bottom:1.5rem; }
+  .sub a { color:#3366cc; }
+  .headline { border:1px solid var(--line); border-radius:4px; padding:1rem 1.25rem;
+              margin-bottom:1.5rem; }
+  .headline .n { font-size:2rem; font-weight:600; }
+  .headline.pass { border-color:var(--ok); }
+  .headline.fail { border-color:var(--bad); }
+  table { border-collapse:collapse; width:100%; font-size:.875rem; }
+  th,td { text-align:left; padding:.45rem .6rem; border-bottom:1px solid var(--line);
+          vertical-align:top; }
+  th { font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .ok { color:var(--ok); font-weight:600; }
+  .bad { color:var(--bad); font-weight:600; }
+  .mono { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.8rem; }
+  .desc { color:var(--muted); }
+  .msg { color:var(--bad); font-size:.8rem; }
+  .scroll { overflow-x:auto; }
+  .dberr { border:1px solid var(--bad); color:var(--bad); border-radius:4px; padding:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>{{ t('auditHeading') }}</h1>
+  <p class="sub">
+    {{ t('auditIntro') }}
+    &middot; <a href="/api/audit">JSON</a>
+    &middot; <a href="/api/reference">{{ t('auditReference') }}</a>
+    &middot; <a href="/status">{{ t('heading') }}</a>
+    &middot; <span class="mono">{{ method_version }}</span>
+  </p>
+
+  {% if db_error %}
+    <p class="dberr">{{ t('dbDown') }} {{ db_error }}</p>
+  {% else %}
+    <div class="headline {{ 'pass' if clean == checked else 'fail' }}">
+      <div class="n">{{ clean }} / {{ checked }}</div>
+      <div>{{ t('auditClean') }}</div>
+    </div>
+
+    <h2>{{ t('auditChecks') }}</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>{{ t('auditCheck') }}</th><th>{{ t('auditWhat') }}</th><th>{{ t('auditResult') }}</th>
+      </tr></thead>
+      <tbody>
+      {% for name, description in invariants %}
+        <tr>
+          <td class="mono">{{ name }}</td>
+          <td class="desc">{{ description }}</td>
+          <td>
+            {% if by_invariant.get(name) %}
+              <span class="bad">{{ t('auditFailing', n=by_invariant[name]|length) }}</span>
+              <div class="msg">{{ by_invariant[name][0] }}</div>
+            {% else %}
+              <span class="ok">{{ t('auditPassing') }}</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+
+    <h2>{{ t('auditPerAnalysis') }}</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>{{ t('colArticle') }}</th><th>{{ t('auditRevision') }}</th>
+        <th>{{ t('auditMethod') }}</th><th>{{ t('auditResult') }}</th>
+      </tr></thead>
+      <tbody>
+      {% for r in results %}
+        <tr>
+          <td><a href="{{ r.analysis_url or r.page_url }}">{{ r.title }}</a></td>
+          <td class="mono">{{ r.revision_id or '—' }}</td>
+          <td class="mono">{{ r.method_version or '—' }}</td>
+          <td>
+            {% if r.failures %}
+              <span class="bad">{{ r.passed }}/{{ r.total }}</span>
+              {% for name, msg in r.failures %}<div class="msg">{{ name }}: {{ msg }}</div>{% endfor %}
+            {% else %}
+              <span class="ok">{{ r.passed }}/{{ r.total }}</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  {% endif %}
+</main>
+</body>
+</html>

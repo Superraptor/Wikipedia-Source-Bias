@@ -211,6 +211,9 @@ def _norm_source(s):
         "language": s.get("language", "unknown"),
         "geography": geography,
         "political_leaning": s.get("political_leaning", "unknown"),
+        # Who says so. None means nobody attributed it, which the UI must show
+        # rather than presenting an unsourced label as fact.
+        "political_leaning_source": s.get("political_leaning_source"),
         "reliability": s.get("reliability", "unknown"),
         "citation_text": s.get("citation_text", ""),
         "wikidata_publisher": s.get("wikidata_publisher", {}),

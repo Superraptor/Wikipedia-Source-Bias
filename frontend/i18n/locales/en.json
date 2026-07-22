@@ -182,7 +182,8 @@
     "linkMethodology": "Methodology & team",
     "linkSource": "Source code (GitHub)",
     "linkQueue": "Analysis queue",
-    "methodologyLink": "Full methodology"
+    "methodologyLink": "Full methodology",
+    "auditLink": "Self-check"
   },
   "v2": {
     "banner": {

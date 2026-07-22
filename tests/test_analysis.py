@@ -78,7 +78,11 @@ def test_analyze_source_bias():
     nytimes_res = analyze_source_bias("https://www.nytimes.com/2026/world")
     assert nytimes_res["domain"] == "nytimes.com"
     assert nytimes_res["geography"]["country"] == "United States"
-    assert nytimes_res["political_leaning"] == "center-left"
+    # No longer "center-left": the curated table stopped asserting political
+    # leanings it had no source for. A leaning now arrives only from Wikidata
+    # or MBFC, so an offline profile has none.
+    assert nytimes_res["political_leaning"] == "unknown"
+    assert nytimes_res["political_leaning_source"] is None
     assert nytimes_res["reliability"] == "high"
 
     # TLD geography & language fallback

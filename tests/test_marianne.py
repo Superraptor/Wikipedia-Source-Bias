@@ -10,8 +10,9 @@ def test_marianne_resolves_to_france():
     assert entry["default_language"] == "French"
 
 
-def test_curated_entries_do_not_assert_a_political_leaning_without_a_source():
+def test_curated_entries_carry_no_political_leaning_at_all():
     """Country and language are facts; a bias rating is an editorial judgement
-    and should come from Wikidata or MBFC, not from this table."""
+    and comes from Wikidata or MBFC, never from this table. The field is absent
+    rather than "unknown", so it cannot be quietly filled in later."""
     for domain in ("marianne.net", "mediapart.fr"):
-        assert DOMAIN_BIAS_DATABASE[domain]["political_leaning"] == "unknown"
+        assert "political_leaning" not in DOMAIN_BIAS_DATABASE[domain]
