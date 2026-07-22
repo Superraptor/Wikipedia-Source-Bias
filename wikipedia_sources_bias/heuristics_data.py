@@ -273,6 +273,36 @@ DOMAIN_BIAS_DATABASE: dict[str, dict[str, Any]] = {
         "political_leaning": "academic/neutral", "reliability": "academic/peer-reviewed",
         "default_language": "French", "type": "academic_portal",
     },
+    "cambridge.org": {
+        "name": "Cambridge University Press", "country": "United Kingdom",
+        "region": "Europe", "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
+    "oup.com": {
+        "name": "Oxford University Press", "country": "United Kingdom",
+        "region": "Europe", "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
+    "jstor.org": {
+        "name": "JSTOR", "country": "United States", "region": "North America",
+        "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_archive",
+    },
+    "tandfonline.com": {
+        "name": "Taylor & Francis", "country": "United Kingdom",
+        "region": "Europe", "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
+    "sciencedirect.com": {
+        "name": "ScienceDirect (Elsevier)", "country": "Netherlands",
+        "region": "Europe", "political_leaning": "academic/neutral",
+        "reliability": "academic/peer-reviewed",
+        "default_language": "English", "type": "academic_publisher",
+    },
     "springeropen.com": {
         "name": "Springer Open", "country": "Germany", "region": "Europe",
         "political_leaning": "academic/neutral", "reliability": "academic/peer-reviewed",

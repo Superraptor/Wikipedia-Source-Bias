@@ -19,6 +19,10 @@ PREVIOUSLY_UNMAPPED = [
     ("https://www.politico.eu/article/x/", "European Union"),
     ("https://data.worldbank.org/indicator/X", "United States"),
     ("https://hdr.undp.org/reports", "United States"),
+    # The PDF that used to hang Soviet_space_dogs indefinitely.
+    ("https://www.cambridge.org/core/services/aop/x.pdf", "United Kingdom"),
+    ("https://www.jstor.org/stable/12345", "United States"),
+    ("https://www.sciencedirect.com/science/article/pii/X", "Netherlands"),
 ]
 
 
