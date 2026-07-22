@@ -184,7 +184,10 @@ def main() -> None:
                 print(f"Failed to write to file: {e}", file=sys.stderr)
                 sys.exit(1)
         else:
-            print(output_str)
+            try:
+                sys.stdout.write(output_str + "\n")
+            except UnicodeEncodeError:
+                sys.stdout.buffer.write((output_str + "\n").encode("utf-8", errors="replace"))
 
 
 if __name__ == "__main__":

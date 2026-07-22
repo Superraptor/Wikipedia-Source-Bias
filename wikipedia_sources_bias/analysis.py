@@ -40,6 +40,47 @@ def _load_env_tokens():
 
 _load_env_tokens()
 
+
+class ArticleNotFound(Exception):
+    """Raised when a requested Wikipedia page or URL cannot be found (404/invalid)."""
+    pass
+
+
+def _polite_get(url: str, params: dict[str, Any] | None = None, headers: dict[str, str] | None = None, timeout: float = 10, stream: bool = False) -> requests.Response:
+    ratelimit.wait(url)
+    res = requests.get(url, params=params, headers=headers, timeout=timeout, stream=stream)
+    ratelimit.note_response(url, res)
+    return res
+
+
+def _is_bare_homepage(url: str) -> bool:
+    if not url:
+        return False
+    parsed = urlparse(url)
+    path = parsed.path.rstrip('/')
+    return (not path or path == "") and not parsed.query and not parsed.fragment
+
+
+def _drop_bare_homepages(urls: list[str]) -> list[str]:
+    if not urls:
+        return []
+    hosts_with_deep_links = set()
+    for u in urls:
+        parsed = urlparse(u)
+        host = parsed.netloc.lower()
+        if not _is_bare_homepage(u):
+            hosts_with_deep_links.add(host)
+            
+    filtered = []
+    for u in urls:
+        parsed = urlparse(u)
+        host = parsed.netloc.lower()
+        if _is_bare_homepage(u) and host in hosts_with_deep_links:
+            continue
+        filtered.append(u)
+    return filtered
+
+
 from .heuristics_data import (
     DOMAIN_BIAS_DATABASE,
     TLD_GEOGRAPHY_MAP,
@@ -132,10 +173,14 @@ def extract_references(soup: BeautifulSoup) -> list[dict[str, Any]]:
 def parse_citations(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     citations: list[dict[str, Any]] = []
     for item in items:
-        citations.append({
-            "text": item.get("text", ""),
-            "urls": [url for url in item.get("urls", []) if url and not url.startswith("#")],
-        })
+        valid_urls = [url for url in item.get("urls", []) if url and not url.startswith("#")]
+        if valid_urls:
+            citations.append({
+                "text": item.get("text", ""),
+                "citation_text": item.get("text", ""),
+                "urls": valid_urls,
+                "extracted_urls": valid_urls,
+            })
     return citations
 
 
@@ -1055,6 +1100,20 @@ def _fetch_text_bounded(url, headers=None, timeout=5):
         response.close()
 
 
+def _fetch_url_content(url: str) -> str:
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    try:
+        res = _polite_get(url, headers=headers, timeout=10)
+        res.raise_for_status()
+        return res.text
+    except Exception as e:
+        raise ArticleNotFound(f"Failed to fetch Wikipedia article at {url}: {e}") from e
+
+
+def _fetch_url_content_fast(url: str) -> str:
+    return _fetch_url_content(url)
+
+
 def _fetch_url_readability(url: str) -> dict[str, Any]:
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
     html = ""
@@ -1254,9 +1313,9 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
             break
 
     if domain_info:
-        country = domain_info["country"]
-        region = domain_info["region"]
-        political = domain_info["political_leaning"]
+        country = domain_info.get("country", "Unknown")
+        region = domain_info.get("region", "Unknown")
+        political = domain_info.get("political_leaning", "unknown")
         reliability = domain_info.get("reliability", "unknown")
         source_type = domain_info.get("type", "unknown")
         language = domain_info.get("default_language", "English")
@@ -2899,6 +2958,8 @@ def analyze_page(
     references = []
     citations = []
     dedup_candidate_urls = []
+    revision_id = None
+    page_id = None
     
     if not no_cache:
         cached_data = _get_page_cache(cache_key)
@@ -2907,8 +2968,8 @@ def analyze_page(
                 return cached_data
                 
             sources = cached_data.get("sources", [])
-            resumed_revision = cached_data.get("revision_id")
-            resumed_page_id = cached_data.get("page_id")
+            revision_id = cached_data.get("revision_id")
+            page_id = cached_data.get("page_id")
             page_metadata = cached_data.get("page_metadata", {})
             references = cached_data.get("references", [])
             citations = cached_data.get("citations", [])
@@ -2924,19 +2985,34 @@ def analyze_page(
             else:
                 html = _fetch_url_content(url)
                 
-            page_metadata = _extract_page_metadata(html, url)
-            references = _extract_references_from_html(html)
-            citations = _extract_citations_from_html(html, references)
+            if "extract_revision" in globals():
+                rev_id_tmp, page_id_tmp = extract_revision(html)
+                revision_id = rev_id_tmp
+                page_id = page_id_tmp
+
+            soup = BeautifulSoup(html, "html.parser")
+            page_metadata = _extract_page_metadata(soup)
+            if not revision_id:
+                revision_id = page_metadata.get("revision_id")
+            if not page_id:
+                page_id = page_metadata.get("page_id")
+
+            references = extract_references(soup)
+            ref_items = references[0]["items"] if references else []
+            citations = parse_citations(ref_items)
             
             all_candidate_urls = []
             for cit in citations:
-                all_candidate_urls.extend(cit["extracted_urls"])
+                ext_urls = cit.get("extracted_urls") or cit.get("urls") or []
+                all_candidate_urls.extend(ext_urls)
                 
             dedup_candidate_urls = list(dict.fromkeys(all_candidate_urls))
             
             if max_sources is not None:
                 dedup_candidate_urls = dedup_candidate_urls[:max_sources]
                 
+        except ArticleNotFound as e:
+            raise e
         except Exception as e:
             sys.stderr.write(f"Error extracting page metadata/citations from {url}: {e}\n")
             sys.stderr.flush()
@@ -2958,8 +3034,9 @@ def analyze_page(
         
         citation_text = ""
         for cit in citations:
-            if cand_url in cit["extracted_urls"]:
-                citation_text = cit["citation_text"]
+            ext_urls = cit.get("extracted_urls") or cit.get("urls") or []
+            if cand_url in ext_urls:
+                citation_text = cit.get("citation_text", "")
                 break
                 
         profile["citation_text"] = citation_text

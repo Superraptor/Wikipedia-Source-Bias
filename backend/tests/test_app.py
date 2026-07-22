@@ -432,14 +432,24 @@ def test_display_title_decodes_an_already_stored_page_title():
 # -- caching ------------------------------------------------------------
 
 
-def test_index_html_is_not_cached(client):
+def test_index_html_is_not_cached(client, tmp_path, monkeypatch):
     """A stale index.html names chunk hashes a redeploy has already replaced,
     which blank-pages every returning visitor until they hard-reload."""
+    static = tmp_path / "static"
+    static.mkdir()
+    (static / "index.html").write_text("<html></html>")
+    import app as appmod
+    monkeypatch.setattr(appmod, "STATIC_DIR", str(static))
     resp = client.get("/")
     assert "no-cache" in resp.headers.get("Cache-Control", "")
 
 
-def test_spa_fallback_route_is_not_cached(client):
+def test_spa_fallback_route_is_not_cached(client, tmp_path, monkeypatch):
+    static = tmp_path / "static"
+    static.mkdir()
+    (static / "index.html").write_text("<html></html>")
+    import app as appmod
+    monkeypatch.setattr(appmod, "STATIC_DIR", str(static))
     resp = client.get("/wikipedia/fr/Brexit")
     assert "no-cache" in resp.headers.get("Cache-Control", "")
 
