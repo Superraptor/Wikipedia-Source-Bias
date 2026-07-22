@@ -795,5 +795,3943 @@
       "trade magazine"
     ],
     "mbfc_id": null
+  },
+  "rfi.fr": {
+    "wikidata_id": "Q30097346",
+    "wikidata_name": "RFI",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Radio France Internationale"
+    ],
+    "types": [
+      "international broadcasting",
+      "online newspaper",
+      "radio station",
+      "state-owned enterprise"
+    ],
+    "mbfc_id": "rfi-radio-france-internationale"
+  },
+  "blog.francetvinfo.fr": {
+    "wikidata_id": "Q3554270",
+    "wikidata_name": "Valérie Igounet",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "eur-lex.europa.eu": {
+    "wikidata_id": "Q1276282",
+    "wikidata_name": "EUR-Lex",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Publications Office of the European Union"
+    ],
+    "types": [
+      "legal information system"
+    ],
+    "mbfc_id": null
+  },
+  "rtl.fr": {
+    "wikidata_id": "Q1351173",
+    "wikidata_name": "RTL",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "RTL Group"
+    ],
+    "types": [
+      "online newspaper",
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "boursier.com": {},
+  "ladepeche.fr": {
+    "wikidata_id": "Q742587",
+    "wikidata_name": "La Dépêche du Midi",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": "la-depeche-du-midi"
+  },
+  "time.com": {
+    "wikidata_id": "Q43297",
+    "wikidata_name": "Time",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Marc Benioff"
+    ],
+    "types": [
+      "magazine",
+      "news magazine",
+      "online magazine"
+    ],
+    "mbfc_id": "time"
+  },
+  "conseil-constitutionnel.fr": {
+    "wikidata_id": "Q1127218",
+    "wikidata_name": "Constitutional Council of France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "constitutional court",
+      "institution of the French State",
+      "supreme court"
+    ],
+    "mbfc_id": null
+  },
+  "francesoir.fr": {
+    "wikidata_id": "Q102046083",
+    "wikidata_name": "FranceSoir",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Xavier Azalbert"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "ipsos.com": {
+    "wikidata_id": "Q1672300",
+    "wikidata_name": "Ipsos",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "20minutes.fr": {
+    "wikidata_id": "Q7245532",
+    "wikidata_name": "20 minutes",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Rossel"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "politico.eu": {
+    "wikidata_id": "Q991826",
+    "wikidata_name": "Politico Europe",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Axel Springer SE",
+      "Politico"
+    ],
+    "types": [
+      "news website",
+      "newspaper",
+      "online newspaper"
+    ],
+    "mbfc_id": "politico-europe-bias"
+  },
+  "lelab.europe1.fr": {
+    "wikidata_id": "Q17632608",
+    "wikidata_name": "Le Lab",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Europe 1"
+    ],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "lesechos.fr": {
+    "wikidata_id": "Q3117475",
+    "wikidata_name": "Groupe Les Echos",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "LVMH"
+    ],
+    "types": [
+      "newspaper",
+      "organization",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "challenges.fr": {
+    "wikidata_id": "Q2947983",
+    "wikidata_name": "Challenges",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "LVMH",
+      "Q3117520"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "parismatch.com": {
+    "wikidata_id": "Q678095",
+    "wikidata_name": "Paris Match",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Hachette Filipacchi Médias",
+      "Jean Prouvost",
+      "LVMH",
+      "Lagardère News"
+    ],
+    "types": [
+      "gossip magazine",
+      "newspaper",
+      "tabloid"
+    ],
+    "mbfc_id": null
+  },
+  "francetvinfo.fr": {
+    "wikidata_id": "Q25395519",
+    "wikidata_name": "Q25395519",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "radio program",
+      "television program"
+    ],
+    "mbfc_id": null
+  },
+  "europe1.fr": {
+    "wikidata_id": "Q3060725",
+    "wikidata_name": "Q3060725",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Europäische Rundfunk- und Fernseh-GmbH"
+    ],
+    "types": [
+      "radio program",
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "valeursactuelles.com": {
+    "wikidata_id": "Q3553781",
+    "wikidata_name": "Valeurs Actuelles",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "right-wing extremism"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Socpresse",
+      "Valmonde"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": "valeurs-actuelles-bias"
+  },
+  "bfmtv.com": {
+    "wikidata_id": "Q130389659",
+    "wikidata_name": "BFM2",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "RMC BFM"
+    ],
+    "types": [
+      "news website",
+      "specialty channel",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "odoxa.fr": {
+    "wikidata_id": "Q20723094",
+    "wikidata_name": "Q20723094",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "elabe.fr": {
+    "wikidata_id": "Q60964759",
+    "wikidata_name": "Q60964759",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "enterprise"
+    ],
+    "mbfc_id": null
+  },
+  "huffingtonpost.fr": {
+    "wikidata_id": "Q3223501",
+    "wikidata_name": "Huffington Post France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper",
+      "pure play"
+    ],
+    "mbfc_id": null
+  },
+  "midilibre.fr": {
+    "wikidata_id": "Q1465340",
+    "wikidata_name": "Midi Libre",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q3233440"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "marianne.net": {
+    "wikidata_id": "Q3291285",
+    "wikidata_name": "Marianne",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "weekly newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "publicsenat.fr": {
+    "wikidata_id": "Q3410428",
+    "wikidata_name": "Public Sénat",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "legislature broadcaster"
+    ],
+    "mbfc_id": null
+  },
+  "sudouest.fr": {
+    "wikidata_id": "Q2608774",
+    "wikidata_name": "Sud-Ouest",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "lavoixdunord.fr": {
+    "wikidata_id": "Q2567583",
+    "wikidata_name": "La Voix du Nord",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Rossel La Voix Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "sciencespo.fr": {
+    "wikidata_id": "Q3075695",
+    "wikidata_name": "Fondation Nationale des Sciences Politiques",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "academic publisher",
+      "grand établissement",
+      "grande école",
+      "nonprofit organization",
+      "organization",
+      "public university"
+    ],
+    "mbfc_id": null
+  },
+  "blast-info.fr": {
+    "wikidata_id": "Q107907866",
+    "wikidata_name": "Blast",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "secoloditalia.it": {
+    "wikidata_id": "Q3476998",
+    "wikidata_name": "Secolo d'Italia",
+    "countries": [
+      "Italy"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "bienpublic.com": {
+    "wikidata_id": "Q3220437",
+    "wikidata_name": "Le Bien Public",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "daily newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "lcp.fr": {
+    "wikidata_id": "Q3205960",
+    "wikidata_name": "LCP-AN",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "National Assembly"
+    ],
+    "types": [
+      "legislature broadcaster"
+    ],
+    "mbfc_id": null
+  },
+  "cairn.info": {
+    "wikidata_id": "Q2933237",
+    "wikidata_name": "Cairn.info",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "scientific website",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "monde-diplomatique.fr": {
+    "wikidata_id": "Q858121",
+    "wikidata_name": "Le Monde diplomatique",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [
+      "alter-globalization",
+      "anti-imperialism",
+      "democratic socialism"
+    ],
+    "owners": [
+      "Le Monde Diplomatique SA"
+    ],
+    "types": [
+      "newspaper",
+      "scientific journal",
+      "trade magazine"
+    ],
+    "mbfc_id": "le-monde-diplomatique-bias"
+  },
+  "legifrance.gouv.fr": {
+    "wikidata_id": "Q653899",
+    "wikidata_name": "Légifrance",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Government of the French Republic"
+    ],
+    "types": [
+      "legal information system",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "france24.com": {
+    "wikidata_id": "Q30097304",
+    "wikidata_name": "France24.com",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "France 24"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "latribune.fr": {
+    "wikidata_id": "Q1799197",
+    "wikidata_name": "La Tribune",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "services.la-croix.com": {},
+  "estrepublicain.fr": {
+    "wikidata_id": "Q3052319",
+    "wikidata_name": "L'Est Républicain",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "economist.com": {
+    "wikidata_id": "Q180089",
+    "wikidata_name": "The Economist",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "The Economist Group"
+    ],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": "the-economist"
+  },
+  "rts.ch": {
+    "wikidata_id": "Q29947989",
+    "wikidata_name": "Radio Genève",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Swiss Broadcasting Corporation"
+    ],
+    "types": [
+      "business",
+      "television station",
+      "theatre troupe"
+    ],
+    "mbfc_id": null
+  },
+  "la-croix.com": {
+    "wikidata_id": "Q1230298",
+    "wikidata_name": "La Croix",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Bayard Presse"
+    ],
+    "types": [
+      "Catholic newspaper",
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "laviedesidees.fr": {
+    "wikidata_id": "Q46998032",
+    "wikidata_name": "La Vie des idées",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online magazine"
+    ],
+    "mbfc_id": null
+  },
+  "pbs.org": {
+    "wikidata_id": "Q215616",
+    "wikidata_name": "PBS",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "public broadcaster",
+      "television network"
+    ],
+    "mbfc_id": null
+  },
+  "elpais.com": {
+    "wikidata_id": "Q50009",
+    "wikidata_name": "El País",
+    "countries": [
+      "Spain"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Grupo PRISA",
+      "Liberty Acquisition Holdings"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "el-pais"
+  },
+  "causeur.fr": {
+    "wikidata_id": "Q2943153",
+    "wikidata_name": "Causeur",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Gérald Penciolelli"
+    ],
+    "types": [
+      "monthly magazine"
+    ],
+    "mbfc_id": "causeur-talker-bias"
+  },
+  "spectator.co.uk": {
+    "wikidata_id": "Q1790750",
+    "wikidata_name": "The Spectator",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Algy Cluff",
+      "Evelyn Wrench",
+      "Fairfax Media",
+      "Harold Creighton",
+      "Henry Keswick",
+      "Ian Gilmour, Baron Gilmour of Craigmillar",
+      "John Strachey",
+      "Meredith Townsend",
+      "Richard Holt Hutton",
+      "Robert Stephen Rintoul"
+    ],
+    "types": [
+      "magazine",
+      "periodical"
+    ],
+    "mbfc_id": "the-spectator-uk"
+  },
+  "regards.fr": {
+    "wikidata_id": "Q3423380",
+    "wikidata_name": "Regards",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "vert.eco": {
+    "wikidata_id": "Q113359441",
+    "wikidata_name": "Vert",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news website"
+    ],
+    "mbfc_id": null
+  },
+  "reporterre.net": {
+    "wikidata_id": "Q28495146",
+    "wikidata_name": "Reporterre",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news website"
+    ],
+    "mbfc_id": null
+  },
+  "mots.revues.org": {
+    "wikidata_id": "Q3325324",
+    "wikidata_name": "Mots : Les langages du politique",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "scientific journal"
+    ],
+    "mbfc_id": null
+  },
+  "lenouveleconomiste.fr": {
+    "wikidata_id": "Q3225059",
+    "wikidata_name": "Le Nouvel Économiste",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "archive.today": {
+    "wikidata_id": "Q13515725",
+    "wikidata_name": "Q13515725",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "browser extension",
+      "web archive",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "ldh-france.org": {
+    "wikidata_id": "Q1429947",
+    "wikidata_name": "Human Rights League",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "humanite.fr": {
+    "wikidata_id": "Q1137404",
+    "wikidata_name": "L'Humanité",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "communism"
+    ],
+    "owners": [],
+    "types": [
+      "daily newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "7sur7.be": {
+    "wikidata_id": "Q2818441",
+    "wikidata_name": "7sur7",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "ozap.com": {
+    "wikidata_id": "Q510968",
+    "wikidata_name": "PureMédias",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "national-hebdo.net": {
+    "wikidata_id": "Q3336819",
+    "wikidata_name": "National-Hebdo",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "letemps.ch": {
+    "wikidata_id": "Q673324",
+    "wikidata_name": "Q673324",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "social liberalism"
+    ],
+    "owners": [
+      "Fondation Aventinus"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "touteleurope.eu": {
+    "wikidata_id": "Q3535818",
+    "wikidata_name": "Toute l'Europe",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "groupement d'intérêt économique"
+    ],
+    "mbfc_id": null
+  },
+  "actu.fr": {
+    "wikidata_id": "Q97368663",
+    "wikidata_name": "actu.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe actu",
+      "SIPA - Ouest-France group"
+    ],
+    "types": [
+      "information resource",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "bibliobs.nouvelobs.com": {
+    "wikidata_id": "Q48755473",
+    "wikidata_name": "BibliObs",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "tf1info.fr": {
+    "wikidata_id": "Q111191650",
+    "wikidata_name": "TF1 info",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe TF1"
+    ],
+    "types": [
+      "media company",
+      "online newspaper",
+      "specialty channel",
+      "television channel",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "nicematin.com": {
+    "wikidata_id": "Q17355286",
+    "wikidata_name": "Q17355286",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q17355286"
+    ],
+    "types": [
+      "daily newspaper",
+      "shared interest cooperative enterprise"
+    ],
+    "mbfc_id": null
+  },
+  "komitid.fr": {
+    "wikidata_id": "Q54867850",
+    "wikidata_name": "Komitid",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "dhnet.be": {
+    "wikidata_id": "Q3208220",
+    "wikidata_name": "La Dernière Heure",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "lisez.com": {
+    "wikidata_id": "Q3443221",
+    "wikidata_name": "Q3443221",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "editorial collection"
+    ],
+    "mbfc_id": null
+  },
+  "telerama.fr": {
+    "wikidata_id": "Q377629",
+    "wikidata_name": "Télérama",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe Le Monde"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "rfgenealogie.com": {
+    "wikidata_id": "Q3212295",
+    "wikidata_name": "Q3212295",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "deces.matchid.io": {
+    "wikidata_id": "Q100324112",
+    "wikidata_name": "Fichier des personnes décédées mirror",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "database",
+      "mirror site"
+    ],
+    "mbfc_id": null
+  },
+  "famillechretienne.fr": {
+    "wikidata_id": "Q3065584",
+    "wikidata_name": "Famille chrétienne",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Média-Participations"
+    ],
+    "types": [
+      "weekly newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "acteurspublics.com": {
+    "wikidata_id": "Q3406839",
+    "wikidata_name": "Q3406839",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "madame.lefigaro.fr": {
+    "wikidata_id": "Q3275273",
+    "wikidata_name": "Madame Figaro",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "gala.fr": {
+    "wikidata_id": "Q3094449",
+    "wikidata_name": "Gala",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Gruner + Jahr"
+    ],
+    "types": [
+      "gossip magazine",
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "non-stop-people.com": {
+    "wikidata_id": "Q62023790",
+    "wikidata_name": "Non Stop People",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Banijay Entertainment"
+    ],
+    "types": [
+      "television channel"
+    ],
+    "mbfc_id": null
+  },
+  "youtube.com": {
+    "wikidata_id": "Q112247183",
+    "wikidata_name": "Q112247183",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Google",
+      "Q112247183"
+    ],
+    "types": [
+      "business",
+      "company",
+      "dot-com company",
+      "live streaming service",
+      "online community",
+      "online video platform",
+      "user-generated content platform",
+      "video streaming service",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "senat.fr": {
+    "wikidata_id": "Q111695467",
+    "wikidata_name": "senat.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Wikimedia list article",
+      "assembly",
+      "senate",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "letelegramme.fr": {
+    "wikidata_id": "Q3088647",
+    "wikidata_name": "Le Télégramme",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Télégramme Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "assemblee-nationale.fr": {
+    "wikidata_id": "Q936633",
+    "wikidata_name": "Palais Bourbon",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "assembly",
+      "legislature",
+      "lower house",
+      "palace",
+      "parliament building"
+    ],
+    "mbfc_id": null
+  },
+  "politis.fr": {
+    "wikidata_id": "Q511952",
+    "wikidata_name": "Politis",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "webcache.googleusercontent.com": {
+    "wikidata_id": "Q16001800",
+    "wikidata_name": "Timothy Adès",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Enumeration of 500",
+      "annual list",
+      "database",
+      "human",
+      "mosque"
+    ],
+    "mbfc_id": null
+  },
+  "lejsl.com": {
+    "wikidata_id": "Q3223737",
+    "wikidata_name": "Le Journal de Saône-et-Loire",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "savethearchive.com": {},
+  "politiquemania.com": {},
+  "lvsl.fr": {
+    "wikidata_id": "Q86663054",
+    "wikidata_name": "Le vent se lève",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "lepartidegauche.fr": {
+    "wikidata_id": "Q922707",
+    "wikidata_name": "Parti de gauche",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [
+      "Republicanism",
+      "democratic socialism",
+      "eco-socialism",
+      "environmentalism",
+      "left-wing populism"
+    ],
+    "owners": [],
+    "types": [
+      "political party"
+    ],
+    "mbfc_id": null
+  },
+  "acrimed.org": {
+    "wikidata_id": "Q2823472",
+    "wikidata_name": "Acrimed",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "hexagones.fr": {
+    "wikidata_id": "Q18048842",
+    "wikidata_name": "Q18048842",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "blogs.mediapart.fr": {
+    "wikidata_id": "Q116280260",
+    "wikidata_name": "Le Club Mediapart",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Mediapart"
+    ],
+    "types": [
+      "collaborative blog",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "neues-deutschland.de": {},
+  "tempsreel.nouvelobs.com": {},
+  "lalsace.fr": {
+    "wikidata_id": "Q1398234",
+    "wikidata_name": "L'Alsace",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "streetpress.com": {
+    "wikidata_id": "Q3500224",
+    "wikidata_name": "StreetPress",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lci.fr": {},
+  "lafranceinsoumise.fr": {
+    "wikidata_id": "Q27978402",
+    "wikidata_name": "La France insoumise",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "radical left"
+    ],
+    "political_ideologies": [
+      "alter-globalization",
+      "anti-capitalism",
+      "eco-socialism",
+      "sovereigntism"
+    ],
+    "owners": [],
+    "types": [
+      "political party"
+    ],
+    "mbfc_id": null
+  },
+  "lamontagne.fr": {
+    "wikidata_id": "Q3210777",
+    "wikidata_name": "La Montagne",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Centre France"
+    ],
+    "types": [
+      "daily newspaper",
+      "regional weekly"
+    ],
+    "mbfc_id": null
+  },
+  "jean-jaures.org": {
+    "wikidata_id": "Q3075469",
+    "wikidata_name": "Jean Jaurès Foundation",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization",
+      "party political foundation",
+      "think tank"
+    ],
+    "mbfc_id": null
+  },
+  "alternatives-economiques.fr": {
+    "wikidata_id": "Q2840427",
+    "wikidata_name": "Alternatives économiques",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "trade magazine"
+    ],
+    "mbfc_id": null
+  },
+  "lamarseillaise.fr": {
+    "wikidata_id": "Q109984940",
+    "wikidata_name": "2022 Grand Prix La Marseillaise",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Grand Prix La Marseillaise",
+      "periodical",
+      "société"
+    ],
+    "mbfc_id": null
+  },
+  "laprovence.com": {
+    "wikidata_id": "Q1799045",
+    "wikidata_name": "La Provence",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Bernard Tapie",
+      "Q139556071"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "vice.com": {
+    "wikidata_id": "Q18155506",
+    "wikidata_name": "Vice News",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Vice Media Group"
+    ],
+    "types": [
+      "YouTube channel",
+      "alternative media",
+      "dot-com company",
+      "news website",
+      "teen magazine",
+      "website"
+    ],
+    "mbfc_id": "vice-news"
+  },
+  "resultats-elections.interieur.gouv.fr": {
+    "wikidata_id": "Q127588360",
+    "wikidata_name": "2026 French municipal elections",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "municipal election",
+      "presidential election in France"
+    ],
+    "mbfc_id": null
+  },
+  "theconversation.com": {
+    "wikidata_id": "Q7727516",
+    "wikidata_name": "The Conversation",
+    "countries": [
+      "Australia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "communications media",
+      "dot-com company",
+      "nonprofit organization",
+      "website"
+    ],
+    "mbfc_id": "the-conversation"
+  },
+  "lalibre.be": {
+    "wikidata_id": "Q1798898",
+    "wikidata_name": "La Libre Belgique",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "la-libre"
+  },
+  "pressreader.com": {
+    "wikidata_id": "Q111013116",
+    "wikidata_name": "PressReader.com",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "news website",
+      "privately held company",
+      "website"
+    ],
+    "mbfc_id": "pressreader-bias"
+  },
+  "capital.fr": {
+    "wikidata_id": "Q2937369",
+    "wikidata_name": "Capital",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Prisma Media"
+    ],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "orientxxi.info": {
+    "wikidata_id": "Q18745368",
+    "wikidata_name": "Orient XXI",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "repubblica.it": {
+    "wikidata_id": "Q85329",
+    "wikidata_name": "La Repubblica",
+    "countries": [
+      "Italy"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "cultural liberalism",
+      "social democracy"
+    ],
+    "owners": [
+      "GEDI Gruppo Editoriale"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": "la-repubblica"
+  },
+  "lecanardenchaine.fr": {
+    "wikidata_id": "Q3232164",
+    "wikidata_name": "Q3232164",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical",
+      "weekly newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lindependant.fr": {
+    "wikidata_id": "Q2269524",
+    "wikidata_name": "L'Indépendant",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "rtbf.be": {
+    "wikidata_id": "Q131894134",
+    "wikidata_name": "Q131894134",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "French Community",
+      "RTBF"
+    ],
+    "types": [
+      "broadcast network",
+      "information system",
+      "online newspaper",
+      "organization",
+      "public broadcaster"
+    ],
+    "mbfc_id": null
+  },
+  "temoignagechretien.fr": {
+    "wikidata_id": "Q3546778",
+    "wikidata_name": "Q3546778",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "franceinter.fr": {
+    "wikidata_id": "Q21055455",
+    "wikidata_name": "C'est encore nous",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "podcast show",
+      "radio program"
+    ],
+    "mbfc_id": null
+  },
+  "bloomberg.com": {
+    "wikidata_id": "Q112610835",
+    "wikidata_name": "Bloomberg.com",
+    "countries": [
+      "United Kingdom",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Bloomberg L.P.",
+      "Michael Bloomberg"
+    ],
+    "types": [
+      "Approved Publication Arrangement",
+      "business",
+      "data set",
+      "enterprise",
+      "news agency",
+      "stock exchange",
+      "stock market",
+      "website"
+    ],
+    "mbfc_id": "bloomberg"
+  },
+  "apnews.com": {
+    "wikidata_id": "Q138330477",
+    "wikidata_name": "APNews.com",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news website"
+    ],
+    "mbfc_id": null
+  },
+  "euronews.com": {
+    "wikidata_id": "Q8478",
+    "wikidata_name": "Euronews",
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q2720711"
+    ],
+    "types": [
+      "specialty channel",
+      "television station"
+    ],
+    "mbfc_id": "euronews"
+  },
+  "arte.tv": {
+    "wikidata_id": "Q104733495",
+    "wikidata_name": "arte.tv",
+    "countries": [
+      "France",
+      "Germany"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Arte",
+      "Arte Deutschland TV",
+      "Arte France"
+    ],
+    "types": [
+      "catch-up TV",
+      "generalist television channel",
+      "media library",
+      "organization",
+      "television network",
+      "television series",
+      "television station",
+      "video on demand"
+    ],
+    "mbfc_id": "arte"
+  },
+  "google.fr": {
+    "wikidata_id": "Q9366",
+    "wikidata_name": "Google Search",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Google"
+    ],
+    "types": [
+      "search engine"
+    ],
+    "mbfc_id": null
+  },
+  "mediacites.fr": {
+    "wikidata_id": "Q47529515",
+    "wikidata_name": "Mediacités",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lavie.fr": {
+    "wikidata_id": "Q3213561",
+    "wikidata_name": "La Vie",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe Le Monde"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lesjours.fr": {
+    "wikidata_id": "Q22681427",
+    "wikidata_name": "Les Jours",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "tf1.fr": {
+    "wikidata_id": "Q123485026",
+    "wikidata_name": "TF1+",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Groupe TF1"
+    ],
+    "types": [
+      "live streaming",
+      "mobile app",
+      "service on Internet",
+      "television channel",
+      "television software",
+      "television station",
+      "video on demand",
+      "video streaming service",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "melenchon.fr": {
+    "wikidata_id": "Q5829",
+    "wikidata_name": "Jean-Luc Mélenchon",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "conspiracywatch.info": {
+    "wikidata_id": "Q76267992",
+    "wikidata_name": "Observatoire du conspirationnisme",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "carnegiecouncil.org": {
+    "wikidata_id": "Q5043890",
+    "wikidata_name": "Carnegie Council for Ethics in International Affairs",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "tibet-info.net": {
+    "wikidata_id": "Q2985389",
+    "wikidata_name": "Comité de soutien au peuple tibétain",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "tribunejuive.info": {
+    "wikidata_id": "Q3538936",
+    "wikidata_name": "Tribune juive",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "i24news.tv": {
+    "wikidata_id": "Q13612085",
+    "wikidata_name": "i24NEWS",
+    "countries": [
+      "France",
+      "Israel",
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Altice"
+    ],
+    "types": [
+      "specialty channel",
+      "world news channel"
+    ],
+    "mbfc_id": "i24-news"
+  },
+  "fr.timesofisrael.com": {
+    "wikidata_id": "Q6449319",
+    "wikidata_name": "The Times of Israel",
+    "countries": [
+      "Israel"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": "times-of-israel"
+  },
+  "archive.fo": {
+    "wikidata_id": "Q13515725",
+    "wikidata_name": "Q13515725",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "browser extension",
+      "web archive",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "laregledujeu.org": {
+    "wikidata_id": "Q3212560",
+    "wikidata_name": "Q3212560",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "lesoir.be": {
+    "wikidata_id": "Q690672",
+    "wikidata_name": "Le Soir",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "federalism",
+      "progressivism"
+    ],
+    "owners": [
+      "Rossel"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": "le-soir"
+  },
+  "cnccfp.fr": {
+    "wikidata_id": "Q2986676",
+    "wikidata_name": "Commission nationale des comptes de campagne et des financements politiques",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "boursedirect.fr": {
+    "wikidata_id": "Q16533733",
+    "wikidata_name": "Bourse Direct",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news website",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "philomag.com": {
+    "wikidata_id": "Q3381200",
+    "wikidata_name": "Philosophie Magazine",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Q137691341"
+    ],
+    "types": [
+      "magazine",
+      "periodical",
+      "trade magazine"
+    ],
+    "mbfc_id": null
+  },
+  "elections.figaro.net": {},
+  "unla.edu.ar": {
+    "wikidata_id": "Q6979256",
+    "wikidata_name": "National University of Lanús",
+    "countries": [
+      "Argentina"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "public university"
+    ],
+    "mbfc_id": null
+  },
+  "courrier-picard.fr": {
+    "wikidata_id": "Q729749",
+    "wikidata_name": "Le Courrier picard",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Rossel La Voix Group"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "numerama.com": {
+    "wikidata_id": "Q3346288",
+    "wikidata_name": "Numerama",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Humanoid"
+    ],
+    "types": [
+      "online newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "charliehebdo.fr": {
+    "wikidata_id": "Q18763302",
+    "wikidata_name": "Charlie Hebdo issue No. 1178",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [
+      "left-wing"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Laurent Sourisseau"
+    ],
+    "types": [
+      "satirical newspaper",
+      "version, edition or translation"
+    ],
+    "mbfc_id": null
+  },
+  "arretsurimages.net": {
+    "wikidata_id": "Q703888",
+    "wikidata_name": "Arrêt sur images",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "conflation",
+      "newspaper",
+      "television series",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "lecourrierdelatlas.com": {
+    "wikidata_id": "Q43534671",
+    "wikidata_name": "Le Courrier de l'Atlas",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "jeuneafrique.com": {
+    "wikidata_id": "Q109040831",
+    "wikidata_name": "Jeune Afrique Media Group",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Jeune Afrique Media Group"
+    ],
+    "types": [
+      "newspaper",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "shs.hal.science": {
+    "wikidata_id": "Q126085007",
+    "wikidata_name": "HAL SHS",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "software"
+    ],
+    "mbfc_id": null
+  },
+  "vanityfair.fr": {
+    "wikidata_id": "Q130208558",
+    "wikidata_name": "Q130208558",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "geneastar.org": {
+    "wikidata_id": "Q98769076",
+    "wikidata_name": "GeneaStar",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "genealogy website"
+    ],
+    "mbfc_id": null
+  },
+  "journals.openedition.org": {
+    "wikidata_id": "Q3428785",
+    "wikidata_name": "OpenEdition Journals",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "open-access publisher",
+      "publishing platform"
+    ],
+    "mbfc_id": null
+  },
+  "purepeople.com": {
+    "wikidata_id": "Q28464897",
+    "wikidata_name": "Purepeople",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Webedia"
+    ],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "lorientlejour.com": {
+    "wikidata_id": "Q1788906",
+    "wikidata_name": "L'Orient-Le Jour",
+    "countries": [
+      "Lebanon"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "whoswho.fr": {
+    "wikidata_id": "Q19983442",
+    "wikidata_name": "Who's who in France (Online)",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "biographical dictionary",
+      "book series",
+      "serial"
+    ],
+    "mbfc_id": null
+  },
+  "electronlibre.info": {},
+  "livreshebdo.fr": {
+    "wikidata_id": "Q115443051",
+    "wikidata_name": "livreshebdo.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine",
+      "organization",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "actualitte.com": {
+    "wikidata_id": "Q16010023",
+    "wikidata_name": "ActuaLitté",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "metronews.fr": {
+    "wikidata_id": "Q28493296",
+    "wikidata_name": "Metronews",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "larevuedesmedias.ina.fr": {
+    "wikidata_id": "Q136387950",
+    "wikidata_name": "Q136387950",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine",
+      "trade magazine",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "surlering.com": {},
+  "premiere.fr": {
+    "wikidata_id": "Q130706",
+    "wikidata_name": "Première",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Hildegarde",
+      "Lagardère News",
+      "Rossel"
+    ],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "ifop.com": {
+    "wikidata_id": "Q1144387",
+    "wikidata_name": "Ifop",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "spiegel.de": {
+    "wikidata_id": "Q278151",
+    "wikidata_name": "Der Spiegel",
+    "countries": [
+      "Germany"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine",
+      "newspaper",
+      "online newspaper"
+    ],
+    "mbfc_id": "spiegel-online"
+  },
+  "journal-officiel.gouv.fr": {
+    "wikidata_id": "Q1815103",
+    "wikidata_name": "Journal officiel de la République française",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government gazette"
+    ],
+    "mbfc_id": null
+  },
+  "ledevoir.com": {
+    "wikidata_id": "Q1504424",
+    "wikidata_name": "Q1504424",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "Quebec nationalism",
+      "social democracy"
+    ],
+    "owners": [],
+    "types": [
+      "daily newspaper",
+      "newspaper of record"
+    ],
+    "mbfc_id": "le-devoir"
+  },
+  "corsematin.com": {
+    "wikidata_id": "Q1135428",
+    "wikidata_name": "Corse-Matin",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "tempspresents.com": {
+    "wikidata_id": "Q130991084",
+    "wikidata_name": "Fragments sur les temps présents",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "franceculture.fr": {
+    "wikidata_id": "Q52215119",
+    "wikidata_name": "Les Chemins de la philosophie",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "podcast show",
+      "radio program",
+      "radio series"
+    ],
+    "mbfc_id": null
+  },
+  "public.fr": {
+    "wikidata_id": "Q3410409",
+    "wikidata_name": "Public",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Lagardère Group"
+    ],
+    "types": [
+      "gossip magazine",
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "nonfiction.fr": {
+    "wikidata_id": "Q3343352",
+    "wikidata_name": "Nonfiction",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "communications media",
+      "voluntary association",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "gallimard.fr": {
+    "wikidata_id": "Q21002268",
+    "wikidata_name": "Groupe Madrigall",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "book publisher",
+      "organization",
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "wikimedia.fr": {
+    "wikidata_id": "Q8423370",
+    "wikidata_name": "Wikimedia France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Wikimedia chapter"
+    ],
+    "mbfc_id": null
+  },
+  "courdecassation.fr": {
+    "wikidata_id": "Q1138599",
+    "wikidata_name": "Court of Cassation",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "court of cassation",
+      "institution of the French State",
+      "supreme court"
+    ],
+    "mbfc_id": null
+  },
+  "stophomophobie.com": {
+    "wikidata_id": "Q65160743",
+    "wikidata_name": "STOP Homophobie",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "lobservateur.fr": {
+    "wikidata_id": "Q110985780",
+    "wikidata_name": "L'Observateur",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "bbc.co.uk": {
+    "wikidata_id": "Q124066719",
+    "wikidata_name": "Home - A VR Spacewalk",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "British Broadcasting Corporation"
+    ],
+    "types": [
+      "television program",
+      "video game",
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "clubobs.nouvelobs.com": {},
+  "obsession.nouvelobs.com": {},
+  "fondation-copernic.org": {
+    "wikidata_id": "Q3075416",
+    "wikidata_name": "Fondation Copernic",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization",
+      "think tank"
+    ],
+    "mbfc_id": null
+  },
+  "elysee.fr": {
+    "wikidata_id": "Q131744704",
+    "wikidata_name": "Q131744704",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "position",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "economie.gouv.fr": {
+    "wikidata_id": "Q26995756",
+    "wikidata_name": "Ministry of the Economy and Finance building",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "building complex",
+      "economic affairs ministry",
+      "finance ministry",
+      "ministry",
+      "ministry building",
+      "ministry of trade"
+    ],
+    "mbfc_id": null
+  },
+  "www2.assemblee-nationale.fr": {
+    "wikidata_id": "Q36435376",
+    "wikidata_name": "The Republicans group",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Delegation",
+      "Q123310145",
+      "council",
+      "human",
+      "organization",
+      "parliamentary committee",
+      "parliamentary group of the French National Assembly",
+      "pressure group"
+    ],
+    "mbfc_id": null
+  },
+  "discours.vie-publique.fr": {},
+  "tns-sofres.com": {
+    "wikidata_id": "Q3512254",
+    "wikidata_name": "SOFRES",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Kantar TNS"
+    ],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "industrie.gouv.fr": {},
+  "banque-france.fr": {
+    "wikidata_id": "Q806950",
+    "wikidata_name": "Bank of France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "central bank"
+    ],
+    "mbfc_id": null
+  },
+  "ccomptes.fr": {
+    "wikidata_id": "Q1137614",
+    "wikidata_name": "Court of Audit",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Court of Audit",
+      "institution of the French State"
+    ],
+    "mbfc_id": null
+  },
+  "strategies.fr": {
+    "wikidata_id": "Q3500156",
+    "wikidata_name": "Stratégies",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "france-politique.fr": {
+    "wikidata_id": "Q63674644",
+    "wikidata_name": "France politique",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "MediaWiki wiki",
+      "blog"
+    ],
+    "mbfc_id": null
+  },
+  "juspoliticum.com": {
+    "wikidata_id": "Q140150747",
+    "wikidata_name": "Jus Politicum",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "law review"
+    ],
+    "mbfc_id": null
+  },
+  "chevenement.fr": {
+    "wikidata_id": "Q736502",
+    "wikidata_name": "Jean-Pierre Chevènement",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "universalis.fr": {
+    "wikidata_id": "Q1340194",
+    "wikidata_name": "Encyclopædia Universalis",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "bibliographic database",
+      "written work"
+    ],
+    "mbfc_id": null
+  },
+  "boutique.arte.tv": {
+    "wikidata_id": "Q139067315",
+    "wikidata_name": "Arte Boutique",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Arte France"
+    ],
+    "types": [
+      "enterprise",
+      "video on demand"
+    ],
+    "mbfc_id": null
+  },
+  "shs.cairn.info": {
+    "wikidata_id": "Q15760613",
+    "wikidata_name": "Réforme Humanisme Renaissance",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "cultural magazine",
+      "scientific journal",
+      "trade magazine"
+    ],
+    "mbfc_id": null
+  },
+  "insee.fr": {
+    "wikidata_id": "Q156616",
+    "wikidata_name": "National Institute of Statistics and Economic Studies",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "institution of the French State",
+      "online database",
+      "statistical service"
+    ],
+    "mbfc_id": null
+  },
+  "entreprises.gouv.fr": {
+    "wikidata_id": "Q87739504",
+    "wikidata_name": "Q87739504",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Commission and consultative or deliberative ministerial body",
+      "government organization",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "larepubliquedespyrenees.fr": {
+    "wikidata_id": "Q3212590",
+    "wikidata_name": "La République des Pyrénées",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "militarystrategymagazine.com": {},
+  "theatlantic.com": {
+    "wikidata_id": "Q133802523",
+    "wikidata_name": "Q133802523",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Emerson Collective"
+    ],
+    "types": [
+      "business",
+      "magazine",
+      "news website",
+      "online newspaper"
+    ],
+    "mbfc_id": "the-atlantic"
+  },
+  "brookings.edu": {
+    "wikidata_id": "Q929154",
+    "wikidata_name": "Brookings Institution",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "institution",
+      "nonprofit organization",
+      "think tank"
+    ],
+    "mbfc_id": "brookings-institute"
+  },
+  "larousse.fr": {
+    "wikidata_id": "Q273835",
+    "wikidata_name": "Éditions Larousse",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "book publisher",
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "elections.lefigaro.fr": {},
+  "africaintelligence.fr": {
+    "wikidata_id": "Q3276836",
+    "wikidata_name": "Q3276836",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Indigo Publications"
+    ],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "ledauphine.com": {
+    "wikidata_id": "Q2642655",
+    "wikidata_name": "Le Dauphiné Libéré",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "off-investigation.fr": {
+    "wikidata_id": "Q110263953",
+    "wikidata_name": "Off Investigation",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "legiondhonneur.fr": {
+    "wikidata_id": "Q115484171",
+    "wikidata_name": "Maison d'éducation de la Légion d'honneur Saint-Denis",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "educational facility",
+      "maison d'éducation de la Légion d'honneur",
+      "state order"
+    ],
+    "mbfc_id": null
+  },
+  "novinite.com": {
+    "wikidata_id": "Q7064915",
+    "wikidata_name": "Novinite.com",
+    "countries": [
+      "Bulgaria"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": "novinite"
+  },
+  "news.abidjan.net": {},
+  "eitb.com": {
+    "wikidata_id": "Q13422541",
+    "wikidata_name": "EITB",
+    "countries": [
+      "Spain"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "brand",
+      "business",
+      "communications media",
+      "newspaper",
+      "organization",
+      "public broadcaster",
+      "radio station",
+      "television",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "newsweek.com": {
+    "wikidata_id": "Q188413",
+    "wikidata_name": "Newsweek",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news magazine",
+      "online newspaper"
+    ],
+    "mbfc_id": "newsweek"
+  },
+  "assnat.qc.ca": {
+    "wikidata_id": "Q3305338",
+    "wikidata_name": "Member of the National Assembly of Quebec",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Canadian legislative assembly",
+      "elected legislative house",
+      "human",
+      "legislature broadcaster",
+      "position",
+      "unicameral legislature"
+    ],
+    "mbfc_id": null
+  },
+  "xoeditions.com": {
+    "wikidata_id": "Q3570425",
+    "wikidata_name": "Q3570425",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "voici.fr": {
+    "wikidata_id": "Q3562152",
+    "wikidata_name": "Voici",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Prisma Media"
+    ],
+    "types": [
+      "gossip magazine",
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "nova.fr": {
+    "wikidata_id": "Q2292969",
+    "wikidata_name": "Q2292969",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Nova Press"
+    ],
+    "types": [
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "bfmbusiness.com": {
+    "wikidata_id": "Q2877016",
+    "wikidata_name": "BFM Business",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business channel",
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "leprogres.fr": {
+    "wikidata_id": "Q10977",
+    "wikidata_name": "Le Progrès",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "revuepolitique.fr": {
+    "wikidata_id": "Q3428763",
+    "wikidata_name": "Revue politique et parlementaire",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "magazine"
+    ],
+    "mbfc_id": null
+  },
+  "vie-publique.fr": {
+    "wikidata_id": "Q3557864",
+    "wikidata_name": "Vie-publique.fr",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Direction de l'information légale et administrative"
+    ],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "charentelibre.fr": {
+    "wikidata_id": "Q2957712",
+    "wikidata_name": "Charente libre",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "diariandorra.ad": {
+    "wikidata_id": "Q58192630",
+    "wikidata_name": "Q58192630",
+    "countries": [
+      "Andorra"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Premsa Andorrana"
+    ],
+    "types": [
+      "news article",
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "buzzfeed.com": {
+    "wikidata_id": "Q5003490",
+    "wikidata_name": "BuzzFeed",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [
+      "anti-racism",
+      "feminism"
+    ],
+    "owners": [],
+    "types": [
+      "business",
+      "media company",
+      "website"
+    ],
+    "mbfc_id": "buzzfeed"
+  },
+  "blog.lefigaro.fr": {},
+  "journalmetro.com": {
+    "wikidata_id": "Q3333774",
+    "wikidata_name": "Journal Metro",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Transcontinental media"
+    ],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "ft.com": {
+    "wikidata_id": "Q183399",
+    "wikidata_name": "Financial Times",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [
+      "centrism"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Nikkei Inc."
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "financial-times"
+  },
+  "dna.fr": {
+    "wikidata_id": "Q381431",
+    "wikidata_name": "Dernières Nouvelles d'Alsace",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "EBRA Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "lunion.fr": {
+    "wikidata_id": "Q3204802",
+    "wikidata_name": "L'Union",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Rossel"
+    ],
+    "types": [
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "youscribe.com": {
+    "wikidata_id": "Q33124294",
+    "wikidata_name": "YouScribe",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "bva-group.com": {
+    "wikidata_id": "Q28792605",
+    "wikidata_name": "BVA Group",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "fr.euronews.com": {
+    "wikidata_id": "Q2720711",
+    "wikidata_name": "Q2720711",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Alpac Capital"
+    ],
+    "types": [
+      "business",
+      "company"
+    ],
+    "mbfc_id": null
+  },
+  "rmc.bfmtv.com": {
+    "wikidata_id": "Q686375",
+    "wikidata_name": "RMC",
+    "countries": [
+      "France",
+      "Monaco"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "RMC BFM"
+    ],
+    "types": [
+      "radio station"
+    ],
+    "mbfc_id": null
+  },
+  "washingtonpost.com": {
+    "wikidata_id": "Q166032",
+    "wikidata_name": "The Washington Post",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [
+      "neoliberalism"
+    ],
+    "owners": [
+      "Jeff Bezos"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": "washington-post"
+  },
+  "lasexta.com": {
+    "wikidata_id": "Q11687552",
+    "wikidata_name": "Q11687552",
+    "countries": [
+      "Spain"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Atresmedia",
+      "Gestora de Inversiones Audiovisuales La Sexta"
+    ],
+    "types": [
+      "specialty channel",
+      "television station"
+    ],
+    "mbfc_id": null
+  },
+  "msn.com": {
+    "wikidata_id": "Q192845",
+    "wikidata_name": "MSN",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Microsoft"
+    ],
+    "types": [
+      "web portal"
+    ],
+    "mbfc_id": "msn-com"
+  },
+  "elections.actu.fr": {},
+  "arabnews.com": {
+    "wikidata_id": "Q623659",
+    "wikidata_name": "Arab News",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Saudi Research and Media Group",
+      "Turki bin Salman Al Saud"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": "arab-news"
+  },
+  "clarin.com": {
+    "wikidata_id": "Q125733797",
+    "wikidata_name": "Clarín Entertainment Awards",
+    "countries": [
+      "Argentina"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "social democracy"
+    ],
+    "owners": [
+      "Clarín Group"
+    ],
+    "types": [
+      "daily newspaper",
+      "group of awards",
+      "tabloid media"
+    ],
+    "mbfc_id": "clarin-bias"
+  },
+  "news.abangui.com": {},
+  "boe.es": {
+    "wikidata_id": "Q85697120",
+    "wikidata_name": "Biblioteca del Boletín Oficial del Estado",
+    "countries": [
+      "Spain"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government agency",
+      "government gazette",
+      "library",
+      "main library",
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "amna.gr": {
+    "wikidata_id": "Q3274194",
+    "wikidata_name": "Macedonian Press Agency",
+    "countries": [
+      "Greece"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news agency",
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "quirinale.it": {
+    "wikidata_id": "Q106771968",
+    "wikidata_name": "quirinale.it",
+    "countries": [
+      "Italy"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Italy"
+    ],
+    "types": [
+      "Palazzo",
+      "city palace",
+      "official residence",
+      "position",
+      "presidency",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "mofa.go.jp": {
+    "wikidata_id": "Q222241",
+    "wikidata_name": "Ministry of Foreign Affairs of Japan",
+    "countries": [
+      "Japan"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "Japanese ministry",
+      "foreign affairs ministry"
+    ],
+    "mbfc_id": null
+  },
+  "lematin.ma": {
+    "wikidata_id": "Q3224400",
+    "wikidata_name": "Le Matin du Sahara et du Maghreb",
+    "countries": [
+      "Morocco"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Othman Al Omeir"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "wafa.ps": {
+    "wikidata_id": "Q2915969",
+    "wikidata_name": "WAFA",
+    "countries": [
+      "Palestine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "news agency"
+    ],
+    "mbfc_id": null
+  },
+  "telegraaf.nl": {
+    "wikidata_id": "Q1180344",
+    "wikidata_name": "De Telegraaf",
+    "countries": [
+      "Netherlands"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Hak Holdert",
+      "Mediahuis Nederland"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": "de-telegraaf"
+  },
+  "prezydent.pl": {
+    "wikidata_id": "Q1054799",
+    "wikidata_name": "President of the Republic of Poland",
+    "countries": [
+      "Poland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "governing body",
+      "government agency",
+      "public office"
+    ],
+    "mbfc_id": null
+  },
+  "ordens.presidencia.pt": {
+    "wikidata_id": "Q87478337",
+    "wikidata_name": "Ordens Honoríficas Portuguesas",
+    "countries": [
+      "Portugal"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "prezident.sk": {
+    "wikidata_id": "Q6468838",
+    "wikidata_name": "President of Slovakia",
+    "countries": [
+      "Slovakia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "public office"
+    ],
+    "mbfc_id": null
+  },
+  "directinfo.webmanagercenter.com": {},
+  "impo.com.uy": {
+    "wikidata_id": "Q95703669",
+    "wikidata_name": "National Directorate of Official Printings and Publications",
+    "countries": [
+      "Uruguay"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "government agency"
+    ],
+    "mbfc_id": null
+  },
+  "lanouvellerepublique.fr": {
+    "wikidata_id": "Q3211144",
+    "wikidata_name": "La Nouvelle République du Centre-Ouest",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "La Nouvelle République du Centre-Ouest"
+    ],
+    "types": [
+      "newspaper",
+      "periodical"
+    ],
+    "mbfc_id": null
+  },
+  "telegraph.co.uk": {
+    "wikidata_id": "Q12741725",
+    "wikidata_name": "The Sunday Telegraph",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [
+      "centre-right"
+    ],
+    "political_ideologies": [
+      "conservatism"
+    ],
+    "owners": [
+      "Telegraph Media Group"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper",
+      "periodical",
+      "weekly newspaper"
+    ],
+    "mbfc_id": "daily-telegraph"
+  },
+  "independent.co.uk": {
+    "wikidata_id": "Q20073466",
+    "wikidata_name": "Independent on Sunday",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "economic liberalism",
+      "liberalism"
+    ],
+    "owners": [
+      "Alexander Lebedev"
+    ],
+    "types": [
+      "Sunday edition",
+      "daily newspaper",
+      "online newspaper"
+    ],
+    "mbfc_id": "the-independent"
+  },
+  "rayol-canadel.fr": {
+    "wikidata_id": "Q840240",
+    "wikidata_name": "Rayol-Canadel-sur-Mer",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "commune of France"
+    ],
+    "mbfc_id": null
+  },
+  "hattemer.fr": {
+    "wikidata_id": "Q3128334",
+    "wikidata_name": "Cours Hattemer",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "lycée"
+    ],
+    "mbfc_id": null
+  },
+  "books.google.be": {},
+  "guy.perville.free.fr": {
+    "wikidata_id": "Q3122066",
+    "wikidata_name": "Guy Pervillé",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "georges-pompidou.org": {
+    "wikidata_id": "Q20666693",
+    "wikidata_name": "Institut Georges Pompidou",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "association under the French law of 1901"
+    ],
+    "mbfc_id": null
+  },
+  "catalogue.bnf.fr": {
+    "wikidata_id": "Q15222191",
+    "wikidata_name": "general catalog of BnF",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "bibliographic database",
+      "library catalog",
+      "online public access catalog"
+    ],
+    "mbfc_id": null
+  },
+  "pop.culture.gouv.fr": {
+    "wikidata_id": "Q68471231",
+    "wikidata_name": "POP",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "web portal"
+    ],
+    "mbfc_id": null
+  },
+  "boston.com": {
+    "wikidata_id": "Q4947705",
+    "wikidata_name": "Boston.com",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Boston Globe"
+    ],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": "boston-com"
+  },
+  "actuabd.com": {
+    "wikidata_id": "Q16525225",
+    "wikidata_name": "Actua BD",
+    "countries": [
+      "Belgium"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "dx.doi.org": {
+    "wikidata_id": "Q107652867",
+    "wikidata_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "article",
+      "data set",
+      "edited volume",
+      "report",
+      "scientific non-fiction literature",
+      "supplement",
+      "version, edition or translation"
+    ],
+    "mbfc_id": null
+  },
+  "persee.fr": {
+    "wikidata_id": "Q252430",
+    "wikidata_name": "Persée",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Ministry of Higher Education and Research"
+    ],
+    "types": [
+      "bibliographic database",
+      "digital library",
+      "periodical library"
+    ],
+    "mbfc_id": null
+  },
+  "culture.gouv.fr": {
+    "wikidata_id": "Q384602",
+    "wikidata_name": "Ministry of Culture of France",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "ministry of culture"
+    ],
+    "mbfc_id": null
+  },
+  "revuedesdeuxmondes.fr": {
+    "wikidata_id": "Q1569226",
+    "wikidata_name": "Revue des Deux Mondes",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "cultural magazine",
+      "literary magazine",
+      "magazine",
+      "periodical",
+      "scientific journal"
+    ],
+    "mbfc_id": null
+  },
+  "fr.wikisource.org": {
+    "wikidata_id": "Q15156541",
+    "wikidata_name": "French Wikisource",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Wikimedia Foundation"
+    ],
+    "types": [
+      "Wikisource language edition"
+    ],
+    "mbfc_id": null
+  },
+  "dauphin-ota.info": {
+    "wikidata_id": "Q3158643",
+    "wikidata_name": "Jacques Dauphin",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "idu.org": {
+    "wikidata_id": "Q862603",
+    "wikidata_name": "International Democracy Union",
+    "countries": [
+      "internationality"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [
+      "conservatism"
+    ],
+    "owners": [],
+    "types": [
+      "political international"
+    ],
+    "mbfc_id": null
+  },
+  "archives.premier-ministre.gouv.fr": {},
+  "ladocumentationfrancaise.fr": {
+    "wikidata_id": "Q3208324",
+    "wikidata_name": "La Documentation française",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "gisti.org": {
+    "wikidata_id": "Q3117642",
+    "wikidata_name": "GISTI",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "news.google.com": {
+    "wikidata_id": "Q12020",
+    "wikidata_name": "Google News",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Google"
+    ],
+    "types": [
+      "news aggregation website",
+      "search engine"
+    ],
+    "mbfc_id": "google-news"
+  },
+  "latimes.com": {
+    "wikidata_id": "Q188515",
+    "wikidata_name": "Los Angeles Times",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [
+      "centre-left"
+    ],
+    "political_ideologies": [],
+    "owners": [
+      "Patrick Soon-Shiong"
+    ],
+    "types": [
+      "daily newspaper",
+      "newspaper"
+    ],
+    "mbfc_id": "la-times-los-angeles-times"
   }
 }

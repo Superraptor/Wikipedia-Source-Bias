@@ -186,5 +186,785 @@
   "gss.revues.org": {},
   "tempsreel.nouvelobs.com": {},
   "frontnational.com": {},
-  "spire.sciencespo.fr": {}
+  "spire.sciencespo.fr": {},
+  "boursier.com": {},
+  "yvesdaoudal.hautetfort.com": {},
+  "cevipof.com": {},
+  "rfi.fr": {
+    "wikidata_label": "RFI",
+    "wikidata_id": "Q30097346",
+    "wikidata_description": ""
+  },
+  "elections.lefigaro.fr": {},
+  "elections.interieur.gouv.fr": {},
+  "eur-lex.europa.eu": {
+    "wikidata_label": "EUR-Lex",
+    "wikidata_id": "Q1276282",
+    "wikidata_description": "service providing legal texts of the European Union"
+  },
+  "blogs.lexpress.fr": {},
+  "rtl.fr": {},
+  "elections.lavoixdunord.fr": {},
+  "ladepeche.fr": {
+    "wikidata_label": "La Dépêche du Midi",
+    "wikidata_id": "Q742587",
+    "wikidata_description": "regional daily newspaper"
+  },
+  "time.com": {
+    "wikidata_label": "Time.com",
+    "wikidata_id": "Q111728681",
+    "wikidata_description": "news website"
+  },
+  "conseil-constitutionnel.fr": {},
+  "francesoir.fr": {},
+  "ipsos.com": {},
+  "20minutes.fr": {
+    "wikidata_label": "20 minutes",
+    "wikidata_id": "Q7245532",
+    "wikidata_description": "French daily newspaper"
+  },
+  "francetvinfo.fr": {},
+  "politico.eu": {
+    "wikidata_label": "Politico Europe",
+    "wikidata_id": "Q991826",
+    "wikidata_description": "European edition of the American news website Politico"
+  },
+  "lelab.europe1.fr": {},
+  "lesechos.fr": {},
+  "challenges.fr": {},
+  "parismatch.com": {},
+  "europe1.fr": {},
+  "valeursactuelles.com": {},
+  "bfmtv.com": {
+    "wikidata_label": "Dirigeants BFM Business",
+    "wikidata_id": "Q52328097",
+    "wikidata_description": ""
+  },
+  "lci.tf1.fr": {},
+  "odoxa.fr": {},
+  "elabe.fr": {},
+  "huffingtonpost.fr": {
+    "wikidata_label": "Huffington Post France",
+    "wikidata_id": "Q3223501",
+    "wikidata_description": "newspaper"
+  },
+  "lci.fr": {},
+  "midilibre.fr": {
+    "wikidata_label": "Midi Libre",
+    "wikidata_id": "Q1465340",
+    "wikidata_description": "French newspaper"
+  },
+  "marianne.net": {},
+  "publicsenat.fr": {},
+  "sudouest.fr": {
+    "wikidata_label": "Sud-Ouest",
+    "wikidata_id": "Q2608774",
+    "wikidata_description": "French newspaper"
+  },
+  "www2.assemblee-nationale.fr": {},
+  "lavoixdunord.fr": {},
+  "sciencespo.fr": {},
+  "blast-info.fr": {},
+  "secoloditalia.it": {},
+  "bienpublic.com": {},
+  "lcp.fr": {},
+  "cairn.info": {
+    "wikidata_label": "Cairn.info",
+    "wikidata_id": "Q2933237",
+    "wikidata_description": "Web portal for scientific publications in French"
+  },
+  "droites-extremes.blog.lemonde.fr": {},
+  "monde-diplomatique.fr": {
+    "wikidata_label": "Le Monde diplomatique",
+    "wikidata_id": "Q858121",
+    "wikidata_description": "monthly newspaper based in France"
+  },
+  "revue-signes.info": {},
+  "legifrance.gouv.fr": {
+    "wikidata_label": "Légifrance",
+    "wikidata_id": "Q653899",
+    "wikidata_description": "website for French legal information"
+  },
+  "tahiti-infos.com": {},
+  "la1ere.francetvinfo.fr": {},
+  "france24.com": {
+    "wikidata_label": "France24.com",
+    "wikidata_id": "Q30097304",
+    "wikidata_description": "online newspaper of French news television network France 24"
+  },
+  "rmc.fr": {},
+  "latribune.fr": {},
+  "decodeurs.blog.lemonde.fr": {},
+  "halshs.archives-ouvertes.fr": {},
+  "services.la-croix.com": {},
+  "estrepublicain.fr": {},
+  "euractiv.fr": {},
+  "economist.com": {},
+  "rts.ch": {},
+  "la-croix.com": {
+    "wikidata_label": "La Croix",
+    "wikidata_id": "Q1230298",
+    "wikidata_description": "French Catholic newspaper (1880–)"
+  },
+  "international.blogs.ouest-france.fr": {},
+  "laviedesidees.fr": {
+    "wikidata_label": "La Vie des idées",
+    "wikidata_id": "Q46998032",
+    "wikidata_description": "online magazine"
+  },
+  "pbs.org": {
+    "wikidata_label": "PBS",
+    "wikidata_id": "Q215616",
+    "wikidata_description": "American public broadcaster and television network"
+  },
+  "elpais.com": {},
+  "causeur.fr": {
+    "wikidata_label": "Causeur",
+    "wikidata_id": "Q2943153",
+    "wikidata_description": "French news magazine"
+  },
+  "yagg.com": {
+    "wikidata_label": "Yagg",
+    "wikidata_id": "Q16683588",
+    "wikidata_description": "website"
+  },
+  "spectator.co.uk": {},
+  "regards.fr": {},
+  "vert.eco": {
+    "wikidata_label": "Vert",
+    "wikidata_id": "Q113359441",
+    "wikidata_description": "French news website with a primary focus on environment topics"
+  },
+  "reporterre.net": {
+    "wikidata_label": "Reporterre",
+    "wikidata_id": "Q28495146",
+    "wikidata_description": "French news website with a primary focus on environment topics"
+  },
+  "regionales2010.slate.fr": {},
+  "mots.revues.org": {},
+  "lenouveleconomiste.fr": {},
+  "lecourant.info": {},
+  "archive.today": {
+    "wikidata_label": "archive.today",
+    "wikidata_id": "Q13515725",
+    "wikidata_description": "web-archiving website"
+  },
+  "ldh-france.org": {},
+  "humanite.fr": {},
+  "linfo.re": {},
+  "7sur7.be": {
+    "wikidata_label": "7sur7",
+    "wikidata_id": "Q2818441",
+    "wikidata_description": "Belgian information website"
+  },
+  "ozap.com": {
+    "wikidata_label": "PureMédias",
+    "wikidata_id": "Q510968",
+    "wikidata_description": "website"
+  },
+  "national-hebdo.net": {},
+  "m.lesechos.fr": {},
+  "letemps.ch": {},
+  "touteleurope.eu": {
+    "wikidata_label": "Toute l'Europe",
+    "wikidata_id": "Q3535818",
+    "wikidata_description": ""
+  },
+  "actu.fr": {
+    "wikidata_label": "actu.fr",
+    "wikidata_id": "Q97368663",
+    "wikidata_description": "French online newspaper owned"
+  },
+  "bibliobs.nouvelobs.com": {},
+  "leplus.nouvelobs.com": {},
+  "tf1info.fr": {
+    "wikidata_label": "TF1 info",
+    "wikidata_id": "Q111191650",
+    "wikidata_description": "digital news platform"
+  },
+  "nicematin.com": {},
+  "komitid.fr": {},
+  "dhnet.be": {
+    "wikidata_label": "La Dernière Heure",
+    "wikidata_id": "Q3208220",
+    "wikidata_description": "newspaper"
+  },
+  "lisez.com": {},
+  "telerama.fr": {},
+  "rfgenealogie.com": {},
+  "anom.archivesnationales.culture.gouv.fr": {},
+  "deces.matchid.io": {},
+  "paris-normandie.fr": {},
+  "information.tv5monde.com": {},
+  "famillechretienne.fr": {},
+  "hiram.be": {},
+  "republique-des-lettres.fr": {},
+  "acteurspublics.com": {},
+  "madame.lefigaro.fr": {},
+  "gala.fr": {
+    "wikidata_label": "Gala",
+    "wikidata_id": "Q3094449",
+    "wikidata_description": "French language weekly celebrity and women's magazine published in Paris, France"
+  },
+  "non-stop-people.com": {},
+  "gauchemip.org": {},
+  "youtube.com": {
+    "wikidata_label": "YouTube",
+    "wikidata_id": "Q866",
+    "wikidata_description": "American video-sharing platform owned by Alphabet Inc."
+  },
+  "senat.fr": {
+    "wikidata_label": "senat.fr",
+    "wikidata_id": "Q111695467",
+    "wikidata_description": ""
+  },
+  "letelegramme.fr": {
+    "wikidata_label": "Le Télégramme",
+    "wikidata_id": "Q3088647",
+    "wikidata_description": "French daily newspaper"
+  },
+  "assemblee-nationale.fr": {},
+  "prs38.unblog.fr": {},
+  "politis.fr": {},
+  "jean-luc-melenchon.fr": {},
+  "savethearchive.com": {},
+  "webcache.googleusercontent.com": {},
+  "afp.google.com": {},
+  "casuffitcommeca.fr": {},
+  "jeanluc-melenchon2017.fr": {},
+  "gauche.blog.lemonde.fr": {},
+  "lejsl.com": {},
+  "politiquemania.com": {},
+  "lvsl.fr": {},
+  "lepartidegauche.fr": {},
+  "acrimed.org": {
+    "wikidata_label": "Acrimed",
+    "wikidata_id": "Q2823472",
+    "wikidata_description": "non governmental organisation"
+  },
+  "hexagones.fr": {
+    "wikidata_label": "Hexagones",
+    "wikidata_id": "Q18048842",
+    "wikidata_description": "French online newspaper"
+  },
+  "m6r.fr": {},
+  "ensemble-fdg.org": {},
+  "blogs.mediapart.fr": {},
+  "bva.fr": {},
+  "franceculture.fr": {},
+  "neues-deutschland.de": {},
+  "franceinter.fr": {},
+  "france3-regions.francetvinfo.fr": {},
+  "lalsace.fr": {},
+  "streetpress.com": {
+    "wikidata_label": "StreetPress",
+    "wikidata_id": "Q3500224",
+    "wikidata_description": "French online media"
+  },
+  "lafranceinsoumise.fr": {},
+  "lamontagne.fr": {
+    "wikidata_label": "La Montagne",
+    "wikidata_id": "Q3210777",
+    "wikidata_description": "regional daily newspaper published in France"
+  },
+  "jean-jaures.org": {},
+  "alternatives-economiques.fr": {},
+  "lamarseillaise.fr": {},
+  "laprovence.com": {
+    "wikidata_label": "La Provence",
+    "wikidata_id": "Q1799045",
+    "wikidata_description": "French newspaper belonging to CMA CGM"
+  },
+  "vice.com": {
+    "wikidata_label": "VICE.com",
+    "wikidata_id": "Q105072339",
+    "wikidata_description": "news website of Vice"
+  },
+  "resultats-elections.interieur.gouv.fr": {},
+  "theconversation.com": {
+    "wikidata_label": "The Conversation",
+    "wikidata_id": "Q7727516",
+    "wikidata_description": "news organization that publishes news articles written by academics"
+  },
+  "lalibre.be": {},
+  "pressreader.com": {
+    "wikidata_label": "PressReader.com",
+    "wikidata_id": "Q111013116",
+    "wikidata_description": "news website; product of PressReader Inc."
+  },
+  "capital.fr": {
+    "wikidata_label": "Capital",
+    "wikidata_id": "Q2937369",
+    "wikidata_description": "French business magazine"
+  },
+  "orientxxi.info": {
+    "wikidata_label": "Orient XXI",
+    "wikidata_id": "Q18745368",
+    "wikidata_description": ""
+  },
+  "repubblica.it": {
+    "wikidata_label": "La Repubblica",
+    "wikidata_id": "Q85329",
+    "wikidata_description": "Italian daily newspaper"
+  },
+  "lecanardenchaine.fr": {},
+  "lindependant.fr": {},
+  "emilemagazine.fr": {},
+  "rtbf.be": {
+    "wikidata_label": "RTBF",
+    "wikidata_id": "Q1190356",
+    "wikidata_description": "Belgium's French-language public broadcaster"
+  },
+  "temoignagechretien.fr": {},
+  "bloomberg.com": {
+    "wikidata_label": "Bloomberg.com",
+    "wikidata_id": "Q112610835",
+    "wikidata_description": "official website of Bloomberg L.P."
+  },
+  "apnews.com": {
+    "wikidata_label": "Associated Press",
+    "wikidata_id": "Q40469",
+    "wikidata_description": "multinational nonprofit news agency headquartered in New York, United States"
+  },
+  "euronews.com": {
+    "wikidata_label": "Euronews",
+    "wikidata_id": "Q8478",
+    "wikidata_description": "pan-European news television channel"
+  },
+  "arte.tv": {
+    "wikidata_label": "arte.tv",
+    "wikidata_id": "Q104733495",
+    "wikidata_description": ""
+  },
+  "google.fr": {},
+  "mediacites.fr": {
+    "wikidata_label": "Mediacités",
+    "wikidata_id": "Q47529515",
+    "wikidata_description": "French independent online local newspaper"
+  },
+  "lavie.fr": {
+    "wikidata_label": "La Vie",
+    "wikidata_id": "Q3213561",
+    "wikidata_description": "weekly French Roman Catholic magazine"
+  },
+  "politique-animaux.fr": {},
+  "hucault.com": {},
+  "preavis.org": {},
+  "letelegramme.com": {},
+  "esperanto-au-bac.fr": {},
+  "lesjours.fr": {
+    "wikidata_label": "Les Jours",
+    "wikidata_id": "Q22681427",
+    "wikidata_description": "French newspaper"
+  },
+  "rue89.nouvelobs.com": {},
+  "sciencespo.hal.science": {},
+  "bruxelles.blogs.liberation.fr": {},
+  "tf1.fr": {
+    "wikidata_label": "TF1",
+    "wikidata_id": "Q214683",
+    "wikidata_description": "French television channel"
+  },
+  "melenchon.fr": {},
+  "conspiracywatch.info": {
+    "wikidata_label": "Conspiracy Watch",
+    "wikidata_id": "Q2994765",
+    "wikidata_description": "information website"
+  },
+  "carnegiecouncil.org": {},
+  "m.huffingtonpost.fr": {},
+  "mobile.lemonde.fr": {},
+  "filiu.blog.lemonde.fr": {},
+  "politique.sémantique.com": {},
+  "tibet-info.net": {},
+  "ce-soir-ou-jamais.france3.fr": {},
+  "chine-info.com": {},
+  "tribunejuive.info": {},
+  "i24news.tv": {
+    "wikidata_label": "i24NEWS",
+    "wikidata_id": "Q13612085",
+    "wikidata_description": "International television news channel"
+  },
+  "fr.timesofisrael.com": {},
+  "montpellier-journal.fr": {},
+  "archive.fo": {
+    "wikidata_label": "archive.today",
+    "wikidata_id": "Q13515725",
+    "wikidata_description": "web-archiving website"
+  },
+  "lagrandeconversation.com": {},
+  "laregledujeu.org": {},
+  "lesoir.be": {},
+  "cnccfp.fr": {},
+  "boursedirect.fr": {
+    "wikidata_label": "Bourse Direct",
+    "wikidata_id": "Q16533733",
+    "wikidata_description": ""
+  },
+  "philomag.com": {},
+  "elections.figaro.net": {},
+  "unla.edu.ar": {},
+  "courrier-picard.fr": {},
+  "numerama.com": {
+    "wikidata_label": "Numerama",
+    "wikidata_id": "Q3346288",
+    "wikidata_description": "French news website"
+  },
+  "charliehebdo.fr": {},
+  "arretsurimages.net": {
+    "wikidata_label": "Arrêt sur images",
+    "wikidata_id": "Q703888",
+    "wikidata_description": "French TV show"
+  },
+  "lecourrierdelatlas.com": {},
+  "jeuneafrique.com": {
+    "wikidata_label": "Jeune Afrique",
+    "wikidata_id": "Q1252739",
+    "wikidata_description": "newspaper"
+  },
+  "shs.hal.science": {},
+  "vanityfair.fr": {},
+  "geneastar.org": {},
+  "journals.openedition.org": {},
+  "purepeople.com": {
+    "wikidata_label": "Purepeople",
+    "wikidata_id": "Q28464897",
+    "wikidata_description": "French and Brazilian celebrity website originating in France"
+  },
+  "lorientlejour.com": {},
+  "sird.eu": {},
+  "whoswho.fr": {},
+  "electronlibre.info": {},
+  "lettreaudiovisuel.com": {},
+  "livreshebdo.fr": {
+    "wikidata_label": "livreshebdo.fr",
+    "wikidata_id": "Q115443051",
+    "wikidata_description": "website of the publication Livres Hebdo"
+  },
+  "actualitte.com": {
+    "wikidata_label": "ActuaLitté",
+    "wikidata_id": "Q16010023",
+    "wikidata_description": "online literature magazine"
+  },
+  "metronews.fr": {},
+  "larevuedesmedias.ina.fr": {},
+  "surlering.com": {},
+  "premiere.fr": {
+    "wikidata_label": "Première",
+    "wikidata_id": "Q130706",
+    "wikidata_description": "French film magazine first published in 1976"
+  },
+  "ifop.com": {},
+  "spiegel.de": {
+    "wikidata_label": "Der Spiegel",
+    "wikidata_id": "Q278151",
+    "wikidata_description": "German news website"
+  },
+  "journal-officiel.gouv.fr": {},
+  "ledevoir.com": {},
+  "corsematin.com": {},
+  "tempspresents.com": {},
+  "levif.be": {},
+  "archiviostorico.corriere.it": {},
+  "public.fr": {},
+  "insee.fr": {},
+  "lhistoire.fr": {},
+  "marieclaire.fr": {},
+  "hal.archives-ouvertes.fr": {},
+  "sudinfo.be": {},
+  "eric%20zemmour%20et%20marine%20le%20pen…%20leurs%20différences%20flagrantes%20sur%20l'économie": {},
+  "lequotidiendumedecin.fr": {},
+  "informations.handicap.fr": {},
+  "editionslibertalia.com": {},
+  "nonfiction.fr": {
+    "wikidata_label": "Nonfiction",
+    "wikidata_id": "Q3343352",
+    "wikidata_description": "Nonfiction.fr, French website"
+  },
+  "gallimard.fr": {},
+  "wikimedia.fr": {},
+  "martinique.franceantilles.fr": {},
+  "courdecassation.fr": {},
+  "stophomophobie.com": {},
+  "lobservateur.fr": {},
+  "bbc.co.uk": {
+    "wikidata_label": "BBC Online",
+    "wikidata_id": "Q747860",
+    "wikidata_description": "brand name and home for the BBC's UK online service"
+  },
+  "clubobs.nouvelobs.com": {},
+  "obsession.nouvelobs.com": {},
+  "archive.lejdd.fr": {},
+  "fondation-copernic.org": {},
+  "elysee.fr": {
+    "wikidata_label": "elysee.fr",
+    "wikidata_id": "Q131744704",
+    "wikidata_description": ""
+  },
+  "u-m-p.org": {},
+  "economie.gouv.fr": {},
+  "discours.vie-publique.fr": {},
+  "col.fr": {},
+  "tns-sofres.com": {},
+  "maire-info.com": {},
+  "industrie.gouv.fr": {},
+  "ca-pca.net": {},
+  "banque-france.fr": {},
+  "ccomptes.fr": {},
+  "rotaryneuilly.org": {},
+  "strategies.fr": {},
+  "france-politique.fr": {
+    "wikidata_label": "France politique",
+    "wikidata_id": "Q63674644",
+    "wikidata_description": "website"
+  },
+  "juspoliticum.com": {},
+  "chevenement.fr": {},
+  "zdnet.fr": {},
+  "fr.news.yahoo.com": {},
+  "universalis.fr": {
+    "wikidata_label": "Encyclopædia Universalis",
+    "wikidata_id": "Q1340194",
+    "wikidata_description": "French-language general encyclopedia published by Encyclopædia Britannica"
+  },
+  "boutique.arte.tv": {},
+  "ipsos.fr": {},
+  "www1.rfi.fr": {},
+  "shs.cairn.info": {},
+  "prisme-asso.org": {},
+  "entreprises.gouv.fr": {},
+  "aefinfo.fr": {},
+  "debats2012.fr": {},
+  "larepubliquedespyrenees.fr": {
+    "wikidata_label": "La République des Pyrénées",
+    "wikidata_id": "Q3212590",
+    "wikidata_description": "newspaper"
+  },
+  "militarystrategymagazine.com": {},
+  "theatlantic.com": {
+    "wikidata_label": "theatlantic.com",
+    "wikidata_id": "Q133802523",
+    "wikidata_description": "American online newspaper"
+  },
+  "brookings.edu": {},
+  "universalis-edu.com": {},
+  "larousse.fr": {
+    "wikidata_label": "Éditions Larousse",
+    "wikidata_id": "Q273835",
+    "wikidata_description": "French publishing house"
+  },
+  "francetv.fr": {},
+  "de.euronews.com": {},
+  "m.leparisien.fr": {},
+  "resultats.primaire2016.org": {},
+  "actu.orange.fr": {},
+  "africaintelligence.fr": {},
+  "ledauphine.com": {},
+  "off-investigation.fr": {},
+  "legiondhonneur.fr": {},
+  "old.didierreynders.be": {},
+  "novinite.com": {
+    "wikidata_label": "Novinite.com",
+    "wikidata_id": "Q7064915",
+    "wikidata_description": "Bulgarian newspaper and news website"
+  },
+  "afriquin.fos.com": {},
+  "news.abidjan.net": {},
+  "eitb.com": {
+    "wikidata_label": "EITB",
+    "wikidata_id": "Q13422541",
+    "wikidata_description": "public service broadcaster of the Basque Autonomous Community's"
+  },
+  "legimonaco.mc": {},
+  "zakon1.rada.gov.ua": {},
+  "newsweek.com": {
+    "wikidata_label": "Newsweek",
+    "wikidata_id": "Q188413",
+    "wikidata_description": "weekly magazine based in New York City"
+  },
+  "assnat.qc.ca": {},
+  "cadebordedepotins.com": {},
+  "xoeditions.com": {},
+  "voici.fr": {
+    "wikidata_label": "Voici",
+    "wikidata_id": "Q3562152",
+    "wikidata_description": "French magazine"
+  },
+  "nova.fr": {},
+  "bfmbusiness.com": {},
+  "media.rtl.fr": {},
+  "leprogres.fr": {},
+  "revuepolitique.fr": {},
+  "andrebercoff.com": {},
+  "ecriture-communication.com": {},
+  "vie-publique.fr": {
+    "wikidata_label": "Vie-publique.fr",
+    "wikidata_id": "Q3557864",
+    "wikidata_description": ""
+  },
+  "politique.net": {},
+  "charentelibre.fr": {},
+  "diariandorra.ad": {},
+  "luipresident.blog.lemonde.fr": {},
+  "buzzfeed.com": {
+    "wikidata_label": "BuzzFeed",
+    "wikidata_id": "Q5003490",
+    "wikidata_description": "American internet media and news company"
+  },
+  "blog.lefigaro.fr": {},
+  "news.un.org": {},
+  "journalmetro.com": {},
+  "ambafrance-ad.org": {},
+  "ft.com": {
+    "wikidata_label": "Financial Times",
+    "wikidata_id": "Q183399",
+    "wikidata_description": "London-based daily newspaper"
+  },
+  "dna.fr": {
+    "wikidata_label": "Dernières Nouvelles d'Alsace",
+    "wikidata_id": "Q381431",
+    "wikidata_description": "French regional daily newspaper"
+  },
+  "lunion.fr": {},
+  "rtl.be": {},
+  "youscribe.com": {
+    "wikidata_label": "YouScribe",
+    "wikidata_id": "Q33124294",
+    "wikidata_description": "web-based written documents streaming service and publisher"
+  },
+  "bva-group.com": {},
+  "fr.euronews.com": {},
+  "rmc.bfmtv.com": {},
+  "washingtonpost.com": {
+    "wikidata_label": "The Washington Post",
+    "wikidata_id": "Q166032",
+    "wikidata_description": "daily broadsheet newspaper in Washington, D.C."
+  },
+  "lasexta.com": {},
+  "msn.com": {
+    "wikidata_label": "MSN",
+    "wikidata_id": "Q192845",
+    "wikidata_description": "collection of Internet sites by Microsoft"
+  },
+  "elections.actu.fr": {},
+  "archives-resultats-elections.interieur.gouv.fr": {},
+  "arabnews.com": {},
+  "clarin.com": {
+    "wikidata_label": "Clarín",
+    "wikidata_id": "Q878108",
+    "wikidata_description": "Argentine media group and Spanish-language daily newspaper"
+  },
+  "news.abangui.com": {},
+  "boe.es": {},
+  "amna.gr": {
+    "wikidata_label": "Athens-Macedonian News Agency",
+    "wikidata_id": "Q3910901",
+    "wikidata_description": "Greek news agency"
+  },
+  "quirinale.it": {
+    "wikidata_label": "quirinale.it",
+    "wikidata_id": "Q106771968",
+    "wikidata_description": "website of the Presidency of the Italian Republic"
+  },
+  "mofa.go.jp": {},
+  "en.tengrinews.kz": {},
+  "lematin.ma": {},
+  "wafa.ps": {},
+  "telegraaf.nl": {
+    "wikidata_label": "De Telegraaf",
+    "wikidata_id": "Q1180344",
+    "wikidata_description": "Dutch newspaper"
+  },
+  "prezydent.pl": {},
+  "ordens.presidencia.pt": {
+    "wikidata_label": "Ordens Honoríficas Portuguesas",
+    "wikidata_id": "Q87478337",
+    "wikidata_description": "web site"
+  },
+  "ici.radio-canada.ca": {},
+  "canord.presidency.ro": {},
+  "prezident.sk": {},
+  "directinfo.webmanagercenter.com": {},
+  "impo.com.uy": {},
+  "musique.rfi.fr": {},
+  "telos-eu.com": {},
+  "lanouvellerepublique.fr": {},
+  "telegraph.co.uk": {
+    "wikidata_label": "The Daily Telegraph",
+    "wikidata_id": "Q192621",
+    "wikidata_description": "British daily broadsheet newspaper"
+  },
+  "independent.co.uk": {
+    "wikidata_label": "The Independent",
+    "wikidata_id": "Q11149",
+    "wikidata_description": "British national daily newspaper"
+  },
+  "rayol-canadel.fr": {},
+  "hattemer.fr": {},
+  "books.google.be": {},
+  "algeria-watch.org": {},
+  "guy.perville.free.fr": {},
+  "georges-pompidou.org": {},
+  "catalogue.bnf.fr": {
+    "wikidata_label": "general catalog of BnF",
+    "wikidata_id": "Q15222191",
+    "wikidata_description": "bibliographic descriptions of the holdings of the Bibliothèque nationale de France and the authority files"
+  },
+  "pop.culture.gouv.fr": {},
+  "bases.ourouk.fr": {},
+  "inflation.free.fr": {},
+  "minefe.gouv.fr": {},
+  "atomicsarchives.chez.com": {},
+  "boston.com": {
+    "wikidata_label": "Boston.com",
+    "wikidata_id": "Q4947705",
+    "wikidata_description": "news and information website"
+  },
+  "actuabd.com": {
+    "wikidata_label": "Actua BD",
+    "wikidata_id": "Q16525225",
+    "wikidata_description": "Belgian webzine about comics"
+  },
+  "kronobase.org": {},
+  "gaullisme.net": {},
+  "persee.fr": {
+    "wikidata_label": "Persée",
+    "wikidata_id": "Q252430",
+    "wikidata_description": "French digital library"
+  },
+  "parisobs.nouvelobs.com": {},
+  "droit.cairn.info": {},
+  "culture.gouv.fr": {
+    "wikidata_label": "Ministry of Culture of France",
+    "wikidata_id": "Q384602",
+    "wikidata_description": "French ministry"
+  },
+  "idf.lesverts.fr": {},
+  "fredericjoignot.blog.lemonde.fr": {},
+  "revuedesdeuxmondes.fr": {},
+  "fance-politique.fr": {},
+  "fr.wikisource.org": {
+    "wikidata_label": "French Wikisource",
+    "wikidata_id": "Q15156541",
+    "wikidata_description": "French version of Wikisource"
+  },
+  "dauphin-ota.info": {},
+  "idu.org": {},
+  "archives.premier-ministre.gouv.fr": {},
+  "ladocumentationfrancaise.fr": {},
+  "gisti.org": {},
+  "news.google.com": {
+    "wikidata_label": "Google News",
+    "wikidata_id": "Q12020",
+    "wikidata_description": "news aggregator and app developed by Google"
+  },
+  "latimes.com": {
+    "wikidata_label": "Los Angeles Times",
+    "wikidata_id": "Q188515",
+    "wikidata_description": "American daily newspaper covering the Greater Los Angeles area"
+  },
+  "gettyimages.co.uk": {},
+  "lepolitique.com": {},
+  "iran-resist.org": {},
+  "klibres.fr": {}
 }
