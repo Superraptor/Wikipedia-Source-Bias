@@ -121,7 +121,11 @@
     "Asia": "Asia",
     "Africa": "Africa",
     "Oceania": "Oceania",
-    "unmapped": "Unmapped"
+    "unmapped": "Unmapped",
+    "North America": "North America",
+    "South America": "South America",
+    "Middle East": "Middle East",
+    "Global": "Global"
   },
   "geography": {
     "unmapped": "Unmapped",

@@ -30,10 +30,19 @@ export function countryLabel(value, t) {
   return value;
 }
 
-/** Region buckets are a closed set, so they are fully translated. */
+/**
+ * Region buckets are translated, but never blindly.
+ *
+ * vue-i18n returns the KEY when a translation is missing, so a region the
+ * catalogue does not know rendered the literal string "region.North America"
+ * on screen. Falling back to the backend's own name is imperfect (it is
+ * English) but always readable.
+ */
 export function regionLabel(region, t) {
   if (isUnmapped(region)) return t("region.unmapped");
-  return t(`region.${region}`);
+  const key = `region.${region}`;
+  const translated = t(key);
+  return translated === key ? region : translated;
 }
 
 // Several analyzer vocabularies collapse onto the same badge. Keeping the

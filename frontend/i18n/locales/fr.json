@@ -121,7 +121,11 @@
     "Asia": "Asie",
     "Africa": "Afrique",
     "Oceania": "Océanie",
-    "unmapped": "Non-mappé"
+    "unmapped": "Non-mappé",
+    "North America": "Amérique du Nord",
+    "South America": "Amérique du Sud",
+    "Middle East": "Moyen-Orient",
+    "Global": "International"
   },
   "geography": {
     "unmapped": "Non-mappé",

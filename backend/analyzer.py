@@ -1,36 +1,77 @@
+# One canonical region vocabulary.
+#
+# The analyzer had two, and they collided in a single field: the TLD table
+# emits "North America"/"South America"/"Middle East", while this country
+# table used to emit "Americas". A .us source resolved by TLD and a US source
+# resolved via Wikidata therefore landed in DIFFERENT buckets of the same
+# distribution -- and neither "North America" nor "Middle East" had a
+# translation, so the UI printed the raw key "region.North America".
+#
+# The finer split is kept rather than collapsed: for a tool about geographic
+# bias, North vs South America is exactly the distinction worth seeing.
+REGIONS = (
+    "North America", "South America", "Europe", "Asia",
+    "Africa", "Oceania", "Middle East", "Global",
+)
+
+# Values that older cached payloads or the domain database may still carry.
+REGION_ALIASES = {
+    "Americas": "Americas",   # too coarse to split without a country; kept
+    "americas": "Americas",
+    "Latin America": "South America",
+    "MENA": "Middle East",
+}
+
 REGION_MAP = {
     "France": "Europe", "Germany": "Europe", "United Kingdom": "Europe",
     "Italy": "Europe", "Spain": "Europe", "Switzerland": "Europe",
-    "United States": "Americas", "Canada": "Americas", "Mexico": "Americas",
-    "Brazil": "Americas", "Argentina": "Americas",
-    "China": "Asia", "Japan": "Asia", "India": "Asia", "Russia": "Asia",
-    "South Korea": "Asia",
-    "Nigeria": "Africa", "Egypt": "Africa", "South Africa": "Africa",
-    "Australia": "Oceania", "New Zealand": "Oceania",
-    # Supranational and additional publishers seen in real articles. Konrad
-    # Adenauer's references surfaced "European Union" with region=Unknown.
-    "European Union": "Europe",
     "Belgium": "Europe", "Netherlands": "Europe", "Luxembourg": "Europe",
     "Austria": "Europe", "Portugal": "Europe", "Ireland": "Europe",
     "Poland": "Europe", "Czech Republic": "Europe", "Hungary": "Europe",
     "Sweden": "Europe", "Norway": "Europe", "Denmark": "Europe",
     "Finland": "Europe", "Greece": "Europe", "Romania": "Europe",
-    "Ukraine": "Europe", "Turkey": "Europe", "Croatia": "Europe",
-    "Serbia": "Europe", "Bulgaria": "Europe", "Slovakia": "Europe",
-    "Slovenia": "Europe", "Estonia": "Europe", "Latvia": "Europe",
-    "Lithuania": "Europe", "Iceland": "Europe",
-    "Colombia": "Americas", "Chile": "Americas", "Peru": "Americas",
-    "Venezuela": "Americas", "Cuba": "Americas", "Uruguay": "Americas",
-    "Israel": "Asia", "Iran": "Asia", "Iraq": "Asia", "Lebanon": "Asia",
-    "Saudi Arabia": "Asia", "Qatar": "Asia", "United Arab Emirates": "Asia",
-    "Pakistan": "Asia", "Bangladesh": "Asia", "Indonesia": "Asia",
-    "Vietnam": "Asia", "Thailand": "Asia", "Philippines": "Asia",
-    "Malaysia": "Asia", "Singapore": "Asia", "Taiwan": "Asia",
-    "Hong Kong": "Asia", "Kazakhstan": "Asia",
+    "Ukraine": "Europe", "Croatia": "Europe", "Serbia": "Europe",
+    "Bulgaria": "Europe", "Slovakia": "Europe", "Slovenia": "Europe",
+    "Estonia": "Europe", "Latvia": "Europe", "Lithuania": "Europe",
+    "Iceland": "Europe", "Russia": "Europe", "European Union": "Europe",
+
+    "United States": "North America", "Canada": "North America",
+    "Mexico": "North America",
+
+    "Brazil": "South America", "Argentina": "South America",
+    "Colombia": "South America", "Chile": "South America",
+    "Peru": "South America", "Venezuela": "South America",
+    "Uruguay": "South America", "Cuba": "South America",
+
+    "China": "Asia", "Japan": "Asia", "India": "Asia",
+    "South Korea": "Asia", "Pakistan": "Asia", "Bangladesh": "Asia",
+    "Indonesia": "Asia", "Vietnam": "Asia", "Thailand": "Asia",
+    "Philippines": "Asia", "Malaysia": "Asia", "Singapore": "Asia",
+    "Taiwan": "Asia", "Hong Kong": "Asia", "Kazakhstan": "Asia",
+
+    "Israel": "Middle East", "Iran": "Middle East", "Iraq": "Middle East",
+    "Lebanon": "Middle East", "Saudi Arabia": "Middle East",
+    "Qatar": "Middle East", "United Arab Emirates": "Middle East",
+    "Turkey": "Middle East",
+
+    "Nigeria": "Africa", "Egypt": "Africa", "South Africa": "Africa",
     "Morocco": "Africa", "Algeria": "Africa", "Tunisia": "Africa",
     "Kenya": "Africa", "Ethiopia": "Africa", "Ghana": "Africa",
     "Senegal": "Africa", "Ivory Coast": "Africa", "Cameroon": "Africa",
+
+    "Australia": "Oceania", "New Zealand": "Oceania",
 }
+
+
+def normalise_region(value):
+    """Map a region string onto the canonical vocabulary, or None."""
+    v = _clean(value)
+    if v is None:
+        return None
+    if v in REGIONS:
+        return v
+    return REGION_ALIASES.get(v, v)
+
 
 
 # A language-neutral key, NOT a display string. The API is consumed by a
@@ -99,10 +140,16 @@ def _geo_note(domain, country, region):
 def _norm_source(s):
     geo_in = s.get("geography") or {}
     country = _norm_country(_clean(geo_in.get("country")) or _clean(s.get("country")))
-    # Derive the region from the country whenever the analyzer did not supply
-    # one. Wikidata fills in the country after the TLD pass without revisiting
-    # the region, which is how country=France/region=Unknown arose.
-    region = _clean(geo_in.get("region")) or REGION_MAP.get(country, UNMAPPED)
+    # The country decides the region whenever it is known. Trusting the
+    # analyzer's own region field let a .us source ("North America") and a
+    # Wikidata-resolved US source ("Americas") occupy two buckets of one chart.
+    # Only when the country is unknown do we fall back to whatever region the
+    # analyzer managed to infer.
+    region = (
+        REGION_MAP.get(country)
+        or normalise_region(geo_in.get("region"))
+        or UNMAPPED
+    )
 
     domain = s.get("domain", "")
     note = _geo_note(domain, country, region)

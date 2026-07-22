@@ -192,3 +192,30 @@ describe("data vocabulary translation", () => {
     expect(geographyNote("Domaine générique (.net) : …", tEn)).toBe("Domaine générique (.net) : …");
   });
 });
+
+describe("regionLabel fallback", () => {
+  it("never renders a raw translation key", async () => {
+    const { regionLabel } = await import("../utils/labels.js");
+    // vue-i18n returns the key itself when a translation is missing.
+    const t = (k) => k;
+    expect(regionLabel("North America", t)).toBe("North America");
+    expect(regionLabel("Some Unforeseen Region", t)).toBe("Some Unforeseen Region");
+  });
+
+  it("uses the translation when there is one", async () => {
+    const { regionLabel } = await import("../utils/labels.js");
+    const t = (k) => (k === "region.North America" ? "Amérique du Nord" : k);
+    expect(regionLabel("North America", t)).toBe("Amérique du Nord");
+  });
+
+  it("covers every canonical region in both locales", async () => {
+    const fr = (await import("../i18n/locales/fr.json")).default;
+    const en = (await import("../i18n/locales/en.json")).default;
+    const canonical = ["North America", "South America", "Europe", "Asia",
+                       "Africa", "Oceania", "Middle East", "Global", "Americas"];
+    for (const r of canonical) {
+      expect(fr.region[r], `fr ${r}`).toBeTruthy();
+      expect(en.region[r], `en ${r}`).toBeTruthy();
+    }
+  });
+});
