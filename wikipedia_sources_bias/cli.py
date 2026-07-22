@@ -80,6 +80,11 @@ def main() -> None:
         default="results",
         help="Directory to save the batch results",
     )
+    parser.add_argument(
+        "--filter-unresolved",
+        action="store_true",
+        help="Filter out sources that do not resolve to a known country when building source maps",
+    )
     args = parser.parse_args()
 
     if not args.url and not args.batch_file:
@@ -130,7 +135,7 @@ def main() -> None:
                 with open(analysis_filename, "w", encoding="utf-8") as out_f:
                     json.dump(result, out_f, indent=2, ensure_ascii=False)
                     
-                source_map = generate_source_map(result)
+                source_map = generate_source_map(result, filter_unresolved=args.filter_unresolved)
                 map_filename = os.path.join(results_dir, f"{sanitized_title}_map.json")
                 with open(map_filename, "w", encoding="utf-8") as out_f:
                     json.dump(source_map, out_f, indent=2, ensure_ascii=False)

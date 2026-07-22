@@ -83,5 +83,35 @@
     "journal": "Revue française de science politique",
     "published_date": "1990",
     "subjects": []
+  },
+  "10.3917/anso.012.0355": {
+    "title": "La communication politique en France : un champ de recherche qui doit encore s'imposer",
+    "authors": [
+      "Arnaud Mercier"
+    ],
+    "publisher": "CAIRN",
+    "journal": "L'Année sociologique",
+    "published_date": "2001-9-1",
+    "subjects": []
+  },
+  "10.3917/parl.007.0121": {
+    "title": "La stratégie de communication de François Mitterrand en 1988",
+    "authors": [
+      "Olivier Rouquan"
+    ],
+    "publisher": "CAIRN",
+    "journal": "Parlement[s], Revue d'histoire politique",
+    "published_date": "2007-3-1",
+    "subjects": []
+  },
+  "10.3917/cite.081.0169": {
+    "title": "L’apothéose de Jacques Chirac, un révélateur des impasses de la politique française contemporaine",
+    "authors": [
+      "Mathias Bernard"
+    ],
+    "publisher": "CAIRN",
+    "journal": "Cités",
+    "published_date": "2020-3-6",
+    "subjects": []
   }
 }

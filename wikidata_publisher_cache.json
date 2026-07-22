@@ -4733,5 +4733,254 @@
       "newspaper"
     ],
     "mbfc_id": "la-times-los-angeles-times"
+  },
+  "politique.net": {},
+  "jstor.org": {
+    "wikidata_id": "Q96737255",
+    "wikidata_name": "The Langston Hughes Review",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Ithaka Harbors"
+    ],
+    "types": [
+      "academic journal",
+      "digital library",
+      "organization",
+      "scientific journal"
+    ],
+    "mbfc_id": "jstore"
+  },
+  "theses.fr": {
+    "wikidata_id": "Q137901668",
+    "wikidata_name": "Q137901668",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Agence bibliographique de l'enseignement supérieur"
+    ],
+    "types": [
+      "open-access repository",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "femmeactuelle.fr": {
+    "wikidata_id": "Q3068228",
+    "wikidata_name": "Femme actuelle",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Prisma Media"
+    ],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "tdg.ch": {
+    "wikidata_id": "Q870221",
+    "wikidata_name": "Tribune de Genève",
+    "countries": [
+      "Switzerland"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Edipresse",
+      "TX Group"
+    ],
+    "types": [
+      "daily newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "inegalites.fr": {
+    "wikidata_id": "Q3348411",
+    "wikidata_name": "Observatoire des inégalités",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "nonprofit organization"
+    ],
+    "mbfc_id": null
+  },
+  "fondationshoah.org": {
+    "wikidata_id": "Q3075707",
+    "wikidata_name": "Fondation pour la Mémoire de la Shoah",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "hosting foundation"
+    ],
+    "mbfc_id": null
+  },
+  "diplomatie.gouv.fr": {
+    "wikidata_id": "Q789848",
+    "wikidata_name": "Ministry for Europe and Foreign Affairs",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "foreign affairs ministry"
+    ],
+    "mbfc_id": null
+  },
+  "afrik.com": {
+    "wikidata_id": "Q113833286",
+    "wikidata_name": "Q113833286",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "kongehuset.no": {
+    "wikidata_id": "Q11982227",
+    "wikidata_name": "Crown princess Märtha's memorial fund",
+    "countries": [
+      "Norway"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "charitable fund",
+      "hereditary position",
+      "noble title",
+      "nonprofit organization",
+      "royal family"
+    ],
+    "mbfc_id": null
+  },
+  "ordre-national.gouv.qc.ca": {
+    "wikidata_id": "Q391911",
+    "wikidata_name": "National Order of Quebec",
+    "countries": [
+      "Canada"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "state order"
+    ],
+    "mbfc_id": null
+  },
+  "olympics.com": {
+    "wikidata_id": "Q106684648",
+    "wikidata_name": "olympics.com",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "International Olympic Committee"
+    ],
+    "types": [
+      "news website",
+      "online service",
+      "sports website"
+    ],
+    "mbfc_id": null
+  },
+  "pantheonsorbonne.fr": {
+    "wikidata_id": "Q999763",
+    "wikidata_name": "University of Paris 1 Pantheon-Sorbonne",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "public university",
+      "university in France"
+    ],
+    "mbfc_id": null
+  },
+  "offi.fr": {
+    "wikidata_id": "Q3204444",
+    "wikidata_name": "L'Officiel des spectacles",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "newspaper"
+    ],
+    "mbfc_id": null
+  },
+  "herault-tribune.com": {},
+  "education.gouv.fr": {
+    "wikidata_id": "Q2572330",
+    "wikidata_name": "French Ministry of education",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "ministry",
+      "ministry of education"
+    ],
+    "mbfc_id": null
+  },
+  "nanarland.com": {
+    "wikidata_id": "Q3335541",
+    "wikidata_name": "Q3335541",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "imdb.com": {
+    "wikidata_id": "Q37312",
+    "wikidata_name": "IMDb",
+    "countries": [
+      "United Kingdom"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Amazon"
+    ],
+    "types": [
+      "company",
+      "online film database",
+      "podcast directory",
+      "review aggregator",
+      "social cataloging application",
+      "television series database",
+      "video game database"
+    ],
+    "mbfc_id": null
   }
 }

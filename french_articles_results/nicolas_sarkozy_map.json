@@ -169,48 +169,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://clubobs.nouvelobs.com/article/2006/11/16/20061116.REU76743.xml",
-        "domain": "clubobs.nouvelobs.com",
-        "publisher_name": "clubobs.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://obsession.nouvelobs.com/personnalites/20091220.OBS1232/vie-privee-vie-publique-le-sarko-show.html",
-        "domain": "obsession.nouvelobs.com",
-        "publisher_name": "obsession.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -325,27 +283,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://hebdo.nouvelobs.com/hebdo/parution/p2279/articles/a379545-.html",
-        "domain": "hebdo.nouvelobs.com",
-        "publisher_name": "hebdo.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -431,36 +368,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/economie/soutenu-bout-de-bras-par-nicolas-sarkozy-lagardere-gagne-la-partie-face-au-fonds-amber",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -663,27 +570,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.u-m-p.org/site/index.php/ump/l_ump/notre_equipe/l_equipe_nationale/le_president_nicolas_sarkozy",
-        "domain": "u-m-p.org",
-        "publisher_name": "u-m-p.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -829,27 +715,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/speciales/une_journee_rien_quavec_lui/20071127.OBS7111/les_lettres_de_mon_chateau_ou_quand_nicolas_sarkozy_pre.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -1338,27 +1203,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.maire-info.com/article.asp?PARAM2=PLUS&param=4516&__r=1.b1a33543934d8028343c4650035527ce",
-        "domain": "maire-info.com",
-        "publisher_name": "maire-info.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1489,48 +1333,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://rue89.nouvelobs.com/2007/09/03/lessentiel-de-la-fusion-suez-gdf-en-cinq-questions",
-        "domain": "rue89.nouvelobs.com",
-        "publisher_name": "rue89.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.ca-pca.net/patrimoine/texte/donation.html",
-        "domain": "ca-pca.net",
-        "publisher_name": "ca-pca.net",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1615,27 +1417,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.rotaryneuilly.org/index.php?option=com_content&task=view&id=17&Itemid=33",
-        "domain": "rotaryneuilly.org",
-        "publisher_name": "rotaryneuilly.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1699,27 +1480,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://juspoliticum.com/article/La-Ve-Republique-le-referendum-et-la-democratie-plebiscitaire-de-Max-Weber-226.html",
-        "domain": "juspoliticum.com",
-        "publisher_name": "Jus Politicum",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1734,36 +1494,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/alain-juppe-le-referendum-de-2005-na-pas-ete-ignore",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -2079,35 +1809,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://fr.news.yahoo.com/15112006/202/roissy-la-justice-suspend-deux-retraits-de-badge-en-confirme.html",
-        "domain": "fr.news.yahoo.com",
-        "publisher_name": "fr.news.yahoo.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/fr/",
-          "bias_rating": "NOT RATED Factual Reporting",
-          "factual_reporting": "MIXED Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Unknown",
-          "media_type": "Website",
-          "traffic_popularity": "Medium Traffic"
-        }
       }
     },
     {
@@ -2905,36 +2606,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.cairn.info/revue-mouvements-2007-4-page-57.htm",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3100,27 +2771,6 @@
         "language": "French",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0035-2950",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
         "mbfc": {}
       }
     },
@@ -3306,35 +2956,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20170513-passation-pouvoir-elysee-gaulle-macron-hollande-sarkozy-chirac-mitterand-ve-republique",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3376,27 +2997,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.prisme-asso.org/wp-content/uploads/save/pdf/service_minimum.pdf",
-        "domain": "prisme-asso.org",
-        "publisher_name": "prisme-asso.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -3617,27 +3217,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/actualite/politique/20100715.FAP5497/l-elysee-assure-poursuivre-ses-efforts-d-economies.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -4016,27 +3595,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.boursier.com/actualites/economie/niveau-de-vie-quand-les-inegalites-se-creusent-encore-21240.html",
-        "domain": "boursier.com",
-        "publisher_name": "boursier.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -5109,57 +4667,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.militarystrategymagazine.com/ij-exclusives/france-in-libya-a-strategic-perspective-on-operation-harmattan/",
-        "domain": "militarystrategymagazine.com",
-        "publisher_name": "militarystrategymagazine.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/ah-bon-y-un-probleme-avec-le-qatar",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -5679,35 +5186,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20080701-lech-kaczynski-refuse-signer-le-traite-lisbonne-ue-pologne",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -5719,27 +5197,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.touteleurope.eu/fonctionnement-de-l-ue/le-traite-de-lisbonne/",
-        "domain": "touteleurope.eu",
-        "publisher_name": "Toute l'Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -6033,27 +5490,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.universalis-edu.com/encyclopedie/nicolas-sarkozy/",
-        "domain": "universalis-edu.com",
-        "publisher_name": "universalis-edu.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -6658,35 +6094,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20120429-toulouse-nicolas-sarkozy-fait-eloge-frontieres-nation-civilisation-francaise-meeting-election-presidentielle-france",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -7488,36 +6895,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://de.euronews.com/2013/07/08/nach-11-millionenpleite-sarkozy-spendet-7500-euro/",
-        "domain": "de.euronews.com",
-        "publisher_name": "de.euronews.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "German",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/de/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "MOSTLY FACTUAL (2.5)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "Belgium",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -7709,35 +7086,6 @@
           "country_freedom_rating": "LIMITED FREEDOM",
           "media_type": "Website",
           "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.france24.com/fr/20160718-france-reaction-attentat-nice-nicolas-sarkozy-critique-nationale-politique-terrorisme-secur",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
         }
       }
     },
@@ -8034,27 +7382,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://resultats.primaire2016.org/#/total",
-        "domain": "resultats.primaire2016.org",
-        "publisher_name": "resultats.primaire2016.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -8309,27 +7636,6 @@
           "media_type": "Website",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0751-4417",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -9437,27 +8743,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1760-6454",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10528,36 +9813,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/affaire-des-ecoutes-nicolas-sarkozy-aka-paul-bismuth-sera-juge-pour-corruption",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10740,34 +9995,6 @@
           "country": "France",
           "media_type": "Website",
           "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://information.tv5monde.com/info/nicolas-sarkozy-premier-ancien-president-condamne-de-la-prison-ferme-398402",
-        "domain": "information.tv5monde.com",
-        "publisher_name": "information.tv5monde.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "German",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/information/",
-          "bias_rating": "LEFT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
-          "factual_reporting": "MIXED Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
         }
       }
     },
@@ -11789,48 +11016,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1988-circonscription-hauts-de-seine-6.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1993-circonscription-hauts-de-seine-6.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11861,27 +11046,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1997-circonscription-hauts-de-seine-6.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11905,27 +11069,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/europeennes-1999-france.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -12035,35 +11178,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/france/20250615-sarkozy-exclu-legion-d-honneur-condamnation-justice-affaires-ecoutes-premiere-philippe-petain",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -12226,53 +11340,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://afriquin.fos.com/20230612la-distinction-de-grand-croix-un-honneur-si-rare-en-cote-divoire/",
-        "domain": "afriquin.fos.com",
-        "publisher_name": "afriquin.fos.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://news.abidjan.net/h/424571.html",
-        "domain": "news.abidjan.net",
-        "publisher_name": "news.abidjan.net",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/news/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -3.7492,
           40.4637
         ]
@@ -12361,27 +11428,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.legimonaco.mc/Dataweb/jourmon.nsf/100ab120e52ceb84c12568ce002f2909/3d792baf2ae397cac1257439002c17be!OpenDocument",
-        "domain": "legimonaco.mc",
-        "publisher_name": "legimonaco.mc",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -12658,27 +11704,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cadebordedepotins.com/article-30058076.html",
-        "domain": "cadebordedepotins.com",
-        "publisher_name": "cadebordedepotins.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -12693,35 +11718,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20190326-invite-jour-fabrice-arfi-affaire-sarkozy-kadhafi-benalla-france-mediapart",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -12859,35 +11855,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.france24.com/fr/20100210-pal-sarkozy-pere-nicolas-sarkozy-expose-budapest-peintre-hongrie-art-portrait",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -13553,21 +12520,6 @@
         "country": "United Kingdom",
         "source_count": 2,
         "percentage": 0.4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "country": "Unknown",
-        "source_count": 43,
-        "percentage": 8.1
       }
     },
     {

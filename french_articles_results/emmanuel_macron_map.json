@@ -80,27 +80,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.is/yL1lg",
-        "domain": "archive.is",
-        "publisher_name": "Q13515725",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -194,27 +173,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.purepeople.com/article/emmanuel-macron-precoce-avec-brigitte-son-pere-se-confie-sur-ses-relations-avec-sa-belle-fille_a486643/1",
-        "domain": "purepeople.com",
-        "publisher_name": "Purepeople",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -224,27 +182,6 @@
         "domain": "parismatch.com",
         "publisher_name": "Paris Match",
         "country": "France",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.rfgenealogie.com/infos/les-origines-d-emmanuel-macron",
-        "domain": "rfgenealogie.com",
-        "publisher_name": "Q3212295",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -772,27 +709,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0242-6056",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -869,27 +785,6 @@
         "language": "French",
         "political_leaning": "center-right",
         "reliability": "high",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/portrait/20121224.OBS3481/ils-ont-marque-2012-emmanuel-macron-l-enfant-prodige-de-l-elysee.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
         "mbfc": {}
       }
     },
@@ -1282,36 +1177,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/le-roman-dun-ambitieux",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -2570,27 +2435,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20140829.OBS7621/macron-militant-ps-depuis-2006-n-est-plus-a-jour-de-cotisation-depuis-5-ans.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -2649,27 +2493,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://visionsmag.com/emmanuel-macron-lhomme-du-president/",
-        "domain": "visionsmag.com",
-        "publisher_name": "visionsmag.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -2679,27 +2502,6 @@
         "domain": "lesinrocks.com",
         "publisher_name": "Les Inrockuptibles",
         "country": "France",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/immobilier/politique/election-presidentielle-2017/20170104.OBS3388/emmanuel-macron-avec-quel-argent-va-t-il-financer-sa-campagne.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -2902,27 +2704,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://bfmbusiness.bfmtv.com/france/emmanuel-macron-devient-ministre-de-l-economie-de-l-industrie-et-du-numerique-830438.html",
-        "domain": "bfmbusiness.bfmtv.com",
-        "publisher_name": "bfmbusiness.bfmtv.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -2987,27 +2768,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20140610.OBS9967/info-obs-emmanuel-macron-prepare-son-depart-de-l-elysee.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -3466,27 +3226,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.busetcar.com/territoires/loi-macron-200-nouvelles-lignes-dici-fin-2016-621523.php",
-        "domain": "busetcar.com",
-        "publisher_name": "busetcar.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3699,27 +3438,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/economie/20151210.OBS1163/renault-la-bataille-entre-ghosn-et-macron-va-t-elle-prendre-fin.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3743,27 +3461,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://bfmbusiness.bfmtv.com/entreprise/emmanuel-macron-a-l-origine-de-la-guerre-entre-renault-et-nissan-1574535.html",
-        "domain": "bfmbusiness.bfmtv.com",
-        "publisher_name": "bfmbusiness.bfmtv.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -3813,36 +3510,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/economie/entreprises/secret-des-affaires-apres-general-electric-nokia-et-technip-prochains-boulets-demmanuel-macron",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3864,36 +3531,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/economie/technip-apres-le-fiasco-de-la-fusion-de-l-airbus-du-parapetrolier-la-facture-francaise",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -4041,35 +3678,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20190529-plan-social-general-electric-alstom-critiques-emmanuel-macron-syndicats",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -5172,35 +4780,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.france24.com/fr/20160830-emmanuel-macron-demission-bercy-sapin-bilan-economie-presidentielle",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -5445,36 +5024,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/video-exalte-macron-conclut-son-meeting-hurlant-100248545.html",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -5915,27 +5464,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1950-6244",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6175,36 +5703,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/moralisation-une-loi-paratonnerre-pour-macron-contre-l-affaire-ferrand",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -6627,27 +6125,6 @@
         "domain": "nouvelobs.com",
         "publisher_name": "Le Nouvel Obs",
         "country": "France",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://countryeconomy.com/deficit/france",
-        "domain": "countryeconomy.com",
-        "publisher_name": "countryeconomy.com",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -7390,35 +6867,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20200604-municipales-2020-la-république-en-marche-penche-sérieusement-à-droite",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -7484,35 +6932,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20181205-gilets-jaunes-elysee-annule-hausse-taxes-carburant-macron-france",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -8110,27 +7529,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.nicematin.com/politique/notre-sondage-odoxa-spectaculaire-remontee-de-macron-et-philippe-192838",
-        "domain": "nicematin.com",
-        "publisher_name": "nicematin.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -8298,27 +7696,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/2622347-sondage-le-bilan-presidentiel-d-emmanuel-macron-durement-juge-par-les-francais/",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -8974,35 +8351,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20180920-salzbourg-autriche-europe-politique-migrants",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -9091,36 +8439,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/monde/europeennes-de-l-italie-au-royaume-uni-la-tribune-de-macron-accueillie-avec-indifference-voire",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -9144,27 +8462,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.parismatch.com/Actu/International/Emmanuel-Macron-bete-noire-des-pro-Brexit-1575751",
-        "domain": "parismatch.com",
-        "publisher_name": "parismatch.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -9306,36 +8603,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/commission-europeenne-sylvie-goulard-rejetee-macron-mouche-par-les-eurodeputes",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -10280,27 +9547,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://all-andorra.com/fr/le-chef-du-gouvernement-d-andorre-antoni-marti-a-rencontre-a-paris-avec-le-president-de-la-france-et-co-prince-d-andorre-emmanuel-macron/",
-        "domain": "all-andorra.com",
-        "publisher_name": "all-andorra.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           1.555277777,
           42.558333333
         ]
@@ -10592,34 +9838,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://information.tv5monde.com/info/concentration-des-medias-danger-pour-la-democratie-441060",
-        "domain": "information.tv5monde.com",
-        "publisher_name": "information.tv5monde.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "German",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/information/",
-          "bias_rating": "LEFT CONSPIRACY-PSEUDOSCIENCE Factual Reporting",
-          "factual_reporting": "MIXED Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10864,48 +10082,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0246-2346",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/2111-4587",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.639395586,
           41.439468314
         ]
@@ -10962,36 +10138,6 @@
         "political_leaning": "far-right",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/macron/boris-johnson-olaf-scholz-ursula-von-der-leyen-saluent-la-reelection-de-macron",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -11062,36 +10208,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/melenchon/jean-luc-melenchon-je-demande-aux-francais-de-melire-premier-ministre",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -12411,36 +11527,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/monde/proche-orient/il-nous-decredibilise-du-niger-a-israel-le-zero-pointe-de-macron-au-sein-du-quai-dorsay",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -12719,27 +11805,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0140-0460",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -3.436,
           55.3781
         ]
@@ -13006,35 +12071,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politico.eu/newsletter/playbook-paris/dati-vautrin-sejourne-tout-sur-le-gouvernement-attal/",
-        "domain": "politico.eu",
-        "publisher_name": "Politico Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/politico-europe-bias/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "HIGH (1.5)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "Germany",
-          "media_type": "Website",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -13049,35 +12085,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/info-en-continu/20240111-rachida-dati-%C3%A0-la-culture-ou-le-retour-fracassant-d-une-figure-du-sarkozysme",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -13508,27 +12515,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0335-1793",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -13551,27 +12537,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0395-2037",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -14107,35 +13072,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://fr.euronews.com/my-europe/2024/08/27/crise-politique-en-france-reactions-au-rejet-dun-gouvernement-nfp-par-emmanuel-macron",
-        "domain": "fr.euronews.com",
-        "publisher_name": "fr.euronews.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/fr/",
-          "bias_rating": "NOT RATED Factual Reporting",
-          "factual_reporting": "MIXED Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Unknown",
-          "media_type": "Website",
-          "traffic_popularity": "Medium Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -14443,36 +13379,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/agora/tribunes-libres/pacte-tacite-avec-le-rn-sur-le-regalien-en-nommant-michel-barnier-macron-a-t-il-resolu-son-rubik-s-cube",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -14823,27 +13729,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "communism",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.touteleurope.eu/economie-et-social/le-budget-francais-pour-l-annee-2025-officiellement-adopte-apres-le-vote-du-senat/",
-        "domain": "touteleurope.eu",
-        "publisher_name": "Toute l'Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -15948,27 +14833,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.ph/jNH8f",
-        "domain": "archive.ph",
-        "publisher_name": "Q13515725",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -15981,27 +14845,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "centre-right",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.ph/bQWri#selection-1083.0-1091.705",
-        "domain": "archive.ph",
-        "publisher_name": "archive.today",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -16157,27 +15000,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://comptoir.org/2016/01/25/emmanuel-macron-pale-fantome-schumpeter/",
-        "domain": "comptoir.org",
-        "publisher_name": "comptoir.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -16450,27 +15272,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/election-presidentielle-2017/20161116.OBS1304/emmanuel-macron-sur-l-education-un-air-de-deja-vu.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -16779,27 +15580,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/election-presidentielle-2017/20161004.OBS9351/a-strasbourg-la-fusee-macron-marche-toujours-au-diesel.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -16853,27 +15633,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cairn.info/revue-migrations-societe-2017-2-page-3.htm",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -17208,36 +15967,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/emmanuel-macron-la-republique-est-ce-lieu-magique-qui-permet-des-gens-de-vivre-dans-l",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -17633,36 +16362,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/macron/macron-et-les-chasseurs-cinq-ans-de-cadeaux-qui-finissent-par-un-soutien",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -18098,56 +16797,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/moyen-orient/20240530-reconnaissance-etat-palestinien-france-macron-diplomatie-palestinienne-francaise-israel-abbas-gaza",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://news.un.org/fr/story/2025/09/1157534",
-        "domain": "news.un.org",
-        "publisher_name": "news.un.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           8.2275,
           46.8182
         ]
@@ -18325,27 +16974,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/galeries-photos/politique/20150828.OBS4889/photos-les-plus-belles-citations-d-emmanuel-macron.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -18396,27 +17024,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://leplus.nouvelobs.com/contribution/1241935-macron-et-les-illettres-de-gad-pour-nous-ouvriers-c-est-une-insulte-stigmatisante.html",
-        "domain": "leplus.nouvelobs.com",
-        "publisher_name": "leplus.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -18428,27 +17035,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0182-5852",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -18670,48 +17256,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/en-direct/a-chaud/30410-presidentielle2017-macron-quand-emmanuel-macron-evoque-el.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/en-direct/a-chaud/33559-macron-colonisation-crime-contre-humanite-declare-emmanuel.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -18866,27 +17410,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20170711.OBS1954/macron-pointe-les-7-a-8-enfants-par-femme-en-afrique-un-raccourci-qui-passe-mal.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -19262,27 +17785,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.wikiwix.com/cache/index2.php?url=http%3A%2F%2Fwww.capital.fr%2Fenquetes%2Fhommes-et-affaires%2Femmanuel-macron-matthieu-pigasse-guerre-froide-entre-les-banquiers-roses-976858",
-        "domain": "archive.wikiwix.com",
-        "publisher_name": "Wikiwix",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -19581,36 +18083,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/macron/mais-ou-est-passe-le-pognon-de-dingue-que-macron-aurait-palpe-chez-rothschild",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -20251,27 +18723,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://teleobs.nouvelobs.com/actualites/20180803.OBS0500/emmanuel-macron-membre-du-club-des-young-leaders-china.html",
-        "domain": "teleobs.nouvelobs.com",
-        "publisher_name": "teleobs.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -20313,27 +18764,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.zap-tele.com/posts/emmanuel-macron-vu-par-les-guignols-dot-dot-dot",
-        "domain": "zap-tele.com",
-        "publisher_name": "zap-tele.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -20827,27 +19257,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.bopa.ad/Documents/Detall?doc=GD_2024_07_11_14_39_27",
-        "domain": "bopa.ad",
-        "publisher_name": "bopa.ad",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -20910,69 +19319,6 @@
         "country": "Brazil",
         "region": "Unknown",
         "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.sintese.com/norma_integra.asp?id=15133",
-        "domain": "sintese.com",
-        "publisher_name": "sintese.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.lechiquiersocial.com/évènement/emmanuel-macron-recoit-le-president-sud-coreen/",
-        "domain": "lechiquiersocial.com",
-        "publisher_name": "lechiquiersocial.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.pressecotedivoire.ci/article/4515-le-president-emmanuel-macron-eleve-dans-la-dignite-de-grand-croix-de-lordre-national",
-        "domain": "pressecotedivoire.ci",
-        "publisher_name": "pressecotedivoire.ci",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -21130,27 +19476,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://maroc-diplomatique.net/macron-sadressera-au-parlement-et-recevra-lordre-de-souverainete/",
-        "domain": "maroc-diplomatique.net",
-        "publisher_name": "maroc-diplomatique.net",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           57.5,
           -20.2
         ]
@@ -21160,27 +19485,6 @@
         "domain": "defimedia.info",
         "publisher_name": "Le Défi Plus",
         "country": "Mauritius",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://newsmaker.md/ro/doc-sandu-si-macron-si-au-conferit-cele-mai-inalte-distinctii-de-stat-la-paris-multumesc-draga-emmanuel/",
-        "domain": "newsmaker.md",
-        "publisher_name": "newsmaker.md",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -21214,69 +19518,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://radiobijelopolje.me/en/crna-gora/77774/milatovic-u-cetvrtak-urucuje-makronu-orden-crne-gore",
-        "domain": "radiobijelopolje.me",
-        "publisher_name": "radiobijelopolje.me",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://royalwatcherblog.com/2025/06/23/french-state-banquet-at-the-royal-palace-of-oslo/",
-        "domain": "royalwatcherblog.com",
-        "publisher_name": "royalwatcherblog.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "variable/opinion",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://royalwatcherblog.com/2023/04/11/french-state-visit-to-the-netherlands-1/",
-        "domain": "royalwatcherblog.com",
-        "publisher_name": "royalwatcherblog.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "variable/opinion",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -21290,27 +19531,6 @@
         "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.diwan.gov.qa/briefing-room/news/foreign-visits/2024/february/27/hh-the-amir-attends-dinner-banquet-held-by-french-president?sc_lang=en",
-        "domain": "diwan.gov.qa",
-        "publisher_name": "diwan.gov.qa",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "neutral",
-        "reliability": "high",
         "mbfc": {}
       }
     },
@@ -21456,27 +19676,6 @@
           "media_type": "Website",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://olympics.com/cio/news/l-ordre-olympique-decerne-au-president-de-la-republique-francaise-emmanuel-macron",
-        "domain": "olympics.com",
-        "publisher_name": "olympics.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -21716,21 +19915,6 @@
         "country": "France",
         "source_count": 752,
         "percentage": 85.4
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "country": "Unknown",
-        "source_count": 76,
-        "percentage": 8.6
       }
     },
     {

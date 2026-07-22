@@ -151,27 +151,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/election-presidentielle-2012/20120302.OBS2767/taux-confiscatoires-hollande-repond-a-l-ump-mais.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -647,27 +626,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://leplus.nouvelobs.com/contribution/547355-francois-hollande-et-sa-famille-une-premiere-erreur-de-communication.html",
-        "domain": "leplus.nouvelobs.com",
-        "publisher_name": "leplus.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -773,48 +731,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "centre-right",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/legislatives-2012/20120613.OBS8556/7-questions-sur-l-affaire-trierweiler.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/legislatives-2012/20120612.OBS8321/trierweiler-royal-bisbilles-en-cascade.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -979,48 +895,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20140125.OBS3790/francois-hollande-annonce-sa-separation-avec-valerie-trierweiler.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0362-4331",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -1445,57 +1319,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/blogsecretdefense/Francois-Hollande-a-ete-aspirant-au-71eme-regiment-du-genie_a591.html?com",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/le-dossier-de-l-obs/20130125.OBS6760/quand-hollande-etait-bidasse.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1694,35 +1517,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.france24.com/fr/20120507-francois-hollande-president-republique-election-candidat-normal",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1836,27 +1630,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://andrebercoff.com/comment-francois-hollande-est-devenu-le-porte-parole-de-caton-pseudonyme-dandre-bercoff/",
-        "domain": "andrebercoff.com",
-        "publisher_name": "andrebercoff.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1868,27 +1641,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.ecriture-communication.com/archipel/wp-content/uploads/sites/2/Brochet_Et-Francois-Hollande-enterra-le-socialisme_extrait_pdf.pdf",
-        "domain": "ecriture-communication.com",
-        "publisher_name": "ecriture-communication.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -2225,27 +1977,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/bilan-candidats-primaires/francois-hollande.shtml",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -2413,36 +2144,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cairn.info/revue-mouvements-2007-2-page-14.html",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
       }
     },
     {
@@ -2667,27 +2368,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.politique.net/2011052602-pourquoi-fran%C3%A7ois-hollande-est-devenu-la-nouvelle-cible-de-ses-%20amis-au-ps.htm",
-        "domain": "politique.net",
-        "publisher_name": "politique.net",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -3142,27 +2822,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/sondage-presidentielle-2012/20120504.OBS4634/hollande-donne-vainqueur-dans-4-nouveaux-sondages.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -5177,36 +4836,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/taubira-demissionne-avant-lexamen-de-la-decheance-de-nationalite",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6087,36 +5716,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/monde/france-qatar-un-ticket-gagnant-gagnantpour-qui",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6212,27 +5811,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/monde/guerre-en-syrie/20130927.OBS8824/exclusif-comment-hollande-avait-prevu-de-frapper-la-syrie.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -6342,35 +5920,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/20150928-syrie-premieres-frappes-francaises-camp-jihadiste-ei-rafale-boukamal",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -6543,32 +6092,6 @@
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://news.un.org/fr/story/2013/12/279502-rca-le-conseil-de-securite-autorise-le-deploiement-de-la-misca-avec-lappui-des#.UqLt_-I7akw",
-        "domain": "news.un.org",
-        "publisher_name": "news.un.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/news/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
         }
       }
     },
@@ -6770,27 +6293,6 @@
         "country": "France",
         "region": "Europe",
         "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.ambafrance-ad.org/Entretien-du-President-de-la",
-        "domain": "ambafrance-ad.org",
-        "publisher_name": "ambafrance-ad.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -8194,27 +7696,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20161011.OBS9687/exclusif-francois-hollande-je-suis-pret.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -8429,36 +7910,6 @@
         "political_leaning": "far-right",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/francois-hollande-annonce-qu-il-ne-se-presente-pas-en-2017-pour-un-second-mandat",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -9974,35 +9425,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.msn.com/fr-fr/actualite/elections/l%C3%A9gislatives-2024-fran%C3%A7ois-hollande-candidat-du-nouveau-front-populaire-en-corr%C3%A8ze/ar-BB1oh1hu?ocid=BingNewsSerp",
-        "domain": "msn.com",
-        "publisher_name": "MSN",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/msn-com/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "MOSTLY FACTUAL (4.0)",
-          "credibility_rating": "MEDIUM CREDIBILITY",
-          "country": "USA",
-          "media_type": "News Agency",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10802,69 +10224,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1988-circonscription-correze-1.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1993-circonscription-correze-1.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politiquemania.com/legislatives-1997-circonscription-correze-1.html",
-        "domain": "politiquemania.com",
-        "publisher_name": "politiquemania.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11093,36 +10452,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.arabnews.com/world/news/693791#slide-0-field_binary-693791",
-        "domain": "arabnews.com",
-        "publisher_name": "Arab News",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/arab-news/",
-          "bias_rating": "RIGHT-CENTER Factual Reporting",
-          "factual_reporting": "MIXED Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Saudi Arabia",
-          "country_freedom_rating": "TOTAL OPPRESSION",
-          "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -63.6167,
           -38.4161
         ]
@@ -11145,32 +10474,6 @@
           "country_freedom_rating": "MODERATE FREEDOM",
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://news.abangui.com/h/52390.html",
-        "domain": "news.abangui.com",
-        "publisher_name": "news.abangui.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/news/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "unknown",
-          "credibility_rating": "unknown"
         }
       }
     },
@@ -11232,27 +10535,6 @@
         "country": "Italy",
         "region": "Europe",
         "language": "Italian",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.savethearchive.com/NewsLeaders",
-        "domain": "savethearchive.com",
-        "publisher_name": "savethearchive.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -11326,34 +10608,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://en.tengrinews.kz/politics_sub/Nazarbayev-awards-Order-of-Friendship-to-Francois-Hollande-262843/",
-        "domain": "en.tengrinews.kz",
-        "publisher_name": "en.tengrinews.kz",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/en/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "VERY-LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "media_type": "Website",
-          "traffic_popularity": "Medium Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11393,27 +10647,6 @@
         "domain": "lematin.ma",
         "publisher_name": "Le Matin du Sahara et du Maghreb",
         "country": "Morocco",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.legimonaco.mc/Dataweb/jourmon.nsf/56ae81d1d4180496c12568ce002f290a/97a43024d5d7905ec1257c2a005604d6!OpenDocument",
-        "domain": "legimonaco.mc",
-        "publisher_name": "legimonaco.mc",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -11570,27 +10803,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://canord.presidency.ro/Ord.St.Rom..xls",
-        "domain": "canord.presidency.ro",
-        "publisher_name": "canord.presidency.ro",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11644,27 +10856,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://directinfo.webmanagercenter.com/2013/07/04/tunisie-france-marzouki-offre-un-diner-en-lhonneur-de-son-homologue-francais-et-de-la-delegation-laccompagnant/",
-        "domain": "directinfo.webmanagercenter.com",
-        "publisher_name": "directinfo.webmanagercenter.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -12019,27 +11210,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.telos-eu.com/fr/politique-francaise-et-internationale/affronter-oui-mais-qui-et-avec-qui.html",
-        "domain": "telos-eu.com",
-        "publisher_name": "telos-eu.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -12173,21 +11343,6 @@
         "country": "France",
         "source_count": 423,
         "percentage": 86.5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "country": "Unknown",
-        "source_count": 35,
-        "percentage": 7.2
       }
     },
     {

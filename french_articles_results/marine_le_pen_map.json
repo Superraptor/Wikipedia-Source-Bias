@@ -8,27 +8,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://mon-compte.lesinrocks.com/bibliotheque/numero/?number=1105&titleRef=EDIND.INWEB",
-        "domain": "mon-compte.lesinrocks.com",
-        "publisher_name": "mon-compte.lesinrocks.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -163,27 +142,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/1195197-jean-marie-le-pen-plus-de-60-ans-de-controverse/1195208-l-attentat-de-1976",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -867,27 +825,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://hebdo.nouvelobs.com/hebdo/parution/p20030417/articles/a191701-.html",
-        "domain": "hebdo.nouvelobs.com",
-        "publisher_name": "hebdo.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -899,48 +836,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://teleobs.nouvelobs.com/actualites/20141107.OBS4443/comment-marine-le-pen-a-pris-le-pouvoir-dans-les-medias.html",
-        "domain": "teleobs.nouvelobs.com",
-        "publisher_name": "teleobs.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1950-6244",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -1183,111 +1078,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.votewatch.eu//cx_mep_details.php?euro_parlamentar_id=387&lang=en&eps=1",
-        "domain": "votewatch.eu",
-        "publisher_name": "VoteWatch Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.prochoix.org/cgi/blog/index.php/2006/04/20/470-marie-france-stirbois-ancienne-deputee-du-fn-decedee",
-        "domain": "prochoix.org",
-        "publisher_name": "Q3406132",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://gss.revues.org/2626",
-        "domain": "gss.revues.org",
-        "publisher_name": "gss.revues.org",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/actualites/politique/20071118.OBS5366/jeanmarie_le_pen_reelu_a_la_tete_du_fn.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.frontnational.com/doc_interventions_detail.php?id_inter=92",
-        "domain": "frontnational.com",
-        "publisher_name": "frontnational.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1469,27 +1259,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.boursier.com/actualites/reuters/marine-le-pen-repart-en-conquete-dans-le-pas-de-calais-25326.html",
-        "domain": "boursier.com",
-        "publisher_name": "boursier.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1513,48 +1282,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.is/OaQ9k",
-        "domain": "archive.is",
-        "publisher_name": "archive.today",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://yvesdaoudal.hautetfort.com/archive/2007/06/13/deux-gaullistes-historiques-soutiennent-marine.html",
-        "domain": "yvesdaoudal.hautetfort.com",
-        "publisher_name": "yvesdaoudal.hautetfort.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -1624,27 +1351,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cevipof.com/bpf/analyses/Fourquet_HeninBeaumont.pdf",
-        "domain": "cevipof.com",
-        "publisher_name": "cevipof.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -2168,27 +1874,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:C:2009:159:0001:0024:FR:PDF",
-        "domain": "eur-lex.europa.eu",
-        "publisher_name": "EUR-Lex",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -2293,69 +1978,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/resultats-regionales-villes/front-national.shtml",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.boursier.com/actualites/reuters/marine-le-pen-sera-candidate-a-la-tete-du-fn-en-2010-41811.html",
-        "domain": "boursier.com",
-        "publisher_name": "boursier.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20100412.OBS2303/la-succession-de-jean-marie-le-pen-est-enclenchee.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -3366,35 +2988,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.politico.eu/list/the-40-meps-who-actually-matter-european-parliament-mep/",
-        "domain": "politico.eu",
-        "publisher_name": "Politico Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/politico-europe-bias/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "HIGH (1.5)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "Germany",
-          "media_type": "Website",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -4463,36 +4056,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/debat-2017-marine-le-pen-face-macron-2h30-de-naufrage",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -4579,36 +4142,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/febrilite-au-fn-si-marine-le-pen-est-en-dessous-de-40-c-est-un-echec",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -4783,36 +4316,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/au-fn-du-nord-premieres-critiques-et-premiere-purge",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -5065,27 +4568,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20170707.OBS1785/comment-les-insoumis-sont-devenus-la-principale-force-d-opposition.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -5433,27 +4915,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/biographie/1367248-resultat-de-marine-le-pen-aux-departementales-victoire-a-henin-beaumont-quel-score/",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -6616,27 +6077,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/5511636-marine-le-pen-reelection-assuree-quel-resultat-aux-legislatives/",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6805,36 +6245,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.cairn.info/revue-le-debat-2016-4-page-113.htm",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6968,27 +6378,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "Medium Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.revue-signes.info/document.php?id=4488",
-        "domain": "revue-signes.info",
-        "publisher_name": "revue-signes.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -7728,27 +7117,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/politique/marine-le-pen-la-priorite-nationale-c-est-quoi-au-juste-0213.shtml",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -7772,27 +7140,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.tahiti-infos.com/Marine-Le-Pen-en-visite-pour-deux-jours-a-Tahiti_a70065.html",
-        "domain": "tahiti-infos.com",
-        "publisher_name": "tahiti-infos.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -7856,35 +7203,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/france/20220415-pr%C3%A9sidentielle-comment-le-parti-rn-de-marine-le-pen-s-est-impos%C3%A9-%C3%A0-mayotte",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -8029,36 +7347,6 @@
         "political_leaning": "unknown",
         "reliability": "variable/opinion",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/Quand-Paris-Match-remaquille-Marine-Le-Pen_a199294.html",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -8697,27 +7985,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://services.la-croix.com/webdocs/pages/longform_programme_lepen/index.html",
-        "domain": "services.la-croix.com",
-        "publisher_name": "services.la-croix.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -9125,27 +8392,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1337-0235",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -10713,27 +9959,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://yagg.com/2014/09/26/marine-le-pen-le-redit-jabolirai-la-loi-sur-le-mariage-pour-tous/",
-        "domain": "yagg.com",
-        "publisher_name": "Yagg",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11122,36 +10347,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/societe/ecologie/est-il-envisageable-de-demanteler-le-parc-eolien-comme-le-propose-marine-le-pen",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11274,27 +10469,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://mots.revues.org/392",
-        "domain": "mots.revues.org",
-        "publisher_name": "Mots : Les langages du politique",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "Spanish",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11337,57 +10511,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://hebdo.nouvelobs.com/sommaire/france/059201/le-pen-lache-par-sa-fille.html",
-        "domain": "hebdo.nouvelobs.com",
-        "publisher_name": "hebdo.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/J-Fourquet-Marine-Le-Pen-a-perce-lors-de-l-affaire-Mitterrand_a191750.html",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -11411,48 +10534,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.lecourant.info/spip.php?article282",
-        "domain": "lecourant.info",
-        "publisher_name": "lecourant.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://archive.today/OPpI",
-        "domain": "archive.today",
-        "publisher_name": "Q13515725",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -11944,27 +11025,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://tempsreel.nouvelobs.com/politique/20170921.OBS4959/depart-de-philippot-au-fn-le-numero-2-sert-souvent-de-fusible.html",
-        "domain": "tempsreel.nouvelobs.com",
-        "publisher_name": "tempsreel.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -12107,27 +11167,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "communism",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linfo.re/france/politique/marine-le-pen-reitere-sa-position-et-se-defend-d-etre-xenophobe-et-raciste",
-        "domain": "linfo.re",
-        "publisher_name": "linfo.re",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -12739,48 +11778,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.national-hebdo.net/DIFFAMATION-PEINES-AGGRAVEES-POUR",
-        "domain": "national-hebdo.net",
-        "publisher_name": "National-Hebdo",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.national-hebdo.net/DIFFAMATION-MARINE-LE-PEN-ET-LOUIS",
-        "domain": "national-hebdo.net",
-        "publisher_name": "National-Hebdo",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -13583,35 +12580,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/info-en-continu/20251015-le-conseil-d-%C3%A9tat-rejette-le-recours-de-marine-le-pen-contre-son-in%C3%A9ligibilit%C3%A9-imm%C3%A9diate",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -13753,27 +12721,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1423-3967",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           8.2275,
           46.8182
         ]
@@ -13804,27 +12751,6 @@
         "domain": "bfmtv.com",
         "publisher_name": "BFM2",
         "country": "France",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/proces-des-assistants-du-rn-marine-le-pen-condamnee-en-appel-mais-eligible-a-l-election-presidentielle-2027/",
-        "domain": "touteleurope.eu",
-        "publisher_name": "Toute l'Europe",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -14289,48 +13215,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://bibliobs.nouvelobs.com/actualites/20110311.OBS9496/putain-marine-le-pen.html",
-        "domain": "bibliobs.nouvelobs.com",
-        "publisher_name": "BibliObs",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://leplus.nouvelobs.com/contribution/1154375-marine-le-pen-en-colere-contre-noah-mon-top-5-des-chansons-anti-fn.html",
-        "domain": "leplus.nouvelobs.com",
-        "publisher_name": "leplus.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -14598,48 +13482,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://bibliobs.nouvelobs.com/rentree-litteraire-2011/20111109.OBS4164/le-fn-gonfle-a-bloc.html",
-        "domain": "bibliobs.nouvelobs.com",
-        "publisher_name": "BibliObs",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://bibliobs.nouvelobs.com/bd/20151112.OBS9301/marine-le-pen-presidente-de-la-republique-en-bd.html",
-        "domain": "bibliobs.nouvelobs.com",
-        "publisher_name": "BibliObs",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -14700,21 +13542,6 @@
     }
   ],
   "country_features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "country": "Unknown",
-        "source_count": 51,
-        "percentage": 8.7
-      }
-    },
     {
       "type": "Feature",
       "geometry": {

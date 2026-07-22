@@ -50,36 +50,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/droite/pas-candidat-mais-presque-les-cartes-postales-politiques-deric-zemmour",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "high",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -636,27 +606,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://shs.hal.science/halshs-03869194",
-        "domain": "shs.hal.science",
-        "publisher_name": "HAL SHS",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "high",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -779,27 +728,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.geneastar.org/celebrite/zemmoureric/eric-zemmour",
-        "domain": "geneastar.org",
-        "publisher_name": "GeneaStar",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -830,27 +758,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/2183-2633",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.639395586,
           41.439468314
         ]
@@ -872,27 +779,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://journals.openedition.org/hamsa/693",
-        "domain": "journals.openedition.org",
-        "publisher_name": "OpenEdition Journals",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -904,27 +790,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.purepeople.com/article/eric-zemmour-effondre-par-la-mort-de-son-pere-roger-il-annule-son-emission_a116773/1",
-        "domain": "purepeople.com",
-        "publisher_name": "Purepeople",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -1007,27 +872,6 @@
         "domain": "lorientlejour.com",
         "publisher_name": "L'Orient-Le Jour",
         "country": "Lebanon",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.sird.eu/2022/01/15/eric-zemmour-pourquoi-tant-de-haines-sird-eu/",
-        "domain": "sird.eu",
-        "publisher_name": "sird.eu",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -1192,27 +1036,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.linternaute.com/actualite/biographie/2571832-sarah-knafo-le-statut-particulier-de-la-conseillere-d-eric-zemmour/",
-        "domain": "linternaute.com",
-        "publisher_name": "L'Internaute",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1364,27 +1187,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://electronlibre.info/archives/spip.php?page=article&id_article=00670",
-        "domain": "electronlibre.info",
-        "publisher_name": "electronlibre.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -1457,27 +1259,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "far-right",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://archive.is/xczs",
-        "domain": "archive.is",
-        "publisher_name": "archive.today",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -1654,27 +1435,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.lettreaudiovisuel.com/zemmour-a-cree-la-societe-de-production-rubempre/",
-        "domain": "lettreaudiovisuel.com",
-        "publisher_name": "lettreaudiovisuel.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -1940,27 +1700,6 @@
         "region": "Europe",
         "language": "French",
         "political_leaning": "far-right",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.surlering.com/article/article.php/article/zemmour-ne-renouvelle-pas-son-contrat-avec-l-hebdo-de-france-o",
-        "domain": "surlering.com",
-        "publisher_name": "surlering.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
       }
@@ -2753,36 +2492,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/droite/dans-nice-matin-eric-zemmour-toujours-pas-en-campagne-enfin-presque-mais-pas-encore",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -3119,36 +2828,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/droite/menard-villiers-buisson-la-candidature-zemmour-divise-ses-vieux-copains",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -3902,27 +3581,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1423-3967",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           8.2275,
           46.8182
         ]
@@ -4015,36 +3673,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/droite/eric-zemmour-revendique-60-000-adherents-pour-son-parti-edouard-philippe-entretient-le-mystere",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -4615,36 +4243,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Newspaper",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/droite/debat-zemmour-pecresse-combat-a-mort-pour-la-troisieme-place",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -5312,27 +4910,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-qui-sont-les-candidats-de-la-liste-reconquete/",
-        "domain": "touteleurope.eu",
-        "publisher_name": "Toute l'Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -5549,27 +5126,6 @@
           "media_type": "Journal",
           "traffic_popularity": "Minimal Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://bibliobs.nouvelobs.com/essais/20151204.OBS0752/marion-marechal-le-pen-zemmour-villiers-ce-qu-ils-doivent-a-l-action-francaise.html",
-        "domain": "bibliobs.nouvelobs.com",
-        "publisher_name": "BibliObs",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -5975,27 +5531,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://tempspresents.com/2022/03/25/eric-zemmour-et-le-champ-des-extremes-droites/",
-        "domain": "tempspresents.com",
-        "publisher_name": "Fragments sur les temps présents",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           4.4699,
           50.5039
         ]
@@ -6052,35 +5587,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/info-en-continu/20211201-zemmour-un-bonapartiste-promoteur-d-un-nationalisme-ethnique",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -6161,86 +5667,6 @@
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0242-6056",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politico.eu/article/eric-zemmour-french-trump-farage/",
-        "domain": "politico.eu",
-        "publisher_name": "Politico Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/politico-europe-bias/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "HIGH (1.5)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "Germany",
-          "media_type": "Website",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/politique/preference-nationale-esquisse-de-guerre-civile-rejet-de-l-islam-et-des-droits-de-l-homme",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
       }
     },
     {
@@ -6722,36 +6148,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.marianne.net/societe/attaque-de-la-mosquee-de-bayonne-ex-candidat-fn-le-suspect-etait-aussi-fan-d-eric-zemmour",
-        "domain": "marianne.net",
-        "publisher_name": "Marianne",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
-          "bias_rating": "LEFT-CENTER Factual Reporting",
-          "factual_reporting": "MOSTLY FACTUAL Country",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Magazine",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6887,27 +6283,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://leplus.nouvelobs.com/contribution/1223594-le-jour-ou-zemmour-decreta-que-l-allemagne-trop-metissee-allait-perdre-la-coupe-du-monde.html",
-        "domain": "leplus.nouvelobs.com",
-        "publisher_name": "leplus.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -6960,27 +6335,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://leplus.nouvelobs.com/contribution/1247223-video-eric-zemmour-a-onpc-au-moins-3-erreurs-sur-l-immigration-voici-la-realite.html",
-        "domain": "leplus.nouvelobs.com",
-        "publisher_name": "leplus.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -7385,27 +6739,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1764-2507",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.639395586,
           41.439468314
         ]
@@ -7418,57 +6751,6 @@
         "region": "Global",
         "language": "English",
         "political_leaning": "academic/neutral",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.cairn.info/revue-le-temps-des-medias-2021-1-page-156.htm?ref=doi",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0996-6994",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
         "reliability": "academic/peer-reviewed",
         "mbfc": {}
       }
@@ -7499,78 +6781,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://cairn.info/magazine-sciences-humaines-2019-2-page-21.htm?ref=doi",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1298-6046",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1968-3928",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.639395586,
           41.439468314
         ]
@@ -7585,36 +6795,6 @@
         "political_leaning": "academic/neutral",
         "reliability": "academic/peer-reviewed",
         "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cairn.info/revue-cahiers-du-genre-2012-1-page-119.htm",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
       }
     },
     {
@@ -7643,36 +6823,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://www.cairn.info/masculinites-etat-des-lieux--9782749213637-page-41.htm",
-        "domain": "cairn.info",
-        "publisher_name": "Cairn.info",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "academic/peer-reviewed",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
-          "bias_rating": "EXTREME RIGHT Factual Reporting",
-          "factual_reporting": "LOW Country",
-          "credibility_rating": "LOW CREDIBILITY",
-          "country": "Australia",
-          "country_freedom_rating": "MOSTLY FREE",
-          "media_type": "Website",
-          "traffic_popularity": "Minimal Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -7684,27 +6834,6 @@
         "country": "France",
         "region": "Europe",
         "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://teleobs.nouvelobs.com/actualites/20131016.OBS1316/sexisme-zemmour-s-attire-les-foudres-du-monde-et-de-france-inter.html",
-        "domain": "teleobs.nouvelobs.com",
-        "publisher_name": "teleobs.nouvelobs.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
         "political_leaning": "unknown",
         "reliability": "medium",
         "mbfc": {}
@@ -8368,35 +7497,6 @@
           "factual_reporting": "HIGH (1.3)",
           "credibility_rating": "HIGH CREDIBILITY",
           "country": "France",
-          "media_type": "Website",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.politico.eu/article/france-eric-zemmour-far-right-inauguration-us-donald-trump-le-pen-national-rally/",
-        "domain": "politico.eu",
-        "publisher_name": "Politico Europe",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/politico-europe-bias/",
-          "bias_rating": "LEFT-CENTER",
-          "factual_reporting": "HIGH (1.5)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "Germany",
           "media_type": "Website",
           "traffic_popularity": "High Traffic"
         }
@@ -9089,27 +8189,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "http://Eric%20Zemmour%20et%20Marine%20Le%20Pen…%20leurs%20différences%20flagrantes%20sur%20l'économie",
-        "domain": "eric%20zemmour%20et%20marine%20le%20pen…%20leurs%20différences%20flagrantes%20sur%20l'économie",
-        "publisher_name": "eric%20zemmour%20et%20marine%20le%20pen…%20leurs%20différences%20flagrantes%20sur%20l'économie",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -9669,27 +8748,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.editionslibertalia.com/catalogue/poche/les-historiens-de-garde",
-        "domain": "editionslibertalia.com",
-        "publisher_name": "editionslibertalia.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10165,27 +9223,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1950-6244",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10321,27 +9358,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0755-2750",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -10401,27 +9417,6 @@
         "domain": "nouvelobs.com",
         "publisher_name": "Le Nouvel Obs",
         "country": "France",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0029-4713",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
         "region": "Unknown",
         "language": "English",
         "political_leaning": "unknown",
@@ -10810,27 +9805,6 @@
           "media_type": "Newspaper",
           "traffic_popularity": "High Traffic"
         }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/0395-2037",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
       }
     },
     {
@@ -11409,35 +10383,6 @@
           "country": "France",
           "country_freedom_rating": "MOSTLY FREE",
           "media_type": "Website/Radio/TV",
-          "traffic_popularity": "High Traffic"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://www.france24.com/fr/info-en-continu/20250326-cr%C3%A9pol-eric-zemmour-condamn%C3%A9-pour-injure-raciale",
-        "domain": "france24.com",
-        "publisher_name": "France24.com",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "French",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {
-          "mbfc_url": "https://mediabiasfactcheck.com/france24/",
-          "bias_rating": "LEAST BIASED",
-          "factual_reporting": "HIGH (1.0)",
-          "credibility_rating": "HIGH CREDIBILITY",
-          "country": "France",
-          "media_type": "TV Station",
           "traffic_popularity": "High Traffic"
         }
       }
@@ -13208,27 +12153,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "url": "https://portal.issn.org/resource/ISSN/1760-6454",
-        "domain": "portal.issn.org",
-        "publisher_name": "ISSN Portal",
-        "country": "Unknown",
-        "region": "Unknown",
-        "language": "English",
-        "political_leaning": "unknown",
-        "reliability": "medium",
-        "mbfc": {}
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.2137,
           46.2276
         ]
@@ -13260,21 +12184,6 @@
         "country": "France",
         "source_count": 468,
         "percentage": 87.2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          0.0
-        ]
-      },
-      "properties": {
-        "country": "Unknown",
-        "source_count": 45,
-        "percentage": 8.4
       }
     },
     {

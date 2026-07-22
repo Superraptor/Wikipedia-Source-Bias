@@ -122,3 +122,34 @@ def test_cli_batch_mode_works(mock_generate_map, mock_analyze, mock_parse_args, 
     with open(results_dir / "emmanuel_macron_map.json", "r", encoding="utf-8") as f:
         data = json.load(f)
         assert "map1" in data["features"]
+
+
+@patch("wikipedia_sources_bias.cli.argparse.ArgumentParser.parse_args")
+@patch("wikipedia_sources_bias.cli.analyze_page")
+@patch("wikipedia_sources_bias.cli.generate_source_map")
+def test_cli_batch_mode_filter_unresolved(mock_generate_map, mock_analyze, mock_parse_args, tmp_path):
+    batch_file = tmp_path / "batch.txt"
+    batch_file.write_text("Emmanuel Macron\n", encoding="utf-8")
+    results_dir = tmp_path / "results"
+
+    mock_args = MagicMock()
+    mock_args.url = None
+    mock_args.batch_file = str(batch_file)
+    mock_args.prefix = "fr"
+    mock_args.results_dir = str(results_dir)
+    mock_args.all = False
+    mock_args.max_sources = 5
+    mock_args.no_cache = True
+    mock_args.countries_only = False
+    mock_args.skip_rate_limiting = True
+    mock_args.filter_unresolved = True
+    mock_parse_args.return_value = mock_args
+
+    analysis_res = {"page_title": "Emmanuel_Macron", "sources": []}
+    mock_analyze.return_value = analysis_res
+    mock_generate_map.return_value = {"type": "FeatureCollection", "features": []}
+
+    main()
+
+    mock_generate_map.assert_called_once_with(analysis_res, filter_unresolved=True)
+
