@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory, render_template
 
 import config
 from cache import Cache, PENDING, RUNNING, DONE, ERROR
@@ -86,6 +86,48 @@ def analyze():
         except Exception:
             pass
     return jsonify(result)
+
+
+@app.route("/api/status")
+def api_status():
+    """Queue introspection: what is pending, running, done or failed."""
+    try:
+        cache = get_cache()
+    except Exception as e:
+        return jsonify({"error": f"Cache unavailable: {e}"}), 503
+    return jsonify(
+        {
+            "counts": cache.queue_stats(),
+            "sync_analysis": SYNC_ANALYSIS,
+            "recent": cache.recent(50),
+        }
+    )
+
+
+@app.route("/status")
+def status_page():
+    """Small server-rendered status view.
+
+    Deliberately plain HTML rather than a Nuxt route: it has to stay readable
+    when the SPA bundle or the queue itself is broken, which is exactly when
+    someone goes looking for it.
+    """
+    try:
+        cache = get_cache()
+        counts = cache.queue_stats()
+        rows = cache.recent(50)
+        err = None
+    except Exception as e:
+        counts, rows, err = {}, [], str(e)
+
+    return render_template(
+        "status.html",
+        counts=counts,
+        rows=rows,
+        db_error=err,
+        total=sum(counts.values()),
+        sync=SYNC_ANALYSIS,
+    )
 
 
 @app.route("/robots.txt")

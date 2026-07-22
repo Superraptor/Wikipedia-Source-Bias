@@ -12,6 +12,10 @@
   image: tool-wikibias-analyzer/tool-wikibias-analyzer:latest
   command: worker
   continuous: true
+  # 2 replicas so one huge article (Emmanuel Macron is ~880 sources, tens of
+  # minutes) cannot block every small one behind it. claim_next() takes rows
+  # under a `WHERE status='pending'` guard, so parallel workers never collide.
+  replicas: 2
   mem: 2Gi
   cpu: "1"
   emails: onfailure

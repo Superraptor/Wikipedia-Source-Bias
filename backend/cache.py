@@ -141,6 +141,49 @@ class Cache:
             cur.close()
         self._commit()
 
+    # -- introspection ---------------------------------------------------
+
+    def queue_stats(self):
+        """{status: count} across the whole table."""
+        cur = self.conn.cursor()
+        try:
+            cur.execute("SELECT status, COUNT(*) FROM analysis_cache GROUP BY status")
+            rows = cur.fetchall()
+        finally:
+            cur.close()
+        return {row[0]: row[1] for row in rows}
+
+    def recent(self, limit=50):
+        """Most recently touched rows, newest first.
+
+        Deliberately does NOT select `result`: those blobs run to several MB
+        each and the status view only needs metadata.
+        """
+        cur = self.conn.cursor()
+        try:
+            cur.execute(
+                "SELECT page_url, page_title, status, attempts, error, "
+                "       source_count, created_at, updated_at "
+                "FROM analysis_cache ORDER BY updated_at DESC LIMIT %s",
+                (int(limit),),
+            )
+            rows = cur.fetchall()
+        finally:
+            cur.close()
+        return [
+            {
+                "page_url": r[0],
+                "page_title": r[1],
+                "status": r[2],
+                "attempts": r[3],
+                "error": r[4],
+                "source_count": r[5],
+                "created_at": r[6].isoformat() if r[6] else None,
+                "updated_at": r[7].isoformat() if r[7] else None,
+            }
+            for r in rows
+        ]
+
     def requeue_stale_running(self, older_than_minutes=30):
         """Recover rows abandoned by a killed worker."""
         cur = self.conn.cursor()

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>File d'analyse — Wiki Source Bias</title>
+<style>
+  :root {
+    --bg: #fff; --fg: #202122; --muted: #54595d; --line: #c8ccd1;
+    --pending: #edab00; --running: #3366cc; --done: #14866d; --error: #bf3c2c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101418; --fg: #eaecf0; --muted: #a2a9b1; --line: #27292d; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--fg);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.5;
+  }
+  main { max-width: 68rem; margin: 0 auto; }
+  h1 { font-size: 1.4rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .875rem; margin-bottom: 1.5rem; }
+  .sub a { color: var(--running); }
+  .cards { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.5rem; }
+  .card {
+    border: 1px solid var(--line); border-radius: 4px; padding: .6rem 1rem; min-width: 7rem;
+  }
+  .card .n { font-size: 1.6rem; font-weight: 600; }
+  .card .l { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .875rem; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); white-space: nowrap; }
+  td.url { max-width: 30rem; word-break: break-all; }
+  td.url a { color: inherit; }
+  .badge {
+    display: inline-block; padding: .05rem .45rem; border-radius: 999px;
+    font-size: .75rem; font-weight: 600; color: #fff; white-space: nowrap;
+  }
+  .s-pending { background: var(--pending); color: #202122; }
+  .s-running { background: var(--running); }
+  .s-done    { background: var(--done); }
+  .s-error   { background: var(--error); }
+  .err { color: var(--error); font-size: .8rem; word-break: break-word; max-width: 22rem; }
+  .empty, .dberr { border: 1px solid var(--line); border-radius: 4px; padding: 1rem; color: var(--muted); }
+  .dberr { border-color: var(--error); color: var(--error); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  time { color: var(--muted); white-space: nowrap; font-size: .8rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>File d'analyse</h1>
+  <p class="sub">
+    Cette page se rafraîchit toutes les 15&nbsp;secondes. &middot;
+    <a href="/">Retour à l'outil</a> &middot; <a href="/api/status">JSON</a>
+    {% if sync %}&middot; <strong>mode synchrone</strong>{% endif %}
+  </p>
+
+  {% if db_error %}
+    <p class="dberr"><strong>Base de données injoignable&nbsp;:</strong> {{ db_error }}</p>
+  {% else %}
+    <div class="cards">
+      <div class="card"><div class="n">{{ total }}</div><div class="l">total</div></div>
+      {% for s in ["pending", "running", "done", "error"] %}
+        <div class="card"><div class="n">{{ counts.get(s, 0) }}</div><div class="l">{{ s }}</div></div>
+      {% endfor %}
+    </div>
+
+    {% if rows %}
+      <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Article</th><th>Statut</th><th class="num">Sources</th>
+            <th class="num">Essais</th><th>Erreur</th><th>Mis à jour</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for r in rows %}
+          <tr>
+            <td class="url"><a href="{{ r.page_url }}" rel="noreferrer">{{ r.page_title or r.page_url }}</a></td>
+            <td><span class="badge s-{{ r.status }}">{{ r.status }}</span></td>
+            <td class="num">{{ r.source_count if r.source_count is not none else "—" }}</td>
+            <td class="num">{{ r.attempts }}</td>
+            <td class="err">{{ r.error or "" }}</td>
+            <td><time>{{ r.updated_at or "" }}</time></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="empty">Aucune analyse enregistrée pour le moment.</p>
+    {% endif %}
+  {% endif %}
+</main>
+<script>setTimeout(function () { location.reload(); }, 15000);</script>
+</body>
+</html>

@@ -51,6 +51,27 @@ class FakeCache:
         self.enqueued.append(url)
         self.states[url] = ("pending", None)
 
+    def queue_stats(self):
+        counts = {}
+        for status, _ in self.states.values():
+            counts[status] = counts.get(status, 0) + 1
+        return counts
+
+    def recent(self, limit=50):
+        return [
+            {
+                "page_url": url,
+                "page_title": None,
+                "status": status,
+                "attempts": 1,
+                "error": err,
+                "source_count": None,
+                "created_at": None,
+                "updated_at": None,
+            }
+            for url, (status, err) in list(self.states.items())[:limit]
+        ]
+
 
 @pytest.fixture
 def app_with_fake_cache(monkeypatch):
@@ -131,6 +152,58 @@ def test_analyze_503_when_cache_unavailable_in_async_mode(monkeypatch):
     app.config["TESTING"] = True
     with app.test_client() as c:
         resp = c.get("/api/analyze?url=https://fr.wikipedia.org/wiki/A")
+    assert resp.status_code == 503
+
+
+# -- status page ---------------------------------------------------------
+
+
+def test_api_status_reports_queue_counts(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    fake.states["https://fr.wikipedia.org/wiki/A"] = ("pending", None)
+    fake.states["https://fr.wikipedia.org/wiki/B"] = ("error", "boom")
+    resp = client.get("/api/status")
+    assert resp.status_code == 200
+    body = resp.get_json()
+    assert body["counts"]["pending"] == 1
+    assert body["counts"]["error"] == 1
+    assert len(body["recent"]) == 2
+
+
+def test_status_page_renders_rows_and_errors(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    fake.states["https://fr.wikipedia.org/wiki/Catherine_Barbaroux"] = ("running", None)
+    fake.states["https://fr.wikipedia.org/wiki/Broken"] = ("error", "scrape exploded")
+    resp = client.get("/status")
+    assert resp.status_code == 200
+    html = resp.get_data(as_text=True)
+    assert "Catherine_Barbaroux" in html
+    assert "scrape exploded" in html
+    assert "s-running" in html and "s-error" in html
+
+
+def test_status_page_survives_a_dead_database(monkeypatch):
+    """The status page is what you open when things are broken."""
+
+    def boom():
+        raise RuntimeError("db is down")
+
+    monkeypatch.setattr("app.get_cache", boom)
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get("/status")
+    assert resp.status_code == 200
+    assert "db is down" in resp.get_data(as_text=True)
+
+
+def test_api_status_503_when_cache_unavailable(monkeypatch):
+    def boom():
+        raise RuntimeError("db is down")
+
+    monkeypatch.setattr("app.get_cache", boom)
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get("/api/status")
     assert resp.status_code == 503
 
 
