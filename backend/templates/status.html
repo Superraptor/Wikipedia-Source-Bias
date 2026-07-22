@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="fr">
+<html lang="{{ locale }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>File d'analyse — WikiBias Analyzer</title>
+<title>{{ t('title') }}</title>
 <style>
   :root {
     --bg: #fff; --fg: #202122; --muted: #54595d; --line: #c8ccd1;
@@ -64,31 +64,31 @@
 </head>
 <body>
 <main>
-  <h1>File d'analyse</h1>
+  <h1>{{ t('heading') }}</h1>
   <p class="sub">
-    Cette page se rafraîchit toutes les 15&nbsp;secondes. &middot;
-    <a href="/">Retour à l'outil</a> &middot; <a href="/api/status">JSON</a>
-    {% if sync %}&middot; <strong>mode synchrone</strong>{% endif %}
+    {{ t('refresh') }} &middot;
+    <a href="/">{{ t('backToTool') }}</a> &middot; <a href="/api/status">{{ t('json') }}</a>
+    {% if sync %}&middot; <strong>{{ t('syncMode') }}</strong>{% endif %}
   </p>
 
   {% if db_error %}
-    <p class="dberr"><strong>Base de données injoignable&nbsp;:</strong> {{ db_error }}</p>
+    <p class="dberr"><strong>{{ t('dbDown') }}</strong> {{ db_error }}</p>
   {% else %}
     <div class="cards">
-      <div class="card"><div class="n">{{ total }}</div><div class="l">total</div></div>
+      <div class="card"><div class="n">{{ total }}</div><div class="l">{{ t('total') }}</div></div>
       {% for s in ["pending", "running", "done", "error"] %}
-        <div class="card"><div class="n">{{ counts.get(s, 0) }}</div><div class="l">{{ s }}</div></div>
+        <div class="card"><div class="n">{{ counts.get(s, 0) }}</div><div class="l">{{ t(s) }}</div></div>
       {% endfor %}
     </div>
 
     {% set active = rows | selectattr("status", "in", ["running", "pending"]) | list %}
     {% if active %}
       <section class="active">
-        <h2>{{ active | length }} analyse(s) en cours ou en attente</h2>
+        <h2>{{ t('activeHeading', n=active | length) }}</h2>
         <ul>
           {% for r in active %}
             <li>
-              <span class="badge s-{{ r.status }}">{{ r.status }}</span>
+              <span class="badge s-{{ r.status }}">{{ t(r.status) }}</span>
               <strong><a href="{{ r.analysis_url or r.page_url }}">{{ r.display_title }}</a></strong>
               — {{ r.duration_label }} {{ r.duration or "?" }}
               {% if r.progress_pct is not none %}
@@ -105,8 +105,8 @@
       <table>
         <thead>
           <tr>
-            <th>Article</th><th>Statut</th><th>Avancement</th><th>Durée</th><th class="num">Sources</th>
-            <th class="num">Essais</th><th>Erreur</th><th>Mis à jour</th>
+            <th>{{ t('colArticle') }}</th><th>{{ t('colStatus') }}</th><th>{{ t('colProgress') }}</th><th>{{ t('colDuration') }}</th><th class="num">{{ t('colSources') }}</th>
+            <th class="num">{{ t('colAttempts') }}</th><th>{{ t('colError') }}</th><th>{{ t('colUpdated') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -122,29 +122,29 @@
                 <a href="{{ r.page_url }}" target="_blank" rel="noreferrer noopener">{{ r.page_url }}</a>
               </div>
             </td>
-            <td><span class="badge s-{{ r.status }}">{{ r.status }}</span></td>
+            <td><span class="badge s-{{ r.status }}">{{ t(r.status) }}</span></td>
             <td class="prog">
               {% if r.status == "done" %}
-                <span class="ok">✓ Analyse terminée</span>
+                <span class="ok">{{ t('finished') }}</span>
                 <span class="dl">
-                  {% if r.source_count %}{{ r.source_count }} source(s) analysée(s){% endif %}
+                  {% if r.source_count %}{{ t('sourcesAnalysed', n=r.source_count) }}{% endif %}
                 </span>
               {% elif r.status == "error" %}
-                <span class="ko">✕ Échec</span>
-                <span class="dl">{{ r.attempts }} tentative(s)</span>
+                <span class="ko">{{ t('failed') }}</span>
+                <span class="dl">{{ t('attemptsMade', n=r.attempts) }}</span>
               {% elif r.status == "pending" %}
-                <span class="dl">en attente d'un worker</span>
+                <span class="dl">{{ t('waitingForWorker') }}</span>
               {% elif r.progress_pct is not none %}
                 <div class="bar"><span style="width: {{ r.progress_pct }}%"></span></div>
                 <span class="dl">
                   {{ r.stage_label or "" }} {{ r.progress_text }} ({{ r.progress_pct }}%)
-                  {% if r.eta %}· reste {{ r.eta }}{% endif %}
+                  {% if r.eta %}· {{ t('remaining') }} {{ r.eta }}{% endif %}
                 </span>
                 {% if r.health == "stalled" %}
-                  <span class="warn">aucune progression depuis {{ r.quiet_for }}</span>
+                  <span class="warn">{{ t('noProgressSince', quiet=r.quiet_for) }}</span>
                 {% endif %}
               {% else %}
-                <span class="dl">extraction des références…</span>
+                <span class="dl">{{ t('extracting') }}</span>
               {% endif %}
             </td>
             <td class="dur">
@@ -160,7 +160,7 @@
       </table>
       </div>
     {% else %}
-      <p class="empty">Aucune analyse enregistrée pour le moment.</p>
+      <p class="empty">{{ t('empty') }}</p>
     {% endif %}
   {% endif %}
 </main>

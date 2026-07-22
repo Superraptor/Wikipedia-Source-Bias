@@ -35,7 +35,7 @@
  * of these beside it.
  */
 import { computed, useId } from "vue";
-import { EVIDENCE } from "~/utils/provenance.js";
+import { EVIDENCE } from "../../utils/provenance.js";
 
 const props = defineProps({
   /** One of EVIDENCE.MEASURED | ESTIMATED | ABSENT. */

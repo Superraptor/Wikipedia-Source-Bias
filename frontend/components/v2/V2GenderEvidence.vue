@@ -127,7 +127,7 @@ import { computed } from "vue";
 import V2EvidenceBadge from "./V2EvidenceBadge.vue";
 import V2ProvenanceChip from "./V2ProvenanceChip.vue";
 import V2Coverage from "./V2Coverage.vue";
-import { EVIDENCE, PROVENANCE, wikidataUrl } from "~/utils/provenance.js";
+import { EVIDENCE, PROVENANCE, wikidataUrl } from "../../utils/provenance.js";
 
 const props = defineProps({
   /** `genderEvidenceSplit()` output. */
@@ -139,14 +139,17 @@ const props = defineProps({
   aggregateHuman: { type: Object, default: null },
 });
 
-const { t } = useI18n();
+const { t, te } = useI18n();
 
 // Two categorical slots. Validated all-pairs against the white Codex surface
 // (worst CVD ΔE 9.2, worst normal-vision ΔE 24.0).
 const HUES = { female: "#2a78d6", male: "#eb6834" };
 const hueFor = (key) => HUES[key] || "var(--wsi-ink-faint)";
 
-const genderLabel = (key) => t(`v2.gender.value.${key}`, key);
+// Gender values come from Wikidata and are open-ended (`non-binary`, etc.),
+// so an unknown value is shown verbatim rather than as a raw key path.
+const genderLabel = (key) =>
+  te(`v2.gender.value.${key}`) ? t(`v2.gender.value.${key}`) : key;
 
 const panels = computed(() => [
   {

@@ -30,7 +30,9 @@ import { cdxIconSearch } from "@wikimedia/codex-icons";
 const { t } = useI18n();
 
 const emit = defineEmits(["analyze"]);
-const url = ref("");
+// Prefilled with a real, self-referential example so the box is never a blank
+// prompt: a first-time visitor can press Analyser and see a result immediately.
+const url = ref("https://fr.wikipedia.org/wiki/Wikipédia");
 // The key, not the sentence: the message has to follow a locale change that
 // happens while it is on screen.
 const hintKey = ref("");

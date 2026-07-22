@@ -87,17 +87,20 @@ import {
   geographyEvidence,
   leaningEvidence,
   reliabilityEvidence,
-} from "~/utils/provenance.js";
-import { countryLabel, geographyNote, leanBadge, reliabilityLabel } from "~/utils/labels.js";
+} from "../../utils/provenance.js";
+import { countryLabel, geographyNote, leanBadge, reliabilityLabel } from "../../utils/labels.js";
 
 const props = defineProps({
   source: { type: Object, required: true },
 });
 
-const { t } = useI18n();
+const { t, te } = useI18n();
+
+/** Backend vocabularies are open-ended; unknown values display verbatim. */
+const vocab = (ns, key) => (te(`v2.${ns}.${key}`) ? t(`v2.${ns}.${key}`) : key);
 
 const typeLabel = computed(() =>
-  props.source.source_type ? t(`v2.sourceType.${props.source.source_type}`, props.source.source_type) : "—",
+  props.source.source_type ? vocab("sourceType", props.source.source_type) : "—",
 );
 
 const dash = t("app.empty");
@@ -163,7 +166,7 @@ const authors = computed(() =>
     return {
       name: profile.name,
       genderEv,
-      genderDisplay: genderEv.value ? t(`v2.gender.value.${genderEv.value}`, genderEv.value) : dash,
+      genderDisplay: genderEv.value ? vocab("gender.value", genderEv.value) : dash,
       genderDetail:
         genderEv.provenance === "heuristic"
           ? [pct(genderEv.confidence) && t("v2.ledger.confidence", { pct: pct(genderEv.confidence) }), genderEv.note]

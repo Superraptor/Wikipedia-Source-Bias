@@ -38,20 +38,16 @@ const { t } = useI18n();
 const router = useRouter();
 
 function goToArticle(url) {
-  const title = extractTitle(url);
   router.push(routeForUrl(url));
-}
-
-function extractTitle(url) {
-  const m = url.match(/\/wiki\/(.+)$/);
-  return m ? decodeURIComponent(m[1]) : url;
 }
 </script>
 
 <style scoped>
 .page-index {
   flex: 1;
-  padding-top: var(--space-7);
+  /* No padding-top: this was sized for a landing page with no header. The
+     header now lives inside this element, so the padding pushed the header
+     itself down and left a gap above it. The hero supplies its own spacing. */
 }
 .hero {
   padding-top: var(--space-6);

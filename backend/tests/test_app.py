@@ -427,3 +427,77 @@ def test_display_title_decodes_an_already_stored_page_title():
     assert _display_title({"page_title": "Guerre_d%27Alg%C3%A9rie"}) == "Guerre d'Algérie"
     # Already-clean titles must pass through untouched.
     assert _display_title({"page_title": "Brexit"}) == "Brexit"
+
+
+# -- caching ------------------------------------------------------------
+
+
+def test_index_html_is_not_cached(client):
+    """A stale index.html names chunk hashes a redeploy has already replaced,
+    which blank-pages every returning visitor until they hard-reload."""
+    resp = client.get("/")
+    assert "no-cache" in resp.headers.get("Cache-Control", "")
+
+
+def test_spa_fallback_route_is_not_cached(client):
+    resp = client.get("/wikipedia/fr/Brexit")
+    assert "no-cache" in resp.headers.get("Cache-Control", "")
+
+
+def test_hashed_assets_are_cached_immutably(client, tmp_path, monkeypatch):
+    import app as appmod
+
+    static = tmp_path / "static"
+    (static / "_nuxt").mkdir(parents=True)
+    (static / "_nuxt" / "abc123.js").write_text("export default 1;")
+    (static / "index.html").write_text("<html></html>")
+    monkeypatch.setattr(appmod, "STATIC_DIR", str(static))
+
+    with appmod.app.test_client() as c:
+        asset = c.get("/_nuxt/abc123.js")
+        page = c.get("/")
+    assert "immutable" in asset.headers.get("Cache-Control", "")
+    assert "no-cache" in page.headers.get("Cache-Control", "")
+
+
+# -- status page localisation -------------------------------------------
+
+
+def test_status_page_locale_follows_the_cookie(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    fake.states["https://en.wikipedia.org/wiki/A"] = ("done", None)
+
+    client.set_cookie("wikibias_locale", "en")
+    html = client.get("/status").get_data(as_text=True)
+    assert 'lang="en"' in html
+    assert "Analysis queue" in html
+    assert "File d&#39;analyse" not in html
+
+
+def test_status_page_falls_back_to_accept_language(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    fake.states["https://en.wikipedia.org/wiki/A"] = ("done", None)
+    html = client.get("/status", headers={"Accept-Language": "en-GB,en;q=0.9"}).get_data(as_text=True)
+    assert "Analysis queue" in html
+
+
+def test_status_page_defaults_to_french(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    fake.states["https://fr.wikipedia.org/wiki/A"] = ("done", None)
+    html = client.get("/status", headers={"Accept-Language": "fr-FR,fr;q=0.9"}).get_data(as_text=True)
+    # Jinja escapes the apostrophe, so match on the escaped form.
+    assert "File d&#39;analyse" in html or "File d'analyse" in html
+    assert "Analysis queue" not in html
+
+
+def test_status_translation_tables_have_identical_keys():
+    """A key present in one locale only silently renders the raw key name."""
+    from status_i18n import STRINGS
+
+    assert set(STRINGS["fr"]) == set(STRINGS["en"])
+
+
+def test_unknown_locale_cookie_does_not_break_the_page(app_with_fake_cache):
+    client, fake = app_with_fake_cache
+    client.set_cookie("wikibias_locale", "xx")
+    assert client.get("/status").status_code == 200

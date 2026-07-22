@@ -27,7 +27,7 @@
  * the absence of a link is itself the signal that nobody else vouched for it.
  */
 import { computed } from "vue";
-import { PROVENANCE } from "~/utils/provenance.js";
+import { PROVENANCE } from "../../utils/provenance.js";
 
 const props = defineProps({
   provenance: { type: String, required: true },

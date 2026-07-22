@@ -8,6 +8,7 @@ from flask import Flask, request, jsonify, send_from_directory, render_template
 import config
 from cache import Cache, PENDING, RUNNING, DONE, ERROR
 from runner import run_analysis, AnalysisUnavailable
+import status_i18n
 
 # The Nuxt SPA is generated into backend/static at build time (see the root
 # package.json). In production Flask serves both the bundle and /api from the
@@ -160,7 +161,7 @@ def _display_title(row):
     return unquote(title).replace("_", " ") or (row.get("page_url") or "")
 
 
-def _humanize(seconds):
+def _humanize(seconds, t=None):
     """'3 min 12 s' style duration. None when unknown."""
     if seconds is None:
         return None
@@ -174,13 +175,10 @@ def _humanize(seconds):
     return f"{hours} h {minutes:02d} min"
 
 
-STAGE_LABELS = {
-    "sources": "analyse des sources",
-    "aggregating": "agrégation des résultats",
-}
+STAGE_KEYS = {"sources": "stageSources", "aggregating": "stageAggregating"}
 
 
-def _coarse(seconds):
+def _coarse(seconds, t=None):
     """Round an ETA so it stops twitching between refreshes.
 
     A precise number that changes every 15s reads as unreliable even when the
@@ -190,7 +188,7 @@ def _coarse(seconds):
         return None
     seconds = max(0, int(seconds))
     if seconds < 60:
-        return "moins d'une minute"
+        return t("underMinute") if t else "moins d'une minute"
     minutes = seconds / 60
     if minutes < 10:
         return f"~{int(round(minutes))} min"
@@ -202,7 +200,7 @@ def _coarse(seconds):
     return f"~{int(round(hours))} h"
 
 
-def _progress(row):
+def _progress(row, t=None):
     """Percent complete plus an ETA.
 
     The ETA comes from the worker, which measures how long each source
@@ -230,7 +228,7 @@ def _progress(row):
         # Count down between progress writes instead of showing a stale number.
         eta_seconds = max(0, int(eta_seconds) - int(row.get("since_update_seconds") or 0))
 
-    return pct, f"{done}/{total}", _coarse(eta_seconds)
+    return pct, f"{done}/{total}", _coarse(eta_seconds, t)
 
 
 # A running analysis writes progress every ~5s. Silence for much longer means
@@ -272,32 +270,34 @@ def _analysis_url(row):
     return f"/article/{slug}?src={quote(url, safe='')}"
 
 
-def _decorate(row):
+def _decorate(row, t=None):
     """Add the presentation fields the status view needs."""
+    t = t or status_i18n.translator(status_i18n.DEFAULT)
     row["display_title"] = _display_title(row)
     row["analysis_url"] = _analysis_url(row)
-    pct, counted, eta = _progress(row)
+    pct, counted, eta = _progress(row, t)
     row["progress_pct"] = pct
     row["progress_text"] = counted
     row["eta"] = eta
-    row["stage_label"] = STAGE_LABELS.get(row.get("stage"), row.get("stage"))
+    stage_key = STAGE_KEYS.get(row.get("stage"))
+    row["stage_label"] = t(stage_key) if stage_key else row.get("stage")
     row["health"] = _health(row)
-    row["quiet_for"] = _humanize(row.get("since_update_seconds")) \
+    row["quiet_for"] = _humanize(row.get("since_update_seconds"), t) \
         if row.get("status") == RUNNING else None
     # TOTAL elapsed, not time-since-last-step. `since_update_seconds` resets on
     # every progress write, so using it made a long analysis look like it had
     # only just started.
     if row["status"] == RUNNING:
         # Since a worker claimed it, excluding the queue wait.
-        row["duration"] = _humanize(row.get("running_seconds"))
-        row["duration_label"] = "en cours depuis"
+        row["duration"] = _humanize(row.get("running_seconds"), t)
+        row["duration_label"] = t("durRunning")
     elif row["status"] == PENDING:
-        row["duration"] = _humanize(row.get("age_seconds"))
-        row["duration_label"] = "en attente depuis"
+        row["duration"] = _humanize(row.get("age_seconds"), t)
+        row["duration_label"] = t("durPending")
     else:
         # Finished: how long the run actually took, start to finish.
-        row["duration"] = _humanize(row.get("total_seconds"))
-        row["duration_label"] = "durée totale"
+        row["duration"] = _humanize(row.get("total_seconds"), t)
+        row["duration_label"] = t("durTotal")
     return row
 
 
@@ -309,11 +309,12 @@ def status_page():
     when the SPA bundle or the queue itself is broken, which is exactly when
     someone goes looking for it.
     """
+    locale = status_i18n.pick_locale(request)
+    t = status_i18n.translator(locale)
     try:
         cache = get_cache()
         counts = cache.queue_stats()
-        rows = cache.recent(50)
-        rows = [_decorate(r) for r in rows]
+        rows = [_decorate(r, t) for r in cache.recent(50)]
         err = None
     except Exception as e:
         counts, rows, err = {}, [], str(e)
@@ -325,6 +326,8 @@ def status_page():
         db_error=err,
         total=sum(counts.values()),
         sync=SYNC_ANALYSIS,
+        t=t,
+        locale=locale,
     )
 
 
@@ -337,6 +340,17 @@ def robots():
     )
 
 
+# Nuxt fingerprints everything under /_nuxt/ with a content hash, so those
+# files are immutable and can be cached hard. index.html must NOT be: it names
+# those hashed chunks, and a stale copy points at chunks a redeploy has already
+# replaced. The browser then requests a chunk that no longer exists, the SPA
+# fallback answers with index.html, and the module loader fails on the MIME
+# type -- a blank page for every returning visitor after each deploy.
+IMMUTABLE_PREFIX = "_nuxt/"
+IMMUTABLE_CACHE = "public, max-age=31536000, immutable"
+HTML_CACHE = "no-cache, must-revalidate"
+
+
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def spa(path):
@@ -346,7 +360,11 @@ def spa(path):
 
     full = os.path.join(STATIC_DIR, path)
     if path and os.path.isfile(full):
-        return send_from_directory(STATIC_DIR, path)
+        resp = send_from_directory(STATIC_DIR, path)
+        resp.headers["Cache-Control"] = (
+            IMMUTABLE_CACHE if path.startswith(IMMUTABLE_PREFIX) else HTML_CACHE
+        )
+        return resp
 
     index = os.path.join(STATIC_DIR, "index.html")
     if not os.path.isfile(index):
@@ -359,7 +377,9 @@ def spa(path):
             ),
             503,
         )
-    return send_from_directory(STATIC_DIR, "index.html")
+    resp = send_from_directory(STATIC_DIR, "index.html")
+    resp.headers["Cache-Control"] = HTML_CACHE
+    return resp
 
 
 if __name__ == "__main__":

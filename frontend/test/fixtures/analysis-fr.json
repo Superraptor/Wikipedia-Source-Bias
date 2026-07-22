@@ -1,0 +1,617 @@
+{
+ "aggregated_bias": {
+  "author_gender_distribution_estimate": {
+   "female": 5.0,
+   "male": 5.0,
+   "unknown": 90.0
+  },
+  "author_type_distribution": {
+   "corporate/organizational": {
+    "count": 0,
+    "percentage": 0.0
+   },
+   "human": {
+    "count": 6,
+    "percentage": 100.0
+   }
+  },
+  "book_count": 0,
+  "geography_distribution": {
+   "France": {
+    "count": 7,
+    "percentage": 87.5
+   },
+   "Unknown": {
+    "count": 1,
+    "percentage": 12.5
+   }
+  },
+  "human_author_citizenship_distribution": {},
+  "human_author_employer_country_distribution": {},
+  "human_author_employer_distribution": {},
+  "human_author_gender_distribution": {
+   "female": {
+    "count": 0,
+    "percentage": 0.0
+   },
+   "male": {
+    "count": 0,
+    "percentage": 0.0
+   },
+   "unknown": {
+    "count": 6,
+    "percentage": 100.0
+   }
+  },
+  "human_author_nationality_distribution": {
+   "France": {
+    "count": 5,
+    "percentage": 83.3
+   },
+   "Unknown": {
+    "count": 1,
+    "percentage": 16.7
+   }
+  },
+  "human_author_occupation_distribution": {},
+  "human_author_subregion_distribution": {
+   "Europe": {
+    "count": 3,
+    "percentage": 50.0
+   },
+   "Unknown": {
+    "count": 3,
+    "percentage": 50.0
+   }
+  },
+  "language_bias_metrics": {
+   "average_sensationalism_score": 0.01,
+   "average_subjectivity_score": 0.0,
+   "opinion_percentage": 0.0
+  },
+  "language_distribution": {
+   "English": {
+    "count": 3,
+    "percentage": 37.5
+   },
+   "French": {
+    "count": 5,
+    "percentage": 62.5
+   }
+  },
+  "political_leaning_distribution": {
+   "center-right": {
+    "count": 1,
+    "percentage": 12.5
+   },
+   "unknown": {
+    "count": 7,
+    "percentage": 87.5
+   }
+  },
+  "readability_metrics": {
+   "average_flesch_reading_ease": 36.87,
+   "readability_count": 7
+  },
+  "region_distribution": {
+   "Europe": {
+    "count": 5,
+    "percentage": 62.5
+   },
+   "Unknown": {
+    "count": 3,
+    "percentage": 37.5
+   }
+  },
+  "reliability_distribution": {
+   "high": {
+    "count": 1,
+    "percentage": 12.5
+   },
+   "medium": {
+    "count": 7,
+    "percentage": 87.5
+   }
+  },
+  "source_count": 8,
+  "source_type_distribution": {
+   "newspaper": {
+    "count": 1,
+    "percentage": 12.5
+   },
+   "web_source": {
+    "count": 7,
+    "percentage": 87.5
+   }
+  }
+ },
+ "page_title": "Catherine_Barbaroux",
+ "page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux",
+ "source_count": 8,
+ "sources": [
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "La-Croix.com",
+     "nationality_probability": {
+      "France": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": null,
+      "occupations": [],
+      "political_parties": [],
+      "wikidata_id": "Q1230298",
+      "wikidata_name": "La Croix"
+     }
+    }
+   ],
+   "citation_text": "Séverin Husson, « Catherine Barbaroux, le bénévolat en héritage » sur La Croix , 8 février 2016",
+   "domain": "la-croix.com",
+   "geography": {
+    "country": "France",
+    "region": "Unknown"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.la-croix.com/Economie/Social/Catherine-Barbaroux-benevolat-heritage-2016-02-08-1200738394",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "Bayard Presse"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "Catholic newspaper",
+     "daily newspaper"
+    ],
+    "wikidata_id": "Q1230298",
+    "wikidata_name": "La Croix"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Alumni Sciences Po",
+     "nationality_probability": {
+      "France": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "« Sciences Po Alumni », sur asso.fr (consulté le 18 mai 2021 ) .",
+   "domain": "sciences-po.asso.fr",
+   "geography": {
+    "country": "France",
+    "region": "Europe"
+   },
+   "language": "French",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.sciences-po.asso.fr/profil/catherine.agusdingutterez70",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "nonprofit organization"
+    ],
+    "wikidata_id": "Q60708123",
+    "wikidata_name": "Association des sciences po"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "adieorg",
+     "nationality_probability": {
+      "France": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "Catherine Barbaroux : Présidente de l'Adie de 2011 à 2016 sur le site de l' Adie , consulté le 8 mai 2017",
+   "domain": "adie.org",
+   "geography": {
+    "country": "France",
+    "region": "Unknown"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.adie.org/sites/default/files/CV/Biographie_Catherine_Barbaroux_sept2016.pdf",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "nonprofit organization"
+    ],
+    "wikidata_id": "Q2867980",
+    "wikidata_name": "adie"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Morgane Miel",
+     "nationality_probability": {
+      "France": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "Morgane Miel, « Mon petit déj' avec Catherine Barbaroux » sur Madame Figaro , 23 septembre 2011",
+   "domain": "madame.lefigaro.fr",
+   "geography": {
+    "country": "France",
+    "region": "Europe"
+   },
+   "language": "French",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "center-right",
+   "reliability": "high",
+   "source_type": "newspaper",
+   "url": "http://madame.lefigaro.fr/societe/mon-petit-dej-avec-catherine-barbaroux-230911-175912",
+   "wikidata_publisher": {
+    "countries": [],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "magazine"
+    ],
+    "wikidata_id": "Q3275273",
+    "wikidata_name": "Madame Figaro"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Magazine Marianne",
+     "nationality_probability": {
+      "Unknown": 1.0
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "« Tiens, le licenciement de Catherine Barbaroux par Alain Minc a disparu du site d'En Marche », sur marianne.net , 8 mai 2017 (consulté le 8 mai 2017 )",
+   "domain": "marianne.net",
+   "geography": {
+    "country": "Unknown",
+    "region": "Unknown"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT-CENTER Factual Reporting",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "MOSTLY FACTUAL Country",
+    "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
+    "media_type": "Magazine",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.marianne.net/politique/tiens-le-licenciement-de-catherine-barbaroux-par-alain-minc-disparu-du-site-d-en-marche",
+   "wikidata_publisher": {
+    "countries": [],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "newspaper",
+     "weekly newspaper"
+    ],
+    "wikidata_id": "Q3291285",
+    "wikidata_name": "Marianne"
+   }
+  },
+  {
+   "author_profiles": [],
+   "citation_text": "Valérie Landrieu, « Catherine Barbaroux reprend le flambeau de Maria Nowak à l'Adie », Les Échos , ‎ 5 avril 2011 ( lire en ligne )",
+   "domain": "lesechos.fr",
+   "geography": {
+    "country": "France",
+    "region": "Europe"
+   },
+   "language": "French",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.lesechos.fr/05/04/2011/LesEchos/20905-044-ECH_catherine-barbaroux-reprend-le-flambeau-de-maria-nowak-a-l-adie.htm#JWt5Ef2tbx3R6hH2.99",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "LVMH"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "newspaper",
+     "organization",
+     "periodical"
+    ],
+    "wikidata_id": "Q3117475",
+    "wikidata_name": "Groupe Les Echos"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "@ClemenceBauduin",
+     "nationality_probability": {
+      "France": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "Clémence Bauduin, « Qui est Catherine Barbaroux, présidente par intérim de La République en Marche ? », RTL , 8 mai 2017",
+   "domain": "rtl.fr",
+   "geography": {
+    "country": "France",
+    "region": "Europe"
+   },
+   "language": "French",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.05,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEAST BIASED (1.1)",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "MOSTLY FACTUAL (2.1)",
+    "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+    "media_type": "Radio Station",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.rtl.fr/actu/politique/qui-est-catherine-barbaroux-presidente-par-interim-de-la-republique-en-marche-7788455637",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "RTL Group"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "online newspaper",
+     "radio station"
+    ],
+    "wikidata_id": "Q1351173",
+    "wikidata_name": "RTL"
+   }
+  },
+  {
+   "author_profiles": [],
+   "citation_text": "« Dix nouveaux membres pour le bureau exécutif de La République En marche », sur lesechos.fr , 5 décembre 2017 (consulté le 25 octobre 2018 ) .",
+   "domain": "lesechos.fr",
+   "geography": {
+    "country": "France",
+    "region": "Europe"
+   },
+   "language": "French",
+   "language_bias": {
+    "detected_language": "French",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.lesechos.fr/05/12/2017/LesEchos/22586-010-ECH_dix-nouveaux-membres-pour-le-bureau-executif-de-la-republique-en-marche.htm",
+   "wikidata_publisher": {
+    "countries": [
+     "France"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "LVMH"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "newspaper",
+     "organization",
+     "periodical"
+    ],
+    "wikidata_id": "Q3117475",
+    "wikidata_name": "Groupe Les Echos"
+   }
+  }
+ ]
+}

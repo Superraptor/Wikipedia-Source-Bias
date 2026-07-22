@@ -105,7 +105,7 @@ import { computed, ref } from "vue";
 import V2EvidenceBadge from "./V2EvidenceBadge.vue";
 import V2ProvenanceChip from "./V2ProvenanceChip.vue";
 import V2Coverage from "./V2Coverage.vue";
-import { EVIDENCE } from "~/utils/provenance.js";
+import { EVIDENCE } from "../../utils/provenance.js";
 
 const props = defineProps({
   title: { type: String, required: true },

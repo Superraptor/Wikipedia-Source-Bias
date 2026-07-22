@@ -22,12 +22,15 @@
   },
   "home": {
     "eyebrow": "Wikimania 2026 · Team 05E — Deciphering Biases",
-    "title": "D'où viennent les sources d'un article Wikipedia ?",
+    "title": "Les sources de Wikipédia sont-elles biaisées ?",
     "lede": "Saisissez l'URL d'un article pour découvrir les biais des sources citées via 5 critères : leur diversité géographique, leur pluralisme politique, leur parité d'auteur, leur neutralité et leur fiablité."
   },
   "corpus": {
     "title": "Articles récents",
-    "sourceCount": "{count} sources"
+    "sourceCount": "{count} sources",
+    "running": "analyse en cours… {pct} %",
+    "queued": "en file d'attente",
+    "failed": "échec de l'analyse"
   },
   "article": {
     "eyebrow": "Tableau de bord"
@@ -166,5 +169,281 @@
     "linkSource": "Code source (GitHub)",
     "linkQueue": "File d'analyse",
     "methodologyLink": "Méthodologie détaillée"
+  },
+  "v2": {
+    "banner": {
+      "title": "Tableau de bord v2 — expérimental",
+      "text": "Cette vue remplace le radar « Profil de biais » par les distributions réellement mesurées par l'outil. Chaque chiffre indique d'où il vient, s'il est mesuré ou estimé, et sur quelle part du corpus il porte."
+    },
+    "article": {
+      "eyebrow": "Analyse des sources — v2",
+      "viewV1": "← Voir l'ancien tableau de bord (v1)"
+    },
+    "entry": {
+      "eyebrow": "Expérimental",
+      "title": "Tableau de bord v2",
+      "lede": "Une lecture des mêmes analyses, centrée sur la traçabilité : d'où vient chaque chiffre, et sur combien de sources il repose.",
+      "label": "URL d'un article Wikipédia",
+      "placeholder": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux",
+      "submit": "Analyser",
+      "invalid": "Cette adresse n'est pas un article Wikipédia reconnaissable.",
+      "changesTitle": "Ce qui change par rapport à la v1",
+      "change1": "Le radar à 5 axes est supprimé : trois de ses axes reformulaient une distribution de façon plus grossière que la distribution elle-même, et deux lisaient des clés absentes de la réponse du serveur, donc restaient bloqués à zéro.",
+      "change2": "Chaque barre est cliquable et ouvre la liste des sources qui la composent.",
+      "change3": "Chaque attribut indique sa source : Wikidata, MBFC, domaine de premier niveau, ou estimation interne.",
+      "change4": "Chaque métrique affiche sa couverture réelle : « sur 6 des 8 sources », jamais un chiffre présenté comme portant sur tout le corpus."
+    },
+    "evidence": {
+      "measured": "Mesuré",
+      "estimated": "Estimé",
+      "absent": "Inconnu",
+      "measuredLong": "Mesuré — affirmé par une source externe vérifiable (Wikidata ou MBFC)",
+      "estimatedLong": "Estimé — déduit par cet outil au moyen d'une heuristique, sans confirmation externe",
+      "absentLong": "Inconnu — aucune valeur n'a pu être déterminée. Ce n'est pas un zéro."
+    },
+    "provenance": {
+      "wikidata": "Wikidata",
+      "mbfc": "MBFC",
+      "tld": "Domaine",
+      "heuristic": "Estimation",
+      "none": "Aucune",
+      "wikidataLong": "Déclaration publiée sur un élément Wikidata",
+      "mbfcLong": "Évaluation publiée par Media Bias/Fact Check",
+      "tldLong": "Déduit du domaine de premier niveau, sans confirmation par un éditeur identifié",
+      "heuristicLong": "Estimation produite par cet outil, sans source externe",
+      "noneLong": "Aucune origine : la valeur n'a pas été déterminée"
+    },
+    "coverage": {
+      "none": {
+        "sources": "Aucune des {total} sources ne fournit cette information",
+        "authors": "Aucun des {total} auteurs ne fournit cette information"
+      },
+      "all": {
+        "sources": "Sur la totalité des {total} sources",
+        "authors": "Sur la totalité des {total} auteurs"
+      },
+      "partial": {
+        "sources": "Sur {known} des {total} sources ({pct} %)",
+        "authors": "Sur {known} des {total} auteurs ({pct} %)"
+      }
+    },
+    "chart": {
+      "showTable": "Tableau",
+      "showChart": "Graphique",
+      "category": "Catégorie",
+      "count": "Nombre",
+      "share": "Part",
+      "other": "Autres",
+      "drill": "Voir les {n} sources de la catégorie {bucket}",
+      "excluded": "{n} source(s) exclue(s) du graphique ({pct} %) : valeur non déterminée.",
+      "empty": {
+        "missing": "Le serveur n'a fourni aucune donnée pour cette distribution. Ce n'est pas un zéro : la mesure n'a pas eu lieu.",
+        "allUnknown": "Aucune valeur n'a pu être déterminée pour ce corpus. Rien n'est affiché plutôt qu'un graphique de zéros."
+      }
+    },
+    "summary": {
+      "sources": "Sources analysées",
+      "heroHint": "{authors} auteur(s) identifié(s), {books} ouvrage(s)",
+      "wikidata": "Éditeur dans Wikidata",
+      "wikidataHint": "Sources dont l'éditeur a été rattaché à un élément Wikidata.",
+      "mbfc": "Fiche MBFC",
+      "mbfcHint": "Sources évaluées par Media Bias/Fact Check.",
+      "geoMeasured": "Pays confirmé",
+      "geoMeasuredHint": "Pays corroboré par Wikidata ou MBFC, et non seulement déduit du domaine.",
+      "leanKnown": "Orientation connue",
+      "leanKnownHint": "Sources pour lesquelles une orientation éditoriale a pu être déterminée."
+    },
+    "sections": {
+      "corpus": {
+        "title": "D'où viennent les sources",
+        "lede": "Distributions brutes du corpus. Les valeurs indéterminées ne sont jamais représentées comme une catégorie : elles sont retirées du graphique et signalées comme un défaut de couverture."
+      },
+      "editorial": {
+        "title": "Caractère éditorial",
+        "lede": "Orientation politique et fiabilité, telles que renvoyées par le serveur, sans recomposition en indice."
+      },
+      "authors": {
+        "title": "Qui a écrit ces sources",
+        "lede": "La distinction entre déclaration Wikidata et estimation à partir de l'orthographe du nom est ici décisive, et n'est jamais masquée."
+      },
+      "text": {
+        "title": "Signaux de langue",
+        "lede": "Mesures faites sur le texte des sources récupérées, avec leur taille d'échantillon réelle."
+      }
+    },
+    "charts": {
+      "geography": {
+        "title": "Pays de publication",
+        "subtitle": "Nombre de sources par pays",
+        "detail": "Confirmé par Wikidata ou MBFC lorsque disponible, sinon déduit du domaine."
+      },
+      "language": {
+        "title": "Langue des sources",
+        "subtitle": "Langue détectée dans le texte récupéré",
+        "detail": "Détection automatique de la langue du texte."
+      },
+      "region": {
+        "title": "Région",
+        "subtitle": "Regroupement des pays par région"
+      },
+      "sourceType": {
+        "title": "Type de source",
+        "subtitle": "Nature éditoriale de la source",
+        "detail": "Classement interne à partir du domaine et de la citation."
+      },
+      "leaning": {
+        "title": "Orientation éditoriale",
+        "subtitle": "Valeurs brutes renvoyées par le serveur, sans repositionnement sur un axe gauche-droite",
+        "detail": "Idéologie déclarée dans Wikidata ou note de biais MBFC."
+      },
+      "reliability": {
+        "title": "Fiabilité",
+        "subtitle": "Échelle ordonnée : faible, moyenne, élevée, académique",
+        "detail": "Note MBFC lorsqu'elle existe, sinon règle interne fondée sur le type de source."
+      },
+      "authorType": {
+        "title": "Type d'auteur",
+        "subtitle": "Personne physique ou entité",
+        "detail": "Déduit de la forme du nom de l'auteur."
+      },
+      "authorNationality": {
+        "title": "Nationalité des auteurs (estimée)",
+        "subtitle": "Déduite de l'origine linguistique du nom",
+        "detail": "Estimation par heuristique sur le prénom et le nom."
+      },
+      "authorCitizenship": {
+        "title": "Citoyenneté des auteurs (Wikidata)",
+        "subtitle": "Déclarée sur l'élément Wikidata de l'auteur",
+        "detail": "Ne couvre que les auteurs rattachés à un élément Wikidata, donc souvent une petite minorité."
+      },
+      "authorOccupation": {
+        "title": "Professions des auteurs",
+        "subtitle": "Déclarées dans Wikidata",
+        "detail": "Ne couvre que les auteurs présents dans Wikidata."
+      },
+      "authorEmployer": {
+        "title": "Employeurs des auteurs",
+        "subtitle": "Déclarés dans Wikidata",
+        "detail": "Rarement renseigné : le serveur renvoie le plus souvent une distribution vide."
+      },
+      "authorSubregion": {
+        "title": "Région des auteurs (estimée)",
+        "subtitle": "Déduite de l'origine linguistique du nom"
+      },
+      "languageBias": {
+        "title": "Subjectivité et sensationnalisme",
+        "detail": "Scores lexicaux calculés par le serveur sur le texte des sources."
+      },
+      "readability": {
+        "title": "Lisibilité",
+        "detail": "Indice de facilité de lecture de Flesch, calculé sur les sources dont le texte a pu être récupéré."
+      }
+    },
+    "metrics": {
+      "subjectivity": "Subjectivité moyenne",
+      "subjectivityHint": "Échelle de 0 à 1. Affichée telle quelle : une subjectivité de 0 n'est pas une « neutralité de 100 % ».",
+      "sensationalism": "Sensationnalisme moyen",
+      "sensationalismHint": "Échelle de 0 à 1, à partir d'un lexique de termes chargés.",
+      "opinion": "Part de sources d'opinion",
+      "opinionHint": "Sources identifiées comme tribunes ou éditoriaux.",
+      "flesch": "Facilité de lecture (Flesch)",
+      "fleschNote": "L'indice de Flesch est calibré pour l'anglais. Sur des sources d'une autre langue, il reste comparable d'un article à l'autre mais sa valeur absolue est peu significative.",
+      "fleschBand": {
+        "easy": "Lecture facile",
+        "difficult": "Lecture difficile",
+        "veryDifficult": "Lecture très difficile"
+      }
+    },
+    "gender": {
+      "title": "Genre des auteurs : mesuré et estimé",
+      "lede": "Deux canaux distincts, jamais additionnés. Wikidata publie une déclaration à propos d'une personne nommée ; l'heuristique devine à partir de l'orthographe du prénom et du nom. Les présenter ensemble produirait un chiffre qui ne décrit ni l'un ni l'autre.",
+      "noAuthors": "Aucun profil d'auteur n'a été extrait de ces sources.",
+      "measuredName": "Déclaré dans Wikidata",
+      "measuredDetail": "Déclaration de genre portée par l'élément Wikidata de l'auteur.",
+      "estimatedName": "Estimé d'après le nom",
+      "estimatedDetail": "Estimation par heuristique sur l'origine linguistique du prénom et du nom.",
+      "none": {
+        "measured": "Aucun des {total} auteurs n'a de genre déclaré dans Wikidata. Ce n'est pas « 0 % de femmes » : c'est l'absence de toute donnée confirmée.",
+        "estimated": "L'heuristique n'a pu attribuer un genre à aucun des {total} auteurs."
+      },
+      "undetermined": "{n} auteur(s) sur {total} restent sans genre déterminé par l'un ou l'autre canal.",
+      "unknownValue": "indéterminé",
+      "value": {
+        "female": "Femme",
+        "male": "Homme",
+        "unknown": "Indéterminé",
+        "non-binary": "Non binaire"
+      },
+      "disagreeTitle": "{n} désaccord(s) entre Wikidata et l'estimation",
+      "disagreeNote": "Ces cas justifient à eux seuls la séparation des deux canaux : l'agrégat publié par le serveur repose sur l'estimation et hérite donc de ces erreurs.",
+      "disagree": {
+        "missed": "l'heuristique n'a rien conclu (confiance {confidence} %), Wikidata indique : {measured}",
+        "contradicted": "l'heuristique indique {estimated} (confiance {confidence} %), Wikidata indique : {measured}"
+      },
+      "aggTitle": "Agrégats publiés par le serveur",
+      "aggNote": "Les deux distributions que le serveur calcule lui-même. La v1 lisait la clé author_gender_distribution, qui n'existe pas, et obtenait donc systématiquement zéro. Elles sont reproduites ici pour contrôle, mais ne servent pas de chiffre principal car elles reposent sur l'estimation.",
+      "aggKey": "Clé de l'API"
+    },
+    "derived": {
+      "title": "Indicateurs dérivés",
+      "lede": "Les seuls chiffres de cette page qui ne sont pas directement renvoyés par le serveur. Chacun affiche sa formule et ses entrées exactes, pour que le calcul puisse être refait à la main.",
+      "tag": "Calculé par cet outil",
+      "metric": {
+        "geography": "Concentration géographique",
+        "language": "Concentration linguistique"
+      },
+      "reading": {
+        "geography": "{pct} % des sources localisées proviennent d'un seul pays : {top}.",
+        "language": "{pct} % des sources identifiées sont dans une seule langue : {top}."
+      },
+      "how": "Voir la formule et les entrées",
+      "inputTop": "Plus grande catégorie",
+      "inputTotal": "Total des catégories connues",
+      "inputExcluded": "Exclu (indéterminé)",
+      "inputResult": "Calcul",
+      "caveat": "Calculé uniquement sur les catégories connues : un corpus majoritairement non identifié ne peut donc pas apparaître comme diversifié.",
+      "empty": "Aucun indicateur dérivé ne peut être calculé : les distributions sous-jacentes sont vides."
+    },
+    "ledger": {
+      "title": "Registre des sources",
+      "lede": "Le relevé complet dont tous les graphiques ci-dessus sont des dénombrements. Chaque attribut porte son origine et, lorsqu'elle existe, un lien vers la déclaration correspondante.",
+      "filterLabel": "Filtrer",
+      "filterPlaceholder": "domaine, pays, auteur, texte de la citation…",
+      "showing": "{n} source(s) affichée(s) sur {total}",
+      "noMatch": "Aucune source ne correspond à ce filtre.",
+      "more": "Afficher {n} source(s) de plus",
+      "authors": "{n} auteur(s)",
+      "unnamedAuthor": "Auteur sans nom",
+      "country": "Pays",
+      "leaning": "Orientation",
+      "reliability": "Fiabilité",
+      "language": "Langue",
+      "gender": "Genre",
+      "nationality": "Nationalité",
+      "detectedLanguage": "Langue détectée : {lang}",
+      "confidence": "confiance {pct}"
+    },
+    "drawer": {
+      "eyebrow": "Sources de cette catégorie",
+      "close": "Fermer",
+      "count": "{n} source(s)",
+      "empty": "Aucune source ne correspond à cette catégorie."
+    },
+    "sourceType": {
+      "web_source": "Site web",
+      "newspaper": "Presse quotidienne",
+      "magazine": "Magazine",
+      "book": "Ouvrage",
+      "public_broadcaster": "Média public",
+      "news_agency": "Agence de presse",
+      "academic": "Publication académique",
+      "blog": "Blog",
+      "government": "Source gouvernementale",
+      "tv": "Télévision"
+    },
+    "authorType": {
+      "human": "Personne physique",
+      "corporate/organizational": "Entité ou organisation"
+    }
   }
 }
