@@ -11998,5 +11998,15 @@
       "gender": 0.7783316373825073,
       "subregion": 0.5275591015815735
     }
+  },
+  "Super User": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999699592590332,
+      "gender": 0.7137659788131714,
+      "subregion": 0.42995452880859375
+    }
   }
 }

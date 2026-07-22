@@ -10478,5 +10478,14 @@
     "occupations": [],
     "employers": []
   },
-  "J. G. (Джей Джи)": {}
+  "J. G. (Джей Джи)": {},
+  "Super User": {
+    "wikidata_id": "Q110262470",
+    "wikidata_name": "Super User",
+    "gender": null,
+    "citizenships": [],
+    "political_parties": [],
+    "occupations": [],
+    "employers": []
+  }
 }
