@@ -59,8 +59,54 @@ REGION_MAP = {
     "Kenya": "Africa", "Ethiopia": "Africa", "Ghana": "Africa",
     "Senegal": "Africa", "Ivory Coast": "Africa", "Cameroon": "Africa",
 
+    "Burkina Faso": "Africa", "Mali": "Africa", "Niger": "Africa",
+    "Benin": "Africa", "Togo": "Africa", "Guinea": "Africa",
+    "Madagascar": "Africa", "Rwanda": "Africa", "Uganda": "Africa",
+    "Tanzania": "Africa", "Zimbabwe": "Africa", "Angola": "Africa",
+    "Mozambique": "Africa", "Sudan": "Africa", "Libya": "Africa",
+    "Democratic Republic of the Congo": "Africa", "Congo": "Africa",
+
+    "Cambodia": "Asia", "Laos": "Asia", "Myanmar": "Asia",
+    "Nepal": "Asia", "Sri Lanka": "Asia", "Mongolia": "Asia",
+    "Uzbekistan": "Asia", "Azerbaijan": "Asia", "Georgia": "Asia",
+    "Armenia": "Asia", "Afghanistan": "Asia",
+
+    "Bolivia": "South America", "Ecuador": "South America",
+    "Paraguay": "South America", "Costa Rica": "North America",
+    "Panama": "North America", "Guatemala": "North America",
+    "Dominican Republic": "North America", "Haiti": "North America",
+    "Jamaica": "North America",
+
     "Australia": "Oceania", "New Zealand": "Oceania",
 }
+
+
+def _region_of_country(country):
+    """Region for a country value, which may name SEVERAL countries.
+
+    Wikidata often gives a publisher more than one country, and the analyzer
+    joins them ("Canada, United Kingdom, United States"). That joined string
+    matched nothing in REGION_MAP, so six articles reported a known country
+    with an unmapped region -- books.google.com among them.
+
+    All-in-one-region collapses to that region; genuinely multinational
+    publishers become "Global", which is truer than picking the first.
+    """
+    if not country or country == UNMAPPED:
+        return None
+    direct = REGION_MAP.get(country)
+    if direct:
+        return direct
+
+    parts = [c.strip() for c in country.split(",") if c.strip()]
+    if len(parts) < 2:
+        return None
+    regions = {REGION_MAP.get(c) for c in parts}
+    if None in regions:
+        regions.discard(None)
+    if not regions:
+        return None
+    return regions.pop() if len(regions) == 1 else "Global"
 
 
 def normalise_region(value):
@@ -146,7 +192,7 @@ def _norm_source(s):
     # Only when the country is unknown do we fall back to whatever region the
     # analyzer managed to infer.
     region = (
-        REGION_MAP.get(country)
+        _region_of_country(country)
         or normalise_region(geo_in.get("region"))
         or UNMAPPED
     )

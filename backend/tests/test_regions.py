@@ -123,3 +123,32 @@ def test_normalize_analysis_is_idempotent():
     twice = normalize_analysis(once)
     assert once == twice
     assert once["aggregated_bias"]["region_distribution"]["Oceania"]["count"] == 1
+
+
+# -- multi-country publishers -------------------------------------------
+
+
+def test_a_multi_country_publisher_in_one_region_collapses():
+    """Wikidata gives some publishers several countries; the analyzer joins
+    them into one string, which matched nothing and left the region unmapped."""
+    assert region_of("Canada, United States") == "North America"
+    assert region_of("France, Belgium") == "Europe"
+
+
+def test_a_genuinely_multinational_publisher_is_global():
+    # books.google.com: Canada + United Kingdom + United States.
+    assert region_of("Canada, United Kingdom, United States") == "Global"
+
+
+def test_unknown_members_are_ignored_rather_than_poisoning_the_result():
+    assert region_of("France, Atlantis") == "Europe"
+
+
+def test_a_wholly_unknown_multi_country_value_stays_unmapped():
+    assert region_of("Atlantis, Narnia") == UNMAPPED
+
+
+def test_the_countries_the_audit_surfaced_now_resolve():
+    # lefaso.net (Thomas Sankara) and nis.gov.kh (Cambodge).
+    assert region_of("Burkina Faso") == "Africa"
+    assert region_of("Cambodia") == "Asia"
