@@ -272,7 +272,9 @@ class Cache:
         "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
         "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
         "       stage, progress_done, progress_total, eta_seconds, "
-        "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s "
+        "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s, "
+        # Wall-clock length of a finished run: claim -> completion.
+        "       TIMESTAMPDIFF(SECOND, started_at, updated_at) AS total_s "
         "FROM analysis_cache "
     )
 
@@ -297,6 +299,7 @@ class Cache:
             "eta_seconds": r[13],
             # Time actually spent analysing, excluding the queue wait.
             "running_seconds": int(r[14]) if r[14] is not None else None,
+            "total_seconds": int(r[15]) if r[15] is not None else None,
         }
 
     def _rows(self, where="", args=(), limit=50, order=None):

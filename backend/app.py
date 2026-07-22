@@ -270,17 +270,20 @@ def _decorate(row):
     row["health"] = _health(row)
     row["quiet_for"] = _humanize(row.get("since_update_seconds")) \
         if row.get("status") == RUNNING else None
-    # A running row's clock started when a worker claimed it (updated_at); a
-    # waiting row's when it was queued (created_at).
+    # TOTAL elapsed, not time-since-last-step. `since_update_seconds` resets on
+    # every progress write, so using it made a long analysis look like it had
+    # only just started.
     if row["status"] == RUNNING:
-        row["duration"] = _humanize(row.get("since_update_seconds"))
+        # Since a worker claimed it, excluding the queue wait.
+        row["duration"] = _humanize(row.get("running_seconds"))
         row["duration_label"] = "en cours depuis"
     elif row["status"] == PENDING:
         row["duration"] = _humanize(row.get("age_seconds"))
         row["duration_label"] = "en attente depuis"
     else:
-        row["duration"] = _humanize(row.get("since_update_seconds"))
-        row["duration_label"] = "il y a"
+        # Finished: how long the run actually took, start to finish.
+        row["duration"] = _humanize(row.get("total_seconds"))
+        row["duration_label"] = "durée totale"
     return row
 
 

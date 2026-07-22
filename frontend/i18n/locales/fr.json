@@ -70,7 +70,10 @@
   "worldMap": {
     "title": "Carte des sources",
     "subtitle": "Intensité par pays",
-    "ariaLabel": "Carte choroplèthe du nombre de sources par pays"
+    "ariaLabel": "Carte choroplèthe du nombre de sources par pays",
+    "fullscreen": "Plein écran",
+    "exitFullscreen": "Quitter le plein écran",
+    "zoomHint": "Ctrl + molette pour zoomer"
   },
   "topSources": {
     "title": "Top sources"

@@ -249,14 +249,16 @@ def test_decorate_picks_the_right_clock_per_status():
 
     running = _decorate({"status": "running", "page_url": "https://x/wiki/A",
                          "page_title": None, "age_seconds": 900,
-                         "since_update_seconds": 120})
-    # Running: time since a worker claimed it, not since it was queued.
-    assert running["duration"] == "2 min 00 s"
+                         "since_update_seconds": 120, "running_seconds": 480})
+    # Total time analysing -- NOT since the last progress write (which resets
+    # every few seconds and made long runs look freshly started), and not the
+    # queue wait either.
+    assert running["duration"] == "8 min 00 s"
     assert running["duration_label"] == "en cours depuis"
 
     pending = _decorate({"status": "pending", "page_url": "https://x/wiki/B",
                          "page_title": None, "age_seconds": 300,
-                         "since_update_seconds": 300})
+                         "since_update_seconds": 300, "running_seconds": None})
     assert pending["duration"] == "5 min 00 s"
     assert pending["duration_label"] == "en attente depuis"
 
@@ -394,3 +396,13 @@ def test_status_page_states_are_distinct_in_the_progress_column(app_with_fake_ca
     assert "Analyse terminée" in html
     assert "Échec" in html
     assert "en attente d&#39;un worker" in html or "en attente d'un worker" in html
+
+
+def test_finished_rows_show_total_run_length():
+    from app import _decorate
+
+    done = _decorate({"status": "done", "page_url": "https://x/wiki/C",
+                      "page_title": "C", "total_seconds": 3725,
+                      "since_update_seconds": 20, "age_seconds": 9999})
+    assert done["duration"] == "1 h 02 min"
+    assert done["duration_label"] == "durée totale"

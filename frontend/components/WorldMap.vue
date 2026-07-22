@@ -7,7 +7,18 @@
       </div>
       <p class="world-map__sub">{{ t("worldMap.subtitle") }}</p>
     </header>
-    <div ref="mapEl" class="world-map__canvas" role="img" :aria-label="t('worldMap.ariaLabel')"></div>
+    <div class="world-map__stage" :class="{ 'world-map__stage--full': fullscreen }">
+      <div ref="mapEl" class="world-map__canvas" role="img" :aria-label="t('worldMap.ariaLabel')"></div>
+      <button
+        type="button"
+        class="world-map__expand"
+        :aria-pressed="fullscreen"
+        @click="toggleFullscreen"
+      >
+        {{ fullscreen ? t("worldMap.exitFullscreen") : t("worldMap.fullscreen") }}
+      </button>
+      <p class="world-map__hint" aria-hidden="true">{{ t("worldMap.zoomHint") }}</p>
+    </div>
     <div class="world-map__legend">
       <span class="world-map__legend-label">0</span>
       <div class="world-map__scale" :style="{ background: legendGradient }" aria-hidden="true"></div>
@@ -107,6 +118,29 @@ function styleFor(feature) {
   };
 }
 
+const fullscreen = ref(false);
+
+// Scroll-wheel zoom stays OFF by default so the wheel scrolls the PAGE; a map
+// that swallows the wheel traps the reader mid-article. Ctrl/Cmd + wheel is
+// the usual way to opt into zooming an embedded map.
+function onWheel(event) {
+  if (!map) return;
+  if (event.ctrlKey || event.metaKey) map.scrollWheelZoom.enable();
+  else map.scrollWheelZoom.disable();
+}
+
+async function toggleFullscreen() {
+  fullscreen.value = !fullscreen.value;
+  await nextTick();
+  // Leaflet caches container size; without this the paths keep the old
+  // dimensions after the container resizes.
+  if (map) setTimeout(() => map.invalidateSize(), 60);
+}
+
+function onKeydown(event) {
+  if (event.key === "Escape" && fullscreen.value) toggleFullscreen();
+}
+
 onMounted(async () => {
   await nextTick();
   recompute();
@@ -119,11 +153,15 @@ onMounted(async () => {
   L.control.zoom({ position: "bottomright" }).addTo(map);
   geoLayer = L.geoJSON(worldGeo, { style: styleFor }).addTo(map);
   setTimeout(() => map.invalidateSize(), 60);
+  mapEl.value.addEventListener("wheel", onWheel, { passive: true });
+  window.addEventListener("keydown", onKeydown);
 });
 
 watch(() => props.analysis, recompute, { deep: true });
 
 onBeforeUnmount(() => {
+  window.removeEventListener("keydown", onKeydown);
+  if (mapEl.value) mapEl.value.removeEventListener("wheel", onWheel);
   if (map) {
     map.remove();
     map = null;
@@ -152,6 +190,42 @@ onBeforeUnmount(() => {
   border: 1px solid var(--wsi-line-soft);
   border-radius: var(--radius);
   overflow: hidden;
+}
+.world-map__stage { position: relative; }
+.world-map__stage--full {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: var(--wsi-surface, #fff);
+  padding: var(--space-4);
+}
+.world-map__stage--full .world-map__canvas { height: calc(100vh - 5rem); }
+.world-map__expand {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  z-index: 500;
+  border: 1px solid var(--wsi-line);
+  background: var(--wsi-surface, #fff);
+  color: var(--wsi-ink-soft);
+  border-radius: 2px;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+.world-map__expand:hover { color: var(--wsi-blue-700); }
+.world-map__hint {
+  position: absolute;
+  bottom: var(--space-2);
+  left: var(--space-2);
+  z-index: 500;
+  font-size: 0.72rem;
+  color: var(--wsi-ink-faint);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1px 6px;
+  border-radius: 2px;
+  pointer-events: none;
 }
 .world-map__legend {
   display: flex;

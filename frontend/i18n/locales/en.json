@@ -70,7 +70,10 @@
   "worldMap": {
     "title": "Source map",
     "subtitle": "Intensity by country",
-    "ariaLabel": "Choropleth map of the number of sources per country"
+    "ariaLabel": "Choropleth map of the number of sources per country",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit fullscreen",
+    "zoomHint": "Ctrl + scroll to zoom"
   },
   "topSources": {
     "title": "Top sources"
