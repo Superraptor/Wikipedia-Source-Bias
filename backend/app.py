@@ -1,4 +1,6 @@
 import os
+import sys
+from urllib.parse import urlparse, unquote
 
 from flask import Flask, request, jsonify, send_from_directory, render_template
 
@@ -24,6 +26,19 @@ app = Flask(__name__, static_folder=None)
 SYNC_ANALYSIS = os.environ.get(
     "SYNC_ANALYSIS", "0" if config.on_toolforge() else "1"
 ).strip().lower() in ("1", "true", "yes", "on")
+
+
+# In sync mode the web process runs analyses itself, so it needs the shared
+# lookup caches too. In async mode (Toolforge) the worker does the analysing,
+# but installing here as well keeps behaviour identical if SYNC_ANALYSIS is
+# ever turned on.
+if config.on_toolforge() or os.environ.get("USE_DB_CACHESTORE"):
+    try:
+        import db_cachestore
+
+        db_cachestore.install(config.connect)
+    except Exception as _e:  # pragma: no cover - never block startup on this
+        print(f"Could not install ToolsDB cache store: {_e}", file=sys.stderr)
 
 
 def _db_conn():
@@ -99,9 +114,56 @@ def api_status():
         {
             "counts": cache.queue_stats(),
             "sync_analysis": SYNC_ANALYSIS,
-            "recent": cache.recent(50),
+            "recent": [_decorate(r) for r in cache.recent(50)],
         }
     )
+
+
+def _display_title(row):
+    """A readable name for a queue row.
+
+    `page_title` is only written when an analysis completes, so pending and
+    running rows had none and fell back to the raw URL -- which is why the
+    status table mixed titles and URLs. Derive one from the URL instead, so
+    every row reads the same way.
+    """
+    title = row.get("page_title")
+    if title:
+        return title
+    url = row.get("page_url") or ""
+    slug = unquote(urlparse(url).path.rsplit("/", 1)[-1])
+    return slug.replace("_", " ") or url
+
+
+def _humanize(seconds):
+    """'3 min 12 s' style duration. None when unknown."""
+    if seconds is None:
+        return None
+    seconds = max(0, int(seconds))
+    if seconds < 60:
+        return f"{seconds} s"
+    minutes, sec = divmod(seconds, 60)
+    if minutes < 60:
+        return f"{minutes} min {sec:02d} s"
+    hours, minutes = divmod(minutes, 60)
+    return f"{hours} h {minutes:02d} min"
+
+
+def _decorate(row):
+    """Add the presentation fields the status view needs."""
+    row["display_title"] = _display_title(row)
+    # A running row's clock started when a worker claimed it (updated_at); a
+    # waiting row's when it was queued (created_at).
+    if row["status"] == RUNNING:
+        row["duration"] = _humanize(row.get("since_update_seconds"))
+        row["duration_label"] = "en cours depuis"
+    elif row["status"] == PENDING:
+        row["duration"] = _humanize(row.get("age_seconds"))
+        row["duration_label"] = "en attente depuis"
+    else:
+        row["duration"] = _humanize(row.get("since_update_seconds"))
+        row["duration_label"] = "il y a"
+    return row
 
 
 @app.route("/status")
@@ -116,6 +178,7 @@ def status_page():
         cache = get_cache()
         counts = cache.queue_stats()
         rows = cache.recent(50)
+        rows = [_decorate(r) for r in rows]
         err = None
     except Exception as e:
         counts, rows, err = {}, [], str(e)

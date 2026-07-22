@@ -12,12 +12,19 @@
 
     <main class="wsi-container page-article__main">
       <LoadingState v-if="state.status === 'loading'" />
+      <LoadingState v-else-if="state.status === 'pending'" pending />
       <ErrorState v-else-if="state.status === 'error'" :detail="state.error" />
       <EmptyState v-else-if="state.status === 'empty'" />
       <DashboardLayout
         v-else-if="state.status === 'loaded' && state.data"
         :analysis="state.data"
         @compare="goToArticle"
+      />
+      <!-- Never render nothing: an unhandled status used to leave a blank
+           page with no way to tell a queued analysis from a broken one. -->
+      <ErrorState
+        v-else
+        :detail="`État inattendu : ${state.status}. Rechargez la page ou consultez /status.`"
       />
     </main>
   </div>

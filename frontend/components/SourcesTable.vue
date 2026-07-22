@@ -29,7 +29,17 @@
                 <span class="sources-table__domain">{{ s.domain || truncate(s.url, 28) }}</span>
                 <span class="sources-table__url">{{ truncate(s.url, 52) }}</span>
               </td>
-              <td>{{ s.geography?.country || "—" }}</td>
+              <td>
+                {{ s.geography?.country || "—" }}
+                <!-- Explains WHY a source is unmapped; without it an unmapped
+                     row is indistinguishable from a bug. -->
+                <abbr
+                  v-if="s.geography?.note"
+                  class="sources-table__note"
+                  :title="s.geography.note"
+                  >&#9432;</abbr
+                >
+              </td>
               <td><LeanBadge :lean="s.political_leaning" /></td>
               <td><ReliabilityBadge :level="s.reliability" /></td>
             </tr>
@@ -282,4 +292,13 @@ ReliabilityBadge.props = ["level"];
 :deep(.rel--medium) { background: var(--background-color-warning-subtle); color: var(--color-warning); border-color: #f0d878; }
 :deep(.rel--low) { background: var(--background-color-destructive-subtle); color: var(--color-destructive); border-color: #f6b5b3; }
 :deep(.rel--unknown) { background: var(--background-color-neutral-subtle); color: var(--color-subtle); border-color: var(--border-color-subtle); }
+
+.sources-table__note {
+  margin-left: 0.35em;
+  cursor: help;
+  border: 0;
+  text-decoration: none;
+  color: var(--wsi-ink-faint);
+  font-size: 0.9em;
+}
 </style>

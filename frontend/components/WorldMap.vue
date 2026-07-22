@@ -10,14 +10,14 @@
     <div ref="mapEl" class="world-map__canvas" role="img" aria-label="Carte choroplèthe du nombre de sources par pays"></div>
     <div class="world-map__legend">
       <span class="world-map__legend-label">0</span>
-      <div class="world-map__scale" aria-hidden="true"></div>
+      <div class="world-map__scale" :style="{ background: legendGradient }" aria-hidden="true"></div>
       <span class="world-map__legend-label">{{ maxCount }}</span>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import * as L from "leaflet";
 import worldGeo from "~/assets/world.json";
 
@@ -56,14 +56,43 @@ function countFor(feature) {
   return 0;
 }
 
+// Single source of truth for the choropleth scale. The legend gradient is
+// generated from these same stops -- previously colorFor() interpolated its own
+// hard-coded RGB endpoints that landed on green at the top of the range while
+// the legend CSS ended in blue, so the map and its key disagreed.
+const SCALE_STOPS = [
+  { at: 0, rgb: [241, 244, 248] },   // #f1f4f8
+  { at: 0.55, rgb: [207, 224, 243] }, // #cfe0f3
+  { at: 1, rgb: [74, 123, 216] },     // #4a7bd8
+];
+
+function sampleScale(t) {
+  const x = Math.min(1, Math.max(0, t));
+  let lo = SCALE_STOPS[0];
+  let hi = SCALE_STOPS[SCALE_STOPS.length - 1];
+  for (let i = 0; i < SCALE_STOPS.length - 1; i += 1) {
+    if (x >= SCALE_STOPS[i].at && x <= SCALE_STOPS[i + 1].at) {
+      lo = SCALE_STOPS[i];
+      hi = SCALE_STOPS[i + 1];
+      break;
+    }
+  }
+  const span = hi.at - lo.at || 1;
+  const k = (x - lo.at) / span;
+  const c = lo.rgb.map((v, i) => Math.round(v + (hi.rgb[i] - v) * k));
+  return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+}
+
+const legendGradient = computed(
+  () =>
+    `linear-gradient(90deg, ${SCALE_STOPS.map(
+      (s) => `${sampleScale(s.at)} ${Math.round(s.at * 100)}%`,
+    ).join(", ")})`,
+);
+
 function colorFor(count) {
-  if (!count) return "#f1f4f8";
-  const max = Math.max(1, maxCount.value);
-  const t = Math.min(1, count / max);
-  const r = Math.round(214 - 158 * t);
-  const g = Math.round(234 - 92 * t);
-  const b = Math.round(245 - 138 * t);
-  return `rgb(${r}, ${g}, ${b})`;
+  if (!count) return sampleScale(0);
+  return sampleScale(count / Math.max(1, maxCount.value));
 }
 
 function styleFor(feature) {
@@ -139,6 +168,6 @@ onBeforeUnmount(() => {
   flex: 1;
   height: 8px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #f1f4f8 0%, #cfe0f3 55%, #4a7bd8 100%);
+  /* background comes from legendGradient, built from SCALE_STOPS */
 }
 </style>

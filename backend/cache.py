@@ -1,5 +1,30 @@
 import hashlib
 import json
+import zlib
+
+# Payload kinds stored in analysis_result.
+JSON = "json"
+GEOJSON = "geojson"
+
+# Reports run 3-5MB for large articles and compress roughly tenfold, so this
+# is the difference between a few hundred MB of ToolsDB and a few GB against a
+# 25GB soft cap.
+COMPRESS_LEVEL = 6
+
+
+def _encode(payload):
+    """-> (bytes, compressed?)"""
+    raw = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    return zlib.compress(raw, COMPRESS_LEVEL), True
+
+
+def _decode(blob, compressed):
+    if isinstance(blob, str):
+        blob = blob.encode("utf-8")
+    if compressed:
+        blob = zlib.decompress(blob)
+    return json.loads(blob.decode("utf-8"))
+
 
 PENDING = "pending"
 RUNNING = "running"
@@ -31,22 +56,23 @@ class Cache:
 
     # -- read path -------------------------------------------------------
 
-    def get(self, url):
+    def get(self, url, kind=JSON):
         """Completed result for `url`, or None if absent/pending/failed."""
         h = self._hash(url)
         cur = self.conn.cursor()
         try:
             cur.execute(
-                "SELECT result FROM analysis_cache "
-                "WHERE url_hash = %s AND status = 'done'",
-                (h,),
+                "SELECT r.payload, r.compressed FROM analysis_result r "
+                "JOIN analysis_cache c ON c.url_hash = r.url_hash "
+                "WHERE r.url_hash = %s AND r.kind = %s AND c.status = 'done'",
+                (h, kind),
             )
             row = cur.fetchone()
         finally:
             cur.close()
         if row is None or row[0] is None:
             return None
-        return json.loads(row[0])
+        return _decode(row[0], row[1])
 
     def status_of(self, url):
         """(status, error) for `url`; (None, None) when the row is absent."""
@@ -66,19 +92,34 @@ class Cache:
 
     # -- write path ------------------------------------------------------
 
-    def set(self, url, payload):
-        """Store a completed analysis."""
+    def set(self, url, payload, kind=JSON):
+        """Store a completed analysis.
+
+        Metadata and payload go to different tables: the queue and status
+        views scan analysis_cache constantly and must not drag megabytes with
+        them. INSERT ... ON DUPLICATE KEY UPDATE rather than REPLACE, because
+        REPLACE deletes the row and would cascade the other kind's payload
+        away via the foreign key.
+        """
         h = self._hash(url)
-        page_title = payload.get("page_title")
-        source_count = payload.get("source_count")
-        blob = json.dumps(payload, ensure_ascii=False)
+        blob, compressed = _encode(payload)
         cur = self.conn.cursor()
         try:
             cur.execute(
-                "REPLACE INTO analysis_cache "
-                "(url_hash, page_url, page_title, result, source_count, status) "
-                "VALUES (%s, %s, %s, %s, %s, 'done')",
-                (h, url, page_title, blob, source_count),
+                "INSERT INTO analysis_cache "
+                "(url_hash, page_url, page_title, source_count, status) "
+                "VALUES (%s, %s, %s, %s, 'done') "
+                "ON DUPLICATE KEY UPDATE page_title = VALUES(page_title), "
+                "  source_count = VALUES(source_count), status = 'done', error = NULL",
+                (h, url, payload.get("page_title"), payload.get("source_count")),
+            )
+            cur.execute(
+                "INSERT INTO analysis_result "
+                "(url_hash, kind, payload, compressed, byte_size) "
+                "VALUES (%s, %s, %s, %s, %s) "
+                "ON DUPLICATE KEY UPDATE payload = VALUES(payload), "
+                "  compressed = VALUES(compressed), byte_size = VALUES(byte_size)",
+                (h, kind, blob, 1 if compressed else 0, len(blob)),
             )
         finally:
             cur.close()
@@ -161,10 +202,16 @@ class Cache:
         """
         cur = self.conn.cursor()
         try:
+            # Ages come from the server clock: pods have their own, and a
+            # skewed one would show negative waits.
             cur.execute(
                 "SELECT page_url, page_title, status, attempts, error, "
-                "       source_count, created_at, updated_at "
-                "FROM analysis_cache ORDER BY updated_at DESC LIMIT %s",
+                "       source_count, created_at, updated_at, "
+                "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
+                "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s "
+                "FROM analysis_cache "
+                "ORDER BY FIELD(status,'running','pending','error','done'), updated_at DESC "
+                "LIMIT %s",
                 (int(limit),),
             )
             rows = cur.fetchall()
@@ -180,6 +227,10 @@ class Cache:
                 "source_count": r[5],
                 "created_at": r[6].isoformat() if r[6] else None,
                 "updated_at": r[7].isoformat() if r[7] else None,
+                # For a running row this is how long it has been analysing;
+                # for a pending row, how long it has been waiting.
+                "age_seconds": int(r[8]) if r[8] is not None else None,
+                "since_update_seconds": int(r[9]) if r[9] is not None else None,
             }
             for r in rows
         ]

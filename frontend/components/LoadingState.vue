@@ -1,14 +1,35 @@
 <template>
   <div class="loading-state wsi-panel">
     <span class="loading-state__spinner" aria-hidden="true"></span>
-    <p class="loading-state__title">Analyse des sources en cours…</p>
-    <p class="loading-state__sub">Lecture des références, résolution Wikidata et calcul des distributions.</p>
+    <p class="loading-state__title">{{ title }}</p>
+    <p class="loading-state__sub">{{ subtitle }}</p>
     <CdxProgressBar class="loading-state__bar" />
+    <p v-if="pending" class="loading-state__hint">
+      Les grands articles peuvent demander plusieurs minutes.
+      <a href="/status" target="_blank" rel="noopener">Voir la file d'analyse</a>
+    </p>
   </div>
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { CdxProgressBar } from "@wikimedia/codex";
+
+// `pending` means the backend has queued the analysis and a worker will pick
+// it up; `loading` is just the in-flight HTTP request. They look similar but
+// the wait is wildly different, so say so.
+const props = defineProps({
+  pending: { type: Boolean, default: false },
+});
+
+const title = computed(() =>
+  props.pending ? "Analyse en file d'attente…" : "Analyse des sources en cours…",
+);
+const subtitle = computed(() =>
+  props.pending
+    ? "Un worker traite cet article. Cette page se met à jour automatiquement."
+    : "Lecture des références, résolution Wikidata et calcul des distributions.",
+);
 </script>
 
 <style scoped>
@@ -44,5 +65,10 @@ import { CdxProgressBar } from "@wikimedia/codex";
 .loading-state__bar {
   width: min(320px, 100%);
   margin-top: var(--space-3);
+}
+.loading-state__hint {
+  font-size: 0.85rem;
+  color: var(--wsi-ink-faint);
+  margin-top: var(--space-2);
 }
 </style>

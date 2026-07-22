@@ -211,3 +211,48 @@ def test_unknown_api_path_is_404_not_spa(client):
     resp = client.get("/api/nope")
     assert resp.status_code == 404
     assert resp.get_json()["error"] == "Not found"
+
+
+# -- duration reporting on the status view -------------------------------
+
+
+def test_humanize_durations():
+    from app import _humanize
+
+    assert _humanize(None) is None
+    assert _humanize(0) == "0 s"
+    assert _humanize(45) == "45 s"
+    assert _humanize(192) == "3 min 12 s"
+    assert _humanize(3725) == "1 h 02 min"
+    # A skewed clock must not produce a negative wait.
+    assert _humanize(-5) == "0 s"
+
+
+def test_decorate_picks_the_right_clock_per_status():
+    from app import _decorate
+
+    running = _decorate({"status": "running", "page_url": "https://x/wiki/A",
+                         "page_title": None, "age_seconds": 900,
+                         "since_update_seconds": 120})
+    # Running: time since a worker claimed it, not since it was queued.
+    assert running["duration"] == "2 min 00 s"
+    assert running["duration_label"] == "en cours depuis"
+
+    pending = _decorate({"status": "pending", "page_url": "https://x/wiki/B",
+                         "page_title": None, "age_seconds": 300,
+                         "since_update_seconds": 300})
+    assert pending["duration"] == "5 min 00 s"
+    assert pending["duration_label"] == "en attente depuis"
+
+
+def test_display_title_falls_back_to_the_url_slug():
+    from app import _display_title
+
+    assert _display_title({"page_title": "Real Title"}) == "Real Title"
+    row = {"page_title": None,
+           "page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux"}
+    assert _display_title(row) == "Catherine Barbaroux"
+    # Percent-encoded titles must decode, not leak %27 into the UI.
+    row = {"page_title": None,
+           "page_url": "https://fr.wikipedia.org/wiki/Guerre_d%27Alg%C3%A9rie"}
+    assert _display_title(row) == "Guerre d'Algérie"

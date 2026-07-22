@@ -10,6 +10,8 @@ from urllib.parse import urlparse, parse_qs
 import requests
 from bs4 import BeautifulSoup
 
+from .cachestore import get_store
+
 
 def _load_env_tokens():
     env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
@@ -272,7 +274,7 @@ def _fetch_wikidata_enrichment(url: str) -> dict[str, Any]:
         pass
 
     _wd_enrichment_cache[host] = result
-    _save_json_cache("wikidata_enrichment_cache.json", _wd_enrichment_cache)
+    _cache_put("wikidata_enrichment_cache.json", host, result)
     return result
 
 
@@ -424,7 +426,7 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         search_data = response.json()
         if not search_data.get("search"):
             _wd_author_cache[author_name] = {}
-            _save_json_cache("wikidata_author_cache.json", _wd_author_cache)
+            _cache_put("wikidata_author_cache.json", author_name, {})
             return {}
             
         entity_id = search_data["search"][0]["id"]
@@ -473,7 +475,7 @@ def _fetch_wikidata_author(author_name: str) -> dict[str, Any]:
         }
         
         _wd_author_cache[author_name] = result
-        _save_json_cache("wikidata_author_cache.json", _wd_author_cache)
+        _cache_put("wikidata_author_cache.json", author_name, result)
         return result
     except Exception:
         return {}
@@ -602,7 +604,7 @@ def _fetch_wikidata_publisher(domain: str) -> dict[str, Any]:
             }
 
         _wd_publisher_cache[domain] = result
-        _save_json_cache("wikidata_publisher_cache.json", _wd_publisher_cache)
+        _cache_put("wikidata_publisher_cache.json", domain, result)
         return result
     except Exception:
         return {}
@@ -786,7 +788,7 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
         pass
 
     _crossref_cache[doi] = result
-    _save_json_cache("crossref_cache.json", _crossref_cache)
+    _cache_put("crossref_cache.json", doi, result)
     return result
 
 
@@ -1170,7 +1172,7 @@ def _get_nametrace_prediction(name: str) -> dict[str, Any] | None:
         res = _nametracer_instance.predict(name)
         if res:
             _nametrace_cache[name] = res
-            _save_json_cache("nametrace_cache.json", _nametrace_cache)
+            _cache_put("nametrace_cache.json", name, res)
         return res
     except Exception:
         return None
@@ -1660,45 +1662,40 @@ import time
 CACHE_FILE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mbfc_cache.json")
 
 def _load_mbfc_cache() -> dict[str, dict[str, Any]]:
-    if os.path.exists(CACHE_FILE_PATH):
-        try:
-            with open(CACHE_FILE_PATH, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                # Filter out stale/incorrect/empty cache lookups to force a clean re-fetch with new regex
-                return {
-                    k: v for k, v in data.items() 
-                    if v and v.get("credibility_rating") != "unknown" and len(v.get("credibility_rating", "")) > 3
-                }
-        except Exception:
-            pass
-    return {}
+    data = get_store().load_all("mbfc_cache")
+    # Filter out stale/incorrect/empty cache lookups to force a clean re-fetch with new regex
+    return {
+        k: v for k, v in data.items()
+        if v and v.get("credibility_rating") != "unknown" and len(v.get("credibility_rating", "")) > 3
+    }
 
 def _save_mbfc_cache(cache: dict[str, dict[str, Any]]):
-    try:
-        with open(CACHE_FILE_PATH, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2, ensure_ascii=False)
-    except Exception:
-        pass
+    """Deprecated: prefer _cache_put('mbfc_cache.json', domain, rating)."""
+    _save_json_cache("mbfc_cache.json", cache)
 
 _mbfc_cache: dict[str, dict[str, Any]] = _load_mbfc_cache()
 
+def _ns(filename: str) -> str:
+    """'crossref_cache.json' -> 'crossref_cache'."""
+    return filename[:-5] if filename.endswith(".json") else filename
+
 def _load_json_cache(filename: str) -> dict[str, Any]:
-    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), filename)
-    if os.path.exists(path):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
-    return {}
+    return get_store().load_all(_ns(filename))
+
+def _cache_put(filename: str, key: str, value: Any) -> None:
+    """Persist a single entry.
+
+    Replaces the previous whole-dict rewrite. That was merely wasteful against
+    a file, but against MariaDB it would rewrite every row on every lookup.
+    """
+    get_store().put(_ns(filename), key, value)
 
 def _save_json_cache(filename: str, cache: dict[str, Any]):
-    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), filename)
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2, ensure_ascii=False)
-    except Exception:
-        pass
+    """Deprecated: kept so external callers keep working. Writes every entry."""
+    store = get_store()
+    ns = _ns(filename)
+    for k, v in cache.items():
+        store.put(ns, k, v)
 
 _wd_publisher_cache = _load_json_cache("wikidata_publisher_cache.json")
 _wd_enrichment_cache = _load_json_cache("wikidata_enrichment_cache.json")
@@ -1822,33 +1819,37 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
                     res["traffic_popularity"] = traffic_val
                     
                 _mbfc_cache[slug] = res
-                _save_mbfc_cache(_mbfc_cache)
+                _cache_put("mbfc_cache.json", slug, res)
                 return res
             except Exception:
                 pass
                 
     # Cache negative lookup as empty dict to avoid repeatedly querying invalid domains
     _mbfc_cache[slug] = {}
-    _save_mbfc_cache(_mbfc_cache)
+    _cache_put("mbfc_cache.json", slug, {})
     return {}
 
 PAGE_CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "page_cache.json")
 
+def _get_page_cache(cache_key: str) -> Any | None:
+    """Single-entry read.
+
+    The page cache holds whole analyses (megabytes each). The old code loaded
+    the entire file on every call just to look up one key.
+    """
+    return get_store().get("page_cache", cache_key)
+
+def _put_page_cache(cache_key: str, value: Any) -> None:
+    get_store().put("page_cache", cache_key, value)
+
 def _load_page_cache() -> dict[str, Any]:
-    if os.path.exists(PAGE_CACHE_FILE):
-        try:
-            with open(PAGE_CACHE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
-    return {}
+    """Deprecated: loads every cached analysis into memory. Use _get_page_cache."""
+    return get_store().load_all("page_cache")
 
 def _save_page_cache(cache: dict[str, Any]):
-    try:
-        with open(PAGE_CACHE_FILE, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2, ensure_ascii=False)
-    except Exception:
-        pass
+    """Deprecated: use _put_page_cache."""
+    for k, v in cache.items():
+        _put_page_cache(k, v)
 
 
 def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False, countries_only: bool = False, skip_rate_limiting: bool = False, output: str | None = None) -> dict[str, Any]:
@@ -1866,9 +1867,8 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
     dedup_candidate_urls = []
     
     if not no_cache:
-        cache = _load_page_cache()
-        if cache_key in cache:
-            cached_data = cache[cache_key]
+        cached_data = _get_page_cache(cache_key)
+        if cached_data is not None:
             if not cached_data.get("is_partial", False):
                 return cached_data
                 
@@ -2066,9 +2066,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 "countries_only": countries_only,
                 "is_partial": True
             }
-            cache = _load_page_cache()
-            cache[cache_key] = intermediate_result
-            _save_page_cache(cache)
+            _put_page_cache(cache_key, intermediate_result)
 
     if total > 0:
         sys.stderr.write(f"\r[{'█'*20}] 100% complete! Processing finished.\n")
@@ -2137,9 +2135,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         }
 
     if not no_cache:
-        cache = _load_page_cache()
-        cache[cache_key] = result
-        _save_page_cache(cache)
+        _put_page_cache(cache_key, result)
 
     if output:
         try:

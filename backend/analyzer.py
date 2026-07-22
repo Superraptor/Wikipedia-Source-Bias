@@ -10,22 +10,78 @@ REGION_MAP = {
 }
 
 
+UNMAPPED = "Non-mappé"
+
+# The analyzer emits the literal string "Unknown" when a heuristic finds
+# nothing. Treated as a value rather than as "missing", it defeated the
+# region lookup below: a source could carry country="France" and still show
+# region="Unknown", because "Unknown" is truthy.
+_MISSING = {None, "", "unknown", "Unknown", "UNKNOWN", "none", "None", UNMAPPED}
+
+# Generic TLDs carry no country signal, so a source on one is only mappable
+# via Wikidata or the curated domain database.
+_GENERIC_TLDS = (".com", ".net", ".org", ".info", ".biz", ".io", ".co")
+
+
+def _clean(value):
+    """Normalise the analyzer's several spellings of 'I don't know' to None."""
+    if value in _MISSING:
+        return None
+    return value
+
+
 def _norm_country(c):
-    if not c:
-        return "Non-mappé"
-    return c
+    return _clean(c) or UNMAPPED
+
+
+def _geo_note(domain, country, region):
+    """Explain why a source could not be placed, for debugging.
+
+    Without this an unmapped source was indistinguishable from a bug: you
+    could see that it was unmapped, but not whether the domain gave no signal,
+    or a lookup failed, or the region table simply lacked the country.
+    """
+    if country == UNMAPPED:
+        if domain and domain.lower().endswith(_GENERIC_TLDS):
+            tld = "." + domain.rsplit(".", 1)[-1]
+            return (
+                f"Domaine générique ({tld}) : aucun indice de pays dans le TLD, "
+                f"et aucune correspondance éditeur trouvée dans Wikidata ni dans "
+                f"la base de domaines."
+            )
+        return (
+            "Aucun pays déterminé : ni le TLD, ni Wikidata, ni la base de "
+            "domaines n'ont fourni de correspondance."
+        )
+    if region == UNMAPPED:
+        return (
+            f"Pays « {country} » résolu, mais absent de la table des régions "
+            f"(REGION_MAP) — la région reste inconnue."
+        )
+    return None
 
 
 def _norm_source(s):
     geo_in = s.get("geography") or {}
-    country = _norm_country(geo_in.get("country") or s.get("country"))
-    region = geo_in.get("region") or REGION_MAP.get(country, "Non-mappé")
+    country = _norm_country(_clean(geo_in.get("country")) or _clean(s.get("country")))
+    # Derive the region from the country whenever the analyzer did not supply
+    # one. Wikidata fills in the country after the TLD pass without revisiting
+    # the region, which is how country=France/region=Unknown arose.
+    region = _clean(geo_in.get("region")) or REGION_MAP.get(country, UNMAPPED)
+
+    domain = s.get("domain", "")
+    note = _geo_note(domain, country, region)
+    geography = {"country": country, "region": region}
+    if note:
+        geography["note"] = note
+        geography["unmapped"] = country == UNMAPPED
+
     return {
         "url": s.get("url", ""),
-        "domain": s.get("domain", ""),
+        "domain": domain,
         "source_type": s.get("source_type", "web_source"),
         "language": s.get("language", "unknown"),
-        "geography": {"country": country, "region": region},
+        "geography": geography,
         "political_leaning": s.get("political_leaning", "unknown"),
         "reliability": s.get("reliability", "unknown"),
         "citation_text": s.get("citation_text", ""),

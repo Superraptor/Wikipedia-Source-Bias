@@ -45,6 +45,13 @@
   .err { color: var(--error); font-size: .8rem; word-break: break-word; max-width: 22rem; }
   .empty, .dberr { border: 1px solid var(--line); border-radius: 4px; padding: 1rem; color: var(--muted); }
   .dberr { border-color: var(--error); color: var(--error); }
+  .u { color: var(--muted); font-size: .75rem; word-break: break-all; }
+  .dur { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .dl { color: var(--muted); font-size: .7rem; display: block; }
+  .active { border: 1px solid var(--running); border-radius: 4px; padding: .75rem 1rem; margin-bottom: 1.25rem; }
+  .active h2 { font-size: .95rem; margin: 0 0 .5rem; }
+  .active ul { margin: 0; padding-left: 1.1rem; }
+  .active li { margin-bottom: .2rem; }
   .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   time { color: var(--muted); white-space: nowrap; font-size: .8rem; }
 </style>
@@ -68,20 +75,42 @@
       {% endfor %}
     </div>
 
+    {% set active = rows | selectattr("status", "in", ["running", "pending"]) | list %}
+    {% if active %}
+      <section class="active">
+        <h2>{{ active | length }} analyse(s) en cours ou en attente</h2>
+        <ul>
+          {% for r in active %}
+            <li>
+              <span class="badge s-{{ r.status }}">{{ r.status }}</span>
+              <strong>{{ r.display_title }}</strong>
+              — {{ r.duration_label }} {{ r.duration or "?" }}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
     {% if rows %}
       <div class="scroll">
       <table>
         <thead>
           <tr>
-            <th>Article</th><th>Statut</th><th class="num">Sources</th>
+            <th>Article</th><th>Statut</th><th>Durée</th><th class="num">Sources</th>
             <th class="num">Essais</th><th>Erreur</th><th>Mis à jour</th>
           </tr>
         </thead>
         <tbody>
         {% for r in rows %}
           <tr>
-            <td class="url"><a href="{{ r.page_url }}" rel="noreferrer">{{ r.page_title or r.page_url }}</a></td>
+            <td class="url">
+              <a href="{{ r.page_url }}" rel="noreferrer">{{ r.display_title }}</a>
+              <div class="u">{{ r.page_url }}</div>
+            </td>
             <td><span class="badge s-{{ r.status }}">{{ r.status }}</span></td>
+            <td class="dur">
+              {% if r.duration %}<span class="dl">{{ r.duration_label }}</span> {{ r.duration }}{% else %}—{% endif %}
+            </td>
             <td class="num">{{ r.source_count if r.source_count is not none else "—" }}</td>
             <td class="num">{{ r.attempts }}</td>
             <td class="err">{{ r.error or "" }}</td>

@@ -29,12 +29,17 @@ def test_trailing_comment_is_stripped():
     assert "trailing" not in stmts[0]
 
 
-def test_real_schema_file_parses_to_one_create_table():
+def test_real_schema_file_parses_to_the_expected_tables():
     with open(schema.SCHEMA_PATH, encoding="utf-8") as f:
         stmts = schema.statements(f.read())
-    assert len(stmts) == 1, f"expected 1 statement, got {len(stmts)}: {stmts}"
-    assert stmts[0].upper().startswith("CREATE TABLE")
-    assert "url_hash" in stmts[0]
+    assert len(stmts) == 3, f"expected 3 statements, got {len(stmts)}"
+    assert all(s.upper().startswith("CREATE TABLE") for s in stmts)
+    joined = "\n".join(stmts)
+    for table in ("analysis_cache", "analysis_result", "kv_cache"):
+        assert table in joined
+    # The queue table must stay payload-free; that is the point of the split.
+    queue = next(s for s in stmts if "analysis_cache (" in s)
+    assert "payload" not in queue and "LONGTEXT" not in queue
 
 
 def test_schema_path_resolves():

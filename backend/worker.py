@@ -8,6 +8,7 @@ keeps a multi-minute scrape out of an HTTP request.
         --image tool-wikibias-analyzer/tool-wikibias-analyzer:latest \
         --command worker --continuous --mem 2Gi --cpu 1
 """
+import os
 import signal
 import sys
 import time
@@ -39,6 +40,16 @@ def main():
     conn = config.connect()
     cache = Cache(conn)
     log(f"Worker started against {config.db_params()['database']}")
+
+    # Point the analyzer's lookup caches (MBFC, Wikidata, Crossref, nametrace,
+    # page) at ToolsDB. Otherwise they land in the container filesystem, which
+    # is wiped on restart and not shared with the other replica -- every
+    # analysis would re-hit those APIs from scratch.
+    if config.on_toolforge() or os.environ.get("USE_DB_CACHESTORE"):
+        import db_cachestore
+
+        db_cachestore.install(config.connect)
+        log("Analyzer lookup caches -> ToolsDB (kv_cache)")
 
     # Fail fast and loudly if the analyzer is unavailable, rather than
     # discovering it one job at a time.
