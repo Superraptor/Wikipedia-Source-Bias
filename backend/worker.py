@@ -18,6 +18,22 @@ from cache import Cache
 from runner import run_analysis, AnalysisUnavailable
 from wikipedia_sources_bias.analysis import ArticleNotFound
 
+def _rss_mb():
+    """Resident memory in MB, or None where /proc is unavailable.
+
+    Read from /proc rather than a dependency: a worker was OOMKilled (exit 137)
+    with no record of how much it had been using, so the only evidence was the
+    notification email. Logging it per analysis makes growth visible before the
+    kernel intervenes.
+    """
+    try:
+        with open("/proc/self/statm", "r") as f:
+            pages = int(f.read().split()[1])
+        return pages * os.sysconf("SC_PAGE_SIZE") / (1024 * 1024)
+    except Exception:
+        return None
+
+
 IDLE_SLEEP_SECONDS = 10
 STALE_SWEEP_EVERY = 6  # loop iterations between stale-row sweeps (~1 min)
 
@@ -30,6 +46,10 @@ STALE_MINUTES = 10
 
 # Minimum gap between progress writes for one analysis.
 PROGRESS_EVERY_SECONDS = 5
+
+# Warn well before the 1Gi container limit, so a growth trend is visible in the
+# logs rather than arriving as an OOMKilled email.
+RSS_WARN_MB = 600
 
 # Weight of the newest sample in the seconds-per-source estimate. Low enough to
 # absorb one slow source, high enough to follow a real change in throughput.
@@ -57,7 +77,11 @@ def main():
 
     conn = config.connect()
     cache = Cache(conn)
-    log(f"Worker started against {config.db_params()['database']}")
+    rss = _rss_mb()
+    log(
+        f"Worker started against {config.db_params()['database']}"
+        + (f" (rss {rss:.0f}MB)" if rss else "")
+    )
 
     # Point the analyzer's lookup caches (MBFC, Wikidata, Crossref, nametrace,
     # page) at ToolsDB. Otherwise they land in the container filesystem, which
@@ -160,10 +184,17 @@ def main():
 
         try:
             cache.set(url, result)
+            rss = _rss_mb()
+            rss_note = f", rss {rss:.0f}MB" if rss else ""
             log(
                 f"  done in {time.monotonic() - started:.1f}s, "
-                f"{result.get('source_count')} sources"
+                f"{result.get('source_count')} sources{rss_note}"
             )
+            if rss and rss > RSS_WARN_MB:
+                log(
+                    f"  WARNING: resident memory {rss:.0f}MB is above "
+                    f"{RSS_WARN_MB}MB; the container limit is 1Gi."
+                )
         except Exception as e:
             log(f"  analysis succeeded but caching failed: {e}")
         finally:

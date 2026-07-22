@@ -32,12 +32,12 @@ describe("parseWikipediaUrl", () => {
 
 describe("routeForUrl", () => {
   it("produces the wikipedia-shaped route", () => {
-    expect(routeForUrl("https://en.wikipedia.org/wiki/Brexit")).toBe("/wikipedia/en/Brexit");
+    expect(routeForUrl("https://en.wikipedia.org/wiki/Brexit")).toBe("/v1/wikipedia/en/Brexit");
   });
 
   it("drops the query string from the route", () => {
     expect(routeForUrl("https://fr.wikipedia.org/wiki/Brexit?wprov=sfla1"))
-      .toBe("/wikipedia/fr/Brexit");
+      .toBe("/v1/wikipedia/fr/Brexit");
   });
 
   it("falls back to ?src= for non-Wikipedia sources", () => {
@@ -60,6 +60,10 @@ describe("wikipediaUrl", () => {
 
 describe("routeFor", () => {
   it("encodes titles safely", () => {
-    expect(routeFor("fr", "Guerre d'Algérie")).toBe("/wikipedia/fr/Guerre%20d'Alg%C3%A9rie");
+    expect(routeFor("fr", "Guerre d'Algérie")).toBe("/v1/wikipedia/fr/Guerre%20d'Alg%C3%A9rie");
+  });
+
+  it("can target another dashboard version", () => {
+    expect(routeFor("en", "Brexit", "v2")).toBe("/v2/wikipedia/en/Brexit");
   });
 });

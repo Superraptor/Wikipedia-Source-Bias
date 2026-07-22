@@ -1,10 +1,10 @@
 <template>
   <div class="dashboard-layout">
-    <div v-if="unmappedCount > 0" class="dashboard-layout__notice">
-      <CdxMessage type="warning" :fade-in="true">
-        {{ t("dashboard.unmappedNotice", { count: unmappedCount, pct: unmappedPct }, unmappedCount) }}
-      </CdxMessage>
-    </div>
+    <!-- The unmapped count is no longer a warning banner. Unmapped sources are
+         common and expected (generic .com/.net domains carry no country
+         signal), so leading every dashboard with a yellow alert overstated it.
+         The count is still visible in the geography chart and each affected
+         row still carries its per-source reason. -->
 
     <div class="dashboard-layout__grid">
       <div class="dashboard-layout__main">
@@ -34,7 +34,6 @@
 
 <script setup>
 import { computed } from "vue";
-import { CdxMessage } from "@wikimedia/codex";
 import RadarChart from "~/components/RadarChart.vue";
 import KpiCards from "~/components/KpiCards.vue";
 import TopCountriesBar from "~/components/TopCountriesBar.vue";
@@ -56,19 +55,7 @@ defineEmits(["compare"]);
 
 const radarAxes = computed(() => computeRadarAxes(props.analysis));
 
-const unmappedCount = computed(() => {
-  const dist = props.analysis.aggregated_bias?.geography_distribution || {};
-  let n = 0;
-  for (const [k, v] of Object.entries(dist)) {
-    if (isUnmapped(k)) n += v.count || 0;
-  }
-  return n;
-});
 
-const unmappedPct = computed(() => {
-  const total = props.analysis.source_count || 1;
-  return Math.round((100 * unmappedCount.value) / total * 10) / 10;
-});
 </script>
 
 <style scoped>
@@ -87,9 +74,6 @@ const unmappedPct = computed(() => {
   .dashboard-layout__grid {
     gap: var(--space-3);
   }
-}
-.dashboard-layout__notice {
-  margin-bottom: var(--space-4);
 }
 .dashboard-layout__grid {
   display: grid;

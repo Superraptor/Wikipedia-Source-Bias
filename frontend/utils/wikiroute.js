@@ -43,13 +43,16 @@ export function wikipediaUrl(lang, title) {
 }
 
 /** The in-app route for a source URL. */
-export function routeForUrl(url) {
+export function routeForUrl(url, version = DEFAULT_VERSION) {
   const parsed = parseWikipediaUrl(url);
-  if (parsed) return routeFor(parsed.lang, parsed.title);
+  if (parsed) return routeFor(parsed.lang, parsed.title, version);
   const title = (url || "").split("/").pop() || "article";
   return `/article/${encodeURIComponent(title)}?src=${encodeURIComponent(url)}`;
 }
 
-export function routeFor(lang, title) {
-  return `/wikipedia/${lang}/${encodeURIComponent(title)}`;
+// Default dashboard version for generated links.
+export const DEFAULT_VERSION = "v1";
+
+export function routeFor(lang, title, version = DEFAULT_VERSION) {
+  return `/${version}/wikipedia/${lang}/${encodeURIComponent(title)}`;
 }

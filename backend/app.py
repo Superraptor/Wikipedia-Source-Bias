@@ -286,7 +286,8 @@ def _analysis_url(row):
         return None
     host = _WIKI_HOST.match(parts.netloc or "")
     if host and parts.path.startswith("/wiki/"):
-        return f"/wikipedia/{host.group(1).lower()}/{slug}"
+        # Explicitly versioned: /v1 and /v2 are the only article shapes.
+        return f"/v1/wikipedia/{host.group(1).lower()}/{slug}"
     return f"/article/{slug}?src={quote(url, safe='')}"
 
 

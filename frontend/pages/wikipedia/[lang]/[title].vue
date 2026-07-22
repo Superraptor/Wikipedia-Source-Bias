@@ -1,20 +1,18 @@
 <template>
-  <ArticleView :url="url" :title="title" />
+  <p class="sr-only">{{ url }}</p>
 </template>
 
 <script setup>
 /**
- * Canonical article route, mirroring Wikipedia's own shape:
- *   /wikipedia/fr/Brexit  ->  https://fr.wikipedia.org/wiki/Brexit
- *
- * No ?src= query string: the language and title in the path are enough to
- * rebuild the source URL, so the link is short and shareable.
+ * Legacy unprefixed route. Everything now lives under an explicit version
+ * (/v1/... or /v2/...), so this only exists to redirect links that were shared
+ * before the prefix was introduced.
  */
-import { computed } from "vue";
-import ArticleView from "~/components/ArticleView.vue";
-import { wikipediaUrl } from "~/utils/wikiroute.js";
+import { computed, onMounted } from "vue";
+import { routeFor } from "~/utils/wikiroute.js";
 
 const route = useRoute();
+const router = useRouter();
 
 const lang = computed(() => String(route.params.lang || "fr").toLowerCase());
 const title = computed(() => {
@@ -25,5 +23,17 @@ const title = computed(() => {
     return raw;
   }
 });
-const url = computed(() => wikipediaUrl(lang.value, title.value));
+const url = computed(() => `https://${lang.value}.wikipedia.org/wiki/${title.value}`);
+
+onMounted(() => router.replace(routeFor(lang.value, title.value)));
 </script>
+
+<style scoped>
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+</style>

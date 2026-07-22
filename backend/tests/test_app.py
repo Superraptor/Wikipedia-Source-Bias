@@ -281,11 +281,11 @@ def test_status_rows_link_to_the_tool_not_wikipedia():
 
     # Canonical shape mirrors Wikipedia's own: no percent-encoded ?src=.
     assert _analysis_url({"page_url": "https://fr.wikipedia.org/wiki/Catherine_Barbaroux"}) \
-        == "/wikipedia/fr/Catherine_Barbaroux"
+        == "/v1/wikipedia/fr/Catherine_Barbaroux"
     assert _analysis_url({"page_url": "https://en.wikipedia.org/wiki/Brexit"}) \
-        == "/wikipedia/en/Brexit"
+        == "/v1/wikipedia/en/Brexit"
     assert _analysis_url({"page_url": "https://de.m.wikipedia.org/wiki/Berlin"}) \
-        == "/wikipedia/de/Berlin"
+        == "/v1/wikipedia/de/Berlin"
 
 
 def test_non_wikipedia_sources_keep_the_src_form():
