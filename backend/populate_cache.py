@@ -1,15 +1,18 @@
-"""Pré-peuple le cache MariaDB avec le corpus démo.
+"""Enqueue the demo corpus for analysis.
 
-Usage:
-    DB_HOST=... DB_USER=... DB_PASSWORD=... DB_NAME=sourcesbias \
-        python3 populate_cache.py
+Queues the corpus URLs and lets backend/worker.py do the work, so this finishes
+in milliseconds instead of holding a job open for the length of four full
+scrapes. Pass --sync to analyze inline instead (useful locally with no worker).
+
+    toolforge jobs run populate \
+        --image tool-wikibias-analyzer/tool-wikibias-analyzer:latest \
+        --command populate --wait
 """
-import os
 import sys
-import time
 
+import config
 from cache import Cache
-from analyzer import normalize_analysis
+from runner import run_analysis
 
 CORPUS = [
     "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
@@ -19,47 +22,34 @@ CORPUS = [
 ]
 
 
-def main():
-    try:
-        import pymysql
-    except ImportError:
-        print("PyMySQL requis: pip install PyMySQL", file=sys.stderr)
-        sys.exit(1)
-    conn = pymysql.connect(
-        host=os.environ.get("DB_HOST", "localhost"),
-        user=os.environ.get("DB_USER", "root"),
-        password=os.environ.get("DB_PASSWORD", ""),
-        database=os.environ.get("DB_NAME", "sourcesbias"),
-        charset="utf8mb4",
-    )
-    with open("../toolforge/schema.sql", encoding="utf-8") as f:
-        schema = f.read()
-    cur = conn.cursor()
-    for stmt in [s.strip() for s in schema.split(";") if s.strip()]:
-        cur.execute(stmt)
-    conn.commit()
-    cur.close()
+def main(argv):
+    sync = "--sync" in argv
 
+    conn = config.connect()
     cache = Cache(conn)
-    try:
-        from wikipedia_source_bias import analyze_url  # type: ignore
-    except ImportError:
-        from mock import mock_analysis
-        analyze_url = mock_analysis  # type: ignore
-        print("Repo amont manquant — utilisation du mock démo.", file=sys.stderr)
 
     for url in CORPUS:
-        print(f"Analyzing {url}...", file=sys.stderr)
+        if cache.get(url) is not None:
+            print(f"already cached, skipping: {url}", file=sys.stderr)
+            continue
+
+        if not sync:
+            cache.enqueue(url)
+            print(f"queued: {url}", file=sys.stderr)
+            continue
+
+        print(f"analyzing {url} ...", file=sys.stderr)
         try:
-            raw = analyze_url(url)
-            result = normalize_analysis(raw)
-            cache.set(url, result)
-            print(f"  cached: {result['source_count']} sources", file=sys.stderr)
+            result = run_analysis(url)
         except Exception as e:
             print(f"  FAILED: {e}", file=sys.stderr)
-        time.sleep(1.0)
+            cache.mark_error(url, e)
+            continue
+        cache.set(url, result)
+        print(f"  cached: {result.get('source_count')} sources", file=sys.stderr)
+
     conn.close()
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

@@ -1,0 +1,26 @@
+# Toolforge job definitions.  Apply with:  toolforge jobs load jobs.yaml
+#
+# `command:` values are Procfile process names -- the build service prepends
+# `launcher` automatically, which is what puts the installed venv on PATH.
+# Composite shell commands would need wrapping in `sh -c '...'`.
+#
+# Build-service images have file logging disabled, so read output with
+# `toolforge jobs logs <name> -f` rather than looking for .out/.err on NFS.
+---
+# The only process that performs an analysis. The web tier just enqueues.
+- name: worker
+  image: tool-wikibias-analyzer/tool-wikibias-analyzer:latest
+  command: worker
+  continuous: true
+  mem: 2Gi
+  cpu: "1"
+  emails: onfailure
+
+# Re-queues any corpus article missing from the cache. Cheap when warm: it
+# skips anything already cached and returns in milliseconds.
+- name: refresh-corpus
+  image: tool-wikibias-analyzer/tool-wikibias-analyzer:latest
+  command: populate
+  schedule: "@weekly"
+  mem: 512Mi
+  emails: onfailure

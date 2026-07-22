@@ -21,18 +21,18 @@ export default defineNuxtConfig({
         },
         { name: "theme-color", content: "#3366cc" },
       ],
-      link: [
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap",
-        },
-      ],
+      // No third-party <link>s here on purpose. The Toolforge Terms of Use
+      // (rule 7) forbid exposing end users' browsers to third parties, so the
+      // previous Google Fonts preconnect + stylesheet could not ship. Typography
+      // now comes from the Codex design tokens' own font stack; to restore the
+      // Source family, self-host the woff2 files under frontend/assets.
     },
   },
   nitro: {
     routeRules: {
+      // Dev-only. `ssr: false` + `nuxt generate` produces a static bundle with
+      // no Nitro server, so in production Flask serves the SPA and /api on the
+      // same origin instead (see backend/app.py).
       "/api/**": {
         proxy: "http://127.0.0.1:5000/api/**",
       },
