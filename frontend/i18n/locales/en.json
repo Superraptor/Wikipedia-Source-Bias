@@ -33,10 +33,10 @@
     "eyebrow": "Dashboard"
   },
   "radar": {
-    "title": "Bias profile",
+    "title": "Source bias profile",
     "subtitle": "5 axes normalised 0–100",
     "axesAria": "Axis values",
-    "datasetLabel": "Bias",
+    "datasetLabel": "Source bias",
     "axis": {
       "geo_diversity": "Geo. diversity",
       "political_pluralism": "Pol. pluralism",
