@@ -153,3 +153,52 @@ def test_release_only_affects_running_rows():
     Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
     assert "SET status = 'pending'" in seen["sql"]
     assert "status = 'running'" in seen["sql"]
+
+
+def test_stale_rows_past_max_attempts_are_failed_not_left_running():
+    """They used to sit in 'running' forever: no worker, no error, eternal spinner."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        def execute(self, sql, args=()):
+            seen.append((" ".join(sql.split()), args))
+            self.rowcount = 1
+
+        def close(self):
+            pass
+
+    requeued, failed = Cache(Conn()).requeue_stale_running(10)
+    assert requeued == 1 and failed == 1
+    requeue_sql, fail_sql = seen[0][0], seen[1][0]
+    assert "SET status = 'pending'" in requeue_sql and "attempts < " in requeue_sql
+    assert "SET status = 'error'" in fail_sql and "attempts >= " in fail_sql
+
+
+def test_release_gives_back_the_attempt():
+    """A redeploy interrupting work is not the analysis failing."""
+    seen = {}
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        def execute(self, sql, args=()):
+            seen["sql"] = " ".join(sql.split())
+            self.rowcount = 1
+
+        def close(self):
+            pass
+
+    Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
+    assert "attempts = GREATEST(0, attempts - 1)" in seen["sql"]

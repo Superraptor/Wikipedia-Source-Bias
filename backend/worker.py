@@ -81,9 +81,11 @@ def main():
     ticks = 0
     while _running:
         if ticks % STALE_SWEEP_EVERY == 0:
-            recovered = cache.requeue_stale_running(STALE_MINUTES)
+            recovered, failed = cache.requeue_stale_running(STALE_MINUTES)
             if recovered:
                 log(f"Requeued {recovered} stale running row(s)")
+            if failed:
+                log(f"Marked {failed} exhausted row(s) as failed")
         ticks += 1
 
         try:

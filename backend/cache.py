@@ -207,8 +207,12 @@ class Cache:
         h = self._hash(url)
         cur = self.conn.cursor()
         try:
+            # attempts is decremented: a redeploy interrupting the work is not
+            # the analysis failing, and counting it burned the retry budget of
+            # perfectly healthy articles.
             cur.execute(
-                "UPDATE analysis_cache SET status = 'pending' "
+                "UPDATE analysis_cache "
+                "SET status = 'pending', attempts = GREATEST(0, attempts - 1) "
                 "WHERE url_hash = %s AND status = 'running'",
                 (h,),
             )
@@ -322,7 +326,13 @@ class Cache:
         return self._rows(limit=limit)
 
     def requeue_stale_running(self, older_than_minutes=30):
-        """Recover rows abandoned by a killed worker."""
+        """Recover rows abandoned by a killed worker.
+
+        Returns (requeued, failed). Rows past MAX_ATTEMPTS are marked failed
+        rather than left alone: previously they stayed in 'running' forever
+        with no worker and no error, so the UI showed an eternal spinner and
+        nothing ever reclaimed them.
+        """
         cur = self.conn.cursor()
         try:
             cur.execute(
@@ -332,8 +342,23 @@ class Cache:
                 "  AND attempts < %s",
                 (older_than_minutes, MAX_ATTEMPTS),
             )
-            n = cur.rowcount
+            requeued = cur.rowcount
+
+            cur.execute(
+                "UPDATE analysis_cache "
+                "SET status = 'error', error = %s "
+                "WHERE status = 'running' "
+                "  AND updated_at < NOW() - INTERVAL %s MINUTE "
+                "  AND attempts >= %s",
+                (
+                    f"Abandoned after {MAX_ATTEMPTS} interrupted attempts "
+                    f"with no progress. Re-run to try again.",
+                    older_than_minutes,
+                    MAX_ATTEMPTS,
+                ),
+            )
+            failed = cur.rowcount
         finally:
             cur.close()
         self._commit()
-        return n
+        return requeued, failed
