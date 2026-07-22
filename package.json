@@ -3,7 +3,8 @@
   "private": true,
   "description": "Root build orchestrator. The Toolforge buildpack detects package.json at the REPO ROOT only, so this delegates into frontend/ and drops the generated SPA where Flask serves it.",
   "engines": {
-    "node": "22.x"
+    "node": "22.x",
+    "npm": "11.x"
   },
   "scripts": {
     "build": "cd frontend && npm ci && npm run generate && cd .. && rm -rf backend/static && cp -r frontend/.output/public backend/static",
