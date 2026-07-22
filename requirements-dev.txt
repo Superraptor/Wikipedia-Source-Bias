@@ -1,0 +1,14 @@
+# Local development / test extras. NOT installed on Toolforge.
+-r requirements.txt
+
+pytest>=7.4.0
+anyio>=4.2.0
+
+# Optional sentiment backend. Excluded from the Toolforge image on purpose:
+# the default torch wheel bundles CUDA (~2.5GB) and would eat most of the 10GB
+# container budget for no benefit, since Toolforge has no GPUs. If you do want
+# it in a container, install the CPU-only wheel:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch
+transformers>=4.40.0
+torch>=2.0.0
+nametrace>=0.1.1

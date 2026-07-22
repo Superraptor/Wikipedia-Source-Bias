@@ -1,0 +1,222 @@
+/* =====================================================================
+   Wiki Source Bias Analyzer — Design System
+   Anchored on @wikimedia/codex-design-tokens.
+   Aesthetic: refined editorial / Wikimedia. Sober, typographic, precise.
+   ===================================================================== */
+
+/* ---------- Font tokens: prefer the Source family loaded via <link> ---------- */
+:root {
+  --font-family-serif: "Source Serif 4", "Linux Libertine", Georgia, "Times", serif;
+  --font-family-sans: "Source Sans 3", "Helvetica Neue", Helvetica, "Liberation Sans", Arial, sans-serif;
+  --font-family-monospace: "Source Code Pro", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+/* ---------- Semantic aliases anchored on Codex tokens ---------- */
+:root {
+  /* Colors — https://doc.wikimedia.org/codex/latest/design-tokens/overview.html */
+  --wsi-blue: var(--color-progressive);
+  --wsi-blue-700: var(--color-progressive--hover);
+  --wsi-blue-050: var(--background-color-progressive-subtle);
+  --wsi-red: var(--color-destructive);
+  --wsi-red-subtle: var(--background-color-destructive-subtle);
+  --wsi-amber: var(--color-warning);
+  --wsi-amber-subtle: var(--background-color-warning-subtle);
+  --wsi-green: var(--color-success);
+  --wsi-green-subtle: var(--background-color-success-subtle);
+
+  --wsi-ink: var(--color-base);
+  --wsi-ink-soft: var(--color-subtle);
+  --wsi-ink-faint: var(--color-disabled);
+  --wsi-line: var(--border-color-base);
+  --wsi-line-soft: var(--border-color-subtle);
+  --wsi-divider: var(--border-color-muted);
+
+  --wsi-surface: var(--background-color-base);
+  --wsi-surface-raised: var(--background-color-neutral-subtle);
+  --wsi-surface-sunken: var(--background-color-interactive-subtle);
+  --wsi-surface-inset: var(--background-color-neutral-subtle);
+
+  /* Region colors (spec §4.2 bar chart — not in Codex, project-specific) */
+  --wsi-europe: var(--color-progressive);
+  --wsi-americas: #fc3;
+  --wsi-asia: #ac6600;
+  --wsi-africa: var(--color-destructive);
+  --wsi-oceania: var(--color-disabled);
+
+  /* Typography */
+  --font-display: var(--font-family-serif);
+  --font-body: var(--font-family-sans);
+  --font-mono: var(--font-family-monospace);
+
+  /* Spacing — Codex spacing scale (tokens are already in px) */
+  --space-1: var(--spacing-25);
+  --space-2: var(--spacing-50);
+  --space-3: var(--spacing-75);
+  --space-4: var(--spacing-100);
+  --space-5: var(--spacing-150);
+  --space-6: var(--spacing-200);
+  --space-7: var(--spacing-300);
+  --space-8: var(--spacing-400);
+
+  /* Plan §Design tokens specifies border-radius 4px (Codex base is 2px) */
+  --radius: 4px;
+  --radius-lg: 6px;
+  --radius-pill: var(--border-radius-pill);
+
+  --shadow-sm: 0 1px 2px rgba(32, 33, 34, 0.06);
+  --shadow-md: 0 2px 8px rgba(32, 33, 34, 0.08);
+  --shadow-lg: 0 8px 28px rgba(32, 33, 34, 0.1);
+
+  --maxw: 1240px;
+}
+
+/* ---------- Reset / base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--wsi-ink);
+  background-color: var(--wsi-surface);
+  line-height: var(--line-height-medium);
+  font-size: 16px;
+}
+
+/* Subtle atmosphere: layered paper gradient over the Codex base surface */
+body {
+  background-image:
+    radial-gradient(900px 540px at 78% -8%, rgba(51, 102, 204, 0.08), transparent 60%),
+    radial-gradient(640px 420px at 6% 8%, rgba(20, 134, 109, 0.05), transparent 65%),
+    linear-gradient(180deg, #ffffff 0%, #fbfcfd 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--wsi-ink);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+a {
+  color: var(--wsi-blue);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+::selection {
+  background: var(--background-color-progressive-subtle);
+  color: var(--wsi-blue-700);
+}
+
+/* ---------- Layout helpers ---------- */
+.wsi-container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.wsi-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: var(--font-weight-semi-bold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--wsi-blue-700);
+}
+
+.wsi-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--wsi-line-soft), transparent);
+  border: 0;
+  margin: 0;
+}
+
+.wsi-section-title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-4);
+}
+.wsi-section-title h2 {
+  font-size: var(--font-size-large);
+  margin: 0;
+}
+.wsi-section-title .wsi-section-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--wsi-ink-faint);
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Cards / panels ---------- */
+.wsi-panel {
+  background: var(--wsi-surface);
+  border: 1px solid var(--wsi-line-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Motion ---------- */
+@keyframes wsi-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes wsi-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes wsi-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes wsi-shimmer {
+  100% { transform: translateX(100%); }
+}
+
+.wsi-rise {
+  animation: wsi-rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  body { background-attachment: scroll; }
+}
+
+/* ---------- Codex component cohesion ---------- */
+.cdx-button.cdx-button--action-progressive.cdx-button--weight-primary {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.cdx-card {
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.cdx-text-input__input {
+  font-family: var(--font-body);
+}
+
+.cdx-message {
+  border-radius: var(--radius);
+}
+
+/* Leaflet container needs explicit background */
+.leaflet-container {
+  background: #eef3f8;
+  font-family: var(--font-body);
+}

@@ -8,16 +8,36 @@ version = "0.1.0"
 description = "Analyze Wikipedia article sources for geographic and author profile insights"
 requires-python = ">=3.11"
 readme = "README.md"
-authors = [{name = "Clair Kronk"}]
+authors = [
+    {name = "Charles"},
+    {name = "Clair"},
+    {name = "Gaëlle"},
+    {name = "Johanna"},
+    {name = "Nathalie"},
+    {name = "Selim"},
+    {name = "Thomas"},
+    {name = "Vincent"},
+    {name = "William"},
+]
 dependencies = [
     "requests>=2.31.0",
     "beautifulsoup4>=4.12.0",
     "nltk>=3.8.1",
 ]
 
+license = "MIT"
+license-files = ["LICENSE"]
+
 [project.scripts]
 wikipedia-sources-bias = "wikipedia_sources_bias.cli:main"
 
+# Explicit package list. Without this, setuptools auto-discovery sees backend/,
+# frontend/, tests/ ... at the root and refuses to build with a "multiple
+# top-level packages" error, which would break `pip install .` in the Toolforge
+# buildpack.
+[tool.setuptools]
+packages = ["wikipedia_sources_bias"]
+
 [tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["."]
+testpaths = ["tests", "backend/tests"]
+pythonpath = [".", "backend"]
