@@ -3,18 +3,18 @@
     <header class="sources-table__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">05</span>
-        <h2>Sources</h2>
+        <h2>{{ t("sourcesTable.title") }}</h2>
       </div>
-      <span class="sources-table__count">{{ analysis.sources.length }} références</span>
+      <span class="sources-table__count">{{ t("sourcesTable.count", { count: analysis.sources.length }) }}</span>
     </header>
     <div class="sources-table__scroll">
       <table>
         <thead>
           <tr>
-            <th scope="col">Source</th>
-            <th scope="col">Pays</th>
-            <th scope="col">Lean</th>
-            <th scope="col">Fiabilité</th>
+            <th scope="col">{{ t("sourcesTable.columnSource") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnCountry") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnLean") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnReliability") }}</th>
           </tr>
         </thead>
         <tbody>
@@ -29,42 +29,62 @@
                 <span class="sources-table__domain">{{ s.domain || truncate(s.url, 28) }}</span>
                 <span class="sources-table__url">{{ truncate(s.url, 52) }}</span>
               </td>
-              <td>
-                {{ s.geography?.country || "—" }}
+              <td :data-label="t('sourcesTable.columnCountry')">
+                {{ countryLabel(s.geography?.country, t) }}
                 <!-- Explains WHY a source is unmapped; without it an unmapped
-                     row is indistinguishable from a bug. -->
+                     row is indistinguishable from a bug. The backend sends a
+                     reason code, the sentence is built from the locale file. -->
                 <abbr
-                  v-if="s.geography?.note"
+                  v-if="geographyNote(s.geography?.note, t)"
                   class="sources-table__note"
-                  :title="s.geography.note"
+                  :title="geographyNote(s.geography.note, t)"
                   >&#9432;</abbr
                 >
               </td>
-              <td><LeanBadge :lean="s.political_leaning" /></td>
-              <td><ReliabilityBadge :level="s.reliability" /></td>
+              <td :data-label="t('sourcesTable.columnLean')"><LeanBadge :lean="s.political_leaning" /></td>
+              <td :data-label="t('sourcesTable.columnReliability')"><ReliabilityBadge :level="s.reliability" /></td>
             </tr>
             <tr v-if="expanded === i" class="sources-table__detail">
               <td colspan="4">
                 <dl class="sources-table__detail-grid">
                   <div v-if="hasDetail(s.wikidata_publisher)">
-                    <dt>Éditeur Wikidata</dt>
+                    <dt>{{ t("sourcesTable.wikidataPublisher") }}</dt>
                     <dd><pre>{{ fmt(s.wikidata_publisher) }}</pre></dd>
                   </div>
                   <div v-if="hasDetail(s.mbfc)">
-                    <dt>MBFC</dt>
+                    <dt>{{ t("sourcesTable.mbfc") }}</dt>
                     <dd><pre>{{ fmt(s.mbfc) }}</pre></dd>
                   </div>
                   <div v-if="hasDetail(s.language_bias)">
-                    <dt>Biais linguistique</dt>
+                    <dt>{{ t("sourcesTable.languageBias") }}</dt>
                     <dd><pre>{{ fmt(s.language_bias) }}</pre></dd>
                   </div>
                   <div v-if="s.author_profiles && s.author_profiles.length">
-                    <dt>Auteurs</dt>
+                    <dt>{{ t("sourcesTable.authors") }}</dt>
                     <dd><pre>{{ fmt(s.author_profiles) }}</pre></dd>
                   </div>
+                  <div class="sources-table__contest">
+                    <dt>{{ t("sourcesTable.contest") }}</dt>
+                    <dd>
+                      <!-- Wikidata first: a wrong country there is wrong for
+                           everyone, and anyone can fix it. Filing an issue
+                           against this tool only helps this tool. -->
+                      <a
+                        v-if="s.wikidata_publisher?.wikidata_id"
+                        :href="`https://www.wikidata.org/wiki/${s.wikidata_publisher.wikidata_id}`"
+                        target="_blank"
+                        rel="noopener"
+                      >{{ t("sourcesTable.fixOnWikidata", { id: s.wikidata_publisher.wikidata_id }) }}</a>
+                      <span v-else>{{ t("sourcesTable.noWikidataItem") }}</span>
+                      <span aria-hidden="true"> · </span>
+                      <a :href="contestUrl(s)" target="_blank" rel="noopener">
+                        {{ t("sourcesTable.reportHere") }}
+                      </a>
+                    </dd>
+                  </div>
                   <div v-if="!hasAnyDetail(s)">
-                    <dt>Détails enrichis</dt>
-                    <dd><p class="sources-table__nodetail">Aucune donnée enrichie (Wikidata / MBFC / auteur) pour cette source.</p></dd>
+                    <dt>{{ t("sourcesTable.enrichedDetails") }}</dt>
+                    <dd><p class="sources-table__nodetail">{{ t("sourcesTable.noDetails") }}</p></dd>
                   </div>
                 </dl>
               </td>
@@ -75,11 +95,11 @@
     </div>
     <div class="sources-table__pager">
       <CdxButton weight="quiet" :disabled="page === 0" @click="prev">
-        <CdxIcon :icon="cdxIconPrevious" size="small" /> Précédent
+        <CdxIcon :icon="cdxIconPrevious" size="small" /> {{ t("sourcesTable.previous") }}
       </CdxButton>
-      <span class="sources-table__pager-info">Page {{ page + 1 }} / {{ totalPages }}</span>
+      <span class="sources-table__pager-info">{{ t("sourcesTable.pageInfo", { page: page + 1, total: totalPages }) }}</span>
       <CdxButton weight="quiet" :disabled="page >= totalPages - 1" @click="next">
-        Suivant <CdxIcon :icon="cdxIconNext" size="small" />
+        {{ t("sourcesTable.next") }} <CdxIcon :icon="cdxIconNext" size="small" />
       </CdxButton>
     </div>
   </section>
@@ -89,7 +109,9 @@
 import { ref, computed, h } from "vue";
 import { CdxButton, CdxIcon } from "@wikimedia/codex";
 import { cdxIconNext, cdxIconPrevious } from "@wikimedia/codex-icons";
+import { countryLabel, geographyNote, leanBadge, reliabilityBadge } from "~/utils/labels.js";
 
+const { t } = useI18n();
 const props = defineProps({ analysis: { type: Object, required: true } });
 
 const PAGE_SIZE = 20;
@@ -128,38 +150,104 @@ function fmt(o) {
   return JSON.stringify(o, null, 2);
 }
 
-const LeanBadge = (props) => {
-  const map = {
-    left: { label: "Gauche", cls: "lean lean--left" },
-    center: { label: "Centre", cls: "lean lean--center" },
-    right: { label: "Droite", cls: "lean lean--right" },
-    conservatism: { label: "Droite", cls: "lean lean--right" },
-    progressivism: { label: "Gauche", cls: "lean lean--left" },
-    neutral: { label: "Neutre", cls: "lean lean--neutral" },
-    "neutral/academic": { label: "Neutre", cls: "lean lean--neutral" },
-    academic: { label: "Académique", cls: "lean lean--neutral" },
-    unknown: { label: "Inconnu", cls: "lean lean--unknown" },
-  };
-  const m = map[props.lean] || { label: props.lean || "—", cls: "lean lean--unknown" };
+// Pre-fills an issue with what the tool concluded and where, so a disagreement
+// arrives with its evidence attached rather than as "this looks wrong".
+function contestUrl(s) {
+  const repo = "https://github.com/Superraptor/Wikipedia-Source-Bias";
+  const title = `Source classification: ${s.domain || s.url}`;
+  const body = [
+    `**Article:** ${props.analysis.page_url || "?"}`,
+    `**Revision:** ${props.analysis.revision_id || "unknown"}`,
+    `**Method version:** ${props.analysis.method_version || "unknown"}`,
+    "",
+    `**Source:** ${s.url || s.domain}`,
+    `**Country reported:** ${s.geography?.country ?? "?"}`,
+    `**Region reported:** ${s.geography?.region ?? "?"}`,
+    `**Political leaning reported:** ${s.political_leaning ?? "?"}`,
+    `**Reliability reported:** ${s.reliability ?? "?"}`,
+    s.wikidata_publisher?.wikidata_id
+      ? `**Wikidata item used:** ${s.wikidata_publisher.wikidata_id}`
+      : "**Wikidata item used:** none matched",
+    "",
+    "**What is wrong, and what the correct value should be:**",
+    "",
+  ].join("\n");
+  return `${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}
+
+// The value -> badge mapping lives in ~/utils/labels.js so it can be unit
+// tested against both catalogues without mounting this table.
+const LeanBadge = (badgeProps) => {
+  const m = leanBadge(badgeProps.lean, t);
   return h("span", { class: `badge ${m.cls}` }, m.label);
 };
 LeanBadge.props = ["lean"];
 
-const ReliabilityBadge = (props) => {
-  const map = {
-    academic: { label: "Académique", cls: "rel rel--academic" },
-    high: { label: "Élevée", cls: "rel rel--high" },
-    medium: { label: "Moyenne", cls: "rel rel--medium" },
-    low: { label: "Faible", cls: "rel rel--low" },
-    unknown: { label: "Inconnue", cls: "rel rel--unknown" },
-  };
-  const m = map[props.level] || { label: props.level || "—", cls: "rel rel--unknown" };
+const ReliabilityBadge = (badgeProps) => {
+  const m = reliabilityBadge(badgeProps.level, t);
   return h("span", { class: `badge ${m.cls}` }, m.label);
 };
 ReliabilityBadge.props = ["level"];
 </script>
 
 <style scoped>
+/* Below 640px the four columns cannot coexist: the table became a horizontal
+   scroller whose country / leaning / reliability columns sat off-screen, so
+   the numbers that matter were invisible unless you thought to swipe. Each
+   row becomes a card with labelled fields instead. */
+@media (max-width: 640px) {
+  .sources-table__scroll {
+    overflow-x: visible;
+  }
+  .sources-table thead {
+    /* Visually hidden, still announced to screen readers. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .sources-table table,
+  .sources-table tbody,
+  .sources-table tr,
+  .sources-table td {
+    display: block;
+    width: 100%;
+  }
+  .sources-table__row {
+    border: 1px solid var(--wsi-line-soft);
+    border-radius: 4px;
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  .sources-table__row td {
+    border-bottom: 0;
+    padding: 2px 0;
+  }
+  .sources-table__row td[data-label]::before {
+    content: attr(data-label) " ";
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wsi-ink-faint);
+    margin-right: 0.4em;
+  }
+  .sources-table__src {
+    min-width: 0;
+  }
+  .sources-table__url {
+    word-break: break-all;
+  }
+  .sources-table__detail td {
+    padding: var(--space-2) 0;
+  }
+  .sources-table__detail pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
 .sources-table {
   padding: var(--space-5);
 }
@@ -300,5 +388,14 @@ ReliabilityBadge.props = ["level"];
   text-decoration: none;
   color: var(--wsi-ink-faint);
   font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  /* Title and subtitle stop competing for a ~200px row. */
+  .sources-table__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
 }
 </style>

@@ -1,0 +1,154 @@
+"""One region vocabulary, derived from the country.
+
+The analyzer had two: the TLD table emits 'North America'/'Middle East', while
+the country table emitted 'Americas'. The same country therefore landed in
+different buckets of one distribution depending on which lookup resolved it --
+and the granular values had no translation, so the UI printed the raw key
+'region.North America'.
+"""
+import json
+from pathlib import Path
+
+from analyzer import REGIONS, REGION_MAP, _norm_source, normalise_region, UNMAPPED
+
+LOCALES = Path(__file__).resolve().parents[2] / "frontend" / "i18n" / "locales"
+
+
+def region_of(country, analyzer_region=None):
+    geo = {"country": country}
+    if analyzer_region:
+        geo["region"] = analyzer_region
+    return _norm_source({"domain": "x.com", "geography": geo})["geography"]["region"]
+
+
+def test_country_decides_the_region_not_the_analyzer_field():
+    # The analyzer's coarse 'Americas' must not survive when the country is known.
+    assert region_of("United States", "Americas") == "North America"
+    assert region_of("Brazil", "Americas") == "South America"
+
+
+def test_both_resolution_paths_agree():
+    """A .us source and a Wikidata-resolved US source share one bucket."""
+    assert region_of("United States", "North America") == region_of("United States", "Americas")
+
+
+def test_analyzer_region_is_used_only_when_the_country_is_unknown():
+    assert region_of(None, "Middle East") == "Middle East"
+    assert region_of(None, None) == UNMAPPED
+
+
+def test_every_mapped_region_is_canonical():
+    for country, region in REGION_MAP.items():
+        assert region in REGIONS, f"{country} -> {region}"
+
+
+def test_aliases_normalise_onto_the_vocabulary():
+    assert normalise_region("Latin America") == "South America"
+    assert normalise_region("MENA") == "Middle East"
+    assert normalise_region("unknown") is None
+
+
+def test_every_region_has_a_label_in_both_locales():
+    """A missing key renders the literal 'region.North America' on screen."""
+    for loc in ("fr", "en"):
+        labels = json.loads((LOCALES / f"{loc}.json").read_text(encoding="utf-8"))["region"]
+        for region in REGIONS:
+            assert region in labels, f"{loc} missing {region}"
+        # Legacy payloads still carry the coarse bucket.
+        assert "Americas" in labels
+
+
+def test_region_distribution_is_recomputed_not_inherited():
+    """Brexit named Australia and Belgium as countries while reporting their
+    region as 'Unknown': the upstream aggregate's region_distribution was stale
+    and normalize_analysis trusted it wholesale."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "page_title": "X",
+        "page_url": "https://en.wikipedia.org/wiki/X",
+        "sources": [
+            {"domain": "a.au", "geography": {"country": "Australia", "region": "Unknown"}},
+            {"domain": "b.be", "geography": {"country": "Belgium", "region": "Unknown"}},
+            {"domain": "c.us", "geography": {"country": "United States", "region": "Americas"}},
+        ],
+        "aggregated_bias": {
+            # Deliberately wrong, as the real cached payloads are.
+            "geography_distribution": {"Australia": {"count": 1, "percentage": 33.3}},
+            "region_distribution": {"Unknown": {"count": 3, "percentage": 100.0}},
+        },
+    }
+    out = normalize_analysis(raw)
+    regions = out["aggregated_bias"]["region_distribution"]
+    assert "Unknown" not in regions
+    assert regions["Oceania"]["count"] == 1
+    assert regions["Europe"]["count"] == 1
+    assert regions["North America"]["count"] == 1
+
+
+def test_upstream_geography_distribution_is_still_respected():
+    """Only regions are recomputed; the rest of the upstream aggregate stays."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "sources": [{"domain": "a.fr", "geography": {"country": "France"}}],
+        "aggregated_bias": {
+            "geography_distribution": {"France": {"count": 99, "percentage": 100.0}},
+            "language_distribution": {"French": {"count": 99, "percentage": 100.0}},
+        },
+    }
+    agg = normalize_analysis(raw)["aggregated_bias"]
+    assert agg["geography_distribution"]["France"]["count"] == 99
+    assert agg["language_distribution"]["French"]["count"] == 99
+
+
+def test_normalize_analysis_is_idempotent():
+    """It runs on read as well as on write, so applying it twice must not drift."""
+    from analyzer import normalize_analysis
+
+    raw = {
+        "page_title": "X",
+        "page_url": "https://en.wikipedia.org/wiki/X",
+        "source_count": 2,
+        "sources": [
+            {"domain": "a.au", "geography": {"country": "Australia", "region": "Unknown"}},
+            {"domain": "b.com", "geography": {"country": "Unknown"}},
+        ],
+        "aggregated_bias": {
+            "geography_distribution": {"Australia": {"count": 1, "percentage": 50.0}},
+            "region_distribution": {"Unknown": {"count": 2, "percentage": 100.0}},
+        },
+    }
+    once = normalize_analysis(raw)
+    twice = normalize_analysis(once)
+    assert once == twice
+    assert once["aggregated_bias"]["region_distribution"]["Oceania"]["count"] == 1
+
+
+# -- multi-country publishers -------------------------------------------
+
+
+def test_a_multi_country_publisher_in_one_region_collapses():
+    """Wikidata gives some publishers several countries; the analyzer joins
+    them into one string, which matched nothing and left the region unmapped."""
+    assert region_of("Canada, United States") == "North America"
+    assert region_of("France, Belgium") == "Europe"
+
+
+def test_a_genuinely_multinational_publisher_is_global():
+    # books.google.com: Canada + United Kingdom + United States.
+    assert region_of("Canada, United Kingdom, United States") == "Global"
+
+
+def test_unknown_members_are_ignored_rather_than_poisoning_the_result():
+    assert region_of("France, Atlantis") == "Europe"
+
+
+def test_a_wholly_unknown_multi_country_value_stays_unmapped():
+    assert region_of("Atlantis, Narnia") == UNMAPPED
+
+
+def test_the_countries_the_audit_surfaced_now_resolve():
+    # lefaso.net (Thomas Sankara) and nis.gov.kh (Cambodge).
+    assert region_of("Burkina Faso") == "Africa"
+    assert region_of("Cambodia") == "Asia"

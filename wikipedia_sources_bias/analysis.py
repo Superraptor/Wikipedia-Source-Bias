@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import time
 from typing import Any
 from urllib.parse import urlparse, parse_qs
 
@@ -12,6 +13,10 @@ import requests
 from bs4 import BeautifulSoup
 
 from .cachestore import get_store
+from . import ratelimit
+from .urlnorm import canonical_page_url
+from .provenance import METHOD_VERSION, extract_revision, permalink
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 def _load_env_tokens():
@@ -230,7 +235,7 @@ def _resolve_archive_url_content(url: str, skip_rate_limiting: bool = False) -> 
         
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        response = requests.get(url, headers=headers, timeout=5)
+        response = _polite_get(url, headers=headers, timeout=5)
         if response.status_code == 200:
             orig = extract_original_url_from_archive_html(response.text)
             if orig:
@@ -370,7 +375,7 @@ def _robust_wikidata_get(url: str, params: dict[str, Any], headers: dict[str, An
     backoff = 2.0
     for attempt in range(retries):
         try:
-            response = requests.get(url, params=params, headers=headers, timeout=timeout)
+            response = _polite_get(url, params=params, headers=headers, timeout=timeout)
             if response.status_code == 429:
                 retry_after = response.headers.get("Retry-After")
                 wait_time = int(retry_after) if retry_after and retry_after.isdigit() else backoff
@@ -386,7 +391,7 @@ def _robust_wikidata_get(url: str, params: dict[str, Any], headers: dict[str, An
             time.sleep(backoff)
             backoff *= 2
             
-    return requests.get(url, params=params, headers=headers, timeout=timeout)
+    return _polite_get(url, params=params, headers=headers, timeout=timeout)
 
 
 def _query_wikidata_sparql(query: str) -> list[dict[str, Any]]:
@@ -665,7 +670,7 @@ def _fetch_wikidata_book(isbn: str) -> dict[str, Any]:
 def _fetch_google_books_metadata(volume_id: str) -> dict[str, Any]:
     url = f"https://www.googleapis.com/books/v1/volumes/{volume_id}"
     try:
-        response = requests.get(url, timeout=5)
+        response = _polite_get(url, timeout=5)
         response.raise_for_status()
         data = response.json()
         info = data.get("volumeInfo", {})
@@ -752,7 +757,7 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
         "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
     }
     try:
-        response = requests.get(url, headers=headers, timeout=5)
+        response = _polite_get(url, headers=headers, timeout=5)
         response.raise_for_status()
         data = response.json()
         message = data.get("message", {})
@@ -1001,27 +1006,70 @@ def _extract_author_from_html(soup: BeautifulSoup) -> str | None:
     return None
 
 
+# A source fetch must be bounded in BOTH size and wall-clock time. requests'
+# `timeout` only limits the gap between socket reads, so a large file that
+# trickles in never times out: an "Soviet space dogs" analysis hung forever on
+# a Cambridge University Press PDF, was requeued every 10 minutes, and hung on
+# the same PDF again.
+MAX_SOURCE_BYTES = 2 * 1024 * 1024      # 2MB of HTML is far more than enough
+MAX_SOURCE_SECONDS = 20                 # total, not per read
+
+# Only text is worth parsing for readability. A PDF read as HTML yields binary
+# noise, and downloading it costs the bandwidth of the whole document.
+_TEXTUAL_CONTENT = ("text/html", "text/plain", "application/xhtml")
+
+
+def _fetch_text_bounded(url, headers=None, timeout=5):
+    """Fetch a URL as text, giving up on size, wall-clock time or content type.
+
+    Returns "" rather than raising when the document is not worth reading.
+    """
+    response = _polite_get(url, headers=headers, timeout=timeout, stream=True)
+    try:
+        if response.status_code in (401, 403):
+            raise requests.HTTPError(
+                f"Direct request blocked with status code {response.status_code}"
+            )
+        response.raise_for_status()
+
+        content_type = (response.headers.get("Content-Type") or "").lower()
+        if content_type and not any(t in content_type for t in _TEXTUAL_CONTENT):
+            return ""
+
+        declared = response.headers.get("Content-Length")
+        if declared and declared.isdigit() and int(declared) > MAX_SOURCE_BYTES:
+            return ""
+
+        deadline = time.monotonic() + MAX_SOURCE_SECONDS
+        chunks, size = [], 0
+        for chunk in response.iter_content(chunk_size=16384):
+            if not chunk:
+                continue
+            chunks.append(chunk)
+            size += len(chunk)
+            if size >= MAX_SOURCE_BYTES or time.monotonic() > deadline:
+                break
+        encoding = response.encoding or "utf-8"
+        return b"".join(chunks).decode(encoding, errors="replace")
+    finally:
+        response.close()
+
+
 def _fetch_url_readability(url: str) -> dict[str, Any]:
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
     html = ""
     try:
-        response = requests.get(url, headers=headers, timeout=5)
-        if response.status_code in (403, 401):
-            raise requests.HTTPError("Direct request blocked with status code " + str(response.status_code))
-        response.raise_for_status()
-        html = response.text
+        html = _fetch_text_bounded(url, headers=headers, timeout=5)
     except Exception:
         try:
             api_url = f"https://archive.org/wayback/available?url={url}"
-            api_res = requests.get(api_url, timeout=5)
+            api_res = _polite_get(api_url, timeout=5)
             if api_res.status_code == 200:
                 data = api_res.json()
                 snapshots = data.get("archived_snapshots", {})
                 if "closest" in snapshots:
                     archive_url = snapshots["closest"]["url"]
-                    archive_res = requests.get(archive_url, headers=headers, timeout=5)
-                    archive_res.raise_for_status()
-                    html = archive_res.text
+                    html = _fetch_text_bounded(archive_url, headers=headers, timeout=5)
         except Exception:
             pass
 
@@ -1283,6 +1331,8 @@ def analyze_source_bias(url: str, wikidata: dict[str, Any] | None = None) -> dic
         "language": language,
         "geography": {"country": country, "region": region},
         "political_leaning": political,
+        # Attribution for the leaning above: never "because we said so".
+        "political_leaning_source": None,
         "reliability": reliability,
         "wikidata": wikidata or {},
     }
@@ -2496,8 +2546,6 @@ def aggregate_page_bias(sources: list[dict[str, Any]], split_multiple: bool = Fa
     }
 
 
-import os
-import time
 
 CACHE_FILE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mbfc_cache.json")
 
@@ -2575,8 +2623,10 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
     if skip_rate_limiting:
         return {}
         
-    # Introduce rate-limiting delay before outgoing request to be respectful
-    time.sleep(1.0)
+    # Politeness is enforced centrally by _polite_get via the per-host
+    # limiter (mediabiasfactcheck.com is capped at 1 req/s there). A sleep
+    # here as well would double the delay and, being per-process, would not
+    # coordinate across worker replicas anyway.
     
     candidates = [
         f"https://mediabiasfactcheck.com/{slug}-bias-and-credibility/",
@@ -2589,7 +2639,7 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
     for url in candidates:
         html = ""
         try:
-            response = requests.get(url, headers=headers, timeout=3)
+            response = _polite_get(url, headers=headers, timeout=3)
             if response.status_code == 200:
                 html = response.text
         except Exception:
@@ -2598,16 +2648,15 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
         if not html:
             if skip_rate_limiting:
                 continue
-            time.sleep(0.5)
             try:
                 api_url = f"https://archive.org/wayback/available?url={url}"
-                api_res = requests.get(api_url, timeout=3)
+                api_res = _polite_get(api_url, timeout=3)
                 if api_res.status_code == 200:
                     data = api_res.json()
                     snapshots = data.get("archived_snapshots", {})
                     if "closest" in snapshots:
                         archive_url = snapshots["closest"]["url"]
-                        archive_res = requests.get(archive_url, headers=headers, timeout=3)
+                        archive_res = _polite_get(archive_url, headers=headers, timeout=3)
                         if archive_res.status_code == 200:
                             html = archive_res.text
             except Exception:
@@ -2858,6 +2907,8 @@ def analyze_page(
                 return cached_data
                 
             sources = cached_data.get("sources", [])
+            resumed_revision = cached_data.get("revision_id")
+            resumed_page_id = cached_data.get("page_id")
             page_metadata = cached_data.get("page_metadata", {})
             references = cached_data.get("references", [])
             citations = cached_data.get("citations", [])
@@ -2944,6 +2995,10 @@ def analyze_page(
             "countries_only": True,
             "geography_distribution": geo_distribution,
             "sources": simplified_sources,
+            "revision_id": revision_id,
+            "page_id": page_id,
+            "revision_permalink": permalink(url, revision_id),
+            "method_version": METHOD_VERSION,
             "is_partial": False
         }
     else:
@@ -2962,6 +3017,10 @@ def analyze_page(
                 f"Extracted {len(sources)} source links. Analyzed geographic distribution, "
                 f"political leanings, reliability tiers, author profiles, and linguistic bias markers."
             ),
+            "revision_id": revision_id,
+            "page_id": page_id,
+            "revision_permalink": permalink(url, revision_id),
+            "method_version": METHOD_VERSION,
             "is_partial": False
         }
 

@@ -1,5 +1,5 @@
 import pytest
-from analyzer import normalize_analysis
+from analyzer import UNMAPPED, normalize_analysis
 
 
 def test_normalize_produces_required_top_keys():
@@ -35,7 +35,7 @@ def test_normalize_source_has_geography_and_reliability():
 def test_normalize_unknown_country_becomes_non_mapped():
     raw = {"sources": [{"url": "x", "domain": "x", "reliability": "unknown", "country": None}]}
     out = normalize_analysis(raw)
-    assert out["sources"][0]["geography"]["country"] == "Non-mappé"
+    assert out["sources"][0]["geography"]["country"] == UNMAPPED
 
 
 def test_normalize_aggregated_bias_has_geography_distribution():

@@ -63,3 +63,40 @@ CREATE TABLE IF NOT EXISTS kv_cache (
                ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (namespace, key_hash)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Progress reporting for in-flight analyses. Without this a long article sits
+-- at "running" for tens of minutes with no indication of where it has got to
+-- or how much is left.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS stage VARCHAR(24) NULL,
+    ADD COLUMN IF NOT EXISTS progress_done INT NULL,
+    ADD COLUMN IF NOT EXISTS progress_total INT NULL;
+
+-- ETA support. `started_at` separates analysis time from queue-wait time: the
+-- first ETA implementation divided by "time since queued", so an article that
+-- waited 20 minutes for a worker reported a wildly inflated rate. `eta_seconds`
+-- is computed by the worker, which is the only process that knows how long
+-- each individual source actually took.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS started_at DATETIME NULL,
+    ADD COLUMN IF NOT EXISTS eta_seconds INT NULL;
+
+-- Separates "this analysis failed" from "a deploy interrupted it". attempts
+-- used to be incremented on every claim, so a few redeploys exhausted the
+-- retry budget of a perfectly healthy article and stranded it.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS recoveries INT NOT NULL DEFAULT 0;
+
+-- A failure that will never succeed on retry (a missing article). Previously
+-- this was expressed by setting attempts to MAX_ATTEMPTS, which stopped the
+-- retries but reported "3 attempts" for something tried exactly once.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS permanent TINYINT(1) NOT NULL DEFAULT 0;
+
+-- Provenance of the input and the method. Without these no figure is
+-- reproducible: the article changes continuously, and so does the analyser.
+-- method_version is a content hash of the modules that determine a result, so
+-- it moves exactly when the method moves.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS revision_id BIGINT NULL,
+    ADD COLUMN IF NOT EXISTS method_version VARCHAR(32) NULL;

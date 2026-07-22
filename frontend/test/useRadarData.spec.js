@@ -45,7 +45,7 @@ describe("computeRadarAxes", () => {
   });
 
   it("neutrality = (1 - subjectivity) * 100", () => {
-    const agg = { average_subjectivity_score: 0.18 };
+    const agg = { average_subjectivity_score: 0.18, subjectivity_sample_count: 5 };
     const axes = computeRadarAxes({ aggregated_bias: agg });
     expect(axes.neutrality).toBeCloseTo(82, 0);
   });
@@ -72,5 +72,77 @@ describe("computeRadarAxes", () => {
     expect(axes).toHaveProperty("author_parity");
     expect(axes).toHaveProperty("neutrality");
     expect(axes).toHaveProperty("reliability");
+  });
+});
+
+describe("empty analyses", () => {
+  it("reports every axis as no-data when there are no references", () => {
+    // null, not 0. Neutrality is (1 - subjectivity) and a missing score read
+    // as 0 gave a perfect 100; zeroing it instead just swapped one wrong
+    // number for another. Absent must be distinguishable from measured-zero.
+    const axes = computeRadarAxes({ source_count: 0, sources: [], aggregated_bias: {} });
+    for (const [name, value] of Object.entries(axes)) {
+      expect(value, name).toBeNull();
+    }
+  });
+
+  it("reports no-data when aggregated_bias is missing entirely", () => {
+    const axes = computeRadarAxes({ source_count: 0 });
+    expect(Object.values(axes).every((v) => v === null)).toBe(true);
+  });
+
+  it("still reports neutrality for a real analysis", () => {
+    const axes = computeRadarAxes({
+      source_count: 3,
+      aggregated_bias: { average_subjectivity_score: 0.25, subjectivity_sample_count: 3 },
+    });
+    expect(axes.neutrality).toBe(75);
+  });
+});
+
+describe("neutrality vs missing data", () => {
+  it("reports no-data when subjectivity was never measured", () => {
+    // Regression: `1 - undefined` coerced to a perfect 100.
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: { geography_distribution: { France: { count: 8, percentage: 100 } } },
+    });
+    expect(axes.neutrality).toBeNull();
+  });
+
+  it("reports no-data when the sample count is explicitly zero", () => {
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: {
+        geography_distribution: { France: { count: 8, percentage: 100 } },
+        average_subjectivity_score: 0,
+        subjectivity_sample_count: 0,
+      },
+    });
+    expect(axes.neutrality).toBeNull();
+  });
+
+  it("requires a sample count before reporting a score", () => {
+    // A legacy payload carries the score with no count; that is unverifiable.
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: {
+        geography_distribution: { France: { count: 8, percentage: 100 } },
+        average_subjectivity_score: 0,
+      },
+    });
+    expect(axes.neutrality).toBeNull();
+  });
+
+  it("scores 100 only when zero subjectivity was genuinely measured", () => {
+    const axes = computeRadarAxes({
+      source_count: 8,
+      aggregated_bias: {
+        geography_distribution: { France: { count: 8, percentage: 100 } },
+        average_subjectivity_score: 0,
+        subjectivity_sample_count: 8,
+      },
+    });
+    expect(axes.neutrality).toBe(100);
   });
 });

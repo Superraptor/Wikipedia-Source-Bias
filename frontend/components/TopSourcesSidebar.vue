@@ -3,7 +3,7 @@
     <header class="top-sources__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">06</span>
-        <h2>Top sources</h2>
+        <h2>{{ t("topSources.title") }}</h2>
       </div>
     </header>
     <ol class="top-sources__list">
@@ -12,9 +12,9 @@
         <div class="top-sources__main">
           <span class="top-sources__domain" :title="s.domain">{{ s.domain || s.url }}</span>
           <span class="top-sources__meta">
-            <span class="top-sources__country">{{ s.geography?.country || "—" }}</span>
+            <span class="top-sources__country">{{ countryLabel(s.geography?.country, t) }}</span>
             <span class="top-sources__sep" aria-hidden="true">·</span>
-            <span class="top-sources__rel">{{ relLabel(s.reliability) }}</span>
+            <span class="top-sources__rel">{{ reliabilityLabel(s.reliability, t) }}</span>
           </span>
         </div>
       </li>
@@ -24,20 +24,12 @@
 
 <script setup>
 import { computed } from "vue";
+import { countryLabel, reliabilityLabel } from "~/utils/labels.js";
 
+const { t } = useI18n();
 const props = defineProps({ analysis: { type: Object, required: true } });
 
 const top5 = computed(() => (props.analysis.sources || []).slice(0, 5));
-
-function relLabel(r) {
-  return ({
-    academic: "Académique",
-    high: "Élevée",
-    medium: "Moyenne",
-    low: "Faible",
-    unknown: "Inconnue",
-  })[r] || r || "—";
-}
 </script>
 
 <style scoped>

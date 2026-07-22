@@ -32,13 +32,17 @@ def test_trailing_comment_is_stripped():
 def test_real_schema_file_parses_to_the_expected_tables():
     with open(schema.SCHEMA_PATH, encoding="utf-8") as f:
         stmts = schema.statements(f.read())
-    assert len(stmts) == 3, f"expected 3 statements, got {len(stmts)}"
-    assert all(s.upper().startswith("CREATE TABLE") for s in stmts)
-    joined = "\n".join(stmts)
+    creates = [s for s in stmts if s.upper().startswith("CREATE TABLE")]
+    alters = [s for s in stmts if s.upper().startswith("ALTER TABLE")]
+    assert len(creates) == 3, f"expected 3 CREATEs, got {len(creates)}"
+    # ALTERs must be IF NOT EXISTS so schema.py stays idempotent.
+    for a in alters:
+        assert "IF NOT EXISTS" in a.upper()
+    joined = "\n".join(creates)
     for table in ("analysis_cache", "analysis_result", "kv_cache"):
         assert table in joined
     # The queue table must stay payload-free; that is the point of the split.
-    queue = next(s for s in stmts if "analysis_cache (" in s)
+    queue = next(s for s in creates if "analysis_cache (" in s)
     assert "payload" not in queue and "LONGTEXT" not in queue
 
 

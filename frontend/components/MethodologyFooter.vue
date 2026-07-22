@@ -2,30 +2,32 @@
   <footer class="methodology-footer">
     <div class="wsi-container methodology-footer__inner">
       <div class="methodology-footer__col">
-        <p class="methodology-footer__label">Méthodologie</p>
+        <p class="methodology-footer__label">{{ t("footer.methodologyLabel") }}</p>
         <p class="methodology-footer__text">
-          Assignation géographique via l'éditeur Wikidata (P17 / P495) avec
-          repli sur le TLD&nbsp;; leans politiques via conditionnel Wikidata
-          et repli MBFC. Les sources <em>«&nbsp;Non-mappé&nbsp;»</em> sont
-          signalées explicitement, jamais masquées.
+          {{ t("footer.methodologyText", { unmapped: t("geography.unmapped") }) }}
         </p>
       </div>
       <div class="methodology-footer__col methodology-footer__meta">
-        <p class="methodology-footer__label">Projet</p>
+        <p class="methodology-footer__label">{{ t("footer.projectLabel") }}</p>
         <p class="methodology-footer__text">
-          Wikimania 2026 — Team 05E <em>Deciphering Biases</em>.
-          Outil open-source (MIT) déployé sur Toolforge.
+          {{ t("footer.projectText", { team: t("footer.teamName") }) }}
         </p>
         <ul class="methodology-footer__links">
-          <li><a href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">Méthodologie &amp; équipe</a></li>
-          <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">Code source (GitHub)</a></li>
+          <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">{{ t("footer.methodologyLink") }}</a></li>
+          <li><a href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">{{ t("footer.linkMethodology") }}</a></li>
+          <li><a href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">{{ t("footer.linkSource") }}</a></li>
           <li><a href="https://wikibias-analyzer.toolforge.org/" rel="noopener">wikibias-analyzer.toolforge.org</a></li>
-          <li><a href="/status">File d'analyse</a></li>
+          <li><a href="/audit">{{ t("footer.auditLink") }}</a></li>
+          <li><a href="/status">{{ t("footer.linkQueue") }}</a></li>
         </ul>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+const { t } = useI18n();
+</script>
 
 <style scoped>
 .methodology-footer {

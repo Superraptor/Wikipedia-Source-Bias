@@ -8,12 +8,16 @@ version = "0.1.0"
 description = "Analyze Wikipedia article sources for geographic and author profile insights"
 requires-python = ">=3.11"
 readme = "README.md"
+# Wikimania 2026 — Team 05E (Europe), "Deciphering Biases".
+# Full roles and backgrounds in AUTHORS.md; the team page is
+# https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe
 authors = [
-    {name = "Charles"},
-    {name = "Clair"},
+    {name = "Charles"},        # Coach
+    {name = "Clair"},          # Wikidata/Commons contributor; original author
     {name = "Gaëlle"},
     {name = "Johanna"},
-    {name = "Nathalie"},
+    {name = "Nathalie"},       # UX design
+    {name = "Paul-Antoine"},   # Mentor
     {name = "Selim"},
     {name = "Thomas"},
     {name = "Vincent"},

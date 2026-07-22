@@ -12,12 +12,21 @@
   image: tool-wikibias-analyzer/tool-wikibias-analyzer:latest
   command: worker
   continuous: true
-  # 2 replicas so one huge article (Emmanuel Macron is ~880 sources, tens of
-  # minutes) cannot block every small one behind it. claim_next() takes rows
-  # under a `WHERE status='pending'` guard, so parallel workers never collide.
+  # Replicas parallelise ACROSS articles; WSB_SOURCE_CONCURRENCY parallelises
+  # within one, which is what actually helps a single large article. Two rather
+  # than three: idle workers were measured at ~21Mi, so a third was reserving
+  # 1Gi of quota to do nothing. claim_next() guards on status='pending', so
+  # parallel workers never collide.
   replicas: 2
-  mem: 2Gi
-  cpu: "1"
+  # Kept at 1Gi despite idling at ~21Mi. This is the one place headroom is
+  # genuinely needed: a large article holds every source profile in memory and
+  # the checkpoint serialises the whole growing result, and a worker running at
+  # WSB_SOURCE_CONCURRENCY=6 was measured at 502Mi. 512Mi would sit on the edge
+  # of an OOM kill.
+  mem: 1Gi
+  # I/O-bound -- almost all of the time is spent waiting on external APIs, so
+  # a full reserved core was waste.
+  cpu: "0.5"
   emails: onfailure
 
 # Re-queues any corpus article missing from the cache. Cheap when warm: it

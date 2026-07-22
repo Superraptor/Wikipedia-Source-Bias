@@ -19,7 +19,7 @@ CORPUS_PROFILES = {
         "source_count": 881,
         "country_dist": [
             ("France", 746), ("United States", 18), ("United Kingdom", 8),
-            ("Switzerland", 5), ("Germany", 3), ("Non-mappé", 78),
+            ("Switzerland", 5), ("Germany", 3), ("unmapped", 78),
             ("Italy", 10), ("Spain", 8), ("Belgium", 5),
         ],
         "lean_dist": [
@@ -49,7 +49,7 @@ CORPUS_PROFILES = {
         "country_dist": [
             ("Germany", 298), ("United States", 24), ("United Kingdom", 14),
             ("France", 12), ("Switzerland", 8), ("Italy", 6),
-            ("Non-mappé", 35), ("Austria", 8), ("Belgium", 7),
+            ("unmapped", 35), ("Austria", 8), ("Belgium", 7),
         ],
         "lean_dist": [
             ("unknown", 330), ("neutral", 41), ("conservatism", 20),
@@ -76,7 +76,7 @@ CORPUS_PROFILES = {
         "country_dist": [
             ("United Kingdom", 389), ("United States", 42),
             ("Germany", 18), ("France", 16), ("Ireland", 12),
-            ("Italy", 8), ("Spain", 6), ("Non-mappé", 38),
+            ("Italy", 8), ("Spain", 6), ("unmapped", 38),
             ("Belgium", 8),
         ],
         "lean_dist": [
@@ -104,7 +104,7 @@ CORPUS_PROFILES = {
         "country_dist": [
             ("France", 478), ("Algeria", 38), ("United States", 22),
             ("United Kingdom", 14), ("Germany", 8), ("Italy", 6),
-            ("Non-mappé", 58), ("Switzerland", 10), ("Belgium", 8),
+            ("unmapped", 58), ("Switzerland", 10), ("Belgium", 8),
         ],
         "lean_dist": [
             ("unknown", 498), ("neutral", 58), ("conservatism", 38),
@@ -140,7 +140,7 @@ def _build_sources(profile, rng):
         countries.extend([c] * cnt)
     countries = countries[:n]
     while len(countries) < n:
-        countries.append("Non-mappé")
+        countries.append("unmapped")
     rng.shuffle(countries)
 
     leans = []
@@ -259,7 +259,7 @@ def _generic_analysis(url):
     n = rng.randint(20, 60)
     countries = rng.choices(
         ["France", "United States", "United Kingdom", "Germany", "Italy",
-         "Non-mappé"],
+         "unmapped"],
         weights=[40, 25, 15, 8, 5, 7],
         k=n,
     )

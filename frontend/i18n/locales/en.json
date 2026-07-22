@@ -1,0 +1,473 @@
+{
+  "app": {
+    "name": "WikiBias Analyzer",
+    "description": "Analyse the citation bias of Wikipedia articles: geographic origin, political pluralism and demographics of their sources.",
+    "empty": "—"
+  },
+  "header": {
+    "tagline": "Decoding the citation bias of Wikipedia articles",
+    "navAria": "Main",
+    "methodology": "Methodology",
+    "queue": "Analysis queue",
+    "sourceCode": "Source code",
+    "languageAria": "Change the interface language",
+    "languageLabel": "Language"
+  },
+  "articleInput": {
+    "placeholder": "https://en.wikipedia.org/wiki/...",
+    "ariaLabel": "URL of the Wikipedia article to analyse",
+    "submit": "Analyse",
+    "errorEmpty": "Enter a Wikipedia URL.",
+    "errorInvalid": "The URL must point to a Wikipedia article (e.g. https://en.wikipedia.org/wiki/...)."
+  },
+  "home": {
+    "eyebrow": "Wikimania 2026 · Team 05E — Deciphering Biases",
+    "title": "Are Wikipedia's sources biased?",
+    "lede": "Enter an article URL to uncover bias in its cited sources across 5 criteria: geographic diversity, political pluralism, author parity, neutrality and reliability."
+  },
+  "corpus": {
+    "title": "Recent articles",
+    "sourceCount": "{count} sources",
+    "running": "analysing… {pct}%",
+    "queued": "queued",
+    "failed": "analysis failed",
+    "countUnknown": "analysed"
+  },
+  "article": {
+    "eyebrow": "Dashboard"
+  },
+  "radar": {
+    "title": "Source bias profile",
+    "subtitle": "5 axes normalised 0–100",
+    "axesAria": "Axis values",
+    "datasetLabel": "Source bias",
+    "axis": {
+      "geo_diversity": "Geo. diversity",
+      "political_pluralism": "Pol. pluralism",
+      "author_parity": "Author parity",
+      "neutrality": "Neutrality",
+      "reliability": "Reliability"
+    },
+    "axisLong": {
+      "geo_diversity": "Geographic diversity",
+      "political_pluralism": "Political pluralism",
+      "author_parity": "Author parity",
+      "neutrality": "Neutrality",
+      "reliability": "Reliability"
+    },
+    "noData": "no data"
+  },
+  "kpi": {
+    "sourcesLabel": "Sources analysed",
+    "sourcesHint": "references extracted",
+    "dominantLabel": "Dominant country",
+    "dominantHint": "{pct}% of sources",
+    "opinionLabel": "Opinion sources",
+    "opinionHint": "{pct}% of the total"
+  },
+  "topCountries": {
+    "title": "Top 10 countries",
+    "legendAria": "Regions",
+    "datasetLabel": "Sources",
+    "empty": "No geographic data available.",
+    "tooltip": "{count} sources ({pct}%) — {region}"
+  },
+  "worldMap": {
+    "title": "Source map",
+    "subtitle": "Intensity by country",
+    "ariaLabel": "Choropleth map of the number of sources per country",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit fullscreen",
+    "zoomHint": "Ctrl + scroll to zoom"
+  },
+  "topSources": {
+    "title": "Top sources"
+  },
+  "sourcesTable": {
+    "title": "Sources",
+    "count": "{count} references",
+    "columnSource": "Source",
+    "columnCountry": "Country",
+    "columnLean": "Political leaning",
+    "columnReliability": "Reliability",
+    "rowToggleAria": "Show the details of this source",
+    "wikidataPublisher": "Wikidata publisher",
+    "mbfc": "MBFC",
+    "languageBias": "Language bias",
+    "authors": "Authors",
+    "enrichedDetails": "Enriched details",
+    "noDetails": "No enriched data (Wikidata / MBFC / author) for this source.",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {page} / {total}",
+    "contest": "Correct this",
+    "fixOnWikidata": "Fix on Wikidata ({id})",
+    "noWikidataItem": "no Wikidata item matched",
+    "reportHere": "report here"
+  },
+  "lean": {
+    "left": "Left",
+    "center": "Centre",
+    "right": "Right",
+    "neutral": "Neutral",
+    "academic": "Academic",
+    "unknown": "Unknown"
+  },
+  "reliability": {
+    "academic": "Academic",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "unknown": "Unknown"
+  },
+  "region": {
+    "Europe": "Europe",
+    "Americas": "Americas",
+    "Asia": "Asia",
+    "Africa": "Africa",
+    "Oceania": "Oceania",
+    "unmapped": "Unmapped",
+    "North America": "North America",
+    "South America": "South America",
+    "Middle East": "Middle East",
+    "Global": "Global"
+  },
+  "geography": {
+    "unmapped": "Unmapped",
+    "note": {
+      "generic_tld": "Generic domain ({tld}): the TLD carries no country signal, and no publisher match was found in Wikidata or in the domain database.",
+      "no_country_signal": "No country determined: neither the TLD, nor Wikidata, nor the domain database returned a match.",
+      "region_missing": "Country “{country}” resolved, but missing from the region table (REGION_MAP) — the region stays unknown."
+    }
+  },
+  "dashboard": {
+    "unmappedNotice": "{count} unmapped source ({pct}%) — country of origin not resolved via Wikidata or TLD. | {count} unmapped sources ({pct}%) — country of origin not resolved via Wikidata or TLD.",
+    "compareTitle": "Compare with another article"
+  },
+  "cta": {
+    "title": "Export",
+    "downloadJson": "JSON report",
+    "share": "Share this analysis",
+    "shareCopied": "Link copied to the clipboard.",
+    "shareFallback": "Copy this link: {url}",
+    "viewOnWikipedia": "View on Wikipedia"
+  },
+  "states": {
+    "empty": "No sources found. The article may have no standardised references.",
+    "error": "This article could not be analysed. Check the URL and try again.",
+    "errorTimeout": "The analysis timed out. Try again in a few minutes.",
+    "errorUnexpected": "Unexpected state: {status}. Reload the page or check /status.",
+    "loadingTitle": "Analysing sources…",
+    "loadingSubtitle": "Reading references, resolving Wikidata and computing distributions.",
+    "pendingTitle": "Analysis queued…",
+    "pendingSubtitle": "A worker is processing this article. This page updates automatically.",
+    "pendingHint": "Large articles can take several minutes.",
+    "pendingHintLink": "View the analysis queue",
+    "pendingProgress": "{done}/{total} sources analysed ({pct}%)",
+    "pendingEta": "Estimated time remaining: {eta}",
+    "pendingQueue": "Queued: {n} analysis(es) ahead of this one.",
+    "pendingAlive": "The analysis is progressing normally.",
+    "pendingStalled": "No progress for {quiet}. The analysis will be retried automatically.",
+    "errorArticleNotFound": "This Wikipedia article does not exist. Check the title and language in the URL.",
+    "notFoundTitle": "Article not found",
+    "notFoundBackHome": "Analyse another article",
+    "notFoundCheckWikipedia": "Check on Wikipedia"
+  },
+  "footer": {
+    "methodologyLabel": "Methodology",
+    "methodologyText": "Geographic origin: curated domain database, then country-code TLD, then the publisher's country on Wikidata (P17/P495). Political leaning: Wikidata claims, then Media Bias/Fact Check. Author data from Wikidata is sourced; anything inferred from a name is an estimate and is marked as one. Unresolved sources are always shown with the reason, never hidden.",
+    "projectLabel": "Project",
+    "projectText": "Wikimania 2026 — Team 05E {team}. Open-source tool (MIT) deployed on Toolforge.",
+    "teamName": "Deciphering Biases",
+    "linkMethodology": "Methodology & team",
+    "linkSource": "Source code (GitHub)",
+    "linkQueue": "Analysis queue",
+    "methodologyLink": "Full methodology",
+    "auditLink": "Self-check"
+  },
+  "v2": {
+    "banner": {
+      "title": "v2 dashboard — experimental",
+      "text": "This view replaces the \"bias profile\" radar with the distributions the tool actually measures. Every number states where it came from, whether it is measured or estimated, and how much of the corpus it covers."
+    },
+    "article": {
+      "eyebrow": "Source analysis — v2",
+      "viewV1": "← View the previous dashboard (v1)"
+    },
+    "entry": {
+      "eyebrow": "Experimental",
+      "title": "v2 dashboard",
+      "lede": "The same analyses, read for traceability: where each number comes from, and how many sources it rests on.",
+      "label": "Wikipedia article URL",
+      "placeholder": "https://en.wikipedia.org/wiki/Greta_Thunberg",
+      "submit": "Analyse",
+      "invalid": "That address is not a recognisable Wikipedia article.",
+      "changesTitle": "What changed since v1",
+      "change1": "The 5-axis radar is gone: three of its axes restated a distribution more crudely than the distribution itself does, and two read keys absent from the server's response, so they sat at zero for every article.",
+      "change2": "Every bar is clickable and opens the list of sources behind it.",
+      "change3": "Every attribute states its origin: Wikidata, MBFC, top-level domain, or an internal estimate.",
+      "change4": "Every metric shows its real coverage — \"based on 6 of 8 sources\" — never a figure implied to cover the whole corpus."
+    },
+    "evidence": {
+      "measured": "Measured",
+      "estimated": "Estimated",
+      "absent": "Unknown",
+      "measuredLong": "Measured — asserted by a checkable external source (Wikidata or MBFC)",
+      "estimatedLong": "Estimated — inferred by this tool from a heuristic, with no external confirmation",
+      "absentLong": "Unknown — no value could be determined. This is not a zero."
+    },
+    "provenance": {
+      "wikidata": "Wikidata",
+      "mbfc": "MBFC",
+      "tld": "Domain",
+      "heuristic": "Estimate",
+      "none": "None",
+      "wikidataLong": "A statement published on a Wikidata item",
+      "mbfcLong": "A rating published by Media Bias/Fact Check",
+      "tldLong": "Read off the top-level domain, with no confirmation from an identified publisher",
+      "heuristicLong": "Estimated by this tool, with no external source",
+      "noneLong": "No origin: the value was not determined"
+    },
+    "coverage": {
+      "none": {
+        "sources": "None of the {total} sources supply this",
+        "authors": "None of the {total} authors supply this"
+      },
+      "all": {
+        "sources": "Based on all {total} sources",
+        "authors": "Based on all {total} authors"
+      },
+      "partial": {
+        "sources": "Based on {known} of {total} sources ({pct}%)",
+        "authors": "Based on {known} of {total} authors ({pct}%)"
+      }
+    },
+    "chart": {
+      "showTable": "Table",
+      "showChart": "Chart",
+      "category": "Category",
+      "count": "Count",
+      "share": "Share",
+      "other": "Other",
+      "drill": "Show the {n} sources in {bucket}",
+      "excluded": "{n} source(s) excluded from the chart ({pct}%): value not determined.",
+      "empty": {
+        "missing": "The server returned no data for this distribution. This is not a zero: the measurement never happened.",
+        "allUnknown": "No value could be determined for this corpus. Nothing is shown, rather than a chart of zeroes."
+      }
+    },
+    "summary": {
+      "sources": "Sources analysed",
+      "heroHint": "{authors} author(s) identified, {books} book(s)",
+      "wikidata": "Publisher in Wikidata",
+      "wikidataHint": "Sources whose publisher was matched to a Wikidata item.",
+      "mbfc": "MBFC record",
+      "mbfcHint": "Sources rated by Media Bias/Fact Check.",
+      "geoMeasured": "Country confirmed",
+      "geoMeasuredHint": "Country corroborated by Wikidata or MBFC, not merely read off the domain.",
+      "leanKnown": "Leaning known",
+      "leanKnownHint": "Sources for which an editorial leaning could be determined."
+    },
+    "sections": {
+      "corpus": {
+        "title": "Where the sources come from",
+        "lede": "Raw corpus distributions. Undetermined values are never drawn as a category: they leave the chart and are reported as a gap in coverage."
+      },
+      "editorial": {
+        "title": "Editorial character",
+        "lede": "Political leaning and reliability exactly as the server returns them, with no recomposition into an index."
+      },
+      "authors": {
+        "title": "Who wrote these sources",
+        "lede": "The difference between a Wikidata statement and a guess from the spelling of a name is decisive here, and is never hidden."
+      },
+      "text": {
+        "title": "Language signals",
+        "lede": "Measurements over the text of the fetched sources, each with its real sample size."
+      }
+    },
+    "charts": {
+      "geography": {
+        "title": "Country of publication",
+        "subtitle": "Number of sources per country",
+        "detail": "Confirmed by Wikidata or MBFC where available, otherwise read off the domain."
+      },
+      "language": {
+        "title": "Language of sources",
+        "subtitle": "Language detected in the fetched text",
+        "detail": "Automatic language detection over the text."
+      },
+      "region": {
+        "title": "Region",
+        "subtitle": "Countries grouped by region"
+      },
+      "sourceType": {
+        "title": "Source type",
+        "subtitle": "Editorial nature of the source",
+        "detail": "Classified internally from the domain and the citation."
+      },
+      "leaning": {
+        "title": "Editorial leaning",
+        "subtitle": "Raw values as returned by the server, not repositioned onto a left-right axis",
+        "detail": "Ideology stated in Wikidata, or an MBFC bias rating."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "subtitle": "Ordered scale: low, medium, high, academic",
+        "detail": "An MBFC rating where one exists, otherwise an internal rule based on source type."
+      },
+      "authorType": {
+        "title": "Author type",
+        "subtitle": "A person or an organisation",
+        "detail": "Inferred from the shape of the author's name."
+      },
+      "authorNationality": {
+        "title": "Author nationality (estimated)",
+        "subtitle": "Inferred from the linguistic origin of the name",
+        "detail": "Heuristic estimate over first name and surname."
+      },
+      "authorCitizenship": {
+        "title": "Author citizenship (Wikidata)",
+        "subtitle": "Stated on the author's Wikidata item",
+        "detail": "Covers only authors matched to a Wikidata item, so usually a small minority."
+      },
+      "authorOccupation": {
+        "title": "Author occupations",
+        "subtitle": "Stated in Wikidata",
+        "detail": "Covers only authors present in Wikidata."
+      },
+      "authorEmployer": {
+        "title": "Author employers",
+        "subtitle": "Stated in Wikidata",
+        "detail": "Rarely populated: the server most often returns an empty distribution."
+      },
+      "authorSubregion": {
+        "title": "Author region (estimated)",
+        "subtitle": "Inferred from the linguistic origin of the name"
+      },
+      "languageBias": {
+        "title": "Subjectivity and sensationalism",
+        "detail": "Lexical scores computed by the server over the source text."
+      },
+      "readability": {
+        "title": "Readability",
+        "detail": "Flesch reading-ease score, computed over the sources whose text could be fetched."
+      }
+    },
+    "metrics": {
+      "subjectivity": "Average subjectivity",
+      "subjectivityHint": "Scale of 0 to 1. Shown as measured: a subjectivity of 0 is not \"100% neutral\".",
+      "sensationalism": "Average sensationalism",
+      "sensationalismHint": "Scale of 0 to 1, from a lexicon of loaded terms.",
+      "opinion": "Share of opinion sources",
+      "opinionHint": "Sources identified as op-eds or editorials.",
+      "flesch": "Reading ease (Flesch)",
+      "fleschNote": "The Flesch index is calibrated for English. On sources in another language it stays comparable between articles, but its absolute value means little.",
+      "fleschBand": {
+        "easy": "Easy to read",
+        "difficult": "Difficult to read",
+        "veryDifficult": "Very difficult to read"
+      }
+    },
+    "gender": {
+      "title": "Author gender: measured and estimated",
+      "lede": "Two separate channels, never added together. Wikidata publishes a statement about a named person; the heuristic guesses from the spelling of a first name and surname. Merging them would produce a number that describes neither.",
+      "noAuthors": "No author profiles were extracted from these sources.",
+      "measuredName": "Stated in Wikidata",
+      "measuredDetail": "A gender statement carried by the author's Wikidata item.",
+      "estimatedName": "Estimated from the name",
+      "estimatedDetail": "Heuristic estimate from the linguistic origin of the first name and surname.",
+      "none": {
+        "measured": "None of the {total} authors has a gender stated in Wikidata. This is not \"0% women\": it is the absence of any confirmed data.",
+        "estimated": "The heuristic could not assign a gender to any of the {total} authors."
+      },
+      "undetermined": "{n} of {total} author(s) have no gender determined by either channel.",
+      "unknownValue": "undetermined",
+      "value": {
+        "female": "Woman",
+        "male": "Man",
+        "unknown": "Undetermined",
+        "non-binary": "Non-binary"
+      },
+      "disagreeTitle": "{n} disagreement(s) between Wikidata and the estimate",
+      "disagreeNote": "These cases alone justify keeping the two channels apart: the aggregate the server publishes is built on the estimate and therefore inherits these errors.",
+      "disagree": {
+        "missed": "the heuristic concluded nothing (confidence {confidence}%), Wikidata states: {measured}",
+        "contradicted": "the heuristic says {estimated} (confidence {confidence}%), Wikidata states: {measured}"
+      },
+      "aggTitle": "Aggregates published by the server",
+      "aggNote": "The two distributions the server computes itself. v1 read the key author_gender_distribution, which does not exist, and therefore always got zero. They are reproduced here for checking, but are not used as the headline figure because they rest on the estimate.",
+      "aggKey": "API key"
+    },
+    "derived": {
+      "title": "Derived indicators",
+      "lede": "The only figures on this page not returned directly by the server. Each one shows its formula and its exact inputs, so the arithmetic can be redone by hand.",
+      "tag": "Computed by this tool",
+      "metric": {
+        "geography": "Geographic concentration",
+        "language": "Language concentration"
+      },
+      "reading": {
+        "geography": "{pct}% of located sources come from a single country: {top}.",
+        "language": "{pct}% of identified sources are in a single language: {top}."
+      },
+      "how": "Show the formula and inputs",
+      "inputTop": "Largest bucket",
+      "inputTotal": "Total of known buckets",
+      "inputExcluded": "Excluded (undetermined)",
+      "inputResult": "Calculation",
+      "caveat": "Computed over known buckets only, so a corpus that is largely unidentified cannot read as a diverse one.",
+      "empty": "No derived indicator can be computed: the underlying distributions are empty."
+    },
+    "ledger": {
+      "title": "Source ledger",
+      "lede": "The full record that every chart above is a count over. Each attribute carries its origin and, where one exists, a link to the corresponding statement.",
+      "filterLabel": "Filter",
+      "filterPlaceholder": "domain, country, author, citation text…",
+      "showing": "Showing {n} of {total} source(s)",
+      "noMatch": "No source matches this filter.",
+      "more": "Show {n} more source(s)",
+      "authors": "{n} author(s)",
+      "unnamedAuthor": "Unnamed author",
+      "country": "Country",
+      "leaning": "Leaning",
+      "reliability": "Reliability",
+      "language": "Language",
+      "gender": "Gender",
+      "nationality": "Nationality",
+      "detectedLanguage": "Detected language: {lang}",
+      "confidence": "confidence {pct}"
+    },
+    "drawer": {
+      "eyebrow": "Sources in this bucket",
+      "close": "Close",
+      "count": "{n} source(s)",
+      "empty": "No source matches this bucket."
+    },
+    "sourceType": {
+      "web_source": "Website",
+      "newspaper": "Newspaper",
+      "magazine": "Magazine",
+      "book": "Book",
+      "public_broadcaster": "Public broadcaster",
+      "news_agency": "News agency",
+      "academic": "Academic publication",
+      "blog": "Blog",
+      "government": "Government source",
+      "tv": "Television"
+    },
+    "authorType": {
+      "human": "Person",
+      "corporate/organizational": "Organisation or entity"
+    }
+  },
+  "provenance": {
+    "input": "Input",
+    "revision": "revision {id}",
+    "revisionUnknown": "revision unknown (analysed before tracking)",
+    "method": "Method",
+    "methodUnknown": "unknown version",
+    "howItWorks": "How these figures are computed",
+    "dispute": "Dispute this result"
+  }
+}

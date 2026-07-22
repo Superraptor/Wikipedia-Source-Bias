@@ -12,10 +12,14 @@ export function useAnalysis(options = {}) {
   const pollIntervalMs = options.pollIntervalMs ?? POLL_INTERVAL_MS;
   const pollTimeoutMs = options.pollTimeoutMs ?? POLL_TIMEOUT_MS;
 
+  // `error` holds text that comes from the network/backend and is shown as-is.
+  // `errorKey` holds an i18n key for failures this composable decides itself;
+  // the composable has no access to `t`, so the view translates it.
   const state = ref({
     status: "idle",
     data: null,
     error: null,
+    errorKey: null,
   });
 
   function settle(payload) {
@@ -24,11 +28,12 @@ export function useAnalysis(options = {}) {
       status: count === 0 ? "empty" : "loaded",
       data: payload,
       error: null,
+      errorKey: null,
     };
   }
 
   async function load(url) {
-    state.value = { status: "loading", data: null, error: null };
+    state.value = { status: "loading", data: null, error: null, errorKey: null };
     const deadline = Date.now() + pollTimeoutMs;
 
     try {
@@ -37,10 +42,17 @@ export function useAnalysis(options = {}) {
         const payload = await resp.json();
 
         if (!resp.ok) {
+          // A coded error gets a translated sentence; anything else falls back
+          // to whatever the backend said.
+          const errorKey =
+            payload.code === "article_not_found"
+              ? "states.errorArticleNotFound"
+              : null;
           state.value = {
             status: "error",
             data: null,
-            error: payload.error || `HTTP ${resp.status}`,
+            error: errorKey ? null : payload.error || `HTTP ${resp.status}`,
+            errorKey,
           };
           return;
         }
@@ -51,11 +63,30 @@ export function useAnalysis(options = {}) {
             state.value = {
               status: "error",
               data: null,
-              error: "L'analyse a expiré. Réessayez dans quelques minutes.",
+              error: null,
+              errorKey: "states.errorTimeout",
             };
             return;
           }
-          state.value = { status: "pending", data: null, error: null };
+          // Carry the queue detail through so the UI can show progress and say
+          // whether the worker is alive; a bare "pending" left users unable to
+          // tell a long analysis from a dead one.
+          state.value = {
+            status: "pending",
+            data: null,
+            error: null,
+            errorKey: null,
+            progress: {
+              done: payload.progress_done ?? null,
+              total: payload.progress_total ?? null,
+              pct: payload.progress_pct ?? null,
+              eta: payload.eta ?? null,
+              health: payload.health ?? null,
+              quietFor: payload.quiet_for ?? null,
+              queuePosition: payload.queue_position ?? null,
+              queueState: payload.queue_state ?? null,
+            },
+          };
           await sleep(pollIntervalMs);
           continue;
         }
@@ -64,12 +95,12 @@ export function useAnalysis(options = {}) {
         return;
       }
     } catch (e) {
-      state.value = { status: "error", data: null, error: String(e) };
+      state.value = { status: "error", data: null, error: String(e), errorKey: null };
     }
   }
 
   function reset() {
-    state.value = { status: "idle", data: null, error: null };
+    state.value = { status: "idle", data: null, error: null, errorKey: null };
   }
 
   return { state, load, reset };

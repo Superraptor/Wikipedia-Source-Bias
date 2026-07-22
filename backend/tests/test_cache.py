@@ -153,3 +153,140 @@ def test_release_only_affects_running_rows():
     Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
     assert "SET status = 'pending'" in seen["sql"]
     assert "status = 'running'" in seen["sql"]
+
+
+def test_stale_rows_past_max_attempts_are_failed_not_left_running():
+    """They used to sit in 'running' forever: no worker, no error, eternal spinner."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        def execute(self, sql, args=()):
+            seen.append((" ".join(sql.split()), args))
+            self.rowcount = 1
+
+        def close(self):
+            pass
+
+    requeued, failed = Cache(Conn()).requeue_stale_running(10)
+    assert requeued == 1 and failed == 1
+    requeue_sql, fail_sql = seen[0][0], seen[1][0]
+    # Bounded by `recoveries`, not `attempts`: an interruption is not a failure,
+    # and mixing them let a few redeploys exhaust a healthy article's budget.
+    assert "SET status = 'pending'" in requeue_sql
+    assert "recoveries = recoveries + 1" in requeue_sql
+    assert "recoveries < " in requeue_sql
+    assert "SET status = 'error'" in fail_sql and "recoveries >= " in fail_sql
+
+
+def test_release_does_not_touch_the_failure_count():
+    """A redeploy interrupting work is not the analysis failing."""
+    seen = {}
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        def execute(self, sql, args=()):
+            seen["sql"] = " ".join(sql.split())
+            self.rowcount = 1
+
+        def close(self):
+            pass
+
+    Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
+    assert "SET status = 'pending'" in seen["sql"]
+    assert "attempts" not in seen["sql"]
+
+
+def test_claiming_does_not_count_as_an_attempt():
+    """Claims used to increment attempts, so redeploys burned the retry budget
+    of healthy articles until the stale sweep refused to reclaim them."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen.append(" ".join(sql.split()))
+
+        def fetchone(self):
+            return ("hash", "https://fr.wikipedia.org/wiki/X")
+
+        def close(self):
+            pass
+
+    Cache(Conn()).claim_next()
+    claim = next(s for s in seen if "SET status = 'running'" in s)
+    assert "attempts = attempts + 1" not in claim
+
+
+def test_mark_error_is_what_counts_an_attempt():
+    seen = {}
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen["sql"] = " ".join(sql.split())
+
+        def close(self):
+            pass
+
+    Cache(Conn()).mark_error("https://fr.wikipedia.org/wiki/X", "boom")
+    assert "attempts = attempts + 1" in seen["sql"]
+
+
+def test_permanent_errors_exhaust_the_retry_budget():
+    """A missing article will not start existing on the third attempt."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen.append(" ".join(sql.split()))
+
+        def close(self):
+            pass
+
+    Cache(Conn()).mark_error("https://x/wiki/A", "gone", permanent=True)
+    # attempts must stay truthful -- a 404 was tried ONCE. Permanence is a
+    # separate flag, not an inflated counter.
+    assert "attempts = attempts + 1" in seen[-1]
+    assert "permanent = %s" in seen[-1]
+
+    seen.clear()
+    Cache(Conn()).mark_error("https://x/wiki/A", "transient")
+    assert "attempts = attempts + 1" in seen[-1]

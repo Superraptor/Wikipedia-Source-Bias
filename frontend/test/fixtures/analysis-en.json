@@ -1,0 +1,983 @@
+{
+ "aggregated_bias": {
+  "author_gender_distribution_estimate": {
+   "female": 13.0,
+   "male": 5.0,
+   "unknown": 82.0
+  },
+  "author_type_distribution": {
+   "corporate/organizational": {
+    "count": 0,
+    "percentage": 0.0
+   },
+   "human": {
+    "count": 10,
+    "percentage": 100.0
+   }
+  },
+  "average_sensationalism_score": 0.042,
+  "average_subjectivity_score": 0.0,
+  "book_count": 0,
+  "geography_distribution": {
+   "Canada": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Germany": {
+    "count": 2,
+    "percentage": 20.0
+   },
+   "Iceland": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "United Kingdom": {
+    "count": 2,
+    "percentage": 20.0
+   },
+   "United States": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Unknown": {
+    "count": 3,
+    "percentage": 30.0
+   }
+  },
+  "human_author_citizenship_distribution": {
+   "Sweden": {
+    "count": 1,
+    "percentage": 50.0
+   },
+   "United States": {
+    "count": 1,
+    "percentage": 50.0
+   }
+  },
+  "human_author_employer_country_distribution": {},
+  "human_author_employer_distribution": {},
+  "human_author_gender_distribution": {
+   "female": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "male": {
+    "count": 0,
+    "percentage": 0.0
+   },
+   "unknown": {
+    "count": 9,
+    "percentage": 90.0
+   }
+  },
+  "human_author_nationality_distribution": {
+   "Canada": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Germany": {
+    "count": 2,
+    "percentage": 20.0
+   },
+   "Iceland": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "United Kingdom": {
+    "count": 2,
+    "percentage": 20.0
+   },
+   "United States": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Unknown": {
+    "count": 3,
+    "percentage": 30.0
+   }
+  },
+  "human_author_occupation_distribution": {
+   "environmentalist": {
+    "count": 1,
+    "percentage": 25.0
+   },
+   "journalist": {
+    "count": 2,
+    "percentage": 50.0
+   },
+   "writer": {
+    "count": 1,
+    "percentage": 25.0
+   }
+  },
+  "human_author_subregion_distribution": {
+   "Europe": {
+    "count": 4,
+    "percentage": 40.0
+   },
+   "North America": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Unknown": {
+    "count": 5,
+    "percentage": 50.0
+   }
+  },
+  "language_bias_metrics": {
+   "average_sensationalism_score": 0.04,
+   "average_subjectivity_score": 0.0,
+   "opinion_percentage": 0.0
+  },
+  "language_distribution": {
+   "English": {
+    "count": 8,
+    "percentage": 80.0
+   },
+   "German": {
+    "count": 2,
+    "percentage": 20.0
+   }
+  },
+  "opinion_source_count": 0,
+  "political_leaning_distribution": {
+   "center": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "neoliberalism, centre-left": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "unknown": {
+    "count": 8,
+    "percentage": 80.0
+   }
+  },
+  "readability_metrics": {
+   "average_flesch_reading_ease": 49.85,
+   "readability_count": 10
+  },
+  "region_distribution": {
+   "Europe": {
+    "count": 4,
+    "percentage": 40.0
+   },
+   "North America": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "Unknown": {
+    "count": 5,
+    "percentage": 50.0
+   }
+  },
+  "reliability_distribution": {
+   "high": {
+    "count": 2,
+    "percentage": 20.0
+   },
+   "medium": {
+    "count": 8,
+    "percentage": 80.0
+   }
+  },
+  "sensationalism_sample_count": 10,
+  "source_count": 10,
+  "source_type_distribution": {
+   "newspaper": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "public_broadcaster": {
+    "count": 1,
+    "percentage": 10.0
+   },
+   "web_source": {
+    "count": 8,
+    "percentage": 80.0
+   }
+  },
+  "subjectivity_sample_count": 10
+ },
+ "page_title": "Greta_Thunberg",
+ "page_url": "https://en.wikipedia.org/wiki/Greta_Thunberg",
+ "source_count": 10,
+ "sources": [
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "March",
+     "nationality_probability": {
+      "Unknown": 1.0
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": null,
+      "occupations": [],
+      "political_parties": [],
+      "wikidata_id": "Q21492582",
+      "wikidata_name": "March"
+     }
+    }
+   ],
+   "citation_text": "\"The 2019 Makwan Prize is awarded to Greta Thunberg\" . everyonegroup.com . EveryOne Group. 19 May 2019. Archived from the original on 31 August 2019 . Retrieved 30 December 2019 .",
+   "domain": "everyonegroup.com",
+   "geography": {
+    "country": "unmapped",
+    "note": {
+     "code": "generic_tld",
+     "params": {
+      "tld": ".com"
+     }
+    },
+    "region": "unmapped",
+    "unmapped": true
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.everyonegroup.com/EveryOne/MainPage/Entries/2019/5/19_The_2019_Makwan_Prize_is_awarded_to_Greta_Thunberg.html",
+   "wikidata_publisher": {
+    "countries": [],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "organization"
+    ],
+    "wikidata_id": "Q54979211",
+    "wikidata_name": "EveryOne Group"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "March",
+     "nationality_probability": {
+      "Germany": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": null,
+      "occupations": [],
+      "political_parties": [],
+      "wikidata_id": "Q21492582",
+      "wikidata_name": "March"
+     }
+    }
+   ],
+   "citation_text": "\"Greta Thunberg ist eine schwedische Umweltaktivistin. Sie kämpft für den Klimaschutz und für eine bessere Zukunft\" [ Greta Thunberg is a Swedish environmental activist. She is fighting for climate protection and a better future. ] (in German). RTL . Archived from the original on 6 November 2019 . Retrieved 29 November 2019 .",
+   "domain": "rtl.de",
+   "geography": {
+    "country": "Germany",
+    "region": "Europe"
+   },
+   "language": "German",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.04,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEAST BIASED (1.1)",
+    "country": "France",
+    "country_freedom_rating": "MOSTLY FREE",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "MOSTLY FACTUAL (2.1)",
+    "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+    "media_type": "Radio Station",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.rtl.de/themen/personen/greta-thunberg-t11146.html",
+   "wikidata_publisher": {
+    "countries": [
+     "Germany"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "RTL Deutschland",
+     "RTL Group",
+     "RTL interactive"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "generalist television channel",
+     "news website",
+     "online newspaper",
+     "television station",
+     "website"
+    ],
+    "wikidata_id": "Q96374424",
+    "wikidata_name": "RTL News"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Ofurpaur",
+     "nationality_probability": {
+      "Iceland": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": null,
+      "occupations": [],
+      "political_parties": [],
+      "wikidata_id": "Q255063",
+      "wikidata_name": "superuser"
+     }
+    }
+   ],
+   "citation_text": "\"Greta Thunberg's climate campaign\" . Arctic Portal. 21 February 2019. Archived from the original on 20 September 2019 . Retrieved 20 September 2019 .",
+   "domain": "arcticportal.org",
+   "geography": {
+    "country": "Iceland",
+    "region": "Europe"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://arcticportal.org/ap-library/news/2110-greta-thunberg-s-climate-campaig",
+   "wikidata_publisher": {
+    "countries": [
+     "Iceland"
+    ],
+    "mbfc_id": null,
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "organization"
+    ],
+    "wikidata_id": "Q30263313",
+    "wikidata_name": "Arctic Portal"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Anne-Marie Lobbe",
+     "nationality_probability": {
+      "Canada": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "North America",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "Lobbe, Anne-Marie (13 December 2018). \"À 15 ans, elle remet les dirigeants mondiaux à leur place!\" [ At 15, she's putting world leaders in their place! ] (in French). Sympatico. Archived from the original on 18 March 2019 . Retrieved 20 September 2019 .",
+   "domain": "sympatico.ca",
+   "geography": {
+    "country": "Canada",
+    "region": "North America"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.2,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {},
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "http://www.sympatico.ca/actualites/decouvertes/a-15-ans-elle-remet-les-dirigeants-mondiaux-a-leur-place-1.8622552",
+   "wikidata_publisher": {}
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "female",
+     "gender_probability": {
+      "female": 0.85,
+      "male": 0.05,
+      "unknown": 0.1
+     },
+     "is_human": true,
+     "name": "Amy Goodman",
+     "nationality_probability": {
+      "Unknown": 1.0
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {
+      "citizenships": [
+       "United States"
+      ],
+      "employers": [],
+      "gender": "female",
+      "occupations": [
+       "journalist"
+      ],
+      "political_parties": [],
+      "wikidata_id": "Q259317",
+      "wikidata_name": "Amy Goodman"
+     }
+    }
+   ],
+   "citation_text": "Thunberg, Greta (11 December 2018). \"School Strike for Climate: Meet 15-Year-Old Activist Greta Thunberg, Who Inspired a Global Movement\" . Democracy Now! (Interview). Interviewed by Amy Goodman . Archived from the original on 17 July 2019 . Retrieved 22 July 2019 .",
+   "domain": "democracynow.org",
+   "geography": {
+    "country": "unmapped",
+    "note": {
+     "code": "generic_tld",
+     "params": {
+      "tld": ".org"
+     }
+    },
+    "region": "unmapped",
+    "unmapped": true
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.1,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT",
+    "country": "USA",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "HIGH (1.0)",
+    "mbfc_url": "https://mediabiasfactcheck.com/democracy-now/",
+    "traffic_popularity": "Medium Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.democracynow.org/2018/12/11/meet_the_15_year_old_swedish",
+   "wikidata_publisher": {
+    "countries": [],
+    "mbfc_id": "democracy-now",
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "news program",
+     "podcast show"
+    ],
+    "wikidata_id": "Q1185824",
+    "wikidata_name": "Democracy Now!"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Simon Hattenstone",
+     "nationality_probability": {
+      "United Kingdom": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": "male",
+      "occupations": [
+       "journalist",
+       "writer"
+      ],
+      "political_parties": [],
+      "wikidata_id": "Q28474619",
+      "wikidata_name": "Simon Hattenstone"
+     }
+    }
+   ],
+   "citation_text": "Hattenstone, Simon (25 September 2021). \"Greta Thunberg: 'I really see the value of friendship. Apart from the climate, almost nothing else matters' \" . The Guardian . Archived from the original on 30 October 2021 . Retrieved 26 February 2022 .",
+   "domain": "theguardian.com",
+   "geography": {
+    "country": "United Kingdom",
+    "region": "Europe"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT-CENTER",
+    "country": "United Kingdom",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "HIGH (1.8)",
+    "mbfc_url": "https://mediabiasfactcheck.com/the-guardian/",
+    "media_type": "Newspaper",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "neoliberalism, centre-left",
+   "reliability": "high",
+   "source_type": "newspaper",
+   "url": "https://www.theguardian.com/environment/ng-interactive/2021/sep/25/greta-thunberg-i-really-see-the-value-of-friendship-apart-from-the-climate-almost-nothing-else-matters",
+   "wikidata_publisher": {
+    "countries": [
+     "United Kingdom"
+    ],
+    "mbfc_id": "the-guardian",
+    "owners": [
+     "Guardian Media Group"
+    ],
+    "political_ideologies": [
+     "neoliberalism"
+    ],
+    "political_leanings": [
+     "centre-left"
+    ],
+    "types": [
+     "daily newspaper",
+     "newspaper"
+    ],
+    "wikidata_id": "Q11148",
+    "wikidata_name": "The Guardian"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Ellyn Santiago",
+     "nationality_probability": {
+      "Unknown": 1.0
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "Santiago, Ellyn (14 December 2018). \"Greta Thunberg: 5 Fast Facts You Need to Know\" . Heavy.com . Archived from the original on 7 February 2019 . Retrieved 5 February 2019 .",
+   "domain": "heavy.com",
+   "geography": {
+    "country": "unmapped",
+    "note": {
+     "code": "generic_tld",
+     "params": {
+      "tld": ".com"
+     }
+    },
+    "region": "unmapped",
+    "unmapped": true
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT-CENTER",
+    "country": "USA",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "HIGH (1.5)",
+    "mbfc_url": "https://mediabiasfactcheck.com/heavy/",
+    "media_type": "Website",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://heavy.com/news/2018/12/greta-thunberg/",
+   "wikidata_publisher": {
+    "countries": [],
+    "mbfc_id": "heavy",
+    "owners": [],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "website"
+    ],
+    "wikidata_id": "Q17022059",
+    "wikidata_name": "heavy.com"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Deutsche Welle",
+     "nationality_probability": {
+      "Germany": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {
+      "citizenships": [],
+      "employers": [],
+      "gender": null,
+      "occupations": [],
+      "political_parties": [],
+      "wikidata_id": "Q153770",
+      "wikidata_name": "Deutsche Welle"
+     }
+    }
+   ],
+   "citation_text": "\"Greta Thunberg's grandfather, veteran Swedish actor Olof Thunberg, dies\" . Deutsche Welle . 25 February 2020. Archived from the original on 27 February 2020 . Retrieved 26 February 2022 .",
+   "domain": "dw.com",
+   "geography": {
+    "country": "Germany",
+    "region": "Europe"
+   },
+   "language": "German",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.0,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT-CENTER",
+    "country": "Germany",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "HIGH (0.9)",
+    "mbfc_url": "https://mediabiasfactcheck.com/dw/",
+    "media_type": "TV Station",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "center",
+   "reliability": "high",
+   "source_type": "public_broadcaster",
+   "url": "https://www.dw.com/en/greta-thunbergs-grandfather-veteran-swedish-actor-olof-thunberg-dies/a-52534367",
+   "wikidata_publisher": {
+    "countries": [
+     "Germany"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "Q49653"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "broadcaster",
+     "mass media",
+     "public television station",
+     "specialty channel",
+     "television station"
+    ],
+    "wikidata_id": "Q1156181",
+    "wikidata_name": "DW-TV"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "The Week Staff",
+     "nationality_probability": {
+      "United Kingdom": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Europe",
+     "wikidata_author": {}
+    }
+   ],
+   "citation_text": "\"PROFILE: Greta Thunberg: five things you may not know about her\" . The Week . 2 November 2021. Archived from the original on 26 January 2023 . Retrieved 26 January 2023 . .",
+   "domain": "theweek.co.uk",
+   "geography": {
+    "country": "United Kingdom",
+    "region": "Europe"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.05,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEFT",
+    "country": "USA",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "HIGH (1.7)",
+    "mbfc_url": "https://mediabiasfactcheck.com/the-week/",
+    "media_type": "Website",
+    "traffic_popularity": "High Traffic"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.theweek.co.uk/greta-thunberg/954652/five-things-you-didnt-know-greta-thunberg",
+   "wikidata_publisher": {
+    "countries": [
+     "United Kingdom"
+    ],
+    "mbfc_id": "the-week",
+    "owners": [
+     "Dennis Publishing"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "news magazine",
+     "newspaper"
+    ],
+    "wikidata_id": "Q7774107",
+    "wikidata_name": "The Week"
+   }
+  },
+  {
+   "author_profiles": [
+    {
+     "author_type": "human",
+     "confidence": {
+      "gender": 0.7,
+      "human": 0.8,
+      "subregion": 0.6
+     },
+     "gender": "unknown",
+     "gender_probability": {
+      "female": 0.05,
+      "male": 0.05,
+      "unknown": 0.9
+     },
+     "is_human": true,
+     "name": "Greta Thunberg",
+     "nationality_probability": {
+      "United States": 0.7,
+      "Unknown": 0.3
+     },
+     "notes": "Author background estimated via first name and surname linguistic origin heuristics.",
+     "subregion": "Unknown",
+     "wikidata_author": {
+      "citizenships": [
+       "Sweden"
+      ],
+      "employers": [],
+      "gender": "female",
+      "occupations": [
+       "environmentalist"
+      ],
+      "political_parties": [],
+      "wikidata_id": "Q56434717",
+      "wikidata_name": "Greta Thunberg"
+     }
+    }
+   ],
+   "citation_text": "Thunberg, Greta (24 November 2018). School strike for climate – save the world by changing the rules . TEDxStockholm. Event occurs at 1:46. Archived from the original on 11 November 2019 . Retrieved 29 January 2019 – via YouTube. I was diagnosed with Asperger's syndrome, OCD, and selective mutism. That basically means I only speak when I think it's necessary. Now is one of those moments ... I think that in many ways, we autistic are the normal ones, and the rest of the people are pretty strange, especially when it comes to the sustainability crisis, where everyone keeps saying that climate change is an existential threat and the most important issue of all and yet they just carry on like before.",
+   "domain": "youtube.com",
+   "geography": {
+    "country": "United States",
+    "region": "Americas"
+   },
+   "language": "English",
+   "language_bias": {
+    "detected_language": "English",
+    "is_opinion": false,
+    "loaded_words_found": [],
+    "sensationalism_score": 0.03,
+    "sentiment": "neutral",
+    "sentiment_source": "Lexical Heuristics",
+    "subjectivity_score": 0.0
+   },
+   "mbfc": {
+    "bias_rating": "LEAST BIASED",
+    "credibility_rating": "unknown",
+    "factual_reporting": "unknown",
+    "mbfc_url": "https://mediabiasfactcheck.com/youtube/"
+   },
+   "political_leaning": "unknown",
+   "reliability": "medium",
+   "source_type": "web_source",
+   "url": "https://www.youtube.com/watch?v=EAmmUIEsN9A&t=1m46s",
+   "wikidata_publisher": {
+    "countries": [
+     "United States"
+    ],
+    "mbfc_id": null,
+    "owners": [
+     "Google",
+     "Q112247183"
+    ],
+    "political_ideologies": [],
+    "political_leanings": [],
+    "types": [
+     "business",
+     "company",
+     "dot-com company",
+     "live streaming service",
+     "online community",
+     "online video platform",
+     "user-generated content platform",
+     "video streaming service",
+     "website"
+    ],
+    "wikidata_id": "Q112247183",
+    "wikidata_name": "Q112247183"
+   }
+  }
+ ]
+}

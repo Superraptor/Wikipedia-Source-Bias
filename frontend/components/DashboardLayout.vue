@@ -1,11 +1,10 @@
 <template>
   <div class="dashboard-layout">
-    <div v-if="unmappedCount > 0" class="dashboard-layout__notice">
-      <CdxMessage type="warning" :fade-in="true">
-        {{ unmappedCount }} source{{ unmappedCount > 1 ? "s" : "" }} non-mappée{{ unmappedCount > 1 ? "s" : "" }}
-        ({{ unmappedPct }}%) — pays d'origine non résolu via Wikidata ou TLD.
-      </CdxMessage>
-    </div>
+    <!-- The unmapped count is no longer a warning banner. Unmapped sources are
+         common and expected (generic .com/.net domains carry no country
+         signal), so leading every dashboard with a yellow alert overstated it.
+         The count is still visible in the geography chart and each affected
+         row still carries its per-source reason. -->
 
     <div class="dashboard-layout__grid">
       <div class="dashboard-layout__main">
@@ -24,7 +23,7 @@
     <section class="dashboard-layout__compare">
       <div class="wsi-section-title">
         <span class="wsi-section-num">08</span>
-        <h2>Comparer avec un autre article</h2>
+        <h2>{{ t("dashboard.compareTitle") }}</h2>
       </div>
       <ArticleInput @analyze="$emit('compare', $event)" />
     </section>
@@ -35,7 +34,6 @@
 
 <script setup>
 import { computed } from "vue";
-import { CdxMessage } from "@wikimedia/codex";
 import RadarChart from "~/components/RadarChart.vue";
 import KpiCards from "~/components/KpiCards.vue";
 import TopCountriesBar from "~/components/TopCountriesBar.vue";
@@ -46,6 +44,9 @@ import CtaPanel from "~/components/CtaPanel.vue";
 import MethodologyFooter from "~/components/MethodologyFooter.vue";
 import ArticleInput from "~/components/ArticleInput.vue";
 import { computeRadarAxes } from "~/composables/useRadarData.js";
+import { isUnmapped } from "~/utils/labels.js";
+
+const { t } = useI18n();
 
 const props = defineProps({
   analysis: { type: Object, required: true },
@@ -54,19 +55,7 @@ defineEmits(["compare"]);
 
 const radarAxes = computed(() => computeRadarAxes(props.analysis));
 
-const unmappedCount = computed(() => {
-  const dist = props.analysis.aggregated_bias?.geography_distribution || {};
-  let n = 0;
-  for (const [k, v] of Object.entries(dist)) {
-    if (k.toLowerCase() === "non-mappé" || k.toLowerCase() === "unknown") n += v.count || 0;
-  }
-  return n;
-});
 
-const unmappedPct = computed(() => {
-  const total = props.analysis.source_count || 1;
-  return Math.round((100 * unmappedCount.value) / total * 10) / 10;
-});
 </script>
 
 <style scoped>
@@ -75,8 +64,16 @@ const unmappedPct = computed(() => {
   margin: 0 auto;
   padding: var(--space-5) var(--space-6) 0;
 }
-.dashboard-layout__notice {
-  margin-bottom: var(--space-4);
+@media (max-width: 640px) {
+  /* Nested inside .wsi-container, which already pads horizontally. Keeping
+     both meant the content box lost 128px of a 375px screen. */
+  .dashboard-layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dashboard-layout__grid {
+    gap: var(--space-3);
+  }
 }
 .dashboard-layout__grid {
   display: grid;

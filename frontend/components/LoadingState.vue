@@ -4,9 +4,29 @@
     <p class="loading-state__title">{{ title }}</p>
     <p class="loading-state__sub">{{ subtitle }}</p>
     <CdxProgressBar class="loading-state__bar" />
+    <div v-if="pending && progress" class="loading-state__progress">
+      <p v-if="progress.pct !== null" class="loading-state__pct">
+        {{ t("states.pendingProgress", { done: progress.done, total: progress.total, pct: progress.pct }) }}
+      </p>
+      <p v-if="progress.eta" class="loading-state__pct">
+        {{ t("states.pendingEta", { eta: progress.eta }) }}
+      </p>
+      <p v-if="progress.queuePosition" class="loading-state__pct">
+        {{ t("states.pendingQueue", { n: progress.queuePosition }) }}
+      </p>
+      <p
+        v-if="progress.health"
+        class="loading-state__health"
+        :class="{ 'loading-state__health--stalled': progress.health === 'stalled' }"
+      >
+        {{ progress.health === "stalled"
+            ? t("states.pendingStalled", { quiet: progress.quietFor })
+            : t("states.pendingAlive") }}
+      </p>
+    </div>
     <p v-if="pending" class="loading-state__hint">
-      Les grands articles peuvent demander plusieurs minutes.
-      <a href="/status" target="_blank" rel="noopener">Voir la file d'analyse</a>
+      {{ t("states.pendingHint") }}
+      <a href="/status" target="_blank" rel="noopener">{{ t("states.pendingHintLink") }}</a>
     </p>
   </div>
 </template>
@@ -20,15 +40,16 @@ import { CdxProgressBar } from "@wikimedia/codex";
 // the wait is wildly different, so say so.
 const props = defineProps({
   pending: { type: Boolean, default: false },
+  progress: { type: Object, default: null },
 });
 
+const { t } = useI18n();
+
 const title = computed(() =>
-  props.pending ? "Analyse en file d'attente…" : "Analyse des sources en cours…",
+  t(props.pending ? "states.pendingTitle" : "states.loadingTitle"),
 );
 const subtitle = computed(() =>
-  props.pending
-    ? "Un worker traite cet article. Cette page se met à jour automatiquement."
-    : "Lecture des références, résolution Wikidata et calcul des distributions.",
+  t(props.pending ? "states.pendingSubtitle" : "states.loadingSubtitle"),
 );
 </script>
 
@@ -65,6 +86,22 @@ const subtitle = computed(() =>
 .loading-state__bar {
   width: min(320px, 100%);
   margin-top: var(--space-3);
+}
+.loading-state__progress {
+  margin-top: var(--space-2);
+  font-size: 0.9rem;
+  color: var(--wsi-ink-soft);
+}
+.loading-state__pct {
+  font-variant-numeric: tabular-nums;
+}
+.loading-state__health {
+  margin-top: var(--space-1);
+  font-weight: 600;
+  color: var(--wsi-green, #14866d);
+}
+.loading-state__health--stalled {
+  color: var(--wsi-amber, #edab00);
 }
 .loading-state__hint {
   font-size: 0.85rem;

@@ -1,6 +1,6 @@
 <template>
   <CdxMessage type="error" class="error-state">
-    Impossible d'analyser cet article. Vérifiez l'URL et réessayez.
+    {{ t("states.error") }}
     <template v-if="detail">
       <span class="error-state__detail"> — {{ detail }}</span>
     </template>
@@ -9,6 +9,8 @@
 
 <script setup>
 import { CdxMessage } from "@wikimedia/codex";
+
+const { t } = useI18n();
 defineProps({ detail: { type: String, default: "" } });
 </script>
 

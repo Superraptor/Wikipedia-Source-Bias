@@ -101,3 +101,48 @@ describe("useAnalysis", () => {
     );
   });
 });
+
+describe("coded backend errors", () => {
+  it("turns article_not_found into a translatable key", async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: false, status: 404,
+      json: () => Promise.resolve({ code: "article_not_found", error: "raw english" }),
+    });
+    const { state, load } = useAnalysis({ pollIntervalMs: 0 });
+    await load("https://fr.wikipedia.org/wiki/Nope");
+    expect(state.value.status).toBe("error");
+    expect(state.value.errorKey).toBe("states.errorArticleNotFound");
+    // The raw technical string must not leak into the UI alongside it.
+    expect(state.value.error).toBeNull();
+  });
+
+  it("keeps the backend text for uncoded errors", async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: false, status: 500, json: () => Promise.resolve({ error: "boom" }),
+    });
+    const { state, load } = useAnalysis({ pollIntervalMs: 0 });
+    await load("https://fr.wikipedia.org/wiki/X");
+    expect(state.value.errorKey).toBeNull();
+    expect(state.value.error).toBe("boom");
+  });
+
+  it("carries queue progress through the pending state", async () => {
+    const pending = {
+      ok: true, status: 202,
+      json: () => Promise.resolve({
+        status: "pending", progress_done: 3, progress_total: 10,
+        progress_pct: 30, eta: "~2 min", health: "working",
+      }),
+    };
+    const done = {
+      ok: true, status: 200,
+      json: () => Promise.resolve({ source_count: 1, sources: [{}], aggregated_bias: {} }),
+    };
+    global.fetch = vi.fn().mockResolvedValueOnce(pending).mockResolvedValueOnce(done);
+    const { state, load } = useAnalysis({ pollIntervalMs: 0 });
+    const p = load("https://fr.wikipedia.org/wiki/Big");
+    await new Promise((r) => setTimeout(r, 0));
+    await p;
+    expect(state.value.status).toBe("loaded");
+  });
+});
