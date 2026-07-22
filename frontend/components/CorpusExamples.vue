@@ -2,7 +2,7 @@
   <section class="corpus" aria-labelledby="corpus-title">
     <div class="wsi-section-title">
       <span class="wsi-section-num">01</span>
-      <h2 id="corpus-title">Articles récents</h2>
+      <h2 id="corpus-title">{{ t("corpus.title") }}</h2>
     </div>
     <div class="corpus__grid">
       <button
@@ -17,9 +17,9 @@
           <span class="corpus__lang">{{ item.lang }}</span>
           <span class="corpus__title">{{ item.title }}</span>
           <span class="corpus__meta">
-            <span class="corpus__count">{{ item.source_count }} sources</span>
+            <span class="corpus__count">{{ t("corpus.sourceCount", { count: item.source_count }) }}</span>
             <span class="corpus__dot" aria-hidden="true">·</span>
-            <span class="corpus__country">{{ item.dominant_country }}</span>
+            <span class="corpus__country">{{ countryLabel(item.dominant_country, t) }}</span>
           </span>
         </span>
         <span class="corpus__arrow" aria-hidden="true">
@@ -34,7 +34,13 @@
 import { CdxIcon } from "@wikimedia/codex";
 import { cdxIconNext } from "@wikimedia/codex-icons";
 
+import { countryLabel } from "~/utils/labels.js";
+
+const { t } = useI18n();
 const emit = defineEmits(["select"]);
+
+// Titles and URLs are data, not copy: they name real Wikipedia articles in
+// their own language and must not be translated.
 
 const corpus = [
   { title: "Emmanuel Macron", lang: "FR", source_count: 881, dominant_country: "France", region: "Europe", url: "https://fr.wikipedia.org/wiki/Emmanuel_Macron" },

@@ -1,33 +1,35 @@
 <template>
   <div class="kpi-cards">
     <article class="kpi-card wsi-panel">
-      <span class="kpi-card__label">Sources analysées</span>
+      <span class="kpi-card__label">{{ t("kpi.sourcesLabel") }}</span>
       <span class="kpi-card__value">{{ analysis.source_count }}</span>
-      <span class="kpi-card__hint">références extraites</span>
+      <span class="kpi-card__hint">{{ t("kpi.sourcesHint") }}</span>
     </article>
     <article class="kpi-card wsi-panel">
-      <span class="kpi-card__label">Pays dominant</span>
+      <span class="kpi-card__label">{{ t("kpi.dominantLabel") }}</span>
       <span class="kpi-card__value kpi-card__value--small">{{ dominant.country }}</span>
-      <span class="kpi-card__hint kpi-card__hint--pct">{{ dominant.percentage }}% des sources</span>
+      <span class="kpi-card__hint kpi-card__hint--pct">{{ t("kpi.dominantHint", { pct: dominant.percentage }) }}</span>
     </article>
     <article class="kpi-card wsi-panel">
-      <span class="kpi-card__label">Sources d'opinion</span>
+      <span class="kpi-card__label">{{ t("kpi.opinionLabel") }}</span>
       <span class="kpi-card__value">{{ opinion.count }}</span>
-      <span class="kpi-card__hint kpi-card__hint--pct">{{ opinion.percentage }}% du total</span>
+      <span class="kpi-card__hint kpi-card__hint--pct">{{ t("kpi.opinionHint", { pct: opinion.percentage }) }}</span>
     </article>
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue";
+import { isUnmapped } from "~/utils/labels.js";
 
+const { t } = useI18n();
 const props = defineProps({ analysis: { type: Object, required: true } });
 
 const dominant = computed(() => {
   const dist = props.analysis.aggregated_bias?.geography_distribution || {};
-  let best = { country: "—", percentage: 0 };
+  let best = { country: t("app.empty"), percentage: 0 };
   for (const [k, v] of Object.entries(dist)) {
-    if (k.toLowerCase() === "non-mappé" || k.toLowerCase() === "unknown") continue;
+    if (isUnmapped(k)) continue;
     if ((v.percentage || 0) > best.percentage) best = { country: k, percentage: v.percentage || 0 };
   }
   return best;

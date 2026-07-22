@@ -78,7 +78,30 @@ def analyze():
 
         status, err = cache.status_of(url)
         if status in (PENDING, RUNNING):
-            return jsonify({"status": PENDING, "page_url": url}), 202
+            # Tell the caller what is actually happening. A bare "pending"
+            # left users unable to tell a long analysis from a dead one.
+            body = {"status": PENDING, "page_url": url, "queue_state": status}
+            # Best-effort: the 202 is still correct without the detail.
+            try:
+                row = cache.row_for(url)
+            except Exception:
+                row = None
+            if row:
+                info = _decorate(row)
+                body.update(
+                    progress_done=info.get("progress_done"),
+                    progress_total=info.get("progress_total"),
+                    progress_pct=info.get("progress_pct"),
+                    stage=info.get("stage"),
+                    eta=info.get("eta"),
+                    health=info.get("health"),
+                    quiet_for=info.get("quiet_for"),
+                )
+                try:
+                    body["queue_position"] = cache.queue_position(url)
+                except Exception:
+                    pass
+            return jsonify(body), 202
         if status == ERROR and not SYNC_ANALYSIS:
             return jsonify({"error": err or "Analysis failed"}), 500
 
@@ -155,28 +178,75 @@ STAGE_LABELS = {
 }
 
 
-def _progress(row):
-    """Percent complete, plus a rough ETA from the observed rate so far.
+def _coarse(seconds):
+    """Round an ETA so it stops twitching between refreshes.
 
-    The ETA is extrapolated from this run's own throughput rather than a fixed
-    per-source constant, because time per source varies hugely with how many
-    external lookups each one triggers.
+    A precise number that changes every 15s reads as unreliable even when the
+    underlying estimate is fine, so buckets get wider as the estimate grows.
+    """
+    if seconds is None:
+        return None
+    seconds = max(0, int(seconds))
+    if seconds < 60:
+        return "moins d'une minute"
+    minutes = seconds / 60
+    if minutes < 10:
+        return f"~{int(round(minutes))} min"
+    if minutes < 60:
+        return f"~{int(round(minutes / 5) * 5)} min"
+    hours = minutes / 60
+    if hours < 4:
+        return f"~{hours:.1f} h".replace(".0 h", " h")
+    return f"~{int(round(hours))} h"
+
+
+def _progress(row):
+    """Percent complete plus an ETA.
+
+    The ETA comes from the worker, which measures how long each source
+    actually took and smooths it with an EWMA. Earlier this was derived here
+    from "time since queued" divided by sources done -- that counted queue
+    wait as analysis time and used a cumulative mean, so the estimate climbed
+    steadily whenever later sources were slower. The web tier now only ages
+    the worker's figure by the time since it was written.
     """
     done = row.get("progress_done")
     total = row.get("progress_total")
     if not total or done is None:
         return None, None, None
 
-    pct = min(100, int(done * 100 / total)) if total else None
-    # age_seconds, not since_update_seconds: the latter resets on every
-    # progress write. age spans queueing too, so the ETA is approximate and
-    # labelled as such in the UI.
-    elapsed = row.get("age_seconds")
-    eta = None
-    if elapsed and done > 0 and done < total:
-        per_item = elapsed / done
-        eta = _humanize(int(per_item * (total - done)))
-    return pct, f"{done}/{total}", eta
+    pct = min(100, int(done * 100 / total))
+
+    eta_seconds = row.get("eta_seconds")
+    if eta_seconds is None:
+        # No worker estimate yet: fall back to this run's own throughput,
+        # using running_seconds (analysis time) rather than age (queue + analysis).
+        running = row.get("running_seconds")
+        if running and done > 0 and done < total:
+            eta_seconds = int((running / done) * (total - done))
+    else:
+        # Count down between progress writes instead of showing a stale number.
+        eta_seconds = max(0, int(eta_seconds) - int(row.get("since_update_seconds") or 0))
+
+    return pct, f"{done}/{total}", _coarse(eta_seconds)
+
+
+# A running analysis writes progress every ~5s. Silence for much longer means
+# the worker died mid-source: the row is still 'running' but nothing is
+# happening, and the stale sweep will reclaim it. Distinguishing that from
+# "large article, working fine" is the difference between waiting patiently
+# and assuming the tool is broken.
+STALL_SECONDS = 180
+
+
+def _health(row):
+    """'working' | 'stalled' | None (not running)."""
+    if row.get("status") != RUNNING:
+        return None
+    quiet = row.get("since_update_seconds")
+    if quiet is not None and quiet > STALL_SECONDS:
+        return "stalled"
+    return "working"
 
 
 def _analysis_url(row):
@@ -197,6 +267,9 @@ def _decorate(row):
     row["progress_text"] = counted
     row["eta"] = eta
     row["stage_label"] = STAGE_LABELS.get(row.get("stage"), row.get("stage"))
+    row["health"] = _health(row)
+    row["quiet_for"] = _humanize(row.get("since_update_seconds")) \
+        if row.get("status") == RUNNING else None
     # A running row's clock started when a worker claimed it (updated_at); a
     # waiting row's when it was queued (created_at).
     if row["status"] == RUNNING:

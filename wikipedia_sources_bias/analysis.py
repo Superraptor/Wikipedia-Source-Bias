@@ -11,6 +11,9 @@ import requests
 from bs4 import BeautifulSoup
 
 from .cachestore import get_store
+from . import ratelimit
+from .urlnorm import canonical_page_url
+from concurrent.futures import ThreadPoolExecutor
 
 
 def _load_env_tokens():
@@ -44,6 +47,68 @@ from .heuristics_data import (
     MULTILINGUAL_LOADED_WORDS,
     MULTILINGUAL_OPINION_INDICATORS,
 )
+
+
+# Sources between partial-progress checkpoints. See the note at the call site.
+CHECKPOINT_EVERY = 10
+
+# Sources analysed concurrently within one article. The work is almost
+# entirely network wait (Wikidata, MBFC, Crossref, Wayback), so the CPU is
+# idle and concurrency buys close to linear speedup. Politeness does NOT
+# depend on this number: _polite_get gates every request through a shared
+# per-host limiter, so raising it does not raise the rate any one service
+# sees. Set WSB_SOURCE_CONCURRENCY=1 to restore the old serial behaviour.
+DEFAULT_SOURCE_CONCURRENCY = 6
+
+
+def _source_concurrency() -> int:
+    try:
+        n = int(os.environ.get("WSB_SOURCE_CONCURRENCY", DEFAULT_SOURCE_CONCURRENCY))
+    except (TypeError, ValueError):
+        return DEFAULT_SOURCE_CONCURRENCY
+    return max(1, n)
+
+
+def _polite_get(url, **kwargs):
+    """requests.get, gated by the shared per-host limiter.
+
+    Every outgoing request goes through here so that raising concurrency does
+    not raise the rate any single service sees, and so a 429 from ANY host
+    backs off every caller to it -- not just the one that happened to look.
+    """
+    ratelimit.wait(url)
+    response = requests.get(url, **kwargs)
+    ratelimit.note_response(url, response)
+    return response
+
+
+def _is_bare_homepage(url: str) -> bool:
+    """True for 'https://example.org/' style links with no real path."""
+    try:
+        parts = urlparse(url)
+    except Exception:
+        return False
+    return parts.path in ("", "/") and not parts.query and not parts.fragment
+
+
+def _drop_bare_homepages(urls: list[str]) -> list[str]:
+    """Remove a site's homepage when a deeper link to the same host is present.
+
+    German-style citations often read "In: Website https://example.org/", so
+    the extractor picks up BOTH the actual document and the publisher's front
+    page. Counted separately, every such reference contributed two sources and
+    doubled that publisher's weight in the distributions.
+
+    A bare homepage is kept when it is the only link to its host, since then it
+    really is the cited source.
+    """
+    hosts_with_deep_links = {
+        urlparse(u).netloc for u in urls if not _is_bare_homepage(u)
+    }
+    return [
+        u for u in urls
+        if not (_is_bare_homepage(u) and urlparse(u).netloc in hosts_with_deep_links)
+    ]
 
 
 def _extract_page_title(url: str) -> str:
@@ -227,7 +292,7 @@ def _resolve_archive_url_content(url: str, skip_rate_limiting: bool = False) -> 
         
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        response = requests.get(url, headers=headers, timeout=5)
+        response = _polite_get(url, headers=headers, timeout=5)
         if response.status_code == 200:
             orig = extract_original_url_from_archive_html(response.text)
             if orig:
@@ -367,7 +432,7 @@ def _robust_wikidata_get(url: str, params: dict[str, Any], headers: dict[str, An
     backoff = 2.0
     for attempt in range(retries):
         try:
-            response = requests.get(url, params=params, headers=headers, timeout=timeout)
+            response = _polite_get(url, params=params, headers=headers, timeout=timeout)
             if response.status_code == 429:
                 retry_after = response.headers.get("Retry-After")
                 wait_time = int(retry_after) if retry_after and retry_after.isdigit() else backoff
@@ -383,7 +448,7 @@ def _robust_wikidata_get(url: str, params: dict[str, Any], headers: dict[str, An
             time.sleep(backoff)
             backoff *= 2
             
-    return requests.get(url, params=params, headers=headers, timeout=timeout)
+    return _polite_get(url, params=params, headers=headers, timeout=timeout)
 
 
 def _query_wikidata_sparql(query: str) -> list[dict[str, Any]]:
@@ -662,7 +727,7 @@ def _fetch_wikidata_book(isbn: str) -> dict[str, Any]:
 def _fetch_google_books_metadata(volume_id: str) -> dict[str, Any]:
     url = f"https://www.googleapis.com/books/v1/volumes/{volume_id}"
     try:
-        response = requests.get(url, timeout=5)
+        response = _polite_get(url, timeout=5)
         response.raise_for_status()
         data = response.json()
         info = data.get("volumeInfo", {})
@@ -749,7 +814,7 @@ def _fetch_crossref_metadata(doi: str) -> dict[str, Any]:
         "User-Agent": "WikipediaSourcesBias/0.1 (mailto:clair.kronk@gmail.com)"
     }
     try:
-        response = requests.get(url, headers=headers, timeout=5)
+        response = _polite_get(url, headers=headers, timeout=5)
         response.raise_for_status()
         data = response.json()
         message = data.get("message", {})
@@ -1002,7 +1067,7 @@ def _fetch_url_readability(url: str) -> dict[str, Any]:
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
     html = ""
     try:
-        response = requests.get(url, headers=headers, timeout=5)
+        response = _polite_get(url, headers=headers, timeout=5)
         if response.status_code in (403, 401):
             raise requests.HTTPError("Direct request blocked with status code " + str(response.status_code))
         response.raise_for_status()
@@ -1010,13 +1075,13 @@ def _fetch_url_readability(url: str) -> dict[str, Any]:
     except Exception:
         try:
             api_url = f"https://archive.org/wayback/available?url={url}"
-            api_res = requests.get(api_url, timeout=5)
+            api_res = _polite_get(api_url, timeout=5)
             if api_res.status_code == 200:
                 data = api_res.json()
                 snapshots = data.get("archived_snapshots", {})
                 if "closest" in snapshots:
                     archive_url = snapshots["closest"]["url"]
-                    archive_res = requests.get(archive_url, headers=headers, timeout=5)
+                    archive_res = _polite_get(archive_url, headers=headers, timeout=5)
                     archive_res.raise_for_status()
                     html = archive_res.text
         except Exception:
@@ -1735,8 +1800,10 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
     if skip_rate_limiting:
         return {}
         
-    # Introduce rate-limiting delay before outgoing request to be respectful
-    time.sleep(1.0)
+    # Politeness is enforced centrally by _polite_get via the per-host
+    # limiter (mediabiasfactcheck.com is capped at 1 req/s there). A sleep
+    # here as well would double the delay and, being per-process, would not
+    # coordinate across worker replicas anyway.
     
     candidates = [
         f"https://mediabiasfactcheck.com/{slug}-bias-and-credibility/",
@@ -1749,7 +1816,7 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
     for url in candidates:
         html = ""
         try:
-            response = requests.get(url, headers=headers, timeout=3)
+            response = _polite_get(url, headers=headers, timeout=3)
             if response.status_code == 200:
                 html = response.text
         except Exception:
@@ -1758,16 +1825,15 @@ def _fetch_mbfc_rating(domain: str, mbfc_id: str | None = None, skip_rate_limiti
         if not html:
             if skip_rate_limiting:
                 continue
-            time.sleep(0.5)
             try:
                 api_url = f"https://archive.org/wayback/available?url={url}"
-                api_res = requests.get(api_url, timeout=3)
+                api_res = _polite_get(api_url, timeout=3)
                 if api_res.status_code == 200:
                     data = api_res.json()
                     snapshots = data.get("archived_snapshots", {})
                     if "closest" in snapshots:
                         archive_url = snapshots["closest"]["url"]
-                        archive_res = requests.get(archive_url, headers=headers, timeout=3)
+                        archive_res = _polite_get(archive_url, headers=headers, timeout=3)
                         if archive_res.status_code == 200:
                             html = archive_res.text
             except Exception:
@@ -1866,7 +1932,10 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         cache_suffix += "_countries"
     if skip_rate_limiting:
         cache_suffix += "_fast"
-    cache_key = f"{url}_all{cache_suffix}" if max_sources is None else f"{url}_max_{max_sources}{cache_suffix}"
+    # Key on the canonical URL so ?wprov=sfla1 share links do not each get
+    # their own cache entry for the same article.
+    canonical = canonical_page_url(url)
+    cache_key = f"{canonical}_all{cache_suffix}" if max_sources is None else f"{canonical}_max_{max_sources}{cache_suffix}"
     
     sources: list[dict[str, Any]] = []
     page_metadata = {}
@@ -1892,7 +1961,7 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
     if not dedup_candidate_urls:
         headers = {"User-Agent": "Mozilla/5.0"}
         try:
-            response = requests.get(url, headers=headers, timeout=15)
+            response = _polite_get(url, headers=headers, timeout=15)
             response.raise_for_status()
             html = response.text
         except requests.RequestException:
@@ -1914,11 +1983,12 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 seen_urls.add(unwrapped)
                 dedup_candidate_urls.append(unwrapped)
 
+        dedup_candidate_urls = _drop_bare_homepages(dedup_candidate_urls)
+
     total = len(dedup_candidate_urls[:max_sources])
-    for idx, source_url in enumerate(dedup_candidate_urls[:max_sources], start=1):
-        if idx <= len(sources):
-            continue
-            
+    def _process_one(idx, source_url):
+        """Analyse one source. Pure with respect to `sources`: the caller
+        appends, so ordering stays deterministic under concurrency."""
         resolved_url = _resolve_archive_url_content(source_url, skip_rate_limiting=skip_rate_limiting)
         parsed_url = urlparse(resolved_url)
         domain = parsed_url.netloc
@@ -1934,12 +2004,6 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
         bar = '█' * filled_length + '-' * (bar_length - filled_length)
         sys.stderr.write(f"[{bar}] {percent}% complete\n")
         sys.stderr.flush()
-
-        if progress_cb is not None:
-            try:
-                progress_cb("sources", idx, total)
-            except Exception:
-                pass
 
         wikidata = _fetch_wikidata_enrichment(resolved_url)
         profile = analyze_source_bias(resolved_url, wikidata)
@@ -2063,10 +2127,26 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
             profile["author_profile"] = author_profiles[0] if author_profiles else None
             profile["language_bias"] = analyze_language_bias(citation_text)
 
+        return profile
+
+    def _collect(profile):
+        """Runs on the calling thread only, so `sources` needs no locking."""
         sources.append(profile)
 
-        # Save intermediate/partial progress to cache
-        if not no_cache:
+        if progress_cb is not None:
+            try:
+                progress_cb("sources", len(sources), total)
+            except Exception:
+                pass
+
+        # Checkpoint partial progress so a killed process resumes instead of
+        # restarting. Throttled: this writes the WHOLE growing result, so
+        # saving after every source costs O(n^2) bytes -- for an 880-source
+        # article that was ~1.5GB of writes for a 3.4MB result. Every 10
+        # sources (or the last one) keeps resumption cheap while losing at
+        # most CHECKPOINT_EVERY sources of work.
+        is_last = len(sources) >= total
+        if not no_cache and (len(sources) % CHECKPOINT_EVERY == 0 or is_last):
             intermediate_result = {
                 "page_title": _extract_page_title(url),
                 "page_url": url,
@@ -2081,6 +2161,24 @@ def analyze_page(url: str, max_sources: int | None = 10, no_cache: bool = False,
                 "is_partial": True
             }
             _put_page_cache(cache_key, intermediate_result)
+
+    # Sources already present come from a resumed partial run.
+    pending = [
+        (i, u)
+        for i, u in enumerate(dedup_candidate_urls[:max_sources], start=1)
+        if i > len(sources)
+    ]
+    workers = min(_source_concurrency(), len(pending)) if pending else 1
+
+    if workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            # map() yields in submission order, so results are appended in the
+            # same order as the serial path produced them.
+            for profile in pool.map(lambda pair: _process_one(*pair), pending):
+                _collect(profile)
+    else:
+        for i, u in pending:
+            _collect(_process_one(i, u))
 
     if progress_cb is not None:
         try:

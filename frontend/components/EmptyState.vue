@@ -1,11 +1,13 @@
 <template>
   <CdxMessage type="notice" class="empty-state">
-    Aucune source trouvée. L'article peut ne pas avoir de références standardisées.
+    {{ t("states.empty") }}
   </CdxMessage>
 </template>
 
 <script setup>
 import { CdxMessage } from "@wikimedia/codex";
+
+const { t } = useI18n();
 </script>
 
 <style scoped>

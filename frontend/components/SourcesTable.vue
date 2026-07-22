@@ -3,18 +3,18 @@
     <header class="sources-table__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">05</span>
-        <h2>Sources</h2>
+        <h2>{{ t("sourcesTable.title") }}</h2>
       </div>
-      <span class="sources-table__count">{{ analysis.sources.length }} références</span>
+      <span class="sources-table__count">{{ t("sourcesTable.count", { count: analysis.sources.length }) }}</span>
     </header>
     <div class="sources-table__scroll">
       <table>
         <thead>
           <tr>
-            <th scope="col">Source</th>
-            <th scope="col">Pays</th>
-            <th scope="col">Lean</th>
-            <th scope="col">Fiabilité</th>
+            <th scope="col">{{ t("sourcesTable.columnSource") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnCountry") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnLean") }}</th>
+            <th scope="col">{{ t("sourcesTable.columnReliability") }}</th>
           </tr>
         </thead>
         <tbody>
@@ -30,13 +30,14 @@
                 <span class="sources-table__url">{{ truncate(s.url, 52) }}</span>
               </td>
               <td>
-                {{ s.geography?.country || "—" }}
+                {{ countryLabel(s.geography?.country, t) }}
                 <!-- Explains WHY a source is unmapped; without it an unmapped
-                     row is indistinguishable from a bug. -->
+                     row is indistinguishable from a bug. The backend sends a
+                     reason code, the sentence is built from the locale file. -->
                 <abbr
-                  v-if="s.geography?.note"
+                  v-if="geographyNote(s.geography?.note, t)"
                   class="sources-table__note"
-                  :title="s.geography.note"
+                  :title="geographyNote(s.geography.note, t)"
                   >&#9432;</abbr
                 >
               </td>
@@ -47,24 +48,24 @@
               <td colspan="4">
                 <dl class="sources-table__detail-grid">
                   <div v-if="hasDetail(s.wikidata_publisher)">
-                    <dt>Éditeur Wikidata</dt>
+                    <dt>{{ t("sourcesTable.wikidataPublisher") }}</dt>
                     <dd><pre>{{ fmt(s.wikidata_publisher) }}</pre></dd>
                   </div>
                   <div v-if="hasDetail(s.mbfc)">
-                    <dt>MBFC</dt>
+                    <dt>{{ t("sourcesTable.mbfc") }}</dt>
                     <dd><pre>{{ fmt(s.mbfc) }}</pre></dd>
                   </div>
                   <div v-if="hasDetail(s.language_bias)">
-                    <dt>Biais linguistique</dt>
+                    <dt>{{ t("sourcesTable.languageBias") }}</dt>
                     <dd><pre>{{ fmt(s.language_bias) }}</pre></dd>
                   </div>
                   <div v-if="s.author_profiles && s.author_profiles.length">
-                    <dt>Auteurs</dt>
+                    <dt>{{ t("sourcesTable.authors") }}</dt>
                     <dd><pre>{{ fmt(s.author_profiles) }}</pre></dd>
                   </div>
                   <div v-if="!hasAnyDetail(s)">
-                    <dt>Détails enrichis</dt>
-                    <dd><p class="sources-table__nodetail">Aucune donnée enrichie (Wikidata / MBFC / auteur) pour cette source.</p></dd>
+                    <dt>{{ t("sourcesTable.enrichedDetails") }}</dt>
+                    <dd><p class="sources-table__nodetail">{{ t("sourcesTable.noDetails") }}</p></dd>
                   </div>
                 </dl>
               </td>
@@ -75,11 +76,11 @@
     </div>
     <div class="sources-table__pager">
       <CdxButton weight="quiet" :disabled="page === 0" @click="prev">
-        <CdxIcon :icon="cdxIconPrevious" size="small" /> Précédent
+        <CdxIcon :icon="cdxIconPrevious" size="small" /> {{ t("sourcesTable.previous") }}
       </CdxButton>
-      <span class="sources-table__pager-info">Page {{ page + 1 }} / {{ totalPages }}</span>
+      <span class="sources-table__pager-info">{{ t("sourcesTable.pageInfo", { page: page + 1, total: totalPages }) }}</span>
       <CdxButton weight="quiet" :disabled="page >= totalPages - 1" @click="next">
-        Suivant <CdxIcon :icon="cdxIconNext" size="small" />
+        {{ t("sourcesTable.next") }} <CdxIcon :icon="cdxIconNext" size="small" />
       </CdxButton>
     </div>
   </section>
@@ -89,7 +90,9 @@
 import { ref, computed, h } from "vue";
 import { CdxButton, CdxIcon } from "@wikimedia/codex";
 import { cdxIconNext, cdxIconPrevious } from "@wikimedia/codex-icons";
+import { countryLabel, geographyNote, leanBadge, reliabilityBadge } from "~/utils/labels.js";
 
+const { t } = useI18n();
 const props = defineProps({ analysis: { type: Object, required: true } });
 
 const PAGE_SIZE = 20;
@@ -128,32 +131,16 @@ function fmt(o) {
   return JSON.stringify(o, null, 2);
 }
 
-const LeanBadge = (props) => {
-  const map = {
-    left: { label: "Gauche", cls: "lean lean--left" },
-    center: { label: "Centre", cls: "lean lean--center" },
-    right: { label: "Droite", cls: "lean lean--right" },
-    conservatism: { label: "Droite", cls: "lean lean--right" },
-    progressivism: { label: "Gauche", cls: "lean lean--left" },
-    neutral: { label: "Neutre", cls: "lean lean--neutral" },
-    "neutral/academic": { label: "Neutre", cls: "lean lean--neutral" },
-    academic: { label: "Académique", cls: "lean lean--neutral" },
-    unknown: { label: "Inconnu", cls: "lean lean--unknown" },
-  };
-  const m = map[props.lean] || { label: props.lean || "—", cls: "lean lean--unknown" };
+// The value -> badge mapping lives in ~/utils/labels.js so it can be unit
+// tested against both catalogues without mounting this table.
+const LeanBadge = (badgeProps) => {
+  const m = leanBadge(badgeProps.lean, t);
   return h("span", { class: `badge ${m.cls}` }, m.label);
 };
 LeanBadge.props = ["lean"];
 
-const ReliabilityBadge = (props) => {
-  const map = {
-    academic: { label: "Académique", cls: "rel rel--academic" },
-    high: { label: "Élevée", cls: "rel rel--high" },
-    medium: { label: "Moyenne", cls: "rel rel--medium" },
-    low: { label: "Faible", cls: "rel rel--low" },
-    unknown: { label: "Inconnue", cls: "rel rel--unknown" },
-  };
-  const m = map[props.level] || { label: props.level || "—", cls: "rel rel--unknown" };
+const ReliabilityBadge = (badgeProps) => {
+  const m = reliabilityBadge(badgeProps.level, t);
   return h("span", { class: `badge ${m.cls}` }, m.label);
 };
 ReliabilityBadge.props = ["level"];

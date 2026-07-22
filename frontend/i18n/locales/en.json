@@ -1,0 +1,166 @@
+{
+  "app": {
+    "name": "WikiBias Analyzer",
+    "description": "Analyse the citation bias of Wikipedia articles: geographic origin, political pluralism and demographics of their sources.",
+    "empty": "—"
+  },
+  "header": {
+    "tagline": "Decoding the citation bias of Wikipedia articles",
+    "navAria": "Main",
+    "methodology": "Methodology",
+    "queue": "Analysis queue",
+    "sourceCode": "Source code",
+    "languageAria": "Change the interface language",
+    "languageLabel": "Language"
+  },
+  "articleInput": {
+    "placeholder": "https://en.wikipedia.org/wiki/...",
+    "ariaLabel": "URL of the Wikipedia article to analyse",
+    "submit": "Analyse",
+    "errorEmpty": "Enter a Wikipedia URL.",
+    "errorInvalid": "The URL must point to a Wikipedia article (e.g. https://en.wikipedia.org/wiki/...)."
+  },
+  "home": {
+    "eyebrow": "Wikimania 2026 · Team 05E — Deciphering Biases",
+    "title": "Where do a Wikipedia article's sources come from?",
+    "lede": "Enter an article URL to uncover bias in its cited sources across 5 criteria: geographic diversity, political pluralism, author parity, neutrality and reliability."
+  },
+  "corpus": {
+    "title": "Recent articles",
+    "sourceCount": "{count} sources"
+  },
+  "article": {
+    "eyebrow": "Dashboard"
+  },
+  "radar": {
+    "title": "Bias profile",
+    "subtitle": "5 axes normalised 0–100",
+    "axesAria": "Axis values",
+    "datasetLabel": "Bias",
+    "axis": {
+      "geo_diversity": "Geo. diversity",
+      "political_pluralism": "Pol. pluralism",
+      "author_parity": "Author parity",
+      "neutrality": "Neutrality",
+      "reliability": "Reliability"
+    },
+    "axisLong": {
+      "geo_diversity": "Geographic diversity",
+      "political_pluralism": "Political pluralism",
+      "author_parity": "Author parity",
+      "neutrality": "Neutrality",
+      "reliability": "Reliability"
+    }
+  },
+  "kpi": {
+    "sourcesLabel": "Sources analysed",
+    "sourcesHint": "references extracted",
+    "dominantLabel": "Dominant country",
+    "dominantHint": "{pct}% of sources",
+    "opinionLabel": "Opinion sources",
+    "opinionHint": "{pct}% of the total"
+  },
+  "topCountries": {
+    "title": "Top 10 countries",
+    "legendAria": "Regions",
+    "datasetLabel": "Sources",
+    "empty": "No geographic data available.",
+    "tooltip": "{count} sources ({pct}%) — {region}"
+  },
+  "worldMap": {
+    "title": "Source map",
+    "subtitle": "Intensity by country",
+    "ariaLabel": "Choropleth map of the number of sources per country"
+  },
+  "topSources": {
+    "title": "Top sources"
+  },
+  "sourcesTable": {
+    "title": "Sources",
+    "count": "{count} references",
+    "columnSource": "Source",
+    "columnCountry": "Country",
+    "columnLean": "Lean",
+    "columnReliability": "Reliability",
+    "rowToggleAria": "Show the details of this source",
+    "wikidataPublisher": "Wikidata publisher",
+    "mbfc": "MBFC",
+    "languageBias": "Language bias",
+    "authors": "Authors",
+    "enrichedDetails": "Enriched details",
+    "noDetails": "No enriched data (Wikidata / MBFC / author) for this source.",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {page} / {total}"
+  },
+  "lean": {
+    "left": "Left",
+    "center": "Centre",
+    "right": "Right",
+    "neutral": "Neutral",
+    "academic": "Academic",
+    "unknown": "Unknown"
+  },
+  "reliability": {
+    "academic": "Academic",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "unknown": "Unknown"
+  },
+  "region": {
+    "Europe": "Europe",
+    "Americas": "Americas",
+    "Asia": "Asia",
+    "Africa": "Africa",
+    "Oceania": "Oceania",
+    "unmapped": "Unmapped"
+  },
+  "geography": {
+    "unmapped": "Unmapped",
+    "note": {
+      "generic_tld": "Generic domain ({tld}): the TLD carries no country signal, and no publisher match was found in Wikidata or in the domain database.",
+      "no_country_signal": "No country determined: neither the TLD, nor Wikidata, nor the domain database returned a match.",
+      "region_missing": "Country “{country}” resolved, but missing from the region table (REGION_MAP) — the region stays unknown."
+    }
+  },
+  "dashboard": {
+    "unmappedNotice": "{count} unmapped source ({pct}%) — country of origin not resolved via Wikidata or TLD. | {count} unmapped sources ({pct}%) — country of origin not resolved via Wikidata or TLD.",
+    "compareTitle": "Compare with another article"
+  },
+  "cta": {
+    "title": "Export",
+    "downloadJson": "JSON report",
+    "share": "Share this analysis",
+    "shareCopied": "Link copied to the clipboard.",
+    "shareFallback": "Copy this link: {url}",
+    "viewOnWikipedia": "View on Wikipedia"
+  },
+  "states": {
+    "empty": "No sources found. The article may have no standardised references.",
+    "error": "This article could not be analysed. Check the URL and try again.",
+    "errorTimeout": "The analysis timed out. Try again in a few minutes.",
+    "errorUnexpected": "Unexpected state: {status}. Reload the page or check /status.",
+    "loadingTitle": "Analysing sources…",
+    "loadingSubtitle": "Reading references, resolving Wikidata and computing distributions.",
+    "pendingTitle": "Analysis queued…",
+    "pendingSubtitle": "A worker is processing this article. This page updates automatically.",
+    "pendingHint": "Large articles can take several minutes.",
+    "pendingHintLink": "View the analysis queue",
+    "pendingProgress": "{done}/{total} sources analysed ({pct}%)",
+    "pendingEta": "Estimated time remaining: {eta}",
+    "pendingQueue": "Queued: {n} analysis(es) ahead of this one.",
+    "pendingAlive": "The analysis is progressing normally.",
+    "pendingStalled": "No progress for {quiet}. The analysis will be retried automatically."
+  },
+  "footer": {
+    "methodologyLabel": "Methodology",
+    "methodologyText": "Geographic assignment via the Wikidata publisher (P17 / P495) with a TLD fallback; political leans via Wikidata conditionals with an MBFC fallback. “{unmapped}” sources are flagged explicitly, never hidden.",
+    "projectLabel": "Project",
+    "projectText": "Wikimania 2026 — Team 05E {team}. Open-source tool (MIT) deployed on Toolforge.",
+    "teamName": "Deciphering Biases",
+    "linkMethodology": "Methodology & team",
+    "linkSource": "Source code (GitHub)",
+    "linkQueue": "Analysis queue"
+  }
+}

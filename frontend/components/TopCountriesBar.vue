@@ -3,9 +3,9 @@
     <header class="top-countries__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">03</span>
-        <h2>Top 10 pays</h2>
+        <h2>{{ t("topCountries.title") }}</h2>
       </div>
-      <ul class="top-countries__legend" aria-label="Régions">
+      <ul class="top-countries__legend" :aria-label="t('topCountries.legendAria')">
         <li v-for="r in legendRegions" :key="r.key">
           <span class="top-countries__swatch" :style="{ background: r.color }"></span>
           {{ r.label }}
@@ -14,7 +14,7 @@
     </header>
     <div class="top-countries__chart">
       <Bar v-if="hasData" :data="chartData" :options="chartOptions" />
-      <p v-else class="top-countries__empty">Aucune donnée géographique disponible.</p>
+      <p v-else class="top-countries__empty">{{ t("topCountries.empty") }}</p>
     </div>
   </section>
 </template>
@@ -31,19 +31,22 @@ import {
   Legend,
 } from "chart.js";
 
+import { UNMAPPED, countryLabel, isUnmapped, regionLabel } from "~/utils/labels.js";
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 // Chart.js draws to <canvas> and cannot resolve CSS custom properties, so these
 // are concrete hex values kept in sync with @wikimedia/codex-design-tokens:
 // Europe = --color-progressive (#36c), Africa = --color-destructive (#bf3c2c),
-// Oceania = --color-disabled (#a2a9b1), Non-mappé = --border-color-subtle (#c8ccd1).
+// Oceania = --color-disabled (#a2a9b1), unmapped = --border-color-subtle (#c8ccd1).
+// Keyed by the language-neutral region key, never by a display label.
 const REGION_COLORS = {
   Europe: "#36c",
   Americas: "#fc3",
   Asia: "#ac6600",
   Africa: "#bf3c2c",
   Oceania: "#a2a9b1",
-  "Non-mappé": "#c8ccd1",
+  [UNMAPPED]: "#c8ccd1",
 };
 
 const COUNTRY_REGION = {
@@ -68,19 +71,19 @@ const COUNTRY_REGION = {
 };
 
 function regionFor(country) {
-  if (!country) return "Non-mappé";
-  if (country === "Non-mappé" || country.toLowerCase() === "unknown") return "Non-mappé";
-  return COUNTRY_REGION[country] || "Non-mappé";
+  if (isUnmapped(country)) return UNMAPPED;
+  return COUNTRY_REGION[country] || UNMAPPED;
 }
 
-const legendRegions = [
-  { key: "Europe", label: "Europe", color: REGION_COLORS.Europe },
-  { key: "Americas", label: "Amériques", color: REGION_COLORS.Americas },
-  { key: "Asia", label: "Asie", color: REGION_COLORS.Asia },
-  { key: "Africa", label: "Afrique", color: REGION_COLORS.Africa },
-  { key: "Oceania", label: "Océanie", color: REGION_COLORS.Oceania },
-  { key: "Non-mappé", label: "Non-mappé", color: REGION_COLORS["Non-mappé"] },
-];
+const { t } = useI18n();
+
+const legendRegions = computed(() =>
+  Object.keys(REGION_COLORS).map((key) => ({
+    key,
+    label: regionLabel(key, t),
+    color: REGION_COLORS[key],
+  })),
+);
 
 const props = defineProps({ analysis: { type: Object, required: true } });
 
@@ -88,7 +91,7 @@ const top10 = computed(() => {
   const dist = props.analysis.aggregated_bias?.geography_distribution || {};
   return Object.entries(dist)
     .map(([country, v]) => ({
-      country,
+      country: countryLabel(country, t),
       count: v.count || 0,
       percentage: v.percentage || 0,
       region: regionFor(country),
@@ -97,16 +100,16 @@ const top10 = computed(() => {
     .slice(0, 10);
 });
 
-const hasData = computed(() => top10.value.some((t) => t.count > 0));
+const hasData = computed(() => top10.value.some((r) => r.count > 0));
 
 const chartData = computed(() => ({
-  labels: top10.value.map((t) => t.country),
+  labels: top10.value.map((r) => r.country),
   datasets: [
     {
-      label: "Sources",
-      data: top10.value.map((t) => t.count),
-      backgroundColor: top10.value.map((t) => REGION_COLORS[t.region] || REGION_COLORS["Non-mappé"]),
-      borderColor: top10.value.map((t) => REGION_COLORS[t.region] || REGION_COLORS["Non-mappé"]),
+      label: t("topCountries.datasetLabel"),
+      data: top10.value.map((r) => r.count),
+      backgroundColor: top10.value.map((r) => REGION_COLORS[r.region] || REGION_COLORS[UNMAPPED]),
+      borderColor: top10.value.map((r) => REGION_COLORS[r.region] || REGION_COLORS[UNMAPPED]),
       borderWidth: 0,
       borderRadius: 3,
       barPercentage: 0.72,
@@ -114,7 +117,10 @@ const chartData = computed(() => ({
   ],
 }));
 
-const chartOptions = {
+// Computed rather than a constant: the tooltip formatter closes over `t`, and
+// Chart.js only re-reads its options when the object identity changes, so a
+// locale switch would otherwise leave French tooltips on an English chart.
+const chartOptions = computed(() => ({
   indexAxis: "y",
   responsive: true,
   maintainAspectRatio: false,
@@ -123,8 +129,12 @@ const chartOptions = {
     tooltip: {
       callbacks: {
         label: (ctx) => {
-          const t = top10.value[ctx.dataIndex];
-          return `${t.count} sources (${t.percentage}%) — ${t.region}`;
+          const row = top10.value[ctx.dataIndex];
+          return t("topCountries.tooltip", {
+            count: row.count,
+            pct: row.percentage,
+            region: regionLabel(row.region, t),
+          });
         },
       },
     },
@@ -140,7 +150,7 @@ const chartOptions = {
       ticks: { color: "#202122", font: { family: "Source Sans 3", weight: 500 } },
     },
   },
-};
+}));
 </script>
 
 <style scoped>

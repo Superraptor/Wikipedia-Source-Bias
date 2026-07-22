@@ -6,20 +6,35 @@
           <CdxIcon :icon="cdxIconLogoWikimedia" />
         </span>
         <span class="app-header__wordmark">
-          <span class="app-header__title">WikiBias Analyzer</span>
-          <span class="app-header__subtitle">Décrypter les biais citationnels des articles Wikipedia</span>
+          <span class="app-header__title">{{ t("app.name") }}</span>
+          <span class="app-header__subtitle">{{ t("header.tagline") }}</span>
         </span>
       </a>
-      <nav class="app-header__nav" aria-label="Principal">
+      <nav class="app-header__nav" :aria-label="t('header.navAria')">
         <a class="app-header__navlink" href="https://wikimania.wikimedia.org/wiki/2026:Team_challenges/Team_05E_Europe" target="_blank" rel="noopener">
-          Méthodologie
+          {{ t("header.methodology") }}
         </a>
         <a class="app-header__navlink" href="/status">
-          File d'analyse
+          {{ t("header.queue") }}
         </a>
         <a class="app-header__navlink" href="https://github.com/Superraptor/Wikipedia-Source-Bias" target="_blank" rel="noopener">
-          Code source
+          {{ t("header.sourceCode") }}
         </a>
+        <!-- A native <select> rather than a custom popup: it is keyboard- and
+             screen-reader-operable for free, and needs no extra JS. -->
+        <div class="app-header__lang">
+          <CdxIcon :icon="cdxIconLanguage" size="small" class="app-header__lang-icon" aria-hidden="true" />
+          <select
+            class="app-header__navlink app-header__lang-select"
+            :aria-label="t('header.languageAria')"
+            :value="locale"
+            @change="onLocaleChange"
+          >
+            <option v-for="l in locales" :key="l.code" :value="l.code">
+              {{ l.name }}
+            </option>
+          </select>
+        </div>
       </nav>
     </div>
     <div class="app-header__accent" aria-hidden="true"></div>
@@ -28,11 +43,19 @@
 
 <script setup>
 import { CdxIcon } from "@wikimedia/codex";
-import { cdxIconLogoWikimedia } from "@wikimedia/codex-icons";
+import { cdxIconLogoWikimedia, cdxIconLanguage } from "@wikimedia/codex-icons";
 
+const { t, locale, locales, setLocale } = useI18n();
 const router = useRouter();
+
 function goHome() {
   router.push("/");
+}
+
+// setLocale() also writes the locale cookie configured in nuxt.config, which is
+// what makes an explicit choice outrank browser detection on the next visit.
+function onLocaleChange(event) {
+  setLocale(event.target.value);
 }
 </script>
 
@@ -100,6 +123,43 @@ function goHome() {
 .app-header__navlink:hover {
   color: var(--wsi-blue-700);
   text-decoration: none;
+}
+.app-header__lang {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--wsi-ink-soft);
+}
+.app-header__lang:hover,
+.app-header__lang:focus-within {
+  color: var(--wsi-blue-700);
+}
+.app-header__lang-icon {
+  flex: none;
+}
+/* Matches .app-header__navlink; the appearance reset removes the OS chrome so
+   the control reads as one more nav item. */
+.app-header__lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: inherit;
+  padding: 2px 2px 2px 0;
+  cursor: pointer;
+  border-radius: var(--radius, 2px);
+}
+.app-header__lang-select:focus-visible {
+  outline: 2px solid var(--wsi-blue);
+  outline-offset: 2px;
+}
+.app-header__lang-select option {
+  color: var(--wsi-ink);
+  background: var(--wsi-surface);
 }
 .app-header__accent {
   height: 3px;

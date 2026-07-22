@@ -3,11 +3,11 @@
     <header class="world-map__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">04</span>
-        <h2>Carte des sources</h2>
+        <h2>{{ t("worldMap.title") }}</h2>
       </div>
-      <p class="world-map__sub">Intensité par pays</p>
+      <p class="world-map__sub">{{ t("worldMap.subtitle") }}</p>
     </header>
-    <div ref="mapEl" class="world-map__canvas" role="img" aria-label="Carte choroplèthe du nombre de sources par pays"></div>
+    <div ref="mapEl" class="world-map__canvas" role="img" :aria-label="t('worldMap.ariaLabel')"></div>
     <div class="world-map__legend">
       <span class="world-map__legend-label">0</span>
       <div class="world-map__scale" :style="{ background: legendGradient }" aria-hidden="true"></div>
@@ -20,6 +20,8 @@
 import { ref, computed, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import * as L from "leaflet";
 import worldGeo from "~/assets/world.json";
+
+const { t } = useI18n();
 
 const props = defineProps({ analysis: { type: Object, required: true } });
 

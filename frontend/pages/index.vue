@@ -1,14 +1,16 @@
 <template>
   <main class="page-index">
+    <!-- The header carries the language switcher, so the landing page needs it
+         too: it used to appear only on the dashboard route. -->
+    <AppHeader />
+
     <section class="hero wsi-container">
-      <p class="wsi-eyebrow wsi-rise">Wikimania 2026 · Team 05E — Deciphering Biases</p>
+      <p class="wsi-eyebrow wsi-rise">{{ t("home.eyebrow") }}</p>
       <h1 class="hero__title wsi-rise" style="animation-delay: 60ms">
-        D'où viennent les sources d'un article&nbsp;Wikipedia&nbsp;?
+        {{ t("home.title") }}
       </h1>
       <p class="hero__lede wsi-rise" style="animation-delay: 120ms">
-        Saisissez l'URL d'un article pour révéler la répartition géographique,
-        le pluralisme politique et la démographie de ses sources —
-        là où se niche, en filigrane, le biais citationnel.
+        {{ t("home.lede") }}
       </p>
       <div class="hero__input wsi-rise" style="animation-delay: 180ms">
         <ArticleInput @analyze="goToArticle" />
@@ -26,10 +28,12 @@
 </template>
 
 <script setup>
+import AppHeader from "~/components/AppHeader.vue";
 import ArticleInput from "~/components/ArticleInput.vue";
 import CorpusExamples from "~/components/CorpusExamples.vue";
 import MethodologyFooter from "~/components/MethodologyFooter.vue";
 
+const { t } = useI18n();
 const router = useRouter();
 
 function goToArticle(url) {

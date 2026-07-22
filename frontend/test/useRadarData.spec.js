@@ -74,3 +74,27 @@ describe("computeRadarAxes", () => {
     expect(axes).toHaveProperty("reliability");
   });
 });
+
+describe("empty analyses", () => {
+  it("scores every axis 0 when there are no references", () => {
+    // Regression: neutrality is (1 - subjectivity), and a missing score read
+    // as 0, so an article with no sources rendered a perfect 100% neutrality.
+    const axes = computeRadarAxes({ source_count: 0, sources: [], aggregated_bias: {} });
+    for (const [name, value] of Object.entries(axes)) {
+      expect(value, name).toBe(0);
+    }
+  });
+
+  it("scores 0 when aggregated_bias is missing entirely", () => {
+    const axes = computeRadarAxes({ source_count: 0 });
+    expect(Object.values(axes).every((v) => v === 0)).toBe(true);
+  });
+
+  it("still reports neutrality for a real analysis", () => {
+    const axes = computeRadarAxes({
+      source_count: 3,
+      aggregated_bias: { average_subjectivity_score: 0.25 },
+    });
+    expect(axes.neutrality).toBe(75);
+  });
+});

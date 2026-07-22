@@ -57,6 +57,22 @@ class FakeCache:
             counts[status] = counts.get(status, 0) + 1
         return counts
 
+    def row_for(self, url):
+        if url not in self.states:
+            return None
+        status, err = self.states[url]
+        return {
+            "page_url": url, "page_title": None, "status": status,
+            "attempts": 1, "error": err, "source_count": None,
+            "created_at": None, "updated_at": None,
+            "age_seconds": 30, "since_update_seconds": 5,
+            "stage": "sources", "progress_done": 2, "progress_total": 10,
+            "eta_seconds": 120, "running_seconds": 30,
+        }
+
+    def queue_position(self, url):
+        return 0
+
     def recent(self, limit=50):
         return [
             {
@@ -272,3 +288,109 @@ def test_analysis_url_is_none_without_a_slug():
     from app import _analysis_url
 
     assert _analysis_url({"page_url": ""}) is None
+
+
+# -- ETA stability -------------------------------------------------------
+
+
+def test_coarse_buckets_widen_with_the_estimate():
+    from app import _coarse
+
+    assert _coarse(None) is None
+    assert _coarse(30) == "moins d'une minute"
+    assert _coarse(240) == "~4 min"
+    # 10-60 min rounds to 5-minute buckets so it stops twitching each refresh.
+    assert _coarse(23 * 60) == "~25 min"
+    assert _coarse(90 * 60) == "~1.5 h"
+    assert _coarse(5 * 3600) == "~5 h"
+
+
+def test_eta_uses_the_worker_estimate_not_queue_wait():
+    from app import _progress
+
+    row = {
+        "progress_done": 10, "progress_total": 100,
+        "eta_seconds": 600, "since_update_seconds": 0,
+        # A long queue wait must not inflate the estimate.
+        "age_seconds": 100000, "running_seconds": 120,
+    }
+    pct, text, eta = _progress(row)
+    assert pct == 10 and text == "10/100"
+    assert eta == "~10 min"
+
+
+def test_eta_counts_down_between_progress_writes():
+    from app import _progress
+
+    row = {"progress_done": 5, "progress_total": 10, "eta_seconds": 600,
+           "since_update_seconds": 300, "running_seconds": 600}
+    assert _progress(row)[2] == "~5 min"
+
+
+def test_eta_falls_back_to_running_time_not_age():
+    from app import _progress
+
+    row = {"progress_done": 5, "progress_total": 10, "eta_seconds": None,
+           "since_update_seconds": 0,
+           "running_seconds": 300,   # 60s per source -> 5 remaining -> 300s
+           "age_seconds": 99999}     # must be ignored
+    assert _progress(row)[2] == "~5 min"
+
+
+def test_no_progress_yields_no_eta():
+    from app import _progress
+
+    assert _progress({"progress_done": None, "progress_total": None}) == (None, None, None)
+
+
+# -- "is it stuck, or just long?" ----------------------------------------
+
+
+def test_pending_202_carries_progress_so_users_can_tell_it_is_alive():
+    """A bare 'pending' gave users no way to distinguish slow from dead."""
+    import app as appmod
+
+    fake = FakeCache()
+    url = "https://fr.wikipedia.org/wiki/Big"
+    fake.states[url] = ("running", None)
+    appmod.app.config["TESTING"] = True
+    import pytest as _pytest
+
+    mp = _pytest.MonkeyPatch()
+    mp.setattr("app.get_cache", lambda: fake)
+    mp.setattr("app.SYNC_ANALYSIS", False)
+    try:
+        with appmod.app.test_client() as c:
+            body = c.get(f"/api/analyze?url={url}").get_json()
+    finally:
+        mp.undo()
+
+    assert body["status"] == "pending"
+    assert body["queue_state"] == "running"
+    assert body["progress_done"] == 2 and body["progress_total"] == 10
+    assert body["progress_pct"] == 20
+    assert body["health"] == "working"
+    assert body["eta"]
+
+
+def test_health_flags_a_silent_worker_as_stalled():
+    from app import _health, STALL_SECONDS
+
+    assert _health({"status": "running", "since_update_seconds": 10}) == "working"
+    assert _health({"status": "running",
+                    "since_update_seconds": STALL_SECONDS + 1}) == "stalled"
+    # Not running: health is not a meaningful question.
+    assert _health({"status": "pending", "since_update_seconds": 9999}) is None
+    assert _health({"status": "done", "since_update_seconds": 9999}) is None
+
+
+def test_status_page_states_are_distinct_in_the_progress_column(app_with_fake_cache):
+    """'Avancement' must read differently for done / error / pending / running."""
+    client, fake = app_with_fake_cache
+    fake.states["https://fr.wikipedia.org/wiki/Done"] = ("done", None)
+    fake.states["https://fr.wikipedia.org/wiki/Err"] = ("error", "boom")
+    fake.states["https://fr.wikipedia.org/wiki/Wait"] = ("pending", None)
+    html = client.get("/status").get_data(as_text=True)
+    assert "Analyse terminée" in html
+    assert "Échec" in html
+    assert "en attente d&#39;un worker" in html or "en attente d'un worker" in html

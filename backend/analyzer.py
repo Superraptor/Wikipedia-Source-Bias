@@ -7,16 +7,49 @@ REGION_MAP = {
     "South Korea": "Asia",
     "Nigeria": "Africa", "Egypt": "Africa", "South Africa": "Africa",
     "Australia": "Oceania", "New Zealand": "Oceania",
+    # Supranational and additional publishers seen in real articles. Konrad
+    # Adenauer's references surfaced "European Union" with region=Unknown.
+    "European Union": "Europe",
+    "Belgium": "Europe", "Netherlands": "Europe", "Luxembourg": "Europe",
+    "Austria": "Europe", "Portugal": "Europe", "Ireland": "Europe",
+    "Poland": "Europe", "Czech Republic": "Europe", "Hungary": "Europe",
+    "Sweden": "Europe", "Norway": "Europe", "Denmark": "Europe",
+    "Finland": "Europe", "Greece": "Europe", "Romania": "Europe",
+    "Ukraine": "Europe", "Turkey": "Europe", "Croatia": "Europe",
+    "Serbia": "Europe", "Bulgaria": "Europe", "Slovakia": "Europe",
+    "Slovenia": "Europe", "Estonia": "Europe", "Latvia": "Europe",
+    "Lithuania": "Europe", "Iceland": "Europe",
+    "Colombia": "Americas", "Chile": "Americas", "Peru": "Americas",
+    "Venezuela": "Americas", "Cuba": "Americas", "Uruguay": "Americas",
+    "Israel": "Asia", "Iran": "Asia", "Iraq": "Asia", "Lebanon": "Asia",
+    "Saudi Arabia": "Asia", "Qatar": "Asia", "United Arab Emirates": "Asia",
+    "Pakistan": "Asia", "Bangladesh": "Asia", "Indonesia": "Asia",
+    "Vietnam": "Asia", "Thailand": "Asia", "Philippines": "Asia",
+    "Malaysia": "Asia", "Singapore": "Asia", "Taiwan": "Asia",
+    "Hong Kong": "Asia", "Kazakhstan": "Asia",
+    "Morocco": "Africa", "Algeria": "Africa", "Tunisia": "Africa",
+    "Kenya": "Africa", "Ethiopia": "Africa", "Ghana": "Africa",
+    "Senegal": "Africa", "Ivory Coast": "Africa", "Cameroon": "Africa",
 }
 
 
-UNMAPPED = "Non-mappé"
+# A language-neutral key, NOT a display string. The API is consumed by a
+# bilingual (fr/en) frontend, so emitting the French "Non-mappé" as data made
+# French leak into English dashboards. The frontend translates this key.
+UNMAPPED = "unmapped"
+
+# Payloads produced before the switch to a language-neutral key still carry the
+# old French display string, so it stays recognised as "missing".
+_LEGACY_UNMAPPED = "Non-mappé"
 
 # The analyzer emits the literal string "Unknown" when a heuristic finds
 # nothing. Treated as a value rather than as "missing", it defeated the
 # region lookup below: a source could carry country="France" and still show
 # region="Unknown", because "Unknown" is truthy.
-_MISSING = {None, "", "unknown", "Unknown", "UNKNOWN", "none", "None", UNMAPPED}
+_MISSING = {
+    None, "", "unknown", "Unknown", "UNKNOWN", "none", "None",
+    UNMAPPED, _LEGACY_UNMAPPED,
+}
 
 # Generic TLDs carry no country signal, so a source on one is only mappable
 # via Wikidata or the curated domain database.
@@ -34,30 +67,32 @@ def _norm_country(c):
     return _clean(c) or UNMAPPED
 
 
+# Stable reason codes for `geography.note`. They are keys, not sentences: the
+# frontend owns the wording and renders it in the reader's language. Adding a
+# code here means adding `geography.note.<code>` to frontend/i18n/locales/*.
+NOTE_GENERIC_TLD = "generic_tld"
+NOTE_NO_COUNTRY_SIGNAL = "no_country_signal"
+NOTE_REGION_MISSING = "region_missing"
+
+
 def _geo_note(domain, country, region):
-    """Explain why a source could not be placed, for debugging.
+    """Explain why a source could not be placed.
 
     Without this an unmapped source was indistinguishable from a bug: you
     could see that it was unmapped, but not whether the domain gave no signal,
     or a lookup failed, or the region table simply lacked the country.
+
+    Returns ``{"code": <reason code>, "params": {...}}`` or ``None``. The
+    params carry the only values the sentence needs to interpolate, so the
+    human wording lives in the frontend locale files instead of here.
     """
     if country == UNMAPPED:
         if domain and domain.lower().endswith(_GENERIC_TLDS):
             tld = "." + domain.rsplit(".", 1)[-1]
-            return (
-                f"Domaine générique ({tld}) : aucun indice de pays dans le TLD, "
-                f"et aucune correspondance éditeur trouvée dans Wikidata ni dans "
-                f"la base de domaines."
-            )
-        return (
-            "Aucun pays déterminé : ni le TLD, ni Wikidata, ni la base de "
-            "domaines n'ont fourni de correspondance."
-        )
+            return {"code": NOTE_GENERIC_TLD, "params": {"tld": tld}}
+        return {"code": NOTE_NO_COUNTRY_SIGNAL, "params": {}}
     if region == UNMAPPED:
-        return (
-            f"Pays « {country} » résolu, mais absent de la table des régions "
-            f"(REGION_MAP) — la région reste inconnue."
-        )
+        return {"code": NOTE_REGION_MISSING, "params": {"country": country}}
     return None
 
 

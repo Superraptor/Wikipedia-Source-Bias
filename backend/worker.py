@@ -30,6 +30,10 @@ STALE_MINUTES = 10
 # Minimum gap between progress writes for one analysis.
 PROGRESS_EVERY_SECONDS = 5
 
+# Weight of the newest sample in the seconds-per-source estimate. Low enough to
+# absorb one slow source, high enough to follow a real change in throughput.
+EWMA_ALPHA = 0.3
+
 _running = True
 # The row this process currently holds, so a graceful shutdown can release it
 # instead of leaving it claimed.
@@ -99,14 +103,32 @@ def main():
 
         # Throttled: an 880-source article would otherwise issue 880 UPDATEs.
         last_report = [0.0]
+        # Exponentially weighted mean seconds-per-source. A cumulative average
+        # made the ETA drift upward for the whole run whenever later sources
+        # were slower than earlier ones; an EWMA tracks the current rate, so
+        # the estimate converges instead of climbing.
+        ewma = [None]
+        last_tick = [started]
 
         def report(stage, done, total):
             now = time.monotonic()
+
+            if done > 0:
+                gap = now - last_tick[0]
+                last_tick[0] = now
+                if gap > 0:
+                    ewma[0] = gap if ewma[0] is None else (EWMA_ALPHA * gap
+                                                           + (1 - EWMA_ALPHA) * ewma[0])
+
             if now - last_report[0] < PROGRESS_EVERY_SECONDS and done != total:
                 return
             last_report[0] = now
+
+            eta = None
+            if ewma[0] and total and done < total:
+                eta = int(ewma[0] * (total - done))
             try:
-                cache.set_progress(url, stage, done, total)
+                cache.set_progress(url, stage, done, total, eta)
             except Exception:
                 pass
 

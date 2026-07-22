@@ -2,6 +2,8 @@ import hashlib
 import json
 import zlib
 
+from wikipedia_sources_bias.urlnorm import canonical_page_url
+
 # Payload kinds stored in analysis_result.
 JSON = "json"
 GEOJSON = "geojson"
@@ -47,7 +49,11 @@ class Cache:
 
     @staticmethod
     def _hash(url):
-        return hashlib.sha256(url.encode("utf-8")).hexdigest()
+        # Hash the canonical form so ?wprov=... and #section variants map to
+        # one queue row instead of re-running the same analysis per link.
+        return hashlib.sha256(
+            canonical_page_url(url).encode("utf-8")
+        ).hexdigest()
 
     def _commit(self):
         commit = getattr(self.conn, "commit", None)
@@ -73,6 +79,26 @@ class Cache:
         if row is None or row[0] is None:
             return None
         return _decode(row[0], row[1])
+
+    def row_for(self, url):
+        """Full metadata row for one URL, or None."""
+        rows = self._rows("WHERE url_hash = %s", (self._hash(url),), limit=1)
+        return rows[0] if rows else None
+
+    def queue_position(self, url):
+        """How many pending rows are ahead of this one. 0 when running."""
+        cur = self.conn.cursor()
+        try:
+            cur.execute(
+                "SELECT COUNT(*) FROM analysis_cache p "
+                "JOIN analysis_cache me ON me.url_hash = %s "
+                "WHERE p.status = 'pending' AND p.created_at < me.created_at",
+                (self._hash(url),),
+            )
+            row = cur.fetchone()
+        finally:
+            cur.close()
+        return int(row[0]) if row else 0
 
     def status_of(self, url):
         """(status, error) for `url`; (None, None) when the row is absent."""
@@ -159,7 +185,9 @@ class Cache:
             # racing on the same row updates 0 rows and moves on.
             cur.execute(
                 "UPDATE analysis_cache "
-                "SET status = 'running', attempts = attempts + 1 "
+                "SET status = 'running', attempts = attempts + 1, "
+                "    started_at = NOW(), progress_done = NULL, "
+                "    progress_total = NULL, eta_seconds = NULL "
                 "WHERE url_hash = %s AND status = 'pending'",
                 (h,),
             )
@@ -190,7 +218,7 @@ class Cache:
         self._commit()
         return released
 
-    def set_progress(self, url, stage, done, total):
+    def set_progress(self, url, stage, done, total, eta_seconds=None):
         """Record how far an in-flight analysis has got.
 
         Guarded on status='running' so a late callback from a worker being
@@ -200,9 +228,10 @@ class Cache:
         try:
             cur.execute(
                 "UPDATE analysis_cache "
-                "SET stage = %s, progress_done = %s, progress_total = %s "
+                "SET stage = %s, progress_done = %s, progress_total = %s, "
+                "    eta_seconds = %s "
                 "WHERE url_hash = %s AND status = 'running'",
-                (stage, done, total, self._hash(url)),
+                (stage, done, total, eta_seconds, self._hash(url)),
             )
         finally:
             cur.close()
@@ -233,50 +262,61 @@ class Cache:
             cur.close()
         return {row[0]: row[1] for row in rows}
 
-    def recent(self, limit=50):
-        """Most recently touched rows, newest first.
+    # Shared projection for the status views. Deliberately excludes the
+    # payload: those blobs run to several MB each and live in analysis_result.
+    _ROW_SELECT = (
+        "SELECT page_url, page_title, status, attempts, error, "
+        "       source_count, created_at, updated_at, "
+        # Ages come from the server clock: pods have their own, and a skewed
+        # one would show negative waits.
+        "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
+        "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
+        "       stage, progress_done, progress_total, eta_seconds, "
+        "       TIMESTAMPDIFF(SECOND, started_at, NOW()) AS running_s "
+        "FROM analysis_cache "
+    )
 
-        Deliberately does NOT select `result`: those blobs run to several MB
-        each and the status view only needs metadata.
-        """
+    @staticmethod
+    def _row_to_dict(r):
+        return {
+            "page_url": r[0],
+            "page_title": r[1],
+            "status": r[2],
+            "attempts": r[3],
+            "error": r[4],
+            "source_count": r[5],
+            "created_at": r[6].isoformat() if r[6] else None,
+            "updated_at": r[7].isoformat() if r[7] else None,
+            # For a running row this is how long since the last progress
+            # write; for a pending row, how long it has been waiting.
+            "age_seconds": int(r[8]) if r[8] is not None else None,
+            "since_update_seconds": int(r[9]) if r[9] is not None else None,
+            "stage": r[10],
+            "progress_done": r[11],
+            "progress_total": r[12],
+            "eta_seconds": r[13],
+            # Time actually spent analysing, excluding the queue wait.
+            "running_seconds": int(r[14]) if r[14] is not None else None,
+        }
+
+    def _rows(self, where="", args=(), limit=50, order=None):
+        order = order or (
+            "ORDER BY FIELD(status,'running','pending','error','done'), updated_at DESC "
+        )
         cur = self.conn.cursor()
         try:
-            # Ages come from the server clock: pods have their own, and a
-            # skewed one would show negative waits.
             cur.execute(
-                "SELECT page_url, page_title, status, attempts, error, "
-                "       source_count, created_at, updated_at, "
-                "       TIMESTAMPDIFF(SECOND, created_at, NOW()) AS age_s, "
-                "       TIMESTAMPDIFF(SECOND, updated_at, NOW()) AS since_update_s, "
-                "       stage, progress_done, progress_total "
-                "FROM analysis_cache "
-                "ORDER BY FIELD(status,'running','pending','error','done'), updated_at DESC "
-                "LIMIT %s",
-                (int(limit),),
+                self._ROW_SELECT + where + " " + order + "LIMIT %s",
+                tuple(args) + (int(limit),),
             )
             rows = cur.fetchall()
         finally:
             cur.close()
-        return [
-            {
-                "page_url": r[0],
-                "page_title": r[1],
-                "status": r[2],
-                "attempts": r[3],
-                "error": r[4],
-                "source_count": r[5],
-                "created_at": r[6].isoformat() if r[6] else None,
-                "updated_at": r[7].isoformat() if r[7] else None,
-                # For a running row this is how long it has been analysing;
-                # for a pending row, how long it has been waiting.
-                "age_seconds": int(r[8]) if r[8] is not None else None,
-                "since_update_seconds": int(r[9]) if r[9] is not None else None,
-                "stage": r[10],
-                "progress_done": r[11],
-                "progress_total": r[12],
-            }
-            for r in rows
-        ]
+        return [self._row_to_dict(r) for r in rows]
+
+    def recent(self, limit=50):
+        """Most recently touched rows, running and pending first."""
+        return self._rows(limit=limit)
 
     def requeue_stale_running(self, older_than_minutes=30):
         """Recover rows abandoned by a killed worker."""

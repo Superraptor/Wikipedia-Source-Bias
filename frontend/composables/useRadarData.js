@@ -1,3 +1,5 @@
+import { isUnmapped, RADAR_AXES } from "../utils/labels.js";
+
 const RELIABILITY_WEIGHTS = {
   academic: 100,
   high: 80,
@@ -10,7 +12,7 @@ function geoDiversity(geoDist) {
   if (!geoDist || !Object.keys(geoDist).length) return 0;
   let maxPct = 0;
   for (const k of Object.keys(geoDist)) {
-    if (k.toLowerCase() === "non-mappé" || k.toLowerCase() === "unknown") continue;
+    if (isUnmapped(k)) continue;
     maxPct = Math.max(maxPct, geoDist[k].percentage || 0);
   }
   return Math.round((100 - maxPct) * 10) / 10;
@@ -38,7 +40,12 @@ function authorParity(genderDist) {
   return Math.round(Math.min(male, female) * 2 * 10) / 10;
 }
 
-function neutrality(avgSubj) {
+// Unlike the other axes, a missing subjectivity score is indistinguishable
+// from a genuine 0 -- and `1 - 0` is a perfect 100. An article with no
+// references therefore scored full marks for neutrality. `hasData` makes the
+// "nothing measured" case explicit.
+function neutrality(avgSubj, hasData) {
+  if (!hasData) return 0;
   const s = typeof avgSubj === "number" ? avgSubj : 0;
   return Math.round((1 - s) * 1000) / 10;
 }
@@ -57,25 +64,53 @@ function reliability(relDist) {
   return Math.round((weighted / total) * 10) / 10;
 }
 
+export function sourceCountOf(analysis) {
+  return analysis?.source_count ?? analysis?.sources?.length ?? 0;
+}
+
+// An analysis "has data" if it counted sources OR carries any non-empty
+// distribution. Requiring source_count alone would zero out callers that pass
+// only an aggregate.
+function hasMeasurements(analysis, agg) {
+  if (sourceCountOf(analysis) > 0) return true;
+  if (
+    [
+      agg.geography_distribution,
+      agg.political_leaning_distribution,
+      agg.reliability_distribution,
+      agg.author_gender_distribution,
+    ].some((d) => d && Object.keys(d).length > 0)
+  ) {
+    return true;
+  }
+  // A non-zero subjectivity score also proves something was measured. Zero is
+  // excluded deliberately: the aggregator emits exactly 0.0 when it scored
+  // nothing, which is the case this guard exists to catch.
+  return typeof agg.average_subjectivity_score === "number"
+    && agg.average_subjectivity_score > 0;
+}
+
 export function computeRadarAxes(analysis) {
   const agg = analysis?.aggregated_bias || {};
+  // With nothing analysed, every axis is 0 -- an empty profile, not a perfect
+  // one. Zero references must never render as a full-scale radar.
+  const hasSources = hasMeasurements(analysis, agg);
+  if (!hasSources) {
+    return Object.fromEntries(RADAR_AXES.map((a) => [a, 0]));
+  }
   return {
     geo_diversity: geoDiversity(agg.geography_distribution),
     political_pluralism: politicalPluralism(agg.political_leaning_distribution),
     author_parity: authorParity(agg.author_gender_distribution),
-    neutrality: neutrality(agg.average_subjectivity_score),
+    neutrality: neutrality(agg.average_subjectivity_score, hasSources),
     reliability: reliability(agg.reliability_distribution),
   };
 }
 
-export const RADAR_LABELS = {
-  geo_diversity: "Diversité géographique",
-  political_pluralism: "Pluralisme politique",
-  author_parity: "Parité auteur",
-  neutrality: "Neutralité",
-  reliability: "Fiabilité",
-};
+// Axis wording moved to i18n (`radar.axisLong.*`); only the ordered key list
+// belongs in the data layer now.
+export { RADAR_AXES };
 
 export function useRadarData() {
-  return { computeRadarAxes, RADAR_LABELS };
+  return { computeRadarAxes, RADAR_AXES };
 }

@@ -47,6 +47,9 @@
   .dberr { border-color: var(--error); color: var(--error); }
   .u { color: var(--muted); font-size: .75rem; word-break: break-all; }
   .prog { min-width: 12rem; }
+  .ok { color: var(--done); font-weight: 600; }
+  .ko { color: var(--error); font-weight: 600; }
+  .warn { display: block; color: var(--pending); font-weight: 600; font-size: .75rem; }
   .bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; margin-bottom: .2rem; }
   .bar span { display: block; height: 100%; background: var(--running); }
   .dur { white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -121,15 +124,28 @@
             </td>
             <td><span class="badge s-{{ r.status }}">{{ r.status }}</span></td>
             <td class="prog">
-              {% if r.progress_pct is not none %}
+              {% if r.status == "done" %}
+                <span class="ok">✓ Analyse terminée</span>
+                <span class="dl">
+                  {% if r.source_count %}{{ r.source_count }} source(s) analysée(s){% endif %}
+                </span>
+              {% elif r.status == "error" %}
+                <span class="ko">✕ Échec</span>
+                <span class="dl">{{ r.attempts }} tentative(s)</span>
+              {% elif r.status == "pending" %}
+                <span class="dl">en attente d'un worker</span>
+              {% elif r.progress_pct is not none %}
                 <div class="bar"><span style="width: {{ r.progress_pct }}%"></span></div>
                 <span class="dl">
                   {{ r.stage_label or "" }} {{ r.progress_text }} ({{ r.progress_pct }}%)
-                  {% if r.eta %}· reste ~{{ r.eta }}{% endif %}
+                  {% if r.eta %}· reste {{ r.eta }}{% endif %}
                 </span>
-              {% elif r.status == "running" %}
+                {% if r.health == "stalled" %}
+                  <span class="warn">aucune progression depuis {{ r.quiet_for }}</span>
+                {% endif %}
+              {% else %}
                 <span class="dl">extraction des références…</span>
-              {% else %}—{% endif %}
+              {% endif %}
             </td>
             <td class="dur">
               {% if r.duration %}<span class="dl">{{ r.duration_label }}</span> {{ r.duration }}{% else %}—{% endif %}

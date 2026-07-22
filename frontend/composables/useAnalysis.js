@@ -12,10 +12,14 @@ export function useAnalysis(options = {}) {
   const pollIntervalMs = options.pollIntervalMs ?? POLL_INTERVAL_MS;
   const pollTimeoutMs = options.pollTimeoutMs ?? POLL_TIMEOUT_MS;
 
+  // `error` holds text that comes from the network/backend and is shown as-is.
+  // `errorKey` holds an i18n key for failures this composable decides itself;
+  // the composable has no access to `t`, so the view translates it.
   const state = ref({
     status: "idle",
     data: null,
     error: null,
+    errorKey: null,
   });
 
   function settle(payload) {
@@ -24,11 +28,12 @@ export function useAnalysis(options = {}) {
       status: count === 0 ? "empty" : "loaded",
       data: payload,
       error: null,
+      errorKey: null,
     };
   }
 
   async function load(url) {
-    state.value = { status: "loading", data: null, error: null };
+    state.value = { status: "loading", data: null, error: null, errorKey: null };
     const deadline = Date.now() + pollTimeoutMs;
 
     try {
@@ -41,6 +46,7 @@ export function useAnalysis(options = {}) {
             status: "error",
             data: null,
             error: payload.error || `HTTP ${resp.status}`,
+            errorKey: null,
           };
           return;
         }
@@ -51,11 +57,12 @@ export function useAnalysis(options = {}) {
             state.value = {
               status: "error",
               data: null,
-              error: "L'analyse a expiré. Réessayez dans quelques minutes.",
+              error: null,
+              errorKey: "states.errorTimeout",
             };
             return;
           }
-          state.value = { status: "pending", data: null, error: null };
+          state.value = { status: "pending", data: null, error: null, errorKey: null };
           await sleep(pollIntervalMs);
           continue;
         }
@@ -64,12 +71,12 @@ export function useAnalysis(options = {}) {
         return;
       }
     } catch (e) {
-      state.value = { status: "error", data: null, error: String(e) };
+      state.value = { status: "error", data: null, error: String(e), errorKey: null };
     }
   }
 
   function reset() {
-    state.value = { status: "idle", data: null, error: null };
+    state.value = { status: "idle", data: null, error: null, errorKey: null };
   }
 
   return { state, load, reset };

@@ -71,3 +71,12 @@ ALTER TABLE analysis_cache
     ADD COLUMN IF NOT EXISTS stage VARCHAR(24) NULL,
     ADD COLUMN IF NOT EXISTS progress_done INT NULL,
     ADD COLUMN IF NOT EXISTS progress_total INT NULL;
+
+-- ETA support. `started_at` separates analysis time from queue-wait time: the
+-- first ETA implementation divided by "time since queued", so an article that
+-- waited 20 minutes for a worker reported a wildly inflated rate. `eta_seconds`
+-- is computed by the worker, which is the only process that knows how long
+-- each individual source actually took.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS started_at DATETIME NULL,
+    ADD COLUMN IF NOT EXISTS eta_seconds INT NULL;

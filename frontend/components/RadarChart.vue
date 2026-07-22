@@ -3,14 +3,14 @@
     <header class="radar-chart__head">
       <div class="wsi-section-title">
         <span class="wsi-section-num">01</span>
-        <h2>Profil de biais</h2>
+        <h2>{{ t("radar.title") }}</h2>
       </div>
-      <p class="radar-chart__sub">5 axes normalisés 0–100</p>
+      <p class="radar-chart__sub">{{ t("radar.subtitle") }}</p>
     </header>
     <div class="radar-chart__canvas">
       <Radar :data="chartData" :options="chartOptions" />
     </div>
-    <ul class="radar-chart__axes" aria-label="Valeurs des axes">
+    <ul class="radar-chart__axes" :aria-label="t('radar.axesAria')">
       <li v-for="(a, i) in axesList" :key="a.key">
         <span class="radar-chart__axis-label">{{ a.label }}</span>
         <span class="radar-chart__axis-value">{{ a.value }}</span>
@@ -34,41 +34,33 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { RADAR_AXES } from "~/utils/labels.js";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
-const LABELS = {
-  geo_diversity: "Diversité géo.",
-  political_pluralism: "Pluralisme pol.",
-  author_parity: "Parité auteur",
-  neutrality: "Neutralité",
-  reliability: "Fiabilité",
-};
+const { t } = useI18n();
 
 const props = defineProps({
   axes: { type: Object, required: true },
 });
 
 const axesList = computed(() =>
-  Object.keys(LABELS).map((k) => ({
+  RADAR_AXES.map((k) => ({
     key: k,
-    label: LABELS[k],
+    label: t(`radar.axis.${k}`),
     value: Math.round(props.axes[k] ?? 0),
   })),
 );
 
+// Chart.js caches whatever strings it was handed, so the labels have to be part
+// of the reactive `chartData`: that is what makes the canvas redraw in the new
+// language when the header switcher fires.
 const chartData = computed(() => ({
-  labels: Object.keys(LABELS).map((k) => LABELS[k]),
+  labels: RADAR_AXES.map((k) => t(`radar.axis.${k}`)),
   datasets: [
     {
-      label: "Biais",
-      data: [
-        props.axes.geo_diversity ?? 0,
-        props.axes.political_pluralism ?? 0,
-        props.axes.author_parity ?? 0,
-        props.axes.neutrality ?? 0,
-        props.axes.reliability ?? 0,
-      ],
+      label: t("radar.datasetLabel"),
+      data: RADAR_AXES.map((k) => props.axes[k] ?? 0),
       backgroundColor: "rgba(51, 102, 204, 0.18)",
       borderColor: "#3366cc",
       borderWidth: 2,

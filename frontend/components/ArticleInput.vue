@@ -4,8 +4,8 @@
       <CdxTextInput
         v-model="url"
         input-type="url"
-        placeholder="https://fr.wikipedia.org/wiki/..."
-        aria-label="URL de l'article Wikipedia à analyser"
+        :placeholder="t('articleInput.placeholder')"
+        :aria-label="t('articleInput.ariaLabel')"
         class="article-input__input"
     />
     </div>
@@ -16,10 +16,10 @@
       class="article-input__submit"
     >
       <CdxIcon :icon="cdxIconSearch" class="article-input__submit-icon" />
-      Analyser
+      {{ t("articleInput.submit") }}
     </CdxButton>
   </form>
-  <p v-if="hint" class="article-input__hint">{{ hint }}</p>
+  <p v-if="hintKey" class="article-input__hint">{{ t(hintKey) }}</p>
 </template>
 
 <script setup>
@@ -27,23 +27,27 @@ import { ref } from "vue";
 import { CdxTextInput, CdxButton, CdxIcon } from "@wikimedia/codex";
 import { cdxIconSearch } from "@wikimedia/codex-icons";
 
+const { t } = useI18n();
+
 const emit = defineEmits(["analyze"]);
 const url = ref("");
-const hint = ref("");
+// The key, not the sentence: the message has to follow a locale change that
+// happens while it is on screen.
+const hintKey = ref("");
 
 const WIKI_RE = /^https?:\/\/[a-z]{2,}\.wikipedia\.org\/wiki\//i;
 
 function onSubmit() {
   const v = url.value.trim();
   if (!v) {
-    hint.value = "Saisissez une URL Wikipedia.";
+    hintKey.value = "articleInput.errorEmpty";
     return;
   }
   if (!WIKI_RE.test(v)) {
-    hint.value = "L'URL doit pointer vers un article Wikipedia (ex : https://fr.wikipedia.org/wiki/...).";
+    hintKey.value = "articleInput.errorInvalid";
     return;
   }
-  hint.value = "";
+  hintKey.value = "";
   emit("analyze", v);
 }
 </script>

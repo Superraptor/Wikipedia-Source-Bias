@@ -12,6 +12,7 @@ degrades performance, it must never fail an analysis.
 import hashlib
 import json
 import sys
+import threading
 
 from wikipedia_sources_bias.cachestore import CacheStore
 
@@ -24,25 +25,32 @@ class MariaDBCacheStore(CacheStore):
     def __init__(self, connect_fn):
         """connect_fn: zero-arg callable returning a fresh DB-API connection."""
         self._connect = connect_fn
-        self._conn = None
+        # One connection PER THREAD. Sources are analysed by a thread pool
+        # (see WSB_SOURCE_CONCURRENCY) and every one of them reads and writes
+        # these caches; a pymysql connection is not thread-safe, and sharing
+        # one would interleave protocol traffic and corrupt results.
+        self._local = threading.local()
 
-    def _cursor(self):
-        """A live cursor, reconnecting if the server dropped a long idle link.
-
-        Workers run for hours between queue items, comfortably past MariaDB's
-        idle timeout.
-        """
-        if self._conn is None:
-            self._conn = self._connect()
+    def _conn_for_thread(self):
+        conn = getattr(self._local, "conn", None)
+        if conn is None:
+            conn = self._connect()
+            self._local.conn = conn
         try:
-            self._conn.ping(reconnect=True)
+            # Workers idle for long stretches between queue items, comfortably
+            # past MariaDB's idle timeout.
+            conn.ping(reconnect=True)
         except Exception:
             try:
-                self._conn.close()
+                conn.close()
             except Exception:
                 pass
-            self._conn = self._connect()
-        return self._conn.cursor()
+            conn = self._connect()
+            self._local.conn = conn
+        return conn
+
+    def _cursor(self):
+        return self._conn_for_thread().cursor()
 
     def load_all(self, namespace):
         try:
@@ -94,7 +102,8 @@ class MariaDBCacheStore(CacheStore):
         except Exception:
             return
         try:
-            cur = self._cursor()
+            conn = self._conn_for_thread()
+            cur = conn.cursor()
             try:
                 cur.execute(
                     "INSERT INTO kv_cache (namespace, key_hash, cache_key, value) "
@@ -104,7 +113,7 @@ class MariaDBCacheStore(CacheStore):
                 )
             finally:
                 cur.close()
-            self._conn.commit()
+            conn.commit()
         except Exception as e:
             print(f"kv_cache put({namespace}) failed: {e}", file=sys.stderr)
 

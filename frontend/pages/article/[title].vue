@@ -3,7 +3,7 @@
     <AppHeader />
 
     <section class="article-hero wsi-container">
-      <p class="wsi-eyebrow">Tableau de bord</p>
+      <p class="wsi-eyebrow">{{ t("article.eyebrow") }}</p>
       <h1 class="article-hero__title">{{ pageTitle }}</h1>
       <a v-if="state.data?.page_url" class="article-hero__url" :href="state.data.page_url" target="_blank" rel="noopener">
         {{ state.data.page_url }}
@@ -12,8 +12,8 @@
 
     <main class="wsi-container page-article__main">
       <LoadingState v-if="state.status === 'loading'" />
-      <LoadingState v-else-if="state.status === 'pending'" pending />
-      <ErrorState v-else-if="state.status === 'error'" :detail="state.error" />
+      <LoadingState v-else-if="state.status === 'pending'" pending :progress="state.progress" />
+      <ErrorState v-else-if="state.status === 'error'" :detail="errorDetail" />
       <EmptyState v-else-if="state.status === 'empty'" />
       <DashboardLayout
         v-else-if="state.status === 'loaded' && state.data"
@@ -24,14 +24,14 @@
            page with no way to tell a queued analysis from a broken one. -->
       <ErrorState
         v-else
-        :detail="`État inattendu : ${state.status}. Rechargez la page ou consultez /status.`"
+        :detail="t('states.errorUnexpected', { status: state.status })"
       />
     </main>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import AppHeader from "~/components/AppHeader.vue";
 import LoadingState from "~/components/LoadingState.vue";
 import ErrorState from "~/components/ErrorState.vue";
@@ -39,11 +39,18 @@ import EmptyState from "~/components/EmptyState.vue";
 import DashboardLayout from "~/components/DashboardLayout.vue";
 import { useAnalysis } from "~/composables/useAnalysis.js";
 
+const { t, locale } = useI18n();
 const route = useRoute();
 const router = useRouter();
 const { state, load } = useAnalysis();
 
 const pageTitle = ref("");
+
+// useAnalysis reports its own failures as i18n keys (it has no access to `t`)
+// and backend/network failures as ready-made text.
+const errorDetail = computed(() =>
+  state.value.errorKey ? t(state.value.errorKey) : state.value.error || "",
+);
 
 onMounted(() => trigger());
 watch(() => route.params.title, () => trigger());
@@ -60,7 +67,9 @@ function reconstructUrl(title) {
   const src = route.query.src;
   if (typeof src === "string" && /^https?:\/\/.+/i.test(src)) return src;
   if (title.startsWith("http")) return title;
-  return `https://fr.wikipedia.org/wiki/${title}`;
+  // Last-resort guess when the route carries no ?src: assume the reader wants
+  // the Wikipedia edition matching the interface language.
+  return `https://${locale.value}.wikipedia.org/wiki/${title}`;
 }
 
 function goToArticle(url) {

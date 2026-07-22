@@ -2,8 +2,7 @@
   <div class="dashboard-layout">
     <div v-if="unmappedCount > 0" class="dashboard-layout__notice">
       <CdxMessage type="warning" :fade-in="true">
-        {{ unmappedCount }} source{{ unmappedCount > 1 ? "s" : "" }} non-mappée{{ unmappedCount > 1 ? "s" : "" }}
-        ({{ unmappedPct }}%) — pays d'origine non résolu via Wikidata ou TLD.
+        {{ t("dashboard.unmappedNotice", { count: unmappedCount, pct: unmappedPct }, unmappedCount) }}
       </CdxMessage>
     </div>
 
@@ -24,7 +23,7 @@
     <section class="dashboard-layout__compare">
       <div class="wsi-section-title">
         <span class="wsi-section-num">08</span>
-        <h2>Comparer avec un autre article</h2>
+        <h2>{{ t("dashboard.compareTitle") }}</h2>
       </div>
       <ArticleInput @analyze="$emit('compare', $event)" />
     </section>
@@ -46,6 +45,9 @@ import CtaPanel from "~/components/CtaPanel.vue";
 import MethodologyFooter from "~/components/MethodologyFooter.vue";
 import ArticleInput from "~/components/ArticleInput.vue";
 import { computeRadarAxes } from "~/composables/useRadarData.js";
+import { isUnmapped } from "~/utils/labels.js";
+
+const { t } = useI18n();
 
 const props = defineProps({
   analysis: { type: Object, required: true },
@@ -58,7 +60,7 @@ const unmappedCount = computed(() => {
   const dist = props.analysis.aggregated_bias?.geography_distribution || {};
   let n = 0;
   for (const [k, v] of Object.entries(dist)) {
-    if (k.toLowerCase() === "non-mappé" || k.toLowerCase() === "unknown") n += v.count || 0;
+    if (isUnmapped(k)) n += v.count || 0;
   }
   return n;
 });

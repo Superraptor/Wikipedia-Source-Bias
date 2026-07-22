@@ -12,11 +12,15 @@
   image: tool-wikibias-analyzer/tool-wikibias-analyzer:latest
   command: worker
   continuous: true
-  # 2 replicas so one huge article (Emmanuel Macron is ~880 sources, tens of
-  # minutes) cannot block every small one behind it. claim_next() takes rows
-  # under a `WHERE status='pending'` guard, so parallel workers never collide.
-  replicas: 2
-  mem: 2Gi
+  # Replicas parallelise ACROSS articles; WSB_SOURCE_CONCURRENCY parallelises
+  # within one, which is what actually helps a single huge article.
+  # claim_next() takes rows under a `WHERE status='pending'` guard, so parallel
+  # workers never collide.
+  replicas: 3
+  # Measured usage is ~100Mi per worker; 2Gi was a 20x over-reservation that
+  # made the 8Gi namespace quota look like the binding constraint when it was
+  # not. 512Mi still leaves ~5x headroom over the observed peak.
+  mem: 512Mi
   cpu: "1"
   emails: onfailure
 
