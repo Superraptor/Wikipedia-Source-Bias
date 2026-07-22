@@ -168,6 +168,23 @@ a:hover { text-decoration: underline; }
   box-shadow: var(--shadow-sm);
 }
 
+/* ---------- Narrow screens ---------- */
+/*
+ * On a 375px viewport the nested paddings compounded: .wsi-container (32px)
+ * wrapping .dashboard-layout (another 32px) plus .wsi-panel (24px) left
+ * panels only ~197px of content, which is what made every panel heading wrap
+ * onto three lines. Halving the outer padding gives back ~110px.
+ */
+@media (max-width: 640px) {
+  .wsi-container {
+    padding: 0 var(--space-3);
+  }
+  .wsi-panel {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+}
+
 /* ---------- Motion ---------- */
 @keyframes wsi-rise {
   from { opacity: 0; transform: translateY(10px); }

@@ -77,6 +77,17 @@ const unmappedPct = computed(() => {
   margin: 0 auto;
   padding: var(--space-5) var(--space-6) 0;
 }
+@media (max-width: 640px) {
+  /* Nested inside .wsi-container, which already pads horizontally. Keeping
+     both meant the content box lost 128px of a 375px screen. */
+  .dashboard-layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dashboard-layout__grid {
+    gap: var(--space-3);
+  }
+}
 .dashboard-layout__notice {
   margin-bottom: var(--space-4);
 }

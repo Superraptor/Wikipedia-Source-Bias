@@ -194,4 +194,13 @@ const chartOptions = computed(() => ({
   color: var(--wsi-ink-soft);
   font-size: 0.9rem;
 }
+
+@media (max-width: 640px) {
+  /* Title and subtitle stop competing for a ~200px row. */
+  .top-countries__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
 </style>

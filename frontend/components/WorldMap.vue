@@ -246,4 +246,13 @@ onBeforeUnmount(() => {
   border-radius: 4px;
   /* background comes from legendGradient, built from SCALE_STOPS */
 }
+
+@media (max-width: 640px) {
+  /* Title and subtitle stop competing for a ~200px row. */
+  .world-map__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
 </style>

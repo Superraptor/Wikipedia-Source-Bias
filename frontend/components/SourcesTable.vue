@@ -345,4 +345,13 @@ ReliabilityBadge.props = ["level"];
   color: var(--wsi-ink-faint);
   font-size: 0.9em;
 }
+
+@media (max-width: 640px) {
+  /* Title and subtitle stop competing for a ~200px row. */
+  .sources-table__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
 </style>

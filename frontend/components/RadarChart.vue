@@ -159,4 +159,13 @@ const chartOptions = {
   border-radius: 2px;
   transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+@media (max-width: 640px) {
+  /* Title and subtitle stop competing for a ~200px row. */
+  .radar-chart__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
 </style>
