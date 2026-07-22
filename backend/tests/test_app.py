@@ -406,3 +406,13 @@ def test_finished_rows_show_total_run_length():
                       "since_update_seconds": 20, "age_seconds": 9999})
     assert done["duration"] == "1 h 02 min"
     assert done["duration_label"] == "durée totale"
+
+
+def test_display_title_decodes_an_already_stored_page_title():
+    """page_title is the raw URL segment, so it arrives percent-encoded."""
+    from app import _display_title
+
+    assert _display_title({"page_title": "V%C3%A9lo"}) == "Vélo"
+    assert _display_title({"page_title": "Guerre_d%27Alg%C3%A9rie"}) == "Guerre d'Algérie"
+    # Already-clean titles must pass through untouched.
+    assert _display_title({"page_title": "Brexit"}) == "Brexit"

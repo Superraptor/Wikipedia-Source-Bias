@@ -150,12 +150,13 @@ def _display_title(row):
     status table mixed titles and URLs. Derive one from the URL instead, so
     every row reads the same way.
     """
+    # page_title comes from the analyzer as the raw last path segment, so it
+    # is still percent-encoded ("V%C3%A9lo"). Decode it the same way as the
+    # URL-derived fallback rather than trusting it to be display-ready.
     title = row.get("page_title")
-    if title:
-        return title
-    url = row.get("page_url") or ""
-    slug = unquote(urlparse(url).path.rsplit("/", 1)[-1])
-    return slug.replace("_", " ") or url
+    if not title:
+        title = urlparse(row.get("page_url") or "").path.rsplit("/", 1)[-1]
+    return unquote(title).replace("_", " ") or (row.get("page_url") or "")
 
 
 def _humanize(seconds):
