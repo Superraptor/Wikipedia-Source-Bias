@@ -83,7 +83,7 @@
     "count": "{count} références",
     "columnSource": "Source",
     "columnCountry": "Pays",
-    "columnLean": "Lean",
+    "columnLean": "Orientation politique",
     "columnReliability": "Fiabilité",
     "rowToggleAria": "Afficher le détail de cette source",
     "wikidataPublisher": "Éditeur Wikidata",
