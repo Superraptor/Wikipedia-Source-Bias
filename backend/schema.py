@@ -17,7 +17,22 @@ SCHEMA_PATH = os.path.join(
 
 
 def statements(sql):
-    return [s.strip() for s in sql.split(";") if s.strip()]
+    """Split a .sql file into executable statements.
+
+    Comments are stripped BEFORE splitting on ';'. Prose comments legitimately
+    contain semicolons, and splitting first tears a comment in half and feeds
+    the remainder to the server as if it were SQL.
+    """
+    lines = []
+    for line in sql.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("--"):
+            continue
+        # Trailing comment on a code line. This deliberately does not try to
+        # handle '--' inside a string literal; the schema contains none.
+        idx = line.find("--")
+        lines.append(line[:idx] if idx != -1 else line)
+    return [s.strip() for s in "\n".join(lines).split(";") if s.strip()]
 
 
 def main():
