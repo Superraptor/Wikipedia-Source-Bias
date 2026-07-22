@@ -13,9 +13,12 @@
     <ul class="radar-chart__axes" :aria-label="t('radar.axesAria')">
       <li v-for="(a, i) in axesList" :key="a.key">
         <span class="radar-chart__axis-label">{{ a.label }}</span>
-        <span class="radar-chart__axis-value">{{ a.value }}</span>
+        <span
+          class="radar-chart__axis-value"
+          :class="{ 'radar-chart__axis-value--nodata': a.value === null }"
+        >{{ a.value === null ? t("radar.noData") : a.value }}</span>
         <span class="radar-chart__axis-bar" aria-hidden="true">
-          <span class="radar-chart__axis-fill" :style="{ width: a.value + '%' }"></span>
+          <span class="radar-chart__axis-fill" :style="{ width: (a.value ?? 0) + '%' }"></span>
         </span>
       </li>
     </ul>
@@ -48,7 +51,11 @@ const axesList = computed(() =>
   RADAR_AXES.map((k) => ({
     key: k,
     label: t(`radar.axis.${k}`),
-    value: Math.round(props.axes[k] ?? 0),
+    // null means "not measured" and must stay null: rounding it to 0 is the
+    // bug this replaced -- an unmeasured axis read as a real score of zero.
+    value: props.axes[k] === null || props.axes[k] === undefined
+      ? null
+      : Math.round(props.axes[k]),
   })),
 );
 
@@ -60,7 +67,9 @@ const chartData = computed(() => ({
   datasets: [
     {
       label: t("radar.datasetLabel"),
-      data: RADAR_AXES.map((k) => props.axes[k] ?? 0),
+      // Chart.js needs numbers; null renders as a gap in the polygon, which
+      // is the honest depiction of a missing axis.
+      data: RADAR_AXES.map((k) => (props.axes[k] === undefined ? null : props.axes[k])),
       backgroundColor: "rgba(51, 102, 204, 0.18)",
       borderColor: "#3366cc",
       borderWidth: 2,
@@ -135,6 +144,12 @@ const chartOptions = {
 .radar-chart__axis-label {
   font-size: 0.82rem;
   color: var(--wsi-ink-soft);
+}
+.radar-chart__axis-value--nodata {
+  color: var(--wsi-ink-faint);
+  font-size: 0.8em;
+  font-weight: 400;
+  font-variant-numeric: normal;
 }
 .radar-chart__axis-value {
   font-family: var(--font-mono);

@@ -40,11 +40,14 @@ describe("the v1 keys that do not exist", () => {
     }
   });
 
-  it("shows v1's author_parity axis is pinned at zero on every payload", () => {
+  it("shows v1's author_parity axis measures nothing on any payload", () => {
     // Not a test of v2 — a regression guard on the claim that motivates it.
-    // `author_gender_distribution` is undefined, so male/female both read 0.
+    // `author_gender_distribution` does not exist in any payload (the real key
+    // is `author_gender_distribution_estimate`), so the axis has never had an
+    // input. v1 used to render that as a hard 0; it now reports no-data, which
+    // is the honest version of the same fact.
     for (const [name, payload] of Object.entries(FIXTURES)) {
-      expect(computeRadarAxes(payload).author_parity, name).toBe(0);
+      expect(computeRadarAxes(payload).author_parity, name).toBeNull();
     }
   });
 
@@ -57,11 +60,22 @@ describe("the v1 keys that do not exist", () => {
     // So the same article scores 0 or 100 for "neutrality" depending only on
     // which cache format answered. Neither number measured anything: every
     // real payload reports a subjectivity of exactly 0.0.
+    // The payload asymmetry is real and still worth guarding.
     expect(fr.aggregated_bias.average_subjectivity_score).toBeUndefined();
-    expect(computeRadarAxes(fr).neutrality).toBe(0);
-    expect(computeRadarAxes(de).neutrality).toBe(0);
-
     expect(en.aggregated_bias.average_subjectivity_score).toBe(0);
+
+    // v1 used to turn that asymmetry into a hard 0 for fr/de. Neutrality now
+    // requires a positive subjectivity sample count, so a payload that
+    // measured nothing reports no-data instead of a number.
+    expect(computeRadarAxes(fr).neutrality).toBeNull();
+    expect(computeRadarAxes(de).neutrality).toBeNull();
+
+    // en DID measure subjectivity (sample count 10) and it came out 0.0, so a
+    // score of 100 there is a real result rather than an artefact. The v2
+    // point stands regardless: "100% neutral" is a far stronger claim than
+    // "the lexical heuristic found no loaded words in 10 citation strings",
+    // which is why v2 reports the measurement instead of inverting it.
+    expect(en.aggregated_bias.subjectivity_sample_count).toBe(10);
     expect(computeRadarAxes(en).neutrality).toBe(100);
   });
 

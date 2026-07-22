@@ -250,6 +250,29 @@ DOMAIN_BIAS_DATABASE: dict[str, dict[str, Any]] = {
         "default_language": "English",
         "type": "tabloid",
     },
+    # French outlets on generic TLDs. A .net/.com address carries no country
+    # signal, and these had no Wikidata publisher match by domain, so they were
+    # reported as unmapped despite being unambiguously French.
+    # Country/language/type are factual; political_leaning is deliberately left
+    # unknown so it comes from Wikidata or MBFC rather than being asserted here.
+    "marianne.net": {
+        "name": "Marianne",
+        "country": "France",
+        "region": "Europe",
+        "political_leaning": "unknown",
+        "reliability": "medium",
+        "default_language": "French",
+        "type": "magazine",
+    },
+    "mediapart.fr": {
+        "name": "Mediapart",
+        "country": "France",
+        "region": "Europe",
+        "political_leaning": "unknown",
+        "reliability": "high",
+        "default_language": "French",
+        "type": "news_website",
+    },
     "lemonde.fr": {
         "name": "Le Monde",
         "country": "France",

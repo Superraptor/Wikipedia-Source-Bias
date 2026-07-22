@@ -33,7 +33,12 @@ RUNNING = "running"
 DONE = "done"
 ERROR = "error"
 
+# Genuine failures (the analysis raised) before we stop retrying.
 MAX_ATTEMPTS = 3
+# Interruptions (pod killed mid-run) tolerated before giving up. Higher than
+# MAX_ATTEMPTS on purpose: being interrupted says nothing about the article,
+# and a busy deploy day should not permanently fail everything in flight.
+MAX_RECOVERIES = 8
 
 
 class Cache:
@@ -160,8 +165,9 @@ class Cache:
                 "INSERT INTO analysis_cache (url_hash, page_url, status) "
                 "VALUES (%s, %s, 'pending') "
                 "ON DUPLICATE KEY UPDATE "
-                "  status = IF(status = 'error' AND attempts < %s, 'pending', status)",
-                (h, url, MAX_ATTEMPTS),
+                "  status = IF(status = 'error' AND attempts < %s, 'pending', status), "
+                "  recoveries = IF(status = 'error' AND attempts < %s, 0, recoveries)",
+                (h, url, MAX_ATTEMPTS, MAX_ATTEMPTS),
             )
         finally:
             cur.close()
@@ -184,10 +190,13 @@ class Cache:
             # The WHERE guard is what makes the claim atomic: a second worker
             # racing on the same row updates 0 rows and moves on.
             cur.execute(
+                # attempts is NOT incremented here: a claim is not a failure.
+                # It is incremented in mark_error(), where an analysis actually
+                # failed. Interruptions are counted separately as recoveries.
                 "UPDATE analysis_cache "
-                "SET status = 'running', attempts = attempts + 1, "
-                "    started_at = NOW(), progress_done = NULL, "
-                "    progress_total = NULL, eta_seconds = NULL "
+                "SET status = 'running', started_at = NOW(), "
+                "    progress_done = NULL, progress_total = NULL, "
+                "    eta_seconds = NULL "
                 "WHERE url_hash = %s AND status = 'pending'",
                 (h,),
             )
@@ -207,12 +216,8 @@ class Cache:
         h = self._hash(url)
         cur = self.conn.cursor()
         try:
-            # attempts is decremented: a redeploy interrupting the work is not
-            # the analysis failing, and counting it burned the retry budget of
-            # perfectly healthy articles.
             cur.execute(
-                "UPDATE analysis_cache "
-                "SET status = 'pending', attempts = GREATEST(0, attempts - 1) "
+                "UPDATE analysis_cache SET status = 'pending' "
                 "WHERE url_hash = %s AND status = 'running'",
                 (h,),
             )
@@ -246,7 +251,8 @@ class Cache:
         cur = self.conn.cursor()
         try:
             cur.execute(
-                "UPDATE analysis_cache SET status = 'error', error = %s "
+                "UPDATE analysis_cache "
+                "SET status = 'error', error = %s, attempts = attempts + 1 "
                 "WHERE url_hash = %s",
                 (str(message)[:2000], h),
             )
@@ -336,11 +342,12 @@ class Cache:
         cur = self.conn.cursor()
         try:
             cur.execute(
-                "UPDATE analysis_cache SET status = 'pending' "
+                "UPDATE analysis_cache "
+                "SET status = 'pending', recoveries = recoveries + 1 "
                 "WHERE status = 'running' "
                 "  AND updated_at < NOW() - INTERVAL %s MINUTE "
-                "  AND attempts < %s",
-                (older_than_minutes, MAX_ATTEMPTS),
+                "  AND recoveries < %s",
+                (older_than_minutes, MAX_RECOVERIES),
             )
             requeued = cur.rowcount
 
@@ -349,12 +356,12 @@ class Cache:
                 "SET status = 'error', error = %s "
                 "WHERE status = 'running' "
                 "  AND updated_at < NOW() - INTERVAL %s MINUTE "
-                "  AND attempts >= %s",
+                "  AND recoveries >= %s",
                 (
-                    f"Abandoned after {MAX_ATTEMPTS} interrupted attempts "
-                    f"with no progress. Re-run to try again.",
+                    f"Interrupted {MAX_RECOVERIES} times without finishing. "
+                    f"Re-run to try again.",
                     older_than_minutes,
-                    MAX_ATTEMPTS,
+                    MAX_RECOVERIES,
                 ),
             )
             failed = cur.rowcount

@@ -80,3 +80,9 @@ ALTER TABLE analysis_cache
 ALTER TABLE analysis_cache
     ADD COLUMN IF NOT EXISTS started_at DATETIME NULL,
     ADD COLUMN IF NOT EXISTS eta_seconds INT NULL;
+
+-- Separates "this analysis failed" from "a deploy interrupted it". attempts
+-- used to be incremented on every claim, so a few redeploys exhausted the
+-- retry budget of a perfectly healthy article and stranded it.
+ALTER TABLE analysis_cache
+    ADD COLUMN IF NOT EXISTS recoveries INT NOT NULL DEFAULT 0;

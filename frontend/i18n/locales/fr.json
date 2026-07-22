@@ -53,7 +53,8 @@
       "author_parity": "Parité auteur",
       "neutrality": "Neutralité",
       "reliability": "Fiabilité"
-    }
+    },
+    "noData": "pas de donnée"
   },
   "kpi": {
     "sourcesLabel": "Sources analysées",

@@ -9,7 +9,7 @@ const RELIABILITY_WEIGHTS = {
 };
 
 function geoDiversity(geoDist) {
-  if (!geoDist || !Object.keys(geoDist).length) return 0;
+  if (!geoDist || !Object.keys(geoDist).length) return null;
   let maxPct = 0;
   for (const k of Object.keys(geoDist)) {
     if (isUnmapped(k)) continue;
@@ -19,7 +19,7 @@ function geoDiversity(geoDist) {
 }
 
 function politicalPluralism(leanDist) {
-  if (!leanDist) return 0;
+  if (!leanDist || !Object.keys(leanDist).length) return null;
   const entries = Object.entries(leanDist).filter(([k]) => k.toLowerCase() !== "unknown");
   const counts = entries.map(([, v]) => v.count || 0).filter((c) => c > 0);
   if (!counts.length) return 0;
@@ -34,7 +34,7 @@ function politicalPluralism(leanDist) {
 }
 
 function authorParity(genderDist) {
-  if (!genderDist) return 0;
+  if (!genderDist || !Object.keys(genderDist).length) return null;
   const male = genderDist.male?.percentage ?? 0;
   const female = genderDist.female?.percentage ?? 0;
   return Math.round(Math.min(male, female) * 2 * 10) / 10;
@@ -45,19 +45,24 @@ function authorParity(genderDist) {
 // references therefore scored full marks for neutrality. `hasData` makes the
 // "nothing measured" case explicit.
 function neutrality(agg, hasData) {
-  if (!hasData) return 0;
+  if (!hasData) return null;
   // An absent score is NOT a zero. `1 - undefined` coerced to a perfect 100,
   // so an analysis that never measured subjectivity scored full marks for
   // neutrality. sample_count says whether anything was actually measured.
+  // A positive sample count is REQUIRED, not merely checked for zero. Legacy
+  // payloads carry `average_subjectivity_score: 0` with no count at all, and a
+  // corpus whose subjectivity genuinely measured 0 is indistinguishable from
+  // one where nothing was measured and the aggregator defaulted. Claiming a
+  // perfect 100% neutrality from that is the bug this axis keeps producing.
   const sampled = agg.subjectivity_sample_count;
-  if (sampled === 0) return 0;
+  if (typeof sampled !== "number" || sampled <= 0) return null;
   const avg = agg.average_subjectivity_score;
-  if (typeof avg !== "number") return 0;
+  if (typeof avg !== "number") return null;
   return Math.round((1 - avg) * 1000) / 10;
 }
 
 function reliability(relDist) {
-  if (!relDist) return 0;
+  if (!relDist || !Object.keys(relDist).length) return null;
   let weighted = 0;
   let total = 0;
   for (const [k, v] of Object.entries(relDist)) {
@@ -66,7 +71,7 @@ function reliability(relDist) {
     weighted += w * c;
     total += c;
   }
-  if (!total) return 0;
+  if (!total) return null;
   return Math.round((weighted / total) * 10) / 10;
 }
 
@@ -102,7 +107,9 @@ export function computeRadarAxes(analysis) {
   // one. Zero references must never render as a full-scale radar.
   const hasSources = hasMeasurements(analysis, agg);
   if (!hasSources) {
-    return Object.fromEntries(RADAR_AXES.map((a) => [a, 0]));
+    // null, not 0: nothing was measured, and a 0 reads as a real score of
+    // zero. The UI renders null as "no data".
+    return Object.fromEntries(RADAR_AXES.map((a) => [a, null]));
   }
   return {
     geo_diversity: geoDiversity(agg.geography_distribution),

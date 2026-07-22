@@ -177,11 +177,15 @@ def test_stale_rows_past_max_attempts_are_failed_not_left_running():
     requeued, failed = Cache(Conn()).requeue_stale_running(10)
     assert requeued == 1 and failed == 1
     requeue_sql, fail_sql = seen[0][0], seen[1][0]
-    assert "SET status = 'pending'" in requeue_sql and "attempts < " in requeue_sql
-    assert "SET status = 'error'" in fail_sql and "attempts >= " in fail_sql
+    # Bounded by `recoveries`, not `attempts`: an interruption is not a failure,
+    # and mixing them let a few redeploys exhaust a healthy article's budget.
+    assert "SET status = 'pending'" in requeue_sql
+    assert "recoveries = recoveries + 1" in requeue_sql
+    assert "recoveries < " in requeue_sql
+    assert "SET status = 'error'" in fail_sql and "recoveries >= " in fail_sql
 
 
-def test_release_gives_back_the_attempt():
+def test_release_does_not_touch_the_failure_count():
     """A redeploy interrupting work is not the analysis failing."""
     seen = {}
 
@@ -201,4 +205,57 @@ def test_release_gives_back_the_attempt():
             pass
 
     Cache(Conn()).release("https://fr.wikipedia.org/wiki/X")
-    assert "attempts = GREATEST(0, attempts - 1)" in seen["sql"]
+    assert "SET status = 'pending'" in seen["sql"]
+    assert "attempts" not in seen["sql"]
+
+
+def test_claiming_does_not_count_as_an_attempt():
+    """Claims used to increment attempts, so redeploys burned the retry budget
+    of healthy articles until the stale sweep refused to reclaim them."""
+    seen = []
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen.append(" ".join(sql.split()))
+
+        def fetchone(self):
+            return ("hash", "https://fr.wikipedia.org/wiki/X")
+
+        def close(self):
+            pass
+
+    Cache(Conn()).claim_next()
+    claim = next(s for s in seen if "SET status = 'running'" in s)
+    assert "attempts = attempts + 1" not in claim
+
+
+def test_mark_error_is_what_counts_an_attempt():
+    seen = {}
+
+    class Conn:
+        def cursor(self):
+            return Cur()
+
+        def commit(self):
+            pass
+
+    class Cur:
+        rowcount = 1
+
+        def execute(self, sql, args=()):
+            seen["sql"] = " ".join(sql.split())
+
+        def close(self):
+            pass
+
+    Cache(Conn()).mark_error("https://fr.wikipedia.org/wiki/X", "boom")
+    assert "attempts = attempts + 1" in seen["sql"]
