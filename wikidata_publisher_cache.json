@@ -6324,5 +6324,38 @@
       "government agency"
     ],
     "mbfc_id": null
+  },
+  "nbuv.gov.ua": {
+    "wikidata_id": "Q592734",
+    "wikidata_name": "Vernadsky National Library of Ukraine",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "United Nations Depository Library",
+      "building",
+      "national library",
+      "open-access publisher"
+    ],
+    "mbfc_id": null
+  },
+  "romny-vk.gov.ua": {
+    "wikidata_id": "Q161994",
+    "wikidata_name": "Romny",
+    "countries": [
+      "Ukraine"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "administrative centre",
+      "city of regional significance of Ukraine",
+      "human settlement"
+    ],
+    "mbfc_id": null
   }
 }

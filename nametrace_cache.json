@@ -12008,5 +12008,15 @@
       "gender": 0.7137659788131714,
       "subregion": 0.42995452880859375
     }
+  },
+  "Корнюшкін Юра": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Northern America",
+    "confidence": {
+      "human": 0.9999884366989136,
+      "gender": 0.640735387802124,
+      "subregion": 0.3536500036716461
+    }
   }
 }
