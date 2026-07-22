@@ -15,8 +15,14 @@
 Flask==3.0.3
 gunicorn==23.0.0
 
-# ToolsDB
-PyMySQL==1.1.1
+# ToolsDB.
+# 1.2.0 or newer is REQUIRED, not just preferred. Older releases run
+# `DEFAULT_USER = getpass.getuser()` at import time and guard it with
+# `except (ImportError, KeyError)`. Toolforge containers run as a bare uid with
+# no /etc/passwd entry and no USER/LOGNAME set, and Python 3.13 changed
+# getpass.getuser() to raise OSError instead of KeyError -- so on 1.1.x the
+# statement `import pymysql` itself raises, before any connection is attempted.
+PyMySQL==1.2.0
 
 # Pulled in transitively by the analysis package, pinned here for reproducible
 # container builds.

@@ -1,3 +1,8 @@
+# Backend-only dependency list, kept for running the API standalone.
+# The Toolforge buildpack installs the ROOT requirements.txt, not this file.
 Flask==3.0.3
-PyMySQL==1.1.1
+# Must be >=1.2.0 -- see the note in the root requirements.txt: earlier
+# releases fail at `import pymysql` on Python 3.13 in a container with no
+# /etc/passwd entry, which is exactly how Toolforge runs.
+PyMySQL==1.2.0
 requests==2.32.3
