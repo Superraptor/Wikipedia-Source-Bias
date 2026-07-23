@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-07-22",
+  "articles_analysed": 13,
+  "domains_considered": 40,
+  "proposed": 3,
+  "rejected": 37,
+  "rejected_by_outcome": {
+    "already-present": 5,
+    "ambiguous-item": 3,
+    "error": 23,
+    "no-verified-profile": 6
+  }
+}
