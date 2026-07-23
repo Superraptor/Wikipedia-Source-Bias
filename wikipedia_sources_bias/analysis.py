@@ -2964,7 +2964,19 @@ def analyze_page(
     if not no_cache:
         cached_data = _get_page_cache(cache_key)
         if cached_data is not None:
-            if not cached_data.get("is_partial", False):
+            has_sources = len(cached_data.get("sources", [])) > 0
+            is_partial = cached_data.get("is_partial", False)
+            if not is_partial and has_sources:
+                agg = cached_data.get("aggregated_bias", {})
+                req_metrics = {"reliability_metrics", "geographic_diversity_metrics", "political_spread_metrics", "gender_parity_metrics", "neutrality_metrics"}
+                if not req_metrics.issubset(agg.keys()):
+                    title_val = cached_data.get("page_title") or _extract_page_title(url)
+                    cached_data["aggregated_bias"] = aggregate_page_bias(
+                        cached_data["sources"],
+                        split_multiple=split_multiple,
+                        page_title=title_val
+                    )
+                    _put_page_cache(cache_key, cached_data)
                 return cached_data
                 
             sources = cached_data.get("sources", [])

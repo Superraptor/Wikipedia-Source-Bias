@@ -2549,5 +2549,13 @@
   "ehjournal.biomedcentral.com": {},
   "fdslive.oup.com": {},
   "chu-rennes.fr": {},
-  "works.bepress.com": {}
+  "works.bepress.com": {},
+  "w3.org": {
+    "wikidata_label": "World Wide Web Consortium",
+    "wikidata_id": "Q37033",
+    "wikidata_description": "main international standards organization for the World Wide Web"
+  },
+  "20minutes.fr:80": {},
+  "lopinion.fr:80": {},
+  "gaullisme.net:80": {}
 }

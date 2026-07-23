@@ -8,5 +8,55 @@
     "gender": "male",
     "probability": 0.99,
     "count": 698976
+  },
+  "laurence": {
+    "gender": "female",
+    "probability": 0.54,
+    "count": 174871
+  },
+  "ava": {
+    "gender": "female",
+    "probability": 0.97,
+    "count": 27072
+  },
+  "marylou": {
+    "gender": "female",
+    "probability": 1.0,
+    "count": 9566
+  },
+  "fatoumata": {
+    "gender": "female",
+    "probability": 0.99,
+    "count": 15498
+  },
+  "en": {
+    "gender": "male",
+    "probability": 0.79,
+    "count": 12517
+  },
+  "dominique": {
+    "gender": "male",
+    "probability": 0.52,
+    "count": 139629
+  },
+  "robin": {
+    "gender": "male",
+    "probability": 0.77,
+    "count": 126678
+  },
+  "soulayma": {
+    "gender": "female",
+    "probability": 0.94,
+    "count": 652
+  },
+  "balla": {
+    "gender": "male",
+    "probability": 0.87,
+    "count": 3737
+  },
+  "manon": {
+    "gender": "female",
+    "probability": 0.98,
+    "count": 74501
   }
 }

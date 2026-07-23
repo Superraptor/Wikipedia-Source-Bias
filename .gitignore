@@ -2,6 +2,9 @@
 .pytest_cache/
 */.vscode/
 __pycache__/
+*copy/
+output*
+results*
 # `pip install .` (requirements.txt installs the local package) leaves these.
 build/
 *.egg-info/

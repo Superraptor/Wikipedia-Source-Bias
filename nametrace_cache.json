@@ -15848,5 +15848,35 @@
       "gender": 0.8057944774627686,
       "subregion": 0.35914313793182373
     }
+  },
+  "Hortense Paillard": {
+    "is_human": true,
+    "gender": "female",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9219987988471985,
+      "subregion": 0.6317923665046692
+    }
+  },
+  "Jean-Baptiste Naudet": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 0.9999983310699463,
+      "gender": 0.9633586406707764,
+      "subregion": 0.8945301175117493
+    }
+  },
+  "Olivier Mimran": {
+    "is_human": true,
+    "gender": "male",
+    "subregion": "Western Europe",
+    "confidence": {
+      "human": 1.0,
+      "gender": 0.9534971714019775,
+      "subregion": 0.754867672920227
+    }
   }
 }

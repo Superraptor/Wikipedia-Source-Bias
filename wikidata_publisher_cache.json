@@ -12619,5 +12619,56 @@
       "regional hospital center"
     ],
     "mbfc_id": null
-  }
+  },
+  "paris-normandie.fr": {
+    "wikidata_id": "Q42295005",
+    "wikidata_name": "Le Normandy Théâtre",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "movie theater"
+    ],
+    "mbfc_id": null
+  },
+  "preavis.org": {},
+  "letelegramme.com": {},
+  "esperanto-au-bac.fr": {},
+  "leplus.nouvelobs.com": {},
+  "ce-soir-ou-jamais.france3.fr": {},
+  "lagrandeconversation.com": {},
+  "w3.org": {
+    "wikidata_id": "Q37033",
+    "wikidata_name": "World Wide Web Consortium",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "academic publisher",
+      "standards organization",
+      "voluntary association"
+    ],
+    "mbfc_id": null
+  },
+  "blogs.lexpress.fr": {
+    "wikidata_id": "Q47484753",
+    "wikidata_name": "André Ropert",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "bva.fr": {},
+  "emilemagazine.fr": {},
+  "minefe.gouv.fr": {}
 }
