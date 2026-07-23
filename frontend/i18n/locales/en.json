@@ -471,17 +471,9 @@
     "dispute": "Dispute this result"
   },
   "imbalance": {
-    "headline": {
-      "geography": "{pct}% of sources come from a single country: {value}.",
-      "region": "{pct}% of sources come from a single region: {value}.",
-      "language": "{pct}% of sources are in a single language: {value}."
-    },
-    "why": {
-      "geography": "For a national topic this is often expected. For an international one it may indicate a limited perspective.",
-      "region": "Strong regional concentration can reflect the topic, or a lack of viewpoint diversity.",
-      "language": "The language of sources shapes which viewpoints are reachable. Read it against the article's subject."
-    },
     "coverageHeadline": "{pct}% of sources have no determined country.",
-    "coverageWhy": "The geographic balance below covers only placeable sources, so read it with caution."
+    "coverageWhy": "The geographic balance below covers only placeable sources, so read it with caution.",
+    "languageHeadline": "{pct}% of sources are in {lang}, while the article is in another language.",
+    "languageWhy": "An article leaning mostly on sources in another language ({lang}) may reflect dependence on an outside viewpoint, or simply a lack of sources in the article's own language."
   }
 }

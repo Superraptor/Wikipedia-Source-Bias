@@ -1,81 +1,72 @@
 import { describe, it, expect } from "vitest";
 import { detectImbalance } from "../composables/useImbalance.js";
 
-function analysis(dists, sourceCount = 10) {
-  return { source_count: sourceCount, aggregated_bias: dists };
+const fr = "https://fr.wikipedia.org/wiki/X";
+const en = "https://en.wikipedia.org/wiki/X";
+
+function make(page_url, agg, source_count = 10) {
+  return { page_url, source_count, aggregated_bias: agg };
 }
 
-const geo = (m) => ({ geography_distribution: m });
-
-describe("detectImbalance", () => {
-  it("says nothing for a balanced corpus", () => {
-    const { findings } = detectImbalance(analysis(geo({
-      France: { count: 3, percentage: 30 },
-      "United States": { count: 3, percentage: 30 },
-      Germany: { count: 2, percentage: 20 },
-      Japan: { count: 2, percentage: 20 },
-    })));
+describe("detectImbalance (conservative)", () => {
+  it("does NOT flag a French subject with French sources", () => {
+    // The user's key case: French person, French sources = normal.
+    const { findings } = detectImbalance(make(fr, {
+      geography_distribution: { France: { count: 8, percentage: 100 } },
+      language_distribution: { French: { count: 8, percentage: 100 } },
+    }, 8));
     expect(findings).toEqual([]);
   });
 
-  it("flags strong single-country concentration", () => {
-    const { findings } = detectImbalance(analysis(geo({
-      France: { count: 9, percentage: 90 },
-      Germany: { count: 1, percentage: 10 },
-    })));
-    const geoF = findings.find((f) => f.dimension === "geography");
-    expect(geoF.severity).toBe("strong");
-    expect(geoF.pct).toBe(90);
-    expect(geoF.key).toBe("France");
+  it("does NOT flag single-country concentration on its own", () => {
+    // Raw concentration is deliberately not a trigger: it cannot tell an
+    // expected national focus from a real imbalance without the subject's country.
+    const { findings } = detectImbalance(make(fr, {
+      geography_distribution: { France: { count: 9, percentage: 90 }, Germany: { count: 1, percentage: 10 } },
+      language_distribution: { French: { count: 9, percentage: 90 }, German: { count: 1, percentage: 10 } },
+    }));
+    expect(findings).toEqual([]);
   });
 
-  it("measures dominance among PLACED sources, ignoring unmapped", () => {
-    // 5 France, 1 US, 4 unmapped: among placed, France is 5/6 = 83% -> notable.
-    const { findings } = detectImbalance(analysis(geo({
-      France: { count: 5, percentage: 50 },
-      "United States": { count: 1, percentage: 10 },
-      unmapped: { count: 4, percentage: 40 },
-    })));
-    const geoF = findings.find((f) => f.dimension === "geography");
-    expect(geoF.pct).toBe(83);
-    // And the 40% unmapped raises a separate coverage caveat, ranked first.
-    expect(findings[0].severity).toBe("coverage");
+  it("flags a French article sourced overwhelmingly in English", () => {
+    const { findings } = detectImbalance(make(fr, {
+      language_distribution: { English: { count: 8, percentage: 80 }, French: { count: 2, percentage: 20 } },
+    }));
+    const lang = findings.find((f) => f.dimension === "language");
+    expect(lang.key).toBe("English");
+    expect(lang.pct).toBe(80);
+    expect(lang.edition).toBe("French");
   });
 
-  it("does not flag concentration on a tiny corpus", () => {
-    // 2 of 2 France is 100% but 2 sources is noise, not signal.
-    const { findings } = detectImbalance(analysis(geo({
-      France: { count: 2, percentage: 100 },
-    }), 2));
-    expect(findings.find((f) => f.dimension === "geography")).toBeUndefined();
+  it("does NOT flag an English article sourced in English", () => {
+    const { findings } = detectImbalance(make(en, {
+      language_distribution: { English: { count: 10, percentage: 100 } },
+    }));
+    expect(findings.find((f) => f.dimension === "language")).toBeUndefined();
   });
 
   it("raises a coverage caveat when many sources are unplaceable", () => {
-    const { findings } = detectImbalance(analysis(geo({
-      France: { count: 5, percentage: 50 },
-      unmapped: { count: 5, percentage: 50 },
-    })));
+    const { findings } = detectImbalance(make(fr, {
+      geography_distribution: { France: { count: 5, percentage: 50 }, unmapped: { count: 5, percentage: 50 } },
+      language_distribution: { French: { count: 10, percentage: 100 } },
+    }));
     expect(findings[0].severity).toBe("coverage");
     expect(findings[0].pct).toBe(50);
   });
 
-  it("flags language and region too", () => {
-    const { findings } = detectImbalance(analysis({
-      region_distribution: { Europe: { count: 9, percentage: 90 }, Asia: { count: 1, percentage: 10 } },
-      language_distribution: { French: { count: 10, percentage: 100 } },
-    }));
-    expect(findings.some((f) => f.dimension === "region" && f.severity === "strong")).toBe(true);
-    expect(findings.some((f) => f.dimension === "language" && f.severity === "strong")).toBe(true);
+  it("stays silent on a tiny corpus", () => {
+    const { findings } = detectImbalance(make(fr, {
+      language_distribution: { English: { count: 2, percentage: 100 } },
+    }, 2));
+    expect(findings).toEqual([]);
   });
 
-  it("orders coverage first, then strong, then notable", () => {
-    const { findings } = detectImbalance(analysis({
-      geography_distribution: {
-        France: { count: 5, percentage: 50 },
-        unmapped: { count: 5, percentage: 50 },
-      },
-      region_distribution: { Europe: { count: 5, percentage: 100 } },
+  it("orders coverage before language", () => {
+    const { findings } = detectImbalance(make(fr, {
+      geography_distribution: { France: { count: 3, percentage: 30 }, unmapped: { count: 7, percentage: 70 } },
+      language_distribution: { English: { count: 9, percentage: 90 }, French: { count: 1, percentage: 10 } },
     }));
     expect(findings[0].severity).toBe("coverage");
+    expect(findings[1].dimension).toBe("language");
   });
 });

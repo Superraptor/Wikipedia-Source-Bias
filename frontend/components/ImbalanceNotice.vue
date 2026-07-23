@@ -23,30 +23,21 @@
  */
 import { computed } from "vue";
 import { detectImbalance } from "~/composables/useImbalance.js";
-import { countryLabel, regionLabel } from "~/utils/labels.js";
 
 const props = defineProps({ analysis: { type: Object, required: true } });
 const { t } = useI18n();
 
 const findings = computed(() => detectImbalance(props.analysis).findings);
 
-function label(f) {
-  if (f.dimension === "geography") return countryLabel(f.key, t);
-  if (f.dimension === "region") return regionLabel(f.key, t);
-  return f.key; // language: already a display string
-}
-
 function headline(f) {
-  if (f.severity === "coverage") {
-    return t("imbalance.coverageHeadline", { pct: f.pct });
-  }
-  return t(`imbalance.headline.${f.dimension}`, { value: label(f), pct: f.pct });
+  if (f.severity === "coverage") return t("imbalance.coverageHeadline", { pct: f.pct });
+  // Only cross-language dependence reaches here.
+  return t("imbalance.languageHeadline", { lang: f.key, pct: f.pct });
 }
 
 function why(f) {
   if (f.severity === "coverage") return t("imbalance.coverageWhy");
-  // The caveat is the important part: this may be expected.
-  return t(`imbalance.why.${f.dimension}`, { value: label(f), pct: f.pct });
+  return t("imbalance.languageWhy", { lang: f.key, edition: f.edition });
 }
 </script>
 

@@ -471,17 +471,9 @@
     "dispute": "Contester ce résultat"
   },
   "imbalance": {
-    "headline": {
-      "geography": "{pct} % des sources proviennent d'un seul pays : {value}.",
-      "region": "{pct} % des sources proviennent d'une seule région : {value}.",
-      "language": "{pct} % des sources sont dans une seule langue : {value}."
-    },
-    "why": {
-      "geography": "Pour un sujet national, c'est souvent attendu. Pour un sujet international, cela peut signaler une perspective limitée.",
-      "region": "Une forte concentration régionale peut refléter le sujet, ou un manque de diversité des points de vue.",
-      "language": "La langue des sources oriente les points de vue accessibles. À rapprocher du sujet de l'article."
-    },
     "coverageHeadline": "{pct} % des sources n'ont pas de pays déterminé.",
-    "coverageWhy": "L'équilibre géographique ci-dessous ne porte que sur les sources localisables : interprétez-le avec prudence."
+    "coverageWhy": "L'équilibre géographique ci-dessous ne porte que sur les sources localisables : interprétez-le avec prudence.",
+    "languageHeadline": "{pct} % des sources sont en {lang}, alors que l'article est dans une autre langue.",
+    "languageWhy": "Un article s'appuyant surtout sur des sources d'une autre langue ({lang}) peut refléter une dépendance à un point de vue extérieur, ou simplement l'absence de sources dans la langue de l'article."
   }
 }
