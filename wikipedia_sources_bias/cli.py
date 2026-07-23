@@ -185,7 +185,7 @@ def main() -> None:
                 sys.exit(1)
         else:
             try:
-                sys.stdout.write(output_str + "\n")
+                print(output_str)
             except UnicodeEncodeError:
                 sys.stdout.buffer.write((output_str + "\n").encode("utf-8", errors="replace"))
 

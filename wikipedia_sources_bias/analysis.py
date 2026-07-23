@@ -3020,6 +3020,9 @@ def analyze_page(
 
     total = len(dedup_candidate_urls)
     for idx, cand_url in enumerate(dedup_candidate_urls, start=1):
+        if idx <= len(sources):
+            continue
+
         if not skip_rate_limiting:
             progress_pct = int((idx / total) * 100) if total > 0 else 100
             bar_len = 20
@@ -3036,12 +3039,45 @@ def analyze_page(
         for cit in citations:
             ext_urls = cit.get("extracted_urls") or cit.get("urls") or []
             if cand_url in ext_urls:
-                citation_text = cit.get("citation_text", "")
+                citation_text = cit.get("citation_text") or cit.get("text", "")
                 break
                 
         profile["citation_text"] = citation_text
         
         wikidata_pub = _fetch_wikidata_publisher(profile["domain"])
+        profile["wikidata_publisher"] = wikidata_pub
+        
+        mbfc_info = _fetch_mbfc_rating(profile["domain"], skip_rate_limiting=skip_rate_limiting)
+        profile["mbfc"] = mbfc_info
+        
+        rel_scores = _calculate_composite_reliability(profile, mbfc_info, wikidata_pub)
+        profile["reliability_scores"] = rel_scores
+        
+        lang_bias = analyze_language_bias(citation_text)
+        profile["language_bias"] = lang_bias
+        
+        author_names = _extract_authors_from_citation(citation_text)
+        author_profiles = [analyze_author_bias(a, profile["geography"], skip_rate_limiting=skip_rate_limiting) for a in author_names]
+        profile["author_profiles"] = author_profiles
+        
+        sources.append(profile)
+
+        if not no_cache:
+            partial_result = {
+                "page_title": _extract_page_title(url),
+                "page_url": url,
+                "page_metadata": page_metadata,
+                "references": references,
+                "citations": citations,
+                "dedup_candidate_urls": dedup_candidate_urls,
+                "citation_count": len(citations),
+                "source_count": len(sources),
+                "sources": sources,
+                "revision_id": revision_id,
+                "page_id": page_id,
+                "is_partial": True
+            }
+            _put_page_cache(cache_key, partial_result)
 
     page_title_val = _extract_page_title(url)
 

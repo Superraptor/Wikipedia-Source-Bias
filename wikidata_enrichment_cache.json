@@ -1604,5 +1604,950 @@
     "wikidata_description": "public research university in the Greater Toronto Area of Ontario, Canada"
   },
   "koreatimes.co.kr": {},
-  "atlanticcouncil.org": {}
+  "atlanticcouncil.org": {},
+  "web.archive.org": {
+    "wikidata_label": "Wayback Machine",
+    "wikidata_id": "Q648266",
+    "wikidata_description": "digital archive founded by the Internet Archive"
+  },
+  "government.ru": {},
+  "cbr.ru": {},
+  "bangladeshnews.net": {},
+  "metrofrance.com": {},
+  "blogs.afp.com": {},
+  "press.princeton.edu": {},
+  "vybory.izbirkom.ru": {},
+  "video.lefigaro.fr": {},
+  "iphilo.fr": {},
+  "levada.ru": {},
+  "pewglobal.org": {},
+  "lematin.ch": {
+    "wikidata_label": "Le Matin",
+    "wikidata_id": "Q692822",
+    "wikidata_description": "newspaper"
+  },
+  "observers.france24.com": {},
+  "perspective.usherbrooke.ca": {},
+  "interpretermag.com": {},
+  "home.treasury.gov": {},
+  "panamapapers.sueddeutsche.de": {},
+  "ng.ru": {},
+  "nouvelledeguinee.com": {},
+  "archive.aif.ru": {},
+  "srpska.ru": {},
+  "businesspress.ru": {},
+  "senego.com": {},
+  "monde.blogs.la-croix.com": {},
+  "huffingtonpost.com": {
+    "wikidata_label": "HuffPost",
+    "wikidata_id": "Q18049522",
+    "wikidata_description": "American online news aggregator and blog"
+  },
+  "bostonglobe.com": {
+    "wikidata_label": "Boston Globe",
+    "wikidata_id": "Q824451",
+    "wikidata_description": "American daily newspaper"
+  },
+  "cbsnews.com": {},
+  "parade.com": {},
+  "consortiumnews.com": {},
+  "cnbc.com": {},
+  "trumptowerny.com": {},
+  "wollmanskatingrink.com": {},
+  "senepeople.com": {},
+  "search.proquest.com": {},
+  "upi.com": {},
+  "people.com": {
+    "wikidata_label": "people.cn",
+    "wikidata_id": "Q5967721",
+    "wikidata_description": "Chinese news company owned by People's Daily"
+  },
+  "phillymag.com": {},
+  "fortune.com": {
+    "wikidata_label": "Fortune.com unicorn list",
+    "wikidata_id": "Q97466108",
+    "wikidata_description": ""
+  },
+  "law.com": {
+    "wikidata_label": "law.com",
+    "wikidata_id": "Q52357083",
+    "wikidata_description": "website"
+  },
+  "pressofatlanticcity.com": {},
+  "golfweek.com": {},
+  "money.cnn.com": {},
+  "golf.com": {},
+  "heraldscotland.com": {},
+  "dailymail.co.uk": {
+    "wikidata_label": "MailOnline",
+    "wikidata_id": "Q6735687",
+    "wikidata_description": "website of the British newspapers the Daily Mail and The Mail on Sunday"
+  },
+  "miaminewtimes.com": {},
+  "golfdigest.com": {},
+  "espn.com": {
+    "wikidata_label": "ESPN.com",
+    "wikidata_id": "Q3046137",
+    "wikidata_description": "the official website of ESPN"
+  },
+  "torontosun.com": {},
+  "businessinsider.com": {
+    "wikidata_label": "Business Insider",
+    "wikidata_id": "Q286707",
+    "wikidata_description": "financial and business news website"
+  },
+  "blogs.wsj.com": {
+    "wikidata_label": "Real Time Economics",
+    "wikidata_id": "Q99689947",
+    "wikidata_description": "blog on WSJ.com"
+  },
+  "variety.com": {
+    "wikidata_label": "Variety",
+    "wikidata_id": "Q471728",
+    "wikidata_description": "American weekly entertainment trade magazine"
+  },
+  "usatoday.com": {},
+  "nationalreview.com": {},
+  "vanityfair.com": {},
+  "nydailynews.com": {
+    "wikidata_label": "New York Daily News",
+    "wikidata_id": "Q627827",
+    "wikidata_description": "daily tabloid newspaper in New York City"
+  },
+  "dailyherald.com": {
+    "wikidata_label": "Daily Herald",
+    "wikidata_id": "Q5209265",
+    "wikidata_description": "newspaper of Arlington Heights, Illinois"
+  },
+  "blogs.forbes.com": {},
+  "ibtimes.com": {},
+  "forbes.com": {
+    "wikidata_label": "Forbes",
+    "wikidata_id": "Q25161472",
+    "wikidata_description": "American business magazine"
+  },
+  "publicintegrity.org": {},
+  "articles.latimes.com": {},
+  "npr.org": {
+    "wikidata_label": "NPR",
+    "wikidata_id": "Q671510",
+    "wikidata_description": "American nonprofit media organization"
+  },
+  "wsj.com": {
+    "wikidata_label": "wsj.com",
+    "wikidata_id": "Q133802395",
+    "wikidata_description": "American online newspaper"
+  },
+  "hollywoodreporter.com": {
+    "wikidata_label": "The Hollywood Reporter",
+    "wikidata_id": "Q61503",
+    "wikidata_description": "American publication focusing on the Hollywood motion picture industry"
+  },
+  "thefiscaltimes.com": {},
+  "rollingstone.com": {
+    "wikidata_label": "Rolling Stone",
+    "wikidata_id": "Q33511",
+    "wikidata_description": "American monthly music magazine"
+  },
+  "slam.canoe.ca": {},
+  "news.com.au": {
+    "wikidata_label": "news.com.au",
+    "wikidata_id": "Q16903296",
+    "wikidata_description": "Australian online newspaper"
+  },
+  "bleacherreport.com": {
+    "wikidata_label": "Bleacher Report",
+    "wikidata_id": "Q2906353",
+    "wikidata_description": "American sports news website"
+  },
+  "wwe.com": {},
+  "nypost.com": {
+    "wikidata_label": "New York Post",
+    "wikidata_id": "Q211374",
+    "wikidata_description": "daily tabloid newspaper (1801-)"
+  },
+  "thehill.com": {},
+  "nymag.com": {
+    "wikidata_label": "nymag.com",
+    "wikidata_id": "Q93589669",
+    "wikidata_description": "online newspaper"
+  },
+  "esquire.com": {
+    "wikidata_label": "Esquire",
+    "wikidata_id": "Q762195",
+    "wikidata_description": "American men's magazine"
+  },
+  "nbcnewyork.com": {},
+  "rrca.revues.org": {},
+  "eu.usatoday.com": {},
+  "realclearpolitics.com": {
+    "wikidata_label": "RealClearPolitics",
+    "wikidata_id": "Q7300807",
+    "wikidata_description": "political news and polling data aggregator"
+  },
+  "abonnes.lemonde.fr": {},
+  "tvanouvelles.ca": {},
+  "injo.com": {
+    "wikidata_label": "Independent Journal Review",
+    "wikidata_id": "Q22909173",
+    "wikidata_description": "conservative news and opinion website based in Alexandria, Virginia"
+  },
+  "boursorama.com": {
+    "wikidata_label": "Boursorama",
+    "wikidata_id": "Q2110465",
+    "wikidata_description": "French bank and stock broker"
+  },
+  "bc.edu": {},
+  "journaldemontreal.com": {},
+  "nme.com": {},
+  "cookpolitical.com": {},
+  "college.usatoday.com": {},
+  "projects.fivethirtyeight.com": {},
+  "quebecscience.qc.ca": {},
+  "vox.com": {
+    "wikidata_label": "Vox",
+    "wikidata_id": "Q20877087",
+    "wikidata_description": "American news website"
+  },
+  "wsj.comarticles": {},
+  "mediaite.com": {
+    "wikidata_label": "Mediaite",
+    "wikidata_id": "Q3853695",
+    "wikidata_description": "news and opinion website covering politics and media"
+  },
+  "fr.express.live": {},
+  "pourquoidocteur.fr": {},
+  "sciencesetavenir.fr": {},
+  "scientificamerican.com": {},
+  "newrepublic.com": {},
+  "theintercept.com": {
+    "wikidata_label": "The Intercept",
+    "wikidata_id": "Q15725297",
+    "wikidata_description": "US online newspaper"
+  },
+  "lequotidien.com": {},
+  "shorensteincenter.org": {},
+  "poll.qu.edu": {},
+  "lesoleil.com": {
+    "wikidata_label": "Le Soleil",
+    "wikidata_id": "Q3227253",
+    "wikidata_description": "French-language daily newspaper in Quebec City, Canada"
+  },
+  "forbes.fr": {
+    "wikidata_label": "Forbes France",
+    "wikidata_id": "Q127700778",
+    "wikidata_description": "French edition of the American business magazine"
+  },
+  "snopes.com": {
+    "wikidata_label": "Snopes",
+    "wikidata_id": "Q2287154",
+    "wikidata_description": "fact-checking website"
+  },
+  "kiro7.com": {},
+  "social.techcrunch.com": {},
+  "c-span.org": {
+    "wikidata_label": "c-span.org",
+    "wikidata_id": "Q111263416",
+    "wikidata_description": "website of the C-SPAN television organization"
+  },
+  "scri.siena.edu": {},
+  "cleveland19.com": {},
+  "collegegreengroup.com": {},
+  "whitehouse.gov": {
+    "wikidata_label": "WhiteHouse.gov",
+    "wikidata_id": "Q1956766",
+    "wikidata_description": "official website of the White House"
+  },
+  "defense.gov": {
+    "wikidata_label": "United States Department of Defense",
+    "wikidata_id": "Q11209",
+    "wikidata_description": "executive department of the United States federal government"
+  },
+  "x.com": {
+    "wikidata_label": "X",
+    "wikidata_id": "Q918",
+    "wikidata_description": "American social networking service founded in 2006"
+  },
+  "al-monitor.com": {},
+  "en-hrana.org": {},
+  "rte.ie": {
+    "wikidata_label": "RTÉ.ie",
+    "wikidata_id": "Q17078809",
+    "wikidata_description": "Irish broadcaster RTÉ's website"
+  },
+  "today.yougov.com": {},
+  "plus.lesoir.be": {},
+  "lenouvelliste.ca": {},
+  "splcenter.org": {},
+  "slate.com": {
+    "wikidata_label": "Slate",
+    "wikidata_id": "Q60497",
+    "wikidata_description": "U.S.-based online magazine"
+  },
+  "lactualite.com": {},
+  "pli.sagepub.com": {},
+  "townandcountrymag.com": {},
+  "americamagazine.org": {},
+  "amgreatness.com": {},
+  "geo.fr": {},
+  "elmundo.es": {
+    "wikidata_label": "El Mundo",
+    "wikidata_id": "Q921217",
+    "wikidata_description": "Spanish daily newspaper"
+  },
+  "thedailybeast.com": {
+    "wikidata_label": "The Daily Beast",
+    "wikidata_id": "Q1308139",
+    "wikidata_description": "American news publication"
+  },
+  "allocine.fr": {
+    "wikidata_label": "AlloCiné",
+    "wikidata_id": "Q31165",
+    "wikidata_description": "organization providing information on French cinema"
+  },
+  "tvmag.lefigaro.fr": {},
+  "quebec.huffingtonpost.ca": {},
+  "videos.lexpress.fr": {},
+  "style.lesinrocks.com": {},
+  "gamershell.com": {},
+  "jeuxvideo.com": {
+    "wikidata_label": "Jeuxvideo.com",
+    "wikidata_id": "Q281055",
+    "wikidata_description": "French video game website"
+  },
+  "gamergen.com": {},
+  "opendemocracy.net": {
+    "wikidata_label": "openDemocracy",
+    "wikidata_id": "Q1051984",
+    "wikidata_description": "independent global media organization"
+  },
+  "english.ahram.org.eg": {},
+  "jpost.com": {
+    "wikidata_label": "The Jerusalem Post",
+    "wikidata_id": "Q35438",
+    "wikidata_description": "English-language Israeli newspaper"
+  },
+  "editionsampelos.com": {},
+  "womenshealthmag.com": {},
+  "linternationalmagazine.com": {},
+  "newarkpostonline.com": {},
+  "en.itar-tass.com": {},
+  "linformaticien.com": {},
+  "online.wsj.com": {},
+  "canadianpress.google.com": {},
+  "joebiden.com": {},
+  "sltrib.com": {
+    "wikidata_label": "The Salt Lake Tribune",
+    "wikidata_id": "Q1550315",
+    "wikidata_description": "American newspaper"
+  },
+  "washingtonexaminer.com": {},
+  "pastemagazine.com": {},
+  "lecourrier.ch": {},
+  "parismatch.be": {},
+  "lecho.be": {},
+  "latribunerepublicaine.fr": {},
+  "zonebourse.com": {},
+  "lionsroar.com": {},
+  "chathamhouse.org": {},
+  "energynews.pro": {},
+  "accessnow.org": {
+    "wikidata_label": "Access Now",
+    "wikidata_id": "Q4672520",
+    "wikidata_description": "non-profit organization"
+  },
+  "longwarjournal.org": {
+    "wikidata_label": "Long War Journal",
+    "wikidata_id": "Q6673362",
+    "wikidata_description": "US news website on the war on terror"
+  },
+  "huffpost.com": {
+    "wikidata_label": "HuffPost",
+    "wikidata_id": "Q18049522",
+    "wikidata_description": "American online news aggregator and blog"
+  },
+  "lanouvelletribune.info": {},
+  "inquirer.com": {},
+  "radioclassique.fr": {},
+  "lesaffaires.com": {},
+  "smh.com.au": {
+    "wikidata_label": "The Sydney Morning Herald",
+    "wikidata_id": "Q390216",
+    "wikidata_description": "Australian daily newspaper"
+  },
+  "wionews.com": {
+    "wikidata_label": "WION",
+    "wikidata_id": "Q23058781",
+    "wikidata_description": "Indian television news channel"
+  },
+  "santemagazine.fr": {},
+  "standard.co.uk": {},
+  "ourcampaigns.com": {
+    "wikidata_label": "Our Campaigns",
+    "wikidata_id": "Q97064980",
+    "wikidata_description": "online database of American political candidates"
+  },
+  "president.ee": {},
+  "thepavlovictoday.com": {},
+  "obamawhitehouse.archives.gov": {},
+  "ancestry.com": {
+    "wikidata_label": "Ancestry",
+    "wikidata_id": "Q26878196",
+    "wikidata_description": "genealogy website"
+  },
+  "ancestornetwork.ie": {},
+  "mayonews.ie": {},
+  "mjp.univ-perp.fr": {},
+  "historydraft.com": {},
+  "ns-archiv.de": {},
+  "enseignants.lumni.fr": {},
+  "enseigner-histoire-shoah.org": {},
+  "kup.at": {},
+  "historytoday.com": {},
+  "jewishvirtuallibrary.org": {
+    "wikidata_label": "Jewish Virtual Library",
+    "wikidata_id": "Q2535917",
+    "wikidata_description": "website"
+  },
+  "historisches-lexikon-bayerns.de": {},
+  "german.about.com": {},
+  "hnn.us": {},
+  "tallandier.com": {},
+  "journalbelgianhistory.be": {},
+  "defense.gouv.fr": {},
+  "guardian.co.uk": {
+    "wikidata_label": "The Guardian",
+    "wikidata_id": "Q11148",
+    "wikidata_description": "British national daily newspaper"
+  },
+  "news.sky.com": {
+    "wikidata_label": "news.sky.com",
+    "wikidata_id": "Q108460022",
+    "wikidata_description": "official website of Sky News"
+  },
+  "faz.net": {
+    "wikidata_label": "Frankfurter Allgemeine Zeitung",
+    "wikidata_id": "Q10184",
+    "wikidata_description": "German daily newspaper"
+  },
+  "zeit.de": {
+    "wikidata_label": "Die Zeit",
+    "wikidata_id": "Q69792426",
+    "wikidata_description": "German news website"
+  },
+  "welt.de": {
+    "wikidata_label": "welt.de",
+    "wikidata_id": "Q140471709",
+    "wikidata_description": ""
+  },
+  "0-books-openedition-org.catalogue.libraries.london.ac.uk": {},
+  "fr.wiktionary.org": {
+    "wikidata_label": "French Wiktionary",
+    "wikidata_id": "Q22001373",
+    "wikidata_description": "edition of the free dictionary"
+  },
+  "antiqu-arts.com": {},
+  "musee-maisonbonaparte.fr": {},
+  "lautresaintehelene.com": {},
+  "mediterranee-antique.fr": {},
+  "elib.shpl.ru": {},
+  "napoleon.org": {
+    "wikidata_label": "Napoleon.org",
+    "wikidata_id": "Q27861727",
+    "wikidata_description": ""
+  },
+  "napoleonicsociety.com": {},
+  "archives.paris.fr": {
+    "wikidata_label": "archives.paris.fr",
+    "wikidata_id": "Q30337444",
+    "wikidata_description": "digitised archives of the City of Paris"
+  },
+  "cambaceres.fr": {},
+  "lha.revues.org": {},
+  "nationalgallery.org.uk": {},
+  "gnu.org": {
+    "wikidata_label": "GNU.org",
+    "wikidata_id": "Q27980040",
+    "wikidata_description": "official website of the GNU project"
+  },
+  "empereurperdu.com": {},
+  "energie-developpement.blogspot.fr": {},
+  "napoleonprisonnier.com": {},
+  "fondationnapoleon.org": {},
+  "erudit.org": {
+    "wikidata_label": "Érudit",
+    "wikidata_id": "Q3591464",
+    "wikidata_description": "online publication platform for document collections in the social sciences and humanities, including journals, books, proceedings, theses, research reports"
+  },
+  "eduscol.education.fr": {},
+  "larep.fr": {},
+  "napoleonica.org": {},
+  "crdp-reims.fr": {},
+  "conseil-etat.fr": {},
+  "musee-armee.fr": {},
+  "siv.archives-nationales.culture.gouv.fr": {},
+  "palaisdecompiegne.fr": {},
+  "enseignement-moral-et-civique-pedagogie.web.ac-grenoble.fr": {},
+  "bordeaux.catholique.fr": {},
+  "lautjournal.info": {},
+  "legirel.cnrs.fr": {},
+  "dipot.ulb.ac.be": {},
+  "circulaire.legifrance.gouv.fr": {},
+  "aidh.org": {},
+  "fonction-publique.gouv.fr": {},
+  "defenseurdesdroits.fr": {},
+  "gouvernement.fr": {},
+  "halde.fr": {},
+  "laicite-republique.org": {},
+  "dalloz.fr": {},
+  "dalloz-actualite.fr": {},
+  "catho-theo.net": {},
+  "islamlaicite.org": {},
+  "reseaux.parvis.free.fr": {},
+  "fcpe.asso.fr": {},
+  "lagazettedescommunes.com": {},
+  "assembly.coe.int": {
+    "wikidata_label": "Parliamentary Assembly Members A-Z since 1949",
+    "wikidata_id": "Q99571475",
+    "wikidata_description": ""
+  },
+  "rajf.org": {},
+  "atlasinfo.fr": {},
+  "ufal.org": {},
+  "editions-stock.fr": {},
+  "regardsdefemmes.com": {},
+  "canalacademie.com": {
+    "wikidata_label": "Canal Académie",
+    "wikidata_id": "Q2935897",
+    "wikidata_description": ""
+  },
+  "dossierfamilial.com": {},
+  "vatican.va": {
+    "wikidata_label": "Vatican.va",
+    "wikidata_id": "Q134089094",
+    "wikidata_description": "official website of the Holy See"
+  },
+  "infocatho.cef.fr": {},
+  "u-bordeaux2.fr": {},
+  "education.assemblee-nationale.fr": {},
+  "cngof.asso.fr": {},
+  "courrierdesmaires.fr": {},
+  "resonance-funeraire.com": {},
+  "gaucherepublicaine.org": {},
+  "fondation-res-publica.org": {},
+  "pmf-regionparisienne.over-blog.com": {},
+  "maisondesjournalistes.org": {},
+  "mrap.fr": {},
+  "dioceseauxarmees.catholique.fr": {},
+  "editionsducerf.fr": {},
+  "news.catholique.org": {},
+  "godf.org": {},
+  "marianne2.fr": {
+    "wikidata_label": "Marianne",
+    "wikidata_id": "Q3291285",
+    "wikidata_description": "French weekly news magazine"
+  },
+  "golias.fr": {},
+  "appel-laique.org": {},
+  "pelerin.info": {},
+  "crif.org": {},
+  "archivioradiovaticana.va": {},
+  "eglise.catholique.fr": {},
+  "laicite-educateurs.org": {},
+  "actionpourlaliberte.unblog.fr": {},
+  "jeanbauberotlaicite.blogspirit.com": {},
+  "archivesweb.cef.fr": {},
+  "miviludes.gouv.fr": {},
+  "iqbal.hypotheses.org": {},
+  "ipra.hypotheses.org": {},
+  "firstpost.com": {
+    "wikidata_label": "Firstpost",
+    "wikidata_id": "Q5453524",
+    "wikidata_description": "Indian news organization"
+  },
+  "ar.wikisource.org": {
+    "wikidata_label": "Arabic Wikisource",
+    "wikidata_id": "Q24577645",
+    "wikidata_description": "Wikisource language edition"
+  },
+  "gis-reseau-asie.org": {},
+  "dhsprogram.com": {},
+  "essentiels.bnf.fr": {},
+  "cnrtl.fr": {},
+  "bora.uib.no": {},
+  "repository.upenn.edu": {},
+  "scienceshumaines.com": {},
+  "pewforum.org": {
+    "wikidata_label": "Pew Research Center",
+    "wikidata_id": "Q1635722",
+    "wikidata_description": "think tank based in Washington, D.C., US"
+  },
+  "pewresearch.org": {
+    "wikidata_label": "Pew Research Center",
+    "wikidata_id": "Q1635722",
+    "wikidata_description": "think tank based in Washington, D.C., US"
+  },
+  "oxfordislamicstudies.com": {},
+  "lemondedesreligions.fr": {},
+  "archive.mumineen.org": {},
+  "nouralislam.com": {},
+  "referenceworks.brillonline.com": {},
+  "britannica.com": {
+    "wikidata_label": "Encyclopædia Britannica Online",
+    "wikidata_id": "Q5375741",
+    "wikidata_description": "online edition of the Encyclopædia Britannica"
+  },
+  "injil.free.fr": {},
+  "apbif.org": {},
+  "maison-islam.com": {},
+  "college-de-france.fr": {
+    "wikidata_label": "www.college-de-france.fr",
+    "wikidata_id": "Q107211151",
+    "wikidata_description": "website of the Collège de France"
+  },
+  "remmm.revues.org": {},
+  "sami-aldeeb.com": {},
+  "cirs-tm.org": {},
+  "bcrfj.revues.org": {},
+  "retoricabiblicaesemitica.org": {},
+  "ifao.egnet.net": {},
+  "islamfrance.com": {},
+  "portail-religion.com": {},
+  "iesr.hypotheses.org": {},
+  "people.uncw.edu": {},
+  "lcweb2.loc.gov": {},
+  "gulf2000.columbia.edu": {},
+  "la-conference-de-grozny-un-sunnisme-sans-wahhabisme.html": {},
+  "metamag.fr": {},
+  "ssrn.com": {
+    "wikidata_label": "Social Science Research Network",
+    "wikidata_id": "Q7550801",
+    "wikidata_description": "open access eLibrary; part of Elsevier"
+  },
+  "doi.org": {
+    "wikidata_label": "digital object identifier",
+    "wikidata_id": "Q25670",
+    "wikidata_description": "ISO standard unique string identifier for a digital object"
+  },
+  "iismm.hypotheses.org": {},
+  "oasiscenter.eu": {},
+  "wluml.org": {},
+  "meforum.org": {},
+  "sunnah.com": {
+    "wikidata_label": "Sunnah.com",
+    "wikidata_id": "Q137767756",
+    "wikidata_description": ""
+  },
+  "drmcc.org": {},
+  "francemusique.fr": {},
+  "transposition.revues.org": {},
+  "islam.about.com": {},
+  "whc.unesco.org": {},
+  "the-tls.co.uk": {},
+  "gordonconwell.edu": {},
+  "religjournal.com": {},
+  "sedifop.com": {},
+  "doctrinesocialeeglise.org": {},
+  "portstnicolas.org": {},
+  "larevuereformee.net": {},
+  "museeprotestant.org": {},
+  "oikoumene.org": {},
+  "awab.org": {},
+  "ecumenicalcatholicchurch.org": {},
+  "visitmccchurch.com": {},
+  "rmnetwork.org": {},
+  "thecovenantnetwork.com": {},
+  "chiesa.espresso.repubblica.it": {},
+  "dacb.org": {
+    "wikidata_label": "Dictionary of African Christian Biography",
+    "wikidata_id": "Q22829729",
+    "wikidata_description": "online Dictionary on Christian Biographies"
+  },
+  "cathobel.be": {
+    "wikidata_label": "cathobel.be",
+    "wikidata_id": "Q133835663",
+    "wikidata_description": ""
+  },
+  "therichest.com": {
+    "wikidata_label": "TheRichest",
+    "wikidata_id": "Q126839197",
+    "wikidata_description": "Entertainment News Publication"
+  },
+  "notredamedesaussens.fr": {},
+  "cath.ch": {
+    "wikidata_label": "cath.ch",
+    "wikidata_id": "Q108448659",
+    "wikidata_description": "Swiss Catholic website"
+  },
+  "fr.zenit.org": {},
+  "marginalia.lareviewofbooks.org": {},
+  "mikranet.cet.ac.il": {},
+  "timotheeminard.com": {},
+  "remacle.org": {},
+  "charles-mopsik.com": {},
+  "people.ucalgary.ca": {},
+  "grasset.fr": {},
+  "medium.com": {
+    "wikidata_label": "Medium",
+    "wikidata_id": "Q16186120",
+    "wikidata_description": "online publishing platform"
+  },
+  "ipcc.ch": {},
+  "ui.adsabs.harvard.edu": {},
+  "onu.delegfrance.org": {},
+  "nasa.gov": {
+    "wikidata_label": "nasa.gov",
+    "wikidata_id": "Q114665540",
+    "wikidata_description": "website of the National Aeronautics and Space Administration"
+  },
+  "climate.gov": {
+    "wikidata_label": "climate.gov",
+    "wikidata_id": "Q133539707",
+    "wikidata_description": ""
+  },
+  "climate.nasa.gov": {},
+  "apstylebook.com": {},
+  "sciencefocus.com": {},
+  "wwf.fr": {},
+  "novethic.fr": {},
+  "ncbi.nlm.nih.gov": {
+    "wikidata_label": "Gene Expression Omnibus",
+    "wikidata_id": "Q17321881",
+    "wikidata_description": "gene expression data repository"
+  },
+  "data.giss.nasa.gov": {},
+  "19january2017snapshot.epa.gov": {},
+  "api.semanticscholar.org": {},
+  "boris.unibe.ch": {},
+  "science2017.globalchange.gov": {},
+  "archive.ipcc.ch": {},
+  "earthobservatory.nasa.gov": {},
+  "futura-sciences.com": {},
+  "nature.com": {
+    "wikidata_label": "Nature",
+    "wikidata_id": "Q180445",
+    "wikidata_description": "British scientific journal since 1869"
+  },
+  "journals.ametsoc.org": {},
+  "cnrs.fr": {
+    "wikidata_label": "National Center for Scientific Research",
+    "wikidata_id": "Q280413",
+    "wikidata_description": "French research organisation"
+  },
+  "wmo.int": {},
+  "globalchange.gov": {},
+  "acs.org": {
+    "wikidata_label": "American Chemical Society",
+    "wikidata_id": "Q247556",
+    "wikidata_description": "professional society, publisher"
+  },
+  "s3.amazonaws.com": {},
+  "ourworldindata.org": {
+    "wikidata_label": "Our World in Data",
+    "wikidata_id": "Q23680080",
+    "wikidata_description": "website that presents data and statistics of socially relevant topics"
+  },
+  "epa.gov": {},
+  "globalmethane.org": {},
+  "canr.msu.edu": {},
+  "eprints.whiterose.ac.uk": {
+    "wikidata_label": "White Rose Research Online",
+    "wikidata_id": "Q24753667",
+    "wikidata_description": "institutional repository shared by Leeds, Sheffield and York Universities"
+  },
+  "eprints.soton.ac.uk": {},
+  "researchgate.net": {
+    "wikidata_label": "ResearchGate",
+    "wikidata_id": "Q754454",
+    "wikidata_description": "commercial scientific social network"
+  },
+  "meteosuisse.admin.ch": {},
+  "news.mongabay.com": {},
+  "research.wri.org": {},
+  "sustainabilityconsortium.org": {},
+  "wri.org": {
+    "wikidata_label": "World Resources Institute",
+    "wikidata_id": "Q976978",
+    "wikidata_description": "organization"
+  },
+  "hdl.handle.net": {},
+  "meteo.psu.edu": {},
+  "dels.nas.edu": {},
+  "onlinelibrary.wiley.com": {
+    "wikidata_label": "Wiley Online Library",
+    "wikidata_id": "Q70631906",
+    "wikidata_description": "online catalog of scientific research published by John Wiley & Sons"
+  },
+  "nsidc.org": {},
+  "iopscience.iop.org": {
+    "wikidata_label": "IOP Publishing",
+    "wikidata_id": "Q2915886",
+    "wikidata_description": "academic publisher"
+  },
+  "epic.awi.de": {},
+  "carbonbrief.org": {},
+  "nationalgeographic.com": {},
+  "zenodo.org": {
+    "wikidata_label": "Zenodo",
+    "wikidata_id": "Q22661177",
+    "wikidata_description": "research data repository"
+  },
+  "pik-potsdam.de": {},
+  "reseauactionclimat.org": {},
+  "innovafrika.com": {},
+  "tidesandcurrents.noaa.gov": {},
+  "arxiv.org": {
+    "wikidata_label": "arXiv",
+    "wikidata_id": "Q118398",
+    "wikidata_description": "online digital archive for electronic preprints of scientific papers"
+  },
+  "atmos-chem-phys.net": {},
+  "smithsonianmag.com": {},
+  "jetsam.ocean.washington.edu": {},
+  "nessc.nl": {},
+  "nap.edu": {},
+  "sos.noaa.gov": {},
+  "nps.gov": {
+    "wikidata_label": "San Francisco Maritime National Historical Park",
+    "wikidata_id": "Q1535460",
+    "wikidata_description": "place in California listed on National Register of Historic Places"
+  },
+  "science.sciencemag.org": {},
+  "espace.library.uq.edu.au": {},
+  "pure.aber.ac.uk": {},
+  "insu.cnrs.fr": {},
+  "thelancet.com": {
+    "wikidata_label": "TheLancet.com--fast forward for health",
+    "wikidata_id": "Q79813363",
+    "wikidata_description": "scientific article published on 01 November 2008"
+  },
+  "apps.who.int": {},
+  "who.int": {
+    "wikidata_label": "World Health Organization",
+    "wikidata_id": "Q7817",
+    "wikidata_description": "United Nations agency concerned with international public health"
+  },
+  "news.climate.columbia.edu": {},
+  "climatecentral.org": {
+    "wikidata_label": "Climate Central",
+    "wikidata_id": "Q5133402",
+    "wikidata_description": "non-profit organization in the USA"
+  },
+  "lse.ac.uk": {},
+  "elibrary.imf.org": {},
+  "openknowledge.worldbank.org": {},
+  "unhcr.org": {},
+  "academic.oup.com": {
+    "wikidata_label": "GigaScience",
+    "wikidata_id": "Q19969338",
+    "wikidata_description": "scientific journal"
+  },
+  "publications.iom.int": {},
+  "link.springer.com": {
+    "wikidata_label": "Springer Nature Link",
+    "wikidata_id": "Q58333349",
+    "wikidata_description": "full-text database for works published by Springer"
+  },
+  "climateanalytics.org": {},
+  "oceanservice.noaa.gov": {},
+  "climate.ec.europa.eu": {},
+  "pubs.rsc.org": {},
+  "ren21.net": {},
+  "iea.blob.core.windows.net": {},
+  "nrel.gov": {},
+  "sciencedirect.com": {
+    "wikidata_label": "ScienceDirect",
+    "wikidata_id": "Q2571518",
+    "wikidata_description": "website providing subscription-based access to a database of scientific and medical research"
+  },
+  "wrr-food.wri.org": {},
+  "oecd.org": {},
+  "ec.europa.eu": {
+    "wikidata_label": "European Commission",
+    "wikidata_id": "Q8880",
+    "wikidata_description": "executive branch of the European Union"
+  },
+  "adaptation-changement-climatique.gouv.fr": {},
+  "unenvironment.org": {},
+  "oro.open.ac.uk": {},
+  "ucsusa.org": {},
+  "iisd.org": {},
+  "theicct.org": {},
+  "nrdc.org": {},
+  "ncsl.org": {
+    "wikidata_label": "National Conference of State Legislatures",
+    "wikidata_id": "Q17091238",
+    "wikidata_description": "US organization"
+  },
+  "pacificenvironment.org": {},
+  "scholarship.law.wm.edu": {},
+  "unctad.org": {},
+  "unfccc.int": {},
+  "oxfordenergy.org": {},
+  "euobserver.com": {
+    "wikidata_label": "EUobserver.com",
+    "wikidata_id": "Q131849528",
+    "wikidata_description": "Belgian non-profit organization"
+  },
+  "climatefocus.com": {},
+  "treaties.un.org": {
+    "wikidata_label": "United Nations Treaty Collection",
+    "wikidata_id": "Q108775510",
+    "wikidata_description": "website and database managed by the United Nations Office of Legal Affairs"
+  },
+  "salon.com": {
+    "wikidata_label": "Salon.com",
+    "wikidata_id": "Q1150423",
+    "wikidata_description": "American progressive news and opinion website"
+  },
+  "theverge.com": {
+    "wikidata_label": "The Verge",
+    "wikidata_id": "Q2155442",
+    "wikidata_description": "American technology news and media website"
+  },
+  "afr.com": {},
+  "rstl.royalsocietypublishing.org": {},
+  "nsdl.library.cornell.edu": {},
+  "history.aip.org": {},
+  "journals.sagepub.com": {},
+  "scienceblogs.com": {},
+  "publications.parliament.uk": {},
+  "nationalacademies.org": {},
+  "agupubs.onlinelibrary.wiley.com": {},
+  "yaleclimateconnections.org": {},
+  "thebulletin.org": {},
+  "interfacejournal.net": {},
+  "cogitatiopress.com": {},
+  "ecowatch.com": {},
+  "pmc.ncbi.nlm.nih.gov": {},
+  "gisanddata.maps.arcgis.com": {},
+  "jtd.amegroups.com": {},
+  "covid19.healthdata.org": {},
+  "biorxiv.org": {
+    "wikidata_label": "bioRxiv",
+    "wikidata_id": "Q19835482",
+    "wikidata_description": "preprint service"
+  },
+  "sciencemag.org": {
+    "wikidata_label": "Science",
+    "wikidata_id": "Q192864",
+    "wikidata_description": "academic journal of the American Association for the Advancement of Science"
+  },
+  "linkinghub.elsevier.com": {},
+  "horizon.documentation.ird.fr": {},
+  "nejm.org": {
+    "wikidata_label": "The New England Journal of Medicine",
+    "wikidata_id": "Q582728",
+    "wikidata_description": "peer-reviewed medical journal"
+  },
+  "jamanetwork.com": {},
+  "medrxiv.org": {
+    "wikidata_label": "medRxiv",
+    "wikidata_id": "Q58465838",
+    "wikidata_description": "preprint server"
+  },
+  "ehjournal.biomedcentral.com": {},
+  "fdslive.oup.com": {},
+  "chu-rennes.fr": {},
+  "works.bepress.com": {}
 }

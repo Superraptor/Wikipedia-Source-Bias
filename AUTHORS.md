@@ -11,12 +11,12 @@ Listed alphabetically by first name.
 
 **Charles** — Coach to the team, facilitating collaborative work.
 
-**Clair** (Superraptor123) — Health equity researcher by day; Wikidata and
-Commons contributor with 15+ years in the Wikimedia movement, and extensive
+**Clair** (Superraptor123) — Health equity researcher; Wikidata and
+Commons contributor with many years in the Wikimedia movement, and extensive
 Python experience. Original author of the `wikipedia_sources_bias` analysis
 package and maintainer of the repository.
 
-**Gaëlle** — Computer science student at 42 School, with a background in pure
+**Gaëlle** — Computer science student, with a background in pure
 mathematics. New to Wikipedia.
 
 **Johanna** — Former biochemist and historian of science, now a junior
@@ -26,17 +26,17 @@ developer at 42 School. New to Wikipedia.
 
 **Paul-Antoine** — Mentor to the team.
 
-**Selim** — Data science, AI and computer science, 21. Experienced Wikipedia
+**Selim** — Data science, AI and computer science. Experienced Wikipedia
 editor on both the technical and editorial sides.
 
 **Thomas** — Computer science student; came to the project without prior
 familiarity with Wikipedia.
 
-**Vincent** — Software developer, 43. Administrator on fr.wikipedia.org for 15
+**Vincent** — Software developer. Administrator on fr.wikipedia.org for 15
 years, former sysadmin and president of Vikidia, with deep experience in
 MediaWiki installation and configuration. Photographer on Wikimedia Commons.
 
-**William** — Computer science engineer, 29. Newcomer to Wikipedia.
+**William** — Computer science engineer. Newcomer to Wikipedia.
 
 ## Project
 
