@@ -2184,5 +2184,31 @@
   "dauphin-ota": {},
   "idu": {},
   "gisti": {},
-  "latimes": {}
+  "latimes": {},
+  "gettyimages": {},
+  "lepolitique": {},
+  "iran-resist": {},
+  "klibres": {},
+  "chezrevel": {},
+  "jstor": {
+    "mbfc_url": "https://mediabiasfactcheck.com/jstor/",
+    "bias_rating": "PRO-SCIENCE (0.0)",
+    "factual_reporting": "VERY HIGH (0.0)",
+    "credibility_rating": "HIGH CREDIBILITY",
+    "country": "USA",
+    "country_freedom_rating": "MOSTLY FREE",
+    "media_type": "Organization/Foundation",
+    "traffic_popularity": "High Traffic"
+  },
+  "swissinfo": {},
+  "pravda": {
+    "mbfc_url": "https://mediabiasfactcheck.com/pravda/",
+    "bias_rating": "RIGHT (6.0)",
+    "factual_reporting": "VERY LOW (9.8)",
+    "credibility_rating": "LOW CREDIBILITY",
+    "country": "Russia",
+    "country_freedom_rating": "TOTAL OPPRESSION",
+    "media_type": "Website",
+    "traffic_popularity": "Minimal Traffic"
+  }
 }

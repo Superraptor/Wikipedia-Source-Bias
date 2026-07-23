@@ -58,5 +58,15 @@
     "gender": "female",
     "probability": 0.98,
     "count": 74501
+  },
+  "zineb": {
+    "gender": "female",
+    "probability": 0.96,
+    "count": 66652
+  },
+  "delporte": {
+    "gender": "male",
+    "probability": 0.53,
+    "count": 108
   }
 }
