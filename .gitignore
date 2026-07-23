@@ -28,3 +28,5 @@ wikidata_author_cache.json
 nametrace_cache.json
 crossref_cache.json
 page_cache.json
+__pycache__/
+*.pyc

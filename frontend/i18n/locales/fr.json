@@ -469,5 +469,11 @@
     "methodUnknown": "version inconnue",
     "howItWorks": "Comment ces chiffres sont calculés",
     "dispute": "Contester ce résultat"
+  },
+  "imbalance": {
+    "coverageHeadline": "{pct} % des sources n'ont pas de pays déterminé.",
+    "coverageWhy": "L'équilibre géographique ci-dessous ne porte que sur les sources localisables : interprétez-le avec prudence.",
+    "languageHeadline": "{pct} % des sources sont en {lang}, alors que l'article est dans une autre langue.",
+    "languageWhy": "Un article s'appuyant surtout sur des sources d'une autre langue ({lang}) peut refléter une dépendance à un point de vue extérieur, ou simplement l'absence de sources dans la langue de l'article."
   }
 }

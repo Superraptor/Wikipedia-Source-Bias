@@ -469,5 +469,11 @@
     "methodUnknown": "unknown version",
     "howItWorks": "How these figures are computed",
     "dispute": "Dispute this result"
+  },
+  "imbalance": {
+    "coverageHeadline": "{pct}% of sources have no determined country.",
+    "coverageWhy": "The geographic balance below covers only placeable sources, so read it with caution.",
+    "languageHeadline": "{pct}% of sources are in {lang}, while the article is in another language.",
+    "languageWhy": "An article leaning mostly on sources in another language ({lang}) may reflect dependence on an outside viewpoint, or simply a lack of sources in the article's own language."
   }
 }

@@ -53,12 +53,18 @@ ALLOWED_TYPES = {
 }
 
 
-def _sparql(query: str, timeout=90, attempts=3):
-    """Run a SPARQL query, retrying timeouts.
+def _sparql(query: str, timeout=90, attempts=4):
+    """Run a SPARQL query, retrying transient failures with backoff.
 
-    The public endpoint intermittently times out on the P856 substring scan;
-    a transient failure there would otherwise silently drop a high-citation
-    domain from the run, which is a worse outcome than waiting.
+    The public endpoint (WDQS) throttles bursts: after a run of quick queries
+    it starts refusing connections outright, which surfaces as a
+    `requests.ConnectionError` ("Max retries exceeded"), not a timeout. An
+    earlier version caught only timeouts, so a throttle dropped every
+    remaining high-citation domain to an "error" with no backoff at all.
+
+    Catching the whole `RequestException` family and backing off well past
+    WDQS's cooldown lets the run ride out a throttle instead of abandoning
+    half the corpus.
     """
     last = None
     for attempt in range(attempts):
@@ -76,10 +82,11 @@ def _sparql(query: str, timeout=90, attempts=3):
             ratelimit.note_response(SPARQL_ENDPOINT, response)
             response.raise_for_status()
             return response.json()["results"]["bindings"]
-        except (requests.Timeout, requests.HTTPError, ValueError) as exc:
+        except (requests.RequestException, ValueError) as exc:
             last = exc
             if attempt + 1 < attempts:
-                time.sleep(2 ** attempt * 5)
+                # 10s, 20s, 40s -- comfortably longer than a WDQS cooldown.
+                time.sleep(10 * 2 ** attempt)
     raise last
 
 

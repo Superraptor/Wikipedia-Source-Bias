@@ -1,0 +1,6 @@
+domain,citations,qid,label,types,slug,profile_url,stated_source,verified_by
+lepoint.fr,54,Q115553783,lePoint.fr,Q22137024; online newspaper; Q5276122,le-point-bias-and-credibility,https://mediabiasfactcheck.com/le-point-bias-and-credibility/,https://www.lepoint.fr/,Source: https://www.lepoint.fr/ == lepoint.fr
+marianne.net,46,Q3291285,Marianne,newspaper; Q2305295,marianne-bias,https://mediabiasfactcheck.com/marianne-bias/,https://www.marianne.net/,Source: https://www.marianne.net/ == marianne.net
+20minutes.fr,30,Q7245532,20 minutes,daily newspaper,20-minutes-bias-and-credibility,https://mediabiasfactcheck.com/20-minutes-bias-and-credibility/,https://www.20minutes.fr/,Source: https://www.20minutes.fr/ == 20minutes.fr
+rtl.fr,16,Q1351173,RTL,radio station; online newspaper,rtl-bias-and-credibility,https://mediabiasfactcheck.com/rtl-bias-and-credibility/,https://www.rtl.fr/,Source: https://www.rtl.fr/ == rtl.fr
+capital.fr,16,Q2937369,Capital,periodical,capital-magazine-bias,https://mediabiasfactcheck.com/capital-magazine-bias/,https://www.capital.fr/,Source: https://www.capital.fr/ == capital.fr

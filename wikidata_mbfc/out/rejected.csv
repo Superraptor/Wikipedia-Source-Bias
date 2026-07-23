@@ -1,0 +1,36 @@
+domain,citations,outcome,detail
+lemonde.fr,434,already-present,Q12461 (Le Monde) has P9852 = le-monde-bias
+lefigaro.fr,246,already-present,Q216047 (Le Figaro) has P9852 = le-figaro-bias
+francetvinfo.fr,161,ambiguous-item,"ambiguous: 10 candidate items -- Q105561458 (Nous, les Européens), Q105560678 (La Faute à l'Europe ?), Q105605556 (Vrai ou fake), Q105607627 (:l’éco), Q105606888 (Votre instant politique)"
+liberation.fr,138,already-present,Q13717 (Libération) has P9852 = liberation-paris-bias
+bfmtv.com,114,ambiguous-item,"ambiguous: 2 candidate items -- Q517444 (), Q130389659 (BFM2)"
+lesechos.fr,92,ambiguous-item,"ambiguous: 3 candidate items -- Q3054398 (Enjeux-Les Échos), Q3117475 (Groupe Les Echos), Q923193 (Les Échos)"
+lexpress.fr,81,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/lexpress-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/lexpress-bias/; HTTP 404 for https://mediabiasfactcheck.com/lexpress/
+leparisien.fr,67,already-present,Q142348 (Le Parisien) has P9852 = le-parisien-bias
+huffingtonpost.fr,59,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/huffingtonpost-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/huffingtonpost-bias/; HTTP 404 for https://mediabiasfactcheck.com/huffingtonpost/
+lejdd.fr,59,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/lejdd-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/lejdd-bias/; HTTP 404 for https://mediabiasfactcheck.com/lejdd/
+nouvelobs.com,47,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/nouvelobs-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/nouvelobs-bias/; HTTP 404 for https://mediabiasfactcheck.com/nouvelobs/
+europe1.fr,44,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/europe1-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/europe1-bias/; HTTP 404 for https://mediabiasfactcheck.com/europe1/
+mediapart.fr,43,already-present,Q619342 (Mediapart) has P9852 = mediapart-bias-credibility
+tempsreel.nouvelobs.com,35,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/nouvelobs-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/nouvelobs-bias/; HTTP 429 for https://mediabiasfactcheck.com/nouvelobs/
+publicsenat.fr,34,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/publicsenat-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/publicsenat-bias/; HTTP 404 for https://mediabiasfactcheck.com/publicsenat/
+legifrance.gouv.fr,31,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/legifrance-gouv-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/legifrance-gouv-bias/; HTTP 404 for https://mediabiasfactcheck.com/legifrance-gouv/
+la-croix.com,30,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/la-croix-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/la-croix-bias/; HTTP 404 for https://mediabiasfactcheck.com/la-croix/
+lci.fr,28,no-item,no Wikidata item has P856 on this domain
+latribune.fr,27,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/latribune-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/latribune-bias/; HTTP 404 for https://mediabiasfactcheck.com/latribune/
+humanite.fr,27,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/humanite-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/humanite-bias/; HTTP 404 for https://mediabiasfactcheck.com/humanite/
+parismatch.com,25,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/parismatch-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/parismatch-bias/; HTTP 429 for https://mediabiasfactcheck.com/parismatch/
+challenges.fr,25,no-verified-profile,"HTTP 404 for https://mediabiasfactcheck.com/challenges-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/challenges-bias/; https://mediabiasfactcheck.com/challenges-journal-bias/ states Source: https://www.mdpi.com/journal/challenges (mdpi.com), which is not challenges.fr"
+francebleu.fr,24,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/francebleu-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/francebleu-bias/; HTTP 404 for https://mediabiasfactcheck.com/francebleu/
+ouest-france.fr,24,ambiguous-item,"ambiguous: 2 candidate items -- Q660769 (Ouest-France), Q3117551 (SIPA - Ouest-France group)"
+ladepeche.fr,22,already-present,Q742587 (La Dépêche du Midi) has P9852 = la-depeche-du-midi
+france24.com,22,slug-taken,slug 'france24' is already on Q166180; we would have written it to Q30097304
+radiofrance.fr,18,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/radiofrance-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/radiofrance-bias/; HTTP 404 for https://mediabiasfactcheck.com/radiofrance/
+interieur.gouv.fr,18,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/interieur-gouv-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/interieur-gouv-bias/; HTTP 404 for https://mediabiasfactcheck.com/interieur-gouv/
+lopinion.fr,16,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/lopinion-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/lopinion-bias/; HTTP 404 for https://mediabiasfactcheck.com/lopinion/
+elysee.fr,16,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/elysee-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/elysee-bias/; HTTP 404 for https://mediabiasfactcheck.com/elysee/
+slate.fr,13,no-verified-profile,"HTTP 404 for https://mediabiasfactcheck.com/slate-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/slate-bias/; https://mediabiasfactcheck.com/slate/ states Source: https://slate.com (slate.com), which is not slate.fr"
+franceculture.fr,13,ambiguous-item,"ambiguous: 2 candidate items -- Q3203295 (L'Esprit Public), Q27962618 (Cultures monde)"
+gala.fr,12,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/gala-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/gala-bias/; HTTP 404 for https://mediabiasfactcheck.com/gala/
+deces.matchid.io,12,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/matchid-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/matchid-bias/; HTTP 404 for https://mediabiasfactcheck.com/matchid/
+franceinter.fr,12,no-verified-profile,HTTP 404 for https://mediabiasfactcheck.com/franceinter-bias-and-credibility/; HTTP 404 for https://mediabiasfactcheck.com/franceinter-bias/; HTTP 404 for https://mediabiasfactcheck.com/franceinter/

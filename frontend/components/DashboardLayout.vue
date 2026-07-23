@@ -6,6 +6,8 @@
          The count is still visible in the geography chart and each affected
          row still carries its per-source reason. -->
 
+    <ImbalanceNotice :analysis="analysis" />
+
     <div class="dashboard-layout__grid">
       <div class="dashboard-layout__main">
         <RadarChart :axes="radarAxes" />
@@ -33,6 +35,7 @@
 </template>
 
 <script setup>
+import ImbalanceNotice from "~/components/ImbalanceNotice.vue";
 import { computed } from "vue";
 import RadarChart from "~/components/RadarChart.vue";
 import KpiCards from "~/components/KpiCards.vue";
