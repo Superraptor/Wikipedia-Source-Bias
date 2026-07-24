@@ -1,0 +1,4723 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Joe_Biden",
+  "page_url": "https://fr.wikipedia.org/wiki/Joe_Biden",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffingtonpost.fr/entry/les-conseils-de-joe-biden-pour-depasser-son-begaiement-handicap-dont-on-se-moque-encore_fr_5e3bcc43c5b6bb0ffc0b42d7",
+        "domain": "huffingtonpost.fr",
+        "publisher_name": "Huffington Post France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.gala.fr/stars_et_gotha/joe_biden",
+        "domain": "gala.fr",
+        "publisher_name": "Gala",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20130601102455/http://pqasb.pqarchiver.com/delawareonline/access/1743377101.html?FMT=ABS",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20090601072408/http://insideedition.com/storyprint.aspx?SpecialReportID=2048",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cbsnews.com/news/driver-in-biden-crash-wanted-name-cleared/",
+        "domain": "cbsnews.com",
+        "publisher_name": "Q861764",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cbsnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.marieclaire.fr/joe-biden-famille-femme-enfants,1361902.asp",
+        "domain": "marieclaire.fr",
+        "publisher_name": "marieclaire.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1423-3967",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.letemps.ch/monde/tragique-destin-famille-joe-biden",
+        "domain": "letemps.ch",
+        "publisher_name": "Q673324",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "http://www.foxnews.com/politics/2014/06/08/ukrainian-energy-firm-hires-biden-son-as-lawyer/",
+        "domain": "foxnews.com",
+        "publisher_name": "Fox News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2015/12/09/world/europe/corruption-ukraine-joe-biden-son-hunter-biden-ties.html?_r=0",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/elections-americaines-2008/2008/08/25/01017-20080825ARTFIG00241-joe-biden-l-antidote-d-obama-a-mccain-.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://online.wsj.com/article/SB121962207012167649.html?mod=googlenews_wsj",
+        "domain": "online.wsj.com",
+        "publisher_name": "online.wsj.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/wp-dyn/content/article/2009/10/07/AR2009100703043.html",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.europe1.fr/Entre-nous/blogs-redaction/Le-blog-USA-2008/Sauf-coup-de-theatre-Biden-donc",
+        "domain": "europe1.fr",
+        "publisher_name": "Q3060725",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/blog/filiu/2020/11/22/retour-sur-quinze-annees-derreurs-de-biden-en-irak/",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/planete/2008/08/23/joe-biden-un-veteran-de-la-scene-politique-americaine_16847",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/elections-americaines/article/2008/08/23/le-senateur-du-delaware-joseph-biden-designe-comme-colistier-par-barack-obama_1086983_829254.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/elections-americaines/article/2008/08/25/les-atouts-de-joe-biden-catholique-col-bleu-et-vieux-routier-du-senat_1087427_829254.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lepoint.fr/presidentielle-americaine/regardez-joe-biden-obama-sera-mis-a-l-epreuve-dans-six-mois/1781/0/284646",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lejdd.fr/International/USA/Actualite/Joe-Biden-se-sent-il-pousser-des-ailes-589355",
+        "domain": "lejdd.fr",
+        "publisher_name": "Le Journal du Dimanche",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/planete/2015/08/02/joe-biden-2016-l-ombre-de-son-fils_1357680",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0362-4331",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2009/03/29/us/politics/29biden.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.npr.org/sections/itsallpolitics/2015/03/19/393658619/a-first-for-joe-biden-could-break-tie-for-attorney-general",
+        "domain": "npr.org",
+        "publisher_name": "NPR",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/npr/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (0.9)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/wp-dyn/content/article/2009/10/07/AR2009100704088.html",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.whitehouse.gov/blog/2010/05/05/advancing-europes-security",
+        "domain": "whitehouse.gov",
+        "publisher_name": "Homeland Security Advisor",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/whitehouse/",
+          "bias_rating": "RIGHT (7.9)",
+          "factual_reporting": "MIXED (6.3)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Government",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.dailymail.co.uk/sciencetech/article-2168752/Megauploads-Kim-DotCom-says-Joe-Biden-personally-ordered-illegal-shutdown-sharing-site.html",
+        "domain": "dailymail.co.uk",
+        "publisher_name": "MailOnline",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/us-news/2014/oct/05/uae-clarification-joe-biden-remarks-extremists",
+        "domain": "theguardian.com",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/etats-unis/201410/07/01-4807306-gaffe-diplomatique-biden-sexcuse-aupres-de-larabie-saoudite.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/2015/10/21/01003-20151021ARTFIG00436-joe-biden-renonce-a-la-course-a-la-maison-blanche.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnn.com/2016/02/25/politics/joe-biden-mexico-campaign-rhetoric-donald-trump/index.html",
+        "domain": "cnn.com",
+        "publisher_name": "CNN.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "Mostly Factual",
+          "credibility_rating": "Medium Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/cnn/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1072-7825",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.theatlantic.com/international/archive/2020/10/joe-biden-foreign-policy-latin-america/616841/",
+        "domain": "theatlantic.com",
+        "publisher_name": "Q133802523",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://lemonde.fr/international/article/2017/01/18/joe-biden-qualifie-la-russie-de-principale-menace-pour-l-ordre-liberal-international_5064847_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesoir.be/227733/article/2019-05-30/etats-unis-joe-biden-trop-centriste-pour-son-epoque",
+        "domain": "lesoir.be",
+        "publisher_name": "Le Soir",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/commentisfree/2019/apr/25/joe-biden-2020-democrats-choice",
+        "domain": "theguardian.com",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/politics/bidens-tough-talk-on-1970s-school-desegregation-plan-could-get-new-scrutiny-in-todays-democratic-party/2019/03/07/9115583e-3eb2-11e9-a0d3-1210e58a94cf_story.html",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://lvsl.fr/lambiguite-de-joe-biden-envers-les-afro-americains/",
+        "domain": "lvsl.fr",
+        "publisher_name": "Le vent se lève",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2008/09/08/us/politics/08campaign.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/etats-unis-joe-biden-soutient-le-mariage-homosexuel-06-05-2012-1458670_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2020/06/27/us/politics/biden-guantanamo-prison.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2019/04/25/us/politics/joe-biden-2020.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2019/04/26/aux-etats-unis-joe-biden-se-pose-en-recours-face-a-donald-trump_5455233_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lejdd.fr/International/etats-unis-pourquoi-la-campagne-de-joe-biden-se-complique-serieusement-3907885",
+        "domain": "lejdd.fr",
+        "publisher_name": "Le Journal du Dimanche",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/2486463-20190401-etats-unis-joe-biden-accuse-baiser-deplace-favori-primaires-democrates-defend",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/etats-unis/201903/06/01-5217257-presidentielle-2020-joe-biden-se-fait-attendre.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/joe-biden-trop-vieux-et-trop-blanc-pour-la-jeune-garde-democrate-03-07-2019-2322324_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/actualite/monde/amerique-nord/presidentielle-americaine-joe-biden-est-le-plus-riche-des-principaux-candidats-democrates_2088955.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/pour-joe-biden-donald-trump-est-le-president-le-plus-corrompu-16-10-2019-2341552_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesoir.be/265125/article/2019-12-05/affaire-ukrainienne-joe-biden-semporte-lors-dun-meeting-politique-video",
+        "domain": "lesoir.be",
+        "publisher_name": "Le Soir",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnews.fr/monde/2019-12-06/etats-unis-joe-biden-t-il-traite-un-electeur-de-gros-906116",
+        "domain": "cnews.fr",
+        "publisher_name": "Q137519305",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.latimes.com/politics/story/2020-01-06/joe-biden-primary-democrats-endorsements",
+        "domain": "latimes.com",
+        "publisher_name": "Los Angeles Times",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://lecourrier.ch/2020/01/02/jeunes-voix-inspirantes/",
+        "domain": "lecourrier.ch",
+        "publisher_name": "Q365266",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/info/monde/detail_etats-unis-joe-biden-en-difficulte-dans-les-primaires-democrates?id=10425974",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://parismatch.be/actualites/politique/367392/sans-vainqueur-le-caucus-dans-liowa-laisse-percevoir-un-perdant-clair",
+        "domain": "parismatch.be",
+        "publisher_name": "parismatch.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.levif.be/actualite/international/joe-biden-l-heure-du-quitte-ou-double/article-news-1257485.html",
+        "domain": "levif.be",
+        "publisher_name": "Le Vif/L’Express",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://abcnews.go.com/Politics/vp-joe-biden-secures-endorsement-influential-south-carolina/story?id=69230754",
+        "domain": "abcnews.go.com",
+        "publisher_name": "ABC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/abcnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesoir.be/284186/article/2020-03-03/primaire-democrate-lex-candidat-pete-buttigieg-se-rallie-joe-biden",
+        "domain": "lesoir.be",
+        "publisher_name": "Le Soir",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/info/monde/detail_presidentielle-americaine-amy-klobuchar-se-retire-de-la-course-et-apporte-son-soutien-a-biden?id=10446057",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2020/03/02/beto-orourke-to-endorse-biden-119100",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lopinion.fr/edition/international/usa-2020il-s-est-cree-grande-coalition-autour-joe-biden-213457",
+        "domain": "lopinion.fr",
+        "publisher_name": "L'Opinion",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cbsnews.com/video/michael-bloomberg-ends-presidential-campaign-endorses-joe-biden/",
+        "domain": "cbsnews.com",
+        "publisher_name": "Q861764",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cbsnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.lecho.be/economie-politique/international/usa/joe-biden-prend-une-avance-determinante/10213707.html",
+        "domain": "lecho.be",
+        "publisher_name": "L'Écho",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/etats-unis/202003/29/01-5266975-une-fin-abrupte-des-primaires-democrates-en-raison-de-la-covid-19.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/04/08/etats-unis-bernie-sanders-annonce-l-arret-de-sa-campagne-pour-l-investiture-democrate_6036020_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2020/04/13/sanders-endorses-biden-183961",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/info/dossier/epidemie-de-coronavirus/detail_du-jamais-vu-le-new-england-journal-of-medecine-prend-position-contre-donald-trump?id=10606846",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nbcnews.com/politics/donald-trump/north-carolina-biden-slams-trump-covid-lie-warns-things-are-n1243849",
+        "domain": "nbcnews.com",
+        "publisher_name": "NBC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/etats-unis-joe-biden-n-exclut-pas-de-choisir-un-colistier-republicain-20191231",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2020/03/16/biden-debate-female-veep-131610",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2020/08/11/joe-biden-vp-pick-kamala-harris-393768",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesoir.be/294457/article/2020-04-14/barack-obama-annonce-son-soutien-joe-biden",
+        "domain": "lesoir.be",
+        "publisher_name": "Le Soir",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtl.be/info/monde/international/presidentielle-2020-aux-etats-unis-hillary-clinton-annonce-son-soutien-a-joe-biden-dans-la-course-a-la-maison-blanche-1214911.aspx",
+        "domain": "rtl.be",
+        "publisher_name": "rtl.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+          "bias_rating": "LEAST BIASED (1.1)",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/etats-unis/presidentielle-americaine-les-dix-points-cles-du-programme-de-joe-biden-1261125",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/etats-unis-biden-grimpe-dans-les-sondages-20200626",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/08/28/presidentielle-americaine-joe-biden-va-faire-campagne-en-personne-dans-les-etats-cles_6050147_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.latribunerepublicaine.fr/17033/article/2020-11-07/les-medias-americains-annoncent-la-victoire-de-joe-biden",
+        "domain": "latribunerepublicaine.fr",
+        "publisher_name": "La Tribune Républicaine",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnn.com/politics/live-news/trump-biden-election-results-11-07-20/index.html",
+        "domain": "cnn.com",
+        "publisher_name": "CNN.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "Mostly Factual",
+          "credibility_rating": "Medium Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/cnn/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://apnews.com/article/Biden-Trump-US-election-2020-results-fd58df73aa677acb74fce2a69adb71f9",
+        "domain": "apnews.com",
+        "publisher_name": "APNews.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/live/2020/11/07/us/biden-trump?action=click&module=ELEX_results&pgtype=Interactive&region=ReporterUpdates#joe-biden-is-elected-the-46th-president-of-the-united-states",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/info/monde/detail_etats-unis-jamais-avant-trump-un-president-sortant-n-avait-recolte-autant-de-voix?id=10630353",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/elections-americaines/presidentielle-americaine-emmanuel-macron-felicite-joe-biden-20201107%7CPrésidentielle",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.independent.co.uk/news/uk/politics/boris-johnson-response-joe-biden-uk-us-president-b1677201.html%7CBoris",
+        "domain": "independent.co.uk",
+        "publisher_name": "Independent on Sunday",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/independent/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1018-3736",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.lematin.ch/story/simonetta-sommaruga-salue-un-signal-fort-503808443353",
+        "domain": "lematin.ch",
+        "publisher_name": "Q692822",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/11/10/elections-americaines-quel-calendrier-jusqu-a-l-investiture-de-joe-biden-le-20-janvier-2021_6059272_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://abcnews.go.com/Elections/2020-us-presidential-election-results-live-map/",
+        "domain": "abcnews.go.com",
+        "publisher_name": "ABC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/abcnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2020/12/08/us/supreme-court-republican-challenge-pennsylvania-vote.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/interactive/2020/11/20/us/politics/2020-election-certification-tracker.html?action=click&pgtype=Article&state=default&module=styln-elections-2020&region=TOP_BANNER&context=storyline_menu_recirc",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2020/12/15/etats-unis-le-chef-de-file-des-republicains-au-senat-reconnait-enfin-la-victoire-de-biden-a-la-presidentielle_6063489_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/au-tour-de-jair-bolsonaro-de-feliciter-joe-biden-15-12-2020-2406101_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/climate-environment/2020/12/17/biden-epa-regan/",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0190-8286",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/usa/joe-biden/etats-unis-lecongres-valide-l-election-de-joebiden_4248111.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/03/10/etats-unis-le-congres-adopte-le-plan-de-relance-de-1-900-milliards-de-dollars-voulu-par-joe-biden_6072641_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.mediapart.fr/journal/economie/160421/joe-biden-promet-d-en-finir-avec-la-doctrine-reagan",
+        "domain": "mediapart.fr",
+        "publisher_name": "Mediapart",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/mediapart/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.mediapart.fr/journal/economie/160421/la-politique-economique-de-biden-une-rupture-incomplete",
+        "domain": "mediapart.fr",
+        "publisher_name": "Mediapart",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/mediapart/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.mediapart.fr/journal/international/210521/l-inquietant-recul-de-joe-biden-sur-la-fiscalite-internationale",
+        "domain": "mediapart.fr",
+        "publisher_name": "Mediapart",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/mediapart/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2022/08/16/etats-unis-joe-biden-promulgue-son-vaste-plan-sur-le-climat-et-la-sante_6138203_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/coronavirus-biden-relance-la-piste-du-labo-chinois-20210527",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/le-jeudi-noir-de-joe-biden-14-01-2022-2460437_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffingtonpost.fr/entry/joe-biden-confronte-a-sa-premiere-crise-politique-sur-limmigration_fr_608679cde4b09cce6c138791",
+        "domain": "huffingtonpost.fr",
+        "publisher_name": "Huffington Post France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ouest-france.fr/monde/etats-unis/etats-unis-ne-venez-pas-kamala-harris-appelle-les-migrants-illegaux-a-renoncer-7292054",
+        "domain": "ouest-france.fr",
+        "publisher_name": "SIPA - Ouest-France group",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.tf1info.fr/international/etats-unis-mexique-l-administration-biden-renforce-le-mur-de-trump-a-la-frontiere-mexicaine-2234449.html",
+        "domain": "tf1info.fr",
+        "publisher_name": "TF1 info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/usa/frontiere-avec-le-mexique-joe-biden-annonce-reprendre-la-construction-du-mur-de-donald-trump_6104601.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.sudouest.fr/international/etats-unis/education-aux-etats-unis-biden-enterre-son-projet-de-deux-annees-d-universite-gratuite-8358128.php",
+        "domain": "sudouest.fr",
+        "publisher_name": "Sud-Ouest",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/4043790-20230701-etats-unis-apres-censure-cour-supreme-joe-biden-annonce-nouvelles-mesures-alleger-dette-etudiante",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/enjeux-internationaux/sommet-sur-le-climat-joe-biden-remobilise-les-energies-1309260",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/04/23/joe-biden-reussit-a-replacer-les-etats-unis-au-c-ur-de-la-diplomatie-climatique_6077717_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cairn.info/revue-politique-americaine-2021-1.htm",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/economie/article/2024/01/27/joe-biden-impose-un-moratoire-sur-les-nouvelles-exportations-de-gaz-naturel-liquefie_6213344_3234.html?lmd_medium=al&lmd_campaign=envoye-par-appli&lmd_creation=android&lmd_source=default",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/04/08/face-aux-tueries-de-masse-joe-biden-s-attaque-au-marche-des-armes-a-feu_6076080_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rfi.fr/fr/amériques/20211002-états-unis-face-aux-divisions-démocrates-joe-biden-va-à-la-rencontre-du-congrès",
+        "domain": "rfi.fr",
+        "publisher_name": "RFI",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rfi/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffingtonpost.fr/entry/avortement-aux-etats-unis-biden-regrette-une-erreur-tragique-trump-salue-la-volonte-de-dieu_fr_62b5ec67e4b0cdccbe6b1b47",
+        "domain": "huffingtonpost.fr",
+        "publisher_name": "Huffington Post France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/midterms-les-trois-derniers-presidents-battent-le-rappel-en-pennsylvanie-20221106",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/midterms-joe-biden-tente-d-enrayer-une-defaite-annoncee-20221017",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/world/us/another-midterm-worry-biden-white-house-probes-impeachment-attempts-2022-01-17/",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/pour-joe-biden-poutine-est-un-tueur-et-en-paiera-le-prix-17-03-2021-2418255_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/amerique/a-geneve-biden-et-poutine-a-lheure-de-la-paix-froide-20210615_QYEVLIDCJRDXRDNB5J5OZ3FXP4/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/08/13/les-liaisons-contrariees-de-biden-avec-l-ukraine_6091337_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/a-bruxelles-la-coolitude-de-trudeau-et-le-fantomatique-biden-16-06-2021-2431269_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/idees/article/2021/06/16/biden-a-joue-la-carte-merkel-ce-nouveau-depart-de-la-relation-transatlantique-se-fait-sur-un-axe-germano-americain_6084337_3232.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/09/18/sous-marins-australiens-jean-yves-le-drian-denonce-une-rupture-majeure-de-confiance-avec-les-etats-unis-et-l-australie_6095174_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/joe-biden-torpille-le-contrat-du-siecle-les-lecons-d-un-trafalgar-indopacifique-20210916",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/economie/emploi/metiers/armee-et-securite/rappel-des-ambassadeurs-francais-en-australie-et-aux-etats-unis-c-est-une-facon-d-exprimer-son-mecontentement-selon-le-chercheur-bertrand-badie_4775703.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/guerre-en-ukraine-les-etats-unis-decident-finalement-denvoyer-des-armes-offensives-a-kyiv-20220414_FDFEZT4D6RBEHEMTDJ5GUDMLE4/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lopinion.fr/edition/international/coree-nord-joe-biden-pret-a-rencontrer-kim-jong-conditions-245010",
+        "domain": "lopinion.fr",
+        "publisher_name": "L'Opinion",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/info/monde/detail_israel-joe-biden-affirme-qu-il-maintiendra-l-ambassade-des-etats-unis-a-jerusalem-s-il-est-elu?id=10492496",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/3326191-20220716-arabie-saoudite-critique-fiancee-khashoggi-biden-met-garde-riyad-contre-repression",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0242-6056",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0,
+          39.0
+        ]
+      },
+      "properties": {
+        "url": "https://www.aa.com.tr/fr/monde/cnn-biden-na-pas-vu-de-rapports-confirm%C3%A9s-de-terroristes-d%C3%A9capitant-des-enfants-en-isra%C3%ABl/3016766",
+        "domain": "aa.com.tr",
+        "publisher_name": "aa.com.tr",
+        "country": "Turkey",
+        "region": "Middle East",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/aa/",
+          "bias_rating": "RIGHT-CENTER (3.6)",
+          "factual_reporting": "MIXED (5.0)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "India",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "TV Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.tdg.ch/guerre-a-gaza-le-soutien-sans-faille-de-biden-a-israel-divise-les-democrates-123513389738",
+        "domain": "tdg.ch",
+        "publisher_name": "Tribune de Genève",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/moyen-orient/en-afghanistan-biden-ne-regrette-pas-le-depart-de-ses-troupes-malgre-lavancee-des-talibans-20210811_JVIBWWXDYZATDD2QODFNYH4PJY/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/moyen-orient/2021-08-13/afghanistan/joe-biden-critique-de-toutes-parts.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2021/08/31/apres-vingt-ans-de-presence-militaire-et-cinq-mois-d-errance-de-l-administration-biden-les-derniers-soldats-americains-ont-quitte-kaboul_6092842_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/amerique/etats-unis-joe-biden-dans-le-petrin-afghan-20210830_MD73E3LHLVF6JORMKLLEPF3GJI/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://plus.lesoir.be/392058/article/2021-08-30/joe-biden-le-nouveau-jimmy-carter",
+        "domain": "plus.lesoir.be",
+        "publisher_name": "plus.lesoir.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/plus/",
+          "bias_rating": "LEAST BIASED (0.1)",
+          "factual_reporting": "HIGH (1.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "United Kingdom",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/usa/joe-biden/etats-unis-on-vous-explique-pourquoi-joe-biden-est-vise-par-une-enquete-de-destitution-a-l-initiative-de-ses-adversaires-politiques_6242337.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffpost.com/entry/alexander-smirnov-joe-biden-bribe_n_65ce83d9e4b043f1c0aa7d26",
+        "domain": "huffpost.com",
+        "publisher_name": "HuffPost",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://edition.cnn.com/2024/02/20/politics/biden-former-fbi-informant-russian-intelligence/index.html",
+        "domain": "edition.cnn.com",
+        "publisher_name": "CNN Today",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/national-security/2024/02/20/hunter-biden-smirnov-lying-indictment-lowell/",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/etats-unis-joe-biden-envisage-sa-candidature-en-2024--26-03-2021-2419479_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/l-age-de-joe-biden-devient-un-sujet-de-debat-politique-20220715",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.sudouest.fr/international/etats-unis-sans-trump-je-ne-suis-pas-sur-que-je-me-presenterais-en-2024-declare-biden-17720202.php",
+        "domain": "sudouest.fr",
+        "publisher_name": "Sud-Ouest",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.slate.fr/story/237236/presidentielle-2024-democrates-etats-unis-joe-biden-mais-age-deuxieme-mandat",
+        "domain": "slate.fr",
+        "publisher_name": "slate.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/slate/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (2.7)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.theatlantic.com/politics/archive/2022/06/biden-run-for-reelection-2024/661297/",
+        "domain": "theatlantic.com",
+        "publisher_name": "Q133802523",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtbf.be/article/loeil-sur-le-monde-je-vais-au-lit-lage-et-la-sante-de-joe-biden-inquietent-de-nombreux-americains-11258313",
+        "domain": "rtbf.be",
+        "publisher_name": "Q131894134",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2024/02/04/presidentielle-americaine-2024-joe-biden-remporte-aisement-la-primaire-democrate-de-caroline-du-sud_6214634_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/etats-unis/presidentielle-americaine-2024-donald-trump-et-joe-biden-remportent-aisement-le-super-tuesday-2080721",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.huffingtonpost.fr/international/article/presidentielle-americaine-joe-biden-assure-d-etre-le-candidat-democrate_231148.html",
+        "domain": "huffingtonpost.fr",
+        "publisher_name": "Huffington Post France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/elections-americaines/2024-04-23/joe-biden-en-floride-pour-attaquer-donald-trump-sur-l-avortement.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cbsnews.com/news/what-happens-biden-steps-down-2024/",
+        "domain": "cbsnews.com",
+        "publisher_name": "Q861764",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cbsnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2024/06/28/presidentielle-americaine-joe-biden-assure-qu-il-peut-faire-ce-boulot_6245126_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2024/06/28/nyt-editorial-board-biden-debate-00165908",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/elections-americaines/je-ne-me-sentais-vraiment-pas-bien-se-justifie-biden-apres-son-debat-rate-face-a-trump-20240706",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nbcnews.com/politics/2024-election/biden-world-braces-possibility-president-steps-rcna162494",
+        "domain": "nbcnews.com",
+        "publisher_name": "NBC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://edition.cnn.com/politics/live-news/biden-trump-rnc-07-19-24/index.html",
+        "domain": "edition.cnn.com",
+        "publisher_name": "CNN Today",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://ici.radio-canada.ca/nouvelle/2089281/barack-obama-nancy-pelosi-joe-biden-retrait",
+        "domain": "ici.radio-canada.ca",
+        "publisher_name": "Feux",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/ici/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Canada",
+          "country_freedom_rating": "EXCELLENT",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/usa/joe-biden/joe-biden-annonce-renoncer-a-se-presenter-a-l-election-presidentielle-americaine-de-2024_6679023.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/interactive/2024/07/24/us/politics/harris-biden-republican-reactions.html",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2024/07/25/en-renoncant-a-la-course-a-la-maison-blanche-joe-biden-declare-vouloir-sauver-la-democratie-et-laisser-la-place-a-des-voix-plus-jeunes_6257680_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/usa/etats-unis-joe-biden-passe-le-relais-a-kamala-harris-pendant-la-convention-democrate_6734472.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/amerique/ce-choix-ne-pouvait-reposer-sur-lego-dun-individu-kamala-harris-se-paie-joe-biden-et-sa-quete-dun-second-mandat-presidentiel-20250910_BYW46U6G2NCMHABCCROPXN2WPI/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/biden-gracie-son-fils-dans-des-affaires-de-fraude-fiscale-et-de-detention-d-arme-20241202",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/joe-biden-gracie-preventivement-cinq-membres-de-sa-famille-et-un-homme-reconnu-coupable-du-meurtre-d-agents-du-fbi-20250120",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radioclassique.fr/magazine/articles/joe-biden-77-ans-repond-aux-rumeurs-sur-son-etat-de-sante/",
+        "domain": "radioclassique.fr",
+        "publisher_name": "Radio Classique",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://edition.cnn.com/2020/08/05/politics/joe-biden-2020-cognitive-test/index.html",
+        "domain": "edition.cnn.com",
+        "publisher_name": "CNN Today",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/etats-unis-joe-biden-trebuche-trois-fois-en-montant-dans-air-force-one-19-03-2021-2418608_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.7751,
+          -25.2744
+        ]
+      },
+      "properties": {
+        "url": "https://www.smh.com.au/world/north-america/biden-sparks-confusion-with-potentially-dangerous-taiwan-gaffe-20211023-p592hc.html",
+        "domain": "smh.com.au",
+        "publisher_name": "The Sydney Morning Herald",
+        "country": "Australia",
+        "region": "Oceania",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/checknews/joe-biden-a-t-il-confondu-la-libye-et-la-syrie-a-plusieurs-reprises-lors-du-g7-comme-laffirment-des-medias-pro-trump-20210621_JWH3M7LD3FCO7NVJFP7WLQSSLA/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/joe-biden-la-campagne-de-trop-20231007",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/joe-biden-va-subir-une-coloscopie-et-transferer-temporairement-ses-pouvoirs-a-kamala-harris-20211119",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nbcnews.com/politics/white-house/biden-undergo-routine-physical-walter-reed-n1284190",
+        "domain": "nbcnews.com",
+        "publisher_name": "NBC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.sudouest.fr/international/etats-unis/etats-unis-joe-biden-fete-ses-79-ans-sa-succession-deja-au-coeur-des-speculations-7016851.php",
+        "domain": "sudouest.fr",
+        "publisher_name": "Sud-Ouest",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtl.fr/actu/international/joe-biden-est-il-senile-7900200239",
+        "domain": "rtl.fr",
+        "publisher_name": "RTL",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+          "bias_rating": "LEAST BIASED (1.1)",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.santemagazine.fr/actualites/actualites-sante/joe-biden-serait-il-senile-des-images-sement-le-doute-946249",
+        "domain": "santemagazine.fr",
+        "publisher_name": "santemagazine.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.spectator.co.uk/article/the-biden-elephant-in-the-room/",
+        "domain": "spectator.co.uk",
+        "publisher_name": "The Spectator",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/us-news/2023/jun/11/joe-biden-mental-health-pro-trump-campaign",
+        "domain": "theguardian.com",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.standard.co.uk/comment/comment/joe-biden-us-president-mental-health-b1106452.html",
+        "domain": "standard.co.uk",
+        "publisher_name": "Evening Standard",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://ici.radio-canada.ca/nouvelle/2030205/candidats-tiers-americains-trump-biden",
+        "domain": "ici.radio-canada.ca",
+        "publisher_name": "Feux",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/ici/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Canada",
+          "country_freedom_rating": "EXCELLENT",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/monde/amerique/joe-biden-trop-age-le-rapport-qui-a-provoque-la-colere-du-president-N5IHHHN4AFFRNENKSS6GVFMMOA/",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.humanite.fr/monde/donald-trump/etats-unis-mauvaise-memoire-de-joe-biden-peril-pour-son-probable-duel-contre-trump-aux-elections-presidentielles",
+        "domain": "humanite.fr",
+        "publisher_name": "L'Humanité",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/de-la-machine-a-gaffes-aux-soupcons-de-senilite-un-mandat-de-bourdes-et-de-confusions-pour-joe-biden-20240209",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/quand-joe-biden-confond-emmanuel-macron-et-francois-mitterrand-20240206",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/il-a-vole-une-election-au-parti-democrate-ce-que-revele-le-livre-enquete-sur-l-etat-de-sante-de-biden-20250519",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/ce-que-le-monde-a-vu-n-etait-pas-une-anomalie-le-declin-physique-de-joe-biden-ou-l-histoire-d-une-omerta-imposee-par-les-democrates-20250520",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.leparisien.fr/international/etats-unis/joe-biden-suit-une-radiotherapie-pour-son-cancer-de-la-prostate-11-10-2025-XN3HXKQV3BA6LDXT7OBVEGJPPQ.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.letemps.ch/monde/joe-biden-tombe-bas-sondages-popularite",
+        "domain": "letemps.ch",
+        "publisher_name": "Q673324",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/actualite/monde/amerique-nord/joe-biden-an-i-pourquoi-une-telle-impopularite-aupres-des-americains_2164086.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.leparisien.fr/international/joe-biden-lhomme-qui-a-decu-lamerique-en-un-an-seulement-12-12-2021-HELAS56YMVECXIP7P7O5CNAO6U.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/world/us/biden-approval-rating-drops-new-low-41-reutersipsos-poll-finds-2022-02-03/",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/world-news/2022/04/14/joe-bidens-popularity-plummets-lowest-point-presidency-amid/",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "The Sunday Telegraph",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/telegraph/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "India",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.thetimes.co.uk/article/joe-biden-approval-rating-hits-new-low-amid-soaring-inflation-9wzzkbsw7",
+        "domain": "thetimes.co.uk",
+        "publisher_name": "thetimes.co.uk",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/etats-unis/etats-unis-joe-biden-capitalise-sur-ses-succes-pour-preparer-sa-reelection-1904817",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/economie/article/2023/11/13/l-impopularite-economique-de-joe-biden_6199870_3234.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/la-position-de-biden-sur-israel-lui-coutera-t-elle-l-election-de-2024--10-11-2023-2542591_24.php#11",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cnn.com/2016/05/15/politics/joe-biden-john-boehner-notre-dame/index.html",
+        "domain": "cnn.com",
+        "publisher_name": "CNN.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "Mostly Factual",
+          "credibility_rating": "Medium Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/cnn/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://edition.cnn.com/2017/01/12/politics/biden-awarded-presidential-medal-of-freedom/",
+        "domain": "edition.cnn.com",
+        "publisher_name": "CNN Today",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.defense.gov/News/News-Stories/Article/Article/4032697/defense-department-bids-farewell-to-outgoing-commander-in-chief/",
+        "domain": "defense.gov",
+        "publisher_name": "Assistant Secretary of Defense for Public Affairs",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/defense/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "HIGH Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://obamawhitehouse.archives.gov/the-press-office/2017/01/17/remarks-vice-president-joe-biden-ukrainian-president-petro-poroshenko",
+        "domain": "obamawhitehouse.archives.gov",
+        "publisher_name": "obamawhitehouse.archives.gov",
+        "country": "United States",
+        "region": "North America",
+        "language": "Spanish",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/world/us/zelenskiy-gives-biden-military-medal-white-house-meeting-2022-12-21/",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2439,
+          53.4129
+        ]
+      },
+      "properties": {
+        "url": "https://ancestornetwork.ie/how-vice-president-joe-biden-traced-his-irish-ancestry/",
+        "domain": "ancestornetwork.ie",
+        "publisher_name": "ancestornetwork.ie",
+        "country": "Ireland",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2439,
+          53.4129
+        ]
+      },
+      "properties": {
+        "url": "https://www.mayonews.ie/news/28028-us-vice-president-in-mayo-this-week",
+        "domain": "mayonews.ie",
+        "publisher_name": "Mayo News",
+        "country": "Ireland",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 113,
+        "percentage": 37.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 47,
+        "percentage": 15.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "country": "Switzerland",
+        "source_count": 5,
+        "percentage": 1.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 12,
+        "percentage": 4.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "country": "Canada",
+        "source_count": 7,
+        "percentage": 2.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "country": "Belgium",
+        "source_count": 15,
+        "percentage": 5.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0,
+          39.0
+        ]
+      },
+      "properties": {
+        "country": "Turkey",
+        "source_count": 1,
+        "percentage": 0.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.7751,
+          -25.2744
+        ]
+      },
+      "properties": {
+        "country": "Australia",
+        "source_count": 1,
+        "percentage": 0.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2439,
+          53.4129
+        ]
+      },
+      "properties": {
+        "country": "Ireland",
+        "source_count": 2,
+        "percentage": 0.7
+      }
+    }
+  ]
+}

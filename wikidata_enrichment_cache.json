@@ -2557,5 +2557,25 @@
   },
   "20minutes.fr:80": {},
   "lopinion.fr:80": {},
-  "gaullisme.net:80": {}
+  "gaullisme.net:80": {},
+  "worldbank.org.ru)": {},
+  "euronews.com:80": {},
+  "gmpg.org": {},
+  "apple.com": {},
+  "hindu.com:80": {},
+  "top.rbc.ru": {},
+  "news.mail.ru": {},
+  "monde.blogs.la-croix.com:80": {},
+  "facebook.com": {
+    "wikidata_label": "Facebook",
+    "wikidata_id": "Q355",
+    "wikidata_description": "American online social media and social networking service"
+  },
+  "opengraphprotocol.org": {},
+  "upstart.bizjournals.com": {},
+  "thelawdictionary.org": {},
+  "ogp.me": {},
+  "editionsarchipel.com": {},
+  "spiritus-temporis.com": {},
+  "climatescience.gov": {}
 }

@@ -1,0 +1,3398 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Guerre_russo-ukrainienne",
+  "page_url": "https://fr.wikipedia.org/wiki/Guerre_russo-ukrainienne",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=GKFaDwAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.4324/9781315684567-5",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.academia.edu/11853815",
+        "domain": "academia.edu",
+        "publisher_name": "Academia.edu",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "https://www.segodnya.ua/ua/regions/krym/nyasha-poklonskaya-obeshchaet-boycam-berkuta-nakazat-uchastnikov-maydana-700800.html",
+        "domain": "segodnya.ua",
+        "publisher_name": "Segodnya",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "https://www.ukrinform.ua/rubric-polytics/3463712-rada-viznala-19-lutogo-2014-roku-pocatkom-timcasovoi-okupacii-rosieu-teritorij-ukraini.html",
+        "domain": "ukrinform.ua",
+        "publisher_name": "Ukrinform",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/ukrinform/",
+          "bias_rating": "RIGHT-CENTER (3.1)",
+          "factual_reporting": "MIXED (5.0)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "Ukraine",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "News Agency",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=RyoiDAAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=4-6cDAAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=P1ZYDwAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://www.pravda.com.ua/news/2014/02/20/7015117/",
+        "domain": "pravda.com.ua",
+        "publisher_name": "Ukrainska Pravda",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/pravda/",
+          "bias_rating": "RIGHT (6.0)",
+          "factual_reporting": "VERY LOW (9.8)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Russia",
+          "country_freedom_rating": "TOTAL OPPRESSION",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtl.be/info/monde/international/donbass-qui-sont-les-rebelles-pro-russes-dans-l-est-de-l-ukraine-et-comment-se-financent-ils--1358533.aspx",
+        "domain": "rtl.be",
+        "publisher_name": "rtl.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+          "bias_rating": "LEAST BIASED (1.1)",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-61992491",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2024/11/09/guerre-en-ukraine-l-embarras-occidental-face-a-l-engagement-nord-coreen_6385141_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceculture/podcasts/repliques/la-guerre-d-ukraine-7580314",
+        "domain": "radiofrance.fr",
+        "publisher_name": "Radio France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.247777777,
+          50.116944444
+        ]
+      },
+      "properties": {
+        "url": "https://legrandcontinent.eu/fr/2025/09/14/la-tres-longue-guerre-dukraine-et-la-naissance-dune-nation-conversation-avec-lhistorien-yaroslav-hrytsak/",
+        "domain": "legrandcontinent.eu",
+        "publisher_name": "Le Grand Continent",
+        "country": "European Union",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.monde-diplomatique.fr/2013/12/GOBERT/49942",
+        "domain": "monde-diplomatique.fr",
+        "publisher_name": "Le Monde diplomatique",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2014/08/28/01003-20140828ARTFIG00051-ukraine-les-rebelles-prorusses-regagnent-du-terrain.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2015/04/11/ukraine-la-russie-accusee-de-fournir-des-armes-aux-separatistes_4614456_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2913,
+          52.1326
+        ]
+      },
+      "properties": {
+        "url": "https://www.om.nl/onderwerpen/mh17-crash/@96068/jit-flight-mh17-shot/",
+        "domain": "om.nl",
+        "publisher_name": "Netherlands Public Prosecution Service",
+        "country": "Netherlands",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/om/",
+          "bias_rating": "RIGHT-CENTER (4.3)",
+          "factual_reporting": "MIXED (6.1)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.ladepeche.fr/article/2018/05/24/2804007-missile-abattu-vol-mh17-dessus-ukraine-provenait-unite-militaire-russe.html",
+        "domain": "ladepeche.fr",
+        "publisher_name": "La Dépêche du Midi",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.leparisien.fr/international/ukraine-larmee-russe-envoyee-dans-les-territoires-separatistes-pour-maintenir-la-paix-avance-poutine-21-02-2022-3TXWJ7MFYVGYPHUSC2YTUXO2HY.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/3239007-20220221-conflit-ukraine-russie-direct-poutine-macron-reparlent-etats-unis-russie-acceptent-sommet",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/3241263-20220224-conflit-ukraine-russie-direct-attaque-possible-avant-fin-nuit-selon-washington-discours-grave-zelensky",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/actualite/monde/europe/l-ukraine-scandalisee-par-le-calvaire-d-une-jeune-femme-violee-et-brulee_1099225.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/russian/international/2014/02/140217_crimea_ukraine_transfer",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.leparisien.fr/flash-actualite-politique/kouchner-accuse-la-russie-d-etre-hors-la-loi-internationale-en-georgie-27-08-2008-176127.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20190512185620/http://www.leparisien.fr/flash-actualite-politique/kouchner-accuse-la-russie-d-etre-hors-la-loi-internationale-en-georgie-27-08-2008-176127.php",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=Y3u9DwAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/article/us-georgia-ossetia-sanctions-lavrov-idUSLS51141720080828",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://www.presseportal.de/pm/6694/1255846",
+        "domain": "presseportal.de",
+        "publisher_name": "presseportal.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://www.tagesschau.de/ausland/putininterview100.html",
+        "domain": "tagesschau.de",
+        "publisher_name": "tagesschau.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/tagesschau/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "HIGH",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Germany",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "TV Station/Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://1sn.ru/intervyu-vladimira-putina-pervomu-kanalu-televideniya-germanii-quotardquot",
+        "domain": "1sn.ru",
+        "publisher_name": "1sn.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=DbyEAwAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=nj9qBAAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.co.uk/books?id=CYZ7DwAAQBAJ",
+        "domain": "books.google.co.uk",
+        "publisher_name": "Nationaal Verbond der Strijders 1914-1918 in Nederland geïnterneerd",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/ukrainian/features-62413802",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "http://news.bbc.co.uk/hi/russian/russia/newsid_7095000/7095468.stm",
+        "domain": "news.bbc.co.uk",
+        "publisher_name": "BBC News",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/news/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://tass.ru/politika/13799783",
+        "domain": "tass.ru",
+        "publisher_name": "TASS",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/russian/russia/2016/01/160126_putin_lenin_remarks_analysis",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://www.interfax.ru/russia/715983",
+        "domain": "interfax.ru",
+        "publisher_name": "Interfax",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/interfax/",
+          "bias_rating": "RIGHT-CENTER (3.9)",
+          "factual_reporting": "MIXED (5.4)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "Russia",
+          "country_freedom_rating": "TOTAL OPPRESSION",
+          "media_type": "News Agency",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://tass.ru/politika/11886001",
+        "domain": "tass.ru",
+        "publisher_name": "TASS",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://international.blogs.ouest-france.fr/archive/2022/02/22/ce-que-poutine-a-dit-hier-soir-sur-l-ukraine-verbatim-22829.html",
+        "domain": "international.blogs.ouest-france.fr",
+        "publisher_name": "international.blogs.ouest-france.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/international/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (3.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-la-france-ne-se-met-pas-en-difficulte-en-fournissant-des-armes-a-kiev-selon-le-ministre-des-armees_5442490.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/international/en-direct-guerre-en-ukraine-retrouvez-les-dernieres-informations-sur-linvasion-russe-20220609_76NB7PL5GBGJ5MPKRAUQXQO3TQ/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-61767191",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-63893316",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.foxnews.com/story/u-s-spent-65m-to-aid-ukrainian-groups",
+        "domain": "foxnews.com",
+        "publisher_name": "Fox News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://2009-2017.state.gov/p/eur/rls/rm/2013/dec/218804.htm",
+        "domain": "2009-2017.state.gov",
+        "publisher_name": "2009-2017.state.gov",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/environment/earth-insight/2014/mar/06/ukraine-crisis-great-power-oil-gas-rivals-pipelines",
+        "domain": "theguardian.com",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2013/12/05/en-pleine-crise-politique-l-ukraine-est-au-bord-du-defaut-de-paiement_3526036_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.20minutes.fr/monde/1263347-20131213-pourquoi-ukraine-rapproche-faillite",
+        "domain": "20minutes.fr",
+        "publisher_name": "20 minutes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/international/2013/12/17/01003-20131217ARTFIG00540-la-russie-tend-les-bras-a-l-ukraine.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "https://www.20min.ch/fr/story/le-fils-du-president-double-sa-fortune-en-un-an-499155126218",
+        "domain": "20min.ch",
+        "publisher_name": "20 minutes",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.axl.cefan.ulaval.ca/europe/ukraine-3valorisation-ukrainien.htm",
+        "domain": "axl.cefan.ulaval.ca",
+        "publisher_name": "Jacques Leclerc",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2013/11/29/l-opposition-ukrainienne-exige-le-depart-de-ianoukovitch-pour-son-refus-de-l-ue_3523096_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2013/11/28/a-kiev-en-2004-on-se-battait-pour-une-personne-aujourd-hui-on-se-bat-pour-une-idee_3521574_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20140715010317/http://uapress.info/uk/news/show/7824",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://tsn.ua/ukrayina/vcililiy-ribalka-pro-zitknennya-z-rosiyskimi-prikordonnikami-chistiy-taran-buv-305125.html",
+        "domain": "tsn.ua",
+        "publisher_name": "TSN",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20161107190703/http://tsn.ua/ukrayina/vcililiy-ribalka-pro-zitknennya-z-rosiyskimi-prikordonnikami-chistiy-taran-buv-305125.html/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://newdaynews.ru/sevas/472345.html",
+        "domain": "newdaynews.ru",
+        "publisher_name": "newdaynews.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.slate.fr/story/83791/ukraine-fascistes-nazis",
+        "domain": "slate.fr",
+        "publisher_name": "slate.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/slate/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (2.7)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/26/ukraine-le-kremlin-multiplient-les-references-a-la-seconde-guerre-mondiale_4373493_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/monde/2013/11/26/l-ukraine-reconnait-avoir-ete-dissuadee-par-la-russie-de-signer-avec-l-ue_962167",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.liberation.fr/monde/2013/11/26/l-ukraine-reconnait-avoir-ete-dissuadee-par-la-russie-de-signer-avec-l-ue_962167",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://www.pravda.com.ua/news/2013/12/4/7004813/",
+        "domain": "pravda.com.ua",
+        "publisher_name": "Ukrainska Pravda",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/pravda/",
+          "bias_rating": "RIGHT (6.0)",
+          "factual_reporting": "VERY LOW (9.8)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Russia",
+          "country_freedom_rating": "TOTAL OPPRESSION",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://www.pravda.com.ua/news/2013/12/9/7005727/",
+        "domain": "pravda.com.ua",
+        "publisher_name": "Ukrainska Pravda",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/pravda/",
+          "bias_rating": "RIGHT (6.0)",
+          "factual_reporting": "VERY LOW (9.8)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Russia",
+          "country_freedom_rating": "TOTAL OPPRESSION",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://sport24.lefigaro.fr/jeux-olympiques/sotchi-2014/actualites/ukraine-des-athletes-quittent-sotchi-680601",
+        "domain": "sport24.lefigaro.fr",
+        "publisher_name": "Sport24.com",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/25/a-kharkiv-la-statue-de-lenine-survivra-a-la-revolution_4372896_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/portfolio/2014/02/24/a-kharkiv-les-deux-ukraine-se-font-face_4372526_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/23/en-ukraine-l-est-ne-reconnaitra-jamais-les-nouvelles-autorites_4371906_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/25/en-crimee-bastion-pro-russe-kiev-a-ete-prise-par-des-fascistes_4372761_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "http://www.nbcnews.com/storyline/ukraine-crisis/combat-ready-putin-orders-military-drill-ukraine-simmers-n38946",
+        "domain": "nbcnews.com",
+        "publisher_name": "NBC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "https://en.interfax.com.ua/news/general/193305.html",
+        "domain": "en.interfax.com.ua",
+        "publisher_name": "Interfax-Ukraine",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/en/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "VERY-LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "media_type": "Website",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/03/01/en-crimee-les-aeroports-bloques-et-les-prorusses-deployes_4375957_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/article/us-ukraine-crisis-airport-idUSBREA2007R20140301",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/28/ukraine-le-ministre-de-l-interieur-ukrainien-accuse-les-forces-russes-d-invasion_4375265_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.liberation.fr/planete/2014/03/01/oui-ce-sont-des-soldats-russes_983852/",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.europe1.fr/International/Ukraine-la-tension-est-a-son-comble-en-Crimee-1901529/",
+        "domain": "europe1.fr",
+        "publisher_name": "Q3060725",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.atlantico.fr/article/decryptage/ukraine--jusqu-ou-est-pret-a-aller-vladimir-poutine-",
+        "domain": "atlantico.fr",
+        "publisher_name": "Atlantico",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-26410431",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "http://uk.reuters.com/article/2014/03/02/ukraine-crisis-idUKL6N0LZ06220140302",
+        "domain": "uk.reuters.com",
+        "publisher_name": "uk.reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/uk/",
+          "bias_rating": "RIGHT CONSPIRACY (8.0)",
+          "factual_reporting": "LOW (8.0)",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "United Kingdom",
+          "media_type": "Newspaper",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://uk.reuters.com/article/2014/03/02/ukraine-crisis-idUKL6N0LZ06220140302",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://imgace.com/pic/tag/russian-troops-sent-to-russian-base-in-sebastopol/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/world/national-security/us-calls-on-russia-to-withdraw-forces-from-ukraine/2014/03/01/a83d6088-a1a0-11e3-878c-65222df220eb_story.html",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/https://www.washingtonpost.com/world/national-security/us-calls-on-russia-to-withdraw-forces-from-ukraine/2014/03/01/a83d6088-a1a0-11e3-878c-65222df220eb_story.html",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.kyivpost.com/multimedia/photo/ukrainian-volunteers-prepare-for-war-as-military-on-high-alert-338111.html",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.euronews.com/2014/03/03/lavrov-defends-russia-s-position-on-ukraine/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "http://abcnews.go.com/blogs/politics/2014/03/john-kerry-all-options-on-the-table-to-hold-russia-accountable-in-ukraine/",
+        "domain": "abcnews.go.com",
+        "publisher_name": "ABC News",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/abcnews/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://www.unian.ua/politics/892021-timoshenko-kaje-scho-rosiya-vvela-viyska-v-ukrajinu-cherez-yanukovicha.html",
+        "domain": "unian.ua",
+        "publisher_name": "Ukrainian Independent Information Agency",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "http://www.unian.ua/politics/892027-rosiya-pragne-povnoji-kapitulyatsiji-ukrajini-timoshenko.html",
+        "domain": "unian.ua",
+        "publisher_name": "Ukrainian Independent Information Agency",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.latribune.fr/actualites/economie/international/20140306trib000818575/le-parlement-de-crimee-veut-un-rattachement-de-la-peninsule-a-la-russie.html",
+        "domain": "latribune.fr",
+        "publisher_name": "La Tribune",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://lemonde.fr/europe/video/2014/03/06/affrontements-entre-prorusses-et-pro-ukrainiens_4378784_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.liberation.fr/monde/2014/03/08/ukraine-manifestation-pro-russe-a-donetsk-tension-en-crimee_985491",
+        "domain": "liberation.fr",
+        "publisher_name": "Libération",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/liberation/",
+          "bias_rating": "LEFT",
+          "factual_reporting": "MOSTLY FACTUAL (4.1)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/03/11/le-parlement-de-crimee-declare-la-peninsule-independante-de-l-ukraine_4381036_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "http://www.rts.ch/info/monde/5696353-la-crimee-demande-officiellement-son-rattachement-a-la-russie.html",
+        "domain": "rts.ch",
+        "publisher_name": "Radio Genève",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/02/23/le-chef-du-parlement-nomme-president-par-interim_4371895_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.franceukraine.fr/ukraine/les-ecoles-de-langue-russe-en-ukraine-passent-a-la-langue-d-enseignement-ukrainienne",
+        "domain": "franceukraine.fr",
+        "publisher_name": "franceukraine.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/https://fr.news.yahoo.com/manifestations-pro-russes-massives-lest-lukraine-153751292.html",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "http://www.rts.ch/info/monde/5695230-demonstrations-pro-russes-dans-les-villes-de-l-est-de-l-ukraine.html",
+        "domain": "rts.ch",
+        "publisher_name": "Radio Genève",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://lemonde.fr/europe/article/2014/03/15/deux-morts-dans-une-fusillade-a-kharkiv_4383590_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/flash-actu/kiev-adopte-une-loi-renforcant-l-usage-de-l-ukrainien-20190425",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rfi.fr/fr/europe/20220228-ukraine-dans-les-faits-la-langue-russe-tr%C3%A8s-largement-pratiqu%C3%A9e-dans-le-pays",
+        "domain": "rfi.fr",
+        "publisher_name": "RFI",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rfi/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://edition.cnn.com/2014/04/08/world/europe/ukraine-crisis/index.html?eref=edition",
+        "domain": "edition.cnn.com",
+        "publisher_name": "CNN Today",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/flash-actu/2014/04/07/97001-20140407FILWWW00059-ukraine-kharkiv-liberee-des-separatistes.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2014/05/02/kiev-essaie-de-garder-le-controle-de-kharkiv_4410642_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-27035196",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.leparisien.fr/international/ukraine-les-separatistes-pro-russes-rejettent-l-accord-de-geneve-18-04-2014-3778169.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.bbc.com/news/world-europe-27076226",
+        "domain": "bbc.com",
+        "publisher_name": "BBC Online",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/bbc/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "http://www.rtl.be/info/monde/international/1084555/ukraine-les-etats-unis-preparent-activement-de-nouvelles-sanctions-contre-la-russie",
+        "domain": "rtl.be",
+        "publisher_name": "rtl.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+          "bias_rating": "LEAST BIASED (1.1)",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "https://vn.20minut.ua/kriza-v-ukrayini/irina-dovgan-rozpovila-yak-yiyi-katuvali-v-donetsku-10413254.html",
+        "domain": "vn.20minut.ua",
+        "publisher_name": "vn.20minut.ua",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "url": "https://life.pravda.com.ua/society/540422157a225/",
+        "domain": "life.pravda.com.ua",
+        "publisher_name": "life.pravda.com.ua",
+        "country": "Ukraine",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/life/",
+          "bias_rating": "PSEUDOSCIENCE Factual Reporting",
+          "factual_reporting": "MIXED Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/securite-desarmement-et-non-proliferation/crises-et-conflits/ukraine/",
+        "domain": "diplomatie.gouv.fr",
+        "publisher_name": "Ministry for Europe and Foreign Affairs",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/europe/la-mer-dazov-attise-les-tensions-entre-ukraine-et-russie-1386886",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2022/02/11/l-ukraine-en-alerte-face-aux-exercices-russo-bielorusses_6113294_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.reuters.com/world/pope-went-russian-embassy-express-concern-over-war-moscow-envoy-2022-02-25/",
+        "domain": "reuters.com",
+        "publisher_name": "reuters.com",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Least Biased",
+          "factual_reporting": "Very High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/reuters/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/europe/2022-03-06/le-pape-francois-envoie-deux-cardinaux-en-ukraine-pour-promouvoir-la-paix.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.politico.com/news/2022/03/06/pope-francis-dispatches-2-cardinals-to-ukraine-00014429",
+        "domain": "politico.com",
+        "publisher_name": "Politico",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/politico/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.3)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rfi.fr/en/middle-east/20220629-russian-oligarch-sanctioned-as-superyacht-docked-in-dubai",
+        "domain": "rfi.fr",
+        "publisher_name": "RFI",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rfi/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2973,
+          4.5709
+        ]
+      },
+      "properties": {
+        "url": "https://thecradle.co/article-view/25252/uae-becomes-russian-gold-trade-hub-due-to-western-sanctions",
+        "domain": "thecradle.co",
+        "publisher_name": "The Cradle",
+        "country": "Colombia",
+        "region": "South America",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/news/2022/10/01/manchester-city-owner-could-investigated-helping-roman-abramovich/",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "The Sunday Telegraph",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/telegraph/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "India",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2023/08/24/derriere-le-secret-des-pertes-militaires-en-ukraine-un-massacre-a-grande-echelle_6186445_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/live/2022/06/13/guerre-en-ukraine-en-direct-le-cout-humain-de-la-bataille-de-sievierodonetsk-est-juste-terrifiant-selon-volodymyr-zelensky_6130058_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/guerre-en-ukraine-les-republiques-separatistes-demandent-d-urgence-un-referendum-de-rattachement-a-la-russie-20220920",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/international/article/2022/09/21/kiev-promet-une-reponse-militaire-aux-referendums-dans-le-donbass_6142536_3210.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-des-referendums-d-annexion-par-la-russie-seront-organises-dans-quatre-regions-ukrainiennes-du-23-au-27-septembre-annoncent-les-separatistes_5371309.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-pourquoi-les-referendums-d-annexion-sont-juges-illegitimes-par-la-communaute-internationale_5374948.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.washingtonpost.com/opinions/henry-kissinger-to-settle-the-ukraine-crisis-start-at-the-end/2014/03/05/46dad868-a496-11e3-8466-d34c451760b9_story.html",
+        "domain": "washingtonpost.com",
+        "publisher_name": "The Washington Post",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.monde-diplomatique.fr/2014/07/VERCUEIL/50637",
+        "domain": "monde-diplomatique.fr",
+        "publisher_name": "Le Monde diplomatique",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lenouveleconomiste.fr/pascal-boniface-partout-dans-le-monde-lopinion-publique-prend-le-pouvoir-21680/",
+        "domain": "lenouveleconomiste.fr",
+        "publisher_name": "Le Nouvel Économiste",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.atlantico.fr/article/decryptage/les-racines-geopolitiques-de-la-crise-ukrainienne-et-de-la-brouille-russo-occidentale-alexandre-del-valle",
+        "domain": "atlantico.fr",
+        "publisher_name": "Atlantico",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0242-6056",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rtl.fr/actu/international/russie-les-confidences-glacantes-de-vladimir-poutine-a-bill-clinton-7800832778",
+        "domain": "rtl.fr",
+        "publisher_name": "RTL",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rtl-bias-and-credibility/",
+          "bias_rating": "LEAST BIASED (1.1)",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/sport/article/2014/03/19/l-ukraine-renonce-a-organiser-l-euro-de-basket-en-2015_4385798_3242.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.niubball.com/2013/09/pooh-jeter-leads-ukraine-to-2014-fiba-basketball-world-cup/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lequipe.fr/Basket/Actualites/La-france-officiellement-candidate/462679",
+        "domain": "lequipe.fr",
+        "publisher_name": "L'Équipe",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lepoint.fr/sport/basket-la-fiba-retire-l-organisation-de-l-euro-2015-a-l-ukraine-13-06-2014-1835905_26.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lequipe.fr/Basket/Actualites/L-edition-2015-en-france/497498",
+        "domain": "lequipe.fr",
+        "publisher_name": "L'Équipe",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/sports/football/coupe-du-monde/guerre-en-ukraine-la-russie-exclue-du-mondial-2022-20220228",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 24,
+        "percentage": 11.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "country": "Global",
+        "source_count": 1,
+        "percentage": 0.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 20,
+        "percentage": 9.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1656,
+          48.3794
+        ]
+      },
+      "properties": {
+        "country": "Ukraine",
+        "source_count": 11,
+        "percentage": 5.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "country": "Belgium",
+        "source_count": 2,
+        "percentage": 1.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 64,
+        "percentage": 30.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.247777777,
+          50.116944444
+        ]
+      },
+      "properties": {
+        "country": "European Union",
+        "source_count": 1,
+        "percentage": 0.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2913,
+          52.1326
+        ]
+      },
+      "properties": {
+        "country": "Netherlands",
+        "source_count": 1,
+        "percentage": 0.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "country": "Germany",
+        "source_count": 2,
+        "percentage": 1.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "country": "Russia",
+        "source_count": 5,
+        "percentage": 2.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "country": "Switzerland",
+        "source_count": 3,
+        "percentage": 1.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "country": "Canada",
+        "source_count": 2,
+        "percentage": 1.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2973,
+          4.5709
+        ]
+      },
+      "properties": {
+        "country": "Colombia",
+        "source_count": 1,
+        "percentage": 0.5
+      }
+    }
+  ]
+}

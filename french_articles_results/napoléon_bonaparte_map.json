@@ -1,0 +1,990 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Napol%C3%A9on_Bonaparte",
+  "page_url": "https://fr.wikipedia.org/wiki/Napol%C3%A9on_Bonaparte",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.musee-maisonbonaparte.fr",
+        "domain": "musee-maisonbonaparte.fr",
+        "publisher_name": "Maison Bonaparte",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=twhOrFpy5WsC",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=twhOrFpy5WsC&pg=PA526",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.mediterranee-antique.fr/Fichiers_PdF/MNO/Masson/Jeunesse.pdf",
+        "domain": "mediterranee-antique.fr",
+        "publisher_name": "mediterranee-antique.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=MhE8AAAAMAAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=MhE8AAAAMAAJ&pg=PA129",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "http://elib.shpl.ru/ru/nodes/42992-vyp-4-24#mode/inspect/page/5/zoom/4",
+        "domain": "elib.shpl.ru",
+        "publisher_name": "elib.shpl.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k83972p.pdf",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://archives.paris.fr/arkotheque/visionneuse/visionneuse.php?arko=YTo2OntzOjQ6ImRhdGUiO3M6MTA6IjIwMjItMDYtMTciO3M6MTA6InR5cGVfZm9uZHMiO3M6MTE6ImFya29fc2VyaWVsIjtzOjQ6InJlZjEiO2k6Mzk7czo0OiJyZWYyIjtpOjE3MDIwNjtzOjE2OiJ2aXNpb25uZXVzZV9odG1sIjtiOjE7czoyMToidmlzaW9ubmV1c2VfaHRtbF9tb2RlIjtzOjQ6InByb2QiO30=#uielem_move=178%2C-255&uielem_rotate=F&uielem_islocked=1&uielem_zoom=70",
+        "domain": "archives.paris.fr",
+        "publisher_name": "archives.paris.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://france3-regions.francetvinfo.fr/hauts-de-france/pas-calais/boulogne-mer/napoleon-quand-l-empereur-voulait-envahir-l-angleterre-dix-dates-autour-du-camp-de-boulogne-entre-1803-et-1805-2880827.html",
+        "domain": "france3-regions.francetvinfo.fr",
+        "publisher_name": "Q3080592",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k27946v.pdf",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.cambaceres.fr/vie-poli/bque-france/3/bque-france.htm",
+        "domain": "cambaceres.fr",
+        "publisher_name": "cambaceres.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francebleu.fr/emissions/le-saviez-vous-ici-vaucluse/il-y-a-211-ans-la-foule-chassait-napoleon-d-avignon-9813258",
+        "domain": "francebleu.fr",
+        "publisher_name": "France Bleu",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.nationalgallery.org.uk/paintings/emile-jean-horace-vernet-the-emperor-napoleon-i#",
+        "domain": "nationalgallery.org.uk",
+        "publisher_name": "National Gallery",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=BMfVAAAAMAAJ",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://energie-developpement.blogspot.fr/2013/09/vert-histoire-couleur-Michel-Pastoureau.html",
+        "domain": "energie-developpement.blogspot.fr",
+        "publisher_name": "energie-developpement.blogspot.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lexpress.fr/culture/livre/napoleon-un-empire-d-editions_1545457.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1992_num_79_296_3021",
+        "domain": "persee.fr",
+        "publisher_name": "Persée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://la1ere.francetvinfo.fr/pour-la-guadeloupe-napoleon-est-l-homme-qui-a-retabli-l-esclavage-986368.html",
+        "domain": "la1ere.francetvinfo.fr",
+        "publisher_name": "Wallis-et-Futuna La Première",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://eduscol.education.fr/media/6145/download",
+        "domain": "eduscol.education.fr",
+        "publisher_name": "Direction générale de l'enseignement scolaire",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1634-8842",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.4000/crdf.5256",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/culture/article/2021/03/10/l-exposition-napoleon-a-la-villette-ecorne-le-mythe-bonaparte-en-presentant-deux-actes-officiels-sur-l-esclavage_6072591_3246.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.sudouest.fr/france/le-faux-redemarrage-de-la-traite-sous-la-restauration-2615163.php",
+        "domain": "sudouest.fr",
+        "publisher_name": "Sud-Ouest",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/culture/patrimoine/histoire/le-president-emmanuel-macron-va-commemorer-le-bicentenaire-de-la-mort-de-napoleon_4327611.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/culture/patrimoine/histoire/expositions-cinema-concerts-et-cuisine-la-ville-d-ajaccio-celebre-en-grand-lebicentenaire-de-la-mort-de-napoleon_4322403.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.larep.fr/ferte-saint-aubin-45240/loisirs/les-grognards-de-la-ferte-saint-aubin-attendus-sur-les-champs-elysees-et-aux-invalides_13908696/",
+        "domain": "larep.fr",
+        "publisher_name": "La République du Centre",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://france3-regions.francetvinfo.fr/corse/corse-du-sud/ajaccio/covid19-la-ville-d-ajaccio-reporte-certaines-festivites-du-bicentenaire-de-la-mort-de-napoleon-2054875.html",
+        "domain": "france3-regions.francetvinfo.fr",
+        "publisher_name": "Q3080592",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.leparisien.fr/politique/napoleon-le-bicentenaire-de-la-discorde-07-02-2021-8423655.php",
+        "domain": "leparisien.fr",
+        "publisher_name": "Le Parisien",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.marianne.net/culture/cultures-pop/de-laurent-joffrin-a-eric-zemmour-la-galaxie-heteroclite-des-derniers-admirateurs-de-napoleon",
+        "domain": "marianne.net",
+        "publisher_name": "Marianne",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/marianne/",
+          "bias_rating": "LEFT-CENTER Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Magazine",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/histoire/napoleon-les-dernieres-cartouches-de-jean-tulard-23-04-2019-2308987_1615.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.crdp-reims.fr/ressources/dossiers/legiondhonneur/panneau6/panneau6.htm",
+        "domain": "crdp-reims.fr",
+        "publisher_name": "crdp-reims.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://francearchives.gouv.fr/fr/findingaid/1e1a56252d4bb55bea7ec0ee5449e61d1d9e5e97",
+        "domain": "francearchives.gouv.fr",
+        "publisher_name": "FranceArchives",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cairn.info/revue-pouvoirs-2003-4-page-80.htm",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.conseil-etat.fr/le-conseil-d-etat/histoire-patrimoine/les-lieux-du-conseil-d-etat/le-palais-d-orsay",
+        "domain": "conseil-etat.fr",
+        "publisher_name": "Conseil d'État",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k202800d/f61.image",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6304983j/f115",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k63139912/f53",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.musee-armee.fr/collections/base-de-donnees-des-collections/objet/tombeau-du-marechal-de-turenne-1611-1675.html",
+        "domain": "musee-armee.fr",
+        "publisher_name": "Historial Charles de Gaulle",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.musee-armee.fr/fileadmin/user_upload/DP_Napoleon_n_est_plus_ok.pdf",
+        "domain": "musee-armee.fr",
+        "publisher_name": "Historial Charles de Gaulle",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6128934c/texteBrut",
+        "domain": "gallica.bnf.fr",
+        "publisher_name": "Gallica",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_053754",
+        "domain": "siv.archives-nationales.culture.gouv.fr",
+        "publisher_name": "Salle de lecture virtuelle (Archives nationales de France)",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://palaisdecompiegne.fr/sites/palaisdecompiegne.fr/files/dp_aiglon-prince-imperial.pdf",
+        "domain": "palaisdecompiegne.fr",
+        "publisher_name": "palaisdecompiegne.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 40,
+        "percentage": 55.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "country": "Russia",
+        "source_count": 1,
+        "percentage": 1.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 1,
+        "percentage": 1.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "country": "Global",
+        "source_count": 1,
+        "percentage": 1.4
+      }
+    }
+  ]
+}

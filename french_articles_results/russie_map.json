@@ -1,0 +1,1520 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Russie",
+  "page_url": "https://fr.wikipedia.org/wiki/Russie",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/vox/monde/laure-mandeville-penser-la-russie-une-urgence-pour-l-europe-20230427",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=_YqsBOmSIJsC&pg=PA238&lpg=PA238&dq=%22r%C3%A9publique+socialiste+f%C3%A9d%C3%A9rative+sovi%C3%A9tique%22+devient+%22f%C3%A9d%C3%A9ration+de+Russie%22&source=bl&ots=WzwXI15pCV&sig=ACfU3U2NYS21_ERX4b2xC5ISdEV1Gj-7xQ&hl=fr&sa=X&ved=2ahUKEwis277c4-uAAxULWqQEHcUOD-Y4FBDoAXoECBgQAw#v=onepage&q=%22r%C3%A9publique%20socialiste%20f%C3%A9d%C3%A9rative%20sovi%C3%A9tique%22%20devient%20%22f%C3%A9d%C3%A9ration%20de%20Russie%22&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=-J5wEAAAQBAJ&pg=PT85&lpg=PT85&dq=%22r%C3%A9publique+socialiste+f%C3%A9d%C3%A9rative+sovi%C3%A9tique%22+devient+%22f%C3%A9d%C3%A9ration+de+Russie%22&source=bl&ots=j9nd2deshE&sig=ACfU3U1EQDia64rCBkO7Bl9TSSfpx9kIGg&hl=fr&sa=X&ved=2ahUKEwis277c4-uAAxULWqQEHcUOD-Y4FBDoAXoECAYQAw#v=onepage&q=%22r%C3%A9publique%20socialiste%20f%C3%A9d%C3%A9rative%20sovi%C3%A9tique%22%20devient%20%22f%C3%A9d%C3%A9ration%20de%20Russie%22&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://www.citypopulation.de/en/russia/cities/",
+        "domain": "citypopulation.de",
+        "publisher_name": "Citypopulation.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://hdr.undp.org/content/human-development-report-2025",
+        "domain": "hdr.undp.org",
+        "publisher_name": "hdr.undp.org",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://epi.yale.edu/downloads/2024-epi-report-20250106.pdf",
+        "domain": "epi.yale.edu",
+        "publisher_name": "epi.yale.edu",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/epi/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "MOSTLY FACTUAL (3.0)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Organization/Foundation",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://cnig.gouv.fr/ressources-toponymie-a10578.html",
+        "domain": "cnig.gouv.fr",
+        "publisher_name": "Conseil national de l'information géolocalisée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://cnig.gouv.fr/IMG/pdf/ptvm_1er-juillet-2021_ok.pdf",
+        "domain": "cnig.gouv.fr",
+        "publisher_name": "Conseil national de l'information géolocalisée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.legifrance.gouv.fr/jo_pdf.do?numJO=0&dateJO=20080924&numTexte=91&pageDebut=14818&pageFin=14825",
+        "domain": "legifrance.gouv.fr",
+        "publisher_name": "Légifrance",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://showdata.gks.ru/report/278928/",
+        "domain": "showdata.gks.ru",
+        "publisher_name": "showdata.gks.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/https://showdata.gks.ru/report/278928/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.un.org/esa/population/publications/popdecline/vishnevsky.pdf",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/0020-8590",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1469-512X",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.1017/S0020859018000251",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.cambridge.org/core/product/identifier/S0020859018000251/type/journal_article",
+        "domain": "cambridge.org",
+        "publisher_name": "Cambridge University Press and Assessment",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "mixed country",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cambridge/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "MIXED Country",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.cia.gov/the-world-factbook/countries/russia/",
+        "domain": "cia.gov",
+        "publisher_name": "list of CIA controversies",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cia/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=PiztK0-txIcC&pg=PT137",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb37399036w.public",
+        "domain": "catalogue.bnf.fr",
+        "publisher_name": "general catalog of BnF",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cairn.info/revue-herodote-2002-1-page-144.htm",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.theguardian.com/world/2003/apr/09/russia.artsandhumanities",
+        "domain": "theguardian.com",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lepoint.fr/monde/russie-vladimir-poutine-reelu-president-avec-88-des-voix-selon-les-premiers-resultats-17-03-2024-2555264_24.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/europe/sous-sanctions-leconomie-russe-recule-de-4-au-deuxieme-trimestre-1781807",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.247777777,
+          50.116944444
+        ]
+      },
+      "properties": {
+        "url": "https://www.consilium.europa.eu/fr/policies/sanctions-against-russia-explained/",
+        "domain": "consilium.europa.eu",
+        "publisher_name": "Council of the European Union",
+        "country": "European Union",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://sgae.gouv.fr/sites/SGAE/accueil/a-propos-du-sgae/actualites/les-27-etats-membres-de-lue-ont.html",
+        "domain": "sgae.gouv.fr",
+        "publisher_name": "Secrétariat général des affaires européennes",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-on-fait-le-point-sur-les-livraisons-d-armes-et-l-aide-militaire-recemment-promises-a-kiev_5097997.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://hir.harvard.edu/russia-democratic-backsliding-the-future-of-putinism/",
+        "domain": "hir.harvard.edu",
+        "publisher_name": "Harvard International Review",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/http://www.cdi.org/nuclear/database/nukestab.html",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.challenges.fr/entreprise/defense/ventes-d-armes-la-france-talonne-desormais-la-russie_495577",
+        "domain": "challenges.fr",
+        "publisher_name": "Challenges",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/challenges/",
+          "bias_rating": "PRO-SCIENCE Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "Switzerland",
+          "country_freedom_rating": "EXCELLENT",
+          "media_type": "Journal",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20090429212124/http://www.armscontrolcenter.org/policy/securityspending/articles/fy09_dod_request_global/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.persee.fr/doc/afdi_0066-3085_1991_num_37_1_3017",
+        "domain": "persee.fr",
+        "publisher_name": "Persée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "http://www.lalibre.be/actu/international/moscou-refuse-de-reconnaitre-l-occupation-des-pays-baltes-51b889c1e4b0de6db9ac09c5",
+        "domain": "lalibre.be",
+        "publisher_name": "La Libre Belgique",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "http://news.bbc.co.uk/2/hi/europe/4517683.stm",
+        "domain": "news.bbc.co.uk",
+        "publisher_name": "BBC News",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/news/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://tass.com/economy/1668731",
+        "domain": "tass.com",
+        "publisher_name": "TASS",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/*/https://www.imf.org/external/pubs/ft/weo/2018/01/weodata/weorept.aspx?pr.x=59&pr.y=1&sy=2016&ey=2023&scsm=1&ssd=1&sort=country&ds=.&br=1&c=193,273,223,156,924,922,456,132,184,134,534,578,536,429,136,186,158,112,542,111&s=PPPGDP&grp=0&a=",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20220401080754/http://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html/",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/economie/article/2019/08/01/la-russie-compte-500-000-nouveaux-pauvres-depuis-un-an_5495404_3234.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/2016/11/la-russie-premier-fournisseur-de-ble-de-la-planete-232902",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/2824-3633",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.20870/productions-animales.2018.31.2.2317",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "http://www.eia.doe.gov/emeu/cabs/Russia/Full.html",
+        "domain": "eia.doe.gov",
+        "publisher_name": "eia.doe.gov",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20080303213027/http://www.eia.doe.gov/emeu/cabs/Russia/Full.html",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.eia.gov/international/content/analysis/countries_long/Russia/russia.pdf",
+        "domain": "eia.gov",
+        "publisher_name": "Energy Information Administration",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/monde/europe/petrole-et-gaz-la-russie-engrange-des-recettes-record-malgre-les-embargos-1785965",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://dorinfo.ru/star_detail.php?ELEMENT_ID=17216",
+        "domain": "dorinfo.ru",
+        "publisher_name": "dorinfo.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://rosstat.gov.ru/storage/mediabank/prot_avto_dor_obsch-2022.xls",
+        "domain": "rosstat.gov.ru",
+        "publisher_name": "Federal State Statistics Service",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/pixels/article/2022/03/11/facebook-fera-preuve-d-indulgence-envers-les-messages-hostiles-aux-soldats-et-aux-responsables-russes_6117069_4408996.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.franceculture.fr/societe/la-russie-et-vladimir-poutine-face-aux-droits-de-lhomme",
+        "domain": "franceculture.fr",
+        "publisher_name": "Les Chemins de la philosophie",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.247777777,
+          50.116944444
+        ]
+      },
+      "properties": {
+        "url": "https://www.touteleurope.eu/institutions/pourquoi-le-conseil-de-l-europe-a-t-il-exclu-la-russie/",
+        "domain": "touteleurope.eu",
+        "publisher_name": "Toute l'Europe",
+        "country": "European Union",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.rfi.fr/fr/europe/20260331-la-russie-condamn%C3%A9e-par-la-cedh-pour-la-d%C3%A9tention-historien-iouri-dmitriev-ong-m%C3%A9morial",
+        "domain": "rfi.fr",
+        "publisher_name": "RFI",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/rfi/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "MOSTLY FACTUAL Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.academia.edu/120058952/E_Pontoizeau_Le_fl%C3%A9au_russe_de_la_grande_corruption_?source=swp_share",
+        "domain": "academia.edu",
+        "publisher_name": "Academia.edu",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2008/12/13/les-immigres-en-russie-victimes-expiatoires-de-la-crise_1130680_3214.html#ens_id=1036786",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.ined.fr/fichier/t_publication/530/publi_pdf1_pop_et_soc_francais_395.pdf",
+        "domain": "ined.fr",
+        "publisher_name": "Q131907553",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/les-russes-boivent-de-moins-en-moins-d-alcool-20191002",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/monde/russie/vladimir-poutine/russie-vladimir-poutine-veut-booster-la-natalite_6267462.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://rosstat.gov.ru/storage/mediabank/%D0%A1hisl_MO_01-01-2025.xlsx",
+        "domain": "rosstat.gov.ru",
+        "publisher_name": "Federal State Statistics Service",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://citypopulation.de/en/russia/cities/",
+        "domain": "citypopulation.de",
+        "publisher_name": "Citypopulation.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "http://ecsocman.hse.ru/images/pubs/2006/05/04/0000276258/35-Filatovx2c_Lunkin.pdf",
+        "domain": "ecsocman.hse.ru",
+        "publisher_name": "ecsocman.hse.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://rg.ru/2013/04/24/youtube-site.html",
+        "domain": "rg.ru",
+        "publisher_name": "Vladislav Fronin",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "url": "https://ovideo.ru/news/278740",
+        "domain": "ovideo.ru",
+        "publisher_name": "ovideo.ru",
+        "country": "Russia",
+        "region": "Europe",
+        "language": "Russian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "url": "https://dx.doi.org/10.1017/cbo9781139839419.010",
+        "domain": "dx.doi.org",
+        "publisher_name": "Sustainable Digital Communities: 15th International Conference, iConference 2020, Boras, Sweden, March 23–26, 2020, Proceedings",
+        "country": "Global",
+        "region": "Global",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://web.archive.org/web/20130116215900/http://www.rusarch.ru/zagraevsky1.htm",
+        "domain": "web.archive.org",
+        "publisher_name": "Wayback Machine",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/web/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 28,
+        "percentage": 25.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "country": "Germany",
+        "source_count": 2,
+        "percentage": 1.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 15,
+        "percentage": 13.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3188,
+          61.524
+        ]
+      },
+      "properties": {
+        "country": "Russia",
+        "source_count": 8,
+        "percentage": 7.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639395586,
+          41.439468314
+        ]
+      },
+      "properties": {
+        "country": "Global",
+        "source_count": 3,
+        "percentage": 2.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 3,
+        "percentage": 2.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.247777777,
+          50.116944444
+        ]
+      },
+      "properties": {
+        "country": "European Union",
+        "source_count": 2,
+        "percentage": 1.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "country": "Belgium",
+        "source_count": 1,
+        "percentage": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Christianisme",
+  "page_url": "https://fr.wikipedia.org/wiki/Christianisme",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.gordonconwell.edu/center-for-global-christianity/wp-content/uploads/sites/13/2020/12/Status-of-Global-Christianity-2021.pdf",
+        "domain": "gordonconwell.edu",
+        "publisher_name": "Gordon–Conwell Theological Seminary",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=hfL3CwAAQBAJ&pg=PT83&lpg=PT83&dq=marcionisme+%22bassin+m%C3%A9diterran%C3%A9en%22&source=bl&ots=65EBCe4xRB&sig=MaimkeR1akN4ueEKj1buFDqx90g&hl=fr&sa=X&ved=0ahUKEwie_pavpcTYAhUKchQKHT0HDsQQ6AEIWjAP#v=onepage&q=marcionisme%20%22bassin%20m%C3%A9diterran%C3%A9en%22&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/idees/article/2013/03/30/la-vraie-eglise-des-pauvres_3150919_3232.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cairn.info/revue-responsabilite-et-environnement-2016-3-page-82.htm",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.be/books?id=teGRAAAAQBAJ",
+        "domain": "books.google.be",
+        "publisher_name": "books.google.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "url": "http://chiesa.espresso.repubblica.it/articolo/147421?fr=y&refresh_ce",
+        "domain": "chiesa.espresso.repubblica.it",
+        "publisher_name": "chiesa.espresso.repubblica.it",
+        "country": "Italy",
+        "region": "Europe",
+        "language": "Italian",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=eI7lR3rleYYC&pg=PA111&dq=A+Rabbi+Talks+with+J%C3%A9sus",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.academia.edu/7279733/Pers%C3%A9cutions_calomnies_birkat_ha_Minim_et_%C3%A9missaires_juifs_de_propagande_antichr%C3%A9tienne_dans_le_Dialogue_avec_Tryphon_de_Justin_Martyr",
+        "domain": "academia.edu",
+        "publisher_name": "Academia.edu",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.persee.fr/web/revues/home/prescript/article/assr_0335-5985_1994_num_86_1_1443_t1_0303_0000_3",
+        "domain": "persee.fr",
+        "publisher_name": "Persée",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/flash-actu/2013/05/13/97001-20130513FILWWW00447-de-plus-en-plus-de-catholiques-en-afrique.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/actualite-france/2011/12/23/01016-20111223ARTFIG00479-un-tiers-de-l-humanite-est-chretienne.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "http://www.cathobel.be/2016/03/08/141-de-catholiques-dans-le-monde/",
+        "domain": "cathobel.be",
+        "publisher_name": "Q133835663",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.notredamedesaussens.fr/content/pape-francois",
+        "domain": "notredamedesaussens.fr",
+        "publisher_name": "notredamedesaussens.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/actualite-france/2013/03/04/01016-20130304ARTFIG00477-l-asie-terre-catholique-fertile.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "http://ici.radio-canada.ca/nouvelles/International/2014/08/12/005-chine-chretiens-nombre-augmente.shtml",
+        "domain": "ici.radio-canada.ca",
+        "publisher_name": "Feux",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/ici/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (1.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "Canada",
+          "country_freedom_rating": "EXCELLENT",
+          "media_type": "Radio Station",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lavie.fr/religion/la-chine-bientot-le-plus-grand-pays-chretien-du-monde-22-04-2014-52213_10.php",
+        "domain": "lavie.fr",
+        "publisher_name": "La Vie",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lexpress.fr/monde/asie/les-chretiens-s-eveillent_479156.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "url": "https://www.lapresse.ca/international/afrique/201004/15/01-4270822-musulmans-et-chretiens-a-egalite-en-afrique.php",
+        "domain": "lapresse.ca",
+        "publisher_name": "Q3083289",
+        "country": "Canada",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "url": "http://www.cath.ch/detail/afrique-les-chr%C3%A9tiens-d%C3%A9sormais-plus-nombreux-que-les-musulmans",
+        "domain": "cath.ch",
+        "publisher_name": "cath.ch",
+        "country": "Switzerland",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "medium credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cath/",
+          "bias_rating": "RIGHT-CENTER (4.0)",
+          "factual_reporting": "MIXED (4.8)",
+          "credibility_rating": "MEDIUM CREDIBILITY",
+          "country": "United Kingdom",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Newspaper",
+          "traffic_popularity": "MediumTraffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.be/books?id=7JEKCwAAQBAJ",
+        "domain": "books.google.be",
+        "publisher_name": "books.google.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.be/books?id=WWJJAwAAQBAJ",
+        "domain": "books.google.be",
+        "publisher_name": "books.google.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.be/books?id=WWLSDQAAQBAJ",
+        "domain": "books.google.be",
+        "publisher_name": "books.google.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=PpTrwZn36OAC&pg=PA73",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.humanite.fr/12_11_2010-comment-le-christianisme-est-devenu-une-vaste-machine-de-coercition-457587",
+        "domain": "humanite.fr",
+        "publisher_name": "L'Humanité",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 2,
+        "percentage": 3.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 13,
+        "percentage": 24.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "country": "Belgium",
+        "source_count": 5,
+        "percentage": 9.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5674,
+          41.8719
+        ]
+      },
+      "properties": {
+        "country": "Italy",
+        "source_count": 1,
+        "percentage": 1.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "country": "Canada",
+        "source_count": 2,
+        "percentage": 3.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2275,
+          46.8182
+        ]
+      },
+      "properties": {
+        "country": "Switzerland",
+        "source_count": 1,
+        "percentage": 1.9
+      }
+    }
+  ]
+}

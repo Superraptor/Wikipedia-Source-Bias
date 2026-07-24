@@ -68,5 +68,21 @@
     "gender": "male",
     "probability": 0.53,
     "count": 108
+  },
+  "muryel": {},
+  "champagne": {
+    "gender": "female",
+    "probability": 0.75,
+    "count": 1406
+  },
+  "the": {
+    "gender": "male",
+    "probability": 0.76,
+    "count": 40736
+  },
+  "aude": {
+    "gender": "female",
+    "probability": 0.98,
+    "count": 30736
   }
 }

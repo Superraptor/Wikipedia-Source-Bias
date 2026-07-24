@@ -1,0 +1,1076 @@
+{
+  "type": "FeatureCollection",
+  "page_title": "Adolf_Hitler",
+  "page_url": "https://fr.wikipedia.org/wiki/Adolf_Hitler",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://mjp.univ-perp.fr/constit/de1933.htm#1.8.34",
+        "domain": "mjp.univ-perp.fr",
+        "publisher_name": "mjp.univ-perp.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "http://www.ns-archiv.de/personen/hitler/oesterreich/staatsbuergerschaft.php",
+        "domain": "ns-archiv.de",
+        "publisher_name": "ns-archiv.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://enseignants.lumni.fr/parcours/1142/1923-1936-l-ascension-d-adolfhitler-et-du-parti-nazi.html",
+        "domain": "enseignants.lumni.fr",
+        "publisher_name": "enseignants.lumni.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.be/books?id=7-ugAAAAMAAJ",
+        "domain": "books.google.be",
+        "publisher_name": "books.google.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5501,
+          47.5162
+        ]
+      },
+      "properties": {
+        "url": "http://www.kup.at/kup/pdf/8276.pdf",
+        "domain": "kup.at",
+        "publisher_name": "Verlag Krause & Pachernegg GmbH",
+        "country": "Austria",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lexpress.fr/culture/livre/la-premiere-guerre-d-hitler_1145465.html",
+        "domain": "lexpress.fr",
+        "publisher_name": "Q770596",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "http://www.ns-archiv.de/verfolgung/antisemitismus/hitler/gutachten.php",
+        "domain": "ns-archiv.de",
+        "publisher_name": "ns-archiv.de",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lepoint.fr/culture/et-si-hitler-n-avait-pas-rejoint-le-parti-nazi-01-11-2017-2169131_3.php",
+        "domain": "lepoint.fr",
+        "publisher_name": "lePoint.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceculture/podcasts/superfail/3-8-en-finir-avec-la-democratie-grace-aux-urnes-4132004",
+        "domain": "radiofrance.fr",
+        "publisher_name": "Radio France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.radiofrance.fr/franceculture/podcasts/superfail",
+        "domain": "radiofrance.fr",
+        "publisher_name": "Radio France",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "http://www.historisches-lexikon-bayerns.de/document/artikel_44547_bilder_value_5_mein-kampf3.jpg",
+        "domain": "historisches-lexikon-bayerns.de",
+        "publisher_name": "Simon Pearce",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.revuedesdeuxmondes.fr/wp-content/uploads/2019/11/R2M-2019-12.pdf",
+        "domain": "revuedesdeuxmondes.fr",
+        "publisher_name": "Revue des Deux Mondes",
+        "country": "France",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "unknown",
+        "reliability": "academic/peer-reviewed",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.google.fr/books/edition/Le_livre_d_or_d_Hitler/dan_DwAAQBAJ?hl=fr&gbpv=1&pg=PT5&printsec=frontcover",
+        "domain": "google.fr",
+        "publisher_name": "Google Search",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/google/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.google.fr/books/edition/Le_livre_d_or_d_Hitler/dan_DwAAQBAJ?hl=fr&gbpv=1&printsec=frontcover&bsq=nationalit%C3%A9%20autrichienne",
+        "domain": "google.fr",
+        "publisher_name": "Google Search",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/google/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "http://hnn.us/articles/571.html",
+        "domain": "hnn.us",
+        "publisher_name": "hnn.us",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cairn.info/un-certain-dix-huit-juin--9782259022033-page-243.htm?contenu=resume",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://books.google.fr/books?id=RT9hi5_fjLAC&lpg=PA115&ots=2f5DHv4WmH&dq=%226.%20juli%201940%22%20%22berlin%22&pg=PA115#v=onepage&q&f=false",
+        "domain": "books.google.fr",
+        "publisher_name": "Q138767860",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "url": "https://www.journalbelgianhistory.be/en/system/files/edition_data/articlepdf/BTNG_2005_16_review_14.pdf",
+        "domain": "journalbelgianhistory.be",
+        "publisher_name": "journalbelgianhistory.be",
+        "country": "Belgium",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/history/10336126/Nazis-offered-to-leave-western-Europe-in-exchange-for-free-hand-to-attack-USSR.html",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "The Sunday Telegraph",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/telegraph/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "India",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://www.telegraph.co.uk/culture/books/historybookreviews/10353975/Hess-Hitler-and-Churchill-by-Peter-Padfield-review.html",
+        "domain": "telegraph.co.uk",
+        "publisher_name": "The Sunday Telegraph",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/telegraph/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "MOSTLY FACTUAL (2.1)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "India",
+          "country_freedom_rating": "MODERATE FREEDOM",
+          "media_type": "Website",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.defense.gouv.fr/content/download/100779/978495/file/MC36.pdf",
+        "domain": "defense.gouv.fr",
+        "publisher_name": "Minister of the Armed Forces",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/defense/",
+          "bias_rating": "LEAST BIASED Factual Reporting",
+          "factual_reporting": "HIGH Country",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "USA",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Medium Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.cheminsdememoire.gouv.fr/fr/nn-deportes-condamnes-disparaitre",
+        "domain": "cheminsdememoire.gouv.fr",
+        "publisher_name": "Q28872020",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lhistoire.fr/les-derniers-jours-de-hitler",
+        "domain": "lhistoire.fr",
+        "publisher_name": "L'Histoire",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.francetvinfo.fr/culture/patrimoine/histoire/adolf-hitler-s-est-probablement-suicide-avec-du-cyanure-et-une-balle-de-la-tete_2760023.html",
+        "domain": "francetvinfo.fr",
+        "publisher_name": "Q25395519",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "url": "https://www.nytimes.com/2009/10/11/opinion/11beevor.html?_r=0",
+        "domain": "nytimes.com",
+        "publisher_name": "nytimes.com",
+        "country": "United States",
+        "region": "North America",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "http://www.guardian.co.uk/world/2009/sep/27/adolf-hitler-suicide-skull-fragment",
+        "domain": "guardian.co.uk",
+        "publisher_name": "The Guardian",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "bias_rating": "Left-Center",
+          "factual_reporting": "High",
+          "credibility_rating": "High Credibility",
+          "mbfc_url": "https://mediabiasfactcheck.com/guardian/"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "http://news.bbc.co.uk/2/hi/europe/8234018.stm",
+        "domain": "news.bbc.co.uk",
+        "publisher_name": "BBC News",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/news/",
+          "bias_rating": "LEAST BIASED",
+          "factual_reporting": "unknown",
+          "credibility_rating": "unknown"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.afp.com/en/news/2265/hitler-definitely-died-1945-according-new-study-his-teeth-doc-1554991",
+        "domain": "afp.com",
+        "publisher_name": "Q3136846",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "high credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/afp/",
+          "bias_rating": "LEFT-CENTER",
+          "factual_reporting": "HIGH (0.5)",
+          "credibility_rating": "HIGH CREDIBILITY",
+          "country": "France",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "News Agency",
+          "traffic_popularity": "High Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/livres/article/2008/08/28/la-judeophobie-des-modernes-metamorphoses-de-la-haine_1088763_3260.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://portal.issn.org/resource/ISSN/1266-0078",
+        "domain": "portal.issn.org",
+        "publisher_name": "ISSN Portal",
+        "country": "France",
+        "region": "Europe",
+        "language": "English",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.cairn.info/article.php?REVUE=d-ethique-et-de-theologie-morale&ANNEE=2006&NUMERO=2&PP=77",
+        "domain": "cairn.info",
+        "publisher_name": "Cairn.info",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "low credibility",
+        "mbfc": {
+          "mbfc_url": "https://mediabiasfactcheck.com/cairn/",
+          "bias_rating": "EXTREME RIGHT Factual Reporting",
+          "factual_reporting": "LOW Country",
+          "credibility_rating": "LOW CREDIBILITY",
+          "country": "Australia",
+          "country_freedom_rating": "MOSTLY FREE",
+          "media_type": "Website",
+          "traffic_popularity": "Minimal Traffic"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lemonde.fr/europe/article/2013/02/15/une-gouteuse-de-hitler-se-confie-a-la-presse-britannique_1833440_3214.html",
+        "domain": "lemonde.fr",
+        "publisher_name": "lemonde.fr",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lhistoire.fr/hitler-%C3%A9tait-il-v%C3%A9g%C3%A9tarien%C2%A0",
+        "domain": "lhistoire.fr",
+        "publisher_name": "L'Histoire",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lefigaro.fr/international/2014/09/24/01003-20140924ARTFIG00340-la-gouteuse-d-hitler-raconte-ses-annees-de-terreur.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "http://www.zeit.de/2015/47/der-totale-rausch-sachbuch-norman-ohler",
+        "domain": "zeit.de",
+        "publisher_name": "Die Zeit",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://www.welt.de/print-welt/article481144/Der-uaminegerade-Weg.html",
+        "domain": "welt.de",
+        "publisher_name": "Q140471709",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "http://www.zeit.de/2001/42/Viel_Laerm_um_nichts",
+        "domain": "zeit.de",
+        "publisher_name": "Die Zeit",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "url": "https://www.welt.de/print-welt/article481144/Der-ungerade-Weg.html",
+        "domain": "welt.de",
+        "publisher_name": "Q140471709",
+        "country": "Germany",
+        "region": "Europe",
+        "language": "German",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "http://www.lefigaro.fr/cinema/2015/12/05/03002-20151205ARTFIG00027-un-historien-allemand-revele-que-hitler-etait-fou-de-cinema.php",
+        "domain": "lefigaro.fr",
+        "publisher_name": "Le Figaro",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "url": "https://0-books-openedition-org.catalogue.libraries.london.ac.uk/septentrion/62500",
+        "domain": "0-books-openedition-org.catalogue.libraries.london.ac.uk",
+        "publisher_name": "0-books-openedition-org.catalogue.libraries.london.ac.uk",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "language": "Spanish",
+        "political_leaning": "academic/neutral",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lhistoire.fr/de-chaplin-%C3%A0-woody-allen-hitler-au-cin%C3%A9ma",
+        "domain": "lhistoire.fr",
+        "publisher_name": "L'Histoire",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://www.lesechos.fr/weekend/cinema-series/hitler-au-cinema-fuhrer-de-rire-1213562",
+        "domain": "lesechos.fr",
+        "publisher_name": "Groupe Les Echos",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "url": "https://france3-regions.francetvinfo.fr/grand-est/marne/histoires-14-18-hitler-marne-1480573.html",
+        "domain": "france3-regions.francetvinfo.fr",
+        "publisher_name": "Q3080592",
+        "country": "France",
+        "region": "Europe",
+        "language": "French",
+        "political_leaning": "unknown",
+        "reliability": "unknown",
+        "mbfc": {}
+      }
+    }
+  ],
+  "country_features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "country": "France",
+        "source_count": 26,
+        "percentage": 35.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "country": "Germany",
+        "source_count": 7,
+        "percentage": 9.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4699,
+          50.5039
+        ]
+      },
+      "properties": {
+        "country": "Belgium",
+        "source_count": 2,
+        "percentage": 2.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5501,
+          47.5162
+        ]
+      },
+      "properties": {
+        "country": "Austria",
+        "source_count": 1,
+        "percentage": 1.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.7129,
+          37.0902
+        ]
+      },
+      "properties": {
+        "country": "United States",
+        "source_count": 2,
+        "percentage": 2.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "country": "United Kingdom",
+        "source_count": 5,
+        "percentage": 6.8
+      }
+    }
+  ]
+}

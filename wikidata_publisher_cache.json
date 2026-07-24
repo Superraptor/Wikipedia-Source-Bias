@@ -12672,5 +12672,207 @@
   "emilemagazine.fr": {},
   "minefe.gouv.fr": {},
   "info.lenord.fr": {},
-  "histoquiz-contemporain.com": {}
+  "histoquiz-contemporain.com": {},
+  "ru.krymr.com": {},
+  "dossier.center": {},
+  "worldbank.org.ru)": {},
+  "government.ru": {
+    "wikidata_id": "Q4298520",
+    "wikidata_name": "Mikhail Mishustin",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "executive branch",
+      "human"
+    ],
+    "mbfc_id": null
+  },
+  "cbr.ru": {
+    "wikidata_id": "Q806651",
+    "wikidata_name": "Central Bank of Russia",
+    "countries": [
+      "Russia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "business",
+      "central bank"
+    ],
+    "mbfc_id": null
+  },
+  "metrofrance.com": {},
+  "press.princeton.edu": {
+    "wikidata_id": "Q1708210",
+    "wikidata_name": "Princeton University Press",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "book publisher",
+      "nonprofit organization",
+      "university press"
+    ],
+    "mbfc_id": null
+  },
+  "gmpg.org": {
+    "wikidata_id": "Q5570507",
+    "wikidata_name": "Global Multimedia Protocols Group",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "organization"
+    ],
+    "mbfc_id": null
+  },
+  "apple.com": {
+    "wikidata_id": "Q110575451",
+    "wikidata_name": "The Line",
+    "countries": [
+      "United States"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Berkshire Hathaway",
+      "BlackRock",
+      "State Street Global Advisors",
+      "The Vanguard Group"
+    ],
+    "types": [
+      "application software",
+      "business",
+      "corporation",
+      "enterprise",
+      "podcast show",
+      "public company",
+      "software",
+      "technology company"
+    ],
+    "mbfc_id": null
+  },
+  "archive.aif.ru": {},
+  "facebook.com": {
+    "wikidata_id": "Q140528024",
+    "wikidata_name": "Q140528024",
+    "countries": [
+      "Bulgaria",
+      "Colombia"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [
+      "Bulgarian Business Media SLLC",
+      "Meta"
+    ],
+    "types": [
+      "for-profit corporation",
+      "library",
+      "online community",
+      "social media",
+      "social networking service",
+      "user-generated content platform",
+      "very large online platform",
+      "website"
+    ],
+    "mbfc_id": null
+  },
+  "blogs.wsj.com": {
+    "wikidata_id": "Q99689947",
+    "wikidata_name": "Real Time Economics",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "blog"
+    ],
+    "mbfc_id": null
+  },
+  "thelawdictionary.org": {
+    "wikidata_id": "Q125693687",
+    "wikidata_name": "The Law Dictionary",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "law dictionary",
+      "online dictionary"
+    ],
+    "mbfc_id": null
+  },
+  "rue89.nouvelobs.com": {},
+  "ogp.me": {
+    "wikidata_id": "Q17107778",
+    "wikidata_name": "Open Graph Protocol",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "communication protocol"
+    ],
+    "mbfc_id": null
+  },
+  "amgreatness.com": {},
+  "tvmag.lefigaro.fr": {},
+  "energynews.pro": {},
+  "editionsarchipel.com": {
+    "wikidata_id": "Q3402577",
+    "wikidata_name": "Q3402577",
+    "countries": [
+      "France"
+    ],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "publishing house"
+    ],
+    "mbfc_id": null
+  },
+  "enseigner-histoire-shoah.org": {},
+  "energie-developpement.blogspot.fr": {},
+  "regardsdefemmes.com": {},
+  "resonance-funeraire.com": {},
+  "dioceseauxarmees.catholique.fr": {},
+  "miviludes.gouv.fr": {},
+  "retoricabiblicaesemitica.org": {},
+  "visitmccchurch.com": {},
+  "globalmethane.org": {},
+  "research.wri.org": {},
+  "sustainabilityconsortium.org": {},
+  "innovafrika.com": {},
+  "science.sciencemag.org": {},
+  "apps.who.int": {
+    "wikidata_id": "Q13610440",
+    "wikidata_name": "ICD-10 Online version",
+    "countries": [],
+    "political_leanings": [],
+    "political_ideologies": [],
+    "owners": [],
+    "types": [
+      "award",
+      "medical classification",
+      "medical dictionary",
+      "medical fellowship",
+      "proposed entity",
+      "treaty",
+      "version, edition or translation"
+    ],
+    "mbfc_id": null
+  }
 }
